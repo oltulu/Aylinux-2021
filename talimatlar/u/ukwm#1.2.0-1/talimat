@@ -1,0 +1,27 @@
+[paket]
+tanim   = Hafif bir GTK + pencere yöneticisi
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukwm
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git      = https://github.com/ukui/ukwm
+
+[sha512]
+#1 		= 339c81a079958aceb8c05cf0186e03246e2898faaecb493a7f28e1f5e2cfe81d920579904d2a8e3b6a75a5b44100e73a5b279d317f6bd29ddaab8f5f917062bd
+
+[derle]
+betik 	= cd $isim
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
+#betik 	= sed -i 's|drm_fourcc.h|meta/util.h|' src/wayland/meta-wayland-dma-buf.c
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --disable-libsystemd --sysconfdir=/etc --enable-introspection --enable-compile-warnings=yes
+betik 	= make
+    	      
+[pakur]
+betik 	= cd $isim
+betik 	= make DESTDIR="$PKG" install

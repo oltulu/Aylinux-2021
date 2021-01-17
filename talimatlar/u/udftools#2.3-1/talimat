@@ -1,0 +1,23 @@
+[paket]
+tanim   = UDF dosya sistemleri ve DVD/CD-R(W) sürücüleri için Linux araçları
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/pali/udftools
+
+[gerek]
+derleme = ncurses readline
+calisma =
+
+[kaynak]
+gz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 783221bcc2518ea480cee01ceeb8825db7a089f4e986b557f6460f89636142b6
+
+[derle]
+betik   = sed -i 's|/lib/|$(libdir)/|' pktsetup/Makefile.am
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu

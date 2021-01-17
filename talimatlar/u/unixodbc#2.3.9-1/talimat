@@ -1,0 +1,20 @@
+[paket]
+tanim   = Open DataBase Connectivity protokolü açık kaynak bağlantı kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.unixodbc.org
+
+[kaynak]
+1       = $url/unixODBC-${surum}.tar.gz
+
+[sha256]
+1 		= 45f169ba1f454a72b8fcbb82abd832630a3bf93baa84731cf2949f449e1e3e77
+
+[derle]
+betik   = cd unixODBC-${surum}
+tip     = gnu
+	      
+[pakur]
+betik   = cd unixODBC-${surum}
+tip     = gnu
+betik   = touch "$PKG"/etc/{odbc,odbcinst}.ini

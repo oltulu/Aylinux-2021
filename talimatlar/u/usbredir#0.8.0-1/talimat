@@ -1,0 +1,23 @@
+[paket]
+tanim   = USB trafik yönlendirme protokolü
+paketci = milisarge
+grup    = kütüphane
+url     = http://spice-space.org
+
+[gerek]
+derleme    = libusb
+calisma    =
+
+[kaynak]
+1          = http://spice-space.org/download/${isim}/${isim}-${surum}.tar.bz2
+
+[sha256]
+1          = 87bc9c5a81c982517a1bec70dc8d22e15ae197847643d58f20c0ced3c38c5e00
+
+[derle]
+betik      = autoreconf -fi
+ekconf     = --sbindir=/usr/bin
+tip        = gnu
+
+[pakur]
+tip        = gnu

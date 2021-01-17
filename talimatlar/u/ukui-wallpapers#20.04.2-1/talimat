@@ -1,0 +1,24 @@
+[paket]
+tanim   = Qt5 QPA için UKUI platform teması
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-wallpapers
+
+[gerek]
+derleme = meson
+calisma = 
+
+[kaynak]
+1      = https://github.com/ukui/ukui-wallpapers/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+1 		= 3d0d51ca21658f2927d2a6d5dae406c298d42ae234a3322445d11e905a6647e3299372de645ac23789322b25df5a464b31c4869521709d442b63c43eb992ce3b
+
+[derle]
+betik 	= cd ..
+betik 	= meson ukui-wallpapers-$surum build
+betik 	= ninja -C build
+    	      
+[pakur]
+betik 	= cd ..
+betik 	= DESTDIR="$PKG" ninja -C build install

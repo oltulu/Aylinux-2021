@@ -1,0 +1,21 @@
+[paket]
+tanim   = Udisks kullanarak çıkarılabilir disk otomatik bağlayıcı
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/coldfix/udiskie
+
+[gerek]
+derleme = python-gobject python-docopt python-keyutils python-yaml udisks gtk3 libnotify 
+calisma = python-gobject python-docopt python-keyutils python-yaml udisks gtk3 libnotify 
+
+[kaynak]
+1       = $url/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 1041bdf33e64371a68fe40ff242a7010244f4e90021cdd1435fd62ad1c5fcc50
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

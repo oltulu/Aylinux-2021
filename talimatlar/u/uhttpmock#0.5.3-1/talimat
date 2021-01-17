@@ -1,0 +1,22 @@
+[paket]
+tanim   = Libsoup kullanan projeler için HTTP web hizmeti alay projesi
+paketci = Cihan_Alkan
+grup 	= lxqt
+url     = https://gitlab.com/uhttpmock/uhttpmock
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz    =https://tecnocode.co.uk/downloads/uhttpmock
+
+[sha256]
+#1 		= 1aa7325654d20d3060a0ef0ffc27febfd58ee66704ee690727dc1a77ad1069bd
+
+[derle]
+betik 	= ./configure --prefix=/usr
+betik 	= make
+	      
+[pakur]
+betik 	=  make install DESTDIR="$PKG"

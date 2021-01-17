@@ -1,0 +1,24 @@
+[paket]
+tanim   = Bir karma tablosu ve bağlantılı bir listenin C önişlemci uygulamaları
+paketci = yasarciv67
+grup    = sistem
+url     = http://troydhanson.github.com/uthash
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = https://github.com/troydhanson/uthash/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 152ccd8e64d0f495377232e3964d06c7ec8bb8c3fbd3217f8a5702614f9a669e
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik	= cd $SRC/$isim-$surum/src
+betik   = install -dm755 $PKG/usr/include
+betik	= install -m 644 * $PKG/usr/include/
+

@@ -1,0 +1,22 @@
+[paket]
+tanim   = UKUI için başlat menüsü geliştirme kitaplığı ve gelişmiş grafik kullanıcı arayüzü
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-menu
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+1      = https://github.com/ukui/ukui-menu/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+1 		= f5bf92f867fa1dcf28e80ddff5bfd9f6b23c1cd506daee440784ef52d74efe433d7f4dfd4b36ea63f08524420c4536fc054eab0f1c60a12d5b67ca9ef9c64349
+
+[derle]
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= make INSTALL_ROOT="$PKG" install

@@ -1,0 +1,24 @@
+[paket]
+tanim   = UKUI masaüstünü yapılandırmak için yardımcı programlar
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-control-center
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+git      = https://github.com/ukui/ukui-control-center
+
+[sha512]
+#1 		= 5b09b73cda93a67c26784b94bafab8e6083b26a3fd3cc2494e8e75090ae1d8a396c02a9d9e0f7f74864cd0b6172d70692f410b18bbc5110b462072ed3beb08e3
+
+[derle]
+betik 	= cd ukui-control-center
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= cd ukui-control-center
+betik 	= make INSTALL_ROOT="$PKG" install

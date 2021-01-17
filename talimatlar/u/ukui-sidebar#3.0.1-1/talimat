@@ -1,0 +1,23 @@
+[paket]
+tanim   = UKUI için araç kutusu
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-sidebar
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+1      = https://github.com/ukui/ukui-sidebar/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+1 		= cdc507e468443d44a53cc1bd2b2e394e65de8a4eaff501666a5ccb80f5f2de4d273f9280269545053842d0461506518fe789696d8776086b7ef721149200051b
+
+[derle]
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+        	      
+[pakur]
+betik 	= make INSTALL_ROOT="$PKG" install
+betik 	= install -Dm644 src/data/ukui-sidebar.desktop -t "$PKG"/etc/xdg/autostart/

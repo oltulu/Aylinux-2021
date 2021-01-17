@@ -1,0 +1,23 @@
+[paket]
+tanim   = UKUI için freedesktop menü spesifikasyonunun uygulanması
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-menus
+
+[gerek]
+derleme = mate-common
+calisma = 
+
+[kaynak]
+1      = https://github.com/ukui/ukui-menus/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+1 		= 74ec201ef2a82ca38eff2ed29691980ab7bc1be8df785e778719306a0b665d8d1b805b8575dd581ff030390c0534626797de478c02ee8ef4695caa1aca23e82c
+
+[derle]
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --sysconfdir=/etc --enable-introspection
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install

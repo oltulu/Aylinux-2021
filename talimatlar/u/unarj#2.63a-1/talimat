@@ -1,0 +1,20 @@
+[paket]
+tanim   = ARJ arşivleyiciyle oluşturulan arşivlerin içeriğini çıkarmak, test etmek ve görüntülemek için bir yardımcı program
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://www.ibiblio.org/pub/Linux/utils/compress/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz      = https://ibiblio.org/pub/Linux/utils/compress
+
+[sha256]
+
+[derle]
+betik     = make
+    	      
+[pakur]
+betik     = install -D -m755 unarj "$PKG"/usr/bin/unarj

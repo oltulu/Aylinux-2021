@@ -1,0 +1,22 @@
+[paket]
+tanim   = RFC 3986 uyumlu URI ayrıştırma ve kullanma kitaplığı
+paketci = milisarge
+grup    = kütüphane
+url     = https://uriparser.github.io/
+
+[gerek]
+derleme    = cmake
+calisma    =
+
+[kaynak]
+1          = https://github.com/${isim}/${isim}/releases/download/${isim}-${surum}/${isim}-${surum}.tar.bz2
+
+[sha256]
+1          = 28af4adb05e811192ab5f04566bebc5ebf1c30d9ec19138f944963d52419e28f
+
+[derle]
+ekconf     = -DCMAKE_INSTALL_LIBDIR=lib -DURIPARSER_BUILD_DOCS=OFF -DURIPARSER_BUILD_TESTS=OFF
+tip        = cmake
+
+[pakur]
+tip        = cmake

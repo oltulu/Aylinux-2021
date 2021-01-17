@@ -1,0 +1,28 @@
+[paket]
+tanim   = UKUI için biyometrik kimlik doğrulama
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-biometric-auth
+
+[gerek]
+derleme = 
+calisma = ninja qt5-tools
+
+[kaynak]
+1      = https://github.com/ukui/ukui-biometric-auth/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+1 		= bc5dde2252120e0389ace6995fe207d64a0c8595cea3cce38ae49c7e3360f8b4b0d7a9499d6eeaaaa0c6f1ce4e7a291d1bc34c1dd343c3211f9013de24e5e99c
+
+[derle]
+betik 	= mkdir -p build
+#betik 	= sed -i 's|qt5/QtWidgets/||' $isim-$surum/polkit-agent/src/PolkitListener.cpp
+#betik 	= sed -i 's|/lib/security|/usr/lib/security|' $isim-$surum/pam-biometric/CMakeLists.txt
+betik 	= cd build
+betik 	= cmake -GNinja ../ -DCMAKE_INSTALL_PREFIX=/usr
+betik 	= ninja
+
+    	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= DESTDIR="$PKG" ninja install

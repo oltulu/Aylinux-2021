@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ukui masaüstünü kurar
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui
+
+[gerek]
+derleme = 
+calisma = ukwm ukui-menu ukui-panel ukui-sidebar ukui-menu peony ukui-control-center
+
+[kaynak]
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1= 
+
+[derle]
+betik = mkdir $PKG/usr
+       	      
+[pakur]
+betik = mkdir $PKG/usr/share

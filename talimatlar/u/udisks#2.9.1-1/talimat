@@ -1,0 +1,22 @@
+[paket]
+tanim   = Diskler ve depolama aygıtlarına erişmek ve bunları değiştirmek için uygulama, araçlar ve kitaplıklar.
+paketci = yasarciv67
+grup    = sistem
+url     = http://www.freedesktop.org/wiki/Software/udisks
+
+[gerek]
+derleme = gobject-introspection libgudev libatasmart parted polkit acl libblockdev ntfs-3g gptfdisk dosfstools sg3_utils
+calisma = ntfs-3g btrfs-progs gptfdisk dosfstools
+
+[kaynak]
+bz2     = https://github.com/storaged-project/udisks/releases/download/udisks-$surum
+
+[sha512]
+1       = 70860e5ca9ac73d442ca67f0e0429ce2f33575d8f64945fbf06d1694b080c8b6fed8d65b2485eff0ab66eab59cdebeb9309424820a2ee82c5faaa38029e15e6c
+
+[derle]
+ekconf  = --disable-static --with-udevdir=/usr/lib/udev --enable-lvm2 --enable-btrfs --enable-bcache --enable-vdo --enable-lvmcache --enable-zram --enable-man=no
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Hata raporları ve regresyon testleri için donanım cihazlarını kaydedin
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/martinpitt/umockdev
+
+[gerek]
+derleme = gobject-introspection gtk-doc vala libgudev
+calisma = libgudev
+
+[kaynak]
+1      = $url/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= d1cadb0cfd90bcfde8e47f198bdc6890e706120a8a10434635cf70b6369213d5
+
+[derle]
+betik 	= ./autogen.sh --prefix=/usr --enable-gtk-doc --enable-introspection
+betik 	= make
+
+	
+	      
+[pakur]
+tip 	= gnu

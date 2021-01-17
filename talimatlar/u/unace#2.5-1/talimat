@@ -1,0 +1,20 @@
+[paket]
+tanim   = Tescilli ace arşiv formatı için bir çıkarma aracı
+paketci = Cihan_Alkan
+grup 	= mate
+url     = http://www.winace.com/
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+1      = http://ftp.debian.org/debian/pool/non-free/u/unace-nonfree/unace-nonfree_2.5.orig.tar.gz
+
+[sha256]
+
+[derle]
+betik     = make
+    	      
+[pakur]
+betik     = install -Dm755 unace "${pkgdir}"/usr/bin/

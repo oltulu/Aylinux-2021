@@ -1,0 +1,24 @@
+[paket]
+tanim   = Fare imlecini gizlemek için küçük bir program
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/Airblader/unclutter-xfixes
+
+[gerek]
+derleme = libx11 libxi libxfixes libev
+calisma =
+
+[kaynak]
+github  = Airblader/unclutter-xfixes
+
+[sha256]
+1       = 35c75ad24be989dd6708db1d9ce9b2a2f814b80638c0633cdb075c6df090ed11
+
+[derle]
+betik   = cd unclutter-xfixes-$surum;
+betik   = [ ! -f /usr/bin/a2x ] && ln -s /usr/bin/echo /usr/bin/a2x
+betik   = make
+
+[pakur]
+betik   = cd unclutter-xfixes-$surum
+betik   = install -Dm755 $isim $PKG/usr/bin/$isim

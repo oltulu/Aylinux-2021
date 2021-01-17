@@ -1,0 +1,18 @@
+[paket]
+tanim   = Qt5 için UDisks2 DBus arabirimleri bağlanması
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/udisks2-qt5
+
+[kaynak]
+1      = https://github.com/linuxdeepin/udisks2-qt5/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install

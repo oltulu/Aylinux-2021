@@ -1,0 +1,19 @@
+[paket]
+tanim   = Unarchiver .rar dosyaları için (ücretsiz sürüm)
+paketci = milisarge
+grup    = sistem
+url     = https://www.rarlab.com/rar_add.htm
+
+[kaynak]
+1          = https://www.rarlab.com/rar/unrarsrc-${surum}.tar.gz
+
+[sha256]
+1          = 0b7cb2307ef7e65f631496376ce2fdf98b9b0f2136dc4467408ef63f3bf92f96
+
+[derle]
+betik      = sed -e '/CXXFLAGS=/d' -e '/LDFLAGS=/d' -i unrar/makefile
+betik      = export LDFLAGS+=' -pthread'
+betik      = make -C unrar STRIP="true"
+
+[pakur]
+betik      = install -Dm755 unrar/unrar -t "$PKG"/usr/bin/

@@ -1,0 +1,31 @@
+[paket]
+tanim   = Uyap Belge Düzenleyici
+paketci = Cihan_Alkan
+grup 	= ofis
+url     = http://www.uyap.gov.tr
+
+[gerek]
+derleme = 
+calisma = jre
+
+[kaynak]
+1      = https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-v$surum.zip
+dosya      = product_logo_32.xpm
+#dosya      = uyap-editor.png
+
+[SKIP]
+
+
+[derle]
+betik 	= cd uyap_pardus_5_0_2_amd64
+betik 	= ar x uyapeditor_5.0.2_amd64.deb
+#betik 	= bsdtar -xf data.tar.xz -C "$PKG/"
+#betik 	= unzip /sources/uyapmac07-01-202114-50.zip
+#betik 	= innoextract $SRC/uyap/UKI_V4.2.0/UKI_V$surum.exe
+	      
+[pakur]
+betik = cd uyap_pardus_5_0_2_amd64
+betik = bsdtar -xf data.tar.xz -C "$PKG/"
+betik = rm $PKG/usr/share/applications/dokuman.desktop
+betik = rm $PKG/usr/share/applications/sablon.desktop
+dosya = pakur.sh

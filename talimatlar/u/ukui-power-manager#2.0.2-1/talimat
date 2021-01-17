@@ -1,0 +1,23 @@
+[paket]
+tanim   = UKUI masaüstü için güç yönetimi aracı
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-power-manager
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://github.com/ukui/ukui-power-manager/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+1 		= 12f5fea1e3d32f0a63be9f7445546346143621a9e75f2dd7ee9c209b7dd761b9a7492d80e152daf06194d4fafcedd8d612cb90c0bfce03d81abf679bf15423ce
+
+[derle]
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --sbindir=/usr/bin --sysconfdir=/etc
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install

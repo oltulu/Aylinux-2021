@@ -1,0 +1,18 @@
+[paket]
+tanim   = Dosya sistemleri, konsol mesajları yönetimi için sistem araçları
+paketci = milisarge
+grup 	= temel
+url     = http://freshmeat.net/projects/util-linux
+
+[kaynak]
+xz     	= http://www.kernel.org/pub/linux/utils/util-linux/v${surum:0:4}
+
+[sha256]
+#1 		= 631be8eac6cf6230ba478de211941d526808dba3cd436380793334496013ce97
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+tip     = gnu
+betik   = rm -rf $PKG/usr/share/bash-completion

@@ -1,0 +1,28 @@
+[paket]
+tanim   = UKUI medya araçları
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-media
+
+[gerek]
+derleme = qt5-tools qt5-multimedia
+calisma = gsettings-qt
+
+[kaynak]
+1      = https://github.com/ukui/ukui-media/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+1 		= 921e8cc0c8a05022ed5dbdc507affa975fe4a4191298c423a39ce9ed36a2aadfcc80396f28b826f5ea2f9b6c75ffd5b09a763fe43e6a952120233623c03a6ea1
+
+[derle]
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --sysconfdir=/etc
+betik 	= make
+betik 	= cd ukui-volume-control-applet-qt
+betik 	= qmake PREFIX=/usr/share/ukui-media
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install
+betik 	= cd ukui-volume-control-applet-qt
+betik 	= make INSTALL_ROOT="$PKG" install

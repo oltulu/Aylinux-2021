@@ -1,0 +1,24 @@
+[paket]
+tanim   = C ile yazılmış hafif Tox anlık mesajlaşma istemcisi
+paketci = milisarge
+grup    = ağ
+url     = http://utox.io/
+
+[gerek]
+derleme = check cmake dbus fontconfig libxrender openal filter_audio libsodium libvpx opus toxcore v4l-utils libxrender libxext gtk3
+calisma =
+
+[kaynak]
+1      = https://github.com/uTox/uTox/releases/download/v${surum}/uTox-${surum}-full.tar.gz
+
+[sha256]
+1      = 6a6d399827f31593f840274b08ed80039c99d5abf0bd6634faf22cc064930460
+
+[derle]
+betik  = cd uTox
+ekconf = -DENABLE_ASAN=OFF
+tip    = cmake
+
+[pakur]
+betik  = cd uTox
+tip    = cmake

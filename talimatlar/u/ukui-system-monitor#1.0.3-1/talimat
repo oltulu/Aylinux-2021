@@ -1,0 +1,24 @@
+[paket]
+tanim   = UKUI oturum ayarlarını işleyen Daemon
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/ukui-system-monitor
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+1      = https://github.com/ukui/ukui-system-monitor/archive/v$surum/$isim-$surum.tar.gz
+
+[sha512]
+#1 		= e136aca22e389218d97843ea839fec3fc83b3d3952b229c5dfd189a30d2c71e253a15022e9a20cfaad55ef7275cf0cf09977631112fd124667a8e73700e47db0
+
+[derle]
+betik 	= sed -i 's|libsystemd|gsettings-qt|' src/src.pro
+betik 	= sed -i 's|systemd/sd-login.h|unistd.h|' src/processdialog.cpp
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+        	      
+[pakur]
+betik 	= make INSTALL_ROOT="$PKG" install
