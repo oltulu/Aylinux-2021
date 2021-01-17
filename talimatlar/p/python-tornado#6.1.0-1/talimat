@@ -1,0 +1,25 @@
+[paket]
+tanim   = Ölçeklenebilir, bloksuz web sunucusu
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.tornadoweb.org
+
+[gerek]
+derleme = python
+calisma = 
+
+[kaynak]
+github  = tornadoweb/tornado
+
+[sha512]
+#1       = 8caaa64d14edcb3993dffea3175685d82afb0068a8e8834cbb6eb9e15883fe113bb57cd98d99c25362bef0a6ee2762f2baf24effd645ecd77f035583cc4de756
+
+[derle]
+betik   = cd tornado-$surum
+betik   = export TORNADO_EXTENSION=1
+tip     = py3
+
+[pakur]
+betik   = cd tornado-$surum
+tip     = py3
+

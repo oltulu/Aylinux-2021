@@ -1,0 +1,25 @@
+[paket]
+tanim   = Python için kartopu kök bulan kitaplık koleksiyonu
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://snowballstem.org
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1       = https://pypi.python.org/packages/source/s/snowballstemmer/snowballstemmer-$surum.tar.gz
+
+
+[sha256]
+#1 		= 70172e58b6bad7572a3518c26729b074acdde15e6fee6cbab6d3528ad552b786
+
+[derle]
+betik   = cd snowballstemmer-$surum
+betik   = python setup.py build
+
+	      
+[pakur]
+betik   = cd snowballstemmer-$surum
+betik   = python setup.py install --root="$PKG" --optimize=1

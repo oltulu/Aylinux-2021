@@ -1,0 +1,23 @@
+[paket]
+tanim   = PyQT5 için sip modül desteği
+paketci = milisarge
+grup    = kütüphane
+url     = https://riverbankcomputing.com/software/pyqt/intro
+arsiv   = PyQt5_sip-$surum
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+1       = https://pypi.python.org/packages/source/P/PyQt5-sip/PyQt5_sip-$surum.tar.gz
+
+[sha256]
+1       = 0a34b6596bdd28d52da3a51fa8d9bb0b287bcb605c2512aa3251b9028cc71f4d
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3
+

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Python belge oluşturucu
+paketci = Cihan_Alkan
+grup 	= mate
+url     = http://www.sphinx-doc.org/
+
+[gerek]
+derleme =  
+calisma =   python-docutils python-pygments python-appdirs python-packaging python-pyparsing python-ordered-set python-requests python-imagesize python-babel python-snowballstemmer python-jinja python-sphinxcontrib-qthelp python-sphinxcontrib-htmlhelp python-sphinxcontrib-devhelp python-sphinxcontrib-applehelp
+
+[kaynak]
+1     = https://pypi.org/packages/source/S/Sphinx/Sphinx-$surum.tar.gz
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = cd Sphinx-$surum
+betik     = make build
+
+    	      
+[pakur]
+betik     = cd Sphinx-$surum
+betik     = export PYTHONHASHSEED=0
+betik     = python setup.py install --root="$PKG" --optimize=1 --skip-build

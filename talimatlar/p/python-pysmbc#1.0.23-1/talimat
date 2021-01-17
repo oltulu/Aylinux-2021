@@ -1,0 +1,22 @@
+[paket]
+tanim   = Samba kütüphanesi için Python bağları
+paketci = milisarge
+grup 	= kütüphane
+url     = http://pypi.python.org/pypi/pysmbc
+arsiv   = pysmbc-$surum
+
+[gerek]
+derleme = python samba
+calisma = 
+
+[kaynak]
+1       = https://pypi.io/packages/source/p/pysmbc/pysmbc-${surum}.tar.bz2
+
+[sha256]
+1 		= 23483b555ff0483a6c3b4bd4047185d252198f972e3d6bc6ea7806e30a507684
+
+[derle]
+tip     = py3
+	      
+[pakur]
+tip     = py3

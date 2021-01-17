@@ -1,0 +1,20 @@
+[paket]
+tanim   = C ve C ++ kütüphaneleri için Python ciltleri oluşturmayı kolaylaştıran bir araç
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://www.riverbankcomputing.com/software/sip/intr
+
+[gerek]
+derleme = python python2
+calisma = python python2
+
+[kaynak]
+1       = https://www.riverbankcomputing.com/static/Downloads/sip/$surum/sip-$surum.tar.gz
+
+[sha256]
+1 		= 12bcd8f4d5feefc105bc075d12c5090ee783f7380728563c91b8b95d0ec45df3
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]

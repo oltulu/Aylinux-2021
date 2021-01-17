@@ -1,0 +1,22 @@
+[paket]
+tanim   = Libsmbclient için Python bağları
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/hamano/pysmbc
+arsiv   = "pysmbc-${surum}"
+
+[gerek]
+derleme = python samba
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/p/pysmbc/pysmbc-${surum}.tar.bz2
+
+[sha256]
+1       = 5da8aef1e3edaaffb1fbe2afe3772ba0a5f5bf666a28ae5db7b59ef96e465bdf
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

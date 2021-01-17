@@ -1,0 +1,22 @@
+[paket]
+tanim   = Python 3 için ASN.1 kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = https://github.com/etingof/pyasn1
+
+[gerek]
+derleme = python python-setuptools
+calisma = 
+
+[kaynak]
+1       = https://pypi.io/packages/source/p/pyasn1/pyasn1-$surum.tar.gz
+
+[sha512]
+1 		= 8bacd1245a732b005f3a937f486920a348a9bd7d9af7828eb41d69712769f93fd09799e9cea1ad563f4b45c793246b8aecb96855d9deb223a8f2fb631f89dd8e
+
+[derle]
+
+	      
+[pakur]
+betik 	= cd pyasn1-$surum 
+betik 	= python3 setup.py install --root "$PKG"

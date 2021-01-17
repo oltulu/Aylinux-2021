@@ -1,0 +1,26 @@
+[paket]
+tanim   = Python programlama dili Tk kütüphanesi
+paketci = milisarge
+grup 	= geliştirme
+url     = http://www.python.org
+
+[gerek]
+derleme = sqlite tk
+calisma = 
+
+[kaynak]
+1       = https://www.python.org/ftp/python/$surum/Python-$surum.tar.xz
+
+[sha256]
+1 		= da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
+
+[derle]
+betik 	= cd Python-$surum
+betik 	= CXX="/usr/bin/g++" ./configure --prefix=/usr --enable-shared --with-system-expat --with-system-ffi
+betik 	= make
+	      
+[pakur]
+betik 	= cd Python-$surum
+betik 	= mkdir -p $PKG/usr/lib/python3.7/lib-dynload
+betik 	= cp build/lib.linux-x86_64-3.7/_tkinter.cpython-37m-x86_64-linux-gnu.so $PKG/usr/lib/python3.7/lib-dynload/
+

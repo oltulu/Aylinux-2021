@@ -1,0 +1,25 @@
+[paket]
+tanim   = Python için sanal ortam kurucu
+paketci = milisarge
+grup 	= kütüphane
+url     = https://pypi.org/project/virtualenv
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+1       = https://files.pythonhosted.org/packages/45/cb/d381ee22c78dd8d34ded5e2d1f6856f93347c4c608a5b2fa9374393a1351/virtualenv-16.7.8.tar.gz
+
+[sha256]
+1 		= 116655188441670978117d0ebb6451eb6a7526f9ae0796cc0dee6bd7356909b0
+
+[derle]
+betik 	= cd virtualenv-${surum}
+betik 	= sed -i "s|#!/usr/bin/env python$|#!/usr/bin/env python2|" virtualenv.py
+tip     = py3
+	      
+[pakur]
+betik 	= cd virtualenv-${surum}
+tip     = py3
+betik   = ln "$PKG/usr/bin/virtualenv" "$PKG/usr/bin/virtualenv3"

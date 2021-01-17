@@ -1,0 +1,24 @@
+[paket]
+tanim   = Python hızlı ve sofistike dizi tesisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://pyyaml.org
+
+[gerek]
+derleme    = cython python libyaml
+calisma    =
+
+[kaynak]
+1          = https://pyyaml.org/download/pyyaml/PyYAML-${surum}.tar.gz
+
+[sha512]
+#1          = b5ee201c612486a95c87b7e41d474313160284359b8b30ababc80b51325aef9dd7dc27eb3b8a03a4749cb8c7e3789c5684d5c285fe35d4b20be1f189641531e0
+
+[derle]
+betik      = cd PyYAML-${surum}
+betik      = python3 setup.py --with-libyaml build
+
+[pakur]
+betik      = cd PyYAML-${surum}
+betik      = python setup.py  --with-libyaml install --prefix=/usr --root="${PKG}" -O1 --skip-build
+

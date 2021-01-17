@@ -1,0 +1,23 @@
+[paket]
+tanim   = QtHelp belgesini çıkaran Sphinx uzantısı
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://github.com/sphinx-doc/sphinxcontrib-qthelp
+arsiv   = sphinxcontrib-qthelp-$surum
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+1       =https://github.com/sphinx-doc/sphinxcontrib-qthelp/archive/$surum.tar.gz::sphinxcontrib-qthelp-$surum.tar.gz
+
+[sha256]
+#1       = 7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3
+

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Bir SVG yıkayıcı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/scour-project/scour
+
+[gerek]
+derleme = python python-six
+calisma =
+
+[kaynak]
+1       = ${url}/archive/v${surum}.tar.gz
+
+[sha256]
+1       = 4fcb961586d8a6d98ac9343ca5647421b98fdc79b51d81a1d3d18576b7908823
+
+[derle]
+betik	= cd scour-$surum
+tip     = py3
+
+[pakur]
+betik	= cd scour-$surum
+tip     = py3

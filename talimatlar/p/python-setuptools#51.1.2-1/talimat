@@ -1,0 +1,24 @@
+[paket]
+tanim   = Python paketlerini kolayca indirin, oluşturun, kurun, yükseltin ve kaldırın
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://pypi.org/project/setuptools/
+
+[gerek]
+derleme = python-six python-appdirs python-pyparsing
+calisma = python
+
+[kaynak]
+1       = https://github.com/pypa/setuptools/archive/v51.1.2.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1 		= f3d6b81de7eb947fa8f7a3ad46d59e560940bc2f86672e072793d7cfa24267fb374a3b5b93ded6e10fd8889805ca26dfb7821a5d83992520c8b47628ca4174bf
+
+[derle]
+cd $SRC
+export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
+dosya 	= derle.sh
+	      
+[pakur]
+betik 	= cd "$SRC"/setuptools-$surum
+betik 	= python3 setup.py install --prefix=/usr --root="$PKG" --optimize=1 --skip-build

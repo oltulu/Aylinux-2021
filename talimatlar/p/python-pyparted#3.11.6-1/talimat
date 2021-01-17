@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNU Parted için Python modülü
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/dcantrell/pyparted
+
+[gerek]
+derleme = python parted
+calisma =
+
+[kaynak]
+github  = dcantrell/pyparted
+
+[sha256]
+1       = d214288ae1a70b5925861ce01b3352378eb6b1419aa3b786f509e9ef2a501c02
+
+[derle]
+betik   = cd pyparted-${surum}
+tip     = py3
+
+[pakur]
+betik   = cd pyparted-${surum}
+tip     = py3

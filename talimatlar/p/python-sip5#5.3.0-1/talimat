@@ -1,0 +1,23 @@
+[paket]
+tanim   = C, C++ için Python bağları oluşturma uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.riverbankcomputing.com/software/sip/intro
+arsiv   = sip-$surum
+
+[gerek]
+derleme = python
+calisma = python-toml
+
+[kaynak]
+1       = https://pypi.python.org/packages/source/s/sip/sip-$surum.tar.gz
+
+[sha256]
+1       = 03a44e20b252ef03ca2891e9439d238af3fd8245f65cdcff238a843d4f455b80
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3
+

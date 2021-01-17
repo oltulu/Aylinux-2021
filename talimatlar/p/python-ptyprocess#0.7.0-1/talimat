@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sahte bir terminalde bir alt işlem çalıştırır
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/pexpect/ptyprocess
+arsiv   = ptyprocess-${surum}
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/p/ptyprocess/ptyprocess-${surum}.tar.gz
+
+[sha256]
+#1       = 923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0
+
+[derle]
+tip     = py3
+
+[pakur]
+tip		= py3

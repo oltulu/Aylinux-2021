@@ -1,0 +1,25 @@
+[paket]
+tanim   = Python ile yazılmış C çözümleyici ve AST üreteci
+paketci = oltulu
+grup 	= kütüphane
+url     = https://github.com/eliben/pycparser
+
+[gerek]
+derleme = python python-setuptools python-ply
+calisma = 
+
+[kaynak]
+1       = https://github.com/eliben/pycparser/archive/release_v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+1 		= 88fe63c1a7a344c564dfd3b4f99735a4159c8a3f5738bab839943ea7fcbf1f5340f67326550b7e66508ea5862897e5bcdf363c2a8d47eccb50890573a2640a98
+
+[derle]
+betik 	= cd "$SRC"/pycparser-release_v$surum
+betik 	= python3 setup.py build
+betik 	= cd pycparser
+betik 	= python3 _build_tables.py
+	      
+[pakur]
+betik 	= cd "$SRC"/pycparser-release_v$surum
+betik 	= python3 setup.py install --root "$PKG" --optimize=1

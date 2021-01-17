@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python Xapp Kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/linuxmint/python-xapp
+
+[gerek]
+derleme = python
+calisma = 
+
+[kaynak]
+1       = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1 		= 4418f3fc38ff8bf6993de1b7b9358bce16bef61832814147ae89f2bfc530244308bf270df98c10e451e97f017f766cb9106e143c608fbd8a7350ef5423cefc98
+
+[derle]
+betik = cd python3-xapp-$surum
+betik 	= python setup.py build
+	      
+[pakur]
+betik = cd python3-xapp-$surum
+betik 	= python setup.py install --root="$PKG" --optimize=1 --skip-build

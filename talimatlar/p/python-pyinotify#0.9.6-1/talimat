@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python modülü inotify ile Linux platformlarında dosya sistemleri olaylarını izlemek için kullanılır.
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://github.com/seb-m/pyinotify
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = https://github.com/seb-m/pyinotify/archive/${surum}.tar.gz
+
+[md5]
+1 		= 33f4e599c22a3ac31b684335b4a535a0
+
+[derle]
+betik	= cd $SRC/pyinotify-$surum
+betik 	= python setup.py build
+    
+[pakur]
+betik	= cd $SRC/pyinotify-$surum
+betik 	= python setup.py install --root=${PKG} -O1

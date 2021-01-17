@@ -1,0 +1,24 @@
+[paket]
+tanim   = Pytho için düşük seviyeli CSS ayrıştırıcı
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://pypi.io/packages/source/t/tinycss2
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = https://pypi.io/packages/source/t/tinycss2/tinycss2-$surum.tar.gz
+
+[md5]
+#1 		= 33f4e599c22a3ac31b684335b4a535a0
+
+[derle]
+betik	= cd tinycss2-$surum
+betik	= sed -i 's/--flake8//' pyproject.toml
+betik	= python setup.py build
+    
+[pakur]
+betik	= cd tinycss2-$surum
+betik 	= python setup.py install --root="$PKG" --optimize=1

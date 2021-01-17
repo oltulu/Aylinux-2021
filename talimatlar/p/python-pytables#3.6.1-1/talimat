@@ -1,0 +1,23 @@
+[paket]
+tanim   = Hiyerarşik veri kümelerinin yönetim kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.pytables.org
+
+[gerek]
+derleme = cython blosc lzo hdf5 
+calisma = python-numexpr
+
+[kaynak]
+1       = https://github.com/PyTables/PyTables/archive/v${surum}/${isim}-${surum}.tar.gz
+
+[sha256]
+#1 		= 2dcd077f42b195f48aa00f5a720b79189ea92fba0d16ad35e2881e403ba6914e
+
+[derle]
+betik 	= cd PyTables-${surum}
+betik	= python setup.py build --blosc=/usr --lzo=/usr --hdf5=/usr --bzip2=/usr 
+	      
+[pakur]
+betik 	= cd PyTables-${surum}
+tip     = py3

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Python için genel ayrıştırma modülü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/pyparsing/pyparsing/
+
+[gerek]
+derleme = python python-setuptools
+calisma = 
+
+[kaynak]
+1       = https://github.com/pyparsing/pyparsing/archive/pyparsing_$surum.tar.gz
+
+[sha512]
+#1 		= 2888b60c2518b19979e00b01ea499c45cd0a98affe0551f80ea7985acd649d62b4e231e142d3efd65cdcd9e3a0182680bfe1c4d98e310fa2ac476f37ac4ff344
+
+[derle]
+betik 	= cd "$SRC"/pyparsing-pyparsing_$surum
+betik 	= python3 setup.py build
+	      
+[pakur]
+betik 	= cd "$SRC"/pyparsing-pyparsing_$surum
+  
+betik 	= python3 setup.py install --prefix=/usr --root="$PKG" --optimize=1
