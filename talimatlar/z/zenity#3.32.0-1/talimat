@@ -1,0 +1,21 @@
+[paket]
+tanim   = Komut satırından GNOME iletişim kutularını görüntüleme
+paketci = yasarciv67
+grup    = sistem
+url     = https://help.gnome.org/users/zenity
+
+[gerek]
+derleme = itstool perl gtk3 glib libnotify webkit2gtk
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = e786e733569c97372c3ef1776e71be7e7599ebe87e11e8ad67dcc2e63a82cd95
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

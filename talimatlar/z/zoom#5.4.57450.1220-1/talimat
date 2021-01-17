@@ -1,0 +1,25 @@
+[paket]
+tanim   = Online Konferans 
+paketci = Cihan_Alkan
+grup 	= ofis
+url     = https://zoom.us/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://zoom.us/client/${surum}/zoom_x86_64.pkg.tar.xz
+2     = https://notabug.org/oltulu/Ceviri/raw/master/zoom-tr.qm
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -i 's/Zoom\.png/Zoom/g' "${SRC}/usr/share/applications/Zoom.desktop"	
+betik = sed -i 's/StartupWMClass=Zoom/StartupWMClass=zoom/g' "${SRC}/usr/share/applications/Zoom.desktop"
+    	      
+[pakur]
+betik 	= cp -dpr --no-preserve=ownership opt usr "${PKG}"
+betik 	= rm ${PKG}/opt/zoom/translations/fr.qm
+betik 	= cp /sources/zoom-tr.qm ${PKG}/opt/zoom/translations/fr.qm

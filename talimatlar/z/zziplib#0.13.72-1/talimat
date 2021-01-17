@@ -1,0 +1,22 @@
+[paket]
+tanim   = Zip dosyalarından veri almak için hafif kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/gdraheim/zziplib
+
+[gerek]
+derleme    = zip python2
+calisma    =
+
+[kaynak]
+1          = https://github.com/gdraheim/zziplib/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 846246d7cdeee405d8d21e2922c6e97f55f24ecbe3b6dcf5778073a88f120544
+
+[derle]
+betik      = export PYTHON=/usr/bin/python2
+tip        = gnu
+
+[pakur]
+tip        = gnu

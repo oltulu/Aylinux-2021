@@ -1,0 +1,19 @@
+[paket]
+tanim   = Zstandard, hızlı gerçek zamanlı sıkıştırma algoritması ve aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://www.zstd.net
+
+[kaynak]
+1       = https://github.com/facebook/zstd/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+#1 		= 7a6e1dad34054b35e2e847eb3289be8820a5d378228802239852f913c6dcf6a7
+
+[derle]
+betik	= make;make zstdmt;make -C contrib/pzstd
+	      
+[pakur]
+betik	= make PREFIX=/usr DESTDIR="$PKG/" install
+betik	= install -Dm755 zstdmt "$PKG/usr/bin/zstdmt"
+betik	= install -Dm755 contrib/pzstd/pzstd "$PKG/usr/bin/pzstd"

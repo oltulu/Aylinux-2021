@@ -1,0 +1,34 @@
+[paket]
+tanim   = Güvenilir dağıtık koordinator uygulaması
+paketci = milisarge
+grup    = büyükveri
+url     = http://zookeeper.apache.org
+
+[gerek]
+derleme    = maven
+calisma    = openjdk8
+
+[kaynak]
+1          = https://archive.apache.org/dist/$isim/$isim-$surum/apache-$isim-$surum-bin.tar.gz
+dosya      = $isim-profile.sh
+dosya      = zoo.cfg
+
+[sha256]
+1          = db24700e453f2ad4b6b789d553fe828ccceef3977a7e6b36389580ec92397a7e
+2          = 3ce63f5bc1cb87462072422b377a7678feb920284d9edae6c352b2492b91f92b
+
+[derle]
+betik      = cd apache-$isim-$surum-bin
+betik      = echo "derleme yok"
+;betik      = export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+;betik      = make-ca -g
+;betik      = source /etc/profile.d/openjdk.sh
+;betik      = mvn -e clean package -DskipTests -Dtar -Dmaven.javadoc.skip=true -Dmaven.repo.local=/opt/m2/repository
+
+[pakur]
+betik      = cd apache-$isim-$surum-bin
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = cp -r bin conf lib $PKG/usr/mdp/$isim/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/zookeeper.sh
+betik      = cp -f $SRC/zoo.cfg $PKG//usr/mdp/zookeeper/conf/

@@ -1,0 +1,27 @@
+[paket]
+tanim   = Ses sentezleyici yazılımı
+paketci = milisarge
+grup    = medya
+url     = http://zynaddsubfx.sourceforge.net/
+
+[gerek]
+derleme = cmake fltk pkg-config fltk fftw liblo libxpm mxml jack portaudio
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/${isim}/${isim}/${surum}
+
+[sha256]
+1       = 7447322268114a1e0ac5f281ac37a09a78e761a7be61999caf79100049789f63
+
+[derle]
+ekconf  = -DDefaultOutput=jack -DDefaultInput=jack -DGuiModule=fltk
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik   = install -vd "${PKG}/usr/share/${isim}"
+betik   = cp -va ../instruments/banks "${PKG}/usr/share/${isim}"
+betik   = cp -va ../instruments/examples "${PKG}/usr/share/${isim}"
+betik   = install -vDm 644 "../${isim}.ico" "${PKG}/usr/share/pixmaps/${isim}.ico"
+betik   = install -vDm 644 "../${isim}.svg" "${PKG}/usr/share/icons/hicolor/scalable/apps/${isim}.svg"

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Zig sistem proglama dili
+paketci = milisarge  
+grup    = geliştirme  
+url     = https://ziglang.org
+
+[gerek]
+derleme  = cmake llvm clang lld 
+calisma  =  
+
+[kaynak]
+xz     = $url/download/$surum
+
+[sha256]
+1      = 5d167dc19354282dd35dd17b38e99e1763713b9be8a4ba9e9e69284e059e7204
+
+[derle]
+betik  = mkdir -p build ;cd build
+betik  = cmake -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DZIG_PREFER_CLANG_CPP_DYLIB=ON ..
+betik  = make
+
+[pakur]
+betik  = make -C build DESTDIR="$PKG" install

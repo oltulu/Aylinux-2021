@@ -1,0 +1,22 @@
+[paket]
+tanim   = Soketler üzerine kurulu hızlı mesajlaşma sistemi - ZMQ
+paketci = milisarge
+grup    = ağ
+url     = http://www.zeromq.org
+
+[gerek]
+derleme = libsodium
+calisma =
+
+[kaynak]
+gz      = https://github.com/zeromq/libzmq/releases/download/v${surum}
+
+[sha256]
+1       = ebd7b5c830d6428956b67a0454a7f8cbed1de74b3b01e5c33c5378e22740f763
+
+[derle]
+ekconf  = --with-libsodium
+tip     = gnu
+
+[pakur]
+tip     = gnu
