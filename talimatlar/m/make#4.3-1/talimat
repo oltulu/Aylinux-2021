@@ -1,0 +1,20 @@
+[paket]
+tanim   = Paketleri derleme uygulaması
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/make
+
+[kaynak]
+1    = https://ftp.gnu.org/gnu/${isim}/${isim}-${surum}.tar.lz
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+betik   = ./configure --prefix=/tools;make
+betik   = sed -i '211,217 d; 219,229 d; 232 d' glob/glob.c
+betik   = ./configure --prefix=/tools --without-guile
+betik   = make ; make -k check || true
+	      
+[pakur]
+tip     = gnu

@@ -1,0 +1,20 @@
+[paket]
+tanim   = Man dosyaları yönetim uygulaması
+paketci = milisarge
+grup 	= temel
+url     = http://savannah.nongnu.org/projects/man-db
+
+[kaynak]
+xz      = http://savannah.nongnu.org/download/man-db
+dosya   = convert-mans
+
+[sha256]
+1 		= b64d52747534f1fe873b2876eb7f01319985309d5d7da319d2bc52ba1e73f6c1
+2 		= affab3adc4b83d011ed83060d8ac579211c932e6c0900b92e12779c092ad5df3
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = gnu
+betik   = install -D -m755 ${SRC}/convert-mans  ${PKG}/usr/bin/convert-mans
