@@ -1,0 +1,26 @@
+[paket]
+tanim   = X Pencere Sistemi minimal Pencere Yöneticisi- Joe WM
+paketci = milisarge
+grup 	= sistem
+url     = http://joewing.net/projects/jwm
+
+[gerek]
+derleme = libx11 libxft libjpeg-turbo libxpm libxinerama libpng cairo librsvg
+calisma = 
+
+[kaynak]
+xz      = http://joewing.net/projects/jwm/releases
+dosya   = jwm.desktop
+
+[sha256]
+1 		= 745d2f5df3a4ce9ecc8e75445edb3fbe31dd46c0c26d129cc14de7ad8b665326
+
+[derle]
+betik   = sed -i 's|/usr/local/share/|/usr/share/|' contrib/Makefile po/Makefile* example.jwmrc
+betik   = export CFLAGS="$CFLAGS $(pkg-config --cflags freetype2)"
+ekconf  = --disable-fribidi 
+tip     = gnu
+	      
+[pakur]
+betik   = make BINDIR="$PKG/usr/bin" MANDIR="$PKG/usr/share/man" DESTDIR="$PKG" SYSCONF="$PKG/etc" install
+betik   = install -Dm644 "$SRC/jwm.desktop" "$PKG/usr/share/xsessions/jwm.desktop"

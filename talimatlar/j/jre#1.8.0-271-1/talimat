@@ -1,0 +1,22 @@
+[paket]
+tanim   = Java Çalışma Zamanı Ortamı
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.oracle.com/technetwork/java/javase/overview/index.html
+
+[gerek]
+derleme = 
+calisma = libx11
+
+[kaynak]
+1      = https://javadl.oracle.com/webapps/download/AutoDL?BundleId=243727_61ae65e088624f5aaa0b1d2d801acb16::jre-8u271-linux-x64.tar.gz
+dosya = splash.gif
+[sha256]
+#1 		= 28a00b9400b6913563553e09e8024c286b506d8523334c93ddec6c9ec7e9d346
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+betik 	= rm $PKG/usr/lib/jre/lib/deploy/splash.gif
+betik 	= cp $SRC/splash.gif $PKG/usr/lib/jre/lib/deploy/

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Openbox ve tint2 ile kullanılmak üzere tasarlanmış küçük X11 menüsü
+paketci = milisarge
+grup    = sistem
+url     = https://www.github.com/johanmalm/jgmenu
+
+[gerek]
+derleme = librsvg libxrandr libxml2 pango desktop-file-utils cairo glib
+calisma = python
+
+[kaynak]
+github  = johanmalm/jgmenu
+
+[sha256]
+1       = 8ce3250b6a726f068126a0b75e02a6caafcf651b8c6ef59b328ff70a81473fc5
+
+[derle]
+ekconf  = --with-pmenu
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,30 @@
+[paket]
+tanim   = SMP destekli yeni nesil JACK
+paketci = milisarge
+grup    = medya
+url     = http://www.jackaudio.org
+
+[gerek]
+derleme = python2 opus libsamplerate dbus celt
+calisma =  
+
+[kaynak]
+1       = https://github.com/jackaudio/jack2/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+dosya   = 40-hpet-permissions.rules
+dosya   = jack-limitsd.conf
+
+[sha256]
+1       = deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
+
+[derle]
+betik   = cd jack2-$surum
+betik   = python2 waf configure --prefix=/usr --alsa --classic --dbus
+betik   = python2 waf build ${MAKEJOBS}
+
+[pakur]
+betik   = cd jack2-$surum
+betik   = python2 waf install --destdir=$PKG
+# pam_limits(8) support
+betik   = install -Dm644 $SRC/jack-limitsd.conf $PKG/etc/security/limits.d/jack.conf
+; gerçek zaman için audio grup izinlerinin ayarlanması
+betik   = install -Dm644 $SRC/40-hpet-permissions.rules $PKG/usr/lib/udev/rules.d/40-hpet-permissions.rules

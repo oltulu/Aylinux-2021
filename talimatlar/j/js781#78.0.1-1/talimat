@@ -1,0 +1,27 @@
+[paket]
+tanim   = GNOME Bluetooth Alt Sistemi
+paketci = Cihan_Alkan 
+grup    = gnome  
+url     = https://wiki.gnome.org/Projects/GnomeBluetooth
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+1 = https://download.gnome.org/teams/releng/tarballs-needing-help/mozjs/mozjs-78.0.1gnome.tar.xz
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+betik   = cd mozjs-78.0.1gnome
+betik   = mkdir mozjs-build
+betik   = cd mozjs-build
+betik   = export SHELL=/bin/sh
+betik   = ../js/src/configure --prefix=/usr --with-intl-api --with-system-zlib --with-system-nspr --with-system-icu --disable-jemalloc --enable-readline
+betik   = make
+
+[pakur]
+betik   = cd mozjs-78.0.1gnome/mozjs-build
+betik   = make DESTDIR=$PKG install

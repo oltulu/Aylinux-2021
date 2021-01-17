@@ -1,0 +1,23 @@
+[paket]
+tanim   = MTP cihazlarına erişim için FUSE tabanlı dosya sistemi
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/JasonFerrara/jmtpfs
+
+[gerek]
+derleme = libmtp fuse2
+calisma =
+
+[kaynak]
+github  = JasonFerrara/${isim}
+
+[sha256]
+1       = c0cacc4751c586a3b2b0fcd9c98dae4810a5d44f3eb9d2870868a15eeb696883
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = ln -s jmtpfs "$PKG"/usr/bin/mount.jmtpfs
+betik   = ln -s jmtpfs "$PKG"/usr/bin/mount.fuse.jmtpfs

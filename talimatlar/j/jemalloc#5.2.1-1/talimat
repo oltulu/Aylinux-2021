@@ -1,0 +1,19 @@
+[paket]
+tanim   = Genel amaçlı ölçeklenebilir eşzamanlı malloc uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = http://jemalloc.net/
+
+[kaynak]
+1          = https://github.com/jemalloc/jemalloc/releases/download/${surum}/jemalloc-${surum}.tar.bz2
+
+[sha256]
+1          = 34330e5ce276099e2e8950d9335db5a875689a4c6a56751ef3b1d8c537f887f6
+
+[derle]
+betik       = ./configure --enable-autogen --prefix=/usr && make
+
+[pakur]
+tip        = gnu
+betik      = chmod 644 $PKG/usr/lib/libjemalloc_pic.a
+betik      = rm -f $PKG/usr/lib/libjemalloc.a

@@ -1,0 +1,23 @@
+[paket]
+tanim   = JVM kodları için test birimi
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://junit.org/
+
+[gerek]
+derleme  =  openjdk8
+calisma  =  
+
+[kaynak]
+1  =  https://search.maven.org/remotecontent?filepath=junit/junit/4.12/junit-4.12.jar
+
+[sha512]
+1  =  5974670c3d178a12da5929ba5dd9b4f5ff461bdc1b92618c2c36d53e88650df7adbf3c1684017bb082b477cb8f40f15dcf7526f06f06183f93118ba9ebeaccce
+
+[derle]
+betik  = echo "derleme yok"
+
+[pakur]
+betik  =  install -D -m 644 ${SRC}/${isim}-${surum}.jar ${PKG}/usr/share/java/${isim}-${surum}.jar
+betik  =  ln -s ${isim}-${surum}.jar ${PKG}/usr/share/java/${isim}.jar
+

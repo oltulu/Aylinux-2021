@@ -1,0 +1,31 @@
+[paket]
+tanim   = JavaScript tercümanı ve kütüphaneleri
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = 
+
+[gerek]
+derleme = autoconf213 rust llvm nspr python mercurial
+calisma = 
+
+[kaynak]
+1 = https://archive.mozilla.org/pub/firefox/releases/${surum}esr/source/firefox-${surum}esr.source.tar.xz
+
+[sha1]
+
+[derle]
+betik = export AR=llvm-ar
+betik = export NM=llvm-nm
+betik = export RANLIB=llvm-ranlib
+betik = cd firefox-$surum
+betik = mkdir obj
+betik = cd obj
+betik = sh ../js/src/configure --prefix=/usr --disable-debug --disable-debug-symbols --disable-jemalloc --disable-strip --enable-hardening --enable-lto --enable-optimize --enable-readline --enable-release --enable-shared-js --enable-tests --with-intl-api --with-system-zlib --without-system-icu --enable-linker=lld # https://github.com/rust-lang/rust/issues/74657
+betik = make -j16
+    	      
+[pakur]
+betik = cd firefox-$surum/obj
+betik = make DESTDIR="$PKG" install
+betik = rm $PKG/usr/lib/*.ajs
+betik = find "$PKG"/usr/{lib/pkgconfig,include} -type f -exec chmod -c a-x {} +
+

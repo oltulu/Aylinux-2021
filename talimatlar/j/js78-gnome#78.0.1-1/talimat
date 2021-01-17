@@ -1,0 +1,23 @@
+[paket]
+tanim   = JavaScript tercümanı ve kütüphaneleri
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
+
+[gerek]
+derleme = autoconf213 icu libffi nspr python2 mercurial
+calisma = 
+
+[kaynak]
+1      = https://ftp.acc.umu.se/pub/GNOME/teams/releng/tarballs-needing-help/mozjs/mozjs-78.0.1gnome.tar.xz
+
+
+[sha1]
+1 		= 
+
+[derle]
+dosya     = derle.sh
+	      
+[pakur]
+betik = cd mozjs-78.0.1gnome/mozjs-build
+tip     = gnu

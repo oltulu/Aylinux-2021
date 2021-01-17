@@ -1,0 +1,29 @@
+[paket]
+tanim   = JavaScript tercümanı ve kütüphaneleri
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
+
+[gerek]
+derleme = autoconf213 rust llvm nspr python icu
+calisma = icu
+
+[kaynak]
+
+1 = https://archive.mozilla.org/pub/firefox/releases/${surum}esr/source/firefox-${surum}esr.source.tar.xz
+
+[sha1]
+
+[derle]
+betik = mkdir obj
+betik = cd obj
+betik = export SHELL=/bin/bash
+betik = CC=gcc CXX=g++ # LLVM_OBJDUMP=/bin/false
+betik =  sh ../firefox-${surum}/js/src/configure --prefix=/usr  --disable-debug  --disable-debug-symbols --disable-optimize  --disable-strip --with-system-nspr --with-system-zlib  --with-intl-api  --with-system-icu  --enable-readline --enable-shared-js --disable-jemalloc  --enable-tests
+betik = make
+    	      
+[pakur]
+betik = cd obj
+betik = make DESTDIR="$PKG" install
+betik = rm $PKG/usr/lib/*.ajs
+betik =  find "$PKG"/usr/{lib/pkgconfig,include} -type f -exec chmod -c a-x {} +
