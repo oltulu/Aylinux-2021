@@ -1,0 +1,23 @@
+[paket]
+tanim  = Xfce4 masaüstü için arka plan
+url    = https://goodies.xfce.org/projects/artwork/xfce4-artwork
+paketci= Cihan_Alkan
+grup   = xfce4
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1   = http://ftp.debian.org/debian/pool/main/x/$isim/${isim}_0.1.1a~git+20110420.orig.tar.gz
+
+[sha256]
+1 		= 7a97c0acd0ed67ebb871866cc79c2925bea45bf1b92442bd88fac390dbe639ac
+
+[derle]
+betik = cd "$SRC/$isim-0.1.1a"
+tip = gnu
+
+[pakur]
+betik = cd "$SRC/$isim-0.1.1a"
+betik = make backdropsdir="$PKG/usr/share/backgrounds/xfce" install

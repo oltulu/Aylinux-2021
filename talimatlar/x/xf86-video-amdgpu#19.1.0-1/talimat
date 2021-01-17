@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için amdgpu video sürücüsü
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-server mesa
+calisma =
+
+[kaynak]
+bz2     = https://www.x.org/releases/individual/driver
+
+[sha512]
+1 		= ccdaa2378492da1a2f3d18fedacd1318c4708da534a8a959276a82730d5420619d83ad1ec8d7835c55655fe56123cd9bffb44e6223c5a97033c01f598af4a173
+
+[derle]
+dosya   = export
+ekconf  = --enable-glamor
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

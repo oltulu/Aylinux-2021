@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce için güç yöneticisi
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = xfce4-panel libxfce4ui upower libnotify
+calisma  =  
+
+[kaynak]
+bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+
+[sha256]
+1   = 10adb67899b181ca5fc577fc9bb7a698fb94e42073585f7e2be642c7db127a74
+
+[derle]
+ekconf = --disable-network-manager --enable-polkit --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

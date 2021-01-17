@@ -1,0 +1,24 @@
+[paket]
+tanim   = Xfce görev yöneticisi
+paketci = milisarge  
+grup    = sistem  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = libwnck libxmu 
+calisma  =  
+
+[kaynak]
+bz2  = ${XFCE4_SITE}/apps/$isim/${surum%.*}
+
+[sha256]
+1  =  e49a61c819a4fd9286a65ae61605984f327c8b26cf939289f644e656bfa20e13
+
+
+[derle]
+ekconf = --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

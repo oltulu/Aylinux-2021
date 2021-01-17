@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce4 masaüstü panel uygulaması
+paketci = milisarge  
+grup    = sistem 
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = intltool gobject-introspection vala exo garcon libxfce4ui xfconf libwnck
+calisma  = desktop-file-utils 
+    
+[kaynak]
+bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+
+[sha256]
+1   = d5f8f3bd7e142139987e5e62cda26135a424baabb5e47aa0c23b4169d0a66ef4
+
+[derle]
+ekconf = --enable-gio-unix --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

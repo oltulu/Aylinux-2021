@@ -1,0 +1,22 @@
+[paket]
+tanim  = Xfce pencere yöneticisi için ek temalar kümesi
+url    = https://www.xfce.org/
+paketci= Cihan_Alkan
+grup   = xfce4
+
+[gerek]
+derleme = intltool
+calisma = libxfce4ui libwnck libdrm hicolor-icon-theme
+
+[kaynak]
+bz2   = https://archive.xfce.org/src/art/$isim/${surum%.*}
+
+[sha256]
+1 		= 3214d5f00e9703b5e8c9e7c3287d606dedec7285ceb4d5db332e93ada66fd575
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var
+betik = make
+
+[pakur]
+tip = gnu

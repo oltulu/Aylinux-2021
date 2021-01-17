@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için WaveLAN eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-wavelan-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = f41f81ea063ae3c7d7904e1ee647a6b5efafc7436f47caed662ee417038eed17
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

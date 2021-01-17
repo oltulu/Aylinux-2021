@@ -1,0 +1,23 @@
+[paket]
+tanim   = Gerçek X ekranları için VNC sunucusu
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://github.com/LibVNC
+
+[gerek]
+derleme = libvncserver
+calisma = libjpeg-turbo xorg-libxdamage xorg-libxinerama xorg-libxrandr xorg-libxtst
+
+[kaynak]
+1      = https://github.com/LibVNC/x11vnc/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 885e5b5f5f25eec6f9e4a1e8be3d0ac71a686331ee1cfb442dba391111bd32bd
+
+[derle]
+betik = autoreconf -fi
+tip = gnu
+	      
+[pakur]
+betik = make DESTDIR="${PKG}" install
+betik = install misc/{rx11vnc,Xdummy} "${PKG}"/usr/bin

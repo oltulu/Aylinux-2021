@@ -1,0 +1,22 @@
+[paket]
+tanim   = X.org framebuffer video sürücüsü
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-server
+calisma =
+
+[kaynak]
+bz2     = https://www.x.org/releases/individual/driver
+
+[sha256]
+1 		= dcc3d85f378022180e437a9ec00a59b6cb7680ff79c40394d695060af2374699
+
+[derle]
+dosya   = export
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

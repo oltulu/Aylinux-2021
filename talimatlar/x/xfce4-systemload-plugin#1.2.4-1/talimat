@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için bir sistem yükü eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://goodies.xfce.org/projects/panel-plugins/xfce4-systemload-plugin
+
+[gerek]
+derleme    = xfce4-panel
+calisma    =
+
+[kaynak]
+bz2         = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1          = 052407c575203da4de2db6f4a5e997220d95ec655d393dc3875a0d5a20520775
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

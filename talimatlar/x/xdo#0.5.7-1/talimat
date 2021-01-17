@@ -1,0 +1,21 @@
+[paket]
+tanim   = Pencerelerde temel eylemleri gerçekleştirmek için küçük X yardımcı programı
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/baskerville/xdo
+
+[gerek]
+derleme = libxcb xcb-util xcb-util-wm
+calisma =
+
+[kaynak]
+1       = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = b661229f0457939d3867cca1664c5671ae959b309feb58abe9142229c8c7ffb4
+
+[derle]
+betik   = make PREFIX=/usr
+
+[pakur]
+betik   = make PREFIX=/usr DESTDIR="$PKG" install

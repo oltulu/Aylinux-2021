@@ -1,0 +1,25 @@
+[paket]
+tanim   = DICOM dosyası görüntüleme uygulaması
+paketci = milisarge
+grup    = ofis
+url     = https://mls.akdeniz.edu.tr
+
+[gerek]
+derleme = gtk2
+calisma =
+
+[kaynak]
+bz2     = http://downloads.sourceforge.net/project/$isim/XMedCon-Source/$surum
+
+[sha256]
+1       = 75a1623714745efe03a8abd654f0715d56c5497f9b494f3e1e74cb52274f64d8
+
+[derle]
+betik   = sed -i 's+/usr/etc+/etc+' Makefile.am
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm644 "$PKG"/usr/etc/xmedconrc "$PKG"/etc/xmedconrc
+betik   = rm "$PKG"/usr/etc/xmedconrc
+betik   = rmdir "$PKG"/usr/etc

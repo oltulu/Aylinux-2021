@@ -1,0 +1,19 @@
+[paket]
+tanim = Elementary simge teması
+paketci = yasarciv67
+grup = tasarım
+url = https://github.com/shimmerproject/elementary-xfce
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1 = https://github.com/shimmerproject/elementary-xfce/archive/v$surum.tar.gz
+
+[derle]
+betik = echo "derleme yok"
+
+[pakur]
+betik =	install -d -m 0755 $PKG/usr/share/icons
+betik =	mv elementary-xfce-$surum/elementary-xfce{,-dark,-darker} $PKG/usr/share/icons

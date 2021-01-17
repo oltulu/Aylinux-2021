@@ -1,0 +1,22 @@
+[paket]
+tanim   = XCB araç kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 xcb-util
+calisma = 
+
+[kaynak]
+1       = https://github.com/Airblader/xcb-util-xrm/releases/download/v${surum}/xcb-util-xrm-${surum}.tar.gz
+
+[sha256]
+1 	    = 0129f74c327ae65e2f4ad4002f300b4f02c9aff78c00997f1f1c5a430f922f34
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

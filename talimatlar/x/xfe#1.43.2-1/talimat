@@ -1,0 +1,25 @@
+[paket]
+tanim 	= X için dosya yöneticisi
+paketci	= milisarge
+grup 	= sistem
+url 	= http://roland65.free.fr/xfe
+
+[gerek]
+derleme = libxft freetype xcb-util fox
+calisma = 
+
+[kaynak]
+gz   	= https://downloads.sourceforge.net/sourceforge/$isim
+2		= https://notabug.org/milislinux/ceviriler/raw/master/xfe/xfe_tr.po
+
+[sha256]
+1 		= fa5f38fcac64b91eb5d615620a9607b7e6f8675c4f19f30473798b2acb0c85ba
+2		= ff9f9f5bb42f72aba427dc741e949d196e7873412ad78d6e69601c60379c3cb4
+
+[derle]
+betik   = ./autogen.sh
+betik	= mv ../xfe_tr.po po/tr.po
+tip     = gnu
+
+[pakur]
+tip     = gnu

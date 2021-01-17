@@ -1,0 +1,22 @@
+[paket]
+tanim   = XFCE donanım sensörleri eklentisi
+paketci = yasarciv67
+grup    = sistem
+url     = https://docs.xfce.org/panel-plugins/xfce4-sensors-plugin
+
+[gerek]
+derleme = intltool lm_sensors xfce4-panel libnotify desktop-file-utils
+calisma = hddtemp
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = 3dc6643d2c064b7718badff44b948f8d410f00f13db197820b26ae38045f5112
+
+[derle]
+ekconf  = --datarootdir=/usr/share --disable-pathchecks
+tip     = gnu
+
+[pakur]
+tip     = gnu

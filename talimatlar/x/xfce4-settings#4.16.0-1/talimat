@@ -1,0 +1,26 @@
+[paket]
+tanim   = Xfce için ayar yönetici uygulaması
+paketci = milisarge 
+grup    = sistem 
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = exo garcon libxfce4ui xfconf libnotify libxklavier xf86-input-libinput libxcursor
+calisma  = xf86-input-libinput adwaita-icon-theme
+
+[kaynak]
+bz2   = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+dosya = xfce4-settings-default-xsettings-xml.patch
+
+[sha256]
+1  = cab1a4d5351f9871533700523570f86f92bbe6e4055f44e5df950eb4b4f48bb3
+2  = 8e9a6c70ab0ceb5d91b637dc290768f8a47edb5d7b6e2eebc4459dbc4ee040d7
+
+[derle]
+yama   = xfce4-settings-default-xsettings-xml.patch
+ekconf = --enable-xrandr --enable-xcursor --enable-libnotify --enable-libxklavier --enable-pluggable-dialogs --enable-sound-settings --disable-upower-glib --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

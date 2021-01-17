@@ -1,0 +1,22 @@
+[paket]
+tanim   = X için ati video sürücüsü
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-server mesa
+calisma =
+
+[kaynak]
+bz2     = https://www.x.org/releases/individual/driver
+
+[sha512]
+1 		= e04c5395e3a49d81b8f7a4b0e11fe8c9ebd17af056a4eab4541873796dce05b103c93fb185f3a00873010df0655cd7311e6d27e177aeb7345c4c8017bbd1eb17
+
+[derle]
+dosya   = export
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

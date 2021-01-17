@@ -1,0 +1,25 @@
+[paket]
+tanim   = Küçük ve hafif bir metin düzenleyici. X-Apps Projesi.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/linuxmint/xed
+
+[gerek]
+derleme = libxml2 glib gtk3 libgnomekbd gtksourceview4 itstool gspell samurai libpeas
+calisma = libpeas gtksourceview gspell xapp gtksourceview4
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-${surum}.tar.gz
+
+[sha256]
+#1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= meson --prefix=/usr --libexecdir=lib/${isim} --buildtype=plain  ..
+betik 	= samu
+	      
+[pakur]
+betik 	= cd build
+betik 	= DESTDIR="${PKG}" samu install

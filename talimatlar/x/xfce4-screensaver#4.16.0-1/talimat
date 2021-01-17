@@ -1,0 +1,26 @@
+[paket]
+tanim   = XFCE4 için ekran koruyucu
+paketci = yasarciv67
+grup    = sistem
+url     = https://docs.xfce.org/apps/screensaver/start
+
+[gerek]
+derleme = libxss glib intltool gtk3 libxklavier libwnck libxrandr xfconf garcon  dbus-glib
+calisma = python-gobject xscreensaver
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/apps/xfce4-screensaver/${surum%.*}
+dosya   = 0001-Catch-gs_listener_dbus_init-failures.patch
+
+[sha256]
+1       = 814020da160ac4f9bcd79ae098ca6dd17643144214613dcb687821c8d8deac77
+2       = 8037d7f257e30a85b0acff2f0697973ed46e17c567f3fdde87b52437eaad6208
+
+
+[derle]
+yama    = 0001-Catch-gs_listener_dbus_init-failures.patch
+ekconf  = --disable-debug
+tip     = gnu
+
+[pakur]
+tip     = gnu

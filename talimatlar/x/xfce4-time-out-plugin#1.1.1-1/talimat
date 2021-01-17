@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 için bu eklenti ile bilgisayarınıza bir mola verin
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-time-out-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = ee4a51a35076d50cba3824079f8312585373ff2f0d9ebc740d8f3c0426430a19
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

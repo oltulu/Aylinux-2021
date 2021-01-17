@@ -1,0 +1,21 @@
+[paket]
+tanim   = X.Org klavye girişi sürücüsü
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-server
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/driver/${isim}-${surum}.tar.bz2
+
+[sha256]
+1 		= f7c900f21752683402992b288d5a2826de7a6c0c0abac2aadd7e8a409e170388
+
+[derle]
+tip = gnu
+	      
+[pakur]
+tip 	= gnu

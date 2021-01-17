@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için dosya sistemi kullanım izleme eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-fsguard-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = d6d05d0a90a68453d65cdceec5ca7eeaef864393ab62eef532a7ba58f374d516
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

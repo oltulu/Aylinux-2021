@@ -1,0 +1,24 @@
+[paket]
+tanim   = X imleçlerini PNG görüntülerine dönüştürme
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/eworm-de/xcur2png
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz     = https://github.com/eworm-de/${isim}/releases/download/${surum}
+1 = https://github.com/archlinux/svntogit-community/raw/packages/xcur2png/trunk/0001-fix-wrong-math.patch
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = patch -Np1 < /sources/0001-fix-wrong-math.patch
+betik = ./configure --prefix=/usr
+betik = make
+
+[pakur]
+betik = make DESTDIR="${PKG}" install

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce için Pulseaudio eklentisi
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = xfce4-panel pulseaudio libkeybinder3 libnotify xfce4-dev-tools dbus-glib
+calisma  =  
+
+[kaynak]
+bz2 = ${XFCE4_SITE}/panel-plugins/$isim/${surum%.*}
+
+[sha256]
+1   = 4ae8aebc2458675d4f885bf16f73829be359e16370a684301bbef6a23758a120
+
+[derle]
+ekconf =  --enable-keybinder --enable-libnotify --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Sweet temalarına uyacak bazı gradyanlara sahip imleç teması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://store.kde.org/p/1393084/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTE5OTM4NTUiLCJvIjoiMSIsInMiOiI0ZTEzNjAzMThmOTczMzA0NDVkYjllNWFmMWRkMWQxNTkxMzUzOTljYjE4ZDVhN2IyMjIwNzIwZjAxMDAxNWE1M2MxYjY4Y2NlODA0YzQ3NDA5ZjBmYjUyMjQxMTM5OTU4ZGM5Nzc2ZWE3MWU5NTAyNzhmYjEwZTI4YmU2ODQxMSIsInQiOjE1OTI0MjQzMTAsInN0ZnAiOm51bGwsInN0aXAiOiIxNzcuMjIxLjU4LjYyIn0.1j27VeBTV5wXaoIISfU6YdgkqAiNS8h_Ya7JsBt4VE8/Sweet-cursors.tar.xz
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik   =   cd "${SRC}"
+
+                	      
+[pakur]
+betik   =   cd "${SRC}"
+betik 	=  install -dm755 "${PKG}/usr/share/icons"
+betik 	= cp -r Sweet-cursors "${PKG}/usr/share/icons/"

@@ -1,0 +1,21 @@
+[paket]
+tanim   = X.org Cursor temaları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xcursorgen 
+calisma = 
+
+[kaynak]
+bz2      = $url/releases/individual/data
+
+[sha512]
+1 		= 2ad3586a5571a5ddc0001187362b54b839644916164834213af98e58698044aec4392dd6e1e42f1794fda85c8fedf259b09214a9636bd0e71a1629c710f198d3
+
+[derle]
+tip = gnu
+	      
+[pakur]
+tip = gnu

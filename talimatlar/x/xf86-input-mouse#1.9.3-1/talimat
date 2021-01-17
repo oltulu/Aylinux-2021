@@ -1,0 +1,21 @@
+[paket]
+tanim   = X.Org mouse girişi sürücüsü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-server
+calisma = 
+
+[kaynak]
+bz2      = https://www.x.org/releases/individual/driver
+
+[sha512]
+1 		= d99f5b4b1ef1aa4cbf1a92549e412f54f121bc804e4d6643248ad7ea18081b38b958bd289dc8476ebc0f6ef5f7424c2f2a8abcfaa30cae5378829549af6b148f
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

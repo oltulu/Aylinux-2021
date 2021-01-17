@@ -1,0 +1,21 @@
+[paket]
+tanim   = D-Bus bağlantıları için filtre vekil sunucusu
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/flatpak/xdg-dbus-proxy
+
+[gerek]
+derleme    = glib
+calisma    =
+
+[kaynak]
+xz         = ${url}/releases/download/${surum}
+
+[sha256]
+1          = 1749d6f9f46dcc9edc87725641cf56cf91dcad1b01707891ea0850c1000c520f
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

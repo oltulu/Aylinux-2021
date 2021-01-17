@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce için pil yöneticisi
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = xfce4-panel
+calisma  =  
+
+[kaynak]
+bz2 = ${XFCE4_SITE}/panel-plugins/$isim/${surum%.*}
+
+[sha256]
+1   = 12be0a44d16bd1e1618513ee64f946814925872db7d1c1188ab1454b00d040a3
+
+[derle]
+ekconf = --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

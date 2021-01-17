@@ -1,0 +1,22 @@
+[paket]
+tanim   = Gtk tabanlı hafif masaüstü bağımsız arşiv yöneticisi
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/ib/xarchiver
+
+[gerek]
+derleme    = gtk3
+calisma    = xdg-utils desktop-file-utils unzip
+
+[kaynak]
+1          = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 335bed86e10a1428d54196edf5c828e79ceed05049e83896114aa46f0a950a2f
+
+[derle]
+ekconf     = --libexecdir=/usr/lib/xfce4 --disable-doc
+tip        = gnu
+
+[pakur]
+tip        = gnu

@@ -1,0 +1,28 @@
+[paket]
+tanim   = X-Apps projesi için ortak kitaplık
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/xapp
+
+[gerek]
+derleme = meson xtrans python-gobject libdbusmenu-glib libgnomekbd vala
+calisma = libgnomekbd
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+[sha256]
+#1 		= 7583fa65ee1cb2ed78be59cf313726c28a47c88c79c1cc3db0fcb83355621cdd
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= meson --prefix=/usr --libexecdir=lib/ --buildtype=plain ..
+betik 	= samu
+    	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= DESTDIR="${PKG}" samu install
+betik 	= rm -r "${PKG}"/usr/bin
+#betik 	= while read -rd '' _file; do

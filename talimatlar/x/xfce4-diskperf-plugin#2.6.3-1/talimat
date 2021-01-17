@@ -1,0 +1,22 @@
+[paket]
+tanim   = Disk/bölüm performansını gösteren Xfce4 paneli eklentisi
+paketci = yasarciv67
+grup    = yasarciv67
+url     = https://docs.xfce.org/panel-plugins/xfce4-diskperf-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = fd2e9843da5822de96a7829e50ba496c34a50fb8492d5b5f792558c6b7ce9644
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+

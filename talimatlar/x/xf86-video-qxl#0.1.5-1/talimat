@@ -1,0 +1,27 @@
+[paket]
+tanim   = Xorg QXL video sürücüsü
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.x.org
+
+[gerek]
+derleme = xorg-util-macros xorg-server spice-protocol xorg-proto libcacard
+calisma = spice python2
+
+[kaynak]
+bz2     = $XORG_SITE/driver
+
+[sha256]
+1       = b18682e04503c6326f7bf7190f3ee50a3d4d69758a2a3cc9af102a6b3f114c92
+
+[derle]
+betik   = export CFLAGS=${CFLAGS/-fno-plt}
+betik   = export CXXFLAGS=${CXXFLAGS/-fno-plt}
+betik   = export LDFLAGS=${LDFLAGS/,-z,now}
+betik   = sed -i '1c #!/usr/bin/python2' scripts/Xspice
+ekconf  = --enable-xspice
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -v -D -m0755 scripts/Xspice ${PKG}/usr/bin/Xspice

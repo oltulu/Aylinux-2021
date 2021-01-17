@@ -1,0 +1,23 @@
+[paket]
+tanim   = ~/Desktop ve ~/Muzik gibi kullanıcı dizinlerini yönet
+paketci = Cihan_Alkan
+grup 	= lxde
+url     = https://lxde.org/
+
+[gerek]
+derleme = libxslt docbook-xsl
+calisma = 
+
+[kaynak]
+gz      = http://user-dirs.freedesktop.org/releases
+dosya   = xdg-user-dirs
+
+[sha1]
+1 		= 
+
+[derle]
+tip = gnu
+	      
+[pakur]
+tip = gnu
+betik 	= install -D ../$isim $PKG/etc/X11/xinit/xinitrc.d/xdg-user-dirs

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Arcan ile bağlantıları köprüleyen yamalı Xserver
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/letoram/xarcan
+arsiv   = xarcan-48a9fcefd5a5f6c8fdededf2b8c11ef2cc802364
+
+[gerek]
+derleme = arcan meson xorg-util-macros font-util xtrans pixman libdrm libx11 mesa libxfont2 libxkbfile xkbcomp libtirpc
+calisma =
+
+[kaynak]
+1       = https://github.com/sjpschutte/xarcan/archive/48a9fcefd5a5f6c8fdededf2b8c11ef2cc802364.tar.gz::$isim-sjpschutte-48a9fcefd5a5f6c8fdededf2b8c11ef2cc802364.tar.gz
+
+[sha256]
+1       = 13e38cae7063d60d081042d6c803529af1303cecbadabf0d70f08646d4678d67
+
+[derle]
+ekconf  = -Dsystemd_logind=false -Dxselinux=false
+tip     = meson
+
+[pakur]
+tip     = meson
+betik   = rm -rf $PKG/usr/{share,lib,include}

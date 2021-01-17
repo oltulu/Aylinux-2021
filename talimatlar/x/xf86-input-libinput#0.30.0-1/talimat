@@ -1,0 +1,22 @@
+[paket]
+tanim   = Libinput tabnalı X giriş aygıt yöneticisi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-server libinput libx11 libxi
+calisma =
+
+[kaynak]
+bz2     = $url/releases/individual/driver
+
+[sha512]
+1 		= da6eb632180649853b3aa2fb88debd6aafe5ede24a5f4a04a21cf18fa97fd414d300b86cdf8a42027c98ac89f1b9f88034fc9e364ac3a02fa38872e57b542a84
+
+[derle]
+ekconf 	= --disable-static
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

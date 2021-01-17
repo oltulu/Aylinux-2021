@@ -1,0 +1,29 @@
+[paket]
+tanim   = Xfce oturum yöneticisi
+paketci = milisarge 
+grup    = sistem  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = intltool libxfce4ui libwnck xfconf libsm polkit iceauth xinit xrdb
+calisma  =  
+
+[kaynak]
+bz2    = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+dosya  = source-system-xinitrc-scripts.patch
+dosya  = xfce-polkit-gnome-authentication-agent-1.desktop
+
+[sha256]
+1  = 14fb6db74eb69eb400673856ba307a0e57f577cf77c3561a5910151e3d52043f
+2  = 6f14d529e4c4f30cd547110bd444cee8dc70c90511a397de18acb6c1fd63ea3e
+3  = 74c94c5f7893d714e04ec7d8b8520c978a5748757a0cdcf5128492f09f31b643
+
+[derle]
+yama   = 2
+ekconf = --libexecdir=/usr/lib/xfce4 --disable-debug --enable-polkit
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = install -d "${PKG}/etc/xdg/autostart"
+betik  = cp "${SRC}/xfce-polkit-gnome-authentication-agent-1.desktop" "${PKG}/etc/xdg/autostart/"

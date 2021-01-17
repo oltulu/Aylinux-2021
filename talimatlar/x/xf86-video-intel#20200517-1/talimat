@@ -1,0 +1,25 @@
+[paket]
+tanim   = X için Intel i810/i830/i915/945G/G965+ video sürücüleri
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+arsiv   = xf86-video-intel
+
+[gerek]
+derleme = xorg-util-macros xorg-server pixman libxvmc libx11 libxrender libxrandr libxinerama libxcursor libxtst libxss mesa xcb-util
+calisma = 
+
+[kaynak]
+git     = https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel
+
+[derle]
+betik   = git reset --hard 7181c5a41c3f00eaf996caa156523c708a18081e
+betik   = NOCONFIGURE=1 ./autogen.sh
+betik   = export CFLAGS=${CFLAGS/-fno-plt}
+betik   = export CXXFLAGS=${CXXFLAGS/-fno-plt}
+betik   = export LDFLAGS=${LDFLAGS/,-z,now}
+betik   = ./configure --prefix=/usr --libexecdir=/usr/lib
+betik   = make
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Sıcaklık ve hava durumunu göstermek için XFCE panel eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-weather-plugin
+
+[gerek]
+derleme = intltool libxfce4ui xfce4-panel libxml2 libsoup upower
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = afb2af5f3effc2ea6181636ed0e82e6dafd556ec1b8478100802f85a5d167a89
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

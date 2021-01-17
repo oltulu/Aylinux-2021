@@ -1,0 +1,21 @@
+[paket]
+tanim   = Pencere yöneticileri için menü yapıcı
+paketci = milisarge
+grup 	= sistem
+url     = https://github.com/gapan/xdgmenumaker
+
+[gerek]
+derleme = 
+calisma = gobject-introspection python-gobject python-xdg
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 = a8319db5998ea1c49e52f6d04aad40334daea8047840c6762b4e7f02082b0573
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+betik   =  make DESTDIR="$PKG/" PREFIX="/usr" install

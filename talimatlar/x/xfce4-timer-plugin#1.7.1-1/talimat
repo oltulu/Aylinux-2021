@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için süreyi izleme eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-timer-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = 2e4e5343e39926230cc981d5fe56cd58a2f3817d2e9b6089b5673a2e39bf7e9b
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

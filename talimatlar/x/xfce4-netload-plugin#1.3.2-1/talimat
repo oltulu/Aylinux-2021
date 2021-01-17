@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce paneli için bir ağ takip eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-netload-plugin
+
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = 22e40425cfe1e07b01fe275b1afddc7c788af34d9c2c7e2842166963cb41215d
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce için geliştirici araçları
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = glib
+calisma  =  
+
+[kaynak]
+bz2 = ${XFCE4_SITE}/xfce/$isim/${surum%.*}
+
+[sha256]
+1  =  2c9eb8e0fe23e47dc31411a93b683fd1b7a49140e9163f0aab9e94a3d8a0b5fd
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+
+

@@ -1,0 +1,24 @@
+[paket]
+tanim   = XFS dosya sistemini yönetmek için yardımcı programlar
+paketci = milisarge
+grup    = sistem
+url     = http://xfs.org/index.php/Main_Page
+
+[gerek]
+derleme    = icu
+calisma    =
+
+[kaynak]
+xz         = ${KERNEL_SITE}/utils/fs/xfs/$isim
+
+[sha256]
+1          = 7b500e148cebd08f99e37cf744c7843817b37e7be2a32c4dc57d6ea16e3019ae
+
+[derle]
+bayrak     = yok
+betik      = make configure
+betik      = export OPTIMIZER="-march=${CARCH/_/-} -O1"; export DEBUG=-DNDEBUG
+betik      = ./configure --prefix=/usr --sbindir=/usr/bin --enable-readline --disable-static && make -j1
+
+[pakur]
+betik      = make install install-dev DIST_ROOT=${PKG} PKG_ROOT_SBIN_DIR=/usr/bin PKG_ROOT_LIB_DIR=/usr/lib

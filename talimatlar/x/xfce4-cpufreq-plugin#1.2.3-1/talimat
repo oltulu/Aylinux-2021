@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için CPU frekans eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-cpufreq-plugin
+		 
+[gerek]
+derleme = intltool xfce4-panel
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = c5e044c0dc401d2066f208a3df82a588b3e51ff01425f155d0a1d0f8fce8f5b5
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

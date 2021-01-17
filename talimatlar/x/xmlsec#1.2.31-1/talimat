@@ -1,0 +1,24 @@
+[paket]
+tanim   = XML Güvenlik Kütüphanesi, LibXML2 tabanlı bir C kütüphanesidir.
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.aleksey.com/xmlsec/
+
+[gerek]
+derleme    = gnutls libxslt libgcrypt nspr nss
+calisma    =
+
+[kaynak]
+1          = https://www.aleksey.com/xmlsec/download/xmlsec1-${surum}.tar.gz
+
+[sha256]
+1          = 13eec4811ea30e3f0e16a734d1dbf7f9d246a71d540b48d143a07b489f6222d4
+
+[derle]
+betik      = cd ${isim}1-${surum}
+betik      = autoreconf -if
+tip        = gnu
+
+[pakur]
+betik      = cd ${isim}1-${surum}
+tip        = gnu

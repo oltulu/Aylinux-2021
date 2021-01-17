@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 paneli için klavye düzenlerini değiştirme eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://xfce.org
+
+[gerek]
+derleme = intltool garcon xfce4-panel libxklavier librsvg libwnck
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/$isim/${surum%.*}
+
+[sha256]
+1       = c19ecf126201deb6148741c521124771ad396adc874471512ab5ffe1946567a1
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

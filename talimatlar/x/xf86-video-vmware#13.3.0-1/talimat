@@ -1,0 +1,23 @@
+[paket]
+tanim   = Vmware X sürücüsü
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-server mesa
+calisma =
+
+[kaynak]
+bz2     = https://www.x.org/releases/individual/driver
+
+[sha512]
+1 		= c318de893cae7b2b11e11c1b389ee47478b7c8d1f52c27099dbe453efec28f3e9da449217307a8c2251999eada66312f766996be1a6ead413b8b6dedc42c68ca
+
+[derle]
+dosya   = export
+ekconf  = --enable-vmwarectrl-client
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

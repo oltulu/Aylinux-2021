@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce uygulama çıktılarını gözlemleme eklentisi
+paketci = milisarge 
+grup    = sistem
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = xfce4-panel
+calisma  =  
+
+[kaynak]
+bz2 = ${XFCE4_SITE}/panel-plugins/$isim/${surum%.*}
+
+[sha256]
+1   = 256c22526f61aabf43b91b903b976c13e56198657667df443cdb06b31fbf23aa
+
+[derle]
+ekconf = --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

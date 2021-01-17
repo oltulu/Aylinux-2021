@@ -1,0 +1,28 @@
+[paket]
+tanim   = H264/AVC video akış çözücü kütüphanesi
+paketci = milisarge
+grup    = medya
+url     = http://www.videolan.org/developers/x264.html
+
+[gerek]
+derleme = nasm
+calisma = 
+
+[kaynak]
+1      = http://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20190712-2245-stable.tar.bz2
+
+[sha256]
+1      = 233231456a83077ec5658f537d18688a419b08f52f9c7d3524e09328d78639ed
+
+[derle]
+betik  = cd x264-snapshot-20190712-2245-stable
+betik  = export AS=nasm
+ekconf = --disable-swscale --enable-static --enable-pic --enable-shared 
+tip    = gnu
+
+[pakur]
+betik   = cd x264-snapshot-20190712-2245-stable
+betik   = make DESTDIR=${PKG} bindir=/usr/bin libdir=/usr/lib includedir=/usr/include install
+betik   = sed -i -e "s|0.142.x|0.142.0|" ${PKG}/usr/lib/pkgconfig/x264.pc
+betik   = rm -f $PKG/usr/lib/libx264.a
+

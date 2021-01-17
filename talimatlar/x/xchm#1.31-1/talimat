@@ -1,0 +1,23 @@
+[paket]
+tanim   = Chm okuyucu
+paketci = milisarge  
+grup    = sistem  
+url     = https://github.com/rzvncj/xCHM
+
+[gerek]
+derleme  = chmlib wxgtk3
+calisma  = 
+
+[kaynak]
+1    = $url/releases/download/${surum}/$isim-${surum}.tar.gz
+
+[sha256]
+1    =  0e1f6bbcb88e8e8fd200b5531e3486ecc04a614c4234356c397cf188b55f862b
+
+[derle]
+betik  = autoreconf -fi
+betik  = ./configure --prefix=/usr --with-wx-config=/usr/bin/wx-config && make
+
+[pakur]
+tip    = gnu
+

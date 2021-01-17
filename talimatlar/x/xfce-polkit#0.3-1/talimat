@@ -1,0 +1,21 @@
+[paket]
+tanim = Xfce için basit policyKit kimlik doğrulama ajanı
+paketci = yasarciv67
+grup : sistem
+url = https://github.com/ncopa/xfce-polkit
+
+[gerek]
+derleme = gtk3 polkit libxfce4ui
+calisma = 
+
+[kaynak]
+gz = $url/releases/download/v$surum
+
+[sha256]
+1 = 564e566a83c2dd5fc2199481deb56842797fefbe985d4e55219bacbeb573f23a
+
+[derle]
+dosya = derle.sh
+
+[pakur]
+tip = gnu

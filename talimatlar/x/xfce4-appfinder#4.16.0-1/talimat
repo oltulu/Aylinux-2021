@@ -1,0 +1,22 @@
+[paket]
+tanim   = Xfce masaüstü ortamı için uygulama bulucu uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://xfce.org/
+
+[gerek]
+derleme    = garcon libxfce4ui gtk3 
+calisma    = desktop-file-utils
+
+[kaynak]
+bz2        = https://archive.xfce.org/src/xfce/${isim}/${surum%.*}
+
+[sha256]
+1          = 7ec175d4954fceb2e76cbfbca76ac4a4f53fe799d097a14117e7de68e88a4d98
+
+[derle]
+ekconf     = --enable-gtk3 --disable-debug
+tip        = gnu
+
+[pakur]
+tip        = gnu

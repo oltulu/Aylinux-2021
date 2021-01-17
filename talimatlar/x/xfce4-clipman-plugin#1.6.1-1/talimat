@@ -1,0 +1,25 @@
+[paket]
+tanim   = Xfce4 paneli için pano eklentisi
+paketci = yasarciv67
+grup    = masaüstü
+url     = https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin
+
+[gerek]
+derleme = intltool xfce4-panel libxtst
+calisma =
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/panel-plugins/xfce4-clipman-plugin/${surum%.*}
+
+[sha256]
+1       = b3e8317796289196fa78c4526626fe061fd35d11e848cf300ca1ace47febceb4
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik	= cd $PKG/usr/share/applications
+betik	= sed -i '/^Comment=Customize your clipboard/a Comment[tr]=Panonuzu özelliştirin' xfce4-clipman-settings.desktop
+betik	= sed -i '/^Comment=Customize your clipboard/a Name[tr]=Pano Yöneticisi Ayarları' xfce4-clipman-settings.desktop
+

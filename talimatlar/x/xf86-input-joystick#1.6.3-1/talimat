@@ -1,0 +1,21 @@
+[paket]
+tanim   = X.Org touchpad girişi sürücüsü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://www.x.org/releases/individual/driver/${isim}-${surum}.tar.bz2
+
+[sha1]
+1 		= 
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,26 @@
+[paket]
+tanim   = Korumalı alandaki uygulamalar için masaüstü entegrasyon portalları
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/flatpak/xdg-desktop-portal
+
+[gerek]
+derleme = libportal
+calisma = 
+
+[kaynak]
+git      = https://github.com/flatpak/xdg-desktop-portal
+
+[sha1]
+1 		= 
+
+[derle]
+betik =  cd $isim
+betik =  NOCONFIGURE=1 ./autogen.sh
+betik =  ./configure --prefix=/usr --libexecdir=/usr/lib
+betik =  make
+
+
+[pakur]
+betik =  cd $isim
+betik = make DESTDIR="$PKG" install
