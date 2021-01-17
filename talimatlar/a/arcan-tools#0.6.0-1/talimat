@@ -1,0 +1,28 @@
+[paket]
+tanim   = Arcan sistemi yardımcı araçları
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/letoram/arcan
+arsiv   = arcan-$surum
+
+[gerek]
+derleme = cmake arcan
+calisma =
+
+[kaynak]
+1       = https://github.com/letoram/arcan/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 7b7aeb0fa6b89b7e3779d2e078b626566bdfa86c756d7ea1cc4f84b9e60d16a0
+
+[derle]
+betik   = cd src/tools/aclip
+tip     = cmake
+betik   = cd ../../aloadimage
+tip     = cmake
+
+[pakur]
+betik   = cd src/tools/aclip
+tip     = cmake
+betik   = cd ../../aloadimage
+tip     = cmake

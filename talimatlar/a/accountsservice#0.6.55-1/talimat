@@ -1,0 +1,22 @@
+[paket]
+tanim   = Kullanıcı hesabı bilgilerini sorgulamak ve değiştirmek için D-Bus arayüzleri
+paketci = milisarge
+grup    = sistem
+url     = https://www.freedesktop.org/wiki/Software/AccountsService
+
+[gerek]
+derleme    = meson glib dbus polkit gobject-introspection
+calisma    =
+
+[kaynak]
+xz         = https://www.freedesktop.org/software/$isim
+
+[sha256]
+#1          = ff2b2419a7e06bd9cb335ffe391c7409b49a0f0130b890bd54692a3986699c9b
+
+[derle]
+ekconf     = -Dsystemdsystemunitdir=no
+tip        = meson
+
+[pakur]
+tip        = meson

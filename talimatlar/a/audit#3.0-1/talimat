@@ -1,0 +1,22 @@
+[paket]
+tanim   = Denetim çerçevesinin Userspace bileşenleri
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://people.redhat.com/sgrubb/audit
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz      = https://people.redhat.com/sgrubb/audit
+
+[sha256]
+        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --libexecdir=/usr/lib/audit --enable-gssapi-krb5=yes --enable-systemd=no --with-libcap-ng=yes
+betik 	= make
+                    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" INSTALL='install -p' install

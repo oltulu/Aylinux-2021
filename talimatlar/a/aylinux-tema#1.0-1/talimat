@@ -1,0 +1,23 @@
+[paket]
+tanim   = Aylinux Teması
+paketci = Cihan_Alkan
+grup 	= ofis
+url     = http://www.aylinux.kripto.com.tr
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = http://aylinux.kripto.com.tr/dosyalar/Aylinux-Tema-20180501-1-x86_64.pkg.tar.xz
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = mkdir -pv $PKG/elma
+betik = rmdir $PKG/elma
+	      
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+#betik 	= cp -r $SRC/etc $PKG/

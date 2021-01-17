@@ -1,0 +1,23 @@
+[paket]
+tanim   = Awesome penceresi yöneticisi
+paketci = milisarge
+grup    = kütüphane
+url     = http://awesomewm.org
+
+[gerek]
+derleme    = lua cmake imagemagick lgi libxcb pango xcb-util xcb-util-image xcb-util-keysyms xcb-util-wm xcb-util-cursor startup-notification imlib2 libxdg-basedir gdk-pixbuf dbus libxkbcommon xcb-util-xrm pango
+calisma    = lgi
+
+[kaynak]
+1          = https://github.com/awesomeWM/awesome/releases/download/v${surum}/awesome-${surum}.tar.xz
+
+[sha256]
+1          = 78264d6f012350b371e339127aca485260bc0aa935eff578ba75ce1a00e11753
+
+[derle]
+ekconf     = -DSYSCONFDIR=/etc -DLUA_LIBRARY=/usr/lib/liblua.so
+tip        = cmake
+
+[pakur]
+tip        = cmake
+betik      = install -Dm 644 ../awesome.desktop -t "${PKG}/usr/share/xsessions"

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Çok Protokollü ve kaynaklı indirme uygulaması
+paketci = milisarge
+grup    = ağ
+url     = https://aria2.github.io/
+
+[gerek]
+derleme = c-ares expat gmp openssl sqlite zlib ca-certificates
+calisma =
+
+[kaynak]
+xz      = https://github.com/aria2/aria2/releases/download/release-${surum}
+
+[sha256]
+1       = 1e2b7fd08d6af228856e51c07173cfcf987528f1ac97e04c5af4a47642617dfd
+
+[derle]
+ekconf  = --with-openssl --with-libexpat --enable-libaria2 --with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt
+
+tip     = gnu
+
+[pakur]
+tip     = gnu

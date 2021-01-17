@@ -1,0 +1,24 @@
+[paket]
+tanim   = Kaynak kodunu otomatik olarak yapılandırmak için bir GNU aracı
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://www.gnu.org/software/autoconf/
+
+[gerek]
+derleme = 
+calisma = perl
+
+[kaynak]
+1      = https://ftp.gnu.org/gnu/autoconf/autoconf-${surum}.tar.gz
+
+[md5]
+1 		= 9de56d4a161a723228220b0f425dc711
+
+[derle]
+betik = cd "${SRC}/autoconf-${surum}"
+betik = ./configure --prefix=/usr --infodir=/usr/share/info --program-suffix=-2.13
+betik = make
+	      
+[pakur]
+betik = cd "${SRC}/autoconf-${surum}"
+betik = make prefix="${PKG}/usr" infodir="${PKG}/usr/share/info" install

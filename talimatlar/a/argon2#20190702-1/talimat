@@ -1,0 +1,24 @@
+[paket]
+tanim   = Bir şifre karma işlevi (referans C uygulaması)
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/P-H-C/phc-winner-argon2
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz     = https://github.com/P-H-C/phc-winner-argon2/archive/${surum}
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd "$SRC/phc-winner-$isim-$surum"
+betik 	= make OPTTARGET='none' LIBRARY_REL='lib'
+
+                	      
+[pakur]
+betik 	= cd "$SRC/phc-winner-$isim-$surum"
+betik 	= make OPTTARGET='none' LIBRARY_REL='lib' DESTDIR="$PKG" install

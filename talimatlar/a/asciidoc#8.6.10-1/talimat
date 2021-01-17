@@ -1,0 +1,25 @@
+[paket]
+tanim   = Kısa belgeler, makaleler, kitaplar ve UNIX kılavuz sayfaları için metin belgesi formatı.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://www.methods.co.nz/asciidoc/
+
+[gerek]
+derleme = xmlto libxslt polkit gobject-introspection vala
+calisma = python2 libxslt docbook-xsl
+
+[kaynak]
+1      = https://github.com/asciidoc/asciidoc/archive/${surum}.tar.gz::$isim-${surum}.tar.gz
+
+[sha1]
+1 		= 
+
+[derle]
+betik = sed -i -e 's#python a2x.py#python2 a2x.py#' Makefile.in
+betik = autoconf
+tip= gnu
+	      
+[pakur]
+betik = make install DESTDIR=${PKG}
+betik = make docs DESTDIR=${PKG}
+betik = install -Dm644 asciidocapi.py ${PKG}/usr/lib/python2.7/site-packages/asciidocapi.py

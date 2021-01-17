@@ -1,0 +1,22 @@
+[paket]
+tanim   = Bazı ses kartları için gelişmiş ALSA araçları
+paketci = milisarge
+grup    = medya
+url     = http://alsa-project.org
+
+[gerek]
+derleme    = gtk3 alsa-lib
+calisma    =
+
+[kaynak]
+1          = ftp://ftp.alsa-project.org/pub/tools/${isim}-${surum}.tar.bz2
+
+[sha256]
+#1          = a0243328a8f6f691a3055c484fd8d3326393096325e93743b246029d327c4ef6
+
+[derle]
+dosya      = derle.sh
+
+[pakur]
+dosya      = pakur.sh
+

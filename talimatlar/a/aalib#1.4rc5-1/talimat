@@ -1,0 +1,23 @@
+[paket]
+tanim   = Portatif ASCII grafik kütüphanesi
+paketci = milisarge 
+grup    = kütüphane 
+url     = http://aa-project.sourceforge.net/aalib/
+
+[gerek]
+derleme  = libxt gpm libx11 
+calisma  =  
+
+[kaynak]
+gz     = https://downloads.sourceforge.net/sourceforge/aa-project
+dosya  = aalib-aclocal-fixes.patch
+
+[derle]
+betik  = cd ${isim}-1.4.0
+betik  = patch -p0 -i "${SRC}/aalib-aclocal-fixes.patch"
+tip    = gnu
+
+[pakur]
+betik  =  cd ${isim}-1.4.0
+tip    = gnu
+

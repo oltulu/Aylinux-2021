@@ -1,0 +1,27 @@
+[paket]
+tanim   = Online Accounts API'yi QML uygulamalarına gösterin
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://kde.org/applications/utilities/kcalc/
+
+[gerek]
+derleme = signond
+calisma =  
+
+[kaynak]
+git      = https://gitlab.com/accounts-sso/$isim
+
+[sha256]
+        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= sed -e 's/-Werror//' -i $SRC/$isim/common-project-config.pri
+betik 	= qmake-qt5 ../$isim/$isim.pro PREFIX=/usr
+betik 	= make
+                    	      
+[pakur]
+betik 	= cd build
+betik 	= make INSTALL_ROOT="$PKG" install_subtargets # skip docs
+betik 	= rm -r "$PKG"/usr/bin

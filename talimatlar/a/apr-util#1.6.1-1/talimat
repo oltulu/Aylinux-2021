@@ -1,0 +1,30 @@
+[paket]
+tanim    =  Apache Portable Runtime araç seti
+paketci  =  milisarge
+grup     =  kütüphane 
+url      =  http://apr.apache.org/
+
+[gerek]
+derleme  =  gdbm openldap unixodbc nss sqlite mariadb db postgresql python apr
+calisma  =  
+
+[kaynak]
+bz2    =  https://www.apache.org/dist/apr
+dosya  =  disable_failing_test.patch
+dosya  =  buildconf_config.guess_sub_location.patch
+
+[sha512]
+1  =  40eff8a37c0634f7fdddd6ca5e596b38de15fd10767a34c30bbe49c632816e8f3e1e230678034f578dd5816a94f246fb5dfdf48d644829af13bf28de3225205d
+2  =  f3de06f845972e5fc85c0d01847bcd0cfbbdd5015798970c73e5ef1b2699c54118f00ba5b939d84bbdf748bd1a5088c1393289b1e62c005fa77878436c165802
+3  =  d19024b8a19e46e85dd03e2c06afae13b527e56c0e2864e5b92652c8ed558f155647f50b9cfaddb6e919b5a60922970b1d9f6c7fc62cd5872b3d22e787f99c65
+
+[derle]
+yama   = 2
+yama   = 3
+betik  = ./buildconf --with-apr=`apr-1-config --srcdir`
+ekconf = --with-apr=/usr --with-ldap --with-crypto --with-gdbm=/usr --with-sqlite3=/usr --with-nss=/usr --with-odbc=/usr --with-berkeley-db=/usr --with-pgsql=/usr --with-mysql=/usr --with-oracle=/usr --with-openssl=/usr
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

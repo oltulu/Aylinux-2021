@@ -1,0 +1,21 @@
+[paket]
+tanim   = KDE Arşivleme Aracı
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://kde.org/applications/utilities/ark
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =
+
+[kaynak]
+xz      = ${KDE_SITE}/release-service/${surum}/src
+
+[sha256]
+#1       = 
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake
