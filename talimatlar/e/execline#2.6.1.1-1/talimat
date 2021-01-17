@@ -1,0 +1,22 @@
+[paket]
+tanim   = Etkileşimli olmayan komut dosyası dili
+paketci = milisarge
+grup    = kütüphane
+url     = https://skarnet.org/software/execline/
+
+[gerek]
+derleme = skalibs
+calisma =
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 394308f0349f962086a9695ca2bb5ef32cd38e5be6b7cec0b3d0cf35a2b2ba56
+
+[derle]
+betik   = ./configure --prefix=/usr --libdir=/usr/lib
+betik   = make
+
+[pakur]
+tip     = gnu

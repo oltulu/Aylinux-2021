@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Ağ donanımlarını kontrol etmekte kullanılan bir araç.
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://www.kernel.org/pub/software/network/ethtool
+
+[kaynak]
+xz     	= $url
+
+[sha256]
+1       = 65feac1fec6565290b7784b2efc925dee900a9b11202ce7c6c30a967c3da3387
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

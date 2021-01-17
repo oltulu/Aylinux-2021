@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xfce için uygulama kütüphanesi
+paketci = milisarge 
+grup    = kütüphane  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = intltool libxfce4ui perl-uri 
+calisma  = perl-uri  
+
+[kaynak]
+bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+
+[sha256]
+1   = 3400a2e64aa41ede25bedaca4909bde7ea4f8698d9598d1b80f02a40ac89fcde
+
+[derle]
+ekconf = --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

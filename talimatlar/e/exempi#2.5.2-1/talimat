@@ -1,0 +1,25 @@
+[paket]
+tanim   = XMP meta verilerini ayrıştırmak için bir kütüphane
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://libopenraw.freedesktop.org/wiki/Exempi
+
+[gerek]
+derleme = boost
+calisma = 
+
+[kaynak]
+git      = https://anongit.freedesktop.org/git/exempi
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= cd exempi
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr # --disable-static
+betik 	= make
+	      
+[pakur]
+betik 	= cd exempi
+betik 	= make DESTDIR="$PKG" install

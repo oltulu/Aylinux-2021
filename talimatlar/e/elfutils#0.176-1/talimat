@@ -1,0 +1,24 @@
+[paket]
+tanim   = ELF nesne dosyalarını ve DWARF hata ayıklama bilgilerini işleyen kütüphaneler
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://sourceware.org/elfutils/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+bz2      = https://sourceware.org/elfutils/ftp/${surum}
+
+[sha1]
+1 		= 6511203cae7225ae780501834a7ccd234b14889a
+
+[derle]
+betik 	= CFLAGS+=" -g"
+betik 	= ./configure --prefix=/usr --program-prefix="eu-" --enable-deterministic-archives
+betik 	= make
+	      
+[pakur]
+tip 	= gnu
+betik 	= mv libelf "${PKG}/usr"

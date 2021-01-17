@@ -1,0 +1,21 @@
+[paket]
+tanim   = Erlang tabanlı fonksiyonel, eşzamanlı, genel amaçlı programlama dili
+paketci = milisarge
+grup    = geliştirme
+url     = http://elixir-lang.org/
+
+[gerek]
+derleme = erlang
+calisma = erlang
+
+[kaynak]
+1       = https://github.com/elixir-lang/elixir/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = f3465d8a8e386f3e74831bf9594ee39e6dfde6aa430fe9260844cfe46aa10139
+
+[derle]
+betik   = make
+
+[pakur]
+betik   = make DESTDIR=$PKG PREFIX=/usr install
