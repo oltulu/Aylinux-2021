@@ -1,0 +1,32 @@
+milis-meson build \
+-Db_lto=false \
+-Db_ndebug=true \
+-Dplatforms=x11,wayland,drm,surfaceless \
+-Ddri-drivers=i915,i965,r100,r200,nouveau \
+-Dgallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris \
+-Dvulkan-drivers=amd,intel \
+-D vulkan-overlay-layer=true \
+-D swr-arches=avx,avx2 \
+-D dri3=true \
+-D egl=true \
+-D gallium-extra-hud=true \
+-D gallium-nine=true \
+-D gallium-omx=bellagio \
+-D gallium-opencl=icd \
+-D gallium-va=true \
+-D gallium-vdpau=true \
+-D gallium-xa=true \
+-D gallium-xvmc=false \
+-D gbm=true \
+-D gles1=false \
+-D gles2=true \
+-D glvnd=true \
+-D glx=dri \
+-D libunwind=true \
+-D llvm=true \
+-D lmsensors=true \
+-D osmesa=gallium \
+-D shared-glapi=true \
+-D valgrind=false
+
+ninja -C build

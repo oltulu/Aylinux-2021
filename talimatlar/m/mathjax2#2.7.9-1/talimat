@@ -1,0 +1,24 @@
+[paket]
+tanim   = LaTeX, MathML ve AsciiMath için JavaScript görüntüleme motoru
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.mathjax.org
+
+[kaynak]
+1       = https://github.com/mathjax/MathJax/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 71ea2429b1b5b5d796d3f89303a33d61ce8459897b48973d768261e33d6268c0
+
+[derle]
+betik   = cd $SRC/MathJax-$surum
+betik   = rm -rf docs test unpacked
+betik   = rm -rf fonts/HTML-CSS/TeX/png
+betik   = for _format in eot otf svg ; do find . -type d -name "$_format" -prune -exec rm -rf {} \; ;done
+
+[pakur]
+betik   = mkdir -p $PKG/usr/share/{fonts,licenses/mathjax2}
+betik   = cp -a MathJax-$surum $PKG/usr/share/mathjax2
+betik   = mv $PKG/usr/share/mathjax2/fonts $PKG/usr/share/fonts/mathjax2
+betik   = ln -s /usr/share/fonts/mathjax2 $PKG/usr/share/mathjax2/fonts
+

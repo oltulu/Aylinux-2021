@@ -1,0 +1,34 @@
+[paket]
+tanim   = Hafif PDF ve XPS görüntüleyici
+paketci = milisarge
+grup    = ofis
+url     = https://mupdf.com
+arsiv   = ${isim}-${surum}-source
+
+[gerek]
+derleme = freetype freeglut glu harfbuzz jbig2dec libjpeg-turbo openjpeg2 libxext
+calisma =
+
+[kaynak]
+1       = $url/downloads/archive/${isim}-${surum}-source.tar.gz
+dosya   = 0001-Set-noexecstack-on-linker-generated-binary-data-files.patch
+dosya   = mupdf.xpm
+dosya   = mupdf.desktop
+
+[sha256]
+1       = 00e33fa89cb42f1ef9e3bb73671b1cb6d210f5159bd68168fa5c89ceb24dd48e
+2       = 53e3ccc9dd613277a1cfb99dcf7e71216c8497a84f6a7663a2fbff9d58a10be5
+
+[derle]
+betik   = rm -rf thirdparty/{freeglut,freetype,harfbuzz,jbig2dec,libjpeg,openjpeg,zlib}
+yama    = 0001-Set-noexecstack-on-linker-generated-binary-data-files.patch
+betik   = CFLAGS+=' -fPIC' ; CXXFLAGS+=' -fPIC' ;export CFLAGS CXXFLAGS
+betik   = USE_SYSTEM_LIBS='yes' ; export USE_SYSTEM_LIBS
+betik   = make build=release libs apps
+
+[pakur]
+betik   = make USE_SYSTEM_LIBS='yes' build=release prefix=${PKG}/usr install
+betik   = install -D -m0644 $SRC/mupdf.desktop "$PKG"/usr/share/applications/mupdf.desktop
+betik   = install -D -m0644 $SRC/mupdf.xpm "$PKG"/usr/share/pixmaps/mupdf.xpm
+; statik kütüphaneler için ayrı paket yapılacak
+betik   = rm -f $PKG/usr/lib/{libmupdf.a,libmupdf-third.a}

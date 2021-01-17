@@ -1,0 +1,30 @@
+[paket]
+tanim   = Masaüstü için paylaşılan GSettings şemaları
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
+
+[gerek]
+derleme = gnome-settings-daemon
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+1= https://github.com/venomlinux/ports/raw/master/testing/mutter/0001-fix-libglvnd-support.patch
+2= https://github.com/venomlinux/ports/raw/master/testing/mutter/drm.patch
+
+[sha1]
+1 		= 
+
+[derle]
+betik = patch -Np1 -i /sources/0001-fix-libglvnd-support.patch
+betik = patch -Np1 -i /sources/drm.patch
+betik = mkdir build
+betik = cd build
+betik = meson --prefix=/usr --libexecdir=lib -Dprofiler=false -Dtests=false -Dnative_backend=false ..
+betik = ninja
+
+    	      
+[pakur]
+betik = cd build
+betik = DESTDIR="$PKG" ninja install

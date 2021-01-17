@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE Terminal Emulator
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = python itstool
+calisma = libsm gettext mate-desktop vte3
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= 4015c830dfd29a454c1124226fc29db460b0ba373d78939aff70e9d9271f3c71
+
+[derle]
+betik     = ./configure --prefix=/usr
+betik     = make
+	      
+[pakur]
+tip 	= gnu

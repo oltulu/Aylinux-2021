@@ -1,0 +1,22 @@
+[paket]
+tanim   = Milis Paket Sistemi için arayüz uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://mls.akdeniz.edu.tr/git/milislinux/mps-ui
+arsiv   = $isim
+
+[gerek]
+derleme = python
+calisma = python python-gobject
+
+[kaynak]
+gz      = $url/archive
+
+[sha256]
+1       = be40357bb3b02caa374b805b06d2cdcad84cb2af8106f3ced6a483b23ee70571
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

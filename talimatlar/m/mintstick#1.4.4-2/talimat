@@ -1,0 +1,29 @@
+[paket]
+tanim   = Img veya iso dosyalarını bir USB Anahtarına yaz. Ayrıca onları biçimlendirebilirsiniz
+paketci = Cihan_Alkan
+url     = http://packages.linuxmint.com/pool/main/m/mintstick
+
+[gerek]
+derleme    = ntfs-3g parted
+calisma    =
+
+[kaynak]
+1          = ${url}/${isim}_${surum}.tar.xz::$isim-$surum.tar.xz
+2          = https://github.com/linuxmint/mint-translations/raw/master/po-export/mintstick/mintstick-tr.po
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd mintstick
+betik     = sed -i 's| /usr| "'$PKG'"/usr|g' install.sh
+betik     = rm -rf 'share/kde4'
+
+[pakur]
+betik = cd mintstick
+betik      = install -d "$PKG/usr/bin"
+betik      = install -d "$PKG/usr/share/linuxmint/locale/tr/LC_MESSAGES"
+betik      = install -d "$PKG/usr/share/applications"
+betik      = install -d "$PKG/usr/share/polkit-1/actions"
+betik      = cp -rp share/{icons,nemo} "$PKG/usr/share"
+betik      = ./install.sh
+betik      = msgfmt /sources/mintstick-tr.po -o $PKG/usr/share/linuxmint/locale/tr/LC_MESSAGES/mintstick.mo

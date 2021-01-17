@@ -1,0 +1,22 @@
+[paket]
+tanim   = Acik kaynak kodlu OpenGL uyumlu grafik kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.xorg-mesa3d.org
+
+[gerek]
+derleme = meson cmake llvm clang python-mako libxdamage libxxf86vm lm_sensors libxshmfence libxrandr libdrm libvdpau libomxil-bellagio libva libclc glslang libglvnd libunwind wayland wayland-protocols
+calisma = libglvnd
+
+[kaynak]
+xz      = https://mesa.freedesktop.org/archive
+
+[sha512]
+1       = 5ef28334ecb7effaaf597ea3efe0406af62419e6fa629e835d843161ab8d83515626ec0f0495c4cc66af9e5669398ac96c16ca626e4965a9831e1704c995fb09
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+tip     = ninja
+betik   = ln -s libGLX_mesa.so.0 $PKG/usr/lib/libGLX_indirect.so.0

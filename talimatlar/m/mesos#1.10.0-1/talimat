@@ -1,0 +1,27 @@
+[paket]
+tanim   = Küme ve kaynak yönetici uygulaması
+paketci = milisarge  
+grup    = büyükveri  
+url     = https://mesos.apache.org
+
+[gerek]
+derleme = apr cyrus-sasl libnl boost subversion libevent openssl rapidjson openjdk8 maven
+calisma =
+
+[kaynak]
+gz     = https://ftp.itu.edu.tr/Mirror/Apache/mesos/$surum
+
+[sha256]
+1       = f4b9e8a1e9f905334adf4d349a2ed33a4cfa43278381cd34fb4fc7e9df9e12a1
+
+[derle]
+ekconf= --enable-optimize --exec-prefix=/usr --enable-ssl --enable-libevent --with-libarchive=/usr --with-rapidjson=/usr/include/rapidjson  --enable-java --disable-python --disable-werror --with-network-isolator --with-boost=/usr/include/boost
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = mkdir -p -m755 $PKG/usr/share/java/$isim 
+betik   = install -m644 ./src/java/mesos.pom $PKG/usr/share/java/$isim/
+betik   = install -m644 ./src/java/target/*.jar $PKG/usr/share/java/$isim/
+betik   = rm -f $PKG/usr/share/java/mesos/$isim-$surum-javadoc.jar
+betik   = rm -f $PKG/usr/share/java/mesos/$isim-$surum-sources.jar

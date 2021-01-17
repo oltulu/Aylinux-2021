@@ -1,0 +1,27 @@
+[paket]
+tanim   = Java proje yönetimi ve proje derleme aracı
+paketci = milisarge
+grup 	= geliştirme
+url     = https://mesonbuild.com/
+
+[gerek]
+derleme = openjdk8
+calisma = openjdk8
+
+[kaynak]
+1       = http://apache-mirror.rbc.ru/pub/apache/maven/maven-3/$surum/source/apache-maven-$surum-src.tar.gz
+dosya   = 0001-MNG-6642.patch
+dosya   = maven.sh
+2       = http://apache-mirror.rbc.ru/pub/apache/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+
+[sha256]
+1 		= 7ed94655b4098729de292a13c96765bb90a407bb6feb64f201a9444aebde69d1
+2 		= 70858a5052fdcc93823f34fd6716200c433eec3990cef2058c186ef52fb9882d
+3 		= 0f0e4f7793694a9bc2c6f389a883e07a9c8793b07a0995d25d23943cec57fd39
+4		= ce50b1c91364cb77efe3776f756a6d92b76d9038b0a0782f7d53acf1e997a14d
+
+[derle]
+betik   = echo "derleme yok" 
+	      
+[pakur]
+dosya   = pakur.sh

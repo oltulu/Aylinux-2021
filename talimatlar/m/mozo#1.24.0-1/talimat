@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE menü düzenleme aracı
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = mate-menus python-gobject
+calisma = gtk3 startup-notification iso-codes
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+
+[derle]
+betik     = ./configure --prefix=/usr
+betik     = make
+    	      
+[pakur]
+tip 	= gnu

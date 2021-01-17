@@ -1,0 +1,23 @@
+[paket]
+tanim   = MS-DOS disklerine erişmek için yardımcı programların toplanması
+paketci = milisarge
+grup    = sistem
+url     = http://www.gnu.org/software/mtools
+
+[gerek]
+derleme = acl
+calisma =
+
+[kaynak]
+bz2     = ${GNU_SITE}/${isim}
+
+[sha256]
+1       = 24f4a2da9219f98498eb1b340cd96db7ef9b684c067d1bdeb6e85efdd13b2fb9
+
+[derle]
+betik   = sed -i '/^SAMPLE FILE$/s:^:# :' mtools.conf
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm644 mtools.conf "${PKG}/etc/mtools.conf"

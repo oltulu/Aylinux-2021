@@ -1,0 +1,22 @@
+[paket]
+tanim   = Bölüm tablolarından aygıt eşlemeleri oluşturma
+paketci = milisarge
+grup    = sistem
+url     = http://christophe.varoqui.free.fr
+
+[gerek]
+derleme = libaio lvm2 liburcu json-c
+calisma =
+
+[kaynak]
+1       = "https://git.opensvc.com/?p=multipath-tools/.git;a=snapshot;sf=tgz;h=refs/tags/$surum"::$isim-${surum}.tar.gz
+
+[sha256]
+1       = 0549ebe39fd3950ec49c16304da408c2bfe1b18d386d8e6647b5bcb60363c8aa
+
+[derle]
+betik   = sed -i 's|$(exec_prefix)/sbin|$(exec_prefix)/bin|g' Makefile.inc
+betik   = make
+
+[pakur]
+betik   = make DESTDIR="${PKG}" exec_prefix="/usr" LIB="/usr/lib" install

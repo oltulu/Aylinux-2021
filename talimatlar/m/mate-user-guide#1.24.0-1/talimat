@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE Kullanım Kılavuzu
+paketci = yasarciv67
+grup    = sisetm
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = itstool
+calisma =
+
+[kaynak]
+1       = https://pub.mate-desktop.org/releases/${surum%.*}/${isim}-${surum}.tar.xz
+
+[sha256]
+1       = ee344d5e8170cd4c366c3a8f98f941f066f12b079ae2d50af2bbf94890f2bd35
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

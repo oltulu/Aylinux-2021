@@ -1,0 +1,22 @@
+[paket]
+tanim   = Kişisel kullanıcı bilgilerini güncelleme programı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/bluesabre/mugshot
+
+[gerek]
+derleme = 
+calisma = libpeas gtksourceview gspell
+
+[kaynak]
+gz    = ${url}/archive
+
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= cd ${SRC}
+    	      
+[pakur]
+betik 	= cd "${SRC}/${isim}-${isim}-${surum}"
+betik 	= python setup.py install --root "${PKG}" --optimize=1

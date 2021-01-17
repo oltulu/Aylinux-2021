@@ -1,0 +1,41 @@
+[paket]
+tanim   = Mutter'a dayalı mint pencere yöneticisi
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/muffin
+
+[gerek]
+derleme = gobject-introspection libxcursor zenity json-glib cinnamon-desktop libxkbfile xkeyboard-config startup-notification
+calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr libxcursor zenity
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+dosya =  gtk-doc.m4
+dosya = gtk-doc.make
+dosya = gtkdocize
+
+[sha256]
+1 		= a4f1cb9ed80b7ea1e51d30b97ea3ae2f196b06fc9fd56c0283e64c9ee1322c18
+
+[derle]
+betik = cp $SRC/gtkdocize /usr/bin/
+betik = mkdir /usr/share/gtk-doc
+betik = mkdir /usr/share/gtk-doc/data
+betik = cp $SRC/gtk-doc.make /usr/share/gtk-doc/data/
+betik = mkdir /usr/share/aclocal
+betik = cp $SRC/gtk-doc.m4 /usr/share/aclocal/
+betik 	= sed -i 's/--warn-error//g' src/Makefile.am
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/muffin --localstatedir=/var --disable-gtk-doc --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
+betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool clutter/libtool cogl/libtool
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install
+betik 	= make -C src DESTDIR="${PKG}" uninstall-binPROGRAMS uninstall-desktopfilesDATA
+betik 	= make -C src/tools DESTDIR="${PKG}" uninstall
+betik 	= make -C src/compositor/plugins DESTDIR="${PKG}" uninstall
+betik 	= make -C doc/man DESTDIR="${PKG}" uninstall
+betik = rm /usr/bin/gtkdocize
+betik = rm /usr/share/gtk-doc/data/gtk-doc.make
+betik = rm /usr/share/aclocal/gtk-doc.m4

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Seri haberleşme uygulaması
+paketci = milisarge  
+grup    = ağ 
+url     = http://alioth.debian.org/projects/minicom/
+
+[kaynak]
+1  = http://ftp.debian.org/debian/pool/main/m/minicom/minicom_$surum.orig.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1  = 532f836b7a677eb0cb1dca8d70302b73729c3d30df26d58368d712e5cca041f1
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = install -Dm644 doc/minirc.dfl ${PKG}/etc/minirc.dfl
+

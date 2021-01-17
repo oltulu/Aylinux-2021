@@ -1,0 +1,23 @@
+[paket]
+tanim   = MATE Oturumu İşleyicisi
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = gobject-introspection intltool itstool
+calisma = dbus-glib gtk3 libsm mate-desktop
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= 2f1a68447a2ec30791e07865fd3747e367c3fffe8373d07ea948b0d759bca8c7
+
+[derle]
+betik     = ./configure --prefix=/usr --libexecdir=/usr/lib/${isim} --sysconfdir=/etc --localstatedir=/var --disable-upower  --disable-systemd  --disable-docbook-docs
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu

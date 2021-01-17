@@ -1,0 +1,25 @@
+[paket]
+tanim   = Mysql çatalı Mariadb veritabanı
+paketci = milisarge
+grup 	= sistem
+url     = https://mariadb.org
+
+[gerek]
+derleme = cmake zlib openssl pcre inetutils lz4 zstd
+calisma = 
+
+[kaynak]
+gz      = https://ftp.nluug.nl/db/mariadb/mariadb-$surum/source
+
+[sha256]
+1 		= c8e6a6d0bb4f22c416ed675d24682a3ecfa383c5283efee70c8edf131374d817
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+tip    = cmake
+betik  = rm -r ${PKG}/usr/{data,mysql-test,sql-bench}
+betik  = rm ${PKG}/usr/share/man/man1/mysql-test-run.pl.1
+betik  = rm -f ${PKG}/usr/lib/*.a
+

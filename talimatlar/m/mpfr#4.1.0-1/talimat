@@ -1,0 +1,19 @@
+[paket]
+tanim   = Çok hassas kayan nokta kitaplığı
+paketci = milisarge
+grup 	= Cihan_Alkan
+url     = https://www.mpfr.org/
+
+[kaynak]
+xz      = https://ftp.gnu.org/gnu/mpfr
+
+[sha256]
+#1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
+
+[derle]
+betik 	= ./configure --prefix=/usr --enable-thread-safe --enable-shared
+betik 	= make
+	      
+[pakur]
+tip     = gnu
+

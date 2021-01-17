@@ -1,0 +1,26 @@
+[paket]
+tanim   = Zip dosyası düzenleme kitaplığı
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.winimage.com/zLibDll/minizip.html
+
+[gerek]
+derleme = zlib
+calisma =
+
+[kaynak]
+1       = http://www.zlib.net/zlib-${surum}.tar.gz
+
+[sha256]
+1       = c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
+
+[derle]
+betik	= cd $SRC/zlib-$surum/contrib/$isim
+betik   = autoreconf --install
+betik	= ./configure --prefix=/usr --enable-static=no && make
+
+[pakur]
+betik	= cd $SRC/zlib-$surum/contrib/$isim
+tip     = gnu
+; https://github.com/madler/zlib/pull/229
+betik   = rm ${PKG}/usr/include/minizip/crypt.h

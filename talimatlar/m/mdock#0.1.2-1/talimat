@@ -1,0 +1,21 @@
+[paket]
+tanim   = Bir rıhtım uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://gitlab.com/sonakinci41/mdock
+arsiv	= mdock
+
+[gerek]
+derleme = python-gobject python-psutil feh
+calisma =
+
+[kaynak]
+git		= $url
+
+[sha256]
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

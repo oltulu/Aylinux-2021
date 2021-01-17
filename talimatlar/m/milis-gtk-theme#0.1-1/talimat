@@ -1,0 +1,20 @@
+[paket]
+tanim   = Milis Linux için gtk teması
+paketci = yasarciv67
+grup    = tasarım
+url     = https://github.com/sonakinci41/Milis-Gtk
+
+[kaynak]
+1          = https://github.com/sonakinci41/Milis-Gtk/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = ae0acce3a70887cd6ce2de8e574552d6a2a1f36c94f3a2f432335376e8842447
+
+[derle]
+betik      = echo "Derleme olmayacak"
+
+[pakur]
+betik	   = mkdir -v $PKG/usr
+betik	   = mkdir -v $PKG/usr/share
+betik	   = mkdir -v $PKG/usr/share/themes
+betik      = mv $SRC/Milis-Gtk-$surum $PKG/usr/share/themes/$isim

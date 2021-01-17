@@ -1,0 +1,23 @@
+[paket]
+tanim   = MATE paneli
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = libwnck libmateweather itstool
+calisma = dbus-glib libwnck3 libcanberra libmateweather libsm mate-menus mate-desktop
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= aa36130b9ecf4f7527978cfc9a9593bbf521be144d91d7a87ee64aa7df6d695d
+
+[derle]
+betik     = ./configure --prefix=/usr --libexecdir=/usr/lib/${isim} --sysconfdir=/etc --localstatedir=/var --enable-introspection
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu

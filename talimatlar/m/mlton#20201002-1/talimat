@@ -1,0 +1,29 @@
+[paket]
+tanim   = Standart ML Derleyicisi
+paketci = milisarge
+grup    = geliştirme
+url     = http://mlton.org
+arsiv   = $isim-on-$surum-release
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = https://github.com/MLton/mlton/archive/on-$surum-release.tar.gz
+2       = https://github.com/MLton/mlton/releases/download/on-20201002-release/mlton-20201002-1.amd64-linux.tgz
+
+[sha256]
+1       = 630839fea71586ffa77f06962cec323227b8b7913992d04126563e07bdbbafaa
+
+[derle]
+betik   = sed 's/_BSD_SOURCE/_DEFAULT_SOURCE/g' -i runtime/cenv.h
+betik   = export CFLAGS="$CFLAGS -fPIC"
+betik   = export COMPILE_ARGS="-codegen c -cc-opt '-fPIC'"
+betik   = mkdir build
+betik   = cp ${SRC}/mlton-20201002-1.amd64-linux/lib/mlton/mlton-compile build/lib/
+betik   = export PATH=${PATH}:${SRC}/mlton-20201002-1.amd64-linux/bin
+betik   = make all
+
+[pakur]
+betik   = make PREFIX=/usr DESTDIR="$PKG" install

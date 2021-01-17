@@ -1,0 +1,20 @@
+[paket]
+tanim   = Milis Linux için simge teması
+paketci = yasarciv67
+grup    = tasarım
+url     = https://github.com/sonakinci41/Milis-Simge
+
+[kaynak]
+1          = https://github.com/sonakinci41/Milis-Simge/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 2df6068b589d4878be83a26f9773f2010327a085bdc6d771ef9d0f38d9e7975a
+
+[derle]
+betik      = echo "Derleme olmayacak"
+
+[pakur]
+betik	   = mkdir -v $PKG/usr
+betik	   = mkdir -v $PKG/usr/share
+betik	   = mkdir -v $PKG/usr/share/icons
+betik      = mv $SRC/Milis-Simge-$surum $PKG/usr/share/icons/$isim

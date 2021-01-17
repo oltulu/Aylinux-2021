@@ -1,0 +1,23 @@
+[paket]
+tanim		= İstatistiksel analiz ile kayıpsız mp3 normalleştirici
+paketci		= yasarciv67
+grup		= medya
+url			= https://sourceforge.net/projects/mp3gain
+
+[gerek]
+derleme 	= mpg123
+calisma		= 
+
+[kaynak]
+1 			= http://downloads.sourceforge.net/$isim/$isim-${surum//./_}-src.zip::$isim-$surum.zip!
+
+[sha256]
+1 			= 5cc04732ef32850d5878b28fbd8b85798d979a025990654aceeaa379bcc9596d
+
+[derle]
+betik		= bsdtar -xf /sources/$isim-$surum.zip
+betik 		= make OSTYPE=linux
+
+[pakur]
+betik   	= mkdir -p $PKG/usr/bin
+betik		= make OSTYPE=linux INSTALL_PATH=$PKG/usr/bin install

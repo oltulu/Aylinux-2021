@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE masaüstü için varsayılan temalar
+paketci = yasarciv67
+grup    = sistem
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = gtk2 gtk-engine-murrine
+calisma = mate-icon-theme gtk-engine-murrine
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/themes/${surum%.*}
+
+[sha256]
+1       = d668c578fd10d6e2a46932df1cb8852f77923193f0b88fb327e89d80f0162f14
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

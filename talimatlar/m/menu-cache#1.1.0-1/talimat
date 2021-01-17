@@ -1,0 +1,22 @@
+[paket]
+tanim   = Freedesktop.org uyumlu menüler için önbellek mekanizması
+paketci = Cihan_Alkan
+grup 	= lxde
+url     = https://lxde.org/
+
+[gerek]
+derleme = 
+calisma = libfm-extra
+
+[kaynak]
+xz      = https://downloads.sourceforge.net/lxde
+
+[sha256]
+1 		= ed02eb459dcb398f69b9fa5bf4dd813020405afc84331115469cdf7be9273ec7
+
+[derle]
+betik 	= ./configure --sysconfdir=/etc --prefix=/usr --libexecdir=/usr/lib
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

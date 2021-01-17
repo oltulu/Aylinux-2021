@@ -1,0 +1,24 @@
+[paket]
+tanim   = WebKit GTK+ kullanan hafif bir web tarayıcısı
+paketci = yasarciv67
+grup    = ağ
+url     = https://midori-browser.org
+
+[gerek]
+derleme = cmake meson glib gobject-introspection librsvg vala gcr libsoup libpeas webkit2gtk libarchive json-glib desktop-file-utils gst-plugins-base gst-plugins-others
+calisma =
+
+[kaynak]
+1       = https://github.com/midori-browser/core/releases/download/v${surum}/midori-v${surum}.tar.gz
+
+[sha256]
+1       = 5e0a531455c47b0ff7589940aa2b0d9c16f59c99ba933e5fcdcab68114262016
+
+[derle]
+betik   = mkdir -p build;cd build
+betik   = export LC_ALL=C
+betik   = cmake "$SRC/$isim-v${surum}" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_C_FLAGS="$CFLAGS -fPIC -w" -DVALA_CFLAGS="$CFLAGS -fPIC -w" -G Ninja
+betik   = ninja
+
+[pakur]
+tip     = ninja

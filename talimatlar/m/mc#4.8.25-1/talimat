@@ -1,0 +1,22 @@
+[paket]
+tanim   = Norton Commander tarzı konsol dosya yöneticisi
+paketci = milisarge
+grup 	= sistem
+url     = https://midnight-commander.org
+
+[gerek]
+derleme = libxt libx11 unzip gpm glib libssh2 slang 
+calisma =
+
+[kaynak]
+xz      = http://ftp.midnight-commander.org
+
+[sha256]
+1 		= dd7f7ce74183307b0df25b5c3e60ad3293fd3d3d27d2f37dd7a10efce13dff1c
+
+[derle]
+ekconf  = --enable-vfs-smb --with-screen=slang --with-x
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Video ve ses dosyaları için teknik ve etiket verilerini görüntüleyin
+paketci = milisarge
+grup    = media
+url     = https://mediaarea.net/MediaInfo
+arsiv   = MediaInfo/Project/GNU/CLI
+
+[gerek]
+derleme = automake libtool pkg-config libmediainfo zlib
+calisma =
+
+[kaynak]
+1       = https://mediaarea.net/download/source/${isim}/${surum}/${isim}_${surum}.tar.xz
+
+[sha256]
+1       = 3484dda3ab36326cc6853f812ac8f47a0011b2582152ac35e9e10d5d64134ead
+
+[derle]
+betik   = ./autogen.sh
+tip     = gnu
+
+[pakur]
+tip     = gnu

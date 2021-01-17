@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE paneli uygulamaları
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = glib itstool libxslt dbus dbus-glib polkit networkmanager gtksourceview libsm libgtop mate-panel libmateweather libnotify libwnck upower
+calisma = mate-icon-theme
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+ #   1       = b84feb195b3deb8ef7a973d6e66ba30f0c411cf2e9af1a76afa8903d5655a35a 
+
+[derle]
+ekconf     = --libexecdir=/usr/lib/$isim --disable-static --enable-ipv6 --enable-polkit --enable-stickynotes --enable-frequency-selector=yes
+tip     = gnu
+
+[pakur]
+tip     = gnu

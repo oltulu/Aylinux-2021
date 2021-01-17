@@ -1,0 +1,24 @@
+[paket]
+tanim   = Çeşitli MATE modülleri için ortak API içeren kütüphane
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://bitmath.org/code/mtdev
+
+[gerek]
+derleme = dbus-glib desktop-file-utils glib itstool libxss libxt libcanberra libgtop marco mate-settings-daemon mate-menus accountsservice librsvg
+calisma = mate-menus mate-settings-daemon marco libxss mate-desktop
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= 4015c830dfd29a454c1124226fc29db460b0ba373d78939aff70e9d9271f3c71
+
+[derle]
+betik     = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --localstatedir=/var --disable-update-mimedb
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu
+#betik     = rm "${PKG}/usr/share/applications/mimeinfo.cache"

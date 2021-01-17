@@ -1,0 +1,21 @@
+[paket]
+tanim   = Musl C kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.musl-libc.org/
+
+[kaynak]
+gz      = http://www.musl-libc.org/releases
+
+[sha256]
+1       = 68af6e18539f646f9c41a3a2bb25be4a5cfa5a8f65f0bb647fd2bbfdf877e84b
+
+[derle]
+bayrak  = 0
+betik   = ./configure --prefix=/usr/lib/musl --exec-prefix=/usr --enable-wrapper=all
+betik   = make
+
+[pakur]
+tip     = gnu
+betik   = mv $PKG/lib/ld-musl*.so* $PKG/usr/lib/ 
+betik   = rmdir $PKG/lib

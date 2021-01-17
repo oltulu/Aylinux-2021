@@ -1,0 +1,22 @@
+[paket]
+tanim   = Milis Linux akıllı pano uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://mls.akdeniz.edu.tr/git/milislinux/mpano
+arsiv   = $isim
+
+[gerek]
+derleme = python
+calisma = python-gobject 
+
+[kaynak]
+gz  	= $url/archive
+
+[sha256]
+1       = a8f0ac162347a05e3a1489990a78293aa7b4425961cf212f3f580f3952c39c54
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

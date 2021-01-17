@@ -1,0 +1,21 @@
+[paket]
+tanim   = Hızlı, hafif kaynak kontrol yönetim sistemi
+paketci = milisarge
+grup    = sistem
+url     = https://www.mercurial-scm.org/
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+gz      = https://www.mercurial-scm.org/release
+
+[sha256]
+1       = fed24cbc314d31b0780309ee324c38d45476f00f555969551badcc2a1d5f1329
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

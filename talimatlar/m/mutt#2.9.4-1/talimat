@@ -1,0 +1,24 @@
+[paket]
+tanim   = Mutt posta istemcisi
+paketci = milisarge
+grup    = ağ
+url     = http://www.mutt.org
+
+[gerek]
+derleme    = ncurses krb5 libidn2 perl gdbm gpgme libidn2 openssl cyrus-sasl
+calisma    =
+
+[kaynak]
+gz         = http://ftp.mutt.org/pub/$isim
+
+[sha256]
+1          = bc42750ce8237742b9382f2148fc547a8d8601aa4a7cd28c55fe7ca045196882
+
+[derle]
+ekconf     = --enable-pop --enable-imap --enable-smtp --enable-hcache --enable-gpgme --with-regex --with-idn2 --with-ssl --with-sasl --enable-sidebar --with-curses=/usr --with-gss=/usr --with-ssl=/usr
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = rm "${PKG}"/etc/mime.types{,.dist}
+betik      = install -Dm644 contrib/gpg.rc "${PKG}"/etc/Muttrc.gpg.dist

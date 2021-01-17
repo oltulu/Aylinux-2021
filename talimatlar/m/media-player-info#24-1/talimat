@@ -1,0 +1,22 @@
+[paket]
+tanim   = HAL sonrası sistemler için medya oynatıcı özelliklerini açıklayan veri dosyaları
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.freedesktop.org/wiki/Software/media-player-info
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+gz      = ${FREEDESKTOP_SITE}/${isim}
+
+[sha256]
+1       = e6cf46db0b503e9929407ec6aa3fcd2becc9e2ca945b4ff787c98c8db63a1134
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+

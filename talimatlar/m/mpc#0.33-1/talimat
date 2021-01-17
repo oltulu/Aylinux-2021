@@ -1,0 +1,25 @@
+[paket]
+tanim   = MPD'ye minimalist komut satırı arayüzü
+paketci = Cihan_Alkan
+grup 	= 
+url     = https://www.musicpd.org/clients/mpc/
+
+[gerek]
+derleme = meson ninja libmpdclient python-sphinx python-chardet python-idna python-urllib3 python-pytz python-markupsafe
+calisma =
+
+[kaynak]
+xz      = https://www.musicpd.org/download/${isim}/${surum%.*}
+
+[sha256]
+#1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
+
+[derle]
+betik 	= meson --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -Ddocumentation=disabled -D b_lto=true -D b_pie=true build
+betik 	= ninja -C build
+	      
+[pakur]
+betik 	=  DESTDIR="${PKG}" ninja -C build install
+betik 	=  install -vDm 644 contrib/mpc-completion.bash "${PKG}/usr/share/bash-completion/completions/mpc"
+betik 	=  rm -rvf "${PKG}/usr/share/doc/${isim}/html"
+

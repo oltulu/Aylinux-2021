@@ -1,0 +1,24 @@
+[paket]
+tanim   = Hızlı bir matematik ayrıştırıcı kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://muparser.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://github.com/beltoforion/muparser/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1 		= 2b34e740a3d07767b2b97871d11f845afd74e4abe7ba5ceb5dd9bd8405aa45b8dcb2c5980535b05b92ba680cfc6f722948bf9e7f8858a335c9b63f7ac384107c
+
+[derle]
+betik 	= cd ../
+betik 	= cmake -B build -S $isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib
+betik 	= cmake --build build
+	      
+[pakur]
+betik 	= cd ../
+betik = DESTDIR="$PKG" cmake --install build

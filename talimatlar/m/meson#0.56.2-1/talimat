@@ -1,0 +1,29 @@
+[paket]
+tanim   = Yüksek verimli yapı sistemi
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://mesonbuild.com/
+
+[gerek]
+derleme = python-setuptools ninja
+calisma = 
+
+[kaynak]
+gz      = https://github.com/mesonbuild/meson/releases/download/${surum}
+dosya      = 0001-Fix-failing-85-gtest-dependency-with-version-test-to.patch
+dosya      = milis-meson
+
+[sha512]
+#1 		= 1e3dda7684e999b408a34b4b594f0b7d22494328dc0e98ec794625f16d821f2ef96303ffc761a52249e3919b52befe9fc02577dbd52e50f4b16e6c0f79ba2fca
+
+[derle]
+betik 	= patch -Np1 -i ../0001-Fix-failing-85-gtest-dependency-with-version-test-to.patch
+betik 	= python3 setup.py build
+	      
+[pakur]
+betik 	= python3 setup.py install --root="${PKG}" --optimize=1 --skip-build
+betik 	= install -d "${PKG}/usr/share/vim/vimfiles"
+betik 	= cp -rt "${PKG}/usr/share/vim/vimfiles" data/syntax-highlighting/vim/*/
+betik 	= install -Dt "${PKG}/usr/share/emacs/site-lisp" -m644 data/syntax-highlighting/emacs/*
+betik 	= install -Dt "${PKG}/usr/share/zsh/site-functions" -m644 data/shell-completions/zsh/*
+betik 	= install -D ../milis-meson -t "${PKG}/usr/bin"

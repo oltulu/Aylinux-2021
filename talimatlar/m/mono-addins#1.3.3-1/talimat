@@ -1,0 +1,32 @@
+[paket]
+tanim   = Genişletilebilir uygulamalar oluşturmak için genel çerçeve
+paketci = Cihan_Alkan
+grup 	= programlama
+url     = https://www.mono-project.com/Mono.Addins
+
+[gerek]
+derleme = gobject-introspection intltool zenity
+calisma = exempi gvfs libexif xorg-libsm mate-desktop libnotify
+
+[kaynak]
+gz      = https://github.com/mono/mono-addins/archive
+1= https://github.com/Microsoft/msbuild/releases/download/mono-hosted-msbuild-v0.03/mono_msbuild_d25dd923839404bd64cc63f420e75acf96fc75c4.zip
+
+[sha256]
+    #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = local msbuild="${SRC}/msbuild/MSBuild.exe"
+betik     = cd ${isim}-${isim}-${surum}
+betik     = ./autogen.sh --prefix=/usr --enable-gui
+betik     = make
+betik     = mono "${msbuild}" Mono.Addins/Mono.Addins.csproj /p:WarningLevel=0;Configuration=Release
+betik     = mono "${msbuild}" Mono.Addins.CecilReflector/Mono.Addins.CecilReflector.csproj /p:WarningLevel=0;Configuration=Release
+betik     = mono "${msbuild}" Mono.Addins.Gui/Mono.Addins.Gui.csproj /p:WarningLevel=0;Configuration=Release
+betik     = mono "${msbuild}" Mono.Addins.MSBuild/Mono.Addins.MSBuild.csproj /p:WarningLevel=0;Configuration=Release
+betik     = mono "${msbuild}" Mono.Addins.Setup/Mono.Addins.Setup.csproj /p:WarningLevel=0;Configuration=Release
+
+    	      
+[pakur]
+betik     = cd ${isim}-${isim}-${surum}
+betik     = make DESTDIR="${PKG}" install

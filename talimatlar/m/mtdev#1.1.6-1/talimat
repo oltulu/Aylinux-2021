@@ -1,0 +1,22 @@
+[paket]
+tanim   = Multitouch Protocol Translation kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://bitmath.org/code/mtdev
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+bz2      = https://bitmath.org/code/mtdev
+
+[sha512]
+#1 		= 78477a4af784e3f846df867f1428ffdc458e3ff33d465d45a84247a7e52f0e215cace397d72be64f6e641f07e0b97a930eff0e07fe9507e0138fb028a4037d6d
+
+[derle]
+ekconf  = --disable-static
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

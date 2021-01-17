@@ -1,0 +1,22 @@
+[paket]
+tanim   = Çoklu işletim sistem destekli C kütüphanesi
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/managarm/mlibc
+
+[kaynak]
+git      = https://github.com/managarm/mlibc
+git      = https://github.com/managarm/cxxshim
+git      = https://github.com/managarm/frigg
+
+[derle]
+betik    = mv frigg mlibc/subprojects/; mv cxxshim mlibc/subprojects/
+betik    = mkdir build;cd build
+bayrak   = 0
+betik    = LC_ALL=C meson --buildtype=release -Dstatic=true --prefix /usr/lib/mlibc --libdir lib --sbindir bin --includedir include --wrap-mode nodownload --auto-features enabled ../mlibc
+
+[pakur]
+tip      = ninja
+betik    = mkdir -p $PKG/usr/bin
+betik    = ln -s /usr/lib/mlibc/bin/mlibc-gcc $PKG/usr/bin/mlibc-gcc
+

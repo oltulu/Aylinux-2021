@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE Hesap Makinesi
+paketci = Cihan_Alkan
+grup    = araç
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = glib itstool gtk3
+calisma =
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1       = c188f3f6766c74317fc448c75c3dc6e066ea713a0f63bd3de36c06f25e60f038
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

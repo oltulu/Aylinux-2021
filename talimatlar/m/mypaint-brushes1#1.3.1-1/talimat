@@ -1,0 +1,24 @@
+[paket]
+tanim   = MyPaint ve libmypaint kullanan diğer yazılımlar tarafından kullanılan fırçalar
+paketci = yasarciv67
+grup    = tasarım
+url     = https://github.com/mypaint/mypaint-brushes
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+github  = mypaint/mypaint-brushes
+
+[sha256]
+1       = 704bb6420e65085acfd7a61d6050e96b0395c5eab078433f11406c355f16b214
+
+[derle]
+betik	= cd mypaint-brushes-$surum
+betik	= autoreconf -fiv
+tip     = gnu
+
+[pakur]
+betik	= cd mypaint-brushes-$surum
+tip     = gnu

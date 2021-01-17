@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE için bildirim arka plan programı
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = glib dbus-glib libxml2 libnotify libwnck libcanberra desktop-file-utils dconf startup-notification 
+calisma =
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#  1       = 2eb27d609eaae3eec0fdadf55c2c8bee42d4d3609814c199c0162d1aca126678
+
+[derle]
+ekconf	= --libexecdir=/usr/lib/${isim}
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Açık kaynaklı bir yazılım, öğrenme yönetim sistemi
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://moodle.org/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+tgz      = https://download.moodle.org/stable310
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = install -dm0755 "${PKG}"/usr/share/webapps
+betik     = install -dm0755 "${PKG}"/var/lib/${isim}
+betik     = cp -a $isim "$PKG/usr/share/webapps/${isim}"
+    	      
+[pakur]
+betik = ln -s /var/lib/${isim} "$PKG"/usr/share/webapps/moodledata
+betik = chown -R http:http "${PKG}"/var/lib/${isim}
+betik = install -dm0755 "$PKG"/etc/php/conf.d/

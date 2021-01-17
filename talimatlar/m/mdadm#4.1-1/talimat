@@ -1,0 +1,22 @@
+[paket]
+tanim   = Linux md aygıt dizeleri yönetim aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://git.kernel.org/cgit/utils/mdadm/mdadm.git/
+
+[gerek]
+derleme = eudev
+calisma = 
+
+[kaynak]
+xz      = https://www.kernel.org/pub/linux/utils/raid/$isim
+
+[sha256]
+1 		= ab7688842908d3583a704d491956f31324c3a5fc9f6a04653cb75d19f1934f4a
+
+[derle]
+betik   = sed -i 's,^install : mdadm mdmon,install: ,g' Makefile
+betik   = make ${MAKEJOBS} CFLAGS="$CFLAGS -DNO_COROSYNC -DNO_DLM -Wno-error -DSendmail='\"sendmail -t\"'" BINDIR=/usr/bin LDFLAGS="$LDFLAGS"
+	      
+[pakur]
+betik   = make BINDIR=/usr/bin STRIP= PREFIX=/usr DESTDIR=${PKG} UDEVDIR=/usr/lib/udev install

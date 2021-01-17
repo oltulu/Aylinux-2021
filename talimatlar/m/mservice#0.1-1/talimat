@@ -1,0 +1,22 @@
+[paket]
+tanim   = Milis Linux servis yönetim arayüzü
+paketci = yasarciv
+grup    = sistem
+url     = https://mls.akdeniz.edu.tr/git/milislinux/mservice
+arsiv   = $isim
+
+[gerek]
+derleme = python
+calisma = python-gobject 
+
+[kaynak]
+gz  	= $url/archive
+
+[sha256]
+1       = 20caf7711ffba59173dab301b978c1e379a680b56d3bd0494dbdbd14f0e3324d
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

@@ -1,0 +1,29 @@
+[paket]
+tanim   = JavaScript yorumlayıcı ve kitaplıkları - Sürüm 78
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
+
+[gerek]
+derleme =  rust autoconf213 python nspr readline zlib
+calisma =  nspr
+
+[kaynak]
+1 = https://archive.mozilla.org/pub/firefox/releases/${surum}esr/source/firefox-${surum}esr.source.tar.xz
+
+[sha1]
+ #1 		= SKIP
+
+[derle]
+betik = cd firefox-$surum
+betik = export CC=gcc CXX=g++
+betik = export SHELL=/bin/bash
+betik = mkdir obj ; cd obj
+betik = ../js/src/configure --prefix=/usr --disable-jemalloc --enable-shared-js --disable-debug-symbols --disable-optimize --enable-readline --with-intl-api --with-system-nspr --with-system-zlib
+betik = make
+
+[pakur]
+betik = cd firefox-$surum/obj
+betik = make DESTDIR=$PKG install
+betik = rm $PKG/usr/lib/libjs_static.ajs
+betik = chmod -x $PKG/usr/lib/pkgconfig/*

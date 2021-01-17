@@ -1,0 +1,21 @@
+[paket]
+tanim   = Çeşitli uygulamalardan bilgileri görüntülemek için MATE uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = gtk3 libx11 mate-panel libindicator
+calisma =
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+1       = 8eab3f66a027c971d8c7a92b69e595fe0edec0e568610e0071c54358f4daf754
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

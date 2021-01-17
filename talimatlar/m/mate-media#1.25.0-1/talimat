@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE medya araçları
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = 
+calisma = glib
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= acec93a66154fdbd78404680fca5a99112085cb99d7c43022b010527dc9a6ad2
+
+[derle]
+betik     = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/${isim} --localstatedir=/var
+betik     = make
+    	      
+[pakur]
+tip 	= gnu

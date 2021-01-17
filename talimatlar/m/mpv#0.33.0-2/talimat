@@ -1,0 +1,30 @@
+[paket]
+tanim   = ücretsiz, açık kaynaklı ve çapraz platform medya oynatıcı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://mpv.io/
+
+[gerek]
+derleme = python libass waf libdvdnav libbluray libcdio-paranoia ffmpeg libarchive
+calisma = 
+
+[kaynak]
+git = https://github.com/mpv-player/mpv
+#1      = https://github.com/mpv-player/mpv/archive/v${surum}.tar.gz
+#2      = https://waf.io/waf-2.0.9
+
+[sha256]
+
+
+[derle]
+betik = cd mpv
+#betik 	= install -m755 /sources/waf-2.0.9 waf
+betik 	= waf configure --prefix=/usr --confdir=/etc/mpv --enable-cdda --enable-libarchive --enable-dvb --enable-dvdnav --enable-libmpv-shared --disable-build-date
+betik 	= waf build
+	      
+[pakur]
+betik = cd mpv
+betik 	= waf install --destdir="$PKG"
+#betik 	= install -m0644 DOCS/{encoding.rst,tech-overview.txt} "$PKG"/usr/share/doc/mpv
+#betik 	= install -m0644 TOOLS/lua/* -D -t "$PKG"/usr/share/mpv/scripts
+

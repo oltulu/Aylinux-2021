@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE için ortak geliştirme makroları
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://bitmath.org/code/mtdev
+
+[gerek]
+derleme = gobject-introspection intltool
+calisma = autoconf automake gettext gtk-doc intltool libtool pkg-config
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+
+[derle]
+betik     = ./configure --prefix=/usr
+betik     = make
+	      
+[pakur]
+tip 	= gnu

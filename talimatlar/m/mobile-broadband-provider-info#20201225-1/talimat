@@ -1,0 +1,22 @@
+[paket]
+tanim   = Mobil servis ağları için uygulama ve kütüphane
+paketci = milisarge
+grup 	= sistem
+url     = https://gitlab.gnome.org/GNOME/mobile-broadband-provider-info
+
+[gerek]
+derleme = libxslt
+calisma =
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/$surum
+
+[sha256]
+1 		= c22d64a565d1975b9eecb6ed2eeaef18634bc6f385c8137d05e845d8fb3cce5b
+
+[derle]
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = TeX/LaTeX derleme sistemi
+paketci = milisarge
+grup    = ofis
+url     = https://miktex.org
+
+[gerek]
+derleme = cmake libxslt qt5-tools qt5-script qt5-base apr apr-util libgd log4cxx zziplib libmspack uriparser fribidi harfbuzz pcre2 libjpeg-turbo libpng hunspell
+calisma = 
+
+[kaynak]
+xz      = https://miktex.org/download/ctan/systems/win32/miktex/source
+
+[sha256]
+1       = dcdb921bff0dd4566a58e9ac7395b672d87f2ebdfb360bc528f8869d5f09e1db
+
+[derle]
+ekconf  = -DWITH_UI_QT=ON
+tip     = cmake
+
+[pakur]
+tip     = cmake
