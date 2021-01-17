@@ -1,0 +1,22 @@
+[paket]
+tanim   = Uygulamaları daha hızlı başlatmaya yardımcı olan bir arka plan programı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-turbo
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-turbo/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[gerek]
+derleme = 
+calisma = 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -D systemd=disabled .
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install

@@ -1,0 +1,34 @@
+[paket]
+tanim   = Apache Hive veri ambarı uygulaması
+paketci = milisarge
+grup    = büyükveri
+url     = https://hive.apache.org
+
+[gerek]
+derleme    = maven python-yaml
+calisma    = openjdk8 python
+
+[kaynak]
+1          = https://github.com/apache/incubator-druid/archive/druid-$surum-incubating.tar.gz
+dosya      = $isim-profile.sh
+
+[sha256]
+1          = b8aa553d80ae624e44d2f7f9c144e339bb97dc9191ac025854804420ebc9e55e
+2          = 3fe2d03eff76285d78bf3e9dbff9c8286473deed7117133d498c2891ed353c24
+
+[derle]
+betik      = cd incubator-druid-druid-$surum-incubating
+betik      = make-ca -g
+betik      = source /etc/profile.d/openjdk.sh
+betik      = pathappend $JAVA_HOME/bin
+betik      = export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
+betik      = mvn clean package -DskipTests -Pdist -Dmaven.repo.local=/opt/m2/repository
+
+[pakur]
+betik      = cd incubator-druid-druid-$surum-incubating
+betik      = mkdir -p $PKG/usr/mdp
+betik      = tar xf distribution/target/apache-druid-$surum-incubating-bin.tar.gz -C $PKG/usr/mdp/
+betik      = mv $PKG/usr/mdp/apache-druid-0.16.0-incubating $PKG/usr/mdp/druid
+betik      = cp -r examples $PKG/usr/mdp/druid/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh

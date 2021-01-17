@@ -1,0 +1,26 @@
+[paket]
+tanim   = Deepin için ekrn kaydedici
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-screen-recorder
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz     = https://github.com/linuxdeepin/deepin-screen-recorder/archive/$surum
+1= https://github.com/archlinux/svntogit-community/raw/packages/deepin-screen-recorder/trunk/deepin-screen-recorder-qt5.15.patch
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -i '/include <X11.extensions.XTest.h>/a #undef min' src/event_monitor.cpp
+betik = sed -i '/#include <iostream>/d;1i #include <iostream>' src/screen_shot_event.cpp
+betik = patch -p1 -i /sources/deepin-screen-recorder-qt5.15.patch # Fix build with Qt 5.15
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik =   make INSTALL_ROOT="$PKG" install

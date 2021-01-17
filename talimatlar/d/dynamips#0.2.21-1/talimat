@@ -1,0 +1,22 @@
+[paket]
+tanim   = Cisco IOS özellikli cihazlar için donanım emülasyonu
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/GNS3/dynamips
+
+[gerek]
+derleme    = cmake elfutils libpcap
+calisma    =
+
+[kaynak]
+github    = GNS3/${isim}
+
+[sha256]
+1         = 08587589db2c3fc637e6345aebf4f9706825c12f45d9e2cf40d4189c604656d2
+
+[derle]
+betik     = export DYNAMIPS_ARCH=amd64
+tip       = cmake
+
+[pakur]
+tip       = cmake

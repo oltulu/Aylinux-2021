@@ -1,0 +1,25 @@
+[paket]
+tanim   = Arcan için Durden masaüstü ortamı
+paketci = milisarge
+grup    = sistem
+url     = http://durden.arcan-fe.com
+
+[gerek]
+derleme = 
+calisma = arcan
+
+[kaynak]
+1       = https://github.com/letoram/durden/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 6597d22f19e9c492b489305284bac955c091985d021ed2922fab22c93ed4d5c0
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik   = mkdir -p $PKG/usr/bin
+betik   = cp distr/durden $PKG/usr/bin/
+betik   = chmod +x $PKG/usr/bin/durden
+betik   = mkdir -p $PKG/usr/share/durden/
+betik   = cp -r durden $PKG/usr/share/durden/

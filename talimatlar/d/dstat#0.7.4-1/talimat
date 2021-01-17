@@ -1,0 +1,23 @@
+[paket]
+tanim 	= İstatistiksel çok amaçlı kaynak izleme aracı
+paketci	= GoksuBay
+grup 	= sistem
+url 	= http://dag.wieers.com/home-made/dstat
+
+[gerek]
+derleme = python
+calisma = python-six
+
+[kaynak]
+1		= https://github.com/dagwieers/dstat/archive/v$surum.tar.gz
+2       = https://github.com/efexgee/dstat/commit/220a785321b13b6df92a536080aca6ef1cb644ad.patch
+
+[sha512]
+1 		= d100223887ebd83d0fd1259436f39419a85df9002556abcfc8e4195aa63be73d85707dcd5c4fb56a979b29131485dce6e97c177fbfca08dc50bd0f92b15cc6f5
+2       = 7c5dc03aaa3d9a4f65b47170a99c2d61a4cb007bacae5729ff09bdd569bd7b6fc4048efaceb6a6392561bb2f4bf1a7fc0e31ab6f2624b6edb55071f1baaa9b99
+
+[derle]
+yama    = 220a785321b13b6df92a536080aca6ef1cb644ad.patch
+
+[pakur]
+betik   = make DESTDIR=$PKG install

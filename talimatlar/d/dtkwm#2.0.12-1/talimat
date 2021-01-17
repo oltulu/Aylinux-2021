@@ -1,0 +1,23 @@
+[paket]
+tanim   = Deepin Alet Seti Wm
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dtkwm
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://github.com/linuxdeepin/dtkwm/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2= https://github.com/linuxdeepin/dtkwm/commit/2490891a.patch::dtk-module-name.patch
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = patch -p1 -i /sources/dtk-module-name.patch # Fix build
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik =  make INSTALL_ROOT="$PKG" install

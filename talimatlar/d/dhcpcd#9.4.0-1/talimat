@@ -1,0 +1,21 @@
+[paket]
+tanim   = RFC2131 uyumlu DHCP istemcisi
+paketci = milisarge
+grup 	= temel
+url     = http://www.sudo.ws
+
+[kaynak]
+gz     	= https://github.com/rsmarples/dhcpcd/archive
+
+[sha256]
+#1 		= a27924873df92c47ad8b76a4fba4dfb41afaa3f90a4ba5f0e8e3ad446d792441
+
+[derle]
+betik = cd dhcpcd-dhcpcd-9.4.0
+dosya   = derle.sh
+     
+[pakur]
+betik = cd dhcpcd-dhcpcd-9.4.0
+tip     = gnu
+;ip4vall pasif edilmesi
+betik   = echo noipv4ll >> "${PKG}/etc/dhcpcd.conf"

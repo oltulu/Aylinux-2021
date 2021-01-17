@@ -1,0 +1,18 @@
+[paket]
+tanim   = Deepin Toolkit, DDE görünümü ve hissi için gui modülü
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dtkgui
+
+[kaynak]
+1      = https://github.com/linuxdeepin/dtkgui/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = qmake-qt5 PREFIX=/usr DTK_VERSION=$surum LIB_INSTALL_DIR=/usr/lib
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install

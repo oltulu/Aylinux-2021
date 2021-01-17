@@ -1,0 +1,24 @@
+[paket]
+tanim   = Deepin için varsayılan terminal öykünme uygulaması
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-terminal
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-terminal/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+#2     = https://github.com/archlinux/svntogit-community/raw/packages/deepin-terminal/trunk/remove-vendor.patch
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = sed -i '/LXQtCompilerSettings/a remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII)' 3rdparty/terminalwidget/CMakeLists.txt
+betik = mkdir -p ../build
+betik = cd ../build
+betik = cmake -GNinja -DDTKCORE_TOOL_DIR=/usr/lib/libdtk-$(expac %v dtkcore | cut -d - -f 1 | cut -d : -f 2)/DCore/bin ../deepin-terminal-$surum
+betik = ninja
+
+[pakur]
+betik = cd ../build
+betik = DESTDIR="$PKG" ninja install
+betik = rm -r "$PKG"/root

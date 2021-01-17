@@ -1,0 +1,24 @@
+[paket]
+tanim   = KDE ve Plazma kaynakları yönetimi GUI'si
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://www.kde.org/workspaces/plasmadesktop/
+
+[gerek]
+derleme =extra-cmake-modules plasma-framework
+calisma = 
+
+[kaynak]
+xz      = https://download.kde.org/stable/plasma/$surum
+
+[sha256]
+    #1 		= 8dced74012bed3f33c3c51874aa9c3a57093573c1c0e263b758cefa96c26f7b7
+
+[derle]
+betik 	= cd ../
+betik 	= cmake -B build -S $isim-$surum -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBEXECDIR=lib/kf5 -DBUILD_TESTING=OFF -Wno-dev
+betik 	= cmake --build build
+    	      
+[pakur]
+betik 	= cd ../
+betik = DESTDIR="$PKG" cmake --install build

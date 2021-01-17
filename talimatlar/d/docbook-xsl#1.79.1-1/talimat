@@ -1,0 +1,21 @@
+[paket]
+tanim   = Docbook-xml dönüşümleri için XML stil sayfaları
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://docbook.org
+
+[gerek]
+derleme = 
+calisma = libxml2
+
+[kaynak]
+1     = http://downloads.sourceforge.net/project/docbook/$isim/$surum/$isim-$surum.tar.bz2
+
+[sha1]
+1 		= 
+
+[derle]
+#betik = patch -Np1 -i /sources/docbook-xsl-nons-1.79.2-stack_fix-1.patch
+
+[pakur]
+dosya = pakur.sh

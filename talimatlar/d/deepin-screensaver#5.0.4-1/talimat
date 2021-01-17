@@ -1,0 +1,20 @@
+[paket]
+tanim   = Deepin screensaver viewer and tools
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-screensaver
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-screensaver/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+#2     = https://github.com/archlinux/svntogit-community/raw/packages/deepin-terminal/trunk/remove-vendor.patch
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install
+

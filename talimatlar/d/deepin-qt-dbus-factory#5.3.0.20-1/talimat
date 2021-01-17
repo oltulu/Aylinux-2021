@@ -1,0 +1,20 @@
+[paket]
+tanim   = Bir depo, otomatik olarak oluşturulan Qt5 dbus kodunu depolar
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-qt-dbus-factory
+
+[kaynak]
+1      = https://github.com/linuxdeepin/dde-qt-dbus-factory/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd dde-qt-dbus-factory-$surum
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd dde-qt-dbus-factory-$surum
+betik = make INSTALL_ROOT="$PKG" install

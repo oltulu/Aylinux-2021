@@ -1,0 +1,30 @@
+[paket]
+tanim   = DDE için yazıcı yapılandırma projesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/linuxdeepin/dde-printer
+
+[gerek]
+derleme = 
+calisma = libpeas gtksourceview gspell
+
+[kaynak]
+1 = https://github.com/linuxdeepin/dde-printer/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2 = https://github.com/archlinux/svntogit-community/raw/packages/deepin-printer/trunk/build-fix.patch
+
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= cd dde-printer-$surum
+betik 	= patch -p1 -i /sources/build-fix.patch
+betik 	= sed -i '/include <QEventLoop>/a #include <QCloseEvent>' src/Printer/ui/dprintersshowwindow.h
+betik 	= sed -i '/include <QList>/a #include <QFile>' src/Printer/vendor/zdrivermanager.h
+betik 	= sed -i 's/-lcrypto++/-lcryptopp/' src/Printer/Printer.pro
+betik 	= sed -i '$aOnlyShowIn=Deepin' src/Printer/platform/linux/dde-printer.desktop
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= cd dde-printer-$surum
+betik 	= make INSTALL_ROOT="$PKG" install

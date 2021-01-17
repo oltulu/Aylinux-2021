@@ -1,0 +1,31 @@
+[paket]
+tanim   = Deepin Pencere Yöneticisi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-wm
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1 = https://github.com/linuxdeepin/deepin-wm/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2 = https://github.com/linuxdeepin/deepin-wm/pull/65.patch::vala.patch
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = patch -Np1 -i /sources/vala.patch
+betik = sed -e 's/background.set_rounds/background.value.set_rounds/' -e 's/background.set_blurred/background.value.set_blurred/' -e 's/background.set_radius/background.value.set_radius/' -e 's/bg.set_transient_background/bg.value.set_transient_background/' -i src/WindowManager.vala
+betik = sed -i 's#/usr/share/backgrounds/default_background.jpg#/usr/share/backgrounds/deepin/desktop.jpg#' src/Background/BackgroundSource.vala
+betik = cd ../
+betik = export CFLAGS="$CFLAGS -DWNCK_I_KNOW_THIS_IS_UNSTABLE"
+betik = cd $isim-$surum
+betik = ./autogen.sh --prefix='/usr' --disable-schemas-compile
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+
+
+[pakur]
+betik = make DESTDIR="$PKG" install

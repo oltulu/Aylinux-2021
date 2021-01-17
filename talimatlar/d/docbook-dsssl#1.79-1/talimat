@@ -1,0 +1,21 @@
+[paket]
+tanim   = DSSSL DocBook için Stil Sayfaları
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://docbook.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = sgml-common perl
+
+[kaynak]
+bz2     = https://sourceforge.net/projects/docbook/files/${isim}/${surum}
+dosya     = docbook-style-dsssl.Makefile
+
+[sha1]
+1 		= 
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]

@@ -1,0 +1,45 @@
+[paket]
+tanim   = D programlama dili başvuru derleyici
+paketci = milisarge 
+grup    = geliştirme  
+url     = http://www.dlang.org
+
+[gerek]
+derleme  = unzip
+calisma  = 
+
+[kaynak]
+1  = https://github.com/dlang/dmd/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+2  = https://github.com/dlang/druntime/archive/v$surum.tar.gz::druntime-$surum.tar.gz
+3  = https://github.com/dlang/phobos/archive/v$surum.tar.gz::phobos-$surum.tar.gz
+
+[sha256]
+1  = bcca38f4b80b51ae0a1955dc29e6cbfaa4d01d94869ddfcacf9292898c34343a
+2  = cc8ba196b08cca04488d97d0e35c878f7351b7d8128aec90eaa312d2bd9a6af2
+3  = df9f81eecda4366adc5ca9ed31a0b4474c248544b120ff6fa3f6cb45917d8769
+
+[derle]
+betik  = cd $SRC;mv dmd-$surum dmd
+betik  = mv druntime-$surum druntime
+betik  = mv phobos-$surum phobos
+betik  = cd "$SRC"/dmd
+betik  = make -f posix.mak MODEL=64 RELEASE=1 AUTO_BOOTSTRAP=1
+betik  = cd $SRC/druntime
+betik  = make -f posix.mak DMD="$SRC"/dmd/generated/linux/release/*/dmd BUILD=release RELEASE=1 PIC=1
+betik  = cd $SRC/phobos
+betik  = make -f posix.mak DMD="$SRC"/dmd/generated/linux/release/*/dmd BUILD=release RELEASE=1 PIC=1
+
+[pakur]
+betik  = install -m 0755 -D $SRC/dmd/generated/linux/release/64/dmd $PKG/usr/bin/dmd
+betik  = install -d $PKG/etc
+betik  = echo -e "[Environment]\nDFLAGS=-I/usr/include/dlang/dmd -L-L/usr/lib -L--export-dynamic" > $PKG/etc/dmd.conf
+betik  = install -d $PKG/usr/share/d/samples/
+betik  = cp -r $SRC/dmd/samples/* $PKG/usr/share/d/samples/
+;Phobos standard library
+betik  = install -m 0644 -D $SRC/phobos/generated/linux/release/64/libphobos2.a \
+betik  = $PKG/usr/lib/libphobos2.a
+betik  = install -d $PKG/usr/include/dlang/dmd
+betik  = cp -r $SRC/phobos/{*.d,etc,std} $PKG/usr/include/dlang/dmd
+betik  = cp -r $SRC/druntime/import/* $PKG/usr/include/dlang/dmd/
+betik  = install -m 0644 -D $SRC/phobos/generated/linux/release/64/libphobos2.so \
+betik  = $PKG/usr/lib/libphobos2.so

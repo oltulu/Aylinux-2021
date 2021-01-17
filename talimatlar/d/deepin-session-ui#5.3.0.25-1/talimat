@@ -1,0 +1,25 @@
+[paket]
+tanim   = Deepin masaüstü ortamı - Oturum UI modülü
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-session-ui
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://github.com/linuxdeepin/dde-session-ui/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd dde-session-ui-$surum
+betik = sed -i 's|/usr/share/backgrounds/default_background.jpg|/usr/share/backgrounds/deepin/desktop.jpg|' widgets/*.cpp
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd dde-session-ui-$surum
+betik = make INSTALL_ROOT="$PKG" install

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Linux için dağıtık işlem denetleme/geri yükleme uygulaması
+paketci = milisarge
+grup    = sistem
+url     = http://dmtcp.sourceforge.net
+
+[gerek]
+derleme = openmpi openmp
+calisma =
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/project/$isim/$surum
+
+[sha256]
+1       = 3ed62a86dd0cb9c828b93ee8c7c852d6f9c96a0efa48bcfe867521adf7bced68
+
+[derle]
+betik   = ./configure --prefix=/usr --sysconfdir=/etc
+betik   = make
+
+[pakur]
+tip     = gnu

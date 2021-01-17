@@ -1,0 +1,21 @@
+[paket]
+tanim   = Drogon C++ web geliştirme kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/an-tao/drogon/wiki
+
+[gerek]
+derleme = cmake jsoncpp postgresql sqlite
+calisma =
+
+[kaynak]
+git  = https://github.com/an-tao/drogon
+git  = https://github.com/an-tao/trantor
+
+[derle]
+betik   = mv trantor drogon/ ; cd drogon
+tip     = cmake
+
+[pakur]
+betik   = cd drogon
+tip     = cmake

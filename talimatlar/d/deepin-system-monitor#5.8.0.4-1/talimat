@@ -1,0 +1,25 @@
+[paket]
+tanim   = Daha kullanıcı dostu bir sistem monitörü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/linuxdeepin/deepin-system-monitor
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+1  = https://github.com/linuxdeepin/deepin-system-monitor/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+1 		= SKIP
+
+[derle]
+betik = sed -e 's|print_err|print_err_system|g' -i src/process/system_stat.cpp
+betik = sed -e 's|print_err|print_err_process|g' -i src/process/process_stat.cpp
+betik = sed -e 's|print_err|print_err_desktop|g' -i src/process/desktop_entry_stat.cpp
+betik = cmake . -GNinja -DCMAKE_INSTALL_PREFIX=/usr
+betik = ninja 
+
+[pakur]
+betik = DESTDIR="$PKG" ninja install

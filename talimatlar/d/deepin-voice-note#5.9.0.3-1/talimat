@@ -1,0 +1,23 @@
+[paket]
+tanim   = Metin notları ve ses kayıtları yapmak için hafif bir not aracı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-voice-note
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz     = https://github.com/linuxdeepin/deepin-voice-note/archive/$surum
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= sed -i '1i#include <QPainterPath>' src/views/middleviewdelegate.cpp src/views/leftviewdelegate.cpp
+betik 	= cmake -GNinja .
+betik 	= ninja
+            	      
+[pakur]
+betik 	=  DESTDIR="$PKG" ninja install
