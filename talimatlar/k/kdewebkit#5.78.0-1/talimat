@@ -1,0 +1,24 @@
+[paket]
+tanim   = QtWebKit için KDE Entegrasyonu
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://community.kde.org/Frameworks
+
+[gerek]
+derleme = extra-cmake-modules qt5-tools 
+calisma = qt5-x11extras
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}/portingAids
+
+[sha256]
+#1 		= 8dced74012bed3f33c3c51874aa9c3a57093573c1c0e263b758cefa96c26f7b7
+
+[derle]
+betik 	= cd ../
+betik 	= cmake -B build -S $isim-$surum -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DKDE_INSTALL_LIBDIR=lib -DECM_MKSPECS_INSTALL_DIR=/usr/lib/qt5/mkspecs/modules -DKDE_INSTALL_PLUGINDIR=/usr/lib/qt5/plugins -DBUILD_TESTING=OFF
+betik 	= cmake --build build
+	      
+[pakur]
+betik 	= cd ../
+betik = DESTDIR="$PKG" cmake --install build

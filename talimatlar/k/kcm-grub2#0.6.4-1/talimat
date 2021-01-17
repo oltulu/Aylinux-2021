@@ -1,0 +1,23 @@
+[paket]
+tanim   = GRUB önyükleyicisini yapılandırmak için KDE Kontrol Modülü
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://invent.kde.org/system/kcm-grub2
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git      = https://invent.kde.org/system/kcm-grub2
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= export PKG_CONFIG_PATH='/usr/lib/imagemagick6/pkgconfig'
+betik 	= cmake -B build -S "$isim" -G Ninja -D BUILD_TESTING=OFF -Wno-dev
+betik 	= cmake --build build
+                	      
+[pakur]
+betik 	= DESTDIR="${PKG}" cmake --install build

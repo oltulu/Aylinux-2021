@@ -1,0 +1,20 @@
+[paket]
+tanim   = Konsol yazı tipleri ve klavye araçları
+paketci = milisarge
+grup 	= temel
+url     = ftp://devel.altlinux.org/legion/kbd
+
+[kaynak]
+git      = https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd
+dosya   = fix-euro2.patch
+
+[sha256]
+#1 		= f3ba359a56627dd0346dfc0f4711da3f45da60ba03e90fca2592992e439c5c29
+#2 		= a5e0167b6a82a9eb4d581d56baab930c2d80f5541dc34630460b73e1115384b8
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+betik   = cd kbd
+betik   = make KEYCODES_PROGS=yes RESIZECONS_PROGS=yes DESTDIR=${PKG} install

@@ -1,0 +1,29 @@
+[paket]
+tanim   = Yüksek verimli dağıtılmış mesajlaşma sistemi
+paketci = milisarge
+grup    = büyükveri
+url     = https://kafka.apache.org
+
+[gerek]
+derleme    = 
+calisma    = openjdk8 zookeeper
+
+[kaynak]
+1          = https://archive.apache.org/dist/$isim/$surum/kafka_2.12-$surum.tgz
+dosya      = $isim-profile.sh
+
+[sha256]
+1          = 5a3ddd4148371284693370d56f6f66c7a86d86dd96c533447d2a94d176768d2e
+2          = aa63f4be4f696a14279407f92cc13c6f001cf3fe54664883f2c68247e8a1d867
+
+[derle]
+betik      = cd kafka_2.12-$surum
+betik      = echo "derleme yok"
+
+[pakur]
+betik      = cd kafka_2.12-$surum
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = cp -r bin config libs $PKG/usr/mdp/$isim/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh
+betik      = rm -rf $PKG/usr/mdp/kafka/bin/windows

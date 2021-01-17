@@ -1,0 +1,31 @@
+[paket]
+tanim   = Milis Linux Liquorix Kernel sürümü
+paketci = milisarge
+grup 	= temel
+url     = http://www.kernel.org
+
+[gerek]
+derleme = linux-firmware intel-ucode elfutils
+calisma = 
+
+[kaynak]
+1 = http://www.kernel.org/pub/linux/kernel/v5.x/linux-5.5.tar.xz
+2 = https://mls.akdeniz.edu.tr/git/milislinux/kernel-patches/raw/branch/master/v5.5.19-lqx1.patch.tar.xz
+dosya = kernel-5.5-config
+dosya = aufs5-loopback.patch
+dosya = aufs5-base.patch
+dosya = aufs5-mmap.patch
+dosya = aufs5-kbuild.patch
+dosya = aufs5.patch
+dosya = kernel-5.5-config.aufs
+
+[sha256]
+1 = a6fbd4ee903c128367892c2393ee0d9657b6ed3ea90016d4dc6f1f6da20b2330
+2 = dfff2afbb6404da08a8e21bfdef30441e3fd1cbeb38d9a96fbfc42927505ca0b
+
+[derle]
+dosya = derle.sh
+     
+[pakur]
+strip = yok
+dosya = pakur.sh

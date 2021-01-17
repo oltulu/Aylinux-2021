@@ -1,0 +1,22 @@
+[paket]
+tanim   = Daha az tuş kulanımlı seçim tabanlı Vim benzeri düzenleyici
+paketci = milisarge
+grup    = ofis
+url     = https://kakoune.org
+arsiv   = ${isim}-${surum}/src
+
+[gerek]
+derleme = ncurses
+calisma =
+
+[kaynak]
+bz2     = https://github.com/mawww/kakoune/releases/download/v${surum}
+
+[sha256]
+1       = 861a89c56b5d0ae39628cb706c37a8b55bc289bfbe3c72466ad0e2757ccf0175
+
+[derle]
+betik   = make debug=no
+
+[pakur]
+betik   = make debug=no install-strip DESTDIR=${PKG} PREFIX=/usr

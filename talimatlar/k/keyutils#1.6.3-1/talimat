@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Linux anahtar yönetim araçları
+paketci = milisarge
+grup 	= sistem
+url 	= https://www.kernel.org
+
+[kaynak]
+bz2		= http://people.redhat.com/~dhowells/keyutils
+
+[sha512]
+1 		= ee50da165099ea26904066d24b27c5165cb1eb78df6768cba3a534aa318a5c8d926ec6e5322a38c8cedaa768cd79bdcb26ef918aa8447df2e5dfbbe7b8f200ff
+
+[derle]
+betik   = make NO_ARLIB=1 CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" SBINDIR='/usr/bin' BINDIR='/usr/bin'
+
+[pakur]
+betik   = make DESTDIR="${PKG}" NO_ARLIB=1 SBINDIR='/usr/bin' BINDIR='/usr/bin' LIBDIR='/usr/lib' USRLIBDIR='/usr/lib' install

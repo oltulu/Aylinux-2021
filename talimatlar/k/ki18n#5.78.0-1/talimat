@@ -1,0 +1,22 @@
+[paket]
+tanim   = KDE Gettext tabanlı UI metin uluslararasılaştırma
+paketci = yasarciv67
+grup    = sistem
+url     = https://projects.kde.org/projects/frameworks/ki18n
+
+[gerek]
+derleme = cmake extra-cmake-modules qt5-declarative
+calisma =
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+1       = 85114fb458e66ca7ce02e06fb1b6541989c3516d68873d2ca3fc2438d7258dcd
+
+[derle]
+ekconf  = -DBUILD_TESTING=OFF
+tip     = cmake
+
+[pakur]
+tip     = cmake
