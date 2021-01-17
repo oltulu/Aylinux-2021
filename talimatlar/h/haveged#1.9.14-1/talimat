@@ -1,0 +1,24 @@
+[paket]
+tanim   = CPU zamanlamalarını kullanarak entropi toplama arka plan programı
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://github.com/jirka-h/haveged
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1 = https://github.com/jirka-h/$isim/archive/v$surum.tar.gz::$isim-surum.tar.gz
+
+[sha256]
+    #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = sed -i init.d/service.fedora -e 's/@SBIN_DIR@/\/usr\/bin/'
+betik     = ./configure --prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin
+betik     = make
+        	      
+[pakur]
+betik = cd $isim
+betik =   make DESTDIR="$PKG" install

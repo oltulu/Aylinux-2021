@@ -1,0 +1,17 @@
+[paket]
+tanim   = Freedesktop.org Hicolor simge teması
+paketci = oltulu
+grup 	= sistem
+url     = https://www.freedesktop.org/wiki/Software/icon-theme/
+
+[kaynak]
+xz      = https://icon-theme.freedesktop.org/releases
+
+[sha256]
+1 		= 317484352271d18cbbcfac3868eab798d67fff1b8402e740baa6ff41d588a9d8
+
+[derle]
+tip = gnu
+	      
+[pakur]
+tip = gnu

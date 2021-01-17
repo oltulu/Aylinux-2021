@@ -1,0 +1,29 @@
+[paket]
+tanim   = HP Linux yazıcı uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://developers.hp.com/hp-linux-imaging-and-printing
+
+[gerek]
+derleme = python libxml2 cups sane ghostscript net-snmp libusb libjpeg-turbo dbus qt5-base python-qt5
+calisma = python-gobject python-dbus desktop-file-utils foomatic-db foomatic-db-engine python-distro python-qt5
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/hplip/hplip/${surum}
+
+[sha256]
+1       = c64b2d334348010a9911f4feb075b2aa669047e7adb86c72d4a6ee7d392a7c20
+
+[derle]
+betik   = export AUTOMAKE='automake --foreign'
+betik   = libtoolize -f
+betik   = autoreconf -fi || true
+ekconf  = --enable-gui-build --disable-qt4 --enable-qt5 --disable-foomatic-rip-hplip-install --enable-foomatic-ppd-install --enable-hpcups-install --enable-new-hpcups --enable-cups-ppd-install --enable-cups-drv-install --enable-hpijs-install --enable-foomatic-drv-install --enable-pp-build --with-mimedir=/usr/share/cups/mime
+tip     = gnu
+
+[pakur]
+betik   = sed -i Makefile -e "s;ppd/hpcups/\\*.ppd.gz;;g"
+betik   = make locatedriverdir=/usr/lib/hplip dat2drvdir=/usr/lib/hplip rulesdir=/usr/lib/udev/rules.d DESTDIR=${PKG} install
+betik   = rm -rf ${PKG}/etc/{sane.d,xdg}
+betik   = rm -rf ${PKG}/usr/share/hal
+betik   = rm -rf ${PKG}/var

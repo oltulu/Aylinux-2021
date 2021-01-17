@@ -1,0 +1,26 @@
+[paket]
+tanim   = İbranice yazım denetleyici
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/pop-os/popsicle
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz     = http://hspell.ivrix.org.il
+
+
+
+[sha512]
+    #1 		= 
+
+[derle]
+betik 	= export PERLLIB="$PWD"
+betik 	= ./configure --prefix=/usr --enable-linginfo --enable-fatverb --enable-shared
+betik 	= make 
+betik 	= make hunspell
+        	      
+[pakur]
+betik 	=   make DESTDIR="${PKG}" install

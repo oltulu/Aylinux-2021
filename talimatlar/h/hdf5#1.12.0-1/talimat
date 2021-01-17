@@ -1,0 +1,27 @@
+[paket]
+tanim   = Bilimsel verileri depolamak için genel amaçlı kütüphane ve dosya biçimi
+paketci = milisarge
+grup    = kütüphane
+url     = https://hdfgroup.org
+
+[gerek]
+derleme = cmake zlib libaec
+calisma =
+
+[kaynak]
+bz2     = https://support.hdfgroup.org/ftp/HDF5/releases/$isim-1.10/$isim-$surum/src
+
+[sha256]
+1       = 09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = cd $SRC/build
+tip     = gnu
+betik   = rm -rf $PKG/Susr/share
+betik   = install -Dm644 ../build/CMakeFiles/hdf5{,_hl}{,_cpp}-${surum}.pc -t "${PKG}"/usr/lib/pkgconfig/
+betik   = rm -f $PKG/usr/share/{RELEASE.txt,COPYING,USING_HDF5_CMake.txt}
+betik   = mv $PKG/usr/include/shared/*.mod $PKG/usr/include/
+betik   = rm -rf $PKG/usr/include/{shared,static}

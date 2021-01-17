@@ -1,0 +1,17 @@
+[paket]
+tanim   = Heceleme kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/projects/hunspell/files/Hyphen
+
+[kaynak]
+gz         = ${SOURCEFORGE_SITE}/hunspell
+
+[sha256]
+1          = 304636d4eccd81a14b6914d07b84c79ebb815288c76fe027b9ebff6ff24d5705
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

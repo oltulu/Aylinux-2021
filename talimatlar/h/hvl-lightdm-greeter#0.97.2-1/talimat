@@ -1,0 +1,23 @@
+[paket]
+tanim   = Lightdm üzerinde QT tabanlı kurumsal ihtiyaçlara yönelik giriş ekranı uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/aciklab/Hvl-Lightdm-Greeter
+arsiv	= Hvl-Lightdm-Greeter-$surum
+
+[gerek]
+derleme = cmake lightdm qt5-base qt5-webengine qt5-x11extras libxcursor libxrandr qt5-tools liblightdm-qt5
+calisma =
+
+[kaynak]
+1       = $url/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = ef916c6aadc227fcf72e70af3734155aa30823d59979fc85bd4d229b079d0a7b
+
+[derle]
+jobs	= 1
+tip     = cmake
+
+[pakur]
+tip      = cmake

@@ -1,0 +1,40 @@
+[paket]
+tanim   = Apache Hive veri ambarı uygulaması
+paketci = milisarge
+grup    = büyükveri
+url     = https://hive.apache.org
+
+[gerek]
+derleme    = maven
+calisma    = openjdk8 python
+
+[kaynak]
+1          = http://us.mirrors.quenda.co/apache/hive/$isim-$surum/apache-$isim-$surum-src.tar.gz
+dosya      = $isim-profile.sh
+dosya      = hive-site.xml
+dosya      = milis-custom.conf
+
+[sha256]
+1          = 5cfc0c988f6279737dad415835f3c8cf492ae09ab09d13d529bb22b6068c3ee2
+2          = d7151fdc918c631243dba10c252f2a901f4628ba8b954957a6de32d1a69a7b69
+
+[derle]
+betik      = cd apache-$isim-$surum-src
+betik      = make-ca -g
+betik      = source /etc/profile.d/openjdk.sh
+betik      = pathappend $JAVA_HOME/bin
+betik      = export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
+betik      = mvn clean package -DskipTests -Pdist -Dmaven.repo.local=/opt/m2/repository
+
+[pakur]
+betik      = cd apache-$isim-$surum-src/packaging/target/apache-$isim-$surum-bin/apache-$isim-$surum-bin
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = cp -r bin conf examples jdbc lib scripts hcatalog $PKG/usr/mdp/$isim/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh
+betik      = rm /usr/mdp/hive/lib/guava-*.jar
+betik      = ln -s /usr/mdp/hadoop/share/hadoop/common/lib/guava-*-jre.jar /usr/mdp/hive/lib/
+betik      = cp -f $SRC/hive-site.xml $PKG/usr/mdp/hive/conf/
+betik      = cp -f $SRC/hive_postgre_init.sh $PKG/usr/mdp/hive/bin/
+betik      = mkdir -p $PKG/usr/mdp/hive/log
+betik      = cp -f $SRC/milis-custom.conf $PKG/usr/mdp/hive/conf/

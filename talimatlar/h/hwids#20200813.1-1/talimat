@@ -1,0 +1,23 @@
+[paket]
+tanim 	= Donanım belirleme veritabanı
+paketci = gysddn
+grup 	= sistem
+url 	= https://github.com/gentoo/hwids
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz 	  = https://github.com/gentoo/hwids/archive
+
+[sha256]
+1     = e4498020b2c1a1ea5faf1e9d30bda0ae161aaf8e8fb17f40e1c6b8dc896c5d9e
+
+[derle]
+betik  = echo "Derleme yapılmayacak."
+
+[pakur]
+betik   = cd $isim-$isim-$surum
+betik 	= install -Dm644 pci.ids "$PKG/usr/share/hwdata/pci.ids"
+betik 	= install -Dm644 usb.ids "$PKG/usr/share/hwdata/usb.ids"

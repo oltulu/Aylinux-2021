@@ -1,0 +1,26 @@
+[paket]
+tanim   = Xchat’ın GTK tabanlı çalışması
+paketci = milisarge
+grup    = kütüphane
+url     = https://hexchat.github.io/
+
+[gerek]
+derleme  =  meson python dbus-glib desktop-file-utils gdk-pixbuf glib gtk2 libcanberra libnotify libproxy openssl pango pciutils 
+calisma  = 
+ 
+[kaynak]
+1          = https://dl.hexchat.net/hexchat/${isim}-${surum}.tar.xz
+
+[sha256]
+1          = 7792b9e52560fbd3e10d75bfb5d138a20913a87771d676d296547f1b4ac09618
+
+[derle]
+betik      = update-mime-database /usr/share/mime
+ekconf     = -Dwith-perl=/usr/bin/perl -Dwith-python=python3 -Dwith-lua=lua -Dwith-text=true
+tip        = meson
+
+[pakur]
+tip        = meson
+betik      = rm -rf ${PKG}/usr/include
+betik      = rm -rf ${PKG}/usr/lib/pkgconfig
+

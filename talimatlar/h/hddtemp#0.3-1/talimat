@@ -1,0 +1,31 @@
+[paket]
+tanim 	= S.M.A.R.T bilgilerini okuyarak sabit diskin sıcaklığını gösterir
+paketci = gysddn
+grup 	= sistem
+url 	= https://savannah.nongnu.org/projects/hddtemp/
+
+[kaynak]
+1   	= http://download.savannah.gnu.org/releases/${isim}/${isim}-${surum}-beta15.tar.bz2
+2       = http://download.savannah.gnu.org/releases/hddtemp/hddtemp.db
+dosya   = hddtemp-0.3-beta15-byteswap.patch
+dosya   = hddtemp-0.3-beta15-execinfo.patch
+dosya   = hddtemp-0.3-beta15-iconv.patch
+dosya   = hddtemp-0.3-beta15-nls.patch
+dosya   = hddtemp-0.3-beta15-satacmds.patch
+
+[sha256]
+1 		= 618541584054093d53be8a2d9e81c97174f30f00af91cb8700a97e442d79ef5b
+2 		= ca43f8ab1e4fb3919af940a2fe6a95feb03939f685450a48666763a3edc326bb
+3 		= 85eeaff97c96d2f77a93caa3270ee598f756c4eb0da6753e5ee8602fa1a5bdec
+4 		= 8f896c478f8f2b1776ff4e16fe1f12f0829d044a14e37df48e098aec80812c5c
+5 		= 542f5b064098961b2fae4ab0185731b47d412c7e4cc8d8972694228f9bb1415f
+6 		= c81efff92e3cd52257438b834df652cfea8535140fe8b67ebded14fd29c3dd9c
+7 		= f3ae8ebd08d598cf9292d08e5fe07f54f894da7a90f02dcc9c46bb8d37afde56
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = cd ${isim}-${surum}-beta15
+tip     = gnu
+betik   = install -Dm644 "$SRC/hddtemp.db" "${PKG}/usr/share/${isim}/hddtemp.db"

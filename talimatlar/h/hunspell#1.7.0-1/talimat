@@ -1,0 +1,24 @@
+[paket]
+tanim   = Yazım denetleyicisi ve morfolojik analizörü
+paketci = milisarge
+grup    = kütüphane
+url     = https://hunspell.github.io/
+
+[gerek]
+derleme    = ncurses
+calisma    =
+
+[kaynak]
+1          = https://github.com/hunspell/hunspell/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = bb27b86eb910a8285407cf3ca33b62643a02798cf2eef468c0a74f6c3ee6bc8a
+
+[derle]
+betik      = autoreconf -fi
+ekconf     = --with-ui --with-readline
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = pushd "$PKG"/usr/lib ;ln -s libhunspell-?.?.so libhunspell.so ;popd

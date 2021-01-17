@@ -1,0 +1,23 @@
+[paket]
+tanim 	= Linux IDE sürücülerini çalıştırma aracı
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://sourceforge.net/projects/hdparm
+
+[kaynak]
+gz     	= https://downloads.sourceforge.net/sourceforge/hdparm
+dosya 	= wiper.sh.2_6.max-ranges.patch
+
+[sha512]
+1       = 42fb70f494aae4cc205ca68c3e883e1f4fc33e8ced1914e280e9f3faa7233d3f839e59178ec09ddb9d32e9d2bca122ce324645ecb5ac73defa284030ac7d3cea
+
+[derle]
+yama 	= 2
+betik 	= make
+	      
+[pakur]
+betik 	= mkdir -p ${PKG}/usr/bin
+betik 	= make DESTDIR=${PKG} sbindir=/usr/bin install
+betik 	= install -m755 contrib/idectl ${PKG}/usr/bin
+betik 	= install -m755 contrib/ultrabayd ${PKG}/usr/bin
+betik 	= install -D -m 0755 wiper/wiper.sh $PKG/usr/bin/wiper.sh

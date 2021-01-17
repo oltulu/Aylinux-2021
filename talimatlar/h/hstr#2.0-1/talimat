@@ -1,0 +1,20 @@
+[paket]
+tanim   = Bash ve Zsh için komut tarihçe araştırma uygulaması
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/dvorka/hstr
+
+[kaynak]
+1     = https://github.com/dvorka/hstr/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1     = 8d93ed8bfee1a979e8d06646e162b70316e2097e16243636d81011ba1000627a
+
+[derle]
+betik = cd build/tarball && ./tarball-automake.sh && cd ../..
+betik = sed -i -e "s#<ncursesw/curses.h>#<curses.h>#g" src/include/hstr_curses.h
+betik = sed -i -e "s#<ncursesw/curses.h>#<curses.h>#g" src/include/hstr.h
+tip   = gnu
+
+[pakur]
+tip   = gnu

@@ -1,0 +1,14 @@
+libQt5WebEngine.so.5
+libQt5WebEngineWidgets.so.5
+liblightdm-qt5-3.so.0
+libX11.so.6
+libXcursor.so.1
+libXrandr.so.2
+libQt5X11Extras.so.5
+libQt5Network.so.5
+libQt5Widgets.so.5
+libQt5Gui.so.5
+libQt5Core.so.5
+libstdc++.so.6
+libgcc_s.so.1
+libc.so.6

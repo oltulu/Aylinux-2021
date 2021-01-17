@@ -1,0 +1,23 @@
+[paket]
+tanim   = IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Kimlik Doğrulayıcı
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://w1.fi/hostapd/
+
+[gerek]
+derleme = meson
+calisma = 
+
+[kaynak]
+gz      = https://w1.fi/releases
+
+[sha512]
+
+[derle]
+betik	= cd hostapd 
+betik	= cp defconfig .config
+betik	= make
+
+        	      
+[pakur]
+betik	= make -C "${isim}" install DESTDIR="${PKG}" BINDIR="/usr/bin"

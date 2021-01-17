@@ -1,0 +1,46 @@
+[paket]
+tanim   = Apache Hadoop dağıtık dosya sistemi
+paketci = milisarge
+grup    = büyükveri
+url     = http://hadoop.apache.org
+
+[gerek]
+derleme = cmake cyrus-sasl libtirpc maven openjdk8 protobuf2
+calisma = openjdk8
+
+[kaynak]
+1       = https://www.apache.org/dist/hadoop/core/$isim-$surum/$isim-$surum-src.tar.gz
+dosya   = $isim-profile.sh
+dosya   = $isim-strip.sh
+dosya   = core-site.xml
+dosya   = hadoop-env.sh
+dosya   = hdfs-site.xml
+dosya   = yarn-site.xml
+dosya   = mapred-site.xml
+dosya   = HADOOP-15685.001.patch
+
+[sha256]
+1       = 3bd31357c047bf85cf18356df1405b5f4c36f87caa27f519fb8ef4fdd6750324
+2       = d1870f780567657a6d1e0d689a98aa9468f96cd646c36668c7a407f976fdd6e0
+
+[derle]
+betik   = cd $isim-$surum-src
+betik   = export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+betik   = export PATH=$PATH:/usr/local/bin
+betik   = make-ca -g
+betik   = patch -p1 -i $SRC/HADOOP-15685.001.patch
+betik   = mvn -e package -Pdist,native -DskipTests -Dsource.skip -Dtar -Dmaven.javadoc.skip=true -Dmaven.repo.local=/opt/m2/repository
+
+[pakur]
+betik   = cd $isim-$surum-src
+betik   = mkdir -p $PKG/usr/mdp/hadoop
+betik   = cp -r hadoop-dist/target/$isim-$surum/{bin,etc,include,lib,libexec,sbin,share} $PKG/usr/mdp/hadoop/
+betik   = mkdir -p $PKG/etc/profile.d
+betik   = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh
+betik   = cp -f $SRC/*.xml $PKG/usr/mdp/hadoop/etc/hadoop
+betik   = cp -f $SRC/hadoop-env.sh $PKG/usr/mdp/hadoop/etc/hadoop/
+betik   = sed -i '19i LC_ALL=C' $PKG/usr/mdp/hadoop/libexec/hadoop-functions.sh
+; stripping redundant jars
+betik   = rm -f $PKG/usr/mdp/hadoop/share/hadoop/tools/lib/{*aliyun*,*aws*,*azure*,*openstack*,*s3guard*,*gridmix*}
+betik   = rm -f $PKG//usr/mdp/hadoop/share/hadoop/client/hadoop-client-minicluster-*.jar
+betik   = find $PKG/usr/mdp/hadoop -name *tests* -delete

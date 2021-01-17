@@ -1,0 +1,25 @@
+[paket]
+tanim   = Bir sistem bilgisi ve kıyaslama aracı.
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://github.com/lpereira/hardinfo
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git      = https://github.com/lpereira/hardinfo
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = cd $isim
+betik     = CFLAGS+=' -fcommon' # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
+betik     = cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DHARDINFO_GTK3=1 -Wno-dev
+betik     = make -C build
+        	      
+[pakur]
+betik = cd $isim
+betik = make -C build DESTDIR="$PKG" install

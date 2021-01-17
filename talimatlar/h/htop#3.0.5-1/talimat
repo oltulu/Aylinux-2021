@@ -1,0 +1,25 @@
+[paket]
+tanim 	= Gerçek zamanlı işlem(process) izleyici
+paketci = milisarge
+grup 	= sistem
+url 	= https://github.com/htop-dev/htop
+
+[gerek]
+derleme = ncurses libnl
+calisma =
+
+[kaynak]
+gz		= $url/archive/${surum}
+
+[sha256]
+1 		= b4744a3bea279f2a3725ed8e5e35ffd9cb10d66673bf07c8fe21feb3c4661305
+
+[derle]
+betik   = autoreconf -fi
+ekconf  = --enable-cgroup --enable-delayacct --enable-openvz --enable-unicode --enable-vserver
+tip 	= gnu
+
+[pakur]
+tip 	= gnu
+
+

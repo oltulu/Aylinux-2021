@@ -1,0 +1,31 @@
+[paket]
+tanim   = Online TV izle
+paketci = oltulu 
+grup    = cinnamon  
+url     = https://github.com/linuxmint/hypnotix
+
+[gerek]
+derleme  = 
+calisma  = dconf hicolor-icon-theme python-cairo python-imdbpy python-requests python-setproctitle mpv xapp
+[kaynak]
+1 = https://github.com/linuxmint/hypnotix/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+
+[derle]
+#betik      =  cd hypnotix
+betik      = make
+
+[pakur]
+#betik      =  cd hypnotix
+betik      = install -D     -t "$PKG"/usr/bin usr/bin/hypnotix
+betik      = install -D     -t "$PKG"/usr/lib/hypnotix usr/lib/hypnotix/{common,hypnotix}.py
+betik      = install -Dm644 -t "$PKG"/usr/lib/hypnotix usr/lib/hypnotix/mpv.py
+betik      = install -Dm644 -t "$PKG"/usr/share/applications usr/share/applications/hypnotix.desktop
+betik      = install -Dm644 -t "$PKG"/usr/share/glib-2.0/schemas usr/share/glib-2.0/schemas/org.x.hypnotix.gschema.xml
+betik      = install -Dm644 -t "$PKG"/usr/share/hypnotix usr/share/hypnotix/*.{css,png,ui}
+betik      = install -Dm644 -t "$PKG"/usr/share/hypnotix/pictures usr/share/hypnotix/pictures/*.svg
+betik      = install -Dm644 -t "$PKG"/usr/share/hypnotix/pictures/badges usr/share/hypnotix/pictures/badges/*
+betik      = install -Dm644 -t "$PKG"/usr/share/icons/hicolor/scalable/apps usr/share/icons/hicolor/scalable/apps/hypnotix.svg
+betik      = cp -a usr/share/locale "$PKG"/usr/share/locale
+betik      = echo "Name[tr]=Online TV İzle" >> "$PKG"/usr/share/applications/hypnotix.desktop

@@ -1,0 +1,25 @@
+[paket]
+tanim   = USB ve Bluetooth HID cihazlarıyla iletişim kurmak için basit kitaplık
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://github.com/libusb/hidapi
+
+[gerek]
+derleme = gobject-introspection intltool zenity
+calisma = exempi gvfs libexif xorg-libsm mate-desktop libnotify
+
+[kaynak]
+gz      = https://github.com/libusb/${isim}/archive
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = cd "${SRC}/${isim}-${isim}-${surum}"
+betik     = ./bootstrap
+betik     = ./configure --prefix=/usr
+betik     = make
+    	      
+[pakur]
+betik     = cd "${SRC}/${isim}-${isim}-${surum}"
+betik     = make DESTDIR="${PKG}/" install
