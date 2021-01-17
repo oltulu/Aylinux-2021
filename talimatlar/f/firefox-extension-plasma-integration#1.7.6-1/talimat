@@ -1,0 +1,22 @@
+[paket]
+tanim   = Firefox için plazma tarayıcı entegrasyonu eklentisi.
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://addons.mozilla.org/en-US/firefox/addon/plasma-integration/
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =  
+
+[kaynak]
+1      = https://addons.mozilla.org/firefox/downloads/file/3392927/plasma_integration-${surum}-fx.xpi::extension.xpi
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik = cd ../
+                	      
+[pakur]
+betik = cd ../
+betik =  install -Dm644 /sources/extension.xpi "${PKG}/usr/lib/firefox/browser/extensions/plasma-browser-integration@kde.org.xpi"

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Yazı tipi pikselleştirme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.freetype.org/
+
+[gerek]
+derleme = libx11 libpng
+calisma = 
+
+[kaynak]
+bz2     = https://download-mirror.savannah.gnu.org/releases/$isim
+
+[sha512]
+1 		= dfad66f419ea9577f09932e0730c0c887bdcbdbc8152fa7477a0c39d69a5b68476761deed6864ddcc5cf18d100a7a3f728049768e24afcb04b1a74b25b6acf7e
+
+[derle]
+betik   = sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
+betik   = sed -r "s:.*(#.*SUBPIXEL_(RENDERING|HINTING 2)) .*:\1:g" -i include/freetype/config/ftoption.h
+ekconf  = --with-harfbuzz=no --enable-freetype-config --disable-static
+tip     = gnu
+      
+[pakur]
+tip 	= gnu

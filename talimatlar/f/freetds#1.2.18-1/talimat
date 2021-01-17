@@ -1,0 +1,23 @@
+[paket]
+tanim    = Sybase ve MS SQL Server veritabanlarına erişim kütüphanesi
+paketci  = milisarge  
+grup     = sistem  
+url      = http://www.freetds.org
+
+[gerek]
+derleme  = openssl unixodbc 
+calisma  =  
+
+[kaynak]
+bz2      = ftp://ftp.freetds.org/pub/freetds/stable
+
+[sha256]
+1        = 27ca0796d255b4cfff706c6af1d4b0819f30f6ec0f01f9ae4007914a7d805ecd
+
+[derle]
+ekconf   = --sysconfdir=/etc/freetds --enable-msdblib --with-unixodbc=/usr --with-openssl
+tip      = gnu
+
+[pakur]
+tip      = gnu
+

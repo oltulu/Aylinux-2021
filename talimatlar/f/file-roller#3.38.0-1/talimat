@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME Tar-zip gibi programları arşivlemek için uygulama
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/Apps/FileRoller
+
+[gerek]
+derleme    = meson glib itstool gtk3 json-glib libarchive libnotify desktop-file-utils
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1          = 1cab0847845b3236725a99f81a638c504d06ac0576c7a947824208e498383547
+
+[derle]
+tip        = meson
+
+[pakur]
+tip        = meson
+betik      = rm -rf $PKG/usr/share/help

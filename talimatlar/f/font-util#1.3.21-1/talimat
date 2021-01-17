@@ -1,0 +1,22 @@
+[paket]
+tanim   = X.org font araçları
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/font
+
+[sha256]
+1 		= aa7ebdb0715106dd255082f2310dbaa2cd7e225957c2a77d719720c7cc92b921
+
+[derle]
+ekconf  = --with-mapdir=/usr/share/fonts/util --with-fontrootdir=/usr/share/fonts
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

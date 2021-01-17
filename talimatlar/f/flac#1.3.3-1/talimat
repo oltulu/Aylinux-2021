@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ücretsiz Kayıpsız Ses Kodek
+paketci = yasarciv67
+grup    = medya
+url     = http://flac.sourceforge.net/
+
+[gerek]
+derleme = libogg
+calisma = 
+
+[kaynak]
+xz      = http://downloads.xiph.org/releases/$isim
+
+[sha256]
+1       = 91cfc3ed61dc40f47f050a109b08610667d73477af6ef36dcad31c31a4a8d53f
+
+[derle]
+ekconf  = --disable-thorough-tests --disable-rpath --disable-doxygen-docs --disable-xmms-plugin
+tip     = gnu
+
+[pakur]
+tip     = gnu

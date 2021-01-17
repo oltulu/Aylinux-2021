@@ -1,0 +1,24 @@
+[paket]
+tanim   = X için grafiksel kullanıcı arabirimi araç seti
+paketci	= milisarge
+grup	= kütüphane
+url	    = https://www.fltk.org
+
+[gerek]
+derleme	= libjpeg-turbo libpng mesa alsa-lib freetype libxinerama libxft libglvnd glu
+calisma	= 
+
+[kaynak]
+1 	    = http://fltk.org/pub/fltk/$surum/fltk-$surum-source.tar.gz
+
+[sha256]
+1	    = 8729b2a055f38c1636ba20f749de0853384c1d3e9d1a6b8d4d1305143e115702
+
+[derle]
+betik   = sed -i '/DIRS =/s,test,,' Makefile
+betik   = sed -i '/DIRS =/s,documentation,,' Makefile
+ekconf	= --enable-threads --enable-xft --enable-shared
+tip  	= gnu
+
+[pakur]
+tip	    = gnu

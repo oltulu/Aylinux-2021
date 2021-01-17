@@ -1,0 +1,27 @@
+[paket]
+tanim   = Popüler grafik görüntü formatlarını desteklemek isteyen geliştiriciler için kitaplık projesi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = http://freeimage.sourceforge.net/
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1 =https://downloads.sourceforge.net/project/freeimage/Source%20Distribution/${surum}/FreeImage${surum//./}.zip
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = cd FreeImage
+betik = sh gensrclist.sh
+betik = sh genfipsrclist.sh
+betik = make -f Makefile.gnu
+betik = make -f Makefile.fip
+
+[pakur]
+betik = cd FreeImage
+betik =  make -f Makefile.gnu DESTDIR="${PKG}" install
+betik =  make -f Makefile.fip DESTDIR="${PKG}" install

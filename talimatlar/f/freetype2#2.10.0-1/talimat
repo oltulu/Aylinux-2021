@@ -1,0 +1,26 @@
+[paket]
+tanim   = Yazı tipi pikselleştirme kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = https://www.freetype.org/
+
+[gerek]
+derleme = xorg-libx11
+calisma = libpng harfbuzz
+
+[kaynak]
+1      = https://download-mirror.savannah.gnu.org/releases/freetype/freetype-${surum}.tar.bz2
+
+[sha1]
+1 		= f6abf03e0e3189a0de883981c57d3861b5d314f5
+
+[derle]
+betik = cd freetype-$surum
+betik = sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
+betik = sed -r "s:.*(#.*SUBPIXEL_(RENDERING|HINTING 2)) .*:\1:g" -i include/freetype/config/ftoption.h
+betik = ./configure --prefix=/usr --disable-static --enable-freetype-config
+betik = make
+	      
+[pakur]
+betik = cd freetype-$surum
+tip 	= gnu

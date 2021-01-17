@@ -1,0 +1,21 @@
+[paket]
+tanim   = Hızlı ve hafif imlib2 tabanlı resim görüntüleyici
+paketci = milisarge
+grup    = kütüphane
+url     = https://feh.finalrewind.org/
+
+[gerek]
+derleme    = imlib2 libxinerama libxt libexif libjpeg-turbo
+calisma    =
+
+[kaynak]
+bz2        = ${url}
+
+[sha256]
+1          = 8f9741399b4b184ba28698c0fd7722638e79abac8e6c27eb526cc52b11ee0a1c
+
+[derle]
+betik      = make PREFIX=/usr exif=1 help=1 stat64=1
+
+[pakur]
+betik      = make PREFIX=/usr DESTDIR="${PKG}" install

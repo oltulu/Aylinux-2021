@@ -1,0 +1,28 @@
+[paket]
+tanim   = Ücretsiz bir BASIC derleyici
+paketci = Cihan_Alkan
+url     = https://www.freebasic.net/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          = https://downloads.sourceforge.net/fbc/FreeBASIC-$surum-source.tar.xz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = mkdir -p bootstrap
+betik     = cd "${SRC}/FreeBASIC-${surum}-linux-x86_64"
+betik     = ./install.sh -i "${SRC}/bootstrap"
+betik     = ln -s /usr/lib/libncursesw.so "${SRC}/bootstrap/lib/libtinfo.so.5"
+betik     = export PATH="${SRC}/bootstrap/bin:$PATH"
+betik     = export LD_LIBRARY_PATH="${SRC}/bootstrap/lib"
+betik     = cd "${SRC}/FreeBASIC-${surum}-source"
+betik     = make CFLAGS="$CFLAGS $(pkg-config --cflags libffi)"
+  
+[pakur]
+betik      = cd "${SRC}/FreeBASIC-${surum}-source"
+betik      = make install prefix="${PKG}/usr"

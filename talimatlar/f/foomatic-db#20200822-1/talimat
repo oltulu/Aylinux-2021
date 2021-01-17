@@ -1,0 +1,22 @@
+[paket]
+tanim   = OpenPrinting yazıcı desteği veritabanı
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.linuxfoundation.org/openprinting/database/foomatic
+
+[gerek]
+derleme = cups perl libxml2
+calisma = cups perl
+
+[kaynak]
+1       = https://www.openprinting.org/download/foomatic/$isim-4.0-$surum.tar.xz
+
+[sha256]
+1       = 4b3e9ce4e0ad8423e76fb9bcd8cf441f9f50998e060cb9851735a4961a469139
+
+[derle]
+betik   = ./make_configure
+tip     = gnu
+
+[pakur]
+tip     = gnu

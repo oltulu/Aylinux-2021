@@ -1,0 +1,27 @@
+[paket]
+tanim   = Mozilla Firefox web tarayıcısı
+paketci = milisarge
+grup    = ağ
+url     = https://www.mozilla.org/firefox/
+
+[gerek]
+derleme = autoconf-archive python2 gtk2 gtk3 libxt dbus-glib ffmpeg nss pulseaudio libevent unzip zip yasm mesa imake inetutils xorg-server rust llvm clang compiler-rt jack python nodejs cbindgen nasm startup-notification
+calisma = 
+
+[kaynak]
+1       = https://archive.mozilla.org/pub/firefox/releases/$surum/source/${isim}-${surum}.source.tar.xz
+2       = http://download.cdn.mozilla.net/pub/$isim/releases/$surum/linux-x86_64/xpi/tr.xpi::firefox-tr-${surum}.xpi
+dosya   = 0001-Use-remoting-name-for-GDK-application-names.patch
+dosya   = firefox.desktop
+
+[sha256]
+1       = 3b7b97b0b0625fc6ec23ee28d425988c679d3a56f362d62fd3b225a5d50afdc8
+3       = 5f7ac724a5c5afd9322b1e59006f4170ea5354ca1e0e60dab08b7784c2d8463c
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+strip   = 0
+dosya   = pakur.sh
+

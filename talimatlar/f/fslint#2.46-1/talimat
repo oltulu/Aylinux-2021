@@ -1,0 +1,25 @@
+[paket]
+tanim   = FSlint gereksiz/şüpheli disk kullanımını bulmak için bir araçtır.
+paketci = yasarciv67
+grup    = sistem
+url     = http://www.pixelbeat.org/fslint
+
+[gerek]
+derleme = python python-gtk
+calisma =
+
+[kaynak]
+xz		= http://www.pixelbeat.org/$isim
+2		= https://mls.akdeniz.edu.tr/git/milislinux/ceviriler/raw/branch/master/fslint/tr.po::$isim-$devir-tr.po
+
+[sha256]
+
+
+[derle]
+betik   =   sed -i -e s_^liblocation=.*_liblocation=\'/usr/share/fslint\'_ fslint-gui
+betik	= mv ../$isim-$devir-tr.po $SRC/$isim-$surum/po/tr.po
+; Daha sonra proje sayfasına bakılarak çeviri eklemesi silinebilir
+betik	= sed -i '/^Comment=File System Lint detector and cleaner/a Comment[tr]=Dosya Sistemi Fazlalık algılayıcı ve temizleyici' $isim.desktop
+
+[pakur]
+betik   = pakur.sh

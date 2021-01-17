@@ -1,0 +1,22 @@
+[paket]
+tanim   = Erişim ve politikaların yapılandırılması için kütüphane
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg-fontconfig.org
+
+[gerek]
+derleme = 
+calisma = expat freetype2
+
+[kaynak]
+gz      = https://www.freedesktop.org/software/$isim/release
+
+[sha1]
+1 		= 
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --docdir=/usr/share/doc/$isim-$surum --disable-docs --disable-static
+betik = make
+	      
+[pakur]
+tip 	= gnu

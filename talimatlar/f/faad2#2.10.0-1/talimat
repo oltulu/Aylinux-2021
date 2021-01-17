@@ -1,0 +1,17 @@
+[paket]
+tanim   = ISO AAC audio çözücü kütüphanesi
+paketci = milisarge
+grup    = medya
+url     = http://faac.sourceforge.net/ 
+
+[kaynak]
+gz     = https://downloads.sourceforge.net/sourceforge/faac
+
+[sha256]
+1      = 985c3fadb9789d2815e50f4ff714511c79c2710ac27a4aaaf5c0c2662141426d
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu

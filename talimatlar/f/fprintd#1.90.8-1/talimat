@@ -1,0 +1,23 @@
+[paket]
+tanim   = Parmak izi okuyuculara erişmek için D-Bus hizmeti
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://fprint.freedesktop.org/
+
+[gerek]
+derleme = libfprint
+calisma =  
+
+[kaynak]
+git      = https://gitlab.freedesktop.org/libfprint/fprintd
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+#betik 	= git apply -3 ../dirmode.diff
+betik 	= milis-meson $isim build -D pam_modules_dir=/usr/lib/security -D gtk_doc=false
+betik 	= meson compile -C build
+            	      
+[pakur]
+betik 	= DESTDIR="$PKG" meson install -C build

@@ -1,0 +1,21 @@
+[paket]
+tanim   = ICCCM uyumlu FVWM3 pencere yöneticisi
+paketci = milisarge
+grup    = sistem
+url     = http://fvwm.org/
+
+[gerek]
+derleme = libxslt python fribidi libxcursor libxrandr libxft libxext libxpm libxt librsvg mongo-c-driver libevent graphite2 cairo fontconfig
+calisma =
+
+[kaynak]
+gz      = https://github.com/fvwmorg/fvwm3/releases/download/$surum
+
+[sha256]
+1       = 377263b0a6f86578aacc9e86e77cd1af7c21669367140496daa2a668ff2869e3
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

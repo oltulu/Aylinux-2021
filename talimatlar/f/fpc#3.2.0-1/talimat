@@ -1,0 +1,32 @@
+[paket]
+tanim   = Ücretsiz Pascal Derleyicisi
+paketci = milisarge
+grup    = geliştirme
+url     = http://freepascal.org/
+arsiv   = "${isim}build-${surum}"
+
+[gerek]
+derleme = ncurses zlib expat
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/freepascal/Source/${surum}/${isim}build-${surum}.tar.gz
+2       = ${SOURCEFORGE_SITE}/freepascal/Linux/${surum}/${isim}-${surum}-1.x86_64.rpm
+
+[sha256]
+1       = f66514e6f2c2e4e1bccccb4d554c24b77682ed61c87811ae5dd210f421855e76
+2       = c7b75f09174a502d8dd776fbfabcad3e4360494fd635445185159b21001d65f1
+
+[derle]
+betik   = rpmextract.sh $KAYNAK_DIZIN/${isim}-${surum}-1.x86_64.rpm
+betik   = ln -sf ../lib64/fpc/${surum}/ppcx64 usr/bin
+betik   = ln -sf ../lib/fpc/${surum}/ppc386 usr/bin
+betik   = FPC=$PWD/usr/bin/fpc make ${MAKEJOBS} all NOGDB=1
+
+[pakur]
+betik   = FPC=$PWD/usr/bin/fpc make install NOGDB=1 PREFIX=$PKG/usr INSTALL_MANDIR=$PKG/usr/share/man
+betik   = ln -srf $PKG/usr/lib/fpc/${surum}/ppc* $PKG/usr/bin
+betik   = mkdir -p $PKG/etc
+betik   = PATH=$PKG/usr/bin:$PATH $PKG/usr/lib/fpc/${surum}/samplecfg $PKG/usr/lib/fpc/${surum} $PKG/etc
+betik   = sed -i "s,${PKG},,g" $PKG/etc/*.cfg $PKG/etc/fppkg/* $PKG/usr/lib/fpc/${surum}/ide/text/*
+

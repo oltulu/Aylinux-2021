@@ -1,0 +1,31 @@
+[paket]
+tanim   = Veri akışları için bir çerçeve ve dağıtılmış işlem motorudur
+paketci = milisarge
+grup    = büyükveri
+url     = https://flink.apache.org
+
+[gerek]
+derleme    = maven
+calisma    = openjdk8 python
+
+[kaynak]
+1          = http://ftp.itu.edu.tr/Mirror/Apache/$isim/$isim-$surum/$isim-$surum-src.tgz
+dosya      = $isim-profile.sh
+
+[sha256]
+1          = ef44a612d537067849815b1c37bc55d570eb81adb22dc2b20f49bd494320a297
+2          = cfbc546c00bf6e230b325320edd8a4bb5e220d62101050568c19274c5036607f
+
+[derle]
+betik      = make-ca -g
+betik      = source /etc/profile.d/openjdk.sh
+betik      = pathappend $JAVA_HOME/bin
+betik      = export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
+betik      = mvn clean package -DskipTests -Pdist -Dmaven.repo.local=/opt/m2/repository
+
+[pakur]
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = cd build-target
+betik      = cp -r bin conf examples lib log opt plugins $PKG/usr/mdp/flink/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh

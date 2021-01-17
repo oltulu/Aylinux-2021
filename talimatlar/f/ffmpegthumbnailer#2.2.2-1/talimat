@@ -1,0 +1,22 @@
+[paket]
+tanim   = Dosya yöneticileri tarafından kullanılabilen hafif video küçük resim görüntüleyici.
+paketci = yasarciv67
+grup    = medya
+url     = https://github.com/dirkvdb/ffmpegthumbnailer
+
+[gerek]
+derleme = cmake libjpeg-turbo libpng ffmpeg
+calisma =
+
+[kaynak]
+bz2     = https://github.com/dirkvdb/$isim/releases/download/$surum
+
+[sha256]
+1       = e5c31299d064968198cd378f7488e52cd5e738fac998eea780bc77d7f32238c2
+
+[derle]
+ekconf  = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DENABLE_GIO=ON -DENABLE_THUMBNAILER=ON
+tip     = cmake
+
+[pakur]
+tip     = cmake

@@ -1,0 +1,17 @@
+[paket]
+tanim   = Ayrık Fourier dönüşümü (DFT) hesaplamak için bir kütüphane.
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.fftw.org/
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+dosya   = pakur.sh

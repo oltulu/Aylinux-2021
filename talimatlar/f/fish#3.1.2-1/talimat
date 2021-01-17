@@ -1,0 +1,21 @@
+[paket]
+tanim   = Etkileşimli kullanım için amaçlanan kullanıcı dostu kabuk uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = https://fishshell.com/
+
+[gerek]
+derleme = ncurses pcre2
+calisma =
+
+[kaynak]
+1       = https://github.com/fish-shell/fish-shell/releases/download/${surum}/fish-${surum}.tar.gz
+
+[sha256]
+1       = 14728ccc6b8e053d01526ebbd0822ca4eb0235e6487e832ec1d0d22f1395430e
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

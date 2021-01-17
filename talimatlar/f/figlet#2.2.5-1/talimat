@@ -1,0 +1,20 @@
+[paket]
+tanim   = Sıradan metinden büyük harfler oluşturmak için bir program
+paketci = Cihan_Alkan
+url     = http://www.figlet.org/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          = ftp://ftp.figlet.org/pub/figlet/program/unix/$isim-$surum.tar.gz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = make DEFAULTFONTDIR=/usr/share/figlet/fonts all
+
+[pakur]
+betik      = make DESTDIR="${PKG}" BINDIR=/usr/bin MANDIR=/usr/share/man DEFAULTFONTDIR=/usr/share/figlet/fonts install 

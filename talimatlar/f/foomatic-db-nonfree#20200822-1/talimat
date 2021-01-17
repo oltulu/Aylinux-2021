@@ -1,0 +1,22 @@
+[paket]
+tanim   = OpenPrinting yazıcı desteği - veritabanı
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.linuxfoundation.org/openprinting/database/foomatic
+
+[gerek]
+derleme = cups perl libxml2
+calisma = cups perl
+
+[kaynak]
+1       = https://www.openprinting.org/download/foomatic/foomatic-db-nonfree-20200627.tar.gz
+
+[sha256]
+1       = 70ec1c087a94beb09c17c1aaa09e779d10a9ca4f6afdcf022d5491f88dbdcbd6
+
+[derle]
+betik   = ./make_configure
+tip     = gnu
+
+[pakur]
+tip     = gnu

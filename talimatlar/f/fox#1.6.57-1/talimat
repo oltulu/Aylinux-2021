@@ -1,0 +1,26 @@
+[paket]
+tanim   = C++ için X arayüz kütüphanesi
+paketci	= milisarge
+grup	= kütüphane
+url	    = http://www.fox-toolkit.org
+
+[gerek]
+derleme	= libxcursor libxft libxrandr libxi libpng tiff glu mesa
+calisma	= 
+
+[kaynak]
+gz	    = $url/ftp
+
+[sha256]
+1	    = 65ef15de9e0f3a396dc36d9ea29c158b78fad47f7184780357b929c94d458923
+
+[derle]
+betik   = sed -i "/strtoll.\(cpp\|obj\)/d; s/strtoll.lo//" src/Makefile.in
+betik   = sed -i "/vsscanf.\(cpp\|obj\)/d; s/vsscanf.lo//" src/Makefile.in
+betik   = rm src/strtoll.cpp src/vsscanf.cpp
+betik   = sed -i "s#CXXFLAGS =.*#\0 $CXXFLAGS#" $(find -name Makefile)
+ekconf  = --disable-static --enable-release --with-xft=yes --with-opengl=yes --with-xim --with-xshm --with-shape --with-xcursor --with-xrender --with-xrandr --with-xfixes --with-xinput
+tip  	= gnu
+
+[pakur]
+tip	    = gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = X.org Luxi Truetype fontları
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = font-util xorg-util-macros mkfontscale
+calisma = encodings font-alias font-util fontconfig
+
+[kaynak]
+bz2     = $url/releases/individual/font
+
+[sha256]
+1 		= 1b4bea63271b4db0726b5b52c97994c3313b6023510349226908090501abd25f
+
+[derle]
+ekconf  = --with-fontdir=/usr/share/fonts/TTF
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu
+betik   = rm "${PKG}/usr/share/fonts/"*/fonts.*

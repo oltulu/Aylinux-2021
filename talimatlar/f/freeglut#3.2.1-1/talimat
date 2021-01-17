@@ -1,0 +1,23 @@
+[paket]
+tanim   = Küçük OpenGL uygulamaları için işlevsellik sunan kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = http://freeglut.sourceforge.net
+
+[gerek]
+derleme = mesa glu libxxf86vm cmake libx11 libice libxi
+calisma = 
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/$isim
+
+[sha512]
+1 		= 9c45d5b203b26a7ff92331b3e080a48e806c92fbbe7c65d9262dd18c39cd6efdad8a795a80f499a2d23df84b4909dbd7c1bab20d7dd3555d3d88782ce9dd15b0
+
+[derle]
+betik   = cd $SRC;mkdir build;cd build
+betik   = cmake ../$isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release
+	      
+[pakur]
+betik   = cd ${SRC}/build
+tip 	= gnu

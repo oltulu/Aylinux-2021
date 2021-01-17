@@ -1,0 +1,24 @@
+[paket]
+tanim   = Fluxbox X11 pencere yöneticisi
+paketci = milisarge
+grup    = sistem
+url     = http://www.fluxbox.org
+
+[gerek]
+derleme = libsm libxrender libxft libxpm imlib2 libxext libxinerama libxrandr fribidi
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/${isim}
+dosya   = $isim.desktop
+
+[sha256]
+1       = d47a58edba857f3c36bf8430bbd17834693ad0e6aa431d3507039f022af7aee8
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = mkdir -p $PKG/usr/share/xsessions
+betik   = cp ${SRC}/fluxbox.desktop $PKG/usr/share/xsessions/

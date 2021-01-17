@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ücretsiz video efektleri eklentileri koleksiyonu için minimalist API
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://frei0r.dyne.org
+
+[gerek]
+derleme = cmake cairo
+calisma =
+
+[kaynak]
+gz      = https://files.dyne.org/frei0r/releases
+
+[sha256]
+1       = 1b1ff8f0f9bc23eed724e94e9a7c1d8f0244bfe33424bb4fe68e6460c088523a
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

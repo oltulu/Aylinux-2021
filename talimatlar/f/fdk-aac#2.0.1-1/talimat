@@ -1,0 +1,17 @@
+[paket]
+tanim   = Fraunhofer FDK AAC kodek kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.iis.fraunhofer.de/en/ff/amm/impl/fdkaaccodec.html
+
+[kaynak]
+gz         = https://downloads.sourceforge.net/project/opencore-amr/$isim
+
+[sha256]
+1          = f7d6e60f978ff1db952f7d5c3e96751816f5aef238ecf1d876972697b85fd96c
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

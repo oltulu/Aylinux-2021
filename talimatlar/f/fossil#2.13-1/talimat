@@ -1,0 +1,22 @@
+[paket]
+tanim   = Yazılım konfigürasyon ve sürüm takip yönetimi
+paketci = milisarge
+grup    = geliştirme
+url     = https://www.fossil-scm.org
+
+[gerek]
+derleme = tcl zlib openssl readline sqlite
+calisma =
+
+[kaynak]
+1       = $url/index.html/uv/fossil-src-${surum}.tar.gz
+
+[sha256]
+1       = d933d3e0710eed3de5ee23bf8d2677419c4d4a8cd30b61f7161d9071d63a73f5
+
+[derle]
+ekconf  = --json
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,18 @@
+[paket]
+tanim   = Dosya tiplerini gösteren uygulama
+paketci = milisarge
+grup 	= onsistem
+url     = ftp://ftp.fu-berlin.de/unix/tools/file
+
+[kaynak]
+gz      = ftp://ftp.astron.com/pub/file
+
+[sha256]
+#1 		= 30c45e817440779be7aac523a905b123cba2a6ed0bf4f5439e1e99ba940b5546
+
+[derle]
+betik 	= ./configure --prefix=/tools
+betik 	= make;make check
+	      
+[pakur]
+tip     = gnu

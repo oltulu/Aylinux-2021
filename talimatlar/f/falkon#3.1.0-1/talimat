@@ -1,0 +1,26 @@
+[paket]
+tanim   = Qt tabanlı Web tarayıcısı
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/KDE/falkon
+
+[gerek]
+derleme = cmake extra-cmake-modules qt5-tools qt5-svg qt5-x11extras qt5-webengine ki18n gnome-keyring
+calisma =
+
+[kaynak]
+xz      = https://download.kde.org/stable/falkon/${surum%.*}
+dosya   = falkon-qt-5.14.patch
+dosya   = falkon-qt-5.15.patch
+
+[sha256]
+1       = ce743cd80c0e2d525a784e29c9b487f73480119b0567f9ce8ef1f44cca527587
+
+[derle]
+yama    = falkon-qt-5.14.patch
+yama    = falkon-qt-5.15.patch
+ekconf  = -DBUILD_TESTING=OFF
+tip     = cmake
+
+[pakur]
+tip     = cmake

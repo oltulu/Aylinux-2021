@@ -1,0 +1,25 @@
+[paket]
+tanim   = Web Tarayıcı
+paketci = Cihan_Alkan
+grup 	= İnternet
+url     = https://www.mozilla.org/en-US/firefox/new/
+
+[kaynak]
+1      = https://download-installer.cdn.mozilla.net/pub/firefox/releases/$surum/linux-x86_64/tr/firefox-$surum.tar.bz2
+dosya      = firefox.sh
+dosya      = firefox-tr.desktop
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = mkdir -p "$PKG"/usr/bin
+betik = mkdir -p "$PKG"/usr/share/applications
+betik = mkdir -p "$PKG"/opt
+
+[pakur]
+betik = cp -r firefox/ "$PKG"/opt/firefox
+betik = install -m755 firefox.sh "$PKG"/usr/bin/firefox-tr
+betik = install -m644 firefox-tr.desktop "$PKG"/usr/share/applications/
+betik = ln -Ts /usr/share/hunspell "$PKG"/opt/firefox/dictionaries
+betik = ln -Ts /usr/share/hyphen "$PKG"/opt/firefox/hyphenation
+betik = ln -sf /usr/lib/libnssckbi.so "$PKG"/opt/firefox/libnssckbi.so

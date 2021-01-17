@@ -1,0 +1,25 @@
+[paket]
+tanim   = OpenPrinting yazıcı desteği - programlar
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.openprinting.org
+arsiv   = $isim-4.0-$surum
+
+[gerek]
+derleme = libxml2 cups 
+calisma = perl ghostscript cups foomatic-db
+
+[kaynak]
+1       = $url/download/foomatic/$isim-4.0-$surum.tar.gz
+
+[sha256]
+1       = 2f6977206abb0857a5011618c14808222b08542b8005baacc8da2a95d023e662
+
+[derle]
+betik   = ./make_configure PERL_INSTALLDIRS=vendor ./configure --prefix=/usr --sbindir=/usr/bin
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = echo cups > ${PKG}/etc/foomatic/defaultspooler
+betik   = rm -r ${PKG}/usr/lib/perl5

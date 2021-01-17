@@ -1,0 +1,26 @@
+[paket]
+tanim   = Komut satırı bulanık bulucu
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/junegunn/fzf
+
+[gerek]
+derleme = go
+calisma =
+
+[kaynak]
+1       = $url/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[derle]
+betik   = export CGO_LDFLAGS="$LDFLAGS"
+betik   = export GOFLAGS="-buildmode=pie -trimpath"
+betik   = go build -o fzf .
+
+[pakur]
+betik   = install -Dm644 man/man1/fzf.1 "$PKG"/usr/share/man/man1/fzf.1
+betik   = install -dm755 "$PKG"/usr/bin
+betik   = install -m755 fzf bin/fzf-tmux "$PKG"/usr/bin/
+betik   = install -dm755 "$PKG"/usr/share/fzf
+betik   = install -m644 shell/*.bash shell/*.zsh "$PKG"/usr/share/fzf
+betik   = install -Dm644 shell/key-bindings.fish "$PKG"/usr/share/fish/vendor_functions.d/fzf_key_bindings.fish
+betik   = install -Dm644 plugin/fzf.vim "$PKG"/usr/share/vim/vimfiles/plugin/fzf.vim

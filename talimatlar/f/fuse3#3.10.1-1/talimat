@@ -1,0 +1,28 @@
+[paket]
+tanim   = Kullanıcı alanında(userspace) dosya sistemi gerçekleme kütüphanesi
+paketci = milisarge
+grup 	= sistem
+url     = https://github.com/libfuse/libfuse
+
+[gerek]
+derleme = meson
+calisma = 
+
+[kaynak]
+1       = https://github.com/libfuse/libfuse/releases/download/fuse-$surum/fuse-$surum.tar.xz
+dosya   = fuse.conf
+
+[sha256]
+1 		= 6dc3b702f2d13187ff4adb8bcbdcb913ca0510ce0020e4d87bdeb4d794173704
+
+[derle]
+betik   = cd fuse-$surum
+betik   = rm -rf build;meson --prefix=/usr --sbindir=bin . build
+betik   = cd build && ninja
+	      
+[pakur]
+betik   = cd fuse-$surum/build
+betik   = DESTDIR=${PKG} ninja install
+betik   = mv ${PKG}/usr/bin/mount.fuse3 ${PKG}/usr/bin/mount.fuse
+betik   = rm -rf $PKG/etc/init.d;rm -rf $PKG/dev
+betik   = cp $SRC/fuse.conf $PKG/etc/

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Güvenli ve esnek dosya sistemi yedekleme ve dağıtım aracı
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://www.fsarchiver.org/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz      = https://github.com/fdupoux/fsarchiver/releases/download/$surum
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = ./configure --prefix=/usr --sbindir=/usr/bin
+betik     = make
+	      
+[pakur]
+betik     = make DESTDIR="$PKG" install

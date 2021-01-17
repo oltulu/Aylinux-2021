@@ -1,0 +1,25 @@
+[paket]
+tanim   = Font erişimleri için yapılandırma kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg-fontconfig.org
+
+[gerek]
+derleme = freetype
+calisma = 
+
+[kaynak]
+gz      = https://www.freedesktop.org/software/$isim/release
+
+[sha512]
+1 		= 830df32e944ee21ad02a9df04787b9902af36ffc13913524acef6e38799a38c5df7a6e407cc0ff9c24455520549d53b3d85d22642a229ac654dc9269926f130b
+
+[derle]
+betik   = rm -f src/fcobjhash.h
+ekconf  = --localstatedir=/var --disable-docs --disable-static --disable-nls --with-xmldir=/etc/fonts --with-templatedir=/etc/fonts/conf.avail
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+; autohinting öntanimlı aktif edildi.
+betik   =  pushd $PKG/etc/fonts/conf.d && ln -sf /etc/fonts/conf.avail/10-autohint.conf &&popd

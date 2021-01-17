@@ -1,0 +1,30 @@
+[paket]
+tanim   = X.org Type1 fontlar
+paketci = milisarge
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = bdftopcf mkfontscale xorg-util-macros font-util
+calisma = encodings font-alias font-util fontconfig
+
+
+[kaynak]
+1       = https://xorg.freedesktop.org/releases/individual/font/font-adobe-utopia-type1-1.0.4.tar.bz2
+2       = https://xorg.freedesktop.org/releases/individual/font/font-bh-type1-1.0.3.tar.bz2
+3       = https://xorg.freedesktop.org/releases/individual/font/font-bitstream-type1-1.0.3.tar.bz2
+4       = https://xorg.freedesktop.org/releases/individual/font/font-ibm-type1-1.0.3.tar.bz2
+5       = https://xorg.freedesktop.org/releases/individual/font/font-xfree86-type1-1.0.4.tar.bz2
+
+[sha256]
+1       = 979435105f897a70f8993fa02c8362160b0513366c2ab896965416f96dbb8077
+2       = 761455a297486f3927a85d919b5c948d1d324181d4bea6c95d542504b68a63c1
+3       = c6ea0569adad2c577f140328dc3302e729cb1b1ea90cd0025caf380625f8a688
+4       = fddb28d3db5a07f4b4ca15388488a9680a10e1367a18f358f903b2a608a5d2df
+5       = caebf42aec7be7f3bd40e0f232d6f34881b853dc84acfcdf7458358701fbe34a
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh
