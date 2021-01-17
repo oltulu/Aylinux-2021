@@ -1,0 +1,24 @@
+[paket]
+tanim   = Çekirdek DRM hizmetleri için kullanıcı arabirimi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://dri.freedesktop.org
+
+[gerek]
+derleme = meson libpciaccess
+calisma = 
+
+[kaynak]
+xz      = https://dri.freedesktop.org/${isim}
+
+[sha256]
+1 		= ddf31baa8e49473624860bd166ce654dc349873f7a6c7b3305964249315c78a7
+
+[derle]
+betik   = cd $SRC
+betik   = milis-meson $isim-$surum build -Dudev=true -Dvalgrind=false
+betik   = ninja -C build
+
+[pakur]
+betik   = cd $SRC
+tip     = meson

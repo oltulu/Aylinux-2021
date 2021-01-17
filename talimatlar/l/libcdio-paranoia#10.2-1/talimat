@@ -1,0 +1,25 @@
+[paket]
+tanim    = CD paranoia kütüphaneleri
+paketci  = milisarge 
+grup     = kütüphane  
+url      = https://www.gnu.org/software/libcdio
+
+[gerek]
+derleme  =  libcdio 
+calisma  =  
+
+[kaynak]
+1  =  https://ftp.gnu.org/gnu/libcdio/libcdio-paranoia-10.2+2.0.0.tar.bz2
+
+[sha256]
+1  =  4565c18caf401083c53733e6d2847b6671ba824cff1c7792b9039693d34713c1
+
+[derle]
+betik  = cd libcdio-paranoia-10.2+2.0.0
+ekconf = --enable-cpp-progs --disable-static --disable-example-progs
+tip    = gnu
+
+[pakur]
+betik  = cd libcdio-paranoia-10.2+2.0.0
+tip    = gnu
+

@@ -1,0 +1,41 @@
+
+#!/bin/sh
+
+. /etc/rc.d/functions
+
+
+case "${1}" in
+   start)
+      log_info_msg "Starting Cgroup daemons..."
+      /usr/bin/cgconfigparser -l /etc/cgconfig.conf -s 1664
+      /usr/bin/cgrulesengd -s -g cgred
+      evaluate_retval
+      ;;
+
+   stop)
+      log_info_msg "Stopping Cgroup daemon..."
+      /usr/bin/cgclear -l /etc/cgconfig.conf -e
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   status)
+      statusproc /usr/bin/cgrulesengd 
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart|status}"
+      exit 1
+      ;;
+esac
+
+exit 0
+
+# End of service
+
+

@@ -1,0 +1,25 @@
+[paket]
+tanim    = GNU kompakt disk girdi ve kontrol kütüphanesi
+paketci  = milisarge
+grup     = medya  
+url      =  https://www.gnu.org/software/libcdio/
+
+[gerek]
+derleme  =  libcddb ncurses 
+calisma  =  
+
+[kaynak]
+bz2    =  https://ftp.gnu.org/gnu/$isim
+
+[sha256]
+1      = 8550e9589dbd594bfac93b81ecf129b1dc9d0d51e90f9696f1b2f9b2af32712b
+
+[derle]
+betik  = autoreconf -fi
+ekconf = --disable-vcd-info --enable-cpp-progs --disable-static
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = sed -e "/define CDIO_LIBCDIO_SOURCE_PATH/s|.*|/* #undef CDIO_LIBCDIO_SOURCE_PATH */|" -i "${PKG}/usr/include/cdio/cdio_config.h"
+

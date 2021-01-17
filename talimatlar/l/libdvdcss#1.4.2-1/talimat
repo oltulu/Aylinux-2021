@@ -1,0 +1,18 @@
+[paket]
+tanim   = Portatif DVD çözücü kütüphane
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://www.videolan.org/developers/libdvdcss.html
+
+[kaynak]
+bz2  =  https://download.videolan.org/pub/libdvdcss/$surum
+
+[sha256]
+1    =  78c2ed77ec9c0d8fbed7bf7d3abc82068b8864be494cfad165821377ff3f2575
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

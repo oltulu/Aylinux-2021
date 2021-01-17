@@ -1,0 +1,23 @@
+[paket]
+tanim   = CUE Sheet Parser Kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/lipnitsk/libcue
+
+[gerek]
+derleme    = bison flex cmake
+calisma    =
+
+[kaynak]
+1          = https://github.com/lipnitsk/libcue/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = f27bc3ebb2e892cd9d32a7bee6d84576a60f955f29f748b9b487b173712f1200
+
+[derle]
+ekconf     = -DBUILD_SHARED_LIBS=ON
+tip        = cmake
+
+[pakur]
+tip        = cmake
+

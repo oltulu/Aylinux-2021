@@ -1,0 +1,27 @@
+[paket]
+tanim   = Ses çıktı kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://xiph.org/ao/
+
+[gerek]
+derleme  = alsa-lib pulseaudio 
+calisma  =  
+
+[kaynak]
+1     =  https://github.com/xiph/libao/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+dosya =  libao.conf
+
+[sha256]
+1  =  df8a6d0e238feeccb26a783e778716fb41a801536fe7b6fce068e313c0e2bf4d
+2  =  c6cde8eaa3516ab6a2e6f154a70961b3f448f4b739491a82e0c512f2740525af
+
+[derle]
+betik  = ./autogen.sh
+ekconf = --enable-alsa-mmap
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = install -Dm644 "${SRC}"/libao.conf "${PKG}"/etc/libao.conf
+

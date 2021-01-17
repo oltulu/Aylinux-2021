@@ -1,0 +1,18 @@
+[paket]
+tanim   = Donanıma yarı taşınabilir erişim, atomik bellek işlemleri sağlayan kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/ivmai/libatomic_ops
+
+[kaynak]
+1          = ${url}/releases/download/v${surum}/libatomic_ops-${surum}.tar.gz
+
+[sha256]
+1          = 587edf60817f56daf1e1ab38a4b3c729b8e846ff67b4f62a6157183708f099af
+
+[derle]
+ekconf     = --enable-shared --enable-static
+tip        = gnu
+
+[pakur]
+tip        = gnu

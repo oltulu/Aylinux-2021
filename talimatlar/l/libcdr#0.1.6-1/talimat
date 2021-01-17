@@ -1,0 +1,22 @@
+[paket]
+tanim   = Corel Draw dosya formatı ithalatçı kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.documentfoundation.org/DLP/Libraries/libcdr
+
+[gerek]
+derleme    = lcms2 icu librevenge boost cppunit
+calisma    =
+
+[kaynak]
+bz2        = http://dev-www.libreoffice.org/src/$isim
+
+[sha256]
+1          = 5382d25ece9047a9f0ee5f56dc5465b0afddbae5caba68ca7d98632e62b88735
+
+[derle]
+ekconf     = --disable-debug
+tip        = gnu
+
+[pakur]
+tip        = gnu

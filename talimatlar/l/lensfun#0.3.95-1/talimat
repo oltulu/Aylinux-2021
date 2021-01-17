@@ -1,0 +1,24 @@
+[paket]
+tanim   = Fotoğrafik mercek bozulmalarını düzeltmek ve simüle etmek için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://lensfun.sourceforge.net/
+
+[gerek]
+derleme    = python libpng cmake glib
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/${isim}/${surum}/${isim}-${surum}.tar.gz
+dosya      = lensfun-fix-python-install-dir.patch
+
+[sha256]
+1          = ae8bcad46614ca47f5bda65b00af4a257a9564a61725df9c74cb260da544d331
+
+[derle]
+yama       = 2
+ekconf     = -DINSTALL_HELPER_SCRIPTS=0 -DCMAKE_CXX_FLAGS=${CXXFLAGS} -fno-delete-null-pointer-checks
+tip        = cmake
+
+[pakur]
+tip        = cmake

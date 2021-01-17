@@ -1,0 +1,18 @@
+[paket]
+tanim    = MusicBrainz DiscIDs oluşturma kütüphanesi
+paketci  = milisarge  
+grup     = kütüphane  
+url      = https://musicbrainz.org/doc/libdiscid
+
+[kaynak]
+gz  = http://ftp.musicbrainz.org/pub/musicbrainz/$isim
+
+[sha256]
+1   =  f9e443ac4c0dd4819c2841fcc82169a46fb9a626352cdb9c7f65dd3624cd31b9
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

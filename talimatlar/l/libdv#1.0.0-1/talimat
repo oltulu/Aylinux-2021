@@ -1,0 +1,23 @@
+[paket]
+tanim   = The Quasar DV kodek kütüphanesi
+paketci = milisarge  
+grup    = kütüphane   
+url     = http://libdv.sourceforge.net/
+
+[gerek]
+derleme  = popt 
+calisma  =  
+
+[kaynak]
+gz =  https://downloads.sourceforge.net/$isim
+
+[sha256]
+1  =  a305734033a9c25541a59e8dd1c254409953269ea7c710c39e540bd8853389ba
+
+[derle]
+ekconf = --disable-gtk
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

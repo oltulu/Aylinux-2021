@@ -1,0 +1,19 @@
+[paket]
+tanim   = LDAP gibi şemasız gömülü veritabanı
+paketci = milisarge  
+grup    = sistem 
+url     = https://ldb.samba.org/
+
+[gerek]
+derleme  = python talloc tevent tdb popt lmdb cmocka
+calisma  =  
+
+[kaynak]
+gz       = https://samba.org/ftp/$isim
+
+[derle]
+dosya    = derle.sh
+
+[pakur]
+tip      = gnu
+

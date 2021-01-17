@@ -1,0 +1,22 @@
+[paket]
+tanim   = X86 CPU algılama ve özellik çıkarma için küçük C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/anrieff/libcpuid
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+github  = anrieff/libcpuid
+
+[sha256]
+1       = 263b370d154d55e3b7246e069600b045d27c512456f051e9ce3d999318b58b61
+
+[derle]
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu

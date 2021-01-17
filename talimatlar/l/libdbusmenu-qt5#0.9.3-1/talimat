@@ -1,0 +1,25 @@
+[paket]
+tanim   = DBusMenu özelliklerinin Qt uygulamasını sağlayan bir kütüphane
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://launchpad.net/libdbusmenu-qt
+
+[gerek]
+derleme = qt5-base
+calisma = 
+
+[kaynak]
+1      = http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbusmenu-qt/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
+
+[sha256]
+1 		= a8e6358a31c44ccdf1bfc46c95a77a6bfc7fc1f536aadb913ed4f4405c570cf6
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake $SRC/libdbusmenu-qt-0.9.3+16.04.20160218 -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib
+betik 	= make
+	      
+[pakur]
+betik 	= cd build
+tip = gnu

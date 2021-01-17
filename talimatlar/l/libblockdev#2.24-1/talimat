@@ -1,0 +1,24 @@
+[paket]
+tanim   = Blok cihazlarını değiştirmek için bir kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/storaged-project/libblockdev
+
+[gerek]
+derleme = gobject-introspection libbytesize parted cryptsetup nss volume_key libyaml ndctl dmraid
+calisma = mdadm
+
+[kaynak]
+gz      = $url/releases/download/$surum-1
+
+[sha256]
+1       = 3cf4aea5f48da0cfa59737f91ebf2a2d6424cb59b4180c9716fff3d49fd90ce0
+
+[derle]
+betik   = export CFLAGS+=" $(pkg-config --cflags nss)"
+betik   = export LDFLAGS+="$(pkg-config --libs nss)"
+ekconf  = --without-lvm_dbus
+tip     = gnu
+
+[pakur]
+tip     = gnu

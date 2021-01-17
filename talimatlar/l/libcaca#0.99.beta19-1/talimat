@@ -1,0 +1,20 @@
+[paket]
+tanim   = Color AsCii Art kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = http://caca.zoy.org/wiki/libcaca
+
+[gerek]
+derleme  = imlib2 ncurses 
+calisma  =  
+
+[kaynak]
+gz       = http://libcaca.zoy.org/files/$isim
+
+[derle]
+ekconf = --enable-shared --disable-doc --disable-cxx --disable-gl --disable-csharp
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

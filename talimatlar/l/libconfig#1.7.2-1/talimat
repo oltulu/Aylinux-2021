@@ -1,0 +1,24 @@
+[paket]
+tanim   = C ++ Yapılandırma Dosya Kütüphanesi - geliştirme dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = http://hyperrealm.com/libconfig/libconfig.html
+
+[gerek]
+derleme  = byacc
+calisma  =  
+
+[kaynak]
+1          = https://github.com/hyperrealm/libconfig/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = f67ac44099916ae260a6c9e290a90809e7d782d96cdd462cac656ebc5b685726
+
+[derle]
+betik      = autoreconf -vi
+; doc-man textinfo gereğinden kurtulmak için
+betik      = ln -s /usr/bin/echo /usr/bin/makeinfo
+tip        = gnu
+
+[pakur]
+tip        = gnu

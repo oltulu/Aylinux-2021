@@ -1,0 +1,19 @@
+[paket]
+tanim   = POSIX 1003.1e kapasite kütüphanesi
+paketci = milisarge
+grup 	= temel
+url     = http://www.kernel.org/pub/linux/libs/security/linux-privs
+
+[kaynak]
+xz      = https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2
+
+[sha256]
+#1 		= dac1792d0118bee6aae6ba7fb93ff1602c6a9bda812fd63916eee1435b9c486a
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+betik 	= make prefix=/usr lib=/lib DESTDIR="$PKG" RAISE_SETFCAP=no install
+betik 	= rm -f $PKG/usr/lib/libcap.a
+  

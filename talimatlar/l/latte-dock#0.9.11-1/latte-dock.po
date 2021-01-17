@@ -1,0 +1,2409 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Steve Allewell <steve.allewell@gmail.com>, 2017, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-04-06 08:48+0200\n"
+"PO-Revision-Date: 2019-11-03 11:57+0000\n"
+"Last-Translator: Cihan Alkan <steve.allewell@gmail.com>\n"
+"Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.07.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Cihan Alkan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "cihanalk@gmail.com"
+
+#: app/indicator/factory.cpp:202
+#, kde-format
+msgid "Failed to import indicator"
+msgstr "Gösterge içe aktarılamadı"
+
+#: app/indicator/factory.cpp:208
+#, kde-format
+msgctxt "indicator_name, imported updated"
+msgid "%0 indicator updated successfully"
+msgstr "%0 göstergesi başarıyla güncellendi"
+
+#: app/indicator/factory.cpp:209
+#, kde-format
+msgctxt "indicator_name, imported success"
+msgid "%0 indicator installed successfully"
+msgstr "%0 göstergesi başarıyla kuruldu"
+
+#: app/indicator/factory.cpp:290
+#, kde-format
+msgid "Remove Indicator"
+msgstr "Göstergeyi Kaldır"
+
+#: app/indicator/factory.cpp:292
+#, kde-format
+msgid "Do you want to remove <b>%0</b> indicator from your system?"
+msgstr "Sisteminizden <b>%0</b> göstergesini kaldırmak istiyor musunuz?"
+
+#: app/indicator/factory.cpp:299
+#, kde-format
+msgctxt "indicator_name, removed success"
+msgid "<b>%0</b> indicator removed successfully"
+msgstr "<b>%0</b> göstergesi başarıyla kaldırıld"
+
+#: app/lattecorona.cpp:1089
+#, kde-format
+msgid "The layout cannot be imported from file :: "
+msgstr "Düzen dosyadan içe aktarılamaz :: "
+
+#: app/layout/genericlayout.cpp:1357
+#, kde-format
+msgctxt "bottom edge"
+msgid "Bottom"
+msgstr "Alt"
+
+#: app/layout/genericlayout.cpp:1358
+#, kde-format
+msgctxt "left edge"
+msgid "Left"
+msgstr "Sol"
+
+#: app/layout/genericlayout.cpp:1359
+#, kde-format
+msgctxt "top edge"
+msgid "Top"
+msgstr "Üst"
+
+#: app/layout/genericlayout.cpp:1360
+#, kde-format
+msgctxt "right edge"
+msgid "Right"
+msgstr "Sağ"
+
+#: app/layout/genericlayout.cpp:1387
+#, kde-format
+msgctxt "active docks panels"
+msgid "Active Views:"
+msgstr "Aktif Görünümler:"
+
+#: app/layout/genericlayout.cpp:1421
+#, kde-format
+msgid "Orphan Systrays:"
+msgstr "Orphan Systrays:"
+
+#: app/layout/genericlayout.cpp:1431
+#, kde-format
+msgctxt "view id"
+msgid "ID"
+msgstr "ID"
+
+#: app/layout/genericlayout.cpp:1432
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:76
+#, kde-format
+msgid "Screen"
+msgstr "Ekran"
+
+#: app/layout/genericlayout.cpp:1433
+#, kde-format
+msgctxt "screen edge"
+msgid "Edge"
+msgstr "Kenar"
+
+#: app/layout/genericlayout.cpp:1434
+#, kde-format
+msgctxt "active dock/panel"
+msgid "Active"
+msgstr "Aktif"
+
+#: app/layout/genericlayout.cpp:1435
+#, kde-format
+msgid "Systrays"
+msgstr ""
+
+#: app/layout/genericlayout.cpp:1494 app/screenpool.cpp:144
+#, kde-format
+msgctxt "primary screen"
+msgid "Primary"
+msgstr "Birincil"
+
+#: app/layout/genericlayout.cpp:1522
+#, kde-format
+msgid "Yes"
+msgstr "Evet"
+
+#: app/layout/genericlayout.cpp:1547
+#, kde-format
+msgid "No errors were identified for this layout..."
+msgstr "Bu düzen için hiçbir hata tanımlanmadı..."
+
+#: app/layout/genericlayout.cpp:1549
+#, kde-format
+msgid "Errors:"
+msgstr "Hatalar:"
+
+#: app/layout/genericlayout.cpp:1559
+#, kde-format
+msgid "Unknown screens: "
+msgstr "Bilinmeyen ekranlar: "
+
+#: app/layout/storage.cpp:722
+#, kde-format
+msgid "Same applet and containment id found ::: "
+msgstr "Aynı uygulama ve kapsama kimliği bulundu ::: "
+
+#: app/layout/storage.cpp:731
+#, kde-format
+msgid "Different applets with same id ::: "
+msgstr "Aynı kimliğe sahip farklı uygulamalar ::: "
+
+#: app/layouts/importer.cpp:65 app/layouts/importer.cpp:83
+#: app/layouts/manager.cpp:92 app/layouts/manager.cpp:99
+#: app/layouts/manager.cpp:109
+#, kde-format
+msgid "My Layout"
+msgstr "Düzenim"
+
+#: app/layouts/importer.cpp:66 app/layouts/synchronizer.cpp:671
+#: app/layouts/synchronizer.cpp:672
+#, kde-format
+msgid "Alternative"
+msgstr "Alternatif"
+
+#: app/layouts/importer.cpp:322
+#, kde-format
+msgctxt "import/export config"
+msgid "The extracted file could not be copied!!!"
+msgstr "Çıkarılan dosya kopyalanamadı!!!"
+
+#: app/layouts/importer.cpp:327
+#, kde-format
+msgctxt "import/export config"
+msgid "The file has a wrong format!!!"
+msgstr "Dosyanın biçimi yanlış!!!"
+
+#: app/layouts/importer.cpp:333
+#, kde-format
+msgctxt "import/export config"
+msgid "The temp directory could not be created!!!"
+msgstr "Geçici dizin oluşturulamadı!!!"
+
+#: app/layouts/manager.cpp:253
+#, kde-format
+msgid "Multiple Layouts Warning"
+msgstr "Çoklu Düzen Uyarısı"
+
+#: app/layouts/manager.cpp:254
+#, kde-format
+msgid ""
+"Latte did not close properly in the previous session. The following "
+"layout(s) <b>[%0]</b> were updated for consistency!!!"
+msgstr ""
+"Latte önceki oturumda düzgün kapanmadı.  "
+"Aşağıdaki düzen  <b>[%0]</b> tutarlılık için güncellendi!!!"
+
+#: app/layouts/manager.cpp:362 app/layouts/manager.cpp:474
+#: app/layouts/synchronizer.cpp:672
+#, kde-format
+msgid "Default"
+msgstr "Varsayılan"
+
+#: app/layouts/manager.cpp:475
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:643
+#, kde-format
+msgid "Plasma"
+msgstr "Plasma"
+
+#: app/layouts/manager.cpp:476
+#, kde-format
+msgid "Unity"
+msgstr "Unity"
+
+#: app/layouts/manager.cpp:477
+#, kde-format
+msgid "Extended"
+msgstr "Genişletilmiş"
+
+#: app/layouts/synchronizer.cpp:430
+#, kde-format
+msgid "Switching to layout <b>%0</b> ..."
+msgstr "<b>%0</b> düzenine geçiliyor ..."
+
+#: app/layouts/synchronizer.cpp:879
+#, kde-format
+msgid "Activating layout: <b>%0</b> ..."
+msgstr "Düzeni etkinleştirme: <b>%0</b> ..."
+
+#: app/main.cpp:101
+#, kde-format
+msgctxt "command line"
+msgid "Replace the current Latte instance."
+msgstr "Mevcut Latte örneğini değiştirin."
+
+#: app/main.cpp:102
+#, kde-format
+msgctxt "command line"
+msgid "Show the debugging messages on stdout."
+msgstr "Standart çıktıda hata ayıklama mesajlarını göster."
+
+#: app/main.cpp:103
+#, kde-format
+msgctxt "command line"
+msgid "Clear qml cache. It can be useful after system upgrades."
+msgstr "Qml önbelleğini temizleyin. Sistem yükseltmelerinden sonra faydalı olabilir."
+
+#: app/main.cpp:104
+#, kde-format
+msgctxt "command line"
+msgid "Import and load default layout on startup."
+msgstr "Başlangıçta varsayılan düzeni içe aktarın ve yükleyin."
+
+#: app/main.cpp:105
+#, kde-format
+msgctxt "command line"
+msgid "Print available layouts"
+msgstr "Kullanılabilir düzenleri yazdırın"
+
+#: app/main.cpp:106
+#, kde-format
+msgctxt "command line"
+msgid "Load specific layout on startup."
+msgstr "Başlangıçta belirli bir düzen yükleyin."
+
+#: app/main.cpp:106
+#, kde-format
+msgctxt "command line: load"
+msgid "layout_name"
+msgstr ""
+
+#: app/main.cpp:107
+#, kde-format
+msgctxt "command line"
+msgid "Import and load a layout."
+msgstr "Bir düzeni içe aktarın ve yükleyin."
+
+#: app/main.cpp:107 app/main.cpp:108
+#, kde-format
+msgctxt "command line: import"
+msgid "file_name"
+msgstr ""
+
+#: app/main.cpp:108
+#, kde-format
+msgctxt "command line"
+msgid "Import full configuration."
+msgstr "Tam yapılandırmayı içe aktarın."
+
+#: app/main.cpp:109
+#, kde-format
+msgctxt "command line"
+msgid "Single layout memory mode. Only one layout is active at any case."
+msgstr "Tek düzen hafıza modu. Her durumda yalnızca bir düzen etkindir."
+
+#: app/main.cpp:110
+#, kde-format
+msgctxt "command line"
+msgid ""
+"Multiple layouts memory mode. Multiple layouts can be active at any time "
+"based on Activities running."
+msgstr ""
+"Çoklu düzen hafıza modu. Çalışan Aktivitelere bağlı olarak herhangi bir zamanda birden fazla düzen aktif olabilir."
+
+#: app/main.cpp:157
+#, kde-format
+msgid "Available layouts that can be used to start Latte:"
+msgstr "Latte'yi başlatmak için kullanılabilecek mevcut düzenler:"
+
+#: app/main.cpp:163
+#, kde-format
+msgid "There are no available layouts, during startup Default will be used."
+msgstr "Kullanılabilir düzen yok, başlangıç ​​sırasında Varsayılan kullanılacaktır."
+
+#: app/main.cpp:181
+#, kde-format
+msgctxt "layout missing"
+msgid "This layout doesn't exist in the system."
+msgstr "Bu düzen sistemde mevcut değil."
+
+#: app/main.cpp:207
+#, kde-format
+msgid "An instance is already running!, use --replace to restart Latte"
+msgstr "Bir örnek zaten çalışıyor! Latte'yi yeniden başlatmak için --replace kullanın"
+
+#: app/main.cpp:227
+#, kde-format
+msgid "The configuration cannot be imported"
+msgstr "Yapılandırma içe aktarılamaz"
+
+#: app/main.cpp:238
+#, kde-format
+msgid "The layout cannot be imported"
+msgstr "Düzen içe aktarılamaz"
+
+#: app/main.cpp:293
+#, kde-format
+msgid ""
+"Latte is a dock based on plasma frameworks that provides an elegant and "
+"intuitive experience for your tasks and plasmoids. It animates its contents "
+"by using parabolic zoom effect and tries to be there only when it is "
+"needed.\n"
+"\n"
+"\"Art in Coffee\""
+msgstr ""
+"Latte, görevleriniz ve plazmoidleriniz için zarif ve sezgisel bir deneyim "
+"Latte, görevleriniz ve plazmoidleriniz için zarif ve sezgisel bir deneyim "
+"İçeriğini parabolik zoom efekti kullanarak canlandırır ve sadece ihtiyaç duyulduğunda "
+"orada olmaya çalışır..\n"
+"\n"
+"\"Kahvede Sanat\""
+
+#: app/package/lattepackage.cpp:46
+#, kde-format
+msgid "Latte Dock defaults"
+msgstr "Latte Dock varsayılanları"
+
+#: app/package/lattepackage.cpp:47
+#, kde-format
+msgid "Latte Dock panel"
+msgstr "Latte Dock paneli"
+
+#: app/package/lattepackage.cpp:49
+#, kde-format
+msgid "Dock configuration UI"
+msgstr "Dock yapılandırma kullanıcı arayüzü"
+
+#: app/package/lattepackage.cpp:50
+#, kde-format
+msgid "Dock secondary configuration UI"
+msgstr "İkincil yapılandırma kullanıcı arayüzünü yerleştir"
+
+#: app/package/lattepackage.cpp:51
+#, kde-format
+msgid "Config model"
+msgstr "Yapılandırma modeli"
+
+#: app/package/lattepackage.cpp:52
+#, kde-format
+msgid "Splitter"
+msgstr "Ayırıcı"
+
+#: app/package/lattepackage.cpp:53
+#, kde-format
+msgid "Latte Trademark"
+msgstr "Latte Ticari Marka"
+
+#: app/package/lattepackage.cpp:54
+#, kde-format
+msgid "Info View Window"
+msgstr "Bilgi Görünümü Penceresi"
+
+#: app/package/lattepackage.cpp:56
+#, kde-format
+msgid "default layout file"
+msgstr "varsayılan düzen dosyası"
+
+#: app/package/lattepackage.cpp:57
+#, kde-format
+msgid "plasma layout file"
+msgstr "plazma düzen dosyası"
+
+#: app/package/lattepackage.cpp:58
+#, kde-format
+msgid "unity layout file"
+msgstr "unity düzen dosyası"
+
+#: app/package/lattepackage.cpp:59
+#, kde-format
+msgid "extended layout file"
+msgstr "genişletilmiş düzen dosyası"
+
+#: app/package/lattepackage.cpp:61
+#, kde-format
+msgid "default preset file"
+msgstr "varsayılan hazır ayar dosyası"
+
+#: app/package/lattepackage.cpp:62
+#, kde-format
+msgid "plasma preset file"
+msgstr "plasma hazır ayar dosyası"
+
+#: app/package/lattepackage.cpp:63
+#, kde-format
+msgid "unity preset file"
+msgstr "unity hazır ayar dosyası"
+
+#: app/package/lattepackage.cpp:64
+#, kde-format
+msgid "extended preset file"
+msgstr "genişletilmiş ön ayar dosyası"
+
+#: app/package/lattepackage.cpp:65
+#, kde-format
+msgid "multiple layouts hidden file"
+msgstr "çoklu düzen gizli dosya"
+
+#: app/package/lattepackage.cpp:67
+#, kde-format
+msgid "a qml file that is used to publish broadcasted backgrounds"
+msgstr "yayınlanan arka planları yayınlamak için kullanılan bir qml dosyası"
+
+#: app/packageplugins/indicator/indicatorpackage.cpp:44
+#, kde-format
+msgid "Configuration Definitions"
+msgstr "Yapılandırma Tanımları"
+
+#: app/packageplugins/indicator/indicatorpackage.cpp:45
+#, kde-format
+msgid "User Interface"
+msgstr "Kullanıcı Arayüzü"
+
+#: app/packageplugins/indicator/indicatorpackage.cpp:46
+#, kde-format
+msgid "Data Files"
+msgstr "Veri Dosyaları"
+
+#: app/packageplugins/indicator/indicatorpackage.cpp:47
+#, kde-format
+msgid "Executable Scripts"
+msgstr "Yürütülebilir Komut Dosyaları"
+
+#: app/packageplugins/indicator/indicatorpackage.cpp:48
+#, kde-format
+msgid "Translations"
+msgstr "Çeviriler"
+
+#: app/screenpool.cpp:112
+#, kde-format
+msgctxt "screen id"
+msgid "ID"
+msgstr "ID"
+
+#: app/screenpool.cpp:113
+#, kde-format
+msgctxt "screen name"
+msgid "Name"
+msgstr "İsim"
+
+#: app/screenpool.cpp:114
+#, kde-format
+msgctxt "screen type"
+msgid "Type"
+msgstr "Tür"
+
+#: app/screenpool.cpp:115
+#, kde-format
+msgid "Docks/Panels"
+msgstr "Dock/Panel"
+
+#: app/screenpool.cpp:146
+#, kde-format
+msgctxt "secondary screen"
+msgid "Secondary"
+msgstr "İkincil"
+
+#: app/screenpool.cpp:148
+#, kde-format
+msgctxt "inactive screen"
+msgid "inactive"
+msgstr "inaktif"
+
+#: app/screenpool.cpp:156
+#, kde-format
+msgctxt "it has not latte docks/panels"
+msgid "none"
+msgstr "yok"
+
+#: app/settings/delegates/colorcmbboxdelegate.cpp:76
+#, kde-format
+msgid "Custom background..."
+msgstr "Özel arka plan..."
+
+#: app/settings/delegates/colorcmbboxdelegate.cpp:79
+#, kde-format
+msgid "Custom text color..."
+msgstr "Özel metin rengi..."
+
+#: app/settings/settingsdialog.cpp:155
+#, kde-format
+msgid "File"
+msgstr "Dosya"
+
+#: app/settings/settingsdialog.cpp:158
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:64
+#, kde-format
+msgid "Layout"
+msgstr "Düzen"
+
+#: app/settings/settingsdialog.cpp:171
+#, kde-format
+msgid "Sc&reens..."
+msgstr "Ekranlar..."
+
+#: app/settings/settingsdialog.cpp:175
+#, kde-format
+msgid "&Quit Latte"
+msgstr "&Latte Kapat"
+
+#: app/settings/settingsdialog.cpp:179
+#, kde-format
+msgctxt "edit layout"
+msgid "&Edit..."
+msgstr "&Düzenle..."
+
+#: app/settings/settingsdialog.cpp:184
+#, kde-format
+msgctxt "layout information"
+msgid "&Information..."
+msgstr "&Bilgi..."
+
+#: app/settings/settingsdialog.cpp:558
+#, kde-format
+msgctxt "import layout/configuration"
+msgid "Import Layout/Configuration"
+msgstr "Düzeni/Yapılandırmayı İçe Aktar"
+
+#: app/settings/settingsdialog.cpp:567
+#, kde-format
+msgctxt "import latte layout"
+msgid "Latte Dock Layout file v0.2"
+msgstr "Latte Dock Layout dosyası v0.2"
+
+#: app/settings/settingsdialog.cpp:568
+#, kde-format
+msgctxt "import latte layouts/configuration"
+msgid "Latte Dock Full Configuration file (v0.1, v0.2)"
+msgstr "Latte Dock Layout dosyası (v0.1, v0.2)"
+
+#: app/settings/settingsdialog.cpp:584
+#, kde-format
+msgid "Import: Configuration file version v0.1"
+msgstr "İçe aktar: Yapılandırma dosyası sürüm v0.1"
+
+#: app/settings/settingsdialog.cpp:586
+#, kde-format
+msgid ""
+"You are going to import an old version <b>v0.1</b> configuration file."
+"<br><b>Be careful</b>, importing the entire configuration <b>will erase all</"
+"b> your current configuration!!!<br><br> <i>Alternative, you can <b>import "
+"safely</b> from this file<br><b>only the contained layouts...</b></i>"
+msgstr ""
+"Eski sürüm  <b>v0.1</b> yapılandırma dosyasını içe aktaracaksınız."
+"Dikkatli olun, tüm konfigürasyonu içe aktarmak tüm mevcut konfigürasyonunuzu silecektir !!! Alternatif olarak, bu dosyadan yalnızca içerilen düzenleri güvenle içe aktarabilirsiniz "
+
+#: app/settings/settingsdialog.cpp:591
+#, kde-format
+msgctxt "import full configuration"
+msgid "Full Configuration"
+msgstr "Tam Yapılandırma"
+
+#: app/settings/settingsdialog.cpp:593
+#, kde-format
+msgctxt "import only the layouts"
+msgid "Only Layouts"
+msgstr "Yalnızca Düzenler"
+
+#: app/settings/settingsdialog.cpp:619
+#, kde-format
+msgid "Import: Configuration file version v0.2"
+msgstr "İçe aktar: Yapılandırma dosyası sürüm v0.2"
+
+#: app/settings/settingsdialog.cpp:621
+#, kde-format
+msgid ""
+"You are going to import a <b>v0.2</b> configuration file.<br><b>Be careful</"
+"b>, importing <b>will erase all</b> your current configuration!!!"
+"<br><br><i>Would you like to proceed?</i>"
+msgstr ""
+"Bir <b>v0.2</b> Bir <b> v0.2 </b> yapılandırma dosyasını içe aktaracaksınız .Dikkatli olun, içe aktarmak tüm mevcut yapılandırmanızı silecektir!!!"
+"<br><br><i>Devam etmek ister misin?</i>"
+
+#: app/settings/settingsdialog.cpp:666
+#, kde-format
+msgctxt "layout"
+msgid "Alternative"
+msgstr "Alternatif"
+
+#: app/settings/settingsdialog.cpp:696
+#, kde-format
+msgctxt "export layout/configuration"
+msgid "Export Layout/Configuration"
+msgstr "Düzeni/Yapılandırmayı Dışa Aktar"
+
+#: app/settings/settingsdialog.cpp:704
+#, kde-format
+msgctxt "export layout"
+msgid "Latte Dock Layout file v0.2"
+msgstr "Latte Dock Layout dosyası v0.2"
+
+#: app/settings/settingsdialog.cpp:705
+#, kde-format
+msgctxt "export full configuration"
+msgid "Latte Dock Full Configuration file v0.2"
+msgstr "Latte Dock Tam Yapılandırma dosyası v0.2"
+
+#: app/settings/settingsdialog.cpp:719
+#, kde-format
+msgctxt "export layout"
+msgid "Failed to export layout"
+msgstr "Düzen dışa aktarılamadı"
+
+#: app/settings/settingsdialog.cpp:746
+#, kde-format
+msgctxt "export layout"
+msgid "Open location"
+msgstr "Konumu aç"
+
+#: app/settings/settingsdialog.cpp:747
+#, kde-format
+msgctxt "export layout"
+msgid "Layout exported successfully"
+msgstr "Düzen başarıyla dışa aktarıldı"
+
+#: app/settings/settingsdialog.cpp:758
+#, kde-format
+msgctxt "import/export config"
+msgid "Failed to export configuration"
+msgstr "Yapılandırma dışa aktarılamadı"
+
+#: app/settings/settingsdialog.cpp:765
+#, kde-format
+msgctxt "import/export config"
+msgid "Open location"
+msgstr "Konumu aç"
+
+#: app/settings/settingsdialog.cpp:766
+#, kde-format
+msgctxt "import/export config"
+msgid "Full Configuration exported successfully"
+msgstr "Tam Yapılandırma başarıyla dışa aktarıldı"
+
+#: app/settings/settingsdialog.cpp:935
+#, kde-format
+msgctxt "import-done"
+msgid "Layout: <b>%0</b> imported successfully<br>"
+msgstr "Düzen:  <b>%0</b> başarıyla içe aktarıldı<br>"
+
+#: app/settings/settingsdialog.cpp:1027
+#, kde-format
+msgctxt "column for layout background"
+msgid "Background"
+msgstr "Arkaplan"
+
+#: app/settings/settingsdialog.cpp:1028
+#, kde-format
+msgctxt "column for layout name"
+msgid "Name"
+msgstr "İsim"
+
+#: app/settings/settingsdialog.cpp:1029
+#, kde-format
+msgctxt "column for layout to show in menu"
+msgid "In Menu"
+msgstr "Menüde"
+
+#: app/settings/settingsdialog.cpp:1030
+#, kde-format
+msgctxt "column for layout to hide borders for maximized windows"
+msgid "Borderless"
+msgstr "Kenarlıksız"
+
+#: app/settings/settingsdialog.cpp:1032
+#, kde-format
+msgctxt "column for layout to show which activities is assigned to"
+msgid "Activities"
+msgstr "Aktiviteler"
+
+#: app/settings/settingsdialog.cpp:1034
+#, kde-format
+msgctxt "column for shared layout to show which layouts is assigned to"
+msgid "Shared To"
+msgstr "Paylaşılan"
+
+#: app/settings/settingsdialog.cpp:1089 app/settings/settingsdialog.cpp:1535
+#, kde-format
+msgid "Layout Warning"
+msgstr "Düzen Uyarısı"
+
+#: app/settings/settingsdialog.cpp:1090
+#, kde-format
+msgid ""
+"The layout(s) <b>%0</b> have <i>broken configuration</i>!!! Please <b>remove "
+"them</b> to improve the system stability..."
+msgstr ""
+"<b>%0</b> düzeninin yapılandırması bozuk !!! "
+"Sistem kararlılığını iyileştirmek için lütfen bunları kaldırın..."
+
+#: app/settings/settingsdialog.cpp:1536
+#, kde-format
+msgid ""
+"There are layouts with the same name, that is not permitted!!! Please update "
+"these names to re-apply the changes..."
+msgstr ""
+"Aynı ada sahip düzenler var, buna izin verilmiyor !!! Değişiklikleri yeniden uygulamak için lütfen bu adları güncelleyin..."
+
+#: app/settings/settingsdialog.cpp:1597
+#, kde-format
+msgid "Screens Information"
+msgstr "Ekran Bilgileri"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SettingsDialog)
+#: app/settings/settingsdialog.ui:14
+#, kde-format
+msgctxt "latte settings window"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#. i18n: ectx: attribute (title), widget (QWidget, layoutsTab)
+#: app/settings/settingsdialog.ui:24
+#, kde-format
+msgid "Layouts"
+msgstr "Düzenler"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, singleToolBtn)
+#: app/settings/settingsdialog.ui:53
+#, kde-format
+msgid "Only one layout can be present in memory at all cases"
+msgstr "Her durumda bellekte yalnızca bir düzen bulunabilir"
+
+#. i18n: ectx: property (text), widget (QToolButton, singleToolBtn)
+#: app/settings/settingsdialog.ui:56
+#, kde-format
+msgctxt "single layout"
+msgid "Single"
+msgstr "Tek"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, multipleToolBtn)
+#: app/settings/settingsdialog.ui:66
+#, kde-format
+msgid "Multiple layouts can be present and active in memory at the same time"
+msgstr "Hafızada aynı anda birden fazla düzen mevcut ve aktif olabilir"
+
+#. i18n: ectx: property (text), widget (QToolButton, multipleToolBtn)
+#: app/settings/settingsdialog.ui:69
+#, kde-format
+msgctxt "multiple layouts"
+msgid "Multiple"
+msgstr "Çoklu"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, switchButton)
+#: app/settings/settingsdialog.ui:139
+#, kde-format
+msgid "Switch to selected layout"
+msgstr "Seçili düzene geç"
+
+#. i18n: ectx: property (text), widget (QPushButton, switchButton)
+#: app/settings/settingsdialog.ui:142
+#, kde-format
+msgctxt "switch to layout"
+msgid "Switch"
+msgstr "Değiştir"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, pauseButton)
+#: app/settings/settingsdialog.ui:153
+#, kde-format
+msgid "Pause all activities from the selected layout"
+msgstr "Seçilen düzenden tüm etkinlikleri duraklatın"
+
+#. i18n: ectx: property (text), widget (QPushButton, pauseButton)
+#: app/settings/settingsdialog.ui:156
+#, kde-format
+msgid "Pause"
+msgstr "Bekle"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, newButton)
+#: app/settings/settingsdialog.ui:212
+#, kde-format
+msgid "New layout"
+msgstr "Yeni düzen"
+
+#. i18n: ectx: property (text), widget (QPushButton, newButton)
+#: app/settings/settingsdialog.ui:215
+#, kde-format
+msgctxt "new layout"
+msgid "New"
+msgstr "Yeni"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, copyButton)
+#: app/settings/settingsdialog.ui:226
+#, kde-format
+msgid "Copy selected layout"
+msgstr "Seçili düzeni kopyala"
+
+#. i18n: ectx: property (text), widget (QPushButton, copyButton)
+#: app/settings/settingsdialog.ui:229
+#, kde-format
+msgctxt "copy layout"
+msgid "Copy"
+msgstr "Kopyala"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeButton)
+#: app/settings/settingsdialog.ui:243
+#, kde-format
+msgid "Remove selected layout"
+msgstr "Seçili düzeni kaldır"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeButton)
+#: app/settings/settingsdialog.ui:246
+#, kde-format
+msgctxt "remove layout"
+msgid "Remove"
+msgstr "Çıkar"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, lockedButton)
+#: app/settings/settingsdialog.ui:273
+#, kde-format
+msgid "Lock layout and make it read-only"
+msgstr "Düzeni kilitleyin ve salt okunur hale getirin"
+
+#. i18n: ectx: property (text), widget (QPushButton, lockedButton)
+#: app/settings/settingsdialog.ui:276
+#, kde-format
+msgctxt "locked layout"
+msgid "Locked"
+msgstr "Kilitli"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, sharedButton)
+#: app/settings/settingsdialog.ui:290
+#, kde-format
+msgid "Share that layout with other central layouts"
+msgstr "Bu düzeni diğer merkezi düzenlerle paylaşın"
+
+#. i18n: ectx: property (text), widget (QPushButton, sharedButton)
+#: app/settings/settingsdialog.ui:293
+#, kde-format
+msgid "Shared"
+msgstr "Paylaşıldı"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, importButton)
+#: app/settings/settingsdialog.ui:367
+#, kde-format
+msgid "Import a layout or full configuration file"
+msgstr "Bir düzeni veya tam yapılandırma dosyasını içe aktarın"
+
+#. i18n: ectx: property (text), widget (QPushButton, importButton)
+#: app/settings/settingsdialog.ui:370
+#, kde-format
+msgctxt "import layout"
+msgid "Import"
+msgstr "İçe aktar"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, exportButton)
+#: app/settings/settingsdialog.ui:384
+#, kde-format
+msgid "Export selected layout or full configuration into a file"
+msgstr "Seçili düzeni veya tam konfigürasyonu bir dosyaya aktarın"
+
+#. i18n: ectx: property (text), widget (QPushButton, exportButton)
+#: app/settings/settingsdialog.ui:387
+#, kde-format
+msgctxt "export layout"
+msgid "Export"
+msgstr "Dışa aktar"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, downloadButton)
+#: app/settings/settingsdialog.ui:398
+#, kde-format
+msgid "Download community layouts from the Internet"
+msgstr "İnternetten topluluk düzenlerini indirin"
+
+#. i18n: ectx: property (text), widget (QPushButton, downloadButton)
+#: app/settings/settingsdialog.ui:401
+#, kde-format
+msgctxt "download layout"
+msgid "Download"
+msgstr "İndir"
+
+#. i18n: ectx: attribute (title), widget (QWidget, preferencesTab)
+#: app/settings/settingsdialog.ui:439
+#, kde-format
+msgid "Preferences"
+msgstr "Tercihler"
+
+#. i18n: ectx: property (text), widget (QLabel, appearanceLbl)
+#: app/settings/settingsdialog.ui:514
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:442
+#, kde-format
+msgid "Appearance"
+msgstr "Görünüm"
+
+#. i18n: ectx: property (text), widget (QCheckBox, badges3DStyleChkBox)
+#: app/settings/settingsdialog.ui:539
+#, kde-format
+msgid "Use 3D style for notification and shortcut badges"
+msgstr "Bildirim ve kısayol rozetleri için 3B stili kullanın"
+
+#. i18n: ectx: property (text), widget (QLabel, behaviorLbl)
+#: app/settings/settingsdialog.ui:576
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:437
+#, kde-format
+msgid "Behavior"
+msgstr "Davranış"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, autostartChkBox)
+#: app/settings/settingsdialog.ui:604
+#, kde-format
+msgid "Start the application automatically after each relogin"
+msgstr "Her yeniden girişten sonra uygulamayı otomatik olarak başlatın"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autostartChkBox)
+#: app/settings/settingsdialog.ui:607
+#, kde-format
+msgid "Enable autostart during startup"
+msgstr "Başlatma sırasında otomatik başlatmayı etkinleştir"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, infoWindowChkBox)
+#: app/settings/settingsdialog.ui:634
+#, kde-format
+msgid "Provide visual feedback when layouts are activated automatically"
+msgstr "Düzenler otomatik olarak etkinleştirildiğinde görsel geri bildirim sağlayın"
+
+#. i18n: ectx: property (text), widget (QCheckBox, infoWindowChkBox)
+#: app/settings/settingsdialog.ui:637
+#, kde-format
+msgid "Show informative window for layouts automatic activation"
+msgstr "Düzenler otomatik aktivasyonu için bilgilendirici pencereyi göster"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, noBordersForMaximizedChkBox)
+#: app/settings/settingsdialog.ui:664
+#, kde-format
+msgid ""
+"Activate support for borderless maximized windows between different layouts"
+msgstr ""
+"Farklı düzenler arasında kenarlıksız büyütülmüş pencereler için desteği etkinleştirin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, noBordersForMaximizedChkBox)
+#: app/settings/settingsdialog.ui:667
+#, kde-format
+msgid "Support borderless maximized windows in different layouts"
+msgstr "Farklı düzenlerde kenarlıksız büyütülmüş pencereleri destekleyin"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: app/settings/settingsdialog.ui:698
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:565
+#: shell/package/contents/configuration/pages/TasksConfig.qml:416
+#, kde-format
+msgid "Actions"
+msgstr "Hareketler"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, metaPressChkBox)
+#: app/settings/settingsdialog.ui:723
+#, kde-format
+msgid ""
+"Forward ⌘ press from KWin to Latte in order to activate Application "
+"Launcher. It is suggested to disable that option if you remove Latte."
+msgstr ""
+"İleri ⌘ Uygulama Başlatıcı'yı etkinleştirmek için KWin'den Latte'ye basın. "
+"Latte'yi kaldırırsanız bu seçeneği devre dışı bırakmanız önerilir."
+
+#. i18n: ectx: property (text), widget (QCheckBox, metaPressChkBox)
+#: app/settings/settingsdialog.ui:726
+#, kde-format
+msgid "Press ⌘ to activate Application Launcher"
+msgstr "Uygulama Başlatıcı'yı etkinleştirmek için ⌘ tuşuna basın"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, metaPressHoldChkBox)
+#: app/settings/settingsdialog.ui:753
+#, kde-format
+msgid "Press and hold ⌘ to show shortcuts badges for applets and tasks"
+msgstr "Uygulama ve görevler için kısayol rozetlerini göstermek için ⌘ tuşunu basılı tutun"
+
+#. i18n: ectx: property (text), widget (QCheckBox, metaPressHoldChkBox)
+#: app/settings/settingsdialog.ui:756
+#, kde-format
+msgid "Press and Hold ⌘ to show shortcuts badges"
+msgstr "Kısayol rozetlerini göstermek için ⌘ tuşunu basılı tutun"
+
+#. i18n: ectx: property (text), widget (QLabel, mouseSensetivityLbl)
+#: app/settings/settingsdialog.ui:787
+#, kde-format
+msgid "Mouse Sensitivity"
+msgstr "Fare hassasiyeti"
+
+#. i18n: ectx: property (text), widget (QLabel, parabolicEffectLbl)
+#: app/settings/settingsdialog.ui:818
+#, kde-format
+msgid "Parabolic Effect"
+msgstr "Parabolik Etki"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, lowSensitivityBtn)
+#: app/settings/settingsdialog.ui:849
+#, kde-format
+msgid "Low sensitivity for parabolic effect (low cpu usage and performance)"
+msgstr "Parabolik etki için düşük hassasiyet (düşük CPU kullanımı ve performansı)"
+
+#. i18n: ectx: property (text), widget (QToolButton, lowSensitivityBtn)
+#: app/settings/settingsdialog.ui:852
+#, kde-format
+msgctxt "low sensitivity"
+msgid "Low"
+msgstr "Düşük"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, mediumSensitivityBtn)
+#: app/settings/settingsdialog.ui:868
+#, kde-format
+msgid ""
+"Medium sensitivity for parabolic effect (normal cpu usage and performance)"
+msgstr ""
+"Parabolik etki için orta hassasiyet (normal CPU kullanımı ve performansı)"
+
+#. i18n: ectx: property (text), widget (QToolButton, mediumSensitivityBtn)
+#: app/settings/settingsdialog.ui:871
+#, kde-format
+msgctxt "medium sensitivity"
+msgid "Medium"
+msgstr "Orta"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, highSensitivityBtn)
+#: app/settings/settingsdialog.ui:887
+#, kde-format
+msgid "High sensitivity for parabolic effect (high cpu usage and performance)"
+msgstr "Parabolik etki için yüksek hassasiyet (yüksek CPU kullanımı ve performansı)"
+
+#. i18n: ectx: property (text), widget (QToolButton, highSensitivityBtn)
+#: app/settings/settingsdialog.ui:890
+#, kde-format
+msgctxt "high sensitivity"
+msgid "High"
+msgstr "Yüksek"
+
+#. i18n: ectx: property (text), widget (QLabel, delayLbl)
+#: app/settings/settingsdialog.ui:942
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:480
+#, kde-format
+msgid "Delay"
+msgstr "Gecikme"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, trackScreensDelayLbl)
+#. i18n: ectx: property (toolTip), widget (QSpinBox, screenTrackerSpinBox)
+#: app/settings/settingsdialog.ui:968 app/settings/settingsdialog.ui:991
+#, kde-format
+msgid ""
+"Different hardware can have different delays during screen changes.\n"
+"This tracker is used in order to not lose any screen related update."
+msgstr ""
+"Ekran değişiklikleri sırasında farklı donanımların farklı gecikmeleri olabilir..\n"
+"Bu izleyici, ekranla ilgili herhangi bir güncellemeyi kaybetmemek için kullanılır."
+
+#. i18n: ectx: property (text), widget (QLabel, trackScreensDelayLbl)
+#: app/settings/settingsdialog.ui:971
+#, kde-format
+msgid "React to screen changes after"
+msgstr "Daha sonra ekran değişikliklerine tepki ver"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, screenTrackerSpinBox)
+#: app/settings/settingsdialog.ui:1000
+#, kde-format
+msgid " ms."
+msgstr " ms."
+
+#. i18n: ectx: property (text), widget (QLabel, plasmaLbl)
+#: app/settings/settingsdialog.ui:1059
+#, kde-format
+msgid "Plasma Theme"
+msgstr "Plasma Teması"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, outlineLbl)
+#. i18n: ectx: property (toolTip), widget (QSpinBox, outlineSpinBox)
+#: app/settings/settingsdialog.ui:1087 app/settings/settingsdialog.ui:1115
+#, kde-format
+msgid "Outline width used from background to draw its borders"
+msgstr "Arka plandan kenarlıklarını çizmek için kullanılan anahat genişliği"
+
+#. i18n: ectx: property (text), widget (QLabel, outlineLbl)
+#: app/settings/settingsdialog.ui:1090
+#, kde-format
+msgid "Outline width"
+msgstr "Anahat genişliği"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, outlineSpinBox)
+#: app/settings/settingsdialog.ui:1118
+#, kde-format
+msgid " px."
+msgstr " px."
+
+#: app/shortcuts/globalshortcuts.cpp:100
+#, kde-format
+msgid "Show Latte Dock/Panel"
+msgstr "Latte Dock/Paneli Göster"
+
+#: app/shortcuts/globalshortcuts.cpp:109
+#, kde-format
+msgid "Cycle Through Dock/Panel Settings Windows"
+msgstr "Dock / Panel Ayarları Pencerelerinde Döngü"
+
+#: app/shortcuts/globalshortcuts.cpp:118
+#, kde-format
+msgid "Show Latte Global Settings"
+msgstr "Latte Global Ayarlarını Göster"
+
+#: app/shortcuts/globalshortcuts.cpp:134 app/shortcuts/globalshortcuts.cpp:150
+#, kde-format
+msgid "Activate Entry %1"
+msgstr "%1 Girdisini Etkinleştir"
+
+#: app/shortcuts/globalshortcuts.cpp:165 app/shortcuts/globalshortcuts.cpp:177
+#, kde-format
+msgid "New Instance for Entry %1"
+msgstr "%1 Giriş için Yeni Örnek"
+
+#: app/view/contextmenu.cpp:361
+#, kde-format
+msgctxt "%1 is the name of the containment"
+msgid "%1 Options"
+msgstr "%1 Ayarları"
+
+#: app/view/indicator/indicator.cpp:392
+#, kde-format
+msgctxt "add indicator"
+msgid "Add Indicator"
+msgstr "Gösterge Ekle"
+
+#: app/view/indicator/indicator.cpp:401
+#, kde-format
+msgctxt "add indicator file"
+msgid "Latte Indicator"
+msgstr "Latte Göstergesi"
+
+#: shell/package/contents/configuration/config.qml:27
+#, kde-format
+msgid "General"
+msgstr "Genel"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:196
+#, kde-format
+msgid "You can use Ctrl/Meta + Scroll Wheel to alter the window size"
+msgstr "Pencere boyutunu değiştirmek için Ctrl / Meta + Kaydırma Tekerleğini kullanabilirsiniz."
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:209
+#, kde-format
+msgctxt "view settings width scale"
+msgid "Width scale at %0%"
+msgstr "%0% genişlik ölçeği"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:210
+#, kde-format
+msgctxt "view settings height scale"
+msgid "Height scale at %0%"
+msgstr "%0% yükseklik ölçeği"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:278
+#, kde-format
+msgid "Latte"
+msgstr "Latte"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:305
+#, kde-format
+msgid "Open Latte settings window"
+msgstr "Latte ayarları penceresini aç"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:381
+#, kde-format
+msgctxt "advanced settings"
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:447
+#, kde-format
+msgid "Effects"
+msgstr "Efektler"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:453
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:392
+#, kde-format
+msgid "Tasks"
+msgstr "Görevler"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:540
+#, kde-format
+msgid "New Dock"
+msgstr "Yeni Dock"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:542
+#, kde-format
+msgid "Add a new dock"
+msgstr "Yeni dock ekle"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:625
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:641
+#, kde-format
+msgid "Move to: %0"
+msgstr "Git: %0"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:658
+#, kde-format
+msgid "Copy Dock"
+msgstr "Dock Kopyala"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:658
+#, kde-format
+msgid "Copy Panel"
+msgstr "Paneli Kopyala"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:667
+#, kde-format
+msgid "Remove"
+msgstr "Sil"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:670
+#, kde-format
+msgid "Remove current dock"
+msgstr "Mevcut docku kaldır"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:679
+#, kde-format
+msgid "Close"
+msgstr "Kapat"
+
+#: shell/package/contents/configuration/LatteDockConfiguration.qml:681
+#, kde-format
+msgid "Close settings window"
+msgstr "Ayarlar penceresini kapat"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:128
+#, kde-format
+msgctxt "opens the layout manager window"
+msgid "Configure..."
+msgstr "Ayarlar..."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:147
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:667
+#, kde-format
+msgid "Items"
+msgstr "Öğeler"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:156
+#, kde-format
+msgctxt "items effects"
+msgid "Size"
+msgstr "Boyut"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:167
+#, kde-format
+msgctxt "absolute size"
+msgid "Absolute"
+msgstr "Mutlak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:207
+#, kde-format
+msgctxt "number in pixels, e.g. 12 px."
+msgid "%0 px."
+msgstr "%0 px."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:221
+#, kde-format
+msgctxt "relative size"
+msgid "Relative"
+msgstr "İlgili"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:260
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:315
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:406
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:467
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:525
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:580
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:815
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:870
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:119
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:166
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:570
+#, kde-format
+msgctxt "number in percentage, e.g. 85 %"
+msgid "%0 %"
+msgstr "%0 %"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:260
+#, kde-format
+msgctxt "no value in percentage"
+msgid "--- %"
+msgstr "--- %"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:269
+#, kde-format
+msgctxt "items effects"
+msgid "Effects"
+msgstr "Efektler"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:280
+#, kde-format
+msgid "Zoom On Hover"
+msgstr "Fareyle Üzerine Gelindiğinde Yakınlaştır"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:332
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:503
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:545
+#, kde-format
+msgid "Length"
+msgstr "Uzunluk"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:346
+#, kde-format
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:420
+#, kde-format
+msgid "Offset"
+msgstr "Ofset"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:488
+#, kde-format
+msgid "Margins"
+msgstr "Kenar boşlukları"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:541
+#, kde-format
+msgid "Thickness"
+msgstr "Kalınlık"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:542
+#, kde-format
+msgid "Enable/disable thickness margins"
+msgstr "Kalınlık marjlarını etkinleştir/devre dışı bırak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:557
+#, kde-format
+msgid "Height"
+msgstr "Yükseklik"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:557
+#, kde-format
+msgid "Width"
+msgstr "Genişlik"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:599
+#, kde-format
+msgid "Colors"
+msgstr "Renkler"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:637
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:647
+#, kde-format
+msgid "Plasma theme color palette is going to be used"
+msgstr "Plazma temalı renk paleti kullanılacak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:655
+#, kde-format
+msgid "Reverse"
+msgstr "Tersine çevir"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:659
+#, kde-format
+msgid "Reverse color palette from plasma theme is going to be used"
+msgstr "Plazma temasından ters renk paleti kullanılaca"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:667
+#, kde-format
+msgid "Smart"
+msgstr "Akıllı"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:671
+#, kde-format
+msgid ""
+"Smart color palette is going to provide best contrast after taking into "
+"account the environment such as the underlying background"
+msgstr ""
+"Akıllı renk paleti, temeldeki arka plan gibi ortamı dikkate aldıktan sonra en iyi kontrastı sağlayacaktır."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:678
+#, kde-format
+msgid "From Window"
+msgstr "Pencereden"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:684
+#, kde-format
+msgid "None"
+msgstr "Yok"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:688
+#, kde-format
+msgid "Colors are not going to be based on any window"
+msgstr "Renkler herhangi bir pencereye dayalı olmayacak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:696
+#, kde-format
+msgid "Active"
+msgstr "Aktif"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:701
+#, kde-format
+msgid "Colors are going to be based on the active window"
+msgstr "Renkler, aktif pencereyi temel alacak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:702
+#, kde-format
+msgid ""
+"Colors are going to be based on the active window.\n"
+"Notice: For optimal experience you are advised to install Colors KWin Script "
+"from KDE Store"
+msgstr ""
+"Renkler, etkin pencereye dayalı olacak.\n"
+"Uyarı: En iyi deneyim için, KDE Store'dan Colors KWin Script'i yüklemeniz önerilir."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:721
+#, kde-format
+msgid "Touching"
+msgstr "Dokunaklı"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:726
+#, kde-format
+msgid "Colors are going to be based on windows that are touching the view"
+msgstr "Renkler, görünüme dokunan pencereleri temel alacak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:727
+#, kde-format
+msgid ""
+"Colors are going to be based on windows that are touching the view.\n"
+"Notice: For optimal experience you are advised to install Colors KWin Script "
+"from KDE Store"
+msgstr ""
+"Renkler, görünüme dokunan pencereleri temel alacak..\n"
+"Uyarı: En iyi deneyim için, KDE Store'dan Colors KWin Script'i yüklemeniz önerilir."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:760
+#, kde-format
+msgid "Background"
+msgstr "Arkaplan"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:761
+#, kde-format
+msgid "Enable/disable background"
+msgstr "Arkaplanı etkinleştir / devre dışı bırak"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:780
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:84
+#, kde-format
+msgid "Size"
+msgstr "Boyut"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:829
+#, kde-format
+msgctxt "opacity when desktop background is busy from contrast point of view"
+msgid "Busy Opacity"
+msgstr "Meşgul Opaklık"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:829
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:132
+#, kde-format
+msgid "Opacity"
+msgstr "Opaklık"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:880
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:582
+#, kde-format
+msgid "Options"
+msgstr "Seçenekler"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:894
+#, kde-format
+msgid "Blur"
+msgstr "Bulanıklık"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:898
+#, kde-format
+msgid "Background is blurred underneath"
+msgstr "Arka plan altında bulanık"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:909
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:62
+#, kde-format
+msgid "Shadows"
+msgstr "Gölgeler"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:913
+#, kde-format
+msgid "Background shows its shadows"
+msgstr "Arka plan gölgelerini gösterir"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:924
+#, kde-format
+msgid "Outline"
+msgstr "Anahat"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:928
+#, kde-format
+msgid ""
+"Background draws a line for its borders. You can set the line size from "
+"Latte Preferences"
+msgstr ""
+"Arka plan, sınırları için bir çizgi çizer. Çizgi boyutunu Latte Tercihlerinden ayarlayabilirsiniz."
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:938
+#, kde-format
+msgctxt "dynamic visibility for background"
+msgid "Dynamic Visibility"
+msgstr "Dinamik Görünürlük"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:947
+#, kde-format
+msgid "Prefer opaque background when touching any window"
+msgstr "Herhangi bir pencereye dokunurken opak arka planı tercih edin"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:949
+#, kde-format
+msgid "Background removes its transparency setting when a window is touching"
+msgstr "Arka plan, bir pencereye dokunduğunda şeffaflık ayarını kaldırır"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:961
+#, kde-format
+msgid "Hide background when not needed"
+msgstr "Gerekmediğinde arka planı gizle"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:963
+#, kde-format
+msgid ""
+"Background becomes hidden except when a window is touching or the desktop "
+"background is busy"
+msgstr ""
+"Arka plan, bir pencereye dokunulması veya masaüstü arka planının meşgul olması dışında gizlenir"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:975
+#, kde-format
+msgid "Hide background shadow for maximized windows"
+msgstr "Büyütülmüş pencereler için arka plan gölgesini gizle"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:977
+#, kde-format
+msgid ""
+"Background shadows become hidden when an active maximized window is touching "
+"the view"
+msgstr ""
+"Etkin büyütülmüş pencere görünüme dokunduğunda arka plan gölgeleri gizlenir"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:989
+#, kde-format
+msgid "Exceptions"
+msgstr "İstisnalar"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:996
+#, kde-format
+msgid "Prefer Plasma background and colors for expanded applets"
+msgstr "Genişletilmiş uygulamalar için Plazma arka planı ve renkleri tercih edin"
+
+#: shell/package/contents/configuration/pages/AppearanceConfig.qml:998
+#, kde-format
+msgid "Background becomes opaque in plasma style when applets are expanded"
+msgstr "Uygulamalar genişletildiğinde arka plan plazma stilinde opak hale gelir"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:58
+#, kde-format
+msgid "Type"
+msgstr "Tür"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:76
+#, kde-format
+msgid "Location"
+msgstr "Konum"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:101
+#, kde-format
+msgid "On Primary"
+msgstr "Birincilde"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:243
+#, kde-format
+msgctxt "bottom location"
+msgid "Bottom"
+msgstr "Alt"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:257
+#, kde-format
+msgctxt "left location"
+msgid "Left"
+msgstr "Sol"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:271
+#, kde-format
+msgctxt "top location"
+msgid "Top"
+msgstr "Üst"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:285
+#, kde-format
+msgctxt "right location"
+msgid "Right"
+msgstr "Sağ"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:305
+#, kde-format
+msgid "Alignment"
+msgstr "Hizalama"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:330
+#, kde-format
+msgctxt "top alignment"
+msgid "Top"
+msgstr "Üst"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:330
+#, kde-format
+msgctxt "left alignment"
+msgid "Left"
+msgstr "Sol"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:341
+#, kde-format
+msgctxt "center alignment"
+msgid "Center"
+msgstr "Orta"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:352
+#, kde-format
+msgctxt "bottom alignment"
+msgid "Bottom"
+msgstr "Alt"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:352
+#, kde-format
+msgctxt "right alignment"
+msgid "Right"
+msgstr "Sağ"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:364
+#, kde-format
+msgctxt "justify alignment"
+msgid "Justify"
+msgstr "Yasla"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:382
+#, kde-format
+msgid "Visibility"
+msgstr "Görünürlük"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:408
+#, kde-format
+msgid "Always Visible"
+msgstr "Her zaman görünür"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:418
+#, kde-format
+msgid "Auto Hide"
+msgstr "Oto. Gizle"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:428
+#, kde-format
+msgid "Dodge Active"
+msgstr "Dodge Aktif"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:438
+#, kde-format
+msgid "Dodge Maximized"
+msgstr "Dodge Maximised"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:449
+#, kde-format
+msgid "Dodge All Windows"
+msgstr "Tüm Pencereleri Atlat"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:460
+#, kde-format
+msgid "Windows Go Below"
+msgstr "Pencere Aşağı Git"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:511
+#, kde-format
+msgid "Show "
+msgstr "Göster "
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:542
+#, kde-format
+msgid "Hide"
+msgstr "Gizle"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:574
+#, kde-format
+msgid "Empty Area"
+msgstr "Boş Alan"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:583
+#, kde-format
+msgid "Mouse wheel"
+msgstr "Fare tekerleği"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:589
+#, kde-format
+msgctxt "none scroll actions"
+msgid "None Action"
+msgstr "Eylem Yok"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:590
+#, kde-format
+msgid "Cycle Through Desktops"
+msgstr "Masaüstünde Döngü"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:591
+#, kde-format
+msgid "Cycle Through Activities"
+msgstr "Aktivitelerde Döngü"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:592
+#: shell/package/contents/configuration/pages/TasksConfig.qml:441
+#: shell/package/contents/configuration/pages/TasksConfig.qml:485
+#: shell/package/contents/configuration/pages/TasksConfig.qml:585
+#, kde-format
+msgid "Cycle Through Tasks"
+msgstr "Görevler Arasında Döngü"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:617
+#, kde-format
+msgid "Active Window"
+msgstr "Aktif Pencere"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:627
+#, kde-format
+msgid "Track From"
+msgstr "Takip Et"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:633
+#, kde-format
+msgctxt "track from current screen"
+msgid "Current Screen"
+msgstr "Mevcut Ekran"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:634
+#, kde-format
+msgctxt "track from all screens"
+msgid "All Screens"
+msgstr "Tüm Ekranlar"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:654
+#, kde-format
+msgid "Drag and maximize/restore active window"
+msgstr "Etkin pencereyi sürükle ve büyüt / geri yükle"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:656
+#, kde-format
+msgid ""
+"Drag/Maximize/Restore active window with double-click and dragging actions"
+msgstr ""
+"Çift tıklama ve sürükleme eylemleriyle etkin pencereyi Sürükle / Büyüt / Geri Yükle"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:674
+#, kde-format
+msgid "Show title tooltips on hovering"
+msgstr "Fareyle üzerine gelindiğinde başlık ipuçlarını göster"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:675
+#, kde-format
+msgid ""
+"Show thinner tooltips produced by Latte for items.\n"
+"These tooltips are not drawn when applets zoom effect is disabled"
+msgstr ""
+"Latte tarafından öğeler için üretilen daha ince araç ipuçlarını gösterin.\n"
+"Uygulama yakınlaştırma efekti devre dışı bırakıldığında bu araç ipuçları çizilmez"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:687
+#, kde-format
+msgid "Activate through mouse wheel"
+msgstr "Fare tekerleğini etkinleştirin"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:689
+#, kde-format
+msgid "Enable/Disable the mouse wheel action"
+msgstr "Fare tekerleği eylemini etkinleştirin / devre dışı bırakın"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:700
+#, kde-format
+msgid "🅰 Activate based on position through global shortcuts"
+msgstr "🅰 Global kısayollar aracılığıyla konuma göre etkinleştirin"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:702
+#, kde-format
+msgid ""
+"This view is used for based on position global shortcuts. Take note that "
+"only one view can have that option enabled for each layout"
+msgstr ""
+"Bu görünüm, konum genel kısayollarına dayalı olarak kullanılır. Her düzen için yalnızca bir görünümde bu seçeneğin etkinleştirilebileceğini unutmayın."
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:724
+#, kde-format
+msgid "Environment"
+msgstr "Çevre"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:733
+#, kde-format
+msgid "Activate KWin edge after hiding"
+msgstr "Gizledikten sonra KWin kenarını etkinleştirin"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:735
+#, kde-format
+msgid ""
+"After the view becomes hidden, KWin is informed to track user feedback. For "
+"example an edge visual hint is shown whenever the mouse approaches the "
+"hidden view"
+msgstr ""
+"Görünüm gizlendikten sonra KWin, kullanıcı geri bildirimlerini takip etmesi için bilgilendirilir. Örneğin, fare gizli görünüme yaklaştığında bir kenar görsel ipucu gösterilir."
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:745
+#, kde-format
+msgid "Can be above fullscreen windows"
+msgstr "Tam ekran pencerelerin üzerinde olabilir"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:748
+#, kde-format
+msgid ""
+"BypassWindowManagerHint flag for the window. The view will be above all "
+"windows even those set as 'Always On Top'"
+msgstr ""
+"Pencere için BypassWindowManagerHint bayrağı. Görünüm, ''Her Zaman Üstte'' olarak ayarlanmış olanlar bile tüm pencerelerin üzerinde olacaktır.'"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:757
+#, kde-format
+msgid "Raise on desktop change"
+msgstr "Masaüstü değişiminde artırın"
+
+#: shell/package/contents/configuration/pages/BehaviorConfig.qml:767
+#, kde-format
+msgid "Raise on activity change"
+msgstr "Aktivite değişikliğinde artış"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:63
+#, kde-format
+msgid "Enable/disable applet shadows"
+msgstr "Uygulama gölgelerini etkinleştir/devre dışı bırak"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:175
+#, kde-format
+msgid "Color"
+msgstr "Renk"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:217
+#, kde-format
+msgctxt "default shadow"
+msgid "Default"
+msgstr "Varsayılan"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:221
+#, kde-format
+msgid "Default shadow for applets"
+msgstr "Applet'ler için varsayılan gölge"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:228
+#, kde-format
+msgctxt "theme shadow"
+msgid "Theme"
+msgstr "Tema"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:232
+#, kde-format
+msgid "Shadow from theme color palette"
+msgstr "Tema renk paletinden gölge"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:244
+#, kde-format
+msgid "Use set shadow color"
+msgstr "Gölge rengi ayarını kullan"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:279
+#, kde-format
+msgid "Please choose shadow color"
+msgstr "Lütfen gölge rengini seçin"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:321
+#, kde-format
+msgid "Animations"
+msgstr "Animasyonlar"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:322
+#, kde-format
+msgid "Enable/disable all animations"
+msgstr "Tüm animasyonları etkinleştirin / devre dışı bırakın"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:337
+#, kde-format
+msgid "Speed"
+msgstr "Hız"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:360
+#, kde-format
+msgid "x1"
+msgstr "x1"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:369
+#, kde-format
+msgid "x2"
+msgstr "x2"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:378
+#, kde-format
+msgid "x3"
+msgstr "x3"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:398
+#, kde-format
+msgid "Bounce launchers when triggered"
+msgstr "Tetiklendiğinde fırlatıcıları zıplatın"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:408
+#, kde-format
+msgid "Bounce tasks that need attention"
+msgstr "Dikkat gerektiren görevleri zıplatma"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:418
+#, kde-format
+msgid "Slide in and out single windows"
+msgstr "Tek pencereleri içeri ve dışarı kaydırın"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:428
+#, kde-format
+msgid "Grouped tasks bounce their new windows"
+msgstr "Gruplanmış görevler yeni pencerelerini yansıtır"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:438
+#, kde-format
+msgid "Grouped tasks slide out their closed windows"
+msgstr "Gruplanmış görevler kapalı pencerelerinden dışarı kayar"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:462
+#, kde-format
+msgid "Indicators"
+msgstr "Göstergeler"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:463
+#, kde-format
+msgid "Enable/disable indicators"
+msgstr "Göstergeleri etkinleştir/devre dışı bırak"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:477
+#, kde-format
+msgid "Style"
+msgstr "Tarz"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:502
+#, kde-format
+msgctxt "latte indicator style"
+msgid "Latte"
+msgstr "Latte"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:506
+#, kde-format
+msgid "Use Latte style for your indicators"
+msgstr "Göstergeleriniz için Latte stilini kullanın"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:513
+#, kde-format
+msgctxt "plasma indicator style"
+msgid "Plasma"
+msgstr "Plasma"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:517
+#, kde-format
+msgid "Use Plasma style for your indicators"
+msgstr "Göstergeleriniz için Plazma stilini kullanın"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:537
+#, kde-format
+msgid "Paddings"
+msgstr "Dolgular"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:588
+#, kde-format
+msgid "Show indicators for applets"
+msgstr "Applet'ler için göstergeleri göster"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:590
+#, kde-format
+msgid "Indicators are shown for applets"
+msgstr "Uygulamalar için göstergeler gösterilir"
+
+#: shell/package/contents/configuration/pages/EffectsConfig.qml:610
+#, kde-format
+msgid "%0 Indicator Options"
+msgstr "%0 Gösterge Seçenekleri"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:56
+#, kde-format
+msgid "Badges"
+msgstr "Rozetler"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:65
+#, kde-format
+msgid "Notifications from tasks"
+msgstr "Görevlerden gelen bildirimler"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:67
+#, kde-format
+msgid "Show unread messages or notifications from tasks"
+msgstr "Okunmamış mesajları veya görevlerden bildirimleri göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:76
+#, kde-format
+msgid "Progress information for tasks"
+msgstr "Görevler için ilerleme bilgileri"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:78
+#, kde-format
+msgid ""
+"Show a progress animation for tasks e.g. when copying files with Dolphin"
+msgstr ""
+"Görevler için bir ilerleme animasyonu gösterin, ör. Dolphin ile dosya kopyalarken"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:87
+#, kde-format
+msgid "Audio playing from tasks"
+msgstr "Görevlerden ses çalma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:89
+#, kde-format
+msgid "Show audio playing from tasks"
+msgstr "Görevlerden çalan sesi göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:98
+#, kde-format
+msgid "Prominent color for notification badge"
+msgstr "Bildirim rozeti için göze çarpan renk"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:101
+#, kde-format
+msgid ""
+"Notification badge uses a more prominent background which is usually red"
+msgstr ""
+"Bildirim rozeti, genellikle kırmızı olan daha belirgin bir arka plan kullanır"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:110
+#, kde-format
+msgid "Change volume when scrolling audio badge"
+msgstr "Ses rozetini kaydırırken ses seviyesini değiştirin"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:113
+#, kde-format
+msgid ""
+"The user is able to mute/unmute with click or change the volume with mouse "
+"wheel"
+msgstr ""
+"Kullanıcı, fare tekerleği ile tıklayarak sesi kapatabilir/açabilir veya sesi değiştirebilir"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:129
+#, kde-format
+msgid "Interaction"
+msgstr "Etkileşim"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:138
+#, kde-format
+msgid "Add launchers only in the Tasks Area"
+msgstr "Başlatıcıları yalnızca Görevler Alanına ekleyin"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:140
+#, kde-format
+msgid "Launchers are added only in the taskmanager and not as plasma applets"
+msgstr "Başlatıcılar, plazma uygulamaları olarak değil, yalnızca görev yöneticisine eklenirs"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:150
+#, kde-format
+msgid "Window actions in the context menu"
+msgstr "Bağlam menüsündeki pencere eylemleri"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:163
+#, kde-format
+msgid "🅰 Based on position shortcuts apply only for tasks"
+msgstr "🅰 Konum kısayollarına dayalı olarak yalnızca görevler için geçerlidir"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:165
+#, kde-format
+msgid ""
+"Based on position global shortcuts are enabled only for tasks and not for "
+"applets"
+msgstr ""
+"Konum temelli genel kısayollar, uygulamalar için değil, yalnızca görevler için etkinleştirilir"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:183
+#, kde-format
+msgid "Filters"
+msgstr "Filtreler"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:192
+#, kde-format
+msgid "Show only tasks from the current screen"
+msgstr "Yalnızca mevcut ekrandaki görevleri göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:202
+#, kde-format
+msgid "Show only tasks from the current desktop"
+msgstr "Yalnızca mevcut masaüstündeki görevleri göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:212
+#, kde-format
+msgid "Show only tasks from the current activity"
+msgstr "Yalnızca mevcut etkinlikteki görevleri göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:222
+#, kde-format
+msgid "Show only tasks from launchers"
+msgstr "Yalnızca başlatıcılardan görevleri göster"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:233
+#, kde-format
+msgid "Group tasks of the same application"
+msgstr "Aynı uygulamanın grup görevleri"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:235
+#, kde-format
+msgid "By default group tasks of the same application"
+msgstr "Varsayılan olarak aynı uygulamanın grup görevleri"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:252
+#, kde-format
+msgid "Launchers"
+msgstr "Başlatıcılar"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:262
+#, kde-format
+msgctxt "launchers group"
+msgid "Group"
+msgstr "Grup"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:288
+#, kde-format
+msgctxt "unique launchers group"
+msgid "Unique"
+msgstr "Benzersiz"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:292
+#, kde-format
+msgid ""
+"Use a unique set of launchers for this view which is independent from any "
+"other view"
+msgstr ""
+"Bu görünüm için diğer görünümlerden bağımsız benzersiz bir başlatıcı seti kullanın"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:301
+#, kde-format
+msgctxt "layout launchers group"
+msgid "Layout"
+msgstr "Düzen"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:305
+#, kde-format
+msgid ""
+"Use the current layout set of launchers for this latteView. This group "
+"provides launchers <b>synchronization</b> between different views in the "
+"<b>same layout</b>"
+msgstr ""
+"Bu latteView için mevcut düzen başlatıcı setini kullanın. Bu grup, aynı düzendeki farklı görünümler arasında başlatıcıların senkronizasyonunu sağlar"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:315
+#, kde-format
+msgctxt "global launchers group"
+msgid "Global"
+msgstr "Küresel"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:319
+#, kde-format
+msgid ""
+"Use the global set of launchers for this latteView. This group provides "
+"launchers <b>synchronization</b> between different views and between "
+"<b>different layouts</b>"
+msgstr ""
+"Bu latteView için küresel başlatıcı setini kullanın. Bu grup, farklı görünümler ve farklı düzenler arasında başlatıcıların senkronizasyonunu sağlar"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:342
+#, kde-format
+msgid "Scrolling"
+msgstr "Kaydırma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:343
+#, kde-format
+msgid ""
+"Enable tasks scrolling when they overflow and exceed the available space"
+msgstr ""
+"Görevleri taştıklarında ve kullanılabilir alanı aştıklarında kaydırmayı etkinleştirin"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:365
+#, kde-format
+msgid "Manual"
+msgstr "Elle"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:372
+#, kde-format
+msgctxt "disabled manual scrolling"
+msgid "Disabled scrolling"
+msgstr "Devre dışı kaydırma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:373
+#, kde-format
+msgid "Only vertical scrolling"
+msgstr "Yalnızca dikey kaydırma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:373
+#, kde-format
+msgid "Only horizontal scrolling"
+msgstr "Yalnızca yatay kaydırma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:374
+#, kde-format
+msgid "Horizontal and vertical scrolling"
+msgstr "Yatay ve dikey kaydırma"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:383
+#, kde-format
+msgid "Automatic"
+msgstr "Otomatik"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:391
+#, kde-format
+msgid "Disabled"
+msgstr "Pasif"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:392
+#, kde-format
+msgid "Enabled"
+msgstr "Aktif"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:434
+#: shell/package/contents/configuration/pages/TasksConfig.qml:571
+#, kde-format
+msgid "Left Click"
+msgstr "Sol Tıklama"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:440
+#, kde-format
+msgctxt "present windows action"
+msgid "Present Windows"
+msgstr "Mevcut Pencere"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:442
+#: shell/package/contents/configuration/pages/TasksConfig.qml:502
+#, kde-format
+msgid "Preview Windows"
+msgstr "Önizleme Penceresi"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:474
+#: shell/package/contents/configuration/pages/TasksConfig.qml:571
+#, kde-format
+msgid "Middle Click"
+msgstr "Orta tıklama"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:481
+#: shell/package/contents/configuration/pages/TasksConfig.qml:584
+#, kde-format
+msgctxt "The click action"
+msgid "None"
+msgstr "Yok"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:482
+#: shell/package/contents/configuration/pages/TasksConfig.qml:584
+#, kde-format
+msgid "Close Window or Group"
+msgstr "Pencereyi veya Grubu Kapat"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:483
+#: shell/package/contents/configuration/pages/TasksConfig.qml:585
+#, kde-format
+msgid "New Instance"
+msgstr "Yeni Örnek"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:484
+#: shell/package/contents/configuration/pages/TasksConfig.qml:585
+#, kde-format
+msgid "Minimize/Restore Window or Group"
+msgstr "Pencereyi veya Grubu Küçült/Geri Yükle"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:486
+#: shell/package/contents/configuration/pages/TasksConfig.qml:585
+#, kde-format
+msgid "Toggle Task Grouping"
+msgstr "Görev Gruplamasını Aç/Kapat"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:494
+#, kde-format
+msgid "Hover"
+msgstr "Üzerine gel"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:501
+#, kde-format
+msgctxt "none action"
+msgid "None"
+msgstr "Yok"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:503
+#, kde-format
+msgid "Highlight Windows"
+msgstr "Pencereyi Vurgula"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:504
+#, kde-format
+msgid "Preview and Highlight Windows"
+msgstr "Önizleme ve Vurgulama Penceresi"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:571
+#, kde-format
+msgid "Right Click"
+msgstr "Sağ tık"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:611
+#, kde-format
+msgid "Recycling"
+msgstr "Geri dönüşüm"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:621
+#, kde-format
+msgid "Remove Latte Tasks Applet"
+msgstr "Latte Görevler Uygulamasını Kaldır"
+
+#: shell/package/contents/configuration/pages/TasksConfig.qml:623
+#, kde-format
+msgid "Remove Latte Tasks plasmoid"
+msgstr "Latte Tasks plasmoid kaldır"
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:32
+#, kde-format
+msgid "Download indicator styles from the internet"
+msgstr "İnternetten gösterge stillerini indirin"
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:33
+#, kde-format
+msgid "Use %0 style for your indicators"
+msgstr "Göstergeleriniz için %0 stilini kullanın"
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:115
+#, kde-format
+msgid "Download"
+msgstr "İndir"
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:144
+#, kde-format
+msgid "Remove indicator"
+msgstr "Göstergeyi kaldır"
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:198
+#, kde-format
+msgid "Add Indicator..."
+msgstr "Gösterge Ekle..."
+
+#: shell/package/contents/controls/CustomIndicatorButton.qml:208
+#, kde-format
+msgid "Get New Indicators..."
+msgstr "Yeni Göstergeler Al..."
+
+#: shell/package/contents/controls/TypeSelection.qml:67
+#, kde-format
+msgctxt "dock type"
+msgid "Dock"
+msgstr "Dock"
+
+#: shell/package/contents/controls/TypeSelection.qml:69
+#, kde-format
+msgid "Change the behavior and appearance to Dock type"
+msgstr "Davranışı ve görünümü Dock türü olarak değiştirin"
+
+#: shell/package/contents/controls/TypeSelection.qml:109
+#, kde-format
+msgctxt "panel type"
+msgid "Panel"
+msgstr "Panel"
+
+#: shell/package/contents/controls/TypeSelection.qml:111
+#, kde-format
+msgid "Change the behavior and appearance to Panel type"
+msgstr "Davranışı ve görünümü Panel türü olarak değiştirin"

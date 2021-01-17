@@ -1,0 +1,35 @@
+[paket]
+tanim   = Menüleri DBus üzerinden geçirmek için kitaplık - gtk3 Dosyaları
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://wiki.gnome.org/Apps/Brasero
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1 = http://cdn-fastly.deb.debian.org/debian/pool/main/libd/libdbusmenu/libdbusmenu_18.10.20180917~bzr490+repack1.orig.tar.xz
+2= https://crux.nu/ports/crux-3.6/contrib/libdbusmenu-gtk3/0001_no-deprecated-gnome-common-macros.patch
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik = cd libdbusmenu-18.10.20180917~bzr490
+betik = patch -Np1 -i /sources/0001_no-deprecated-gnome-common-macros.patch
+betik = sed -e 's/gtkdocize || exit 1//g' -i autogen.sh
+betik = sed -e 's/--enable-gtk-doc//g' -i autogen.sh
+betik = sed -e 's/AM_MAINTAINER_MODE//g' -i configure.ac
+betik = export CFLAGS+=" -O2 -Wno-error"
+betik = export HAVE_VALGRIND_TRUE='#'
+betik = export HAVE_VALGRIND_FALSE=''
+betik = ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$isim --localstatedir=/var --with-gtk=3 --disable-{dumper,static,tests,valgrind}
+
+
+        	      
+[pakur]
+betik = cd libdbusmenu-18.10.20180917~bzr490
+betik = make -j1
+betik = make -j1 DESTDIR=$PKG -C libdbusmenu-glib install
+betik = make -j1 DESTDIR=$PKG -C libdbusmenu-gtk install
+betik = make -j1 DESTDIR=$PKG -C libdbusmenu-glib uninstall

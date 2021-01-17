@@ -1,0 +1,19 @@
+[paket]
+tanim   = Extensible Binary Meta Language kütüphanesi
+paketci = milisarge 
+grup    = kütüphane
+url     = https://dl.matroska.org/downloads/libebml/
+
+[kaynak]
+xz     = https://dl.matroska.org/downloads/$isim
+
+[sha256]
+1      = c6b6c6cd8b20a46203cb5dce636883aef68beb2846f1e4103b660a7da2c9c548
+
+[derle]
+ekconf = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DBUILD_SHARED_LIBS=ON
+tip    = cmake
+
+[pakur]
+tip    = cmake
+

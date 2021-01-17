@@ -1,0 +1,22 @@
+[paket]
+tanim   = ATA SMART diskleri için ayrıştırma kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://0pointer.de/blog/projects/being-smart.html
+
+[kaynak]
+xz      = http://0pointer.de/public
+dosya   = 0001-Dont-test-undefined-bits.patch
+dosya   = 0002-Drop-our-own-many-bad-sectors-heuristic.patch
+
+[sha256]
+1       = 61f0ea345f63d28ab2ff0dc352c22271661b66bf09642db3a4049ac9dbdb0f8d
+
+[derle]
+yama    = 0001-Dont-test-undefined-bits.patch
+yama    = 0002-Drop-our-own-many-bad-sectors-heuristic.patch
+ekconf  = --disable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

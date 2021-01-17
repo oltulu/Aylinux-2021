@@ -1,0 +1,22 @@
+[paket]
+tanim   = X11 Distributed Multihead eklenti kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = libxext xorg-util-macros
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/lib
+
+[sha512]
+1 		= 77aba6cadfd17db0cc7e1bc26f14d908223a0fdb135d46f86c3be34e3bc7e2f843f08d4d0ef773357e83b17122bffe56a0442d12908378c05a22177b10ae10e9
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

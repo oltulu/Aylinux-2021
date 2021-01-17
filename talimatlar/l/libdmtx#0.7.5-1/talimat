@@ -1,0 +1,23 @@
+[paket]
+tanim   = Data Matrix 2D barkodları okumak ve yazmak için bir yazılım
+paketci = Cihan_Alkan
+grup 	= kde
+url     = ttps://libdmtx.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz      = https://github.com/dmtx/libdmtx/archive/v$surum
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= ./autogen.sh
+betik 	= ./configure --prefix=/usr
+betik 	= make
+        	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install

@@ -1,0 +1,22 @@
+[paket]
+tanim   = AbiWord belgelerinin dosya biçimini ayrıştıran kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.documentfoundation.org/DLP/Libraries/libabw
+
+[gerek]
+derleme    = librevenge boost libxml2
+calisma    =
+
+[kaynak]
+xz         = http://dev-www.libreoffice.org/src/${isim}
+
+[sha256]
+1          = e763a9dc21c3d2667402d66e202e3f8ef4db51b34b79ef41f56cacb86dcd6eed
+
+[derle]
+betik      = autoreconf -fi
+tip        = gnu
+
+[pakur]
+tip        = gnu

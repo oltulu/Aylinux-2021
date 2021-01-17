@@ -1,0 +1,26 @@
+[paket]
+tanim   = Çevrimiçi hesap veritabanına erişim için Qt tabanlı istemci kitaplığı
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://kde.org/applications/utilities/kcalc/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git      = https://gitlab.com/accounts-sso/libaccounts-qt
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd $isim
+betik 	= sed -i 's|SUBDIRS  += Accounts tests|SUBDIRS += Accounts|' accounts-qt.pro
+betik 	= qmake PREFIX=/usr LIBDIR=/usr/lib
+betik 	= make
+            	      
+[pakur]
+betik 	= cd $isim
+betik 	= make INSTALL_ROOT="$PKG" install
+betik 	= rm -r "$PKG"/usr/share

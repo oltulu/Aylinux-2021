@@ -1,0 +1,17 @@
+[paket]
+tanim    = CDDBP, HTTP, SMTP protokolleri üzerinden CDDB sunucu erişim kütüphanesi
+paketci  = milisarge
+grup     = medya
+url      = https://sourceforge.net/projects/libcddb
+[kaynak]
+bz2    =  https://downloads.sourceforge.net/sourceforge/$isim
+
+[sha256]
+1      =  35ce0ee1741ea38def304ddfe84a958901413aa829698357f0bee5bb8f0a223b
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

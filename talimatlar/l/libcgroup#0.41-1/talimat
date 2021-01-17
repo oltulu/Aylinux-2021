@@ -1,0 +1,28 @@
+[paket]
+tanim   = Linux'ta işlem bazlı kontrol grubu oluşturma kütüphanesi
+paketci = milisarge
+grup    = sistem
+url     = http://libcg.sourceforge.net
+
+[gerek]
+derleme = automake libtool pam
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/libcg
+dosya   = cgred-init
+
+[sha256]
+1       = e4e38bdc7ef70645ce33740ddcca051248d56b53283c0dc6d404e17706f6fb51
+
+[derle]
+betik   = autoreconf -if
+ekconf  = --sbindir=/usr/bin --enable-pam-module-dir=/usr/lib/security
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = mkdir -p $PKG/etc
+betik   = cp samples/cgrules.conf $PKG/etc/
+betik   = cp samples/cgconfig.conf $PKG/etc/
+betik   = install -Dm755 ${SRC}/cgred-init ${PKG}/etc/rc.d/init.d/cgred

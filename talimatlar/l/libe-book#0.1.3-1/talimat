@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yeniden akıtılabilir e-kitap biçimlerini içe aktaran kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/projects/libebook/
+
+[gerek]
+derleme    = boost icu cppunit libxml2 librevenge liblangtag
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/project/libebook/${isim}-${surum}/${isim}-${surum}.tar.xz
+
+[sha256]
+1          = 7e8d8ff34f27831aca3bc6f9cc532c2f90d2057c778963b884ff3d1e34dfe1f9
+
+[derle]
+betik      = autoreconf -fi
+ekconf     = --disable-werror
+tip        = gnu
+
+[pakur]
+tip        = gnu

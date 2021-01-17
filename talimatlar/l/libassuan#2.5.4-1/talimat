@@ -1,0 +1,21 @@
+[paket]
+tanim   = GnuPG ve ilişkili kütüphaneler tarafından kullanılan IPC kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.gnupg.org/related_software/libassuan
+
+[gerek]
+derleme = libgpg-error
+calisma = 
+
+[kaynak]
+bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
+
+[sha512]
+1       = e7ccb651ea75b07b2e687d48d86d0ab83cba8e2af7f30da2aec794808e13e6ec93f21d607db50d3431f1c23cb3a07a2793b71170e69fa2f5a82cffb81961f617
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

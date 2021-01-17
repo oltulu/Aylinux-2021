@@ -1,0 +1,22 @@
+[paket]
+tanim   = Küçük renk yönetim motoru -2
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.littlecms.com
+
+[gerek]
+derleme = tiff
+calisma =
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/sourceforge/lcms
+
+[sha256]
+1 		= 48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
+
+[derle]
+ekconf  = --disable-conf
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

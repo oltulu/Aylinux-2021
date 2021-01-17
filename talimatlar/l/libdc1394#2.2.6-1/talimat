@@ -1,0 +1,21 @@
+[paket]
+tanim   = IEEE 1394 bazlı kameralar için programlama kütüphanesi
+paketci = milisarge 
+grup    = kütüphane 
+url     = https://sourceforge.net/projects/libdc1394/
+
+[gerek]
+derleme  = libraw1394 libusb 
+calisma  =  
+
+[kaynak]
+gz  = https://downloads.sourceforge.net/$isim
+
+[sha256]
+1   = 2b905fc9aa4eec6bdcf6a2ae5f5ba021232739f5be047dec8fe8dd6049c10fed
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu

@@ -1,0 +1,24 @@
+[paket]
+tanim   = CMIS protokolü için C/C++ istemci kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/tdf/libcmis
+
+[gerek]
+derleme    = cppunit boost libxml2
+calisma    =
+
+[kaynak]
+1          = https://github.com/tdf/libcmis/releases/download/v${surum}/libcmis-${surum}.tar.gz
+dosya      = libcmis-0.5.2-icu-64.2.patch
+
+[sha256]
+1          = ed6f681a48abbf3c2324564b17a180d21fa9503230e8708825e1ad80daee4f81
+
+[derle]
+yama       = 2
+ekconf     = --disable-werror --with-man=no
+tip        = gnu
+
+[pakur]
+tip        = gnu

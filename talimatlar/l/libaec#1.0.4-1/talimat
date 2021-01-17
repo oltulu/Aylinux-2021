@@ -1,0 +1,21 @@
+[paket]
+tanim   = Uyarlanabilir entropi kodlama kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://gitlab.dkrz.de/k202009/libaec/
+
+[gerek]
+derleme = cmake
+calisma =
+
+[kaynak]
+gz      = ${url}/uploads/ea0b7d197a950b0c110da8dfdecbb71f
+
+[sha256]
+1       = f2b1b232083bd8beaf8a54a024225de3dd72a673a9bcdf8c3ba96c39483f4309
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

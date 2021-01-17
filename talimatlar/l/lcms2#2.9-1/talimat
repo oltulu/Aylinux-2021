@@ -1,0 +1,21 @@
+[paket]
+tanim   = Küçük alan kaplayan renk yönetimi motoru, sürüm 2
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://www.littlecms.com/
+
+[gerek]
+derleme = 
+calisma = libtiff
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/sourceforge/lcms
+
+[sha256]
+1 		= 48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = OpenCL C programlama için gerekli kütüphane
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://libclc.llvm.org/
+
+[gerek]
+derleme  = clang llvm python 
+calisma  =  
+
+[kaynak]
+1  = https://github.com/llvm-mirror/libclc/archive/9f6204e.tar.gz::$isim-$surum-$devir-9f6204e.tar.gz
+
+[derle]
+betik  = cd libclc-9f6204ec04a8cadb6bef57caa71e3161c4f398f2
+betik  = ./configure.py --prefix=/usr && make
+
+[pakur]
+betik  = cd libclc-9f6204ec04a8cadb6bef57caa71e3161c4f398f2
+tip    = gnu
+

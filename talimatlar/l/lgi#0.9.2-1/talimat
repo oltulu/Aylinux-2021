@@ -1,0 +1,22 @@
+[paket]
+tanim   = Gobject-introspection kütüphanesini kullanarak gnome/gobject için Lua bağlamları
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/pavouk/lgi
+
+[gerek]
+derleme    = libffi lua glib gobject-introspection
+calisma    =
+
+[kaynak]
+1          = https://github.com/pavouk/lgi/archive/$surum.tar.gz
+
+[sha256]
+1          = cfc4105482b4730b3a40097c9d9e7e35c46df2fb255370bdeb2f45a886548c4f
+
+[derle]
+betik      = make
+
+[pakur]
+betik      = make LUA_LIBDIR=/usr/lib/lua/5.3 LUA_SHAREDIR=/usr/share/lua/5.3 DESTDIR="${PKG}/" install
+betik      = install -Dm 755 tools/dump-typelib.lua "${PKG}/usr/bin/dump-typelib"

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Akıllı kartların sanal kart okuyucusuna benzetimini sağlamak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://cgit.freedesktop.org/spice/libcacard/
+
+[gerek]
+derleme    = nss glib pcsc-lite
+calisma    =
+
+[kaynak]
+xz         = https://www.spice-space.org/download/$isim
+
+[sha512]
+1          = 347c13396e6777193e4e158321605410f4cbd90727c1ba8d85a1aac41d5ada96728dbef367ed4027d16dd0b10c8a4d0cf902ce3345334be4c78994cf72c58352
+
+[derle]
+; otomatik bulamıyor?
+betik      = export CACARD_CFLAGS=`pkg-config --cflags nss glib-2.0`
+betik      = export CACARD_LIBS=`pkg-config --libs nss glib-2.0`
+tip        = gnu
+
+[pakur]
+tip        = gnu

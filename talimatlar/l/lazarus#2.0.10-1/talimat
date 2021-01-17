@@ -1,0 +1,22 @@
+[paket]
+tanim   = FreePascal için Delphi benzeri IDE
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.lazarus.freepascal.org
+arsiv   = lazarus
+
+[gerek]
+derleme = rsync fpc fpc-src qt5pas perl
+calisma = fpc fpc-src
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20${surum}
+
+[sha256]
+1       = 90b037280e5c63265bc25a63e6e78c9cb979fc4b45aa84606e3856b09ac791c5
+
+[derle]
+betik   = LC_ALL=C make FPC=/usr/bin/fpc LCL_PLATFORM=qt5 bigide
+
+[pakur]
+dosya   = pakur.sh

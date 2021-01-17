@@ -1,0 +1,21 @@
+[paket]
+tanim   = Bayt cinsinden rastgele büyük boyutlarla çalışmak için C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/storaged-project/libbytesize
+
+[gerek]
+derleme = pcre python
+calisma = 
+
+[kaynak]
+gz      = $url/releases/download/$surum
+
+[sha256]
+1       = acc7d40237573adb958039bd9254155a41e57c363fce492f9e8768b42e4bffae
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

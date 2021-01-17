@@ -1,0 +1,18 @@
+[paket]
+tanim   = Linux/Unix isim servis sorgularını asenkron çalıştıran C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://0pointer.de/lennart/projects/libasyncns
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 4f1a66e746cbe54ff3c2fbada5843df4fbbbe7481d80be003e8d11161935ab74
+
+[derle]
+ekconf  = --disable-lynx --disable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

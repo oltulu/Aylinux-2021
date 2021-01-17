@@ -1,0 +1,25 @@
+[paket]
+tanim    = XDG Ses teması gerçeklemesi
+paketci  = milisarge 
+grup     = kütüphane
+url      = http://0pointer.de/lennart/projects/libcanberra
+
+[gerek]
+derleme  = gtk3 libvorbis gstreamer alsa-lib tdb pulseaudio vala
+calisma  =  
+
+[kaynak]
+1  = http://pkgs.fedoraproject.org/repo/pkgs/libcanberra/libcanberra-${surum}.tar.xz/34cb7e4430afaf6f447c4ebdb9b42072/libcanberra-${surum}.tar.xz
+
+[sha256]
+1  = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
+
+[derle]
+betik  = autoreconf -if
+ekconf = --enable-alsa --enable-null --disable-lynx --enable-gstreamer --disable-oss --with-builtin=dso --disable-gtk-doc
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = rm -rf $PKG/usr/share/gnome
+betik  = rm -rf $PKG/usr/share/gdm

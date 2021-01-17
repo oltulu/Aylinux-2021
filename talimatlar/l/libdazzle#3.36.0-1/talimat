@@ -1,0 +1,23 @@
+[paket]
+tanim   = Süslü özelliklerle kullanıcılarınızı memnun edecek kütüphane
+paketci = yasarciv
+grup    = kütüphane
+url     = https://gitlab.gnome.org/GNOME/libdazzle
+
+[gerek]
+derleme = meson glib vala gtk3 gobject-introspection
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/libdazzle/${surum%.*}
+
+[sha256]
+1       = 82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958
+
+[derle]
+ekconf     = -Denable_gtk_doc=false -Dwith_vapi=true -Dwith_introspection=true
+
+tip     = meson
+
+[pakur]
+tip     = meson

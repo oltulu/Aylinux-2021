@@ -1,0 +1,20 @@
+[paket]
+tanim   = MPEG TS i DVB PSI tablolarına çevirici kütüphane
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://www.videolan.org/developers/libdvbpsi.html
+
+[kaynak]
+1  = https://code.videolan.org/videolan/libdvbpsi/repository/$surum/archive.tar.bz2::$isim-$surum.tar.bz2
+
+[sha512]
+1  = d68bb742b22cc525f04e48597edb9a6ffeccfecd16e2cb9e16cf0f80cbd755bc9d3dc50e4679b2c2be107bb8f18717060d0f80a9994a0060c80a7b98b2cc4354
+
+[derle]
+betik  =  cd ${isim}-${surum}-*
+betik  =  autoreconf -fiv
+tip    = gnu
+[pakur]
+betik  =  cd ${isim}-${surum}-*
+tip    = gnu
+
