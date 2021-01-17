@@ -1,0 +1,29 @@
+[paket]
+tanim   = Bir metin girişi ve UI gezinme uygulaması (ekran klavyesi)
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://gitlab.gnome.org/GNOME/caribou
+
+[gerek]
+derleme = gobject-introspection gnome-common at-spi2-atk clutter gtk3 gtk2 python-gobject libxklavier libxslt
+calisma = glib libgee
+
+[kaynak]
+xz     = https://download.gnome.org/sources/caribou/0.4
+#1 = https://github.com/archlinux/svntogit-packages/raw/packages/caribou/trunk/unicode_to_keyval-symbol-check.patch
+
+
+[sha256]
+#1 		= 6c19ebcea0d35a7a65cd70f1cdca2c5c739467ac6d2c2a1c38a5d580296707bd
+
+[derle]
+betik 	= cd $isim-$surum
+#betik 	= patch -Np1 -i /sources/unicode_to_keyval-symbol-check.patch
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$isim --disable-gtk2-module --disable-static --disable-schemas-compile
+betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik 	= make
+	      
+[pakur]
+betik 	= cd $isim-$surum
+betik 	= make DESTDIR="$PKG" install

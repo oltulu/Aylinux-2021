@@ -1,0 +1,28 @@
+[paket]
+tanim   = Cinnamon sesleri
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = http://linuxmint.com
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1   = https://ftp.fau.de/mint/packages/pool/main/m/mint-artwork-cinnamon/mint-artwork-cinnamon_${surum}.tar.gz
+2 = https://aur.archlinux.org/cgit/aur.git/plain/cinnamon-sound-effects.gschema.override?h=mint-artwork-cinnamon
+
+
+[sha256]
+    #1 		= c419b7ce59c24492543ba95bd7dbb5fcc4b5338d2596b14820d80ec26d98fdd3
+
+[derle]
+betik 	= cd "${SRC}/mint-artwork-cinnamon-${surum}"
+betik 	= install -d "${PKG}/usr/share/mint-artwork-cinnamon/sounds"
+betik 	= for file in ./usr/share/mint-artwork-cinnamon/sounds/*; do
+betik 	= install -Dm644 "${file}" "${PKG}/usr/share/mint-artwork-cinnamon/sounds/"
+betik 	= done
+    	      
+[pakur]
+betik 	= mv /sources/cinnamon-sound-effects.gschema.override?h=mint-artwork-cinnamon /sources/cinnamon-sound-effects.gschema.override
+betik 	= install -Dm644 /sources/cinnamon-sound-effects.gschema.override ${PKG}/usr/share/glib-2.0/schemas/${isim}.gschema.override

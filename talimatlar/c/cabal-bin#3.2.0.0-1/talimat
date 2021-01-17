@@ -1,0 +1,17 @@
+[paket]
+tanim   = Cabal ve Hackage için komut satırı arayüzü - önceden derlenmiş
+paketci = milisarge
+grup    = geliştirme
+url     = https://hackage.haskell.org/package/cabal-install
+
+[kaynak]
+1       = http://downloads.haskell.org/~cabal/cabal-install-$surum/cabal-install-$surum-x86_64-unknown-linux.tar.xz
+
+[sha256]
+1       = ee911ba67a70756eedeac662955b896d7e89432a99372aa45d2c6e71fa95a5e4
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik   = install -m 755 -D cabal "$PKG/usr/bin/cabal"

@@ -1,0 +1,28 @@
+[paket]
+tanim   = Cinnamon için Javascript Bağlamaları
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon-control-center
+
+[gerek]
+derleme = polkit iso-codes networkmanager libnma colord libwacom cinnamon-settings-daemon gnome-online-accounts
+calisma = libnma gnome-online-accounts python-pam python-psutil
+
+[kaynak]
+git     = https://github.com/linuxmint/cinnamon-control-center
+
+
+[sha256]
+#1 		= c419b7ce59c24492543ba95bd7dbb5fcc4b5338d2596b14820d80ec26d98fdd3
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}/builddir 
+betik 	= cd "${SRC}"/${isim}/builddir
+betik 	= meson --prefix=/usr --buildtype=plain ..
+betik 	= samu
+	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}/builddir
+betik 	= DESTDIR="${PKG}" samu install
+betik 	= rm "${PKG}"/usr/bin/cinnamon-control-center
+betik 	= rm "${PKG}"/usr/share/cinnamon-control-center/ui/shell.ui

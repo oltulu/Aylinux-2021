@@ -1,0 +1,22 @@
+[paket]
+tanim 	= Humanist sans serif yazıtipi
+paketci = milisarge
+grup 	= kütüphane
+url 	= https://gitlab.gnome.org/GNOME/cantarell-fonts
+
+[gerek]
+derleme = meson
+calisma = 
+
+[kaynak]
+xz  	= ${GNOME_SITE}/${isim}/${surum}
+
+[sha256]
+1		= b61f64e5f6a48aa0abc7a53cdcbce60de81908ca36048a64730978fcd9ac9863
+
+[derle]
+ekconf  = -Duseprebuilt=true
+tip     = meson    
+
+[pakur]
+tip     = meson

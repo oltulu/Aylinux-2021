@@ -1,0 +1,22 @@
+[paket]
+tanim   = Düşük gecikmeli ses iletişim kodeki
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.celt-codec.org
+
+[gerek]
+derleme = libogg
+calisma = 
+
+[kaynak]
+gz      = http://downloads.xiph.org/releases/$isim
+
+[sha256]
+1       = 7e64815d4a8a009d0280ecd235ebd917da3abdcfd8f7d0812218c085f9480836
+
+[derle]
+ekconf  = --enable-float-approx --enable-custom-modes --disable-oggtest
+tip     = gnu
+
+[pakur]
+tip     = gnu

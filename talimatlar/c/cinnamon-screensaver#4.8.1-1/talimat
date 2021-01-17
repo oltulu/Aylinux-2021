@@ -1,0 +1,26 @@
+[paket]
+tanim   = Ekran koruyucu, Cinnamon masaüstüyle iyi bir şekilde bütünleşmek için tasarlanmıştır.
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon-screensaver
+
+[gerek]
+derleme = gobject-introspection intltool samurai gtk3
+calisma = accountsservice cinnamon-desktop dbus-glib libgnomekbd python-cairo python-gobject python-setproctitle 
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1 		= 09a76bd99c0463bf48843f5e138a9fb215fd160a9b1d1b0cafacdf2ddc0958c991edf25bdf65850783c90732be22f034213b4ec9ce1d17e5f6432778bb70185b
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= meson --prefix=/usr --libexecdir=lib/cinnamon-screensaver --buildtype=plain ..
+    
+betik 	= samu
+	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= DESTDIR="${PKG}" samu install

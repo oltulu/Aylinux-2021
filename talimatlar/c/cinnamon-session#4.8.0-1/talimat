@@ -1,0 +1,27 @@
+[paket]
+tanim   = Cinnamon Oturum İşleyicisi
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon-session
+
+[gerek]
+derleme = meson xtrans
+calisma = cinnamon-desktop dbus-glib libsm libcanberra
+
+[kaynak]
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+git     = https://github.com/linuxmint/cinnamon-session
+
+
+[sha256]
+#1 		= 66301a1eb748f646c419ced76f3388d8d6af0436716c737842cd85f359bd38d4
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}/build
+betik 	= cd "${SRC}"/${isim}/build
+betik 	= meson --prefix=/usr --libexecdir=lib/$isim --buildtype=plain -Dgconf=false -Ddocbook=false ..
+betik 	= samu
+	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}/build
+betik 	= DESTDIR="${PKG}" samu install

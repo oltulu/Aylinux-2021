@@ -1,0 +1,28 @@
+[paket]
+tanim   = Çeşitli Cinnamon modülleri için ortak API içeren kütüphane
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon-desktop
+
+[gerek]
+derleme = gobject-introspection xkeyboard-config pulseaudio libxkbfile
+calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr pulseaudio
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+dosya = config.patch
+
+[sha256]
+#1 		= cb9aeff385764ba33cf4f7ee2bb5cb7308960670e8fa9f3be38a1d431b20436d
+
+[derle]
+betik 	= patch -Np1 -i /sources/config.patch
+betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= meson --prefix=/usr --buildtype=plain ..
+betik 	= ninja
+    	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= DESTDIR="${PKG}" ninja install
+betik 	= rm -rf "${PKG}"/usr/bin

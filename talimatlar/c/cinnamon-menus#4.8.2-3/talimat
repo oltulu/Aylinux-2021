@@ -1,0 +1,26 @@
+[paket]
+tanim   = Cinnamon menü özellikleri
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon-menus
+
+[gerek]
+derleme = gobject-introspection
+calisma = glib
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+[sha256]
+1 		= 6c19ebcea0d35a7a65cd70f1cdca2c5c739467ac6d2c2a1c38a5d580296707bd
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= meson --prefix=/usr --buildtype=plain ..    
+betik 	= samu
+	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/build
+betik 	= DESTDIR="${PKG}" samu install

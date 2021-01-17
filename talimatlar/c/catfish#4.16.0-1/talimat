@@ -1,0 +1,24 @@
+[paket]
+tanim   = Çok yönlü dosya arama aracı
+paketci = yasarciv67
+grup    = sistem
+url     = https://docs.xfce.org/apps/catfish/start
+
+[gerek]
+derleme = python-distutils-extra
+calisma = python-gobject desktop-file-utils gtk3 python-pexpect python-cairo python-dbus python-xdg
+
+[kaynak]
+gz      = https://git.xfce.org/apps/catfish/snapshot
+
+[sha256]
+1       = 4761a8e4c7fb3df1c0299a8d543d7144e492e88cdcd8fe4b3062ffa43c7c02ad
+
+[derle]
+betik	= sed -i 's/monitor_at_window(s.get_active/monitor_at_window(s.get_root/g' catfish/CatfishWindow.py
+tip     = py3
+
+[pakur]
+tip     = py3
+betik	= install -d "$PKG/usr/share/pixmaps"
+betik	= ln -s "/usr/share/icons/hicolor/scalable/apps/$isim.svg" "$PKG/usr/share/pixmaps/$isim.svg"

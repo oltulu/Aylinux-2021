@@ -1,0 +1,32 @@
+[paket]
+tanim   = Apache Cassandra NoSQL veritabanı
+paketci = milisarge
+grup    = büyükveri
+url     = https://cassandra.apache.org
+
+[gerek]
+derleme    = apache-ant
+calisma    = openjdk8 python procps-ng
+
+[kaynak]
+1          = https://www.apache.org/dist/cassandra/3.11.5/apache-$isim-$surum-src.tar.gz
+dosya      = $isim-profile.sh
+
+[sha256]
+1          = d5363386b6ddbee59cf7dbbb2564a5f23ca236e728eebce12daf83b5ccdd50d8
+2          = c932b440260c5ef4c48ed91c752ca67d708b1333a834ea0006fc93504368886a
+
+[derle]
+betik      = cd apache-$isim-$surum-src
+betik      = make-ca -g
+betik      = source /etc/profile.d/openjdk.sh
+betik      = pathappend $JAVA_HOME/bin
+betik      = ant
+
+[pakur]
+betik      = cd apache-$isim-$surum-src
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = mv build/*.jar lib/
+betik      = cp -r bin conf interface lib pylib tools $PKG/usr/mdp/$isim/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh

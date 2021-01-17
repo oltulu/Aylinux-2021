@@ -1,0 +1,21 @@
+[paket]
+tanim   = Hızlı C ve C++ Derleyici Önbelleği
+paketci = milisarge
+grup    = sistem
+url     = https://ccache.samba.org/
+
+[gerek]
+derleme = zlib
+calisma =
+
+[kaynak]
+xz      = https://github.com/ccache/ccache/releases/download/v${surum}
+
+[sha256]
+1       = f893da7543bfb9172bd55e603fcbdfcd83e6def176a28689c13235695b4cf44b
+
+[derle]
+tip     = gnu
+
+[pakur]
+dosya   = pakur.sh

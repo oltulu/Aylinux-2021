@@ -1,0 +1,23 @@
+[paket]
+tanim   = Web kameranızla eğlenceli grafik efektlerle fotoğraf ve video çekin
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://wiki.gnome.org/Apps/Cheese
+
+[kaynak]
+xz    = http://ftp.gnome.org/pub/gnome/sources/cheese/${surum%.*}
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = sed -i "s/&version;/$surum/" docs/reference/cheese.xml
+betik = sed -i "s/&version;/$surum/" docs/reference/cheese-docs.xml
+betik = mkdir build
+betik = cd    build
+betik = meson --prefix=/usr -Dman=false -Dgtk_doc=false ..  
+betik = ninja
+
+[pakur]
+betik = cd build
+betik =DESTDIR=$PKG ninja install

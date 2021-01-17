@@ -1,0 +1,37 @@
+[paket]
+tanim   = Gelişmiş yenilikçi özellikler ve geleneksel bir kullanıcı deneyimi sağlayan Linux masaüstü
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon
+
+[gerek]
+derleme = meson gobject-introspection intltool cjs startup-notification muffin cinnamon-menus polkit gstreamer cmake libsoup networkmanager
+calisma = cinnamon-control-center cinnamon-menus cinnamon-screensaver cinnamon-desktop dbus-glib libsm libcanberra  polkit-gnome python-cairo python-dbus python-gobject python-pam python-pexpect python-pillow python-pyinotify python-pytz python-tinycss2 python-xapp timezonemap caribou nemo cinnamon-session cinnamon-screensaver muffin cjs
+
+[kaynak]
+git = https://github.com/linuxmint/cinnamon
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+2      = https://github.com/archlinux/svntogit-community/raw/packages/cinnamon/trunk/set_wheel.diff
+3      = https://github.com/archlinux/svntogit-community/raw/packages/cinnamon/trunk/0001-cinnamon-settings-don-t-rely-on-the-presence-of-cinn.patch
+4      = https://github.com/archlinux/svntogit-community/raw/packages/cinnamon/trunk/default-theme.patch
+
+
+[sha512]
+#1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik = cd $isim
+betik 	= patch --no-backup-if-mismatch -p1 -i /sources/0001-cinnamon-settings-don-t-rely-on-the-presence-of-cinn.patch
+betik 	= patch -Np1 -i /sources/set_wheel.diff
+betik 	= patch -Np1 -i /sources/default-theme.patch
+betik 	= sed -i 's/mintinstall.desktop/org.gnome.Software.desktop/' data/org.cinnamon.gschema.xml
+betik 	= sed -i 's/RequiredComponents=\(.*\)$/RequiredComponents=\1polkit-gnome-authentication-agent-1;/' cinnamon*.session.in
+betik 	= sed -i 's|/usr/share/cinnamon-background-properties|/usr/share/gnome-background-properties|' files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= meson --prefix=/usr --libexecdir=lib/${isim} --buildtype=plain ..
+betik 	= samu
+    	      
+[pakur]
+betik 	= cd $isim/build
+betik 	= DESTDIR="${PKG}" samu install

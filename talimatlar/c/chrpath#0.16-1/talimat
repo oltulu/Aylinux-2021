@@ -1,0 +1,17 @@
+[paket]
+tanim   = ELF dosyalarındaki rpath ve runpath ı silme ve değiştirme aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://directory.fsf.org/project/chrpath
+
+[kaynak]
+gz      = https://alioth-archive.debian.org/releases/chrpath/chrpath/$surum
+
+[sha512]
+1 		= aa04d490f78bff20a56fe20539cec10218c0772a668909eda8324ca825f51e8ef92001e95d9c316e79a145a043c9c327ec94d1a82e104ab408ca1021832745aa
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+betik   = make DESTDIR="$PKG" docdir=/usr/share/doc/$isim-$surum install

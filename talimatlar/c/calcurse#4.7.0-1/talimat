@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ncurses tabanlı takvim ve yapılacaklar uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://calcurse.org
+
+[gerek]
+derleme = ncurses
+calisma =
+
+[kaynak]
+gz      = https://calcurse.org/files
+
+[sha256]
+1       = ef6675966a53f41196006ce624ece222fe400da0563f4fed1ae0272ad45c8435
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

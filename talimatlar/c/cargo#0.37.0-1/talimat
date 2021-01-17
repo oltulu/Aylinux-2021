@@ -1,0 +1,28 @@
+[paket]
+tanim   = Rust dili paket yöneticisi
+paketci = milisarge
+grup 	= geliştirme
+url     = https://crates.io/
+
+[gerek]
+derleme = rust
+calisma = rust
+
+[kaynak]
+1      = https://github.com/rust-lang/cargo/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+2      = https://static.rust-lang.org/dist/cargo-0.37.0-x86_64-unknown-linux-gnu.tar.xz
+
+[sha256]
+1 	   = 377e1090e9ce21206270576193746499a26e8ffbd8b89ccd5f8eb1085ca00e3b
+2 	   = d20fa121951339d5492cf8862f8a7af59efc99d18f3c27b95ab6d4658b6a7d67
+
+[derle]
+betik  = mkdir -p target/snapshot
+betik  = cp ../cargo-0.37.0-x86_64-unknown-linux-gnu/cargo/bin/cargo cargo
+betik  = ./cargo update
+betik  = ./cargo update --package libc --precise 0.2.60
+betik  = ./cargo build --release
+	      
+[pakur]
+betik  = install -Dm755 target/release/cargo $PKG/usr/bin/cargo
+betik  = install -Dm644 src/etc/cargo.bashcomp.sh $PKG/usr/share/bash-completion/completions/cargo

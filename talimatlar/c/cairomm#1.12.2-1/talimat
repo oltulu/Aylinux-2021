@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cairo C++ bağlamları
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.cairographics.org
+
+[gerek]
+derleme  = libsigc++ fontconfig libpng libxrender cairo
+calisma  = 
+
+[kaynak]
+gz      = http://cairographics.org/releases
+
+[sha256]
+1 		= 45c47fd4d0aa77464a75cdca011143fea3ef795c4753f6e860057da5fb8bd599
+
+[derle]
+ekconf  = --enable-maintainer-mode
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+

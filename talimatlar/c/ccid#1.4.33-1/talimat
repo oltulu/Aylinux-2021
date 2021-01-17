@@ -1,0 +1,25 @@
+[paket]
+tanim   = USB Chip/Smart Card aygıtları için sürücü
+paketci = milisarge
+grup    = kütüphane
+url     = https://ccid.apdu.fr
+
+[gerek]
+derleme = libusb flex pcsc-lite
+calisma = pcsc-lite
+
+[kaynak]
+bz2     = $url/files
+
+[sha256]
+1       = 545f4ab7887d512aa4b6967b80ef18a77b790c34769718452737a633cefc1639
+
+[derle]
+ekconf  = LEXLIB='' --enable-twinserial --enable-serialconfdir=/etc/reader.conf.d
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = mv "${PKG}/usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/Info.plist" "${PKG}/etc/libccid_Info.plist"
+betik   = ln -s /etc/libccid_Info.plist "${PKG}/usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/Info.plist"
+betik   = install -Dm644 src/92_pcscd_ccid.rules "${PKG}/usr/lib/udev/rules.d/92_pcscd_ccid.rules"

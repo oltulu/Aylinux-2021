@@ -1,0 +1,23 @@
+[paket]
+tanim   = Eşzamanlı ses programlama dili
+paketci = milisarge
+grup    = geliştirme
+url     = https://chuck.cs.princeton.edu
+
+[gerek]
+derleme = alsa-lib libsndfile
+calisma =
+
+[kaynak]
+tgz     = $url/release/files
+
+[sha256]
+1       = 11a20c34b385e132bf43d5ae6a562c652f631828cc6b1562a4c029bc9a850ed4
+
+[derle]
+betik   = make -C src linux-alsa
+
+[pakur]
+betik   = install -vDm 755 src/chuck ${PKG}/usr/bin/${isim}
+betik   = mkdir -p ${PKG}/usr/share/$isim
+betik   = cp -r examples ${PKG}/usr/share/$isim/

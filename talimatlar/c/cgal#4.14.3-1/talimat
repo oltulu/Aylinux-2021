@@ -1,0 +1,23 @@
+[paket]
+tanim   = Hesaplamalı Geometri Algoritmaları Kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.cgal.org
+
+[gerek]
+derleme = boost eigen mpfr
+calisma =
+
+[kaynak]
+1       = https://github.com/CGAL/cgal/archive/releases/CGAL-$surum.tar.gz
+
+[sha256]
+1       = fc063bcd04118b4cc076a42fb705612bfa705a665682897edc1570dee2e32904
+
+[derle]
+betik   = cd cgal-releases-CGAL-${surum}
+tip     = cmake
+
+[pakur]
+betik   = cd cgal-releases-CGAL-${surum}
+tip     = cmake

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Herhangi bir ses kaynağından parmak izlerini alan kitaplık
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://acoustid.org/chromaprint
+
+[gerek]
+derleme    = cmake fftw ffmpeg
+calisma    =
+
+[kaynak]
+gz         = https://github.com/acoustid/chromaprint/releases/download/v${surum}
+
+[sha256]
+1          = ea18608b76fb88e0203b7d3e1833fb125ce9bb61efe22c6e169a50c52c457f82
+
+[derle]
+betik	   = cd $isim-v$surum
+ekconf     = -DBUILD_TESTS=OFF -DBUILD_TOOLS=ON
+tip        = cmake
+
+[pakur]
+betik	   = cd $isim-v$surum
+tip        = cmake

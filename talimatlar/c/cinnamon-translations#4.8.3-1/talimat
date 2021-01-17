@@ -1,0 +1,22 @@
+[paket]
+tanim   = Cinnamon ve Nemo Çevirileri
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://github.com/linuxmint/$isim
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+1 = https://github.com/linuxmint/cinnamon-translations/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+#betik   =  cd 4.8.1
+betik   = make
+
+[pakur]
+betik   = cp -r usr/ "${PKG}"
