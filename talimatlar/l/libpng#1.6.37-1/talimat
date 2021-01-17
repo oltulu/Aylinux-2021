@@ -1,0 +1,26 @@
+[paket]
+tanim   = PNG formatındaki grafik dosyalarını oluşturmak için kullanılan kütüphane
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://www.libpng.org/pub/png/libpng.html
+
+[kaynak]
+xz      = https://downloads.sourceforge.net/sourceforge/$isim
+dosya   = libpng-1.6.36-apng.patch
+
+[sha256]
+1 		= 505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca
+2 		= 8c1f33da739b29a77e35e5a1ebcdffaab63bfe184be8b5a97677cc80156fdc0f
+
+[derle]
+yama    = 2
+ekconf  = --disable-static
+tip     = gnu 
+	      
+[pakur]
+tip 	= gnu
+betik   = cd contrib/pngminus
+betik   = make PNGLIB_SHARED="-L$PKG/usr/lib -lpng" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS" png2pnm pnm2png
+betik   = install -m0755 png2pnm pnm2png "$PKG/usr/bin/"
+
+;libpng-1.6.36-apng.patch : Add animated PNG (apng) support. Required by Firefox

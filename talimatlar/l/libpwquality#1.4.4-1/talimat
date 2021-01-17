@@ -1,0 +1,30 @@
+[paket]
+tanim   = Parola kalitesi kontrolü ve rastgele parolalar oluşturmak için kitaplık
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/libpwquality/libpwquality
+
+[gerek]
+derleme = cracklib
+calisma = 
+
+[kaynak]
+git     = https://github.com/libpwquality/libpwquality
+
+
+
+[sha512]
+        #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik 	= cd $isim
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= sed '/mr_IN/d' -i po/LINGUAS
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-python-binary=python3
+betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik 	= make
+            	      
+[pakur]
+betik 	= cd $isim
+betik 	= make DESTDIR="$PKG" install
+betik 	= install -m755 -d "$PKG"/etc/security/pwquality.conf.d

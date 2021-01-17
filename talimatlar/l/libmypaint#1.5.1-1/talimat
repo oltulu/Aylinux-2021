@@ -1,0 +1,22 @@
+[paket]
+tanim   = MyPaint fırça motoru kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/mypaint/libmypaint
+
+[gerek]
+derleme = gobject-introspection json-c glib json-glib python
+calisma =
+
+[kaynak]
+xz      = https://github.com/mypaint/libmypaint/releases/download/v${surum}
+
+[sha256]
+1       = 6a07d9d57fea60f68d218a953ce91b168975a003db24de6ac01ad69dcc94a671
+
+[derle]
+ekconf  = --disable-gegl
+tip     = gnu
+
+[pakur]
+tip     = gnu

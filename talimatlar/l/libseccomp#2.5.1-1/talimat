@@ -1,0 +1,18 @@
+[paket]
+tanim   = Geliştirilmiş seccomp kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/seccomp/libseccomp/
+
+[kaynak]
+1          = https://github.com/seccomp/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = c988dc3f6c641e12c68285afb57d69361f3bfd5b7235d067b3991bf9a57cca7e
+
+[derle]
+betik      = NOCONFIGURE=1 ./autogen.sh
+tip        = gnu
+
+[pakur]
+tip        = gnu

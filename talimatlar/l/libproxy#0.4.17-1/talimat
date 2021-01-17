@@ -1,0 +1,23 @@
+[paket]
+tanim   = Otomatik vekil sunucu ayarlama kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://libproxy.github.io/libproxy/
+
+[gerek]
+derleme  = cmake python
+calisma  =  
+
+[kaynak]
+1  = https://github.com/libproxy/libproxy/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1  = 18f58b0a0043b6881774187427ead158d310127fc46a1c668ad6d207fb28b4e0
+
+[derle]
+ekconf = -DCMAKE_INSTALL_PREFIX=/usr -DLIBEXEC_INSTALL_DIR=/usr/lib/libproxy -DCMAKE_SKIP_RPATH=ON -DPERL_VENDORINSTALL=yes -DCMAKE_BUILD_TYPE=Release -DWITH_GNOME=0 -DWITH_KDE4=0 -DWITH_MOZJS=0 -DWITH_NM=0 -DWITH_PERL=0 -DWITH_PYTHON=1 -DWITH_WEBKIT=0
+tip    = cmake
+
+[pakur]
+tip    = cmake
+

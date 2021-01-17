@@ -1,0 +1,17 @@
+[paket]
+tanim   = nf_tables alt sistemi için arayüz sağlayan kütüphane
+paketci = milisarge
+grup 	= temel
+url     = https://netfilter.org/projects/libnftnl
+
+[kaynak]
+bz2     = $url/files
+
+[sha256]
+#1 		= 5d6a65413f27ec635eedf6aba033f7cf671d462a2afeacc562ba96b19893aff2
+
+[derle]
+tip	    = gnu
+	      
+[pakur]
+tip	    = gnu

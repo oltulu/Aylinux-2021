@@ -1,0 +1,17 @@
+[paket]
+tanim   = Netlink geliştiricilerine yönelik minimalist kullanıcı-alanı kütüphanesi
+paketci = milisarge
+grup 	= temel
+url     = http://www.netfilter.org/projects/libmnl
+
+[kaynak]
+bz2     = $url/files
+
+[sha256]
+1 		= 171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
+
+[derle]
+tip	    = gnu
+	      
+[pakur]
+tip	    = gnu

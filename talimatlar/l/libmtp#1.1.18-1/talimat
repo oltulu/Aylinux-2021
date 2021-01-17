@@ -1,0 +1,23 @@
+[paket]
+tanim   = Media Transfer Protokü kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = http://libmtp.sourceforge.net
+
+[gerek]
+derleme  = libusb 
+calisma  =  
+
+[kaynak]
+gz  = https://downloads.sourceforge.net/$isim
+
+[sha256]
+1  =  5b68f9dd1ed38de558de687f40e255a39e4d5e32ef3de601f0ac19dd5682bba0
+
+[derle]
+ekconf = --with-udev=/usr/lib/udev
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Düşük seviye ağ işlevleri için C kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/sam-github/libnet
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+gz      = https://github.com/sam-github/libnet/releases/download/v${surum}
+
+[sha256]
+1       = caa4868157d9e5f32e9c7eac9461efeff30cb28357f7f6bf07e73933fb4edaa7
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

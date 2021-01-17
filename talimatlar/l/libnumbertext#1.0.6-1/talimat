@@ -1,0 +1,20 @@
+[paket]
+tanim   = LibreOffice Calc için sayı para birim çevrim kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/Numbertext/libnumbertext
+
+[kaynak]
+1          = http://dev-www.libreoffice.org/src/${isim}-${surum}.tar.xz
+dosya      = libnumbertext-updateautotools.patch
+
+[sha256]
+1          = e1c9086b4cecb6b25f180316f30740dfabe6a4dbaf70dddc34276fc839e4f4f7
+
+[derle]
+yama       = 2
+betik      = autoreconf -vfi
+tip        = gnu
+
+[pakur]
+tip        = gnu

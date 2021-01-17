@@ -1,0 +1,26 @@
+[paket]
+tanim   = Uluslararası telefon numaralarını ayrıştırmak, biçimlendirmek ve doğrulamak için Google'ın ortak kitaplığı
+paketci = Cihan_Alkan
+grup 	= lxqt
+url     = https://github.com/googlei18n/libphonenumber
+
+[gerek]
+derleme = protobuf 
+calisma =  
+
+[kaynak]
+git      = https://github.com/googlei18n/libphonenumber
+
+[sha256]
+#1 		= 1aa7325654d20d3060a0ef0ffc27febfd58ee66704ee690727dc1a77ad1069bd
+
+[derle]
+betik 	= CFLAGS+=" $CPPFLAGS"
+betik 	= CXXFLAGS+=" $CPPFLAGS"
+betik 	= CXXFLAGS+=" -Wno-error=deprecated-declarations"  # readdir_r deprecation
+betik 	= CXXFLAGS+=" -Wno-error=unused-variable"  # this is nuts
+betik 	= cmake -S $isim/cpp -B build -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib
+betik 	= cmake --build build
+	      
+[pakur]
+betik 	= DESTDIR="$PKG" cmake --install build

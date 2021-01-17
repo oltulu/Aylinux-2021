@@ -1,0 +1,17 @@
+[paket]
+tanim   = Microsoft sıkıştırma formatları için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.cabextract.org.uk/libmspack
+
+[kaynak]
+1          = https://cabextract.org.uk/libmspack/libmspack-${surum}.tar.gz
+
+[sha256]
+1          = bac862dee6e0fc10d92c70212441d9f8ad9b0222edc9a708c3ead4adb1b24a8e
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

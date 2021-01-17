@@ -1,0 +1,22 @@
+[paket]
+tanim   = Eski Mac belgeleri için kitaplığı içe aktar
+paketci = milisarge
+grup    = kütüphane
+url     = https://sourceforge.net/projects/libmwaw/
+
+[gerek]
+derleme    = boost librevenge
+calisma    =
+
+[kaynak]
+xz         = ${SOURCEFORGE_SITE}/libmwaw/libmwaw/${isim}-${surum}
+
+[sha256]
+1          = 0440bb09f05e3419423d8dfa36ee847056ebfd837f9cbc091fdb5b057daab0b1
+
+[derle]
+ekconf     = --disable-werror
+tip        = gnu
+
+[pakur]
+tip        = gnu

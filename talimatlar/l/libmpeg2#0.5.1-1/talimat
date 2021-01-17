@@ -1,0 +1,28 @@
+[paket]
+tanim    = MPEG-1 ve MPEG-2 video akış çözücü kütüphanesi
+paketci  = milisarge  
+grup     = kütüphane 
+url      = http://libmpeg2.sourceforge.net/
+
+[gerek]
+derleme  = sdl libxv
+calisma  =  
+
+[kaynak]
+1     = http://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
+dosya = libmpeg2-0.5.1-gcc4.6.patch
+
+[sha256]
+1  = dee22e893cb5fc2b2b6ebd60b88478ab8556cb3b93f9a0d7ce8f3b61851871d4
+2  = 763e188eea36ee3cdfb31e7877bbead00676b5766c25175ec6a7eb20884926d1
+
+[derle]
+yama  = 2
+betik = sed '/AC_PATH_XTRA/d' -i configure.ac
+betik = autoreconf --force --install
+betik = ./configure --prefix=/usr --enable-shared --disable-static
+betik = make OPT_CFLAGS="${CFLAGS}" MPEG2DEC_CFLAGS="${CFLAGS}" LIBMPEG2_CFLAGS=""
+
+[pakur]
+tip    = gnu
+

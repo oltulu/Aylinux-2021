@@ -1,0 +1,23 @@
+[paket]
+tanim   = Matroska kütüphanesi
+paketci = milisarge 
+grup    = kütüphane
+url     = https://dl.matroska.org/downloads/libmatroska/
+
+[gerek]
+derleme  = cmake libebml
+calisma  =  
+
+[kaynak]
+xz     = https://dl.matroska.org/downloads/$isim
+
+[sha256]
+1      = 0ac6debfbf781d47f001b830aaf9be9dfbcefd13bcfb80ca5efc1c04b4a3c962
+
+[derle]
+ekconf = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DBUILD_SHARED_LIBS=ON
+tip    = cmake
+
+[pakur]
+tip    = cmake
+

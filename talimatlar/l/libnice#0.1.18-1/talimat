@@ -1,0 +1,23 @@
+[paket]
+tanim   = IETF ICE- P2P UDP veri akış gerçeklemesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://nice.freedesktop.org/wiki/
+
+[gerek]
+derleme    = meson glib gstreamer libsoup gobject-introspection
+calisma    =
+
+[kaynak]
+gz         = https://nice.freedesktop.org/releases
+
+[sha256]
+1          = 06b678066f94dde595a4291588ed27acd085ee73775b8c4e8399e28c01eeefdf
+
+[derle]
+ekconf     = -Dcrypto-library=openssl -Dgtk_doc=disabled -Dtests=disabled -Dexamples=disabled -Dintrospection=enabled -Dgupnp=disabled
+
+tip        = meson
+
+[pakur]
+tip        = meson

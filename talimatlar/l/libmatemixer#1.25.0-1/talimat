@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE Desktop için mikser kitaplığı
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+1      = https://pub.mate-desktop.org/releases/${surum%.*}/$isim-$surum.tar.xz
+
+[sha256]
+
+[derle]
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install

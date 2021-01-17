@@ -1,0 +1,27 @@
+[paket]
+tanim   = Apple Property List format listesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://libimobiledevice.org/
+
+[gerek]
+derleme  = python cython glib
+calisma  =
+
+[kaynak]
+bz2  = http://www.libimobiledevice.org/downloads
+
+[sha256]
+1    = 3a7e9694c2d9a85174ba1fa92417cfabaea7f6d19631e544948dc7e17e82f602
+
+[derle]
+betik = sed -i 's,-L$(libdir),,g' cython/Makefile.am
+betik = pip3 install python-config;[ ! -f /usr/bin/python-config ] && ln -s /usr/bin/python3.7-config /usr/bin/python-config
+betik = export PYTHON_CPPFLAGS=" -I/usr/include/python3.7"
+betik = export PYTHON_LDFLAGS=" -L/usr/lib -lpython3.7"
+betik = autoreconf -fi
+tip   = gnu
+
+[pakur]
+tip   = gnu
+betik = install -D -m644 cython/plist.pxd "${PKG}"/usr/include/plist/cython/plist.pxd

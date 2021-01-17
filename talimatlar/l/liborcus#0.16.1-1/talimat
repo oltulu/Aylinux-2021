@@ -1,0 +1,22 @@
+[paket]
+tanim   = Elektronik tablo belgelerini işlemek için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://gitlab.com/orcus/orcus
+
+[gerek]
+derleme    = python boost mdds libixion
+calisma    =
+
+[kaynak]
+xz         = http://kohei.us/files/orcus/src
+
+[sha256]
+1          = f2d1dc840fa6a5358d956a7cb746c36b857d92190de0ac5b40b2841ed408daab
+
+[derle]
+betik      = autoreconf -if
+tip        = gnu
+
+[pakur]
+tip        = gnu

@@ -1,0 +1,24 @@
+[paket]
+tanim   = C library to implement a MPD client
+paketci = Cihan_Alkan
+grup 	= 
+url     = https://www.musicpd.org/libs/libmpdclient/
+
+[gerek]
+derleme =
+calisma =
+
+[kaynak]
+xz      = https://www.musicpd.org/download/${isim}/${surum%.*}
+
+[sha256]
+#1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
+
+[derle]
+betik 	= meson --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_lto=true -D b_pie=true build
+betik 	= ninja -C build
+	   
+[pakur]
+betik 	=  DESTDIR="${PKG}" ninja -C build install
+
+

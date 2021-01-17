@@ -1,0 +1,21 @@
+[paket]
+tanim   = Çoklu görüntülü Ağ Grafikleri (MNG) referans kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libmng.com
+
+[gerek]
+derleme    = libjpeg-turbo zlib lcms2
+calisma    =
+
+[kaynak]
+xz         = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1          = 4a462fdd48d4bc82c1d7a21106c8a18b62f8cc0042454323058e6da0dbb57dd3
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

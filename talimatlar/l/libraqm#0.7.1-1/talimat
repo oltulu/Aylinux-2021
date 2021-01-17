@@ -1,0 +1,27 @@
+[paket]
+tanim   = Karmaşık metin düzenleri için kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = https://github.com/HOST-Oman/libraqm
+
+[gerek]
+derleme = freetype fribidi harfbuzz
+calisma =
+
+[kaynak]
+github  = HOST-Oman/libraqm
+
+[sha256]
+1 		= 21ed67b8d0d2217f3801878f2ceef9b2da24495eeff830552051cef21f95938e
+
+[derle]
+betik   = sed -i '/docs/ d' configure.ac
+betik   = autoreconf -fi
+betik   = sed -i '/GTK_DOC_CHECK/ d' configure
+ekconf  = --enable-static=no --enable-shared=yes --enable-fast-install=yes
+betik   = ./configure $confopt $extopt
+betik   = sed -i 's/SUBDIRS = src docs tests/SUBDIRS = src/g' Makefile
+betik   = make
+	      
+[pakur]
+tip     = gnu

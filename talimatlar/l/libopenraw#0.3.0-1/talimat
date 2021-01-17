@@ -1,0 +1,21 @@
+[paket]
+tanim   = RAW dosya kodunu çözme için kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://libopenraw.freedesktop.org
+
+[gerek]
+derleme    = gdk-pixbuf boost libxml2
+calisma    =
+
+[kaynak]
+bz2        = https://${isim}.freedesktop.org/download
+
+[sha256]
+1          = 6405634f555849eb01cb028e2a63936e7b841151ea2a1571ac5b5b10431cfab9
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

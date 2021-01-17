@@ -1,0 +1,29 @@
+[paket]
+tanim   = Kullanıcı düzeyinde paket yakalama aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://www.tcpdump.org
+
+[gerek]
+derleme = libnl libusb dbus bluez
+calisma = 
+
+[kaynak]
+gz      = https://www.tcpdump.org/release
+dosya   = mgmt.h
+
+[sha256]
+1 		= 2edb88808e5913fdaa8e9c1fcaf272e19b2485338742b5074b9fe44d68f37019
+2       = 7c85da5330ce7ecb6934795c02c652b9e344461302cf74804a4692c3e2e1e7e2
+
+[derle]
+betik   = mkdir -p include/bluetooth && cp $SRC/mgmt.h include/bluetooth/
+betik   = export CFLAGS="$CFLAGS -I${SRC}/include $(pkg-config libnl-genl-3.0 --cflags)"
+ekconf  = --enable-ipv6 --enable-bluetooth --with-libnl
+tip     = gnu
+
+[pakur]
+betik   = install -d -m755 "$PKG"/usr/bin
+tip     = gnu
+betik   = mkdir -p "$PKG/usr/include/net" && cd "$PKG/usr/include/net" && ln -s ../pcap-bpf.h bpf.h
+betik   = rm -f $PKG/usr/lib/libpcap.a

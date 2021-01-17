@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yapılandırılmış bir metin verisi kullanan basit eş anlamlılar sözlüğü
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/projects/hunspell/files/MyThes
+
+[gerek]
+derleme    = hunspell
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/hunspell/${isim/lib/}-$surum.tar.gz
+
+[sha256]
+1          = 1e81f395d8c851c3e4e75b568e20fa2fa549354e75ab397f9de4b0e0790a305f
+
+[derle]
+betik      = cd "${isim/lib/}"-$surum
+tip        = gnu
+
+[pakur]
+betik      = cd "${isim/lib/}"-$surum
+tip        = gnu

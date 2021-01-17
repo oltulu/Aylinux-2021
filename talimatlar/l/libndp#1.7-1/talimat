@@ -1,0 +1,18 @@
+[paket]
+tanim   = Neighbour Discovery Protokolü kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://libndp.org
+
+[kaynak]
+gz       = ${url}/files
+
+[sha256]
+1 		= 2c480afbffb02792dbae3c13bbfb71d89f735562f2795cca0640ed3428b491b6
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

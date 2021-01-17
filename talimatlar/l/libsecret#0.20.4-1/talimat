@@ -1,0 +1,21 @@
+[paket]
+tanim   = Secret Service API için Gobject kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://wiki.gnome.org/Projects/Libsecret
+
+[gerek]
+derleme = glib libgcrypt vala gobject-introspection
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
+
+[sha256]
+1 		= 3bfa889d260e0dbabcf5b9967f2aae12edcd2ddc9adc365de7a5cc840c311d15
+
+[derle]
+ekconf  = --disable-static --disable-gtk-doc --disable-manpages
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

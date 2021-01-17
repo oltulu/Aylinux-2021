@@ -1,0 +1,22 @@
+[paket]
+tanim   = REVerses ENGineered biçimleri filtreleri
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/p/libwpd/librevenge
+
+[gerek]
+derleme    = boost cppunit
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/libwpd/${isim}-${surum}.tar.xz
+
+[sha256]
+1          = 933f0729f04267cc354b9a02bc3e9afefa5512a3bdd0b45f159ee14a3e3347b2
+
+[derle]
+ekconf     = --disable-werror
+tip        = gnu
+
+[pakur]
+tip        = gnu

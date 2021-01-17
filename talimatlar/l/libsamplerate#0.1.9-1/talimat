@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ses örnekleme hızı dönüştürme kütüphanesi.
+paketci = yasarciv67
+grup    = medya
+url     = http://www.mega-nerd.com/SRC/index.html
+
+[gerek]
+derleme = libsndfile fftw
+calisma = 
+
+[kaynak]
+gz      = http://www.mega-nerd.com/SRC
+
+[sha256]
+1      = 0a7eb168e2f21353fb6d84da152e4512126f7dc48ccb0be80578c565413444c1
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu

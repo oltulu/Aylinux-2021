@@ -1,0 +1,23 @@
+[paket]
+tanim   = İşletim sistemleri hakkında bilgi yönetmek için GObject tabanlı kütüphane API'sı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://libosinfo.org
+arsiv   = "${isim}-v${surum}"
+
+[gerek]
+derleme = meson glib gobject-introspection vala libxslt libsoup osinfo-db 
+calisma = osinfo-db 
+
+[kaynak]
+1       = https://gitlab.com/libosinfo/libosinfo/-/archive/v${surum}/libosinfo-v${surum}.tar.gz
+
+[sha256]
+1       = 419bcba4543f8e6976abc643ee287ff69346591471cb368d444714a2777d25d2
+
+[derle]
+ekconf	= -Denable-gtk-doc=false
+tip     = meson
+
+[pakur]
+tip     = meson

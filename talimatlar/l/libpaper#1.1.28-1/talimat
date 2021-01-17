@@ -1,0 +1,19 @@
+[paket]
+tanim   = Kağıt tiplerini işleme kütüphanesi ve aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://packages.debian.org/unstable/source/libpaper
+
+[kaynak]
+1       = http://ftp.debian.org/debian/pool/main/libp/libpaper/libpaper_${surum}.tar.gz
+
+[sha512]
+1 		= 3bf6ebb0af89931d2f72ea4a09a7fa958b2facda5f238983ec7bac39652e08614b33f0de3af74a03457b2a4203eee4950bf18a4b726e79aa64093ace6a1fb0bc
+
+[derle]
+betik   = autoreconf -fi
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = MPEG-4 kütüphanesi
+paketci = milisarge  
+grup    = kütüphane 
+url     = http://code.google.com/p/mp4v2/
+
+[kaynak]
+1      = https://sources.archlinux.org/other/packages/libmp4v2/mp4v2-$surum.tar.bz2
+dosya  = libmp4v2-c++11.patch
+
+[sha256]
+1  = 0319b9a60b667cf10ee0ec7505eb7bdc0a2e21ca7a93db96ec5bd758e3428338
+2  = 946a1c9c8a927d2739248aa1164591de08507152c856f88e8c5d759c213871ee
+
+[derle]
+betik  = cd mp4v2-${surum}
+betik  = patch -p0 -i $SRC/libmp4v2-c++11.patch
+tip    = gnu
+
+[pakur]
+betik  = cd mp4v2-${surum}
+tip    = gnu
+

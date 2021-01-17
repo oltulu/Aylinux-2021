@@ -1,0 +1,15 @@
+[paket]
+tanim   = MOD çalma kütüphanesi
+paketci = milisarge
+grup    = medya
+url     = http://modplug-xmms.sourceforge.net 
+
+[kaynak]
+gz     = https://downloads.sourceforge.net/modplug-xmms
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

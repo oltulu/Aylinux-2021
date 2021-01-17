@@ -1,0 +1,21 @@
+[paket]
+tanim   = Freedesktop.org XDG spesifikasyonlarının Qt uygulaması
+paketci = yasarciv
+grup    = kütüphane
+url     = https://github.com/lxqt/libqtxdg
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-svg
+calisma =
+
+[kaynak]
+xz     = $url/releases/download/${surum}
+
+[sha256]
+1       = 0fefb362eac9120fccd401202f15d092a59fd1aaacfc4b885a33578cdd41cf42
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

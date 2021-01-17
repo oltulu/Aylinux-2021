@@ -1,0 +1,23 @@
+[paket]
+tanim   = Shoutcast/icecast sunucu erişim kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://www.icecast.org/
+
+[gerek]
+derleme  = libvorbis libtheora speex openssl 
+calisma  =  
+
+[kaynak]
+gz  = https://downloads.xiph.org/releases/$isim
+
+[sha512]
+1   = fe36778c6640e620f27504cb21234940e18a65a33f9178bf7e77d4baf854a9affc82d85db8ed8c1c8e2d80399685d8be10106fff5be1ddf76e03e2ffeeed1d34
+
+[derle]
+betik  = sed -e 's/SSLeay_add_all_algorithms/OpenSSL_add_all_algorithms/g' -i src/tls.c
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

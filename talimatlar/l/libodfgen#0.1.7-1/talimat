@@ -1,0 +1,22 @@
+[paket]
+tanim   = Açık Belge Biçiminde belge üretmek için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/p/libwpd/libodfgen/
+
+[gerek]
+derleme    = boost librevenge
+calisma    =
+
+[kaynak]
+xz         = ${SOURCEFORGE_SITE}/libwpd/${isim}/${isim}-${surum}
+
+[sha256]
+1          = 323e491f956c8ca2abb12c998e350670930a32317bf9662b0615dd4b3922b831
+
+[derle]
+ekconf     = --enable-debug --disable-werror
+tip        = gnu
+
+[pakur]
+tip        = gnu

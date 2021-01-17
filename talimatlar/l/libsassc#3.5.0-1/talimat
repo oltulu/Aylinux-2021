@@ -1,0 +1,23 @@
+[paket]
+tanim   = Sass CSS ön işlemcisinin C uygulaması.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://libsass.org/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://github.com/sass/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 26f54e31924b83dd706bc77df5f8f5553a84d51365f0e3c566df8de027918042
+
+[derle]
+betik 	= autoreconf -i
+betik 	= ./configure --prefix=/usr
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

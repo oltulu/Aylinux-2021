@@ -1,0 +1,21 @@
+[paket]
+tanim   = OpenType Font kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = http://www.nongnu.org/m17n/
+
+[gerek]
+derleme = freetype2
+calisma = freetype2
+
+[kaynak]
+1      = https://download.savannah.gnu.org/releases/m17n/${isim}-${surum}.tar.gz
+
+[sha256]
+1 		= 68db0ca3cda2d46a663a92ec26e6eb5adc392ea5191bcda74268f0aefa78066b
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Mspub dosya yapısını ayrıştırmak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://cgit.freedesktop.org/libreoffice/libmspub/commit/
+
+[gerek]
+derleme    = icu boost librevenge
+calisma    =
+
+[kaynak]
+xz         = https://dev-www.libreoffice.org/src
+
+[sha256]
+1          = ef36c1a1aabb2ba3b0bedaaafe717bf4480be2ba8de6f3894be5fd3702b013ba
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = MAtE klavye kütüphanesi
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = intltool python libxklavier
+calisma = gtk3 libxklavier
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+
+[derle]
+betik     = ./configure --prefix=/usr
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Aldus/Adobe PageMaker belgelerini ayrıştırır
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker
+
+[gerek]
+derleme    = librevenge boost
+calisma    =
+
+[kaynak]
+xz         = http://dev-www.libreoffice.org/src/${isim}
+
+[sha256]
+1          = 66adacd705a7d19895e08eac46d1e851332adf2e736c566bef1164e7a442519d
+
+[derle]
+ekconf     = --disable-werror
+tip        = gnu
+
+[pakur]
+tip        = gnu

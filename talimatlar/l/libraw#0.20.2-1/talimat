@@ -1,0 +1,25 @@
+[paket]
+tanim   = Dijital kamera resim tipleri için kullanılan kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.libraw.org
+
+[gerek]
+derleme = lcms2 jasper
+calisma =
+
+[kaynak]
+1       = https://github.com/LibRaw/LibRaw/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 78c195fc66bee1b93fdaf5169a390f8d800b67d6d5b65dd1bdbf08c8dec72525
+
+[derle]
+betik   = cd LibRaw-$surum
+betik   = ./mkdist.sh
+ekconf  = --disable-examples --disable-static
+tip     = gnu 
+	      
+[pakur]
+betik   = cd LibRaw-$surum
+tip     = gnu 

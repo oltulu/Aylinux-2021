@@ -1,0 +1,17 @@
+[paket]
+tanim   = MMS akış protokolü kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://sourceforge.net/projects/libmms
+
+[kaynak]
+gz         = https://download.sourceforge.net/$isim/
+
+[sha256]
+1          = 3c05e05aebcbfcc044d9e8c2d4646cd8359be39a3f0ba8ce4e72a9094bee704f
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu
