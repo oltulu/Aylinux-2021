@@ -1,0 +1,21 @@
+[paket]
+tanim   = Yapısal Dosya Kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.gnome.org
+
+[gerek]
+derleme    = glib gobject-introspection gdk-pixbuf libxml2
+calisma    =
+
+[kaynak]
+xz         = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[sha256]
+1          = ea36959b1421fc8e72caa222f30ec3234d0ed95990e2bf28943a85f33eadad2d	
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

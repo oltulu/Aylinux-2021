@@ -1,0 +1,25 @@
+[paket]
+tanim   = Sistem izleme verilerini toplamak için bir kitaplık
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://gitlab.gnome.org/GNOME/libgtop
+
+[gerek]
+derleme = texinfo
+calisma =  
+
+[kaynak]
+git      = https://gitlab.gnome.org/GNOME/libgtop
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd $isim
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static
+betik 	= make
+            	      
+[pakur]
+betik 	= cd $isim
+betik 	= make DESTDIR="$PKG" install

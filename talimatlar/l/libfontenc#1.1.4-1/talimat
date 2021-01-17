@@ -1,0 +1,22 @@
+[paket]
+tanim   = X11 fontenc kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/lib
+
+[sha512]
+1 		= 76fa851d00113241f15fdd5b5bb7e927b8d8b9a82ce3fcb0678b8c7e32cb5e8d898c4bda1d60dafb7748145049d3240627ac34a2360c64e98a7a912ea7c30582
+
+[derle]
+ekconf  = --disable-static --with-encodingsdir=/usr/share/fonts/encodings      
+tip     = gnu 
+	      
+[pakur]
+tip 	= gnu

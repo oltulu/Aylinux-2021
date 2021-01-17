@@ -1,0 +1,21 @@
+[paket]
+tanim   = GnuPG kodunu temel alan şifreleme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gnupg.org
+
+[gerek]
+derleme = libgpg-error
+calisma = 
+
+[kaynak]
+bz2     = https://gnupg.org/ftp/gcrypt/$isim
+
+[sha512]
+#1 		= b831fc337eb14806897e224b0d1e78d1f8e9db91dffa818a015a4aa104144e2d971e5a855904907ee2bb9990a9d526de32d6787e1cae98e28a65c3258b2b1ea1
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

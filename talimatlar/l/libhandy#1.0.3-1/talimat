@@ -1,0 +1,24 @@
+[paket]
+tanim   = Cep telefonları için GTK + gereçleriyle dolu kitaplık
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/libhandy
+
+[gerek]
+derleme = glade meson vapigen gobject-introspection vala
+calisma = 
+
+[kaynak]
+git     =https://gitlab.gnome.org/GNOME/libhandy
+
+
+
+[sha512]
+#1 		=
+
+[derle]
+betik 	= milis-meson libhandy build -D gtk_doc=false -D examples=false
+betik 	= meson compile -C build
+            	      
+[pakur]
+betik 	=DESTDIR="$PKG" meson install -C build

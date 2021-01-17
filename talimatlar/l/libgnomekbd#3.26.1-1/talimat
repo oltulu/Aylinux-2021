@@ -1,0 +1,21 @@
+[paket]
+tanim   = GNOME klavye yapılandırma kitaplığı
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://gnome.org
+
+[gerek]
+derleme = intltool glib libxml2 gtk3 libxklavier desktop-file-utils
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = f7ca02631576e9b88aee1b1bae37ac1488b80ee7975f20a97f29e761a7172679
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

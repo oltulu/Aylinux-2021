@@ -1,0 +1,21 @@
+[paket]
+tanim   = OpenGL işlev işaretçi yönetim kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://github.com/anholt/libepoxy
+
+[gerek]
+derleme = meson mesa libglvnd
+calisma = 
+
+[kaynak]
+xz      = https://github.com/anholt/libepoxy/releases/download/$surum
+
+[sha512]
+1 		= 746dfe2a0a91319abd3906c75f81f6b895117f39120e0d8897db1daec1b6d2e91e1318f0dfe588c81907727b0a6dd1a7e4a819ee6b3063a23875312570464720
+
+[derle]
+betik   = cd $SRC && milis-meson $isim-$surum build && ninja -C build 
+      
+[pakur]
+betik   = cd $SRC && DESTDIR="$PKG" meson install -C build

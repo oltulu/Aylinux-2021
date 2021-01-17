@@ -1,0 +1,21 @@
+[paket]
+tanim   = Genel amaçlı formül çözümleyici ve tercüman
+paketci = milisarge
+grup    = kütüphane
+url     = https://gitlab.com/ixion/ixion/
+
+[gerek]
+derleme    = python boost mdds
+calisma    =
+
+[kaynak]
+xz         = http://kohei.us/files/ixion/src
+
+[sha256]
+1          = 6ad1384fcf813083c6d981a16b2643c953f9bac4c2caf1ed1682921d9b69ed91
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

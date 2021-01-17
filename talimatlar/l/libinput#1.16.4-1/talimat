@@ -1,0 +1,22 @@
+[paket]
+tanim   = Görüntüleme sunucuları ve giriş aygıtlarıyla uğraşmak zorunda kalan diğer uygulamalar için kitaplık
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://www.freedesktop.org/wiki/Software/libinput
+
+[gerek]
+derleme = meson libwacom ninja glib
+calisma = libevdev mtdev libwacom gtk3 
+
+[kaynak]
+xz      = http://freedesktop.org/software/$isim
+
+[md5]
+1 		= 
+
+[derle]
+betik 	= 	milis-meson $SRC/$isim-$surum build -Dudev-dir=/usr/lib/udev -Dtests=false -Ddocumentation=false
+betik 	= 	ninja -C $SRC/$isim-$surum/build
+	      
+[pakur]
+betik 	= DESTDIR=$PKG ninja -C build install

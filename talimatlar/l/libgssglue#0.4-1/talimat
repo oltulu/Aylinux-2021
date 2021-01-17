@@ -1,0 +1,20 @@
+[paket]
+tanim   = Mekanizma-anahtar gssapi kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.citi.umich.edu/projects/nfsv4/linux/
+
+[kaynak]
+1       = $url/$isim/$isim-$surum.tar.gz
+dosya   = gssapi_mech.conf
+
+[sha256]
+1       = 3f791a75502ba723e5e85e41e5e0c711bb89e2716b7c0ec6e74bd1df6739043a
+2       = 6c584922c9cba6df84cb771ecda3e2a13670c34104adbd5b8ee9aac0da93bbf4
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm644 $SRC/gssapi_mech.conf $PKG/etc/gssapi_mech.conf

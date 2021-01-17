@@ -1,0 +1,29 @@
+[paket]
+tanim   = Veritabanı ve veri soyutlama katmanı
+paketci = yasarciv
+grup    = sistem
+url     = http://www.gnome-db.org
+
+[gerek]
+derleme = glib itstool libgee iso-codes glade gobject-introspection gtk3 libxml2 libxslt openssl libgcrypt sqlite db libsoup libsecret gnome-keyring gtksourceview graphviz json-glib readline recode mariadb vala postgresql openjdk8
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+dosya	= fix-crash.diff
+dosya	= 0001-libgda-report-remove-trml2pdf-trml2html-functionalit.patch
+
+[sha256]
+1       = 59caed8ca72b1ac6437c9844f0677f8a296d52cfd1c0049116026abfb1d87d9b
+2		= 7eab1c7f5c11a87ce7a3e47c5c9058595f14c0b601daa6e0a32d797b708d97ba
+3		= d74a70bd7b8a7750049b123c8fc8e38c9b9c85b51f63c061998cf06b3cfc65af
+
+[derle]
+ekconf	= --with-bdb=/usr --with-bdb-libdir-name=lib --enable-json --enable-system-sqlite --enable-binreloc --enable-vala --enable-gtk-doc-html=no --with-ui --with-libsoup  --disable-libtool-lock --with-gtksourceview --with-gnome-keyring --with-libsecret --enable-json --disable-tools --with-postgres=yes
+yama	= fix-crash.diff
+yama	= 0001-libgda-report-remove-trml2pdf-trml2html-functionalit.patch
+betik	= NOCONFIGURE=1 ./autogen.sh
+tip     = gnu
+
+[pakur]
+tip     = gnu

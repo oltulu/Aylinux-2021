@@ -1,0 +1,20 @@
+[paket]
+tanim   = Yüksek performanslı, platformdan bağımsız programlar oluşturmak için bazı temel işlevler sunan küçük ve modern C ++ kitaplığı
+paketci = Cihan_Alkan
+grup 	= kütüphsne
+url     = https://lib.filezilla-project.org/
+
+[kaynak]
+bz2     = https://download.filezilla-project.org/libfilezilla
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = export CXX=clang++
+betik = export CC=clang
+betik = ./configure --prefix=/usr --disable-static
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install

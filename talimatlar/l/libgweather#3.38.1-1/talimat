@@ -1,0 +1,24 @@
+[paket]
+tanim  = Konum ve saat dilimi veritabanı ve hava durumu arama kitaplığı
+url    = https://wiki.gnome.org/Projects/LibGWeather
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = geocode-glib
+calisma = 
+
+[kaynak]
+git = https://gitlab.gnome.org/GNOME/libgweather
+#git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = sed -i -e '/setlocale.*tr_TR/i return;' $isim/libgweather/test_libgweather.c
+betik = milis-meson $isim build  -D enable-gtk-doc=false
+betik = ninja -C build 
+
+[pakur]
+betik =  DESTDIR="$PKG" meson install -C build

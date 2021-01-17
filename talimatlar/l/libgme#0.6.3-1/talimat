@@ -1,0 +1,25 @@
+[paket]
+tanim   = Video oyun müzik emule eden kütüphane
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://bitbucket.org/mpyne/game-music-emu
+
+[gerek]
+derleme  = cmake
+calisma  =  
+
+[kaynak]
+1  = https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-$surum.tar.xz
+
+[sha256]
+1  = 5046cb471d422dbe948b5f5dd4e5552aaef52a0899c4b2688e5a68a556af7342
+
+[derle]
+betik  = cd game-music-emu-${surum}
+ekconf = -DCMAKE_INSTALL_PREFIX=/usr
+tip    = cmake
+
+[pakur]
+betik  = cd game-music-emu-${surum}
+tip    = cmake
+

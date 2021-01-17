@@ -1,0 +1,22 @@
+[paket]
+tanim   = Exiv2 kitaplığının etrafındaki GObject tabanlı sarıcı
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/gexiv2
+
+[gerek]
+derleme    = meson python-gobject vala glib exiv2 gobject-introspection
+calisma    =
+
+[kaynak]
+1          = ${GNOME_SITE}/gexiv2/${surum%.*}/${isim/lib/}-${surum}.tar.xz
+
+[sha256]
+1          = 58f539b0386f36300b76f3afea3a508de4914b27e78f58ee4d142486a42f926a
+
+[derle]
+betik      = mv gexiv2-$surum $isim-$surum
+tip        = meson
+
+[pakur]
+tip        = meson

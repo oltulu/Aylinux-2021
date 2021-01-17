@@ -1,0 +1,25 @@
+[paket]
+tanim   = LXDE GLib/GIO tabanlı kütüphane (ilave kütüphane)
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://pcmanfm.sourceforge.net/
+
+[gerek]
+derleme = intltool glib
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/pcmanfm/libfm-${surum}.tar.xz
+
+[sha256]
+1       = 96b1244bde41ca0eef0332cfb5c67bb16725dfd102128f3e6f74fadc13a1cfe4
+
+[derle]
+betik	= cd $SRC/libfm-$surum
+ekconf  = --with-extra-only --with-gtk=no --disable-static
+tip     = gnu
+
+[pakur]
+betik	= cd $SRC/libfm-$surum
+tip     = gnu
+betik   = rm ${PKG}/usr/include/libfm

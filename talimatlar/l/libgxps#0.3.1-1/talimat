@@ -1,0 +1,22 @@
+[paket]
+tanim   = XPS belgeleri için GObject temel kitaplığı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/libgxps
+
+[gerek]
+derleme = meson cairo glib libjpeg-turbo libpng tiff lcms2 libarchive freetype gobject-introspection
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = 1a939fc8fcea9471b7eca46b1ac90cff89a30d26f65c7c9a375a4bf91223fa94
+
+[derle]
+ekconf  = -Denable-test=false
+tip     = meson
+
+[pakur]
+tip     = meson

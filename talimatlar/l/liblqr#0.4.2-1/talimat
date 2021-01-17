@@ -1,0 +1,23 @@
+[paket]
+tanim   = Liquid Rescale C++ kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://liblqr.wikidot.com
+
+[gerek]
+derleme = glib
+calisma =
+
+[kaynak]
+1       = https://liblqr.wikidot.com/local--files/en:download-page/$isim-1-$surum.tar.bz2
+
+[sha256]
+1 		= 173a822efd207d72cda7d7f4e951c5000f31b10209366ff7f0f5972f7f9ff137
+
+[derle]
+betik   = cd $SRC/$isim-1-$surum
+tip     = gnu
+	      
+[pakur]
+betik   = cd $SRC/$isim-1-$surum
+tip     = gnu

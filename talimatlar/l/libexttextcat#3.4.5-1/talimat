@@ -1,0 +1,17 @@
+[paket]
+tanim   = N-Gram Tabanlı Metin Sınıflandırma kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.freedesktop.org/wiki/Software/libexttextcat
+
+[kaynak]
+1          = http://dev-www.libreoffice.org/src/$isim/$isim-$surum.tar.xz
+
+[sha256]
+1          = 13fdbc9d4c489a4d0519e51933a1aa21fe3fb9eb7da191b87f7a63e82797dac8
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

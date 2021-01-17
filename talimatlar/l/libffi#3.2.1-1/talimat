@@ -1,0 +1,18 @@
+[paket]
+tanim   = Taşınabilir yabancı fonksiyon arayüz kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://sourceware.org/libffi/
+
+[kaynak]
+gz      = ftp://sourceware.org/pub/libffi
+
+[sha1]
+1 		= 280c265b789e041c02e5c97815793dfc283fb1e6
+
+[derle]
+betik 	=   ./configure --prefix=/usr --disable-static --enable-pax_emutramp
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

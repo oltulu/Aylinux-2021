@@ -1,0 +1,33 @@
+[paket]
+tanim   = LightDM Qt istemci kitaplığı
+paketci = Cihan_Alkan
+grup 	= lxqt
+url     = https://github.com/canonical/lightdm
+
+[gerek]
+derleme = lxqt-build-tools
+calisma = kwindowsystem libqtxdg libxss polkit-qt5
+
+[kaynak]
+git   = https://github.com/CanonicalLtd/lightdm
+
+[sha256]
+#1 		= 1aa7325654d20d3060a0ef0ffc27febfd58ee66704ee690727dc1a77ad1069bd
+
+[derle]
+betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= cd $isim
+betik 	= export MOC5=moc-qt5
+
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/lightdm --localstatedir=/var --sbindir=/usr/bin --sysconfdir=/etc --disable-static --disable-tests --with-greeter-user=lightdm --with-greeter-session=lightdm-gtk-greeter
+betik 	= make
+
+[pakur]
+betik 	= cd lightdm
+betik 	= make DESTDIR="${PKG}" -C liblightdm-gobject install
+betik 	= make DESTDIR="${PKG}" -C liblightdm-qt install
+betik 	= make DESTDIR="${PKG}" -C liblightdm-gobject uninstall
+betik 	= find "${PKG}" -type d -name *qt[!5]* -exec rm -rf {} +
+betik 	= find "${PKG}" -type f  -name *qt[!5]* -exec rm {} +
+betik 	= find "${PKG}" -type l  -name *qt[!5]* -exec rm {} +
+

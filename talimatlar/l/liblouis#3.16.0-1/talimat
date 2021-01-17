@@ -1,0 +1,26 @@
+[paket]
+tanim   = Açık kaynaklı braille çevirmeni ve geri çevirmeni
+paketci = milisarge
+grup    = kütüphane
+url     = http://liblouis.org/
+
+[gerek]
+derleme = pkg-config help2man python
+calisma =
+
+[kaynak]
+github  = liblouis/liblouis
+
+[sha256]
+1       = f820dbb78d3e2ab97032827fdc19c202fd4ca8c0890dbd90e0a4e55e90fd517c
+
+[derle]
+betik   = ./autogen.sh
+ekconf  = --disable-static --enable-ucs4
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = LD_PRELOAD+=":$SRC/$isim-$surum/liblouis/.libs/liblouis.so"
+betik   = cd python
+betik   = python setup.py install --root="$PKG" --prefix="/usr" --optimize=1

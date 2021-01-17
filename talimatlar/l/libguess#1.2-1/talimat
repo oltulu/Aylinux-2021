@@ -1,0 +1,21 @@
+[paket]
+tanim   = Yüksek hızlı karakter seti algılama kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://atheme.org/projects/libguess.html
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+bz2     = http://rabbit.dereferenced.org/~nenolod/distfiles
+
+[sha256]
+1       = 8019a16bdc7ca9d2efbdcc1429d48d033d5053d42e45fccea10abf98074f05f8
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

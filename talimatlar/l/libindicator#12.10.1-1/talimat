@@ -1,0 +1,25 @@
+[paket]
+tanim   = Ayatana projesindeki göstergeler için kullanışlı semboller ve fonksiyonlar
+paketci = yasarciv67
+grup    = sistem
+url     = https://launchpad.net/libindicator
+
+[gerek]
+derleme = glib gtk3 
+calisma =
+
+[kaynak]
+gz      = https://launchpad.net/libindicator/${surum%.*}/${surum}/+download
+dosya	= gtk+3.patch
+
+[sha256]
+1       = b2d2e44c10313d5c9cd60db455d520f80b36dc39562df079a3f29495e8f9447f	
+
+[derle]
+betik	= patch -u libindicator/indicator-image-helper.c -i $SRC/gtk+3.patch
+betik	= sed -i -e 's/-lglib-2.0-lm/-lglib-2.0 -lm/' Makefile.am
+ekconf     = --with-gtk=3
+tip     = gnu
+
+[pakur]
+tip     = gnu

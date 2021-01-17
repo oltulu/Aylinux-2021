@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNOME anahtarlık istemci kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://www.gnome.org/
+
+[gerek]
+derleme = intltool gobject-introspection vala python2 gnome-common
+calisma = dbus glib libgcrypt
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+
+[sha1]
+1 		= 
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static --libexecdir=/usr/lib/gnome-keyring --enable-vala=no
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+      
+[pakur]
+tip 	= gnu

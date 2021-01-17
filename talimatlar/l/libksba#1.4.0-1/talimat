@@ -1,0 +1,21 @@
+[paket]
+tanim   = CMS ve X.509 erişim kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.gnupg.org/related_software/libksba/index.html
+
+[gerek]
+derleme = libgpg-error
+calisma = 
+
+[kaynak]
+bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
+
+[sha256]
+1       = 41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Libinput kullanarak dokunmatik yüzeyinizdeki eylemler hareketleri
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/bulletmark/libinput-gestures
+
+[gerek]
+derleme = lxqt-build-tools
+calisma = kwindowsystem libqtxdg libxss polkit-qt5
+
+[kaynak]
+1      = https://github.com/bulletmark/libinput-gestures/archive/2.56.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+#1 		= 1aa7325654d20d3060a0ef0ffc27febfd58ee66704ee690727dc1a77ad1069bd
+
+[derle]
+betik 	= cd ../
+	      
+[pakur]
+tip = gnu

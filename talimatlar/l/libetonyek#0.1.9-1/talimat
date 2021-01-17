@@ -1,0 +1,22 @@
+[paket]
+tanim   = Apple Keynote sunumlarını yorumlamak ve almak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.freedesktop.org/wiki/Software/libetonyek/
+
+[gerek]
+derleme    = libxml2 boost cppunit librevenge glm mdds liblangtag
+calisma    =
+
+[kaynak]
+1          = http://dev-www.libreoffice.org/src/${isim}-${surum}.tar.xz
+
+[sha256]
+1          = e61677e8799ce6e55b25afc11aa5339113f6a49cff031f336e32fa58635b1a4a
+
+[derle]
+ekconf     = --with-mdds=1.4
+tip        = gnu
+
+[pakur]
+tip        = gnu

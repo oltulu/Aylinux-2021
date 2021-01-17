@@ -1,0 +1,20 @@
+[paket]
+tanim   = Libgcrypt için destek kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gnupg.org
+
+[kaynak]
+bz2     = ftp://ftp.gnupg.org/gcrypt/libgpg-error
+dosya   = gawk5.patch
+
+[sha256]
+#1 		= babd98437208c163175c29453f8681094bcaf92968a15cafb1a276076b33c97c
+
+[derle]
+yama    = 2
+betik   = autoreconf -fi
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
