@@ -1,0 +1,38 @@
+[paket]
+tanim   = Ağ Zaman Protokolü arka plan programı ve yardımcı programları
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.ntp.org
+
+[gerek]
+derleme = bison perl libcap libevent openssl libseccomp
+; libedit pps-tools 
+calisma =
+
+[kaynak]
+gz      = http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-${surum%.*}
+dosya	= ntpd
+dosya	= ntpdate
+dosya	= ntp.conf
+dosya	= ntp-64bit.diff
+
+[sha256]
+1       = 1960e4f081f6aafd108d721bc3ab15f9e8dfd08dc08339aa95bca9d2545e4eb7
+2		= a117c4b99139d836264c267cd0804f15b313bcab233837bf7f5676681b2a9955
+3		= 79e158ce339a836966966ab76c42ebecfa7023c3bbc2770c215817bfae2838d1
+4		= 8351e20d8c73c5a920625d14cf584bb43127429cfa1d5977daf5d05f7e110383
+5		= 7622ec8b5d5bcece5f66c843238b26c57e9a4d37da48f857b4cd1a9a3b4f2008
+
+[derle]
+dosya	= derle.sh
+
+[pakur]
+tip     = gnu
+betik	= touch $PKG/var/log/ntp.log
+betik	= install -m 644 $SRC/ntp.conf $PKG/etc/ntp.conf
+betik	= install -m 755 $SRC/ntpd $PKG/etc/rc.d
+betik	= install -m 755 $SRC/ntpdate $PKG/etc/rc.d
+betik	= echo "0.0" > $PKG/var/lib/ntp/ntp.drift
+betik	= rm -r $PKG/usr/sbin
+servis	= ntpd
+;servis	= ntpdate

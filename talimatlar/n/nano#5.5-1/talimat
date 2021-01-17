@@ -1,0 +1,19 @@
+[paket]
+tanim   = Basit metin düzenleyici
+paketci = milisarge
+grup 	= temel
+url     = http://www.nano-editor.org
+
+[kaynak]
+xz     	= http://ftp.gnu.org/gnu/$isim
+
+[sha256]
+#1 		= d12773af3589994b2e4982c5792b07c6240da5b86c5aef2103ab13b401fe6349
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+tip     = gnu
+betik   = mkdir -p $PKG/etc/nano
+betik   = install -v -m644 -D doc/sample.nanorc $PKG/etc/nano/nanorc.sample

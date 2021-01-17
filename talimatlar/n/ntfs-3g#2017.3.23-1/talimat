@@ -1,0 +1,29 @@
+[paket]
+tanim   = NTFS dosya sistemi sürücüsü ve yardımcı programları
+paketci = yasarciv67
+grup    = sistem
+url     = https://www.tuxera.com/community/open-source-ntfs-3g
+
+[gerek]
+derleme = fuse2
+calisma = 
+
+[kaynak]
+1       = https://tuxera.com/opensource/ntfs-3g_ntfsprogs-$surum.tgz
+2       = mftmirr.patch
+
+[sha256]
+1       = 3e5a021d7b761261836dcb305370af299793eedbded731df3d6943802e1262d5
+
+[derle]
+betik   = cd ntfs-3g_ntfsprogs-$surum
+betik   = sed 's|$(DESTDIR)/sbin|$(DESTDIR)/usr/bin|' -i {ntfsprogs,src}/Makefile.in
+yama    = 2
+ekconf  = --disable-ldconfig --disable-static --with-fuse=external --enable-xattr-mappings --enable-posix-acls --enable-extras
+tip     = gnu
+
+[pakur]
+betik   = cd ntfs-3g_ntfsprogs-$surum
+betik   = make DESTDIR="${PKG}" rootbindir=/usr/bin rootsbindir=/usr/bin rootlibdir=/usr/lib install
+betik   = rm "${PKG}"/usr/share/man/man8/ntfsfallocate.8 # uninstalled binary
+betik   = ln -s /usr/bin/ntfs-3g "${PKG}/usr/bin/mount.ntfs"
