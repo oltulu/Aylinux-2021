@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ağ arayüzü için bant genişliği kullanımını görüntüleme uygulaması
+paketci = milisarge
+grup    = ağ
+url     = http://www.ex-parrot.com/pdw/iftop/
+
+[gerek]
+derleme = libpcap ncurses
+calisma =
+
+[kaynak]
+gz      = ${url}/download
+
+[sha256]
+1       = f733eeea371a7577f8fe353d86dd88d16f5b2a2e702bd96f5ffb2c197d9b4f97
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,28 @@
+[paket]
+tanim   = Linux çekirdeği paket filtreleme ve kontrol aracı
+paketci = milisarge
+grup 	= temel
+url     = http://www.iptables.org
+
+[gerek]
+derleme = libnftnl libmnl
+calisma = 
+
+[kaynak]
+bz2     = https://www.netfilter.org/projects/iptables/files
+dosya   = empty.rules
+dosya   = empty-filter.rules
+dosya   = empty-mangle.rules
+dosya   = empty-nat.rules
+dosya   = empty-raw.rules
+dosya   = empty-security.rules
+dosya   = simple_firewall.rules
+
+[sha256]
+#1 		= a3778b50ed1a3256f9ca975de82c2204e508001fc2471238c8c97f3d1c4c12af
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh
