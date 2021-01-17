@@ -1,0 +1,25 @@
+[paket]
+tanim   = Not Erik's Windowing Toolkit - metin tabanlı arayüz kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = https://pagure.io/newt
+
+[gerek]
+derleme = slang tcl python
+calisma = 
+
+[kaynak]
+gz      = https://releases.pagure.org/$isim
+
+[sha256]
+1 		= 265eb46b55d7eaeb887fca7a1d51fe115658882dfe148164b6c49fccac5abb31
+
+[derle]
+betik 	= sed -i "s:tcl8.4:tcl$_tclver:" Makefile.in
+betik 	= echo '#define USE_INTERP_RESULT 1' >> config.h
+ekconf 	= --with-gpm-support
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+betik   = rm $PKG/usr/lib/libnewt.a

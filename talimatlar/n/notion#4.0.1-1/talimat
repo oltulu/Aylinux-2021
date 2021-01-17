@@ -1,0 +1,32 @@
+[paket]
+tanim   = Notion X11 pencere yöneticisi
+paketci = milisarge
+grup    = sistem
+url     = https://notionwm.net
+
+[gerek]
+derleme = libsm libxrender freetype libxext libxinerama libxrandr lua
+calisma = xmessage
+
+[kaynak]
+1       = https://github.com/raboof/notion/archive/$surum.tar.gz::$isim-$surum.tar.gz
+dosya   = $isim.desktop
+dosya   = lua-detect-notion.mk
+
+[sha256]
+1       = 853e5221ee7922fd60a2e2d71a83975474f8d458472ace50b577a95c00ae2ed7
+
+[derle]
+betik   = cp -f $SRC/lua-detect-notion.mk  build/lua-detect.mk
+betik   = make INCLUDES="-I$SRC/notion-$surum -I/usr/include/freetype2" LUA_VERSION=5.3 PREFIX=/usr ETCDIR=/etc/notion
+
+[pakur]
+betik   = cp -f $SRC/lua-detect-notion.mk  build/lua-detect.mk
+betik   = make DESTDIR="$PKG" LUA_VERSION=5.3 PREFIX=/usr ETCDIR=/etc/notion install
+betik   = mkdir -p $PKG/usr/share/xsessions
+betik   = cp ${SRC}/$isim.desktop $PKG/usr/share/xsessions/
+betik   = mv $PKG/usr/share/notion/notion{,flux}.1 $PKG/usr/share/man/man1/
+betik   = cp notion/mod_xinerama/*.lua $PKG/etc/notion/
+betik   = cp mod_xkbevents/*.lua $PKG/etc/notion/
+betik   = mkdir -p $PKG/usr/share/notion/contrib
+betik   = cp -a contrib/* $PKG/usr/share/notion/contrib

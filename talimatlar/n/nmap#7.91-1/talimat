@@ -1,0 +1,23 @@
+[paket]
+tanim   = Ağ keşfi ve güvenlik denetimi için yardımcı program
+paketci = milisarge
+grup    = kütüphane
+url     = https://nmap.org
+
+[gerek]
+derleme    = pcre libssh2
+calisma    =
+
+[kaynak]
+bz2        = https://nmap.org/dist
+
+[sha256]
+1          = fcfa5a0e42099e12e4bf7a68ebe6fde05553383a682e816a7ec9256ab4773faa
+
+[derle]
+ekconf     = --with-libpcap=included
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = rm -rf ${PKG}/usr/share/ncat

@@ -1,0 +1,29 @@
+[paket]
+tanim   = Xinerama desteği ile X için arka plan tarayıcı ve ayarlayıcı
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/l3ib/nitrogen
+
+[gerek]
+derleme =  gtkmm2 librsvg libxinerama desktop-file-utils
+calisma =
+
+[kaynak]
+gz      = $url/releases/download/${surum}
+dosya	= nitrogen_tr.po
+
+[sha256]
+1       = f40213707b7a3be87e556f65521cef8795bd91afda13dfac8f00c3550375837d
+2		= 25c40025772436a79fe613a956b6dba3cddb803a6d4ba321911dab7aad4328b4
+
+[derle]
+betik	= cp ../nitrogen_tr.po po/tr.po
+betik	= sed -i 's/bs fi hr pl ru sr/bs fi hr pl ru sr tr/g' po/LINGUAS
+tip     = gnu
+betik	= make dist
+
+[pakur]
+tip     = gnu
+betik	= cd $PKG/usr/share/applications
+betik	= sed -i '/^Comment=Browse and set desktop backgrounds/a Comment[tr]=Masaüstü arka planlarına göz atın ve ayarlayın' nitrogen.desktop
+betik	= sed -i '/^GenericName=Wallpaper Setter/a GenericName[tr]=Duvar Kağıdı Ayarlayıcı' nitrogen.desktop

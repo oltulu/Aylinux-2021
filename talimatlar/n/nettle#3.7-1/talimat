@@ -1,0 +1,18 @@
+[paket]
+tanim   = Alt seviye şifreleme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.lysator.liu.se/~nisse/nettle
+
+[kaynak]
+gz      = https://ftp.gnu.org/gnu/$isim
+
+[sha256]
+#1 		= 75cca1998761b02e16f2db56da52992aef622bf55a3b45ec538bc2eedadc9419
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

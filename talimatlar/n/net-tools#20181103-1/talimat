@@ -1,0 +1,26 @@
+[paket]
+tanim   = Yardımcı ağ araçları
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/ecki/net-tools
+
+[kaynak]
+1       = http://anduin.linuxfromscratch.org/BLFS/net-tools/net-tools-CVS_20101030.tar.gz
+dosya   = net-tools-CVS_20101030-remove_dups-1.patch
+
+[sha256]
+1       = 1d3bbfa96fcf4e5c67663c1866b312ec2cf011c01b158c798371e4e07742e0f8
+2       = c96716b614b9d077ff7e5d513f07fd50d1b20286c95fd8e545226e1b4f6dda4f
+
+[derle]
+betik   = cd net-tools-CVS_20101030
+bayrak  = yok
+yama    = 2
+betik   = sed -i '/#include <netinet\/ip.h>/d'  iptunnel.c
+betik   = sed -i "s#/sbin#/bin#" Makefile
+betik   = sed -i "s#/usr##" man/Makefile
+betik   = yes "" | make
+
+[pakur]
+betik   = cd net-tools-CVS_20101030
+betik   = make DESTDIR=${PKG}/usr update

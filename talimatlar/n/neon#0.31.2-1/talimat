@@ -1,0 +1,22 @@
+[paket]
+tanim   = C ve C arayüzü ile HTTP ve WebDAV istemci kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.webdav.org/neon/
+
+[gerek]
+derleme    = 
+calisma    = krb5
+
+[kaynak]
+gz         = http://download.openpkg.org/components/cache/${isim}
+
+[sha256]
+1          = db0bd8cdec329b48f53a6f00199c92d5ba40b0f015b153718d1b15d3d967fbca
+
+[derle]
+ekconf     = --with-expat --with-ssl=openssl --enable-shared --with-ca-bundle=/etc/ssl/certs/ca-certificates.crt --disable-static
+tip        = gnu
+
+[pakur]
+tip        = gnu

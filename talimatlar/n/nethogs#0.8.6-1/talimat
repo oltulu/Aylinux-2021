@@ -1,0 +1,27 @@
+[paket]
+tanim   = Bant genişliğini işleme göre gruplayan küçük ağ üst aracı
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/raboof/nethogs
+
+[gerek]
+derleme = libpcap ncurses
+calisma =
+
+[kaynak]
+github  = raboof/nethogs
+
+[sha256]
+1       = 317c1d5235d4be677e494e931c41d063a783ac0ac51e35e345e621d261c2e5a0
+
+[derle]
+betik   = sed -i 's|/sbin|/bin|' src/MakeApp.mk
+betik   = sed -i 's|/local||'  Makefile
+betik   = unset CFLAGS;unset CXXFLAGS
+betik   = make prefix="/usr" ; make prefix="/usr" libnethogs
+
+[pakur]
+betik   = make prefix="/usr" DESTDIR="$PKG" install
+betik   = make prefix="/usr" DESTDIR="$PKG" install_lib
+betik   = install -Dm755 src/libnethogs.h "$PKG/usr/include/libnethogs.h"
+betik   = ln -s "/usr/lib/libnethogs.so.$surum" "$PKG/usr/lib/libnethogs.so"

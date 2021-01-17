@@ -1,0 +1,30 @@
+[paket]
+tanim   = Hızlı ve güvenli yazım denetimi C ++ kitaplığı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://nuspell.github.io/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://github.com/nuspell/nuspell/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+2      = https://github.com/nuspell/nuspell/commit/5d4f685011b2.patch::$isim-pandoc.patch
+
+
+
+[sha512]
+#1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik = cd ../
+betik 	= patch -Rp1 -f -d ${isim}-${surum} </sources/${isim}-pandoc.patch || /bin/true
+betik 	= mkdir build
+betik 	= cd build
+betik 	= cmake ../${isim}-${surum} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DBUILD_SHARED_LIBS=ON
+betik 	= make
+    	      
+[pakur]
+betik 	= cd "${SRC}"/build
+betik 	= make DESTDIR="$PKG" install

@@ -1,0 +1,23 @@
+[paket]
+tanim   = PPTP için NetworkManager VPN eklentisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/NetworkManager
+arsiv   = NetworkManager-pptp-$surum
+
+[gerek]
+derleme = glib gtk3 libsecret ppp network-manager-applet networkmanager
+calisma =
+
+[kaynak]
+1       = ${GNOME_SITE}/NetworkManager-pptp/${surum%.*}/NetworkManager-pptp-$surum.tar.xz
+
+[sha256]
+1       = f8e35e4a9a76312975c317cd315e5e9bd23bba2b5c31c3259c8c150583dc1953
+
+[derle]
+ekconf  = --without-libnm-glib --with-pppd-plugin-dir=/usr/lib/pppd/2.4.7
+tip     = gnu
+
+[pakur]
+betik   = make DESTDIR="$PKG" install dbusservicedir=/usr/share/dbus-1/system.d

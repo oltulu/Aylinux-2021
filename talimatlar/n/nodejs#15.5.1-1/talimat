@@ -1,0 +1,23 @@
+[paket]
+tanim   = V8 javascript için Geliştirilmiş I/O
+paketci = milisarge
+grup    = kütüphane
+url     = https://nodejs.org/
+arsiv   = node-$surum
+
+[gerek]
+derleme = procps-ng python openssl zlib libuv c-ares icu libnghttp2
+calisma =
+
+[kaynak]
+github  = nodejs/node
+
+[sha256]
+1       = 6a7bf21940a00e883e1efc280c99e88e4f7bf4ba5bc34d8aeaf3ca65b0c05b6f
+
+[derle]
+betik   = ./configure --prefix=/usr \  = -with-intl=system-icu --shared-openssl --shared-zlib --shared-libuv --experimental-http-parser --shared-nghttp2
+betik   = make
+
+[pakur]
+tip     = gnu

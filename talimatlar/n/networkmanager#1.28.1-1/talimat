@@ -1,0 +1,24 @@
+[paket]
+tanim   = Ağ yönetim arkaplan uygulaması
+paketci = milisarge
+grup 	= sistem
+url     = https://wiki.gnome.org/Projects/NetworkManager
+
+[gerek]
+derleme = meson nss dbus-glib libgudev libnl polkit ppp modemmanager libndp newt jansson libpsl libxslt vala gobject-introspection python-gobject mobile-broadband-provider-info
+calisma = dbus
+
+[kaynak]
+1       = https://download.gnome.org/sources/NetworkManager/${surum%.*}/NetworkManager-$surum.tar.xz
+dosya   = NetworkManager.conf
+
+[sha256]
+1 		= 7995802c67e54fc58be4c0e3d2095d943f53f4300a93bde7ff48822a0b1f62ea
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = meson
+betik   = install -m 644 ${SRC}/NetworkManager.conf  $PKG/etc/NetworkManager/
+servis  = networkmanager

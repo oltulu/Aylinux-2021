@@ -1,0 +1,22 @@
+[paket]
+tanim   = Qt ile uygulanan NetworkManager sistem çekmecesi simgesi
+paketci = yasarciv
+grup    = ağ
+url     = https://github.com/palinek/nm-tray
+arsiv	= $isim
+
+[gerek]
+derleme = cmake qt5-tools networkmanager networkmanager-qt
+calisma =
+
+[kaynak]
+git     = $url
+
+[sha256]
+
+[derle]
+ekconf	= -DBIN_NM_VERSION=1.2.0
+tip     = cmake
+
+[pakur]
+tip     = cmake

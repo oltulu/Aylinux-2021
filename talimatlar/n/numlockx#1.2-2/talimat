@@ -1,0 +1,21 @@
+[paket]
+tanim   = Başlangıçta NumLock etkinleştirmek için bir araç
+paketci = yasarciv67
+grup    = sistem
+url     = http://www.mike-devlin.com/linux/README-numlockx.htm
+
+[gerek]
+derleme = libx11 libsm libxext libxtst
+calisma =
+
+[kaynak]
+gz      = https://github.com/rg3/numlockx/releases/download/$surum
+
+[sha256]
+1       = e468eb9121c94c9089dc6a287eeb347e900ce04a14be37da29d7696cbce772e4
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

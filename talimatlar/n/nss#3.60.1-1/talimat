@@ -1,0 +1,24 @@
+[paket]
+tanim	= Ağ güvenlik servisleri
+paketci	= milisarge
+grup	= kütüphane
+url		= https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
+
+[gerek]
+derleme = sqlite nspr
+calisma = 
+
+[kaynak]
+gz		= https://ftp.mozilla.org/pub/security/nss/releases/NSS_${surum//./_}_RTM/src
+dosya   = nss.pc.in
+dosya   = nss-config.in
+
+[sha256]
+1	    = 112f05223d1fde902c170966bfc6f011b24a838be16969b110ecf2bb7bc24e8b
+2	    = f2208c4f70373ff9b60f53d733f8071d4e390c384b776dfc04bf26c306882faf
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+dosya   = pakur.sh

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Sürekli anlık görüntülemeyi destekleyen günlük yapılı bir dosya sistemi (kullanıcı alanı araçları)
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://nilfs.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = gmp
+
+[kaynak]
+bz2      = http://nilfs.sourceforge.net/download
+
+[sha256]
+#1 		= f941cf1535cd5d1819be5ccae5babef01f6db611f9b5a777bae9c7604b8a92ad
+
+[derle]
+betik 	= sed -i -e 's#root_sbindir=/sbin#root_sbindir=/usr/bin#' configure
+betik 	= ./configure --sbindir=/usr/bin --with-libmount
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" sbindir=/usr/bin install LDCONFIG=/bin/true

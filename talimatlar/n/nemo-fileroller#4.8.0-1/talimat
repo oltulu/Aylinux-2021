@@ -1,0 +1,30 @@
+[paket]
+tanim   = Nemo için dosya arşivleyici uzantısı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/nemo-extensions
+
+[kaynak]
+1  = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[gerek]
+derleme = 
+calisma = nemo file-roller
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd "${SRC}"/nemo-extensions-${surum}/$isim
+betik = autoreconf -fi
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0 /g' -e 's/    if test "$export_dynamic" = yes && test -n "$export_dynamic_flag_spec"; then/      func_append compile_command " -Wl,-O1,--as-needed"\n      func_append finalize_command " -Wl,-O1,--as-needed"\n\0/' libtool
+betik = make
+#betik = mkdir -p $isim/builddir
+#betik = pushd ${isim}/builddir
+#betik = meson --prefix=/usr --libexecdir=lib/${isim} --buildtype=plain ..
+#betik = samu
+
+[pakur]
+betik =  cd "${SRC}"/nemo-extensions-${surum}/$isim
+betik = make DESTDIR="${PKG}" install

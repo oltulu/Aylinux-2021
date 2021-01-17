@@ -1,0 +1,23 @@
+[paket]
+tanim   = Google Noto TTF fonts
+paketci = Cihan Alkan
+grup 	= sistem
+url     = https://www.google.com/get/noto/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git      = https://github.com/googlei18n/noto-fonts
+dosya  = 66-noto-sans.conf
+dosya  = 66-noto-serif.conf
+dosya  = 66-noto-mono.conf
+
+[sha1]
+1 		= 
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Notion
+Exec=/usr/bin/notion
+TryExec=/usr/bin/notion
+Icon=
+Type=XSession

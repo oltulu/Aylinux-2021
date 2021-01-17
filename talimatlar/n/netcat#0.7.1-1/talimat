@@ -1,0 +1,18 @@
+[paket]
+tanim   = GNU netcat yardımcı programı
+paketci = milisarge
+grup    = kütüphane
+url     = http://netcat.sourceforge.net/
+
+[kaynak]
+gz         = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1          = 30719c9a4ffbcf15676b8f528233ccc54ee6cba96cb4590975f5fd60c68a066f
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = rm ${PKG}/usr/bin/nc

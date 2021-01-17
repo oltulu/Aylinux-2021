@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ağ bağlantılarını yönetmek için eklenti uygulaması
+paketci = milisarge
+grup 	= ağ
+url     = https://wiki.gnome.org/Projects/NetworkManager
+
+[gerek]
+derleme = meson gtk3 iso-codes libsecret libnotify gcr networkmanager gobject-introspection mobile-broadband-provider-info jansson libnma
+calisma = iso-codes
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
+
+[sha256]
+1 		= ddbb400ace804b59cc513611ce9701f7ef3f00de151dbbfb96284c8c1ef2b18b
+
+[derle]
+ekconf  = -Dselinux=false -Dappindicator=no
+tip     = meson
+
+[pakur]
+tip     = meson

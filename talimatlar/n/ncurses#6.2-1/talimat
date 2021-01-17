@@ -1,0 +1,18 @@
+[paket]
+tanim   = Karakter ekranlarının terminalden bağımsız kullanım kütüphanesi
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/ncurses/ncurses.html
+
+[kaynak]
+gz      = https://ftp.gnu.org/pub/gnu/ncurses
+
+[sha256]
+#1 		= aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+tip     = gnu
+betik   = ln -s libncursesw.so $PKG/tools/lib/libncurses.so

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Netscape Eklentisi API'sı (NPAPI)
+paketci = milisarge
+grup    = kütüphane
+url     = https://bitbucket.org/mgorny/npapi-sdk
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+bz2     = https://github.com/mgorny/${isim}/releases/download/${isim}-${surum}
+
+[sha256]
+1       = 01bf34bdd0fcaa546ba3d5c96f5d91f91dd117d4ed5ffe13f56bbd5aa566ae77
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
