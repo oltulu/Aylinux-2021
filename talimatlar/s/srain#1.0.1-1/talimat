@@ -1,0 +1,23 @@
+[paket]
+tanim   = GTK ile yazılmış IRC haberleşme uygulaması
+paketci = milisarge
+grup    = ağ 
+url     = https://srain.im
+
+[gerek]
+derleme = glib gtk3 libsoup libsecret libconfig
+calisma = gnome-keyring
+
+[kaynak]
+1       =  https://github.com/SrainApp/srain/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       =  104d0b56944b9eabed9ada7bbca28df4b0dedb972e67fa533079dcf5bde35254
+
+[derle]
+ekconf  = --disable-debug
+tip     = gnu
+
+[pakur]
+tip     = gnu
+

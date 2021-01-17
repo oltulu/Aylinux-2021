@@ -1,0 +1,22 @@
+[paket]
+tanim   = Konuşma için özgür Speex kodeği
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.speex.org
+
+[gerek]
+derleme = libogg
+calisma = speexdsp
+
+[kaynak]
+gz      = http://downloads.xiph.org/releases/speex
+
+[sha256]
+1       = eaae8af0ac742dc7d542c9439ac72f1f385ce838392dc849cae4536af9210094
+
+[derle]
+ekconf  = --enable-binaries
+tip     = gnu
+
+[pakur]
+tip     = gnu

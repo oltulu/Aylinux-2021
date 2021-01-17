@@ -1,0 +1,9 @@
+mps kur spark
+
+gohdfs mkdir /spark-logs
+
+# start worker
+sbin/start-slave.sh localhost:7077
+
+# for more worker edit conf/slaves per worker to each node
+

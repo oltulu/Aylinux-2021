@@ -1,0 +1,24 @@
+[paket]
+tanim   = Kitleler için kurumsal sınıf merkezi versiyon kontrolü
+paketci = milisarge
+grup    = geliştirme
+url     = http://subversion.apache.org/
+
+[gerek]
+derleme = serf apache
+calisma =
+
+[kaynak]
+bz2     = http://apache.uvigo.es/subversion
+
+[sha256]
+1       = 6ba8e218f9f97a83a799e58a3c6da1221d034b18d9d8cbbcb6ec52ab11722102
+
+[derle]
+ekconf  = --with-apx --with-serf=/usr  --with-apache-libexecdir=/usr/lib/httpd/modules --with-sqlite=/usr --without-swig --with-lz4=internal --with-utf8proc=internal
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm 644 tools/client-side/bash_completion "${PKG}"/usr/share/bash-completion/completions/subversion
+betik   = for i in svn svnadmin svndumpfilter svnlook svnsync svnversion; do ln -sf subversion "${PKG}"/usr/share/bash-completion/completions/${i} ; done

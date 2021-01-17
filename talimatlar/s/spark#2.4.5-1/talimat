@@ -1,0 +1,34 @@
+[paket]
+tanim   = Geniş ölçekli veri işleme motoru
+paketci = milisarge
+grup    = büyükveri
+url     = https://spark.apache.org
+
+[gerek]
+derleme    = 
+calisma    = openjdk8 python
+
+[kaynak]
+1          = https://archive.apache.org/dist/spark/spark-$surum/spark-$surum-bin-without-hadoop.tgz
+dosya      = $isim-profile.sh
+dosya      = copy_jars2hive.sh
+dosya      = copy_jars2hdfs.sh
+dosya      = spark-defaults.conf
+
+[sha256]
+1          = 40f58f117efa83a1d0e66030d3561a8d7678f5473d1f3bb53e05c40d8d6e6781
+2          = 29bce6266d0e42d96e898d16122407568c03ddbfbb75002d35d8cc3d1035a1b1
+
+[derle]
+betik      = echo "derleme yok"
+
+[pakur]
+betik      = cd $isim-$surum-bin-without-hadoop
+betik      = mkdir -p $PKG/usr/mdp/$isim
+betik      = cp -r bin conf data examples jars python sbin yarn $PKG/usr/mdp/$isim/
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = cp $SRC/$isim-profile.sh $PKG/etc/profile.d/$isim.sh
+betik      = cp $SRC/copy_jars2hive.sh $PKG/usr/mdp/$isim/bin/
+betik      = cp $SRC/copy_jars2hdfs.sh $PKG/usr/mdp/$isim/bin/
+betik      = cp $SRC/spark-defaults.conf $PKG/usr/mdp/$isim/conf/
+betik      = sed -i '22i export TERM=xterm-color' $PKG/usr/mdp/spark/bin/spark-shell

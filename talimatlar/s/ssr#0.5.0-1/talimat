@@ -1,0 +1,22 @@
+[paket]
+tanim   = Kullanımı kolay ekran kayıt edicisi
+paketci = milisarge
+grup    = medya
+url     = https://www.maartenbaert.be/simplescreenrecorder
+
+[gerek]
+derleme    = cmake qt5-base qt5-tools ffmpeg libx11 libxext libxfixes libxi jack glu libglvnd alsa-lib pulseaudio qt5-x11extras
+calisma    =
+
+[kaynak]
+1          = https://github.com/MaartenBaert/ssr/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 54f5c349c54694038586d3dfe0014da5d83044d0cf0ed9c0de525ddc54cbd150
+
+[derle]
+ekconf     = -DWITH_QT5=ON
+tip        = cmake
+
+[pakur]
+tip        = cmake

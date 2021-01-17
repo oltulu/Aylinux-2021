@@ -1,0 +1,25 @@
+[paket]
+tanim   = Javascript kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.mozilla.org/js/spidermonkey
+
+[gerek]
+derleme = autoconf-archive python2 nspr
+calisma = 
+
+[kaynak]
+1       = https://archive.mozilla.org/pub/firefox/releases/${surum}esr/source/firefox-${surum}esr.source.tar.xz
+dosya   = bug1415202.patch
+dosya   = mozjs60-fix-soname.patch
+
+[sha256]
+1 		= c13387d944e635aebd5f1d2ce9ab77cb706a74043a240cbb7b70654519487fbe
+2 		= 0b410aa6ebd0236cd3ea524340c2da2235973a42cd0eaa90f7f394cd5bcbab95
+3 		= c792837930defe27355941080e9b80ec1d45003c097e4707860acc13d43bc519
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+dosya   = pakur.sh

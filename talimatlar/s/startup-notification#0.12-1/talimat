@@ -1,0 +1,23 @@
+[paket]
+tanim   = Uygulamaların başlangıçta açılmaları için destek kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.freedesktop.org
+
+[gerek]
+derleme = libx11 xcb-util
+calisma = 
+
+[kaynak]
+gz      = https://www.freedesktop.org/software/startup-notification/releases
+
+[sha256]
+1 		= 3c391f7e930c583095045cd2d10eb73a64f085c7fde9d260f2652c7cb3cfbe4a
+
+[derle]
+betik   = sed -i -e '/AC_PATH_XTRA/d' configure.in
+betik   = autoreconf --force --install
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

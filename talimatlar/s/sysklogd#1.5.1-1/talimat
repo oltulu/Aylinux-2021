@@ -1,0 +1,19 @@
+[paket]
+tanim   = Sistem ve kernel mesajlarını loglayan uygulama
+paketci = milisarge
+grup 	= temel
+url     = http://www.infodrom.org/projects/sysklogd
+
+[kaynak]
+gz     	= http://www.infodrom.org/projects/sysklogd/download
+dosya  	= syslog.conf
+
+[sha256]
+1 		= 5166c185ae23c92e8b9feee66a6e3d0bc944bf673112f53e3ecf62e08ce7c201
+2 		= 0f25225b9f95de99e40f599781538a89f01757cf5ca63eb2cffc3b9bf47b3908
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+dosya   = pakur.sh

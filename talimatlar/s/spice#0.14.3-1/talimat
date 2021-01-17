@@ -1,0 +1,22 @@
+[paket]
+tanim   = SPICE protokolünü uygular
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.spice-space.org
+
+[gerek]
+derleme    = python2 spice-protocol libjpeg-turbo pixman opus alsa-lib libxfixes libxrender libxrandr libxinerama glib libcacard cyrus-sasl
+calisma    = spice-protocol
+
+[kaynak]
+bz2        = http://www.spice-space.org/download/releases
+
+[sha256]
+1          = b203b3882e06f4c7249a3150d90c84e1a90490d41ead255a3d2cede46f4a29a7
+
+[derle]
+ekconf     = --enable-smartcard --with-sasl --disable-werror --enable-xinerama --disable-celt051 --enable-client
+tip        = gnu
+
+[pakur]
+tip        = gnu

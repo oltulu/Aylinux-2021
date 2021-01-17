@@ -1,0 +1,142 @@
+diff -ruN system-config-printer-1.5.12/Makefile.am system-config-printer-1.5.12/Makefile.am
+--- system-config-printer-1.5.12/Makefile.am	2019-09-16 14:55:16.000000000 +0300
++++ system-config-printer-1.5.12/Makefile.am	2020-05-30 10:08:20.093236627 +0300
+@@ -86,8 +86,7 @@
+ 		done;						\
+ 	fi
+ 	rm -f .stamp-distutils-in-builddir
+-	rm -f .stamp-man-pages-built
+-
++	
+ nobase_pkgdata_SCRIPTS=				\
+ 	check-device-ids.py			\
+ 	pysmb.py				\
+@@ -209,9 +208,6 @@
+ systemd_CLEANFILES=
+ endif
+ 
+-man_MANS=					\
+-	man/system-config-printer.1		\
+-	man/system-config-printer-applet.1
+ 
+ dbus_DATA =					\
+ 	dbus/com.redhat.NewPrinterNotification.conf		\
+@@ -274,7 +270,6 @@
+ 	$(bin_SCRIPTS) \
+ 	setup.py \
+ 	$(EXPORT_MODULES) \
+-	man/system-config-printer.xml \
+ 	$(dbus_DATA) \
+ 	$(dbusinterfaces_DATA) \
+ 	$(dbusservices_DATA) \
+@@ -296,18 +291,6 @@
+ 	test_PhysicalDevice.py \
+ 	$(appdata_in_files)
+ 
+-# The man pages are generated from DocBook XML.
+-.stamp-man-pages-built: $(top_srcdir)/man/system-config-printer.xml
+-	xmlto man -o man $<
+-	touch .stamp-man-pages-built
+-
+-$(man_MANS): .stamp-man-pages-built
+-
+-html:	$(EXPORT_MODULES) $(EXPORT_MODULES_GEN)
+-	rm -rf html
+-	epydoc -o html --html $(EXPORT_MODULES)
+-
+-distcheck-hook: update-po missing-imports
+ 
+ # Generate Zanata locales list from ALL_LINGUAS
+ zanata.xml:	zanata.xml.in
+diff -ruN system-config-printer-1.5.12/Makefile.in system-config-printer-1.5.12/Makefile.in
+--- system-config-printer-1.5.12/Makefile.in	2019-10-01 12:54:12.000000000 +0300
++++ system-config-printer-1.5.12/Makefile.in	2020-05-30 10:07:31.738233079 +0300
+@@ -205,7 +205,6 @@
+   esac
+ man1dir = $(mandir)/man1
+ NROFF = nroff
+-MANS = $(man_MANS)
+ DATA = $(appdata_DATA) $(cupshelpers_DATA) $(dbus_DATA) \
+ 	$(dbusinterfaces_DATA) $(desktop_DATA) $(nobase_pkgdata_DATA) \
+ 	$(nodist_dbusservices_DATA) $(systemdsystemunit_DATA) \
+@@ -596,7 +595,6 @@
+ libusb_LIBS = @libusb_LIBS@
+ localedir = @localedir@
+ localstatedir = @localstatedir@
+-mandir = @mandir@
+ mkdir_p = @mkdir_p@
+ oldincludedir = @oldincludedir@
+ pdfdir = @pdfdir@
+@@ -744,9 +742,7 @@
+ @HAVE_SYSTEMD_TRUE@@UDEV_RULES_TRUE@	$(systemdsystemunit_DATA)
+ 
+ @UDEV_RULES_FALSE@systemd_CLEANFILES = 
+-man_MANS = \
+-	man/system-config-printer.1		\
+-	man/system-config-printer-applet.1
++
+ 
+ dbus_DATA = \
+ 	dbus/com.redhat.NewPrinterNotification.conf		\
+@@ -780,7 +776,6 @@
+ 	$(bin_SCRIPTS) \
+ 	setup.py \
+ 	$(EXPORT_MODULES) \
+-	man/system-config-printer.xml \
+ 	$(dbus_DATA) \
+ 	$(dbusinterfaces_DATA) \
+ 	$(dbusservices_DATA) \
+@@ -1763,7 +1758,7 @@
+ all-am: Makefile $(PROGRAMS) $(SCRIPTS) $(MANS) $(DATA) all-local
+ installdirs: installdirs-recursive
+ installdirs-am:
+-	for dir in "$(DESTDIR)$(udevdir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(udevdir)" "$(DESTDIR)$(man1dir)" "$(DESTDIR)$(appdatadir)" "$(DESTDIR)$(cupshelpersdir)" "$(DESTDIR)$(dbusdir)" "$(DESTDIR)$(dbusinterfacesdir)" "$(DESTDIR)$(desktopdir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(dbusservicesdir)" "$(DESTDIR)$(systemdsystemunitdir)" "$(DESTDIR)$(udevrulesdir)"; do \
++	for dir in "$(DESTDIR)$(udevdir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(udevdir)" "$(DESTDIR)$(appdatadir)" "$(DESTDIR)$(cupshelpersdir)" "$(DESTDIR)$(dbusdir)" "$(DESTDIR)$(dbusinterfacesdir)" "$(DESTDIR)$(desktopdir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(dbusservicesdir)" "$(DESTDIR)$(systemdsystemunitdir)" "$(DESTDIR)$(udevrulesdir)"; do \
+ 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
+ 	done
+ install: install-recursive
+@@ -1826,7 +1821,7 @@
+ 
+ install-data-am: install-appdataDATA install-cupshelpersDATA \
+ 	install-dbusDATA install-dbusinterfacesDATA \
+-	install-desktopDATA install-man install-nobase_pkgdataDATA \
++	install-desktopDATA install-nobase_pkgdataDATA \
+ 	install-nobase_pkgdataSCRIPTS install-nodist_dbusservicesDATA \
+ 	install-systemdsystemunitDATA install-udevPROGRAMS \
+ 	install-udevSCRIPTS install-udevrulesDATA
+@@ -1845,8 +1840,6 @@
+ 
+ install-info-am:
+ 
+-install-man: install-man1
+-
+ install-pdf: install-pdf-recursive
+ 
+ install-pdf-am:
+@@ -1901,7 +1894,6 @@
+ 	install-dbusDATA install-dbusinterfacesDATA \
+ 	install-desktopDATA install-dvi install-dvi-am install-exec \
+ 	install-exec-am install-exec-local install-html \
+-	install-html-am install-info install-info-am install-man \
+ 	install-man1 install-nobase_pkgdataDATA \
+ 	install-nobase_pkgdataSCRIPTS install-nodist_binSCRIPTS \
+ 	install-nodist_dbusservicesDATA install-pdf install-pdf-am \
+@@ -2026,18 +2018,6 @@
+ 
+ @INTLTOOL_XML_RULE@
+ 
+-# The man pages are generated from DocBook XML.
+-.stamp-man-pages-built: $(top_srcdir)/man/system-config-printer.xml
+-	xmlto man -o man $<
+-	touch .stamp-man-pages-built
+-
+-$(man_MANS): .stamp-man-pages-built
+-
+-html:	$(EXPORT_MODULES) $(EXPORT_MODULES_GEN)
+-	rm -rf html
+-	epydoc -o html --html $(EXPORT_MODULES)
+-
+-distcheck-hook: update-po missing-imports
+ 
+ # Generate Zanata locales list from ALL_LINGUAS
+ zanata.xml:	zanata.xml.in

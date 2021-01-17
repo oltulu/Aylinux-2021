@@ -1,0 +1,18 @@
+[paket]
+tanim    = Sysfs tabanlı sistem araçları
+paketci  = milisarge 
+grup     = sistem  
+url      = http://linux-diag.sourceforge.net/Sysfsutils.html
+
+[kaynak]
+gz =  https://downloads.sourceforge.net/sourceforge/linux-diag
+
+[sha512]
+1  =  485902d98b41a69343cb037883d0c0a1de8a1a4aed657cd4528fe10bc845ac51629657dff01deef042e57c9bd9243095e23fc931d06d74db31b03c5f0a18cf07
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Açık ve koyu renkli Gtk3.20 + teması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/EliverLara/Sweet
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = https://github.com/EliverLara/Sweet/releases/download/v${surum}/Sweet-Dark.zip
+
+[sha256]
+        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd $SRC/Sweet-Dark
+                    	      
+[pakur]
+betik 	= mkdir -p "${PKG}/usr/share/themes/Sweet-Dark"
+betik 	= cp -r "${SRC}/Sweet-Dark" "${PKG}/usr/share/themes"
+

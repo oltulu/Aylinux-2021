@@ -1,0 +1,40 @@
+[paket]
+tanim   = Sistem bilgisi
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://github.com/oguzhaninan/Stacer
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://github.com/oguzhaninan/Stacer/archive/v${surum}.tar.gz::$isim-${surum}.tar.gz
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = cd "$SRC/${isim^}-${surum}"
+betik = mkdir build
+betik = cd build
+betik = qmake -spec linux-g++ "CONFIG += release" ../Stacer.pro 
+betik = make
+betik = lrelease ../stacer/stacer.pro
+    	      
+[pakur]
+betik = cd "$SRC/${isim^}-${surum}"/build
+betik = mkdir -p "${PKG}"/usr/lib/stacer
+betik = install -Dm755 stacer/stacer "${PKG}"/usr/lib/stacer/stacer
+betik = mkdir -p "${PKG}"/usr/bin
+betik = ln -s /usr/lib/stacer/stacer "${PKG}"/usr/bin/stacer
+betik = install -Dm644 ../LICENSE "{$PKG}"/usr/share/licenses/stacer/LICENSE
+betik = install -Dm755 stacer-core/libstacer-core.so.1.0.0 "${PKG}"/usr/lib/
+betik = ln -s './libstacer-core.so.1.0.0' "${PKG}"/usr/lib/libstacer-core.so.1.0
+betik = ln -s './libstacer-core.so.1.0.0' "${PKG}"/usr/lib/libstacer-core.so.1
+betik = ln -s './libstacer-core.so.1.0.0' "${PKG}"/usr/lib/libstacer-core.so
+betik = mkdir -p "${PKG}"/usr/share/
+betik = cp -ar ../icons "${PKG}"/usr/share/
+betik = install -Dm644 ../applications/stacer.desktop "${PKG}"/usr/share/applications/stacer.desktop
+betik = mkdir -p "${PKG}"/usr/lib/stacer/translations
+betik = install -Dm644 ../translations/*qm "${PKG}"/usr/lib/stacer/translations/

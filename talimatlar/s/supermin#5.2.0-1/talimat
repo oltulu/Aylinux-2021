@@ -1,0 +1,21 @@
+[paket]
+tanim   = Supermin araçları(alliance) oluşturma aracı
+paketci = milisarge
+grup    = sistem
+url     = http://people.redhat.com/~rjones/supermin/
+
+[gerek]
+derleme = ocaml ocaml-findlib pkg-config e2fsprogs cpio perl
+calisma =
+
+[kaynak]
+gz      = http://libguestfs.org/download/supermin
+
+[sha256]
+1       = 9f0e2f277b118bbfe66fbe276028123e0befbf8696108b0255207a916338eff6
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

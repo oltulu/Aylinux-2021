@@ -1,0 +1,32 @@
+[paket]
+tanim   = CUPS yazıcı yapılandırma arayüzü
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/OpenPrinting/system-config-printer
+
+[gerek]
+derleme = python xmlto desktop-file-utils glib cups eudev libusb libnotify gtk3 
+calisma = python-pycups python-pysmbc python-gobject libsecret cups-pk-helper python-dbus python-requests
+
+[kaynak]
+gz      = ${url}/releases/download/${surum}
+dosya	= 0001-Fix-constructing-the-auth-dialog.patch
+dosya	= printer-docbook.patch
+
+[sha256]
+1       = a1673774d5bf8b04d704055e78c750c05e4d47641940a5cad32d444b30aa8b5c
+2		= 2fd4daa433da0659b6a86962144545015d617c39c0e42ea04d7ede5fa6f9ceff
+3		= 80183d89c13947ec01be22d9f339c5fa3bc82926c9c21fd7fd57755a3e4d7808
+
+[derle]
+yama	= 0001-Fix-constructing-the-auth-dialog.patch
+yama	= printer-docbook.patch
+betik	= autoreconf -vi
+ekconf  = --with-udevdir=/usr/lib/udev --with-udev-rules
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -dm755 "$PKG"/usr/share/dbus-1/system.d
+betik   = mv "$PKG"/etc/dbus-1/system.d/* "$PKG"/usr/share/dbus-1/system.d
+betik   = rm -rf "$PKG"/etc/dbus-1

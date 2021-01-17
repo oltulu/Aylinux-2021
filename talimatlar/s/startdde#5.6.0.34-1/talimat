@@ -1,0 +1,35 @@
+[paket]
+tanim   = deepin masaüstü ortamının başlangıcı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/startdde
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz     = https://github.com/linuxdeepin/startdde/archive/$surum
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = cd ../
+betik = export GOPATH="$SRC/build:/usr/share/gocode"
+betik = go get github.com/cryptix/wav golang.org/x/xerrors github.com/godbus/dbus github.com/fsnotify/fsnotify
+betik = sed -i 's/sbin/bin/' startdde-$surum/Makefile
+betik = export CGO_CPPFLAGS="${CPPFLAGS}"
+betik = export CGO_CFLAGS="${CFLAGS}"
+betik = export CGO_CXXFLAGS="${CXXFLAGS}"
+betik = export CGO_LDFLAGS="${LDFLAGS}"
+betik = export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+betik = cd startdde-$surum
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install
+betik = chmod +x "$PKG"/etc/X11/Xsession.d/*
+betik = install -dm755 "$PKG"/etc/X11/xinit/xinitrc.d
+betik = mv "$PKG"/etc/X11/Xsession.d/* "$PKG"/etc/X11/xinit/xinitrc.d/
+betik = rmdir "$PKG"/etc/X11/Xsession.d

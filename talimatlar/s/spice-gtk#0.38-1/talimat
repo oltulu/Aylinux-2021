@@ -1,0 +1,22 @@
+[paket]
+tanim   = GTK SPICE eklentisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://spice-space.org
+
+[gerek]
+derleme = meson pkg-config vala glib json-glib pulseaudio usbredir polkit spice-protocol python-six python-parsing phodav gtk3 libjpeg-turbo gobject-introspection gst-plugins-base usbutils libcacard
+calisma =
+
+[kaynak]
+xz      = https://spice-space.org/download/gtk
+
+[sha256]
+1       = 5ae974731baf2b41316d4f0b3ae0c2e47f00bff91a5a617e189cd3dedcd96d8e
+
+[derle]
+ekconf  = -Dcelt051=disabled -Dgtk_doc=disabled
+tip     = meson
+
+[pakur]
+tip     = meson

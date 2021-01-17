@@ -1,0 +1,21 @@
+[paket]
+tanim   = SQL veritabanı altyapısı uygulayan bir C kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://www.sqlite.org
+
+[gerek]
+derleme = tcl
+calisma = tcl
+
+[kaynak]
+1       = $url/2019/sqlite-src-3280000.zip
+
+[sha256]
+1 		= 905279142d81c23e0a8803e44c926a23abaf47e2b274eda066efae11c23a6597
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

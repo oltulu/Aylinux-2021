@@ -1,0 +1,21 @@
+[paket]
+tanim   = Simple X HotKey Daemon
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/baskerville/sxhkd
+
+[gerek]
+derleme = libxcb xcb-util xcb-util-keysyms
+calisma =
+
+[kaynak]
+1       = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 1edc8b1a8b3631c10ba9cb9df1181830dacbbdf77adb558e31d5dd2029637386
+
+[derle]
+betik   = make PREFIX=/usr
+
+[pakur]
+betik   = make PREFIX=/usr DESTDIR="$PKG" install

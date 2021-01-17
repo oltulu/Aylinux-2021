@@ -1,0 +1,24 @@
+[paket]
+tanim   = Tux ve arkadaşlarını içeren kart yarışı oyunu
+paketci = yasarciv67
+grup    = oyun
+url     = https://supertuxkart.net
+
+[gerek]
+derleme = openal libvorbis fribidi curl bluez libxrandr glu cmake mesa imagemagick libxkbcommon
+calisma = 
+
+[kaynak]
+1       = https://downloads.sourceforge.net/$isim/$isim-$surum-src.tar.xz
+
+[sha256]
+1       = e9b02b0b11ab68aacaec38306903feffe59a501224805cd3645cebf10e880ae8
+
+[derle]
+betik	= cd $SRC/$isim-$surum-src
+ekconf	= -DBUILD_RECORDER=0
+tip     = cmake
+
+[pakur]
+betik	= cd $SRC/$isim-$surum-src
+tip     = cmake

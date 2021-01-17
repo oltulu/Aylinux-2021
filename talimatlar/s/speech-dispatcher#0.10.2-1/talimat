@@ -1,0 +1,24 @@
+[paket]
+tanim   = Konuşma sentezi arayüzü için üst düzey cihazdan bağımsız katman
+paketci = milisarge
+grup    = kütüphane
+url     = http://devel.freebsoft.org/speechd
+
+[gerek]
+derleme = glib dotconf alsa-lib espeak libao python
+calisma =
+
+[kaynak]
+gz      = https://github.com/brailcom/speechd/releases/download/${surum}
+
+[sha256]
+1       = 37c040e39c3ac8da755d4901c93b7666fdb4c85856fdf5e6d159e769a1286f99
+
+[derle]
+ekconf  = --enable-shared --without-flite
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -d "${PKG}/var/log/speech-dispatcher"
+betik   = sed -i 's|includedir=.*|includedir=${prefix}/include/speech-dispatcher|g' "${PKG}/usr/lib/pkgconfig/speech-dispatcher.pc"

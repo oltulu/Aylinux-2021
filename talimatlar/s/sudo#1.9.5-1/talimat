@@ -1,0 +1,27 @@
+[paket]
+tanim   = Kullanıcılara root yetkisi vererek uygulama yetkili çalıştırma
+paketci = milisarge
+grup 	= temel
+url     = http://www.sudo.ws
+
+[gerek]
+derleme  = pam
+calisma  =  
+
+[kaynak]
+gz     	= http://www.sudo.ws/sudo/dist
+dosya   = sudo.pam
+
+[sha256]
+#1 		= 9129fa745a08caff0ce2042d2162b38eb9bf73bf43fcb248ac8b3a750c1f13a1
+#2 		= 95cce710b0e6475e1949fc8a90bdd05ec0aa6d91ad73e506dfc6998373196e23
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+tip     = gnu
+betik   = mkdir -pv $PKG/etc/pam.d
+betik   = echo "%wheel ALL=(ALL) ALL" >> $PKG/etc/sudoers
+betik   = rm -rf $PKG/run
+betik   = install -Dm644 "$SRC/sudo.pam" "$PKG/etc/pam.d/sudo"

@@ -1,0 +1,31 @@
+[paket]
+tanim	= Hafif ve kullanıcı dostu e-posta istemcisi
+paketci	= yasarciv67
+grup	= ağ
+url		= http://sylpheed.sraoss.jp/en
+
+[gerek]
+derleme	= gpgme openssl libnsl glib gtk2
+calisma = 
+
+[kaynak]
+bz2		= http://sylpheed.sraoss.jp/sylpheed/v${surum%.*}
+2		= https://sylpheed.sraoss.jp/redmine/attachments/download/145/v2-0001-libsylph-ssl.c-Support-SNI-some-servers-imap.gmai.patch::Support-SNI-some-servers-imap.gmail.patch
+
+[sha256]
+1		= eb23e6bda2c02095dfb0130668cf7c75d1f256904e3a7337815b4da5cb72eb04
+2		= 2c622fa0d110d5745925d3a265d7dd953679d335f85a3ed3d1dcc699d9575d89
+
+
+[derle]
+betik	= sed -i 's,enchant/,enchant-2/,g' src/compose.c
+betik	= sed -i 's/ enchant/ enchant-2/g' configure
+yama	= Support-SNI-some-servers-imap.gmail.patch
+ekconf	= --enable-maintainer-mode --enable-ldap
+tip		= gnu
+betik	= cd plugin/attachment_tool && make
+
+[pakur]
+betik	= make DESTDIR="$PKG/" LDFLAGS+="/usr/lib/enchant-2" install
+betik	= cd plugin/attachment_tool
+betik	= make DESTDIR="$PKG/" install-plugin

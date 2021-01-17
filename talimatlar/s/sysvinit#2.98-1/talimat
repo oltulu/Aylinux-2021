@@ -1,0 +1,24 @@
+[paket]
+tanim   = Sistem açılış araçları - Init sistemi
+paketci = milisarge
+grup    = temel
+url     = ftp://ftp.cistron.nl/pub/people/miquels/sysvinit
+
+[kaynak]
+xz      = http://download.savannah.nongnu.org/releases/sysvinit
+2       = http://www.linuxfromscratch.org/patches/downloads/sysvinit/sysvinit-$surum-consolidated-1.patch
+dosya   = inittab
+
+[sha256]
+#1       = 2a2e26b72aa235a23ab1c8471005f890309ce1196c83fbc9413c57b9ab62b587
+2       = b11f6b6550a284491be53abc6d22908b3f699b5ee746f07c20f2c2f918ae1247
+
+[derle]
+yama    = sysvinit-2.98-consolidated-1.patch
+betik   = make -C src
+
+[pakur]
+betik   = make -C src ROOT=$PKG install
+betik   = mkdir -p $PKG/{usr/bin,etc} ; cp $SRC/inittab $PKG/etc/
+betik   = mv $PKG/sbin/* $PKG/usr/bin/
+betik   = rm -rf $PKG/{bin,sbin,usr/share}

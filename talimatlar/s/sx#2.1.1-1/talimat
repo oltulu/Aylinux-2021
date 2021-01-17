@@ -1,0 +1,22 @@
+[paket]
+tanim   = Bir Xorg sunucusunu başlatmak için startx'e basit bir alternatif.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/Earnestly/sx
+
+[gerek]
+derleme = glib
+calisma = libxml2 glib
+
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 32f84a14f46ff1c04c49d08cdfcfa6d25d18f4b3aff958794684c5d0e5fd3d5f
+
+[derle]
+
+	      
+[pakur]
+betik = make PREFIX=/usr DESTDIR="${PKG}" install

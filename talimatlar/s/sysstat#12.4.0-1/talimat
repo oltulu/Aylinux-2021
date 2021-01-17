@@ -1,0 +1,25 @@
+[paket]
+tanim   = Performans izleme araçlarının toplanması
+paketci = milisarge
+grup    = sistem
+url     = http://pagesperso-orange.fr/sebastien.godard/
+
+[gerek]
+derleme = lm_sensors
+calisma =
+
+[kaynak]
+xz      = $url
+
+[sha256]
+1       = 649e4afd74a95c9200e17f8da189c9feb05c0515132f4d76aef838814dd04a3d
+
+[derle]
+betik   = sed -i 's/lib64/lib/' configure
+betik   = sed -i '/LFLAGS =/d; s/LFLAGS/LDFLAGS/g' Makefile.in
+betik   = export conf_dir=/etc/default
+ekconf  = --enable-copy-only --disable-file-attr --with-systemdsystemunitdir= --enable-install-cron
+tip     = gnu
+
+[pakur]
+tip     = gnu
