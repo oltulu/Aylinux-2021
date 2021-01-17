@@ -1,0 +1,17 @@
+[paket]
+tanim   = ISO 9660 Rock Ridge Dosya Sistemi Manipülatörü
+paketci = milisarge
+grup    = sistem
+url     = https://www.gnu.org/software/xorriso
+
+[kaynak]
+gz         = https://www.gnu.org/software/xorriso
+
+[sha256]
+1          = c100021e78b55e73a28826906e9d398ef1037b128ac0e1cc48faba8aa3dcdf15
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

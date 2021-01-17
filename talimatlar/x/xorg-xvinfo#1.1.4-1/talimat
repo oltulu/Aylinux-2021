@@ -1,0 +1,23 @@
+[paket]
+tanim   = X-Video uzantısı ile erişilebilen ekranla ilişkili tüm video adaptörlerinin yeteneklerini yazdırır
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxv
+calisma = xorg-libx11 xorg-libxv
+
+[kaynak]
+1      = $url/archive/individual/app/xvinfo-$surum.tar.bz2
+
+[sha512]
+1 		= 85e1f936c5c826f0fdde3670bd77d5cde8641c6e8e7849e42142e91b5aa01d7e0e60d2b064eb6fef4f5666321813ca2dc9f9656756ccbe6dcda37b119ee8a63e
+
+[derle]
+betik = cd xvinfo-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xvinfo-$surum
+tip 	= gnu

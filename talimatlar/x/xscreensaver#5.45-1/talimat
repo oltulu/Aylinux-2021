@@ -1,0 +1,28 @@
+[paket]
+tanim   = X Pencere Sistemi için ekran koruyucu ve kilit aracı
+paketci = milisarge yasarciv
+grup    = sistem
+url     = https://www.jwz.org/xscreensaver/
+
+[gerek]
+derleme = glu libxinerama libxmu libxpm libxrandr gtk3
+calisma =
+
+[kaynak]
+gz     = $url
+dosya  = xscreensaver-pam
+
+[sha256]
+1       = 7016df6736ba0126a68c1f35abcf411a695fe93bc01a18ebd9df46c9a9f4d50d
+
+[derle]
+betik   = sed 's|-std=c89||' -i configure.in
+betik   = autoreconf -fiv
+ekconf  = --with-login-manager --with-x-app-defaults=/usr/share/X11/app-defaults --with-pam --without-pixbuf --with-jpeg
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = make install_prefix=${PKG} install
+betik   = install -d "${PKG}/etc/pam.d"
+betik   = cp $SRC/xscreensaver-pam ${PKG}/etc/pam.d/xscreensaver

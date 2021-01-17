@@ -1,0 +1,19 @@
+[paket]
+tanim   = X.org trans kutuphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[kaynak]
+1      = $url/releases/individual/lib/xtrans-$surum.tar.gz
+
+[sha256]
+1 		= 48ed850ce772fef1b44ca23639b0a57e38884045ed2cbb18ab137ef33ec713f9
+
+[derle]
+betik = cd xtrans-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xtrans-$surum
+tip 	= gnu

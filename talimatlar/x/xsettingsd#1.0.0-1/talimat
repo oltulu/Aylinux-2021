@@ -1,0 +1,23 @@
+[paket]
+tanim   = XSETTINGS spesifikasyonunu uygulayan arka plan programı
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/derat/xsettingsd
+
+[gerek]
+derleme = libx11 scons
+calisma =
+
+[kaynak]
+1       = $url/archive/v${surum}.tar.gz
+
+[sha256]
+1       = fe0b895b999af94004dc2eabe6dd113c475e3464d548cfe4e545fc02978ba977
+
+[derle]
+betik   = env CPPFLAGS="$CXXFLAGS" scons xsettingsd dump_xsettings
+
+[pakur]
+betik   = install -Dm755 xsettingsd dump_xsettings -t "$PKG/usr/bin/"
+betik   = install -Dm644 xsettingsd.1 dump_xsettings.1 -t "$PKG/usr/share/man/man1/"
+

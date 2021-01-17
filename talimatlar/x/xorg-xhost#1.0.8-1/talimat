@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için sunucu erişim kontrol programı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-libxmu xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/xhost-$surum.tar.bz2
+
+[sha512]
+1 		= 55581f9bc45a70a73b13fe718ca83c4cb0a6116d26addc0f07659ebeb5bf7d2379e84cab5a1702ae77a298a66f42ae03f41ddc7d5acd61c6f18448e58ad7cb6b
+
+[derle]
+betik = cd xhost-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xhost-$surum
+tip 	= gnu

@@ -1,0 +1,70 @@
+Index: GlobalParams.cc
+===================================================================
+RCS file: /home/derekn/src/cvs/xpdf/GlobalParams.cc,v
+retrieving revision 1.204
+diff -c -r1.204 GlobalParams.cc
+*** GlobalParams.cc	18 Sep 2019 21:12:16 -0000	1.204
+--- GlobalParams.cc	22 Oct 2019 19:37:56 -0000
+***************
+*** 471,476 ****
+--- 471,477 ----
+  
+  #if HAVE_FONTCONFIG
+  void SysFontList::scanFontconfigFonts() {
++   FcConfig *cfg;
+    FcPattern *pattern;
+    FcObjectSet *objSet;
+    FcFontSet *fontSet;
+***************
+*** 481,487 ****
+    char c;
+    int fontNum, i, j, n;
+  
+!   FcInit();
+  
+    pattern = FcPatternBuild(NULL,
+  			   FC_OUTLINE, FcTypeBool, FcTrue,
+--- 482,490 ----
+    char c;
+    int fontNum, i, j, n;
+  
+!   if (!(cfg = FcInitLoadConfigAndFonts())) {
+!     return;
+!   }
+  
+    pattern = FcPatternBuild(NULL,
+  			   FC_OUTLINE, FcTypeBool, FcTrue,
+***************
+*** 489,495 ****
+  			   NULL);
+    objSet = FcObjectSetBuild(FC_FAMILY, FC_STYLE, FC_STYLELANG,
+  			    FC_FILE, FC_INDEX, NULL);
+!   fontSet = FcFontList(NULL, pattern, objSet);
+    FcPatternDestroy(pattern);
+    FcObjectSetDestroy(objSet);
+  
+--- 492,498 ----
+  			   NULL);
+    objSet = FcObjectSetBuild(FC_FAMILY, FC_STYLE, FC_STYLELANG,
+  			    FC_FILE, FC_INDEX, NULL);
+!   fontSet = FcFontList(cfg, pattern, objSet);
+    FcPatternDestroy(pattern);
+    FcObjectSetDestroy(objSet);
+  
+***************
+*** 568,574 ****
+      FcFontSetDestroy(fontSet);
+    }
+  
+!   FcFini();
+  }
+  #endif // HAVE_FONTCONFIG
+  
+--- 571,577 ----
+      FcFontSetDestroy(fontSet);
+    }
+  
+!   FcConfigDestroy(cfg);
+  }
+  #endif // HAVE_FONTCONFIG
+  

@@ -1,0 +1,21 @@
+[paket]
+tanim   = X11 gelistiricileri icin protokol dosyalari (headers)
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros meson
+calisma = 
+
+[kaynak]
+1 = https://xorg.freedesktop.org/archive/individual/proto/xorgproto-$surum.tar.bz2
+
+[sha512]
+1 = 2db682d10280ca58cdc04d8eb9fef30c111d4cd379de9fec86cff317865b859a576de5426447be9231d24be9762cc1d684c57383a99ad499398e8b7d62b1c03c
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+dosya = pakur.sh

@@ -1,0 +1,24 @@
+[paket]
+tanim   = X için kullanıcı tercih programı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxmu
+
+[kaynak]
+1      = $url/archive/individual/app/xset-$surum.tar.bz2
+
+[sha512]
+1 		= 0b9df1b72305e5c24f1e1664578aa4411a5ffcdc5d318458117594e641f01c34700205b0d16c08abf4a8106d36128ccdbe1ea1f1035fce9018d6b52801a8b72b
+
+[derle]
+betik = cd xset-$surum
+betik = ./configure --prefix=/usr --without-fontcache --without-xf86misc
+betik = make
+	      
+[pakur]
+betik = cd xset-$surum
+tip 	= gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Bir X sunucusundaki pencereler hakkında bilgi yazdırmak için komut satırı yardımcı programı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libx11
+calisma = xorg-libxcb
+
+[kaynak]
+1      = $url/archive/individual/app/xwininfo-$surum.tar.bz2
+
+[sha512]
+1 		= d3ab103a0a311e08d1eabc4346750c21eb7d2fbcdc27cab0989a2624b9cd488911614fcf9832603353450114b1231a8f8262cab16e090a0d458d83ec7b6b959b
+
+[derle]
+betik = cd xwininfo-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xwininfo-$surum
+tip 	= gnu

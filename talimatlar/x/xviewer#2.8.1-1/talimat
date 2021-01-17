@@ -1,0 +1,21 @@
+[paket]
+tanim   = Basit ve kullanımı kolay bir resim görüntüleyici. X-Apps Projesi.
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/xviewer
+
+[gerek]
+derleme = gobject-introspection gnome-common libpeas libexif
+calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+
+[derle]
+betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-gtk-doc --libexecdir="/usr/lib/${isim}"
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}/" install

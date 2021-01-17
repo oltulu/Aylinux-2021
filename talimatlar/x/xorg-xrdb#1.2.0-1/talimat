@@ -1,0 +1,23 @@
+[paket]
+tanim   = X sunucusu kaynak veritabanı yardımcı programı
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libx11 xorg-libxmu
+
+[kaynak]
+1      = $url/archive/individual/app/xrdb-$surum.tar.bz2
+
+[sha512]
+1 		= 14e1cdfb2152fb28f1f4641b177ab236648d7e967a95b952bf4cfce8d3e1ef085e85385354e3381aaf644462e8888a1847f755ab4016ecb4cb4a715b001dd2ef
+
+[derle]
+betik = cd xrdb-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xrdb-$surum
+tip 	= gnu

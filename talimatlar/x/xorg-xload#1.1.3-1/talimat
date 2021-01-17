@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için sistem yükü ortalama göstergesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11
+
+[kaynak]
+1      = $url/archive/individual/app/xload-$surum.tar.bz2
+
+[sha512]
+1 		= 8dbc4f0cee7b30d7381be819152b27653d9b0049266e59bde2e2c972a88c4f2bdea766fc407bbdfef15d0aab30fedc756189a1048170a812853133a5094fe7a5
+
+[derle]
+betik = cd xload-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xload-$surum
+tip 	= gnu

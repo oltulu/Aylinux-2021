@@ -1,0 +1,23 @@
+[paket]
+tanim   = Kök pencere arka planınızı belirli bir desene veya renge ayarlamak için klasik X yardımcı programı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-xbitmaps
+calisma = xorg-libx11 xorg-libxcursor xorg-libxmu
+
+[kaynak]
+1      = $url/archive/individual/app/xsetroot-$surum.tar.bz2
+
+[sha512]
+1 		= 0b9df1b72305e5c24f1e1664578aa4411a5ffcdc5d318458117594e641f01c34700205b0d16c08abf4a8106d36128ccdbe1ea1f1035fce9018d6b52801a8b72b
+
+[derle]
+betik = cd xsetroot-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xsetroot-$surum
+tip 	= gnu

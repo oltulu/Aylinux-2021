@@ -1,0 +1,24 @@
+[paket]
+tanim   = X Komut Satırı
+paketci = oltulu
+grup 	= kütüphane
+url     = ftp://ftp.invisible-island.net
+
+[gerek]
+derleme = 
+calisma = xorg-libxft xorg-libxaw xorg-ncurses xorg-luit xorg-xbitmaps libutempter xorg-libxkbfile
+
+[kaynak]
+1      = ftp://ftp.invisible-island.net/${isim}/${isim}-${surum}.tgz
+
+[sha256]
+1 		= cf327d73c058354d6816250fbd2ce439da0fcfd991ad48adc0e7c0c715ac8a77
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+tip 	= gnu
+betik = chmod 0755 "${PKG}/usr/bin/xterm"
+betik = install -m755 -d ${PKG}/usr/share/applications
+betik = install -m644 ${SRC}/${isim}-${surum}/{xterm,uxterm}.desktop ${PKG}/usr/share/applications/

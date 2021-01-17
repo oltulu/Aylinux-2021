@@ -1,0 +1,23 @@
+[paket]
+tanim   = X Pencere Sistemi görüntü damping programı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxt
+calisma = xorg-libxkbfile
+
+[kaynak]
+1      = $url/archive/individual/app/xwd-$surum.tar.bz2
+
+[sha512]
+1 		= 6fdb0a115ae505169bbc7fcc45580daf26bced2e26e0bf9a877636016038931a8386e8edcbe015f4024be508d0461906adef4834cf22a445e3c282f0b8fad17e
+
+[derle]
+betik = cd xwd-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xwd-$surum
+tip 	= gnu

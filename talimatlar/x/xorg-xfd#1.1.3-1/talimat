@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 çekirdek protokolünü veya libXft2'yi kullanarak bir fonttaki tüm karakterleri görüntüler.
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxaw fontconfig xorg-libxft xorg-libxrender xorg-libxmu xorg-libxkbfile
+
+[kaynak]
+1      = $url/releases/individual/app/xfd-$surum.tar.bz2
+
+[sha512]
+1 		= 68e2d4ce5e24215353b6f3231191d69639c4dd90a703e03ccf152bbfe4012da071c387ba289f918fb0336a3be9ee49dc05cbec7273fa85f5e476ead7e10795f0
+
+[derle]
+betik = cd xfd-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xfd-$surum
+tip 	= gnu

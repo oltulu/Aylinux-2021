@@ -1,0 +1,17 @@
+[paket]
+tanim   = X.org Xtrans kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[kaynak]
+gz      = $url/releases/individual/lib
+
+[sha256]
+1 		= 48ed850ce772fef1b44ca23639b0a57e38884045ed2cbb18ab137ef33ec713f9
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

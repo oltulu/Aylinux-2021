@@ -1,0 +1,23 @@
+[paket]
+tanim   = Tuş haritalarını ve düğme eşlemelerini değiştirmek için yardımcı program
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/archive/individual/app/xmodmap-$surum.tar.bz2
+
+[sha512]
+1 		= 324c7dcef843186088f16b3bc47485eb3c9b4331e56ce43b692deb4bb3d4f4f27512480e91a379cceac8383df920dc5e37cd825246b50b6343291cec48134c04
+
+[derle]
+betik = cd xmodmap-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xmodmap-$surum
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = El yazısı Not PDF ek açıklama desteğiyle yazılım alma
+paketci = milisarge
+grup    = ofis
+url     = https://github.com/xournalpp/xournalpp
+
+[gerek]
+derleme = cmake libxml2 poppler-glib gtk3 portaudio libzip
+calisma =
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 2bfd456205b75c86cba598e86c2ef6011871a30f6452221fe675680fd768db3a
+
+[derle]
+betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr && make translations && make
+
+[pakur]
+tip     = gnu

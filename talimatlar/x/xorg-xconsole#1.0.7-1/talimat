@@ -1,0 +1,23 @@
+[paket]
+tanim   = X ile sistem konsolu mesajlarını izleyin
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11
+
+[kaynak]
+1      = $url/releases/individual/app/xconsole-$surum.tar.bz2
+
+[sha256]
+1 		= d1144882df207378381bc83927906559defbf7b83a01d52c50ad44234c5851e0
+
+[derle]
+betik = cd xconsole-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xconsole-$surum
+tip 	= gnu

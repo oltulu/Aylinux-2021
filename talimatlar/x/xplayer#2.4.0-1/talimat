@@ -1,0 +1,24 @@
+[paket]
+tanim   = Basit medya oynatıcı. X-Apps Projesi.
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/xplayer
+
+[gerek]
+derleme = gobject-introspection clutter clutter-gst clutter-gtk
+calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr
+
+[kaynak]
+git      = https://github.com/linuxmint/xplayer
+
+[sha256]
+#1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik = cd $isim
+betik 	= ./autogen.sh ax_is_release="yes" --prefix="/usr" --localstatedir="/var" --libexecdir="/usr/lib/${isim}"
+betik 	= make
+    	      
+[pakur]
+betik = cd $isim
+betik 	= make DESTDIR="$PKG/" install

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Xorg için video modu alıcısı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxaw
+calisma = xorg-libx11 xorg-libxaw xorg-libxmu xorg-libxt xorg-libxxf86vm
+
+[kaynak]
+1      = $url/archive/individual/app/xvidtune-$surum.tar.bz2
+
+[sha512]
+1 		= 0f8a4fca1b544ef8f9623246fb0ece75739a0889f2e729c040cd768c595f0bbbfa3a665576369032535c34c7d55784a29b62f0d51432bf2b75d2cec619db7352
+
+[derle]
+betik = cd xvidtune-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xvidtune-$surum
+tip 	= gnu
