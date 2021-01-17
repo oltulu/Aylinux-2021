@@ -1,0 +1,26 @@
+[paket]
+tanim   = Btrfs dosya sistemi araçları
+paketci = milisarge
+grup 	= sistem
+url     = https://btrfs.wiki.kernel.org/index.php/Main_Page
+
+[gerek]
+derleme = zstd
+calisma = 
+
+[kaynak]
+1       = https://mirrors.edge.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v$surum.tar.xz
+
+[sha256]
+1 		= 36ac4a0198ffff79d5800c537ea4b19769a8fd3ad870f75413d25b20e2d83233
+
+[derle]
+betik   = cd $isim-v${surum}
+betik   = NOCONFIGURE=1 ./autogen.sh
+betik   = gcc ${CFLAGS} kernel-lib/mktables.c -o mktables
+ekconf  = --disable-documentation --disable-backtrace --disable-python
+tip     = gnu
+	      
+[pakur]
+betik   = cd $isim-v${surum}
+tip     = gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Bitmap font X font çevirici aracı
+paketci = milisarge
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-util-macros
+calisma = 
+
+[kaynak]
+bz2     = $url/archive/individual/app
+
+[sha256]
+1 		= 4b4df05fc53f1e98993638d6f7e178d95b31745c4568cee407e167491fd311a2
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
