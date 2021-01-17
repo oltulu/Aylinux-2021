@@ -1,0 +1,28 @@
+[paket]
+tanim   = Connman için LXQt sistem çekmecesi uygulaması
+paketci = yasarciv
+grup    = ağ
+url     = https://github.com/lxqt/lxqt-connman-applet
+arsiv	= $isim
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools connman liblxqt qt5-svg
+calisma =
+
+[kaynak]
+git		= $url
+dosya	= turkish.patch
+dosya	= russian_translation.patch
+dosya	= use_app_font.patch
+
+[sha256]
+
+[derle]
+betik	= printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+yama	= turkish.patch
+yama	= russian_translation.patch
+betik	= patch -p1 -i ../use_app_font.patch
+tip     = cmake
+
+[pakur]
+tip     = cmake

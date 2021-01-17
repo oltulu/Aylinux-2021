@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt için temalar, grafikler ve simgeler
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-themes
+
+[gerek]
+derleme = cmake lxqt-build-tools
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = ae7bdcc86fcd0d492a24e6deb13a629edb05c4c44ffebe73eb21903bd8fa25eb
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

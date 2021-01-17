@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt hakkında penceresi
+paketci = yasarciv
+grup    = masaüstü
+url     = https://github.com/lxqt/lxqt-about
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools liblxqt libqtxdg qt5-svg
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = b7aaeb2a677b049f7df59fc27eab61721afc066d6064ca333ce55dd698247b6c
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

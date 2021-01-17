@@ -1,0 +1,21 @@
+[paket]
+tanim   = Sudo için LXQt GUI ön ucu
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-sudo
+
+[gerek]
+derleme = cmake lxqt-build-tools liblxqt sudo qt5-tools qt5-svg
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = f4950ff7c53c64b03859801e0b317dae29cdc2ae8b093c85d91a3891d2611092
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

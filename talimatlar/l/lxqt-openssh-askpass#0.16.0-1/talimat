@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt openssh parola istemcisi
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-openssh-askpass
+
+[gerek]
+derleme = cmake lxqt-build-tools liblxqt qt5-tools qt5-svg
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 99f686302e2be457b82ba3444ef36613361a32335f0c44e894835a11a5d22046
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

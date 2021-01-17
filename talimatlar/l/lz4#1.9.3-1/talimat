@@ -1,0 +1,18 @@
+[paket]
+tanim   = Lz4 hızlı veri sıkıştırma uygulaması
+paketci = milisarge
+grup 	= temel
+url     = https://github.com/Cyan4973/lz4
+
+[kaynak]
+github  = lz4/lz4
+
+[sha256]
+#1 		= 33af5936ac06536805f9745e0b6d61da606a1f8b4cc5c04dd3cbaca3b9b4fc43
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+betik 	= make install PREFIX=/usr DESTDIR="$PKG"
+betik 	= rm -f $PKG/usr/lib/*.a

@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt oluşturma araçları
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-build-tools
+
+[gerek]
+derleme = cmake qt5-tools
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 8cad73636e3a1f09baab0d82a2e76f3e171ce2adacade03ccc0a6cf0a51d69a9
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt güç yönetimi modülü
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-powermanagement
+
+[gerek]
+derleme = cmake lxqt-build-tools liblxqt lxqt-globalkeys qt5-tools qt5-svg kidletime solid upower 
+calisma = upower
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 2d919c093b7982298b67804810ff610fbc552cac40a3aaa7ab6415adc9e7e510
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

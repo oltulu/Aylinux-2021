@@ -1,0 +1,21 @@
+[paket]
+tanim   = Qt için LXQt platform entegrasyonu
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-qtplugin
+
+[gerek]
+derleme = cmake qt5-tools lxqt-build-tools libdbusmenu-qt5 libfm-qt libqtxdg qt5-svg
+calisma = 
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 4920add017ec6805d50ae653c09ffd9623314aaa2a606054e01a4b9e6498ea90
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

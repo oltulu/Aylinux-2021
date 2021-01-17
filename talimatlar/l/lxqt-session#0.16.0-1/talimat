@@ -1,0 +1,23 @@
+[paket]
+tanim   = LXQt oturum işleyicisi
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-session
+
+[gerek]
+derleme = cmake lxqt-build-tools xdg-user-dirs liblxqt pm-utils consolekit2 libxdg-basedir qt5-tools qt5-svg
+calisma = breeze-icons oxygen-icons5 milis-gtk-theme milis-icon-theme pm-utils consolekit2 libxdg-basedir
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 547e01e173921357245fb938718bd2401b38e73245cdcbecf195130e856d4959
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik	= sed -i 's/theme=frost/theme=ambiance/g' $PKG/usr/share/lxqt/lxqt.conf
+betik	= sed -i 's/icon_theme=oxygen/icon_theme=milis-icon-theme/g' $PKG/usr/share/lxqt/lxqt.conf

@@ -1,0 +1,17 @@
+[paket]
+tanim   = Lzo taşınabilir kayıpsız veri sıkıştırma uygulaması
+paketci = milisarge
+grup 	= temel
+url     = http://www.oberhumer.com/opensource/lzo
+
+[kaynak]
+gz		= $url/download
+
+[sha256]
+1 		= c0f892943208266f9b6543b3ae308fab6284c5c90e627931446fb49b4221a072
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh

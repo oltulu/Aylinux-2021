@@ -1,0 +1,21 @@
+[paket]
+tanim   = Küresel klavye kısayolları kaydı için LXQt arka plan programı ve kitaplığı
+paketci = yasarciv
+grup    = kütüphane
+url     = https://github.com/lxqt/lxqt-globalkeys
+
+[gerek]
+derleme = cmake lxqt-build-tools liblxqt
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 9245d93a98960eee655f87ee9c3bb839580a7e6589c8540d0af73489eff1d1ed
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

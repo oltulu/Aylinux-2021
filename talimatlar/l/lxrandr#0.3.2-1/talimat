@@ -1,0 +1,22 @@
+[paket]
+tanim   = İzleme yapılandırma aracı (LXDE'nin bir parçası
+paketci = Cihan_Alkan
+url     = https://lxde.org
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          = https://downloads.sourceforge.net/lxde/$isim-$surum.tar.xz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = ./configure --sysconfdir=/etc --prefix=/usr --enable-gtk3
+betik     = make
+
+[pakur]
+betik      = make DESTDIR="$PKG" install
+betik      = echo 'X-AppStream-Ignore=true' >> "$PKG/usr/share/applications/$isim.desktop"

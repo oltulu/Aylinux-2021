@@ -1,0 +1,24 @@
+[paket]
+tanim   = LXQt sistem yönetim aracı
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lxqt-admin
+
+[gerek]
+derleme = cmake lxqt-build-tools polkit-qt-1 liblxqt qt5-tools qt5-svg
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 1ea928c83a04d59db27274e300215d9bc8159b0cfc5bdae11ce78f05caa450dc
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake
+; systemd gereklerinin silinmesi systemd-{timedated,timesyncd}
+betik   = rm -f ${PKG}/usr/bin/lxqt-admin-time
+betik   = rm -f ${PKG}/usr/share/applications/lxqt-admin-time.desktop

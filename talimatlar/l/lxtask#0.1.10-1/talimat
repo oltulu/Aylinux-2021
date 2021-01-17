@@ -1,0 +1,22 @@
+[paket]
+tanim 	= Görev yöneticisi uygulaması
+paketci	= milisarge
+grup 	= sistem
+url 	= https://lxde.org
+
+[gerek]
+derleme = gtk3
+calisma = 
+
+[kaynak]
+xz   	= https://downloads.sourceforge.net/lxde
+
+[sha256]
+1 		= 41ea88f0adf31a840e4b9d137ca5ea802860d1a117845ba25f3080d74a876433
+
+[derle]
+ekconf  = --enable-gtk3
+tip     = gnu
+
+[pakur]
+tip     = gnu

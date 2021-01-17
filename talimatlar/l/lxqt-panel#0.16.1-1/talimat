@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt masaüstü paneli
+paketci = yasarciv
+grup    = masaüstü
+url     = https://github.com/lxqt/lxqt-panel
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools qt5-svg libxkbcommon liblxqt lxqt-globalkeys alsa-lib pulseaudio solid lm_sensors libxcomposite libdbusmenu-qt5 kwindowsystem menu-cache libsysstat kguiaddons libstatgrab 
+calisma = lxmenu-data
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 841a205ee80cb9a68aac1bb635789b883a14074448efec09c773b96cfe71ed4c
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

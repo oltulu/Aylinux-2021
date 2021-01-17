@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt için resim görüntüleyici ve ekran görüntüsü alma aracı
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/lximage-qt
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools qt5-svg libfm-qt libexif libx11 
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = d83a8c1bbbaaa8f211731b790773c3f73c638740cf42d7b215b1594de03dbc90
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

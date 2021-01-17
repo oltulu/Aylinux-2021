@@ -1,0 +1,17 @@
+[paket]
+tanim   = Lzip kayıpsız sıkıştırma algoritmaya sahip uygulama
+paketci = milisarge
+grup 	= onsistem
+url     = http://download.savannah.gnu.org/releases/lzip
+
+[kaynak]
+gz      = $url
+
+[sha256]
+#1 		= e48b5039d3164d670791f9c5dbaa832bf2df080cb1fbb4f33aa7b3300b670d8b
+
+[derle]
+betik 	= ./configure --prefix=/tools ;make
+	      
+[pakur]
+tip 	= gnu
