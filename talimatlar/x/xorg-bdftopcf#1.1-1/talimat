@@ -1,0 +1,23 @@
+[paket]
+tanim   = X fontunu Bitmap Dağıtım Biçiminden Taşınabilir Derlenmiş Biçime Dönüştür
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-xproto
+calisma = 
+
+[kaynak]
+1      = $url/archive/individual/app/bdftopcf-$surum.tar.bz2
+
+[sha256]
+1 		= 4b4df05fc53f1e98993638d6f7e178d95b31745c4568cee407e167491fd311a2
+
+[derle]
+betik = cd bdftopcf-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd bdftopcf-$surum
+tip 	= gnu

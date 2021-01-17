@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 gelistiricileri icin protokol dosyalari
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros meson
+calisma = 
+
+[kaynak]
+1       = https://xorg.freedesktop.org/archive/individual/proto/xorgproto-$surum.tar.bz2
+
+[sha512]
+#1       = f26c17f4a027acdc799b532fa65c3ea1b0e8c30794c7b7293060ee9d9dec84b4878966cd2dcda43584849232e73a208abd4213374f89b05c10e5aae92bdc00be
+
+[derle]
+betik   = mkdir build && milis-meson xorgproto-$surum build -Dlegacy=true
+tip     = ninja
+	      
+[pakur]
+tip     = ninja
+betik   = rm -f ${PKG}/usr/include/X11/extensions/{apple,windows}*
+betik   = rm -f ${PKG}/usr/share/pkgconfig/{apple,windows}wmproto.pc

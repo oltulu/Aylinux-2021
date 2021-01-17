@@ -1,0 +1,23 @@
+[paket]
+tanim   = X Rendering eklenti istemci kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-libx11 xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libXrender-$surum.tar.bz2
+
+[sha256]
+1 		= c06d5979f86e64cabbde57c223938db0b939dff49fdb5a793a1d3d0396650949
+
+[derle]
+betik = cd libXrender-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd libXrender-$surum
+tip 	= gnu

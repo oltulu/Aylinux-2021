@@ -1,0 +1,23 @@
+[paket]
+tanim   = X Klavye Uzantısını kullanarak klavyeyi ayarlayın
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxkbfile
+calisma = xorg-libxkbfile
+
+[kaynak]
+1      = $url/releases/individual/app/setxkbmap-$surum.tar.bz2
+
+[sha256]
+1 		= a9ddb3963f263ba13f0ea105d8c45a531832140530217cc559587bb94f02d3e1
+
+[derle]
+betik= cd setxkbmap-${surum}
+dosya = derle.sh
+	      
+[pakur]
+betik= cd setxkbmap-${surum}
+tip 	= gnu

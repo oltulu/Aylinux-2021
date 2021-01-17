@@ -1,0 +1,22 @@
+[paket]
+tanim   = X Klavye Uzantısı için Üst Düzey API
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://www.freedesktop.org/wiki/Software/LibXklavier/
+
+[gerek]
+derleme = iso-codes libxml2 xorg-libx11 glib gobject-introspection xorg-libxkbfile
+calisma =
+
+[kaynak]
+bz2      = http://pkgs.fedoraproject.org/repo/pkgs/libxklavier/$isim-$surum.tar.bz2/13af74dcb6011ecedf1e3ed122bd31fa
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= ./autogen.sh --prefix=/usr --with-xkb-bin-base=/usr/bin --with-xkb-base=/usr/share/X11/xkb --disable-static --enable-gtk-doc
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için FreeType tabanlı yazı tipi çizim kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxrender
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libXft-$surum.tar.bz2
+
+[sha512]
+1 		= 28fdaf3baa3b156a4a7fdd6e39c4d8026d7d21eaa9be27c9797c8d329dab691a1bc82ea6042f9d4729a9343d93787536fb7e4b606f722f33cbe608b2e79910e8
+
+[derle]
+betik = cd libXft-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd libXft-$surum
+tip 	= gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim   = ICE yetkili dosya yardımcı programı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto libice
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/iceauth-$surum.tar.bz2
+
+[sha512]
+1 		= 9d4520adf951b16a3e784349dbb70d5d8176b74b956f8adc63abf55d049745c113b03ccfa60a281fc39b487db3742302dc6287c9985ce83a0157bf4674df2af1
+
+[derle]
+betik = cd iceauth-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd iceauth-$surum
+tip 	= gnu

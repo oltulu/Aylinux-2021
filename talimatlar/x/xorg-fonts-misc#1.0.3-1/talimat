@@ -1,0 +1,34 @@
+[paket]
+tanim   = X.org misc fontlar
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = 
+calisma = xorg-fonts-encodings xorg-fonts-alias xorg-font-utils
+
+[kaynak]
+1      = ${url}/releases/individual/font/font-arabic-misc-${surum}.tar.bz2
+2      = ${url}/releases/individual/font/font-cursor-misc-${surum}.tar.bz2
+3      = ${url}/releases/individual/font/font-daewoo-misc-${surum}.tar.bz2
+4      = ${url}/releases/individual/font/font-dec-misc-${surum}.tar.bz2
+5      = ${url}/releases/individual/font/font-isas-misc-${surum}.tar.bz2
+6      = ${url}/releases/individual/font/font-jis-misc-${surum}.tar.bz2
+7      = ${url}/releases/individual/font/font-micro-misc-${surum}.tar.bz2
+8      = ${url}/releases/individual/font/font-misc-ethiopic-${surum}.tar.bz2
+9      = ${url}/releases/individual/font/font-misc-meltho-${surum}.tar.bz2
+10      = ${url}/releases/individual/font/font-misc-misc-1.1.2.tar.bz2
+11      = ${url}/releases/individual/font/font-mutt-misc-${surum}.tar.bz2
+12      = ${url}/releases/individual/font/font-schumacher-misc-1.1.2.tar.bz2
+13      = ${url}/releases/individual/font/font-sony-misc-${surum}.tar.bz2
+14      = ${url}/releases/individual/font/font-sun-misc-${surum}.tar.bz2
+
+[md5]
+1 		= 
+
+[derle]
+dosya     = derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh

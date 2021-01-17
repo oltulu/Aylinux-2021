@@ -1,0 +1,43 @@
+[paket]
+tanim   = X Pencere Sistemi için Sekme Pencere Yöneticisi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org 
+
+[gerek]
+derleme = xorg-libxmu xorg-util-macros pixman xorg-libxdamage xorg-libxkbfile xorg-libxfont2 libepoxy 
+calisma = xorg-xauth xorg-libxdmcp xorg-libxshmfence nettle dbus libtirpc xorg-xkbcomp
+
+[kaynak]
+bz2      = http://ftp.x.org/pub/individual/xserver
+
+
+[sha512]
+1 		= [paket]
+tanim   = X Pencere Sistemi için Sekme Pencere Yöneticisi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org 
+
+[gerek]
+derleme = xorg-libxmu xorg-util-macros pixman xorg-libxdamage xorg-libxkbfile xorg-libxfont2 libepoxy 
+calisma = xorg-xauth xorg-libxdmcp xorg-libxshmfence nettle dbus libtirpc xorg-xkbcomp
+
+[kaynak]
+bz2      = http://ftp.x.org/pub/individual/xserver
+
+
+[sha512]
+1 		= 625f0626b122cf95600abe382c3217348999357a0e2d2443092f1b67cff1c98d7ef09303884ceaeac181e0555dc56b0d4d44bda45cc464dac2d9a50c5b32d631
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+dosya = pakur.sh
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+dosya = pakur.sh

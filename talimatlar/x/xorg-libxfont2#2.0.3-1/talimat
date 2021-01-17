@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 yazı tipi rasterleştirme kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = freetype2 xorg-libfontenc xorg-xproto fontsproto xorg-util-macros xorg-xtrans
+calisma = 
+
+[kaynak]
+1      = $url/archive/individual/lib/libXfont2-$surum.tar.bz2
+
+[sha256]
+1 		= 0e8ab7fd737ccdfe87e1f02b55f221f0bd4503a1c5f28be4ed6a54586bac9c4e
+
+[derle]
+betik = cd libXfont2-$surum
+betik = ./configure --prefix=/usr --sysconfdir=/etc --disable-static
+betik = make
+	      
+[pakur]
+betik = cd libXfont2-$surum
+tip 	= gnu

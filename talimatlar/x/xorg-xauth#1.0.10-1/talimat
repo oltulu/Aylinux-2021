@@ -1,0 +1,23 @@
+[paket]
+tanim   = X.Org yetkilendirme ayarları programı
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-libxmu xorg-xproto xorg-libxt xorg-xproto
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/xauth-$surum.tar.bz2
+
+[sha256]
+1 		= 5afe42ce3cdf4f60520d1658d2b17face45c74050f39af45dccdc95e73fafc4d
+
+[derle]
+betik = cd xauth-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xauth-$surum
+tip 	= gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Acik kaynak kodlu OpenGL uyumlu grafik kutuphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://www.xorg-mesa3d.org
+
+[gerek]
+derleme = wayland xorg-libx11 xorg-libdrm xorg-libxext xorg-libxdamage llvm elfutils xorg-libxshmfence libvdpau
+calisma = 
+
+[kaynak]
+1      = https://mesa.freedesktop.org/archive/mesa-$surum.tar.xz
+
+[sha1]
+1 		= 
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+betik = cd mesa-$surum
+tip 	= gnu

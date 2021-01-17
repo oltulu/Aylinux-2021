@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için ölçeklenebilir bir yazı tipi dosyası dizini oluşturun
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-util-macros freetype2 xorg-libfontenc
+calisma = libinput
+
+[kaynak]
+1      = $url/archive/individual/app/mkfontscale-$surum.tar.bz2
+
+[sha512]
+1 		= 4d243160e1f7f8dfa6a8f53349c1a42a55fc99426455ebdef58352c5e951fce8b4f1fbd1061a76c9a148095b002eac372db1ae5e2647d2ccb4886635b317b18c
+
+[derle]
+betik = cd mkfontscale-$surum
+tip 	= gnu
+	      
+[pakur]
+betik = cd mkfontscale-$surum
+tip 	= gnu

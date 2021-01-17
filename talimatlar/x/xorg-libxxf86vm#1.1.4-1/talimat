@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 Ekran Koruyucu uzantı kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-libxext xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libXxf86vm-$surum.tar.bz2
+
+[sha512]
+1 		= c5f92d86e143db02ebb36bcd25618acaa2cb2831f5a23800a06dd431cd73b6702d95de8fe7407ce626336bf614c288d5256f4d87ea7781fad2ab6c517cbf09e0
+
+[derle]
+betik = cd libXxf86vm-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd libXxf86vm-$surum
+tip 	= gnu

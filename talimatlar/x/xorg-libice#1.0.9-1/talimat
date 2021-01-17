@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 Client Arası Değişim kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto xorg-util-macros xorg-xtrans
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libICE-$surum.tar.bz2
+
+[sha256]
+1 		= 8f7032f2c1c64352b5423f6b48a8ebdc339cc63064af34d66a6c9aa79759e202
+
+[derle]
+betik = cd libICE-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd libICE-$surum
+tip 	= gnu

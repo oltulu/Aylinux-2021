@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için bilimsel hesap makinesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxaw
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/xcalc-$surum.tar.bz2
+
+[sha512]
+1 		= 890cb9399e3c55816318ab5f0152ddba05ee141cbae6032759a3b762742ab54df8fcf0394dacc539299f93f27cbbb17aee5cbda5dde8b169a7099f20a1a38388
+
+[derle]
+betik = cd xcalc-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xcalc-$surum
+tip 	= gnu

@@ -1,0 +1,25 @@
+[paket]
+tanim   = XC Bağlama için yardımcı program kütüphaneleri - Standart X tuş sabitleri ve tuş kodlarına dönüştürme
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxcb
+calisma = xorg-libxcb xorg-xcb-util
+
+[kaynak]
+1     = $url/dist/xcb-util-keysyms-$surum.tar.bz2
+
+[sha512]
+1 	   = b14b3100c3ae2379f9df799c0780a1ee39267101e58e4c1c6f390f039348ca2b370bb1df203b9bc68a170d664188d9c73e3553a7ba24d98abea3ed353e8dc0c4
+
+[derle]
+betik 	= cd xcb-util-keysyms-$surum
+betik 	= ./configure --prefix=/usr --disable-static
+betik 	= make
+
+	      
+[pakur]
+betik 	= cd xcb-util-keysyms-$surum
+tip 	= gnu

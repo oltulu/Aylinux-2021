@@ -1,0 +1,23 @@
+[paket]
+tanim   = X oturumlarını sistem utmp / utmpx veritabanlarına kaydedin
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-libxmu xorg-xproto xorg-xproto
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/sessreg-$surum.tar.bz2
+
+[sha256]
+1 		= 78a76ae3f3f6a26547a34630d1b740f42344848b5fb6d7c9c7f7da255e35a6e1
+
+[derle]
+betik = cd sessreg-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd sessreg-$surum
+tip 	= gnu

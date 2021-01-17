@@ -1,0 +1,23 @@
+[paket]
+tanim   = X uygulaması kaynak veritabanını listele
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-libx11 xorg-libxt xorg-xproto
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/app/appres-$surum.tar.bz2
+
+[sha512]
+1 		= 70825563cd80f0f433c48ab2fdae888072939c1b22fb22340b70b9444c97916275ed92c9e5bf9a06bb76c32a5371b89ff7c0211a9a47a227c88311078c2c4137
+
+[derle]
+betik = cd appres-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd appres-$surum
+tip 	= gnu

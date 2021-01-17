@@ -1,0 +1,23 @@
+[paket]
+tanim   = X.org font araçları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/font/font-util-$surum.tar.bz2
+
+[sha256]
+1 		= aa7ebdb0715106dd255082f2310dbaa2cd7e225957c2a77d719720c7cc92b921
+
+[derle]
+betik = cd font-util-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd font-util-$surum
+tip 	= gnu

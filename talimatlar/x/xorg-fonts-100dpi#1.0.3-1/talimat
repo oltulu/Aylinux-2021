@@ -1,0 +1,29 @@
+[paket]
+tanim   = X.org 100dpi fontlar
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = 
+calisma = xorg-fonts-encodings xorg-fonts-alias xorg-font-utils
+
+[kaynak]
+1      = ${url}/releases/individual/font/font-adobe-100dpi-1.0.3.tar.bz2
+2      = ${url}/releases/individual/font/font-adobe-utopia-100dpi-1.0.4.tar.bz2
+3      = ${url}/releases/individual/font/font-bh-100dpi-1.0.3.tar.bz2
+4      = ${url}/releases/individual/font/font-bh-lucidatypewriter-100dpi-1.0.3.tar.bz2
+5      = ${url}/releases/individual/font/font-bitstream-100dpi-1.0.3.tar.bz2
+
+[md5]
+1 		= 1347c3031b74c9e91dc4dfa53b12f143
+2 		= 66fb6de561648a6dce2755621d6aea17
+3 		= 9f11ade089d689b9d59e0f47d26f39cd
+4 		= c8b73a53dcefe3e8d3907d3500e484a9
+5		= 6b223a54b15ecbd5a1bc52312ad790d8
+
+[derle]
+dosya     = derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh

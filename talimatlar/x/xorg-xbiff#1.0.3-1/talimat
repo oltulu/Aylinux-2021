@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yeni mesaj teslimatı için posta kutularını izleyin
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-xbitmaps
+calisma = xorg-libxaw xorg-libxext
+
+[kaynak]
+1      = $url/releases/individual/app/xbiff-$surum.tar.bz2
+
+[sha512]
+1 		= e9fa72817cae5fd6c052a4a59fcd6c696ae9d3f5fd8eecb0e9b0d8994258201cf5f4ae99845dd03e3da56e378eb214658e4450c9291a29399d9ece8af3b9f9e9
+
+[derle]
+betik = cd xbiff-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xbiff-$surum
+tip 	= gnu

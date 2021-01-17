@@ -1,0 +1,25 @@
+[paket]
+tanim   = XC Bağlama için yardımcı program kütüphaneleri
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxcb
+calisma = 
+
+[kaynak]
+1     = $url/dist/xcb-util-$surum.tar.bz2
+
+[sha512]
+1 	   = e60aaa6f582eacd05896c5fd7c8417938318a1288146f3a5b339f77eed24e211c6099963f8813daa621c94173d2934228936b491c0ed79b09a8a67d835867d0e
+
+[derle]
+betik 	= cd xcb-util-$surum
+betik 	= ./configure --prefix=/usr --disable-static
+betik 	= make
+
+	      
+[pakur]
+betik 	= cd xcb-util-$surum
+tip 	= gnu

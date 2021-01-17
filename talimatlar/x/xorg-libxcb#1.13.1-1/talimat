@@ -1,0 +1,27 @@
+[paket]
+tanim   = X11 istemci tarafı kitaplığı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-xcb-proto
+calisma = xorg-xproto xorg-libxext xorg-xcb-proto xorg-libxau
+
+[kaynak]
+1      = $url/dist/libxcb-$surum.tar.bz2
+dosya      = libxcb-1.1-no-pthread-stubs.patch
+
+[sha256]
+1 		= a89fb7af7a11f43d2ce84a844a4b38df688c092bf4b67683aef179cdf2a647c4
+2       = 21bf86a40e4038c52c2a8c57f76b5f10e211e27562cce7526b4bb6fd025dd0c3
+
+[derle]
+betik = cd libxcb-$surum
+betik = patch -Np1 -i ../libxcb-1.1-no-pthread-stubs.patch
+betik = autoreconf -vfi
+tip = gnu
+	      
+[pakur]
+betik = cd libxcb-$surum
+tip 	= gnu

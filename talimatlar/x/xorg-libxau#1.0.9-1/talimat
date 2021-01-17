@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 yetkilendirme kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xproto
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libXau-$surum.tar.bz2
+
+[sha512]
+1 		= 3ca454ba466a807ea28b0f715066d73dc76ad312697b121d43e4d5766215052e9b7ffb8fe3ed3e496fa3f2a13f164ac692ff85cc428e26731b679f0f06a1d562
+
+[derle]
+betik = cd libXau-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd libXau-$surum
+tip 	= gnu

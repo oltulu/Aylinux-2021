@@ -1,0 +1,25 @@
+[paket]
+tanim   = XC Bağlama için yardımcı program kütüphaneleri - Render eklentisi için kullanışlılık işlevleri
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-libxcb
+calisma = xorg-libxcb
+
+[kaynak]
+1     = $url/dist/xcb-util-renderutil-$surum.tar.bz2
+
+[sha512]
+1 	   = 24b567992ecde7e69a406efd0ffb62266610d73b4dc0e5c71093221090fa134c14b850680d1d28dc1f8f4a6f497b4118491e1894ec7c73d2c6ce959d106771cc
+
+[derle]
+betik 	= cd xcb-util-renderutil-$surum
+betik 	= ./configure --prefix=/usr --disable-static
+betik 	= make
+
+	      
+[pakur]
+betik 	= cd xcb-util-renderutil-$surum
+tip 	= gnu

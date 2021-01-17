@@ -1,0 +1,35 @@
+[paket]
+tanim   = 2D motokros platformu oyunu
+paketci = milisarge
+grup    = oyun
+url     = http://xmoto.tuxfamily.org/
+
+[gerek]
+derleme    = mesa libjpeg-turbo libpng lua52 sdl_mixer ode sqlite sdl_ttf sdl_net glu libxdg-basedir libxml2
+calisma    = lua52
+
+[kaynak]
+1          = http://download.tuxfamily.org/xmoto/xmoto/${surum}/xmoto-${surum}-src.tar.gz
+dosya      = xmoto-gcc-7.patch
+dosya      = xmoto-lua52_compat.patch
+dosya      = xmoto-utf8.patch
+
+
+[sha256]
+1          = a584a6f9292b184686b72c78f16de4b82d5c5b72ad89e41912ff50d03eca26b2
+2          = ae0fec33afd5a64dca544393ed57d39e78d1e571d16644cdcb4c62458b55a9fb
+3          = 52f2eba80952c6be186ad7a16b7dbf92112d4248550605aab3159a2ff603efaa
+4          = a92602b52b5afd74e0f89329aa357653a226b05b5e2f05e623cf931c6306fb3d
+
+[derle]
+yama       = 2
+yama       = 3
+yama       = 4
+betik      = ./bootstrap && rm -r src/ode
+betik      = CPPFLAGS+=' -D_GLIBCXX_USE_CXX11_ABI=0'
+betik      = ./configure --prefix=/usr --disable-sdltest && make
+
+[pakur]
+tip        = gnu
+betik      = install -Dm0644 extra/xmoto.desktop ${PKG}/usr/share/applications/xmoto.desktop
+betik      = install -Dm0644 extra/xmoto.xpm ${PKG}/usr/share/pixmaps/xmoto.xpm

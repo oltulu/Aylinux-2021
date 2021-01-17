@@ -1,0 +1,20 @@
+[paket]
+tanim  = X pencere uygulamaları için gerekli yazı tiplerini sağlar.
+url    = http://xorg.freedesktop.org
+paketci= Cihan_Alkan
+grup   = sistem
+
+[gerek]
+derleme = 
+calisma = xcursor-themes
+
+[kaynak]
+
+[sha512]
+1 		=
+
+
+[derle]
+dosya = derle.sh
+
+[pakur]

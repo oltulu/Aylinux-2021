@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 yazı tipi kodlama kütüphanesi
+paketci = Ciihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = freetype2 xorg-xproto xorg-util-macros xorg-xtrans
+calisma = 
+
+[kaynak]
+1      = $url/releases/individual/lib/libfontenc-$surum.tar.bz2
+
+[sha512]
+1 		= 76fa851d00113241f15fdd5b5bb7e927b8d8b9a82ce3fcb0678b8c7e32cb5e8d898c4bda1d60dafb7748145049d3240627ac34a2360c64e98a7a912ea7c30582
+
+[derle]
+betik = cd libfontenc-$surum
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static --with-encodingsdir=/usr/share/fonts/encodings 
+betik = make
+	      
+[pakur]
+betik = cd libfontenc-$surum
+tip 	= gnu

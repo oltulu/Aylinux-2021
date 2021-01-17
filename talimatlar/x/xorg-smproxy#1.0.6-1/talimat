@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11R6 oturum yönetimini desteklemeyen X uygulamalarının bir X11R6 oturumuna katılmasına izin verir
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxmu xorg-libxt xorg-libsm
+
+[kaynak]
+1      = $url/releases/individual/app/smproxy-$surum.tar.bz2
+
+[sha512]
+1 		= 4945c92c0f07c5dba5698889f415e78ce406939f4a36eb977309488c27385ce4ce04235c4e850a90a451fea8d7885ded7c6b18db71335c7731b38aaeefa9fcb7
+
+[derle]
+betik = cd smproxy-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd smproxy-$surum
+tip 	= gnu

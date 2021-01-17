@@ -1,0 +1,23 @@
+[paket]
+tanim   = Basit X sunucu performansı karşılaştırması
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libx11 xorg-libxmu xorg-libxrender xorg-libxft xorg-libxext
+
+[kaynak]
+1      = $url/releases/individual/app/x11perf-$surum.tar.bz2
+
+[sha512]
+1 		= b386151bfe3d7c04ab9953ae1882f3c5b627d6d1afb9a8cfe87c58236a88883fc11bbadb2226b9aa61df84b4fce625a1c9e3d146a124ac17e8d7d605b35d9c0b
+
+[derle]
+betik = cd x11perf-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd x11perf-$surum
+tip 	= gnu

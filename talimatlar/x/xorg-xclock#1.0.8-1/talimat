@@ -1,0 +1,23 @@
+[paket]
+tanim   = X ile sistem konsolu mesajlarını izleyin
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11 xorg-libxrender xorg-libxft xorg-libxkbfile
+
+[kaynak]
+1      = $url/releases/individual/app/xclock-$surum.tar.bz2
+
+[sha512]
+1 		= 1272221ace3657505bae1b22f181e9ecbf1710900c89a860c8ceae47ae31ca5e75b6557c37dc0a881a0a24c9597b9a07f46200926feb1013f1e2e995111a7646
+
+[derle]
+betik = cd xclock-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd xclock-$surum
+tip 	= gnu

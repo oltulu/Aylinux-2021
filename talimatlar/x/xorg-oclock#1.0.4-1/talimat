@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yuvarlak x saat
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-libx11 xorg-libxmu xorg-libxext xorg-libxkbfile xorg-util-macros
+calisma = 
+
+[kaynak]
+1      = $url/archive/individual/app/oclock-$surum.tar.bz2
+
+[sha512]
+1 		= 6e0d36a84572a153226b2929f2253cb7adc3c9e5e3af168aeaf8c487ade2e43517b271a8e9cdb2a2c4a67ca56ed0b99c194ca63a4a822b68bfc72ca6518335e7
+
+[derle]
+betik = cd oclock-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd oclock-$surum
+tip 	= gnu

@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 Dağıtılmış Multihead eklenti kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros
+calisma = xorg-xproto xorg-libxext
+
+[kaynak]
+1      = $url/releases/individual/lib/libdmx-$surum.tar.bz2
+
+[sha512]
+1 		= 77aba6cadfd17db0cc7e1bc26f14d908223a0fdb135d46f86c3be34e3bc7e2f843f08d4d0ef773357e83b17122bffe56a0442d12908378c05a22177b10ae10e9
+
+[derle]
+betik = cd libdmx-$surum
+betik = ./configure --prefix=/usr --disable-static
+betik = make
+	      
+[pakur]
+betik = cd libdmx-$surum
+tip 	= gnu

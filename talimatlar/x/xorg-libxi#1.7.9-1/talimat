@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 Giriş uzantısı kütüphanesi
+paketci = oltulu
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-xrender xorg-libxfixes
+calisma = xorg-xrender xorg-libxfixes
+
+[kaynak]
+1      = $url/releases/individual/lib/libXi-$surum.tar.bz2
+
+[sha256]
+1 		= c2e6b8ff84f9448386c1b5510a5cf5a16d788f76db018194dacdc200180faf45
+
+[derle]
+betik = cd libXi-$surum
+betik =   ./configure --prefix=/usr --sysconfdir=/etc --disable-static
+betik =   make
+	      
+[pakur]
+betik = cd libXi-$surum
+tip 	= gnu
