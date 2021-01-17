@@ -1,0 +1,25 @@
+[paket]
+tanim   = Grafik görselleştirme yazılımı
+paketci = milisarge
+grup 	= geliştirme
+url     = http://www.graphviz.org
+
+[gerek]
+derleme = libgd librsvg libxaw pango
+calisma = 
+
+[kaynak]
+1       = https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz
+
+[sha256]
+1 		= ca5218fade0204d59947126c38439f432853543b0818d9d728c589dfe7f3a421
+
+[derle]
+betik   = export LIBPOSTFIX=/
+betik   = export CXXFLAGS+=' -fPIC'
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
+betik   = cd "${PKG}/usr/lib/tcl8.6" && rm -fr graphviz && ln -s ../graphviz/tcl graphviz
+betik   = rm -rf $PKG/usr/share/graphviz/doc

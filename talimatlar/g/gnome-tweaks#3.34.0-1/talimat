@@ -1,0 +1,24 @@
+[paket]
+tanim   = Gelişmiş GNOME ayarlarını değiştirmek için kullanılan program
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/gnome-tweaks
+
+[gerek]
+derleme = gtk3 gsettings-desktop-schemas libhandy 
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= mkdir build
+betik 	= cd build
+betik 	= meson --prefix=/usr --libexecdir=lib
+betik 	= ninja
+    	      
+[pakur]
+betik 	= DESTDIR=$PKG ninja install

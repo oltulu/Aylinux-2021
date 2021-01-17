@@ -1,0 +1,36 @@
+[paket]
+tanim   = Go Programlama Dili
+paketci = milisarge
+grup    = geliştirme
+url     = http://golang.org/
+
+[gerek]
+derleme  = go112
+calisma  =
+
+[kaynak]
+1     = https://golang.org/dl/go${surum}.src.tar.gz
+
+[sha256]
+1     = aae5be954bdc40bcf8006eb77e8d8a5dde412722bc8effcdaf9772620d06420c
+
+[derle]
+betik = unset GCC CC CXX LD CFLAGS
+betik = unset CGO_CXXFLAGS CGO_CFLAGS CGO_ENABLED
+betik = export GOROOT_BOOTSTRAP="/usr/lib/go1.12"
+betik = export GOROOT=$PWD
+betik = export GOROOT_FINAL="/usr/lib/go"
+betik = export GOARCH=amd64
+betik = cd "go/src"
+betik = bash make.bash --no-clean -v
+
+[pakur]
+strip = yok
+betik = cd go;mkdir -p $PKG/usr/{bin,lib/go,share/go}
+betik = cp -d --preserve=all bin/* ${PKG}/usr/bin || true
+betik = cp -a pkg src lib ${PKG}/usr/lib/go
+betik = cp -r misc -t ${PKG}/usr/share/go
+betik = ln -sf /usr/bin ${PKG}/usr/lib/go/bin
+betik = ln -sfr ${PKG}/usr/share/go/misc ${PKG}/usr/lib/go/misc
+betik = rm -f  ${PKG}/usr/lib/go/pkg/tool/*/api
+betik = rm -rf ${PKG}/usr/lib/go/pkg/{bootstrap,obj}

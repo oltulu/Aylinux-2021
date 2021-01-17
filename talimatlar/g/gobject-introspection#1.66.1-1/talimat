@@ -1,0 +1,23 @@
+[paket]
+tanim	= Gobject tabanlı kütüphaneler için gözlem sistemi
+paketci	= yasarciv67
+grup	= sistem
+url	    = https://gi.readthedocs.io/en/latest/
+
+[gerek]
+derleme	= glib meson
+calisma	= python
+
+[kaynak]
+xz	    = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[sha256]
+1	    = ffdfe2368fb2e34a547898b01aac0520d52d8627fdeb1c306559bcb503ab5e9c
+
+[derle]
+ekconf  = -D gtk_doc=false -D doctool=false -Dcairo=false
+tip     = meson
+tip     = ninja
+
+[pakur]
+tip     = meson

@@ -1,0 +1,29 @@
+[paket]
+tanim  = Garuda Linux için bir Grub onarım programı
+url    = https://gitlab.com/garuda-linux/applications/garuda-boot-repair
+paketci= Cihan_Alkan
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git   = https://gitlab.com/garuda-linux/applications/$isim
+#dosya = garuda-boot-repair_tr.ts
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = cd $isim
+betik = rm translations/garuda-boot-options_tr.ts
+betik = cp  $SRC/garuda-boot-repair_tr.ts translations/
+betik = qmake-qt5 $isim.pro
+betik = make
+
+[pakur]
+betik = cd $isim
+betik = make INSTALL_ROOT=${PKG} install
+betik = mkdir $PKG/usr/share/garuda-boot-repair
+betik = mkdir $PKG/usr/share/garuda-boot-repair/locale
+betik = cp $SRC/translations/*.qm $PKG/usr/share/garuda-boot-repair/locale/

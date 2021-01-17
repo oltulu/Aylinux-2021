@@ -1,0 +1,27 @@
+[paket]
+tanim   = OpenGPG gerçeklemesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.gnupg.org
+
+[gerek]
+derleme = openldap libusb npth libgpg-error libgcrypt libksba libassuan sqlite
+calisma = pinentry
+
+[kaynak]
+bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
+dosya   = self-sigs-only.patch
+
+[sha256]
+1       = afa262868e39b651a2db4c071fba90415154243e83a830ca00516f9a807fd514
+
+[derle]
+betik   = sed '/noinst_SCRIPTS = gpg-zip/c sbin_SCRIPTS += gpg-zip' -i tools/Makefile.in
+betik   = patch -R -p1 -i ../self-sigs-only.patch
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --libexecdir=/usr/lib/gnupg --enable-symcryptrun --disable-doc
+betik   = make
+
+[pakur]
+tip     = gnu
+betik   = ln -s gpg "${PKG}"/usr/bin/gpg2
+betik   = ln -s gpgv "${PKG}"/usr/bin/gpgv2

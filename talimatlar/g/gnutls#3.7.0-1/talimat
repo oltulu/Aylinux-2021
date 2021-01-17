@@ -1,0 +1,22 @@
+[paket]
+tanim   = TLS protokol gerçekleme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gnutls.org/
+
+[gerek]
+derleme = libtasn1 nettle p11-kit libidn2 libunistring 
+calisma = 
+
+[kaynak]
+xz      = https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7
+
+[sha512]
+#1 		= 71f0899de0ffb2a39b25928042114e2bbfde7fbf2029d9f91f60bf60794916d13f544fc97337e4e3282e7faa17e79a8012b0e08f98805bee543c0ba4e5d5a905
+
+[derle]
+ekconf  = --disable-static --disable-guile --with-default-trust-store-pkcs11="pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit"
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

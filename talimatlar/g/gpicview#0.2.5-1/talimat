@@ -1,0 +1,23 @@
+[paket]
+tanim  = Hafif resim görüntüleyici
+url    = https://lxde.org/
+paketci= Cihan_Alkan
+grup   = lxde
+
+[gerek]
+derleme = intltool
+calisma = gtk3
+
+[kaynak]
+xz   = https://downloads.sourceforge.net/lxde
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = sed -i '/^Categories=/ s/Utility;//' gpicview.desktop.in
+betik = ./configure --sysconfdir=/etc --prefix=/usr --enable-gtk3
+betik = make
+
+[pakur]
+tip = gnu

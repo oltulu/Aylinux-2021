@@ -1,0 +1,40 @@
+[paket]
+tanim   = GObjec için statik golang bağlamaları oluşturun
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/go-gir-generator
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+gz        = https://github.com/linuxdeepin/go-gir-generator/archive/$surum
+2 = https://github.com/archlinux/svntogit-community/raw/packages/golang-deepin-gir/trunk/glib-2.63.patch
+3 = https://github.com/archlinux/svntogit-community/raw/packages/golang-deepin-gir/trunk/SettingsBackendLike.patch
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik =   cd go-gir-generator-$surum
+betik =   mkdir -p "$SRC"/build/src/pkg.deepin.io
+betik =   mkdir -p out/src/pkg.deepin.io/gir/{glib-2.0,gobject-2.0,gio-2.0,gudev-1.0}
+betik =   patch -p1 -i /sources/SettingsBackendLike.patch
+betik =   patch -p0 -i /sources/glib-2.63.patch
+betik =   sed -i "s/'Can'tFind'/“Can'tFind”/" lib.in/glib-2.0/keyfile_test.go
+betik =  cd ../
+betik =  export GOPATH="$SRC/build:/usr/share/gocode"
+betik =  export CGO_CPPFLAGS="${CPPFLAGS}"
+betik =  export CGO_CFLAGS="${CFLAGS}"
+betik =  export CGO_CXXFLAGS="${CXXFLAGS}"
+betik =  export CGO_LDFLAGS="${LDFLAGS}"
+betik =  export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+betik =  cd go-gir-generator-$surum
+betik =  rm -r gogtk-demo
+betik =  make
+betik =  mv out/src/pkg.deepin.io/gir "$SRC"/build/src/pkg.deepin.io/
+
+[pakur]
+betik =  cd go-gir-generator-$surum
+betik = mkdir -p "$PKG"/usr/share/gocode/src/pkg.deepin.io
+betik = cp -a "$SRC"/build/src/pkg.deepin.io/gir "$PKG"/usr/share/gocode/src/pkg.deepin.io/

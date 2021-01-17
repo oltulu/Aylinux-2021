@@ -1,0 +1,22 @@
+[paket]
+tanim   = HDFS için Go dili ile yazılmış istemci uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/colinmarc/hdfs
+
+[gerek]
+derleme = go
+calisma =
+
+[kaynak]
+github  = colinmarc/hdfs
+
+[derle]
+betik   = mkdir -p ${SRC}/src/github.com/repo/
+betik   = cp -r ${SRC}/hdfs-${surum} ${SRC}/src/github.com/repo/hdfs
+betik   = cd ${SRC}/src/github.com/repo/hdfs
+; üç nokta ile tüm gereklerini çekeriz.
+betik   = GOPATH=${SRC} GOBIN=${SRC}/bin go get -v ./...
+
+[pakur]
+betik   = install -D -m755 $SRC/bin/hdfs $PKG/usr/bin/gohdfs

@@ -1,0 +1,32 @@
+[paket]
+tanim   = GraphicsMagick görüntü işleme kitaplıkları - geliştirme dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.graphicsmagick.org/
+
+[gerek]
+derleme = libjpeg-turbo libpng tiff lcms2 freetype libwebp fontconfig libxext ghostscript libsm jasper
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/graphicsmagick/graphicsmagick/${surum}/GraphicsMagick-${surum}.tar.xz
+
+[sha256]
+1       = 188a8d6108fea87a0208723e8d206ec1d4d7299022be8ce5d0a9720509250250
+
+[derle]
+betik   = cd "${SRC}/GraphicsMagick-${surum}"
+betik   = sed -e "s:freetype_config='':freetype_config='/usr/bin/pkg-config freetype2':g" -i configure
+betik   = ./configure --prefix=/usr --enable-shared --with-modules --with-perl --with-gs-font-dir=/usr/share/fonts/Type1 --with-quantum-depth=16 --with-threads
+betik   = make
+
+[pakur]
+betik   = cd "${SRC}/GraphicsMagick-${surum}"
+tip     = gnu
+betik   = cd PerlMagick
+betik   = sed -i -e "s:'LDDLFLAGS'  => \"\(.*\)\":'LDDLFLAGS'  => \"-L${PKG}/usr/lib \1\":" Makefile.PL
+betik   = perl Makefile.PL INSTALLDIRS=vendor PREFIX=/usr DESTDIR="${PKG}"
+betik   = sed -i -e "s/LDLOADLIBS =/LDLOADLIBS = -lGraphicsMagick/" Makefile
+betik   = make && make install
+betik   = rm -r "${PKG}"/usr/lib/perl5/*/core_perl
+betik   = rm "${PKG}"/usr/lib/perl5/*/vendor_perl/auto/Graphics/Magick/.packlist

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Saf golang resmi yeniden boyutlandırma
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/nfnt/resize
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/nfnt/resize
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = cd ../
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/github.com/nfnt
+betik = cp -a "$SRC"/resize "$PKG"/usr/share/gocode/src/github.com/nfnt/resize

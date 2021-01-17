@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNS3 ağ simülatörü. Grafiksel kullanıcı arayüzü paketi.
+paketci = Cihan_Alkan
+grup    = ağ
+url     = https://github.com/GNS3/gns3-gui
+
+[gerek]
+derleme = python-setuptools
+calisma =python-jsonschema gns3-converter python-raven python-psutil python-pyqt5 python-sip qt5-svg qt5-websockets desktop-file-utils
+
+[kaynak]
+1       = https://github.com/GNS3/$isim/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+dosya = gns3.desktop
+
+[sha256]
+1 		= 4e55fddd8cabe3191deeb7abfcae1f786e9af7203adb913810de718c6c797597
+
+[derle]
+betik 	= python3 setup.py build
+betik 	= python3 setup.py install --root="$PKG" --optimize=1
+betik 	= install -Dm644 "$SRC"/gns3.desktop "$PKG"/usr/share/applications/gns3.desktop
+betik 	= install -Dm644 resources/images/gns3_icon_256x256.png "$PKG"/usr/share/pixmaps/gns3.png
+    	      
+[pakur]

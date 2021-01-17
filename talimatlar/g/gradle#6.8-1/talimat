@@ -1,0 +1,31 @@
+[paket]
+tanim   = Java /C/C++ yazılımı için derleme sistemi
+paketci = milisarge
+grup    = geliştirme
+url     = https://gradle.org/
+
+[gerek]
+derleme    = unzip
+calisma    = openjdk8
+
+[kaynak]
+1          = https://services.gradle.org/distributions/gradle-${surum}-bin.zip
+dosya      = gradle-script.sh
+dosya      = gradle.sh
+
+[sha256]
+1          = d364b7098b9f2e58579a3603dc0a12a1991353ac58ed339316e6762b21efba44
+2          = e36c576f94a71d9b12ccb3cb52932712b07a57d6f18dbf43284f7ea8e85474cb
+3          = 6f3472486278252417af49196847ba465b56819d286658fcdf918687f89ee032
+
+[derle]
+betik      = echo "derleme yok"
+
+[pakur]
+betik      = mkdir -p $PKG/usr/lib/gradle
+betik      = mkdir -p $PKG/usr/bin
+betik      = mkdir -p $PKG/etc/profile.d
+betik      = sed ${SRC}/gradle-script.sh -e "s;@VERSION@;${surum};" > gradle
+betik      = cp gradle $PKG/usr/bin/;chmod +x $PKG/usr/bin/gradle
+betik      = cp $SRC/gradle.sh $PKG/etc/profile.d/
+betik      = mv lib ${PKG}/usr/lib/gradle/

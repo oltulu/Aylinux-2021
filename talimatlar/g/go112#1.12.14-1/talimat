@@ -1,0 +1,19 @@
+[paket]
+tanim   = Go 1.12 (başlangıç derleyici)
+paketci = milisarge
+grup    = geliştirme
+url     = https://golang.org
+
+[kaynak]
+1       = https://dl.google.com/go/go${surum}.linux-amd64.tar.gz
+
+[sha256]
+1       = 925a1a9d8b31c2425d7313fe73d3342288968a66e26cd8bf1b6b5656f4603fcb
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+strip   = yok
+betik   = cd go;mkdir -p $PKG/usr/lib/go1.12
+betik   = cp -r {bin,src,pkg} $PKG/usr/lib/go1.12/

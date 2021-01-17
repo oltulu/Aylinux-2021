@@ -1,0 +1,22 @@
+[paket]
+tanim   = 2-10 yaş arası çocuklar için yüksek kaliteli eğitim yazılımı paketi
+paketci = yasarciv67
+grup    = eğitim
+url     = https://gcompris.net/index-en.html
+
+[gerek]
+derleme = cmake extra-cmake-modules qml-box2d qt5-quickcontrols qt5-graphicaleffects qt5-xmlpatterns qt5-tools qt5-declarative qt5-multimedia qt5-sensors qt5-svg desktop-file-utils
+calisma = qt5-quickcontrols qt5-multimedia qt5-graphicaleffects
+
+[kaynak]
+xz      = https://gcompris.net/download/qt/src
+
+[sha256]
+1       = 871c6749def44284d0920d11480728db7983a81b348f7e275ef6662b65508342
+
+[derle]
+ekconf  = -DQML_BOX2D_LIBRARY=/usr/lib/qt/qml/Box2D.2.0
+tip     = cmake
+
+[pakur]
+tip     = cmake

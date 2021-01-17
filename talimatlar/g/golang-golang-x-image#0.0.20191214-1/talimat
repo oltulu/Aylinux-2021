@@ -1,0 +1,23 @@
+[paket]
+tanim   = Tamamlayıcı görüntü kitaplıklarına gidin
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/golang/image
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/golang/image
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = rm image/go.{mod,sum}
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/golang.org/x
+betik = cp -a "$SRC"/image "$PKG"/usr/share/gocode/src/golang.org/x/image

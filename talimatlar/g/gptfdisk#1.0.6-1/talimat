@@ -1,0 +1,19 @@
+[paket]
+tanim   = GUID Partition Table (GPT) disklerinde çalışan bir metin modu bölümleme aracı
+paketci = yasarciv67
+grup    = sistem
+url     = https://www.rodsbooks.com/gdisk
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/project/$isim/$isim/$surum
+
+[sha256]
+1       = b663391a6876f19a3cd901d862423a16e2b5ceaa2f4a3b9bb681e64b9c7ba78d
+
+[derle]
+betik   = make
+
+[pakur]
+betik   = install -d "$PKG"/usr/{bin,share/man/man8}
+betik   = install -t "$PKG/usr/bin" {,c,s}gdisk fixparts
+betik   = install -m644 -t "$PKG/usr/share/man/man8" {{,c,s}gdisk,fixparts}.8

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Üzerine multimedya API'lerinin oluşturulabileceği düşük seviye kitaplık
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://gmerlin.sourceforge.net/gavl.html
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/gmerlin/gavl/$surum
+
+[sha256]
+1       = 51aaac41391a915bd9bad07710957424b046410a276e7deaff24a870929d33ce
+
+[derle]
+betik	= ./autogen.sh
+ekconf	= --without-doxygen
+tip     = gnu
+
+[pakur]
+tip     = gnu

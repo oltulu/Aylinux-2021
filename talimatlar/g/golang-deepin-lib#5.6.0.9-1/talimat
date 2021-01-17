@@ -1,0 +1,21 @@
+[paket]
+tanim   = Glib, gettext, arşiv, grafik vb. Şeyler için birçok yararlı go rutini içeren bir kitaplık.
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/go-lib
+
+[kaynak]
+1      = https://github.com/linuxdeepin/go-lib/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd go-lib-$surum
+betik = sed -i 's/int connect_timeout;/extern int connect_timeout;/' pulse/dde-pulse.h
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/pkg.deepin.io
+betik = cp -a "$SRC"/go-lib-$surum "$PKG"/usr/share/gocode/src/pkg.deepin.io/lib
+betik = rm -r "$PKG"/usr/share/gocode/src/pkg.deepin.io/lib/debian
+

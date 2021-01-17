@@ -1,0 +1,17 @@
+[paket]
+tanim   = Metin dosyaları verileriyle oynamaya yarayan uygulama
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/gawk
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/gawk
+
+[sha256]
+#1 		= 50f091ed0eb485ad87dbb620d773a3e2c31a27f75f5e008f7bf065055f024406
+
+[derle]
+betik 	= ./configure --prefix=/tools;make
+	      
+[pakur]
+tip     = gnu

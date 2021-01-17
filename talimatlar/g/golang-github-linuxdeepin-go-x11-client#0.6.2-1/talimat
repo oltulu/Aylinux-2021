@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 protokolü dil bağlama
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/go-x11-client
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/linuxdeepin/go-x11-client
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd ../
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/github.com/linuxdeepin
+betik = cp -a "$SRC"/go-x11-client "$PKG"/usr/share/gocode/src/github.com/linuxdeepin/go-x11-client

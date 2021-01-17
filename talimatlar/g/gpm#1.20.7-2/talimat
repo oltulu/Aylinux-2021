@@ -1,0 +1,28 @@
+[paket]
+tanim   = Konsol tabanlı fare sürücüsü
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.nico.schottelius.org/software/gpm
+
+[kaynak]
+bz2     = https://nico.schottelius.org/software/gpm/archives
+2       = http://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-glibc_2.26-1.patch
+dosya   = gpm.sh
+
+[sha512]
+1 		= 51c1141ed502f8b6bc846485a8e315bafe3cf2b7c9d1ea8a710d9748ff2058f29c7ab5715fc1730a8437c613181d2050f37b134e9288c69ba8ff7fb0be7ec0d1
+
+[derle]
+
+betik   = sed -i -e 's:<gpm.h>:"headers/gpm.h":' src/prog/{display-buttons,display-coords,get-versions}.c
+yama    = gpm-1.20.7-glibc_2.26-1.patch
+betik   = ./autogen.sh
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --disable-static
+betik   = sed -i '/^SUBDIRS =/c\SUBDIRS = src contrib' Makefile
+betik   = make
+	      
+[pakur]
+tip     = gnu
+betik   = install -D -m0755 ../gpm.sh "${PKG}/etc/profile.d/gpm.sh"
+betik   = cd "${PKG}/usr/lib/" && ln -s libgpm.so.2.* libgpm.so && chmod 0755 "${PKG}"/usr/lib/libgpm.so.*
+servis  = gpm

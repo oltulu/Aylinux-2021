@@ -1,0 +1,28 @@
+[paket]
+tanim   = GNOME Uygulamaları için Ekstra Temalar
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://gitlab.gnome.org/GNOME/gnome-themes-extra
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git    = https://gitlab.gnome.org/GNOME/gnome-themes-extra
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik = cd $isim
+betik = mkdir m4
+betik = intltoolize
+betik = autoreconf -fvi
+betik = ./configure --prefix=/usr
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+    	      
+[pakur]
+betik = cd $isim
+betik = make DESTDIR="$PKG" install

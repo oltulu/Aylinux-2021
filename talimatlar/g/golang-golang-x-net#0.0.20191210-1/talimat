@@ -1,0 +1,23 @@
+[paket]
+tanim   = KTamamlayıcı Go ağ kitaplıkları
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/golang/net
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/golang/net
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = rm net/go.{mod,sum}
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/golang.org/x
+betik = cp -a "$SRC"/net "$PKG"/usr/share/gocode/src/golang.org/x/net

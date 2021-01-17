@@ -1,0 +1,23 @@
+[paket]
+tanim   = Grafik data tipleri için katman kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://github.com/ebassi/graphene
+
+[gerek]
+derleme  = gobject-introspection meson glib
+calisma  =  
+
+[kaynak]
+xz = https://github.com/ebassi/graphene/releases/download/$surum
+
+[sha256]
+1  = 82a07f188d34eb69df4b087b5e1d66e918475f59f7e62fb0308e2c91432a712f
+
+[derle]
+tip    = meson
+
+[pakur]
+tip    = meson
+betik  = rm -r "${PKG}"/usr/{lib,share}/installed-tests
+

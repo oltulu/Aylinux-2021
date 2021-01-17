@@ -1,0 +1,23 @@
+[paket]
+tanim   = Go programlama dilini destekleyen çeşitli paketler ve araçlar
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/golang/tools
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/golang/text
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd ../
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/golang.org/x
+betik = cp -a "$SRC"/text "$PKG"/usr/share/gocode/src/golang.org/x/text

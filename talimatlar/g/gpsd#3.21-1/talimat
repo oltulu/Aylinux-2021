@@ -1,0 +1,33 @@
+[paket]
+tanim   = USB / seri GPS cihazlarını desteklemek için GPS arka plan programı ve kitaplık
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://kde.org/applications/utilities/kcalc/
+
+[gerek]
+derleme = scons
+calisma =  
+
+[kaynak]
+gz      = https://download.savannah.gnu.org/releases/$isim
+
+[sha256]
+        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= export LINKFLAGS="${LDFLAGS}"
+betik 	= _pythonpath=`python -c "from sysconfig import get_path; print(get_path('platlib'))"`
+betik 	= scons prefix=/usr systemd=no gpsd_group=uucp python_libdir=$_pythonpath sbindir=/usr/bin qt_versioned=5
+betik 	= scons build
+                    	      
+[pakur]
+betik 	=  export DESTDIR="${PKG}"
+betik 	=  scons install
+betik 	=  install -Dm755 gpsinit -t "${PKG}"/usr/bin
+betik 	=  chmod 755 "${PKG}"/usr/bin/*
+betik 	=  install -Dm644 "$SRC/gpsd.conf" "${PKG}"/etc/default/gpsd
+betik 	=  install -Dm644 "gpsd.rules" "${PKG}"/usr/lib/udev/rules.d/25-gpsd-usb.rules
+betik 	=  install -Dm755 gpsd.hotplug "${PKG}"/usr/lib/udev/gpsd.hotplug
+betik 	=  install -Dm644 packaging/X11/xgps.desktop "${PKG}"/usr/share/applications/xgps.desktop
+betik 	=  install -Dm644 packaging/X11/xgpsspeed.desktop "${PKG}"/usr/share/applications/xgpsspeed.desktop
+betik 	=  install -Dm644 packaging/X11/gpsd-logo.png "${PKG}"/usr/share/gpsd/gpsd-logo.png

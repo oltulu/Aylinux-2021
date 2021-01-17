@@ -1,0 +1,25 @@
+[paket]
+tanim   = GNU C, C++, fortran and objc derleyicileri içeren araçlar, Pass-2
+paketci = milisarge
+grup 	= onsistem
+url     = http://ftp.gnu.org/gnu/
+
+[kaynak]
+1      = $url/gmp/gmp-6.1.2.tar.xz
+2      = https://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz
+3      = https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+4      = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum/gcc-$surum.tar.xz
+
+[sha256]
+1 		= 87b565e89a9a684fe4ebeeddb8399dce2599f9c9049854ca8c0dfbdea0e21912
+2		= 1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a
+3 		= 6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e
+4 		= 79a66834e96a6050d8fe78db2c3b32fb285b230b855d0a66288235bc04b327a0
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+betik   = cd  gcc-$surum/build
+tip     = gnu
+betik   = ln -sv gcc $PKG/tools/bin/cc

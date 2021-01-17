@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNS3 ağ simülatörü. Sunucu paketi
+paketci = Cihan_Alkan
+grup    = ağ
+url     = https://github.com/GNS3/gns3-server
+
+[gerek]
+derleme = python-setuptools
+calisma = python-jsonschema python-aiohttp-gns3 python-aiohttp-cors-gns3 python-yarl-gns3 python-jinja python-raven python-psutil python-zipstream-gns3 python-prompt_toolkit-gns3 python-async-timeout-gns3 busybox
+
+[kaynak]
+1       = https://github.com/GNS3/$isim/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= a59c462f92c1f619f5e8c7dcfd6d94b341ca844a89e5e252b7222b924a008883
+
+[derle]
+betik 	= sed -i -e '/^async-timeout<3\.0\.0/d' requirements.txt
+betik 	= echo 'async-timeout>=3.0.0' >> requirements.txt
+betik 	= python3 setup.py build
+betik 	= python3 setup.py install --root="$PKG" --optimize=1
+    	      
+[pakur]

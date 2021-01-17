@@ -1,0 +1,36 @@
+[paket]
+tanim   = DDE için GO DBus fabrikası
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/go-dbus-factory
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://github.com/linuxdeepin/go-dbus-factory/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd ../
+betik = export GOPATH="$SRC/build:/usr/share/gocode"
+betik = mkdir -p "$SRC"/build/src/github.com/linuxdeepin
+betik = cp -a "$SRC"/go-dbus-factory-$surum "$SRC"/build/src/github.com/linuxdeepin/go-dbus-factory
+betik = go get github.com/godbus/dbus github.com/fsnotify/fsnotify
+betik = cd ../
+betik = export CGO_CPPFLAGS="${CPPFLAGS}"
+betik = export CGO_CFLAGS="${CFLAGS}"
+betik = export CGO_CXXFLAGS="${CXXFLAGS}"
+betik = export CGO_LDFLAGS="${LDFLAGS}"
+betik = export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+betik = cd "$SRC"/build/src/github.com/linuxdeepin/go-dbus-factory
+betik = make bin
+
+
+[pakur]
+betik = cd "$SRC"/build/src/github.com/linuxdeepin/go-dbus-factory
+betik = install -dm755 "$PKG"/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory
+betik = cp -a com.* org.* net.* object_manager "$PKG"/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/
