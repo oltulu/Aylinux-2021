@@ -1,0 +1,23 @@
+[paket]
+tanim   = GStreamer Multimedya temel kütüphaneleri
+paketci = milisarge 
+grup    = kütüphane
+url     = https://gstreamer.freedesktop.org/
+
+[gerek]
+derleme  = cmake meson python gobject-introspection gstreamer cdparanoia libvisual libvorbis libtheora pango opus graphene libpng libjpeg-turbo alsa-lib iso-codes libxv mesa libglvnd orc
+calisma  = 
+
+[kaynak]
+xz       = https://gstreamer.freedesktop.org/src/$isim
+
+[sha256]
+1        = b13e73e2fe74a4166552f9577c3dcb24bed077021b9c7fa600d910ec6987816a
+
+[derle]
+ekconf   = -Dtremor=disabled -Dexamples=disabled -Dgtk_doc=disabled -Dpackage-origin=https://www.milislinux.org
+tip      = meson
+
+[pakur]
+tip      = meson
+

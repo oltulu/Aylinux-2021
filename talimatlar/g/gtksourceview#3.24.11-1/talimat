@@ -1,0 +1,21 @@
+[paket]
+tanim   = GTK3 GtkTextView küçük aracını genişleten metin küçük aracı
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/GtkSourceView
+
+[gerek]
+derleme    = gtk3 glib vala libxml2 gobject-introspection
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1          = 691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

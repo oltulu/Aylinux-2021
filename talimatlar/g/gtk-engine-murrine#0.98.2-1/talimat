@@ -1,0 +1,23 @@
+[paket]
+tanim   = Masaüstünüzü bir murrina gibi göstermek için GTK2 motoru
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://cimitan.com/murrine/project/murrine
+arsiv   = "murrine-${surum}"
+
+[gerek]
+derleme = gtk2
+calisma =
+
+[kaynak]
+1       = ${GNOME_SITE}/murrine/0.98/murrine-${surum}.tar.xz
+
+[sha256]
+1       = e9c68ae001b9130d0f9d1b311e8121a94e5c134b82553ba03971088e57d12c89
+
+[derle]
+ekconf     = --enable-animation
+tip     = gnu
+
+[pakur]
+tip     = gnu

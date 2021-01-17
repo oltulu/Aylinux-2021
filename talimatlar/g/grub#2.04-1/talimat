@@ -1,0 +1,24 @@
+[paket]
+tanim   = Çoklu önyükleme yükleyicisi
+paketci = milisarge
+grup 	= temel
+url     = http://www.gnu.org/software/grub
+
+[gerek]
+derleme = freetype python fuse2 font-unifont-bdf
+calisma = os-prober
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/grub
+dosya   = grub.default
+dosya   = 0004-add-GRUB_COLOR_variables.patch
+
+[sha256]
+1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
+
+[derle]
+yama    = 0004-add-GRUB_COLOR_variables.patch
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

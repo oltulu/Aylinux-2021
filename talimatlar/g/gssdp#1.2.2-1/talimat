@@ -1,0 +1,22 @@
+[paket]
+tanim   = SSDP için GObject tabanlı kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wiki.gnome.org/action/show/Projects/GUPnP
+
+[gerek]
+derleme = meson glib vala gtk3 libsoup gobject-introspection
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/gssdp/${surum%.*}
+
+[sha256]
+1       = cabb9e3b456b8354a55e23eb0207545d974643cda6d623523470ebbc4188b0a4 
+
+[derle]
+ekconf     = -Dvapi=true -Dexamples=false -Dintrospection=true
+tip     = meson
+
+[pakur]
+tip     = meson

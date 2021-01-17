@@ -1,0 +1,24 @@
+[paket]
+tanim   = POSIX sistemleri için en kaliteli yazıcı sürücüleri
+paketci = milisarge
+grup    = sistem
+url     = http://gimp-print.sourceforge.net/
+
+[gerek]
+derleme = ghostscript perl cups
+calisma = ghostscript cups
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/gimp-print/$isim-$surum.tar.xz
+
+[sha256]
+1       = 7279ecbc8e67d1858c53cb24e423ea1be98e214872006b79e6e03650dd54a072
+
+[derle]
+betik   = sed -i "s:cups_sbindir=\"\${cups_exec_prefix}\/sbin\":cups_sbindir=\"\${cups_exec_prefix}\/bin\":" m4local/stp_cups.m4
+betik   = autoreconf -vfi
+ekconf  = --disable-rpath --enable-samples --disable-static --disable-static-genppd --enable-cups-ppds --enable-simplified-cups-ppds=only --enable-translated-cups-ppds --enable-globalized-cups-ppds
+tip     = gnu
+
+[pakur]
+tip     = gnu

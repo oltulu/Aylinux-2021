@@ -1,0 +1,22 @@
+[paket]
+tanim 	= Ses/video düzenleyicileri oluşturmak için GStreamer kütüphanesi.
+paketci = yasarciv67
+grup 	= kütüphane
+url 	= https://gstreamer.freedesktop.org/modules/gst-editing-services.html
+
+[gerek]
+derleme	= meson cmake gst-plugins-base glib flex perl gobject-introspection python-gobject
+calisma = 
+
+[kaynak]
+xz 		= https://gstreamer.freedesktop.org/src/$isim
+
+[sha256]
+1 		= 0e06a6191a0c6c16e16272bf2573cecaeb245f10629486ad940a299bef700c16
+
+[derle]
+ekconf 	= --disable-gtk-doc --with-package-origin="http://www.milislinux.org/"
+tip 	= gnu
+
+[pakur]
+tip 	= gnu

@@ -1,0 +1,61 @@
+[paket]
+tanim   = GObject tabanlı çok platformlu GUI araç seti
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://www.gtk.org/
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://download.gnome.org/sources/gtk/${surum%.*}/gtk-${surum}.tar.xz
+2     = https://aur.archlinux.org/cgit/aur.git/plain/fix-incompatible-vulkan-error.patch?h=gtk4
+3     = https://aur.archlinux.org/cgit/aur.git/plain/gtk4-query-immodules.hook?h=gtk4
+4     = https://aur.archlinux.org/cgit/aur.git/plain/gtk4-update-icon-cache.hook?h=gtk4
+5     = https://aur.archlinux.org/cgit/aur.git/plain/gtk4-update-icon-cache.script?h=gtk4
+5     = https://aur.archlinux.org/cgit/aur.git/plain/settings.ini?h=gtk4
+
+[sha1]
+    1 		= 
+
+[derle]
+betik = cd gtk-${surum}
+betik = patch -p1 -i /sources/fix-incompatible-vulkan-error.patch?h=gtk4
+betik = meson --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libdir=/usr/lib -Dbroadway-backend=true -Dvulkan=enabled -Dgtk_doc=false _build .
+betik = cd _build
+betik = ninja
+    	      
+[pakur]
+betik = cd gtk-${surum}/_build
+betik = DESTDIR="$PKG" ninja install
+betik = install -Dm 644 "/sources/settings.ini?h=gtk4" "$PKG"/usr/share/gtk-4.0/settings.ini
+betik = install -D "gtk/tools/gtk4-update-icon-cache?h=gtk4" "$PKG"/usr/bin/gtk4-update-icon-cache
+betik = install -Dm 644 "/sources/gtk4-update-icon-cache.hook?h=gtk4" "$PKG"/usr/share/libalpm/hooks/gtk4-update-icon-cache.hook
+betik = install -Dm 755 "/sources/gtk4-update-icon-cache.script?h=gtk4" "$PKG"/usr/share/libalpm/scripts/gtk4-update-icon-cache
+# Remove conflicts with gtk3
+betik = rm -f "$PKG/usr/share/gettext/its/gtkbuilder.its"
+betik = rm -f "$PKG/usr/share/gettext/its/gtkbuilder.loc"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.Demo.gschema.xml"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.Settings.Debug.gschema.xml"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.Settings.EmojiChooser.gschema.xml"
+betik = rm -f "$PKG/usr/share/glib-2.0/schemas/org.gtk.exampleapp.gschema.xml"
+# Remove conflicts with gtk-doc
+betik = rm -f "$PKG/usr/bin/gtkdoc-check"
+betik = rm -f "$PKG/usr/bin/gtkdoc-depscan"
+betik = rm -f "$PKG/usr/bin/gtkdoc-fixxref"
+betik = rm -f "$PKG/usr/bin/gtkdoc-mkdb"
+betik = rm -f "$PKG/usr/bin/gtkdoc-mkhtml"
+betik = rm -f "$PKG/usr/bin/gtkdoc-mkhtml2"
+betik = rm -f "$PKG/usr/bin/gtkdoc-mkman"
+betik = rm -f "$PKG/usr/bin/gtkdoc-mkpdf"
+betik = rm -f "$PKG/usr/bin/gtkdoc-rebase"
+betik = rm -f "$PKG/usr/bin/gtkdoc-scan"
+betik = rm -f "$PKG/usr/bin/gtkdoc-scangobj"
+betik = rm -f "$pkgdir/usr/bin/gtkdocize"
+betik = rm -f "$PKG/usr/share/aclocal/gtk-doc.m4"
+betik = rm -rf "$PKG/usr/share/cmake/GtkDoc"
+betik = rm -rf "$PKG/usr/share/gtk-doc"
+betik = rm -f "$PKG/usr/share/pkgconfig/gtk-doc.pc"

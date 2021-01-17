@@ -1,0 +1,22 @@
+[paket]
+tanim   = GTK tabanlı basit bir takvim arayüzü
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/dmedvinsky/gsimplecal
+arsiv   = gsimplecal
+
+[gerek]
+derleme = gtk3
+calisma =
+
+[kaynak]
+git     = https://github.com/dmedvinsky/gsimplecal
+dosya   = gsimplecal-config
+
+[derle]
+betik   = ./autogen.sh
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm644 $SRC/gsimplecal-config $PKG/etc/xdg/gsimplecal/config

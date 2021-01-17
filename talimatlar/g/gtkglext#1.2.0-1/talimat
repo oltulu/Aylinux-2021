@@ -1,0 +1,29 @@
+[paket]
+tanim   = GTK için OpenGL uzantısı
+paketci = milisarge
+grup    = kütüphane
+url     = https://projects.gnome.org/gtkglext
+
+[gerek]
+derleme    = glib pangox-compat libxt gtk2 glu mesa
+calisma    =
+
+[kaynak]
+gz         = ${SOURCEFORGE_SITE}/gtkglext/gtkglext/${surum}
+dosya      = gtk2.20.patch
+dosya      = gtkglext-gcc8.patch
+
+[sha256]
+1          = e5073f3c6b816e7fa67d359d9745a5bb5de94a628ac85f624c992925a46844f9
+2          = 864c6963c4a2f4f69f1f028ecee6c821a4f4d5aba142f2e07898aede825ce9ea
+3          = 0ec0c22b15054b0684f9a9015ff05920af0c00dae5409e76321f683dcc17cff9
+
+[derle]
+betik      = patch -Np1 -i $SRC/gtk2.20.patch
+betik      = sed '/AC_PATH_XTRA/d' -i configure.in  
+betik      = patch -p1 -i $SRC/gtkglext-gcc8.patch
+betik      = autoreconf -vi
+betik      = ./configure --prefix=/usr --disable-static && make
+
+[pakur]
+tip        = gnu

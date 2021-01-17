@@ -1,0 +1,26 @@
+[paket]
+tanim   = GNOME’a sözdizimi vurgulaması ve daha fazlasını ekleyen bir metin eklenti
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.gnome.org
+
+[gerek]
+derleme = intltool pkg-config python
+calisma = gtk2 libxml2
+
+[kaynak]
+1      = https://download.gnome.org/sources/gtksourceview/2.10/gtksourceview-${surum}.tar.bz2
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd gtksourceview-$surum
+betik = sed -i 's#python#python2#' gtksourceview/language-specs/convert.py
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+	      
+[pakur]
+betik = cd gtksourceview-$surum
+tip = gnu

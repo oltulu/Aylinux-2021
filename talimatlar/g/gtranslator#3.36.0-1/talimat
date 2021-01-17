@@ -1,0 +1,21 @@
+[paket]
+tanim   = GNOME çeviri programı
+paketci = yasarciv
+grup    = geliştirme
+url     = https://wiki.gnome.org/Apps/Gtranslator
+
+[gerek]
+derleme = meson cmake glib itstool glib libsoup gsettings-desktop-schemas gtk3 gspell libxml2 json-glib gtksourceview4 libdazzle libgda
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/gtranslator/${surum%.*}
+
+[sha256]
+1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
+
+[derle]
+tip     = meson
+
+[pakur]
+tip     = meson

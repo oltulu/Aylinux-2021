@@ -1,0 +1,29 @@
+[paket]
+tanim   = Smartmontools için arayüz
+paketci = yasarciv67
+grup    = sistem
+url     = http://gsmartcontrol.sourceforge.net
+
+[gerek]
+derleme = gtkmm pcre desktop-file-utils smartmontools polkit xmessage
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/${isim}
+dosya	= gsmartcontrol_polkit
+
+[sha256]
+1       = b64f62cffa4430a90b6d06cd52ebadd5bcf39d548df581e67dfb275a673b12a9
+2		= f63559ff340647cba1cfa63af3fb97f9df2d611d2f5db6c5029fcdd4a1a260d5
+
+[derle]
+betik	= sed -i "s|^Exec=.*|Exec="@prefix@/bin/gsmartcontrol_polkit"|"  data/gsmartcontrol.desktop.in
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik	= install -m755 $SRC/gsmartcontrol_polkit $PKG/usr/bin/gsmartcontrol_polkit
+betik	= cd $PKG/usr/share/applications
+betik	= sed -i '/^GenericName=Hard Disk and SSD Health Inspection/a GenericName[tr]=Sabit Disk ve SSD Sağlık Denetimi' gsmartcontrol.desktop
+betik	= sed -i '/^Comment=Monitor and control SMART data on hard disk and solid-state drives/a Comment[tr]=Sabit disk ve ssd sürücülerdeki SMART verilerini izleme ve denetleme' gsmartcontrol.desktop
+

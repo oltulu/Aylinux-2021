@@ -1,0 +1,28 @@
+[paket]
+tanim   = Kelime işlemci tarzı vurgulama sağlar
+paketci = yasarciv67
+grup    = sistem
+url     = http://gtkspell.sourceforge.net
+
+[gerek]
+derleme = intltool enchant gtk2
+calisma =
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/${isim}
+dosya	= enchant-2.diff
+
+[sha256]
+1       = 8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02
+2		= 52e693590161bc285ec46a2beece802f47c7ede65ec0b72ffa224ab0db176bad
+
+[derle]
+betik   = sed -i 's/enchant/enchant-2/g' configure
+yama	= 2
+ekconf  = --disable-static
+betik	 = ./configure --prefix=/usr --disable-static
+betik	 = make -j1
+
+[pakur]
+tip     = gnu
+

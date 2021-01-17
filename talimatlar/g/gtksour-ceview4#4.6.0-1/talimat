@@ -1,0 +1,25 @@
+[paket]
+tanim   = GtkTextView widget'ı için sözdizimi vurgulama
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://mail.gnome.org/mailman/listinfo/gnome-devtools
+
+[gerek]
+derleme = meson ninja gtk3 gobject-introspection glade
+calisma = 
+
+[kaynak]
+1   = https://download.gnome.org/sources/gtksourceview/${surum:0:3}/gtksourceview-$surum.tar.xz
+
+[sha1]
+1 		= 
+
+[derle]
+#betik = cd gtksourceview-$surum
+betik = milis-meson gtksourceview-$surum build -D glade_catalog=true -D gtk_doc=false
+#betik = meson setup gtksourceview build --prefix=/usr --buildtype=plain -Db_ndebug=true -D gtk_doc=false -Dglade_catalog=true
+betik = meson compile -C build
+	      
+[pakur]
+#betik = cd gtksourceview-$surum
+betik = DESTDIR="$PKG" meson install -C build

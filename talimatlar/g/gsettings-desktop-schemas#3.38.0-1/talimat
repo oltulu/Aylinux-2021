@@ -1,0 +1,21 @@
+[paket]
+tanim   = Masaüstü için paylaşılan GSettings şemaları
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.gnome.org/
+
+[gerek]
+derleme = glib meson gobject-introspection
+calisma = cantarell-fonts
+
+[kaynak]
+xz = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+
+[sha256]
+1 = 2d59b4b3a548859dfae46314ee4666787a00d5c82db382e97df7aa9d0e310a35
+
+[derle]
+tip = meson
+
+[pakur]
+tip = meson

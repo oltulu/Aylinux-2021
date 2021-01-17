@@ -1,0 +1,23 @@
+[paket]
+tanim   = GStreamer açık kaynaklı multimedya çerçevesi çekirdek kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://gstreamer.freedesktop.org/
+
+[gerek]
+derleme = gobject-introspection valgrind bash-completion meson
+calisma = libxml2 glib2 libunwind libcap libelf
+
+[kaynak]
+git      = https://gitlab.freedesktop.org/gstreamer/gstreamer.git::$isim-$surum
+
+[sha1]
+1 		= 
+
+[derle]
+betik= ./autogen.sh
+tip = gnu
+
+	      
+[pakur]
+tip = gnu

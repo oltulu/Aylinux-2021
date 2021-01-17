@@ -1,0 +1,21 @@
+[paket]
+tanim   = GTK için VNC görüntüleyici widget'ı
+paketci = yasarciv67
+grup    = sistem
+url     = https://wiki.gnome.org/Projects/gtk-vnc
+
+[gerek]
+derleme = meson cmake glib intltool libgcrypt gobject-introspection vala gnutls gtk3 cyrus-sasl pulseaudio
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = a81a1f1a79ad4618027628ffac27d3391524c063d9411c7a36a5ec3380e6c080
+
+[derle]
+tip     = meson
+
+[pakur]
+tip     = meson

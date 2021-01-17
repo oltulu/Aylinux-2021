@@ -1,0 +1,25 @@
+[paket]
+tanim   = GSettings için Qml bağlamaları
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/${isim}
+
+[gerek]
+derleme = meson gobject-introspection intltool
+calisma = cinnamon-control-center cinnamon-menus cinnamon-screensaver cinnamon-desktop dbus-glib libsm libcanberra xapps
+
+[kaynak]
+1      = https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gsettings-qt/0.2-4/gsettings-qt_0.2.orig.tar.gz
+
+[sha512]
+
+
+[derle]
+betik 	= cd gsettings-qt-v0.2
+betik 	= qmake gsettings-qt.pro PREFIX=/usr 
+betik 	= make -j1
+    	      
+[pakur]
+betik 	= cd gsettings-qt-v0.2
+betik 	= make INSTALL_ROOT="$PKG" install
+betik 	= rm -rf "${PKG}"/usr/tests

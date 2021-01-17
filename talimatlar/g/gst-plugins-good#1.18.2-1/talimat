@@ -1,0 +1,24 @@
+[paket]
+tanim   = Multimedya grafik çerçevesi - iyi eklentiler
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://gstreamer.freedesktop.org/
+
+[gerek]
+derleme = intltool itstool
+calisma = libcanberra libgtop mate-desktop zenity libxpresent
+
+[kaynak]
+git     = https://gitlab.freedesktop.org/gstreamer/gst-plugins-good
+
+[sha256]
+    #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = milis-meson $isim build -D doc=disabled -D rpicamsrc=disabled -D gobject-cast-checks=disabled -D package-name="GStreamer Good Plugins (Milis Linux)" -D package-origin="https://www.milislinux.org/"
+  meson compile -C build
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+    	      
+[pakur]
+betik     = DESTDIR="$PKG" meson install -C build

@@ -1,0 +1,22 @@
+[paket]
+tanim    = GSM 06.10 konuşma sıkıştırma kütüphanesi
+paketci  = milisarge
+grup     = medya
+url      = http://www.quut.com/gsm/
+
+[kaynak]
+gz    = $url
+dosya = gsm-shared.patch
+
+[sha256]
+1  =  04f68087c3348bf156b78d59f4d8aff545da7f6e14f33be8f47d33f4efae2a10
+2  =  1b9fabd7da83a688fc0e5ec712d53c428ff5575b1d5feac8437283ade1448c2b
+
+[derle]
+betik  = cd gsm-1.0-pl18
+betik  = patch -p0 -i $SRC/gsm-shared.patch
+betik  = make CCFLAGS="-c ${CFLAGS} -fPIC"
+
+[pakur]
+dosya  = pakur.sh
+

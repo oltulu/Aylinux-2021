@@ -1,0 +1,22 @@
+[paket]
+tanim  = Xfce Gtk + -2.0 motoru ve temaları
+url    = https://www.xfce.org/
+paketci= Cihan_Alkan
+grup   = xfce4
+
+[gerek]
+derleme = 
+calisma = gtk2
+
+[kaynak]
+bz2   = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
+
+[sha256]
+1 		= 4a92910205881f707f2cc8d3c9b00a95feb58eb9084d932c841f3ed027f7063d
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-static --disable-debug
+betik = make
+
+[pakur]
+tip = gnu

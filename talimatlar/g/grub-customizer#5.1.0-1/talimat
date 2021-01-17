@@ -1,0 +1,28 @@
+[paket]
+tanim   = Grafiksel bir grub2 ayar yöneticisi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://launchpad.net/grub-customizer
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1     = https://launchpad.net/${isim}/${surum%.*}/${surum}/+download/${isim}_${surum}.tar.gz
+dosya = grub.cfg
+
+[sha1]
+1 		= SKIP
+
+[derle]
+betik = mkdir -p build
+betik = cd build
+betik = cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd build
+betik = make install DESTDIR="${PKG}"
+betik = install -vDm 644 "${SRC}/grub.cfg" -t "${PKG}/etc/${isim}/"
+

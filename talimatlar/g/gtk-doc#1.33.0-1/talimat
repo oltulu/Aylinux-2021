@@ -1,0 +1,27 @@
+[paket]
+tanim   = GTK-Doc, C koduna eklenen yorumlardan API dokümantasyonu üretmeye başlayan bir projedir.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://www.gnome.org/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+# xz     = https://download.gnome.org/sources/$isim/1.33
+1 = http://tardis.tiny-vps.com/aarm/packages/g/gtk-doc/gtk-doc-1.33.1-1-any.pkg.tar.xz
+
+[sha1]
+#1 		= 
+
+[derle]
+betik = cd ../
+#betik = autoreconf -fiv 
+#betik = ./configure --prefix=/usr --enable-documentation=no --disable-man --with-xml-catalog=no
+	      
+[pakur]
+betik = mkdir $PKG/usr
+betik  = cp -r $SRC/usr/bin $PKG/usr/bin
+betik  = cp -r $SRC/usr/share $PKG/usr/share
+betik  = cp -r $SRC/usr/lib $PKG/usr/lib

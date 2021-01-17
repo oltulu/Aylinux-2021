@@ -1,0 +1,23 @@
+[paket]
+tanim   = C ile yazılmış taşınabilir, gömülebilir bir Şema uygulaması
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.gnu.org/software/${pkgname}
+
+[gerek]
+derleme = gc libffi libunistring readline
+calisma =
+
+[kaynak]
+gz      = ${GNU_SITE}/${isim}
+
+[sha256]
+1       = 049b286849fa9764fac781071c4ec9daef707da51e5050ffb498d7bf6422da2f
+
+[derle]
+ekconf  = --disable-error-on-warning
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = rm "$PKG"/usr/lib/libguile-3.?.so.*-gdb.scm

@@ -1,0 +1,22 @@
+[paket]
+tanim   = UPnP için GObject tabanlı kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/GUPnP
+
+[gerek]
+derleme = meson glib vala libxml2 gssdp gobject-introspection
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/gupnp/${surum%.*}
+
+[sha256]
+1       = 9a80bd953e5c8772ad26b72f8da01cbe7241a113edd6084903f413ce751c9989	
+
+[derle]
+ekconf     = -Dintrospection=true -Dvapi=true -Dexamples=false
+tip     = meson
+
+[pakur]
+tip     = meson

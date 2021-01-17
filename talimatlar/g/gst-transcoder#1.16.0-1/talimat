@@ -1,0 +1,21 @@
+[paket]
+tanim   = GStreamer Kod Dönüştürme API kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/pitivi/gst-transcoder
+
+[gerek]
+derleme = gobject-introspection gst-plugins-base meson
+calisma =
+
+[kaynak]
+1       = https://github.com/pitivi/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = b5e65c70f2827aee42810120ca9637fd1f56e7cccf825b1b2f20e575cebdcd62
+
+[derle]
+tip     = meson
+
+[pakur]
+tip     = meson

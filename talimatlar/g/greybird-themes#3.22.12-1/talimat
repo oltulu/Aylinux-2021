@@ -1,0 +1,23 @@
+[paket]
+tanim   = Zarif gri GTK+ 2/3 teması
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/shimmerproject/Greybird
+arsiv   = "Greybird-${surum}"
+
+[gerek]
+derleme = meson sassc ninja glib gdk-pixbuf librsvg librsvg
+calisma = gtk-engine-murrine gtk3
+
+[kaynak]
+1       = https://github.com/shimmerproject/Greybird/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 410804cd5daca33cbc5c7c4a179f3a334ced87f408e515fc5d9c083a04bec4bc
+
+[derle]
+betik	= echo "derleme yok"
+
+[pakur]
+betik   = meson --prefix=$PKG/usr "build"
+betik	= cd build && ninja && ninja install

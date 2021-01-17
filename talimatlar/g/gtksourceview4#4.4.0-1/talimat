@@ -1,0 +1,22 @@
+[paket]
+tanim   = GTK+ GtkTextView küçük aracını genişleten metin küçük aracı
+paketci = yasarciv67
+grup    = sistem
+url     = https://wiki.gnome.org/Projects/GtkSourceView
+arsiv	= gtksourceview-$surum
+
+[gerek]
+derleme    = gtk3 glib libxml2 meson vala gobject-introspection
+calisma    =
+
+[kaynak]
+1          = https://download.gnome.org/sources/gtksourceview/${surum%.*}/gtksourceview-$surum.tar.xz
+
+[sha256]
+1          = 9ddb914aef70a29a66acd93b4f762d5681202e44094d2d6370e51c9e389e689a
+
+[derle]
+tip        = meson
+
+[pakur]
+tip        = meson

@@ -1,0 +1,17 @@
+[paket]
+tanim   = Desene göre eşleştirme ve arama yapan uygulama
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/grep
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/grep
+
+[sha256]
+#1 		= b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514
+
+[derle]
+betik   = ./configure --prefix=/tools;make
+	      
+[pakur]
+tip     = gnu

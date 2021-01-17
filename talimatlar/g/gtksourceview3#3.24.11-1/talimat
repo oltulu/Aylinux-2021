@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNOME’a sözdizimi vurgulaması ve daha fazlasını ekleyen bir metin eklenti
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.graphviz.org
+
+[gerek]
+derleme = gtk3 libxml2
+calisma = 
+
+[kaynak]
+1      = http://download.gnome.org/sources/gtksourceview/${surum:0:4}/gtksourceview-$surum.tar.xz
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd gtksourceview-$surum
+tip = gnu
+	      
+[pakur]
+betik = cd gtksourceview-$surum
+tip = gnu

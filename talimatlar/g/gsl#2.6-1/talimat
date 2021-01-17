@@ -1,0 +1,17 @@
+[paket]
+tanim   = C ve C++ programcıları için sayısal bir kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.gnu.org/software/gsl/gsl.html
+
+[kaynak]
+gz      = ${GNU_SITE}/$isim
+
+[sha256]
+1       = b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

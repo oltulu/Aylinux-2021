@@ -1,0 +1,24 @@
+[paket]
+tanim   = Mesaj özetlerini veya sağlama toplamlarını hesaplamak için bir GTK + yardımcı programı
+paketci = Cihan_Alkan
+grup 	= system
+url     = https://github.com/tristanheaven/gtkhash
+
+[kaynak]
+1      = ${url}/releases/download/v$surum/gtkhash-$surum.tar.xz
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd gtkhash-$surum
+betik = ./autogen.sh
+betik = ./configure --prefix=/usr --disable-schemas-compile --enable-gtkhash --enable-linux-crypto --enable-nettle --disable-blake2 --with-gtk=3.0 --enable-nemo
+betik = make
+betik = rm -rf "$PKG"/usr/lib
+
+[pakur]
+betik = make -C gtkhash-$surum DESTDIR="$PKG/" install
+betik =make -C gtkhash-$surum/src/nautilus DESTDIR="$PKG/" install
+betik =rm -rf "$PKG"/usr/lib/{nautilus,caja,thunar}
+

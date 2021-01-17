@@ -1,0 +1,30 @@
+[paket]
+tanim   = Google Test - xUnit çerçevesine dayalı C ++ test aracı (JUnit gibi)
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/google/googletest
+
+[kaynak]
+1      = https://github.com/google/googletest/archive/release-${surum}.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = cmake -Hgoogletest-release-${surum} -Bbuild -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -Dgtest_build_tests=ON
+betik =cmake --build build
+
+[pakur]
+betik = DESTDIR="${PKG}" cmake --build build --target install
+
+betik = mkdir -p gmock/{include,lib/pkgconfig}
+betik = mv "${PKG}"/usr/include/gmock gmock/include/
+betik = mv "${PKG}"/usr/lib/libgmock* gmock/lib/
+betik = mv "${PKG}"/usr/lib/pkgconfig/gmock* gmock/lib/pkgconfig/
+betik = cd googletest-release-${surum}/googletest
+betik = install -Dm 644 LICENSE -t "${PKG}/usr/share/licenses/${pkgname}"
+betik = install -Dm 644 README.md CONTRIBUTORS -t "${PKG}/usr/share/doc/${pkgname}"
+betik = install -Dm 755 scripts/gtest-config.in -t "${PKG}/usr/bin"
+betik = install -Dm 644 cmake/* -t "${PKG}/usr/src/googletest/cmake"
+betik = install -Dm 644 src/* -t "${PKG}/usr/src/googletest/src"
+betik = install -Dm 644 CMakeLists.txt -t "${PKG}/usr/src/googletest"

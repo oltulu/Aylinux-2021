@@ -1,0 +1,21 @@
+[paket]
+tanim   = GTK+ uygulamasına yazım denetimi eklemek için esnek API
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.gnome.org
+
+[gerek]
+derleme    = glib vala iso-codes
+calisma    =
+
+[kaynak]
+xz         = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[sha256]
+1          = bb9195c3a95bacf556d0203e9691f7489e0d3bc5ae1e5a440c89b2f2435d3ed6
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

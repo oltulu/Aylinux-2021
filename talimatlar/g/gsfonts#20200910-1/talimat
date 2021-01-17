@@ -1,0 +1,16 @@
+[paket]
+tanim   = Ghostscript standart Type1 yazı tipleri
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/ArtifexSoftware/urw-base35-fonts
+
+
+[kaynak]
+1       = https://github.com/ArtifexSoftware/urw-base35-fonts/archive/master.tar.gz::$isim-$surum.tar.gz
+
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+dosya	= pakur.sh

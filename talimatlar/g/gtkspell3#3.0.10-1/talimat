@@ -1,0 +1,21 @@
+[paket]
+tanim   = Yanlış yazılmış kelimelerin vurgulanması ve değiştirilmesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://gtkspell.sourceforge.net/
+
+[gerek]
+derleme = intltool enchant gtk3 gobject-introspection vala
+calisma =
+
+[kaynak]
+xz      = https://downloads.sourceforge.net/gtkspell
+
+[sha256]
+1       = b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
