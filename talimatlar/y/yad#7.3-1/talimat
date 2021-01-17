@@ -1,0 +1,26 @@
+[paket]
+tanim   = Kabuk komut dosyalarından veya komut satırından grafik iletişim kutuları görüntüleme
+paketci = yasarciv67
+grup    = geliştirme
+url     = https://github.com/v1cont/yad
+
+[gerek]
+derleme = gtk3 webkit2gtk gtksourceview gspell
+calisma = gtkspell3
+
+[kaynak]
+xz		= https://github.com/v1cont/yad/releases/download/v${surum}
+
+[sha256]
+1		= bcbf0a298a0b6c069b1f7ac6c7914af09fea9932914787faad7e7fe4eebe9051
+
+[derle]
+betik	= autoreconf -ivf ; intltoolize
+betik	= export LDFLAGS="-Wl,--copy-dt-needed-entries"
+ekconf	= --enable-icon-browser --enable-html
+tip		= gnu
+
+[pakur]
+tip		= gnu
+betik   = mv "${PKG}"/usr/bin/{,yad-}pfd
+betik   = mv "${PKG}"/usr/share/man/man1/{,yad-}pfd.1

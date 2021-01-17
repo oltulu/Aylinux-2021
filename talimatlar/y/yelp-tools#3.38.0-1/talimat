@@ -1,0 +1,23 @@
+[paket]
+tanim   = Dokümantasyon oluşturma ve dönüştürme araçları koleksiyonu
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://gitlab.gnome.org/GNOME/yelp-tools
+
+[gerek]
+derleme = yelp-xsl
+calisma = 
+
+[kaynak]
+git      = https://gitlab.gnome.org/GNOME/yelp-tools.git
+
+[sha1]
+
+[derle]
+betik =  cd yelp-tools.git
+betik = NOCONFIGURE=1 ./autogen.sh
+tip     = gnu
+	      
+[pakur]
+betik =  cd yelp-tools.git
+tip 	= gnu

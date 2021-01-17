@@ -1,0 +1,26 @@
+[paket]
+tanim   = Nodejs için paket yöneticisi
+paketci = milisarge
+grup    = geliştirme
+url     = https://yarnpkg.com
+arsiv   = yarn-v$surum
+
+[gerek]
+derleme = 
+calisma = nodejs
+
+[kaynak]
+1       = https://github.com/yarnpkg/yarn/releases/download/v$surum/yarn-v$surum.tar.gz
+
+[sha256]
+1       = 7e433d4a77e2c79e6a7ae4866782608a8e8bcad3ec6783580577c59538381a6e
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik   = install -dm755  "$PKG"/usr/lib/node_modules/yarn
+betik   = cp -R * "$PKG"/usr/lib/node_modules/yarn
+betik   = install -dm755 "$PKG"/usr/bin
+betik   = ln -s /usr/lib/node_modules/yarn/bin/yarn.js "$PKG"/usr/bin/yarn
+betik   = ln -s /usr/lib/node_modules/yarn/bin/yarn.js "$PKG"/usr/bin/yarnpkg

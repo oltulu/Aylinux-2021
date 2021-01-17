@@ -1,0 +1,22 @@
+[paket]
+tanim   = Şifreli IPv6 yer paylaşımı ağı olarak ölçeklenebilir yönlendirme projesi (deneme)
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/yggdrasil-network/yggdrasil-go
+
+[gerek]
+derleme = go
+calisma =
+
+[kaynak]
+1       = $url/releases/download/v0.3.12/yggdrasil-$surum-vendor.tar.gz
+
+[sha256]
+1       = 79d4c95cc00586bc237a77c5f13a0a7226c9c44a76f6fdf3938ad243a9ac25cc
+
+[derle]
+betik   = ./build
+
+[pakur]
+betik   = install -Dm755 "yggdrasil" "${PKG}/usr/bin/yggdrasil"
+betik   = install -Dm755 "yggdrasilctl" "${PKG}/usr/bin/yggdrasilctl"

@@ -1,0 +1,22 @@
+[paket]
+tanim   = YouTube.com'dan ve birkaç siteden video indirmek için bir komut satırı programı
+paketci = Cihan_Alkan
+url     = https://ytdl-org.github.io/youtube-dl/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          = https://github.com/ytdl-org/${isim}/releases/download/${surum}/$isim-$surum.tar.gz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = export PYTHONHASHSEED=0
+betik     = python setup.py build
+
+[pakur]
+betik      = python setup.py install --root="${PKG}/" --optimize=1 --skip-build
+betik      = mv "${PKG}/usr/share/bash-completion/completions/${isim}.bash-completion" "${PKG}/usr/share/bash-completion/completions/${isim}"

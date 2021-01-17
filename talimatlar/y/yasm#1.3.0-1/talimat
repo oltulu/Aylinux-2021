@@ -1,0 +1,15 @@
+[paket]
+tanim    = NASM derleyicisinin çoklu sözdizimine izin veren yeniden yazılmış sürümü
+paketci  = milisarge 
+grup     = geliştirme  
+url      = https://www.tortall.net/projects/yasm/
+
+[kaynak]
+gz       =  https://www.tortall.net/projects/yasm/releases
+
+[derle]
+tip      = gnu
+
+[pakur]
+tip      = gnu
+

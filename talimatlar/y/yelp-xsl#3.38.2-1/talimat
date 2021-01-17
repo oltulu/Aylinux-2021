@@ -1,0 +1,25 @@
+[paket]
+tanim   = Yelp'den belge dönüşümleri
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://gitlab.gnome.org/GNOME/yelp-xsl
+
+[gerek]
+derleme = itstool libxml2 libxslt
+calisma = 
+
+[kaynak]
+git      = https://gitlab.gnome.org/GNOME/yelp-xsl.git
+
+[sha1]
+1 		= b7574e9f0826bedef975d64d3825f75fbaeef55e
+
+[derle]
+betik =  cd yelp-xsl.git
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+betik = make
+	      
+[pakur]
+betik =  cd yelp-xsl.git
+tip 	= gnu

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Yeni nesil telefon motoru uygulaması
+paketci = milisarge
+grup    = ağ
+url     = http://www.yate.ro/
+arsiv   = $isim
+
+[gerek]
+derleme = alsa-lib openssl sqlite speex gsm postgresql mariadb
+calisma =
+
+[kaynak]
+1       = http://yate.null.ro/tarballs/yate6/yate-${surum}-1.tar.gz
+
+[sha256]
+1       = 962dda8f46b414fa8cd86286dcf018c023bf11cba0396e5d7467a6c827e7cbfb
+
+[derle]
+jobs    = 1
+betik   = export LDFLAGS="${LDFLAGS//-Wl,--as-needed}"
+ekconf  = --with-libpq --with-mysql --without-openh323 --with-libqt4=no
+tip     = gnu
+
+[pakur]
+tip     = gnu
