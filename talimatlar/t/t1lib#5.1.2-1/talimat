@@ -1,0 +1,22 @@
+[paket]
+tanim   = Adobe Type 1 fontlarından karakter ve dize glifleri oluşturmak için kitaplık
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://www.ibiblio.org/pub/Linux/libs/graphics/!INDEX.html
+
+[gerek]
+derleme = gobject-introspection
+calisma = 
+
+[kaynak]
+gz      = https://www.ibiblio.org/pub/Linux/libs/graphics
+
+[sha256]
+#1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= ./configure --prefix=/usr
+betik 	= make without_doc
+    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install

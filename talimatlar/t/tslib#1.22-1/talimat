@@ -1,0 +1,22 @@
+[paket]
+tanim   = Dokunmatik Ekran Erişim Kitaplığı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/kergoth/tslib
+
+[gerek]
+derleme = gobject-introspection
+calisma = xorg-mesa xorg-libdrm xorg-libxext xorg-libxdamage xorg-libxcomposite gdk-pixbuf pango xorg-libxrandr
+
+[kaynak]
+xz     = https://github.com/kergoth/tslib/releases/download/$surum
+
+[sha256]
+#1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install

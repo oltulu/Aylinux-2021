@@ -1,0 +1,27 @@
+[paket]
+tanim   = TCL için TK grafik kullanıcı arayüzü araç seti
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.tcl.tk
+
+[gerek]
+derleme = tcl libxss libxft
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/tcl/${isim}${surum}-src.tar.gz
+
+[sha256]
+1       = 63df418a859d0a463347f95ded5cd88a3dd3aaa1ceecaeee362194bc30f3e386
+
+[derle]
+betik   = cd tk${surum}/unix
+betik   = ./configure --prefix=/usr --mandir=/usr/share/man --enable-threads --disable-rpath --enable-64bit
+betik   = make
+
+[pakur]
+betik   = cd tk${surum}/unix
+betik   = make INSTALL_ROOT=${PKG} install install-private-headers
+betik   = ln -s $(basename ${PKG}/usr/bin/wish*) ${PKG}/usr/bin/wish
+betik   = ln -sf libtk${surum%.*}.so "${PKG}/usr/lib/libtk.so"
+

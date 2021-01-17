@@ -1,0 +1,18 @@
+[paket]
+tanim   = Tcl betik dili
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.tcl.tk/
+
+[kaynak]
+1      = http://sourceforge.net/projects/tcl/files/Tcl/$surum/tcl-core${surum}-src.tar.gz
+
+[sha256]
+#1 		= ae52393dca82d5bbc8cad9b95fcf0cf8375603480ee31e7a480a951ab7ecbb4e
+
+[derle]
+betik   = cd tcl$surum/unix
+betik   = ./configure --prefix=/tools ; make
+      
+[pakur]
+dosya 	= pakur.sh

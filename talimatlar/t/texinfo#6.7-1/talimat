@@ -1,0 +1,18 @@
+[paket]
+tanim   = Texinfo, Gnu'nun resmi dökümn formatı
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/texinfo
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/texinfo
+
+[sha256]
+#1 		= 77774b3f4a06c20705cc2ef1c804864422e3cf95235e965b1f00a46df7da5f62
+
+[derle]
+betik 	= cd texinfo-* ;./configure --prefix=/usr;make
+	      
+[pakur]
+betik 	= cd texinfo-*
+tip 	= gnu

@@ -1,0 +1,23 @@
+[paket]
+tanim    = Olay bazlı talloc hafıza yönetim kütüphanesi
+paketci  = milisarge  
+grup     = kütüphane   
+url      = https://tevent.samba.org/
+
+[gerek]
+derleme  = python talloc 
+calisma  =  
+
+[kaynak]
+gz  = https://samba.org/ftp/tevent
+
+[sha256]
+1   = 33f39612cd6d1ae6a737245784581494846f5bb07827983d2f41f942446aa4e6
+
+[derle]
+betik = ./configure --prefix=/usr --bundled-libraries=NONE --builtin-libraries=replace
+betik = make
+
+[pakur]
+tip    = gnu
+

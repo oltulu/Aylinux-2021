@@ -1,0 +1,27 @@
+[paket]
+tanim   = Intel Thread kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.threadingbuildingblocks.org
+
+[gerek]
+derleme = cmake
+calisma =
+
+[kaynak]
+github  = intel/tbb
+
+[sha256]
+1       = 7c96a150ed22bc3c6628bc3fef9ed475c00887b26d37bca61518d76a56510971
+
+[derle]
+betik   = cd $SRC/oneTBB-$surum
+betik   = make
+
+[pakur]
+betik   = cd $SRC/oneTBB-$surum
+betik	= install -d $PKG/usr/lib
+betik	= install -m755 build/linux_*/*.so* $PKG/usr/lib
+betik	= install -d $PKG/usr/include
+betik	= cp -a include/tbb $PKG/usr/include
+betik	= cmake -DINSTALL_DIR=$PKG/usr/lib/cmake/TBB -DSYSTEM_NAME=Linux -DTBB_VERSION_FILE=$PKG/usr/include/tbb/tbb_stddef.h -P cmake/tbb_config_installer.cmake

@@ -1,0 +1,40 @@
+[paket]
+tanim   = Basit, küçük, C++ XML ayrıştırıcı
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.grinninglizard.com/tinyxml
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/${isim}/${isim}_2_6_2.tar.gz
+dosya	= tinyxml-entity.patch
+dosya	= tinyxml-2.5.3-stl.patch
+dosya	= tinyxml.pc
+
+[sha256]
+1       = 15bdfdcec58a7da30adc87ac2b078e4417dbe5392f3afb719f9ba6d062645593
+2		= ef493209b0a51160171fd834a7ecdddd02679463b85fb89a2ea254213e47f99b
+3		= 3baf2c4dbc2c8f54a151dac8860113d2f549174f83ed85d552b094dfaebb52af
+4		= 0e37a568eaebb8f0644f148a3d3efa921ac518217e1c0de46c2859d26516bcc4
+
+[derle]
+betik	= cd $SRC/$isim
+betik	= patch -p0 -i "$SRC/tinyxml-entity.patch"
+betik	= patch -p1 -i "$SRC/tinyxml-2.5.3-stl.patch"
+betik	= sed -i -e '/^TINYXML_USE_STL/ s|=.*|=YES|' -e "s|^RELEASE_CFLAGS.*|& ${CXXFLAGS} -fPIC|" Makefile
+betik	= make 
+betik	= g++ -fPIC "$CXXFLAGS" -shared -o "lib${isim}.so.0.$surum" -Wl,-soname,"lib${isim}.so.0" $(ls *.o | grep -v xmltest)
+
+[pakur]
+betik	= cd $SRC/$isim 
+betik   = install -d -m 0755 "$PKG"/usr/{lib,include}
+betik   = install -m 0755 "lib${isim}.so.0.$surum" "$PKG"/usr/lib/
+betik   = install -m 0644 "$isim.h" tinystr.h "$PKG"/usr/include
+betik   = install -Dm644 "$SRC/$isim.pc" "$PKG/usr/lib/pkgconfig/$isim.pc"
+betik   = cd "$PKG/usr/lib"
+betik   = ln -s "lib${isim}.so.0.$surum" "lib${isim}.so.0"
+betik   = ln -s "lib${isim}.so.0.$surum" "lib${isim}.so"
+

@@ -1,0 +1,28 @@
+[paket]
+tanim   = Linux için döşemeli terminal emülatörü
+paketci = milisarge
+grup    = sistem
+url     = https://gnunn1.github.io/tilix-web
+
+[gerek]
+derleme = dmd dub gdk-pixbuf glib libx11 desktop-file-utils gtk3
+calisma =
+
+[kaynak]
+1       = https://github.com/gnunn1/${isim}/archive/${surum}.tar.gz
+2       = https://github.com/gnunn1/tilix/commit/ce11b0bd936fe8fee9c5ac7025ea5864b99ed7d3.patch::Avoid_calling_values_on_a_shared_object.pa$
+
+[sha256]
+1       = f1b4dbbd60f4b9a91e0ab0954e3e6b8ebe5442d5fbb760a554a733903e44a1de
+
+[derle]
+betik   = patch -p1 < $KAYNAK_DIZIN/Avoid_calling_values_on_a_shared_object.patch 
+betik   = dub build --build=release
+
+[pakur]
+betik   = mkdir -p $PKG/usr/bin
+betik   = mkdir -p $PKG/usr/share/dbus-1/services
+betik   = mkdir -p $PKG/usr/share/applications
+betik   = ./install.sh $PKG/usr
+betik   = rm -rf $PKG/usr/share/nautilus-python
+betik   = rm -f $PKG/usr/share/glib-2.0/schemas/gschemas.compiled

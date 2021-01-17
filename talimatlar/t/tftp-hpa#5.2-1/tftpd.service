@@ -1,0 +1,45 @@
+#! /bin/sh
+
+. /etc/rc.d/functions
+
+DESC="TFTP Service"
+NAME=tftpd
+DAEMON=/usr/bin/in.tftpd
+DAEMON_ARGS="--listen "
+PIDFILE=/var/run/tftp/tftp.pid
+SCRIPTNAME=/etc/init.d/tftpd
+
+# Exit if the package is not installed
+[ -x "$DAEMON" ] || exit 0
+
+[ -f /etc/tftpd.conf ] && . /etc/tftpd.conf
+[ ! -d /var/lib/tftpboot ] && install -d --group=nogroup --owner=nobody /var/lib/tftpboot
+
+case "$1" in
+  start)
+	log_info_msg "Starting $DESC"
+    start_daemon -p "${PIDFILE}" ${DAEMON} ${DAEMON_ARGS} ${TFTPD_ARGS}
+    evaluate_retval
+    ;;
+  stop)
+	log_info_msg "Stopping  $DESC: $NAME"
+    killproc -p "${PIDFILE}" ${DAEMON}
+    evaluate_retval
+    ;;
+  status)
+	log_info_msg "Checking $DESC: "
+    statusproc  -p "${PIDFILE}" ${DAEMON}
+    ;;
+  restart)
+	log_info_msg "Restarting $DESC: $NAME"
+	$0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+	echo "Usage: $SCRIPTNAME {start|stop|restart|status}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

@@ -1,0 +1,28 @@
+[paket]
+tanim   = Resmi tftp istemcisi ve sunucusu
+paketci = milisarge
+grup    = ağ
+url     = http://www.kernel.org
+
+[gerek]
+derleme = automake readline
+calisma =
+
+[kaynak]
+gz      = ${url}/pub/software/network/tftp/${isim}
+dosya   = tftpd.service
+dosya   = tftpd.conf
+
+[sha256]
+1       = acc04dde662491e3092565ecf9bde504c47dbb1bb0408366009b138fe7754cab
+
+[derle]
+ekconf  = --sbindir=/usr/bin --without-tcpwrappers
+tip     = gnu
+
+[pakur]
+betik   = make INSTALLROOT=${PKG} install
+betik   = mv ${PKG}/usr/bin/{tftp,${isim}}
+betik   = mv ${PKG}/usr/share/man/man1/{tftp,${isim}}.1
+betik   = install -D -m644 "${SRC}/tftpd.conf" "$PKG/etc/tftpd.conf"
+betik   = install -D -m755 $SRC/tftpd.service $PKG/etc/rc.d/init.d/tftpd

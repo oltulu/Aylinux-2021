@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=TigerVNC Viewer
+Name[tr]=TigerVNC İstemci
+Comment=VNC client
+Comment[tr]=VNC istemcisi
+Exec=/usr/bin/vncviewer
+Icon=tigervnc
+Terminal=false
+StartupNotify=false
+Categories=Network;RemoteAccess;

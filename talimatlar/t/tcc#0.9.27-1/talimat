@@ -1,0 +1,22 @@
+[paket]
+tanim   = Tiny C derleyicisi
+paketci = milisarge  
+grup    = geliştirme  
+url     = http://bellard.org/tcc
+
+[kaynak]
+bz2     = https://download.savannah.nongnu.org/releases/tinycc
+
+[sha256]
+1       = de23af78fca90ce32dff2dd45b3432b2334740bb9bb7b05bf60fdbfc396ceb9c
+
+[derle]
+betik   = unset CFLAGS ; unset LDFLAGS
+betik   = ./configure --prefix=/usr && make
+
+[pakur]
+betik   = make DESTDIR="$PKG" docdir="$PKG"/usr/share/doc/tcc install
+betik   = make clean
+betik   = make CFLAGS="-fPIC"
+betik   = gcc -shared -o libtcc.so *.o
+betik   = install -Dm755 libtcc.so -t "${PKG}/usr/lib/"

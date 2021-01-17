@@ -1,0 +1,25 @@
+[paket]
+tanim   = Xfce için dosya yöneticisi
+paketci = milisarge 
+grup    = sistem  
+url     = https://www.xfce.org/
+
+[gerek]
+derleme  = exo libexif libgudev libnotify xfce4-panel
+calisma  = desktop-file-utils 
+
+[kaynak]
+bz2   = https://archive.xfce.org/src/xfce/thunar/${surum%.*}
+dosya = thunar-no-root-warning.patch
+
+[sha256]
+1  = 221338b1cbf14cbee2b9091f9b4e4f47cf6bc9513bbb113762da7ca4f8173c4c
+2  = 6eabd8bb07d435dd1a9a9772963e2089b1ff7127698b406d71983d3c2d834c2e
+
+[derle]
+betik  = patch thunar/thunar-window.c $SRC/thunar-no-root-warning.patch
+ekconf = --enable-gio-unix --enable-gudev --enable-exif --enable-pcre --enable-notifications --disable-debug
+tip    = gnu
+
+[pakur]
+tip    = gnu

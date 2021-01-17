@@ -1,0 +1,22 @@
+[paket]
+tanim   = Güçlü ücretsiz veri kurtarma yazılımı
+paketci = milisarge
+grup    = sistem
+url     = http://www.cgsecurity.org/
+
+[gerek]
+derleme = util-linux e2fsprogs ntfs-3g ncurses sudo libjpeg-turbo
+calisma =
+
+[kaynak]
+bz2     = $url
+
+[sha256]
+1       = 1413c47569e48c5b22653b943d48136cb228abcbd6f03da109c4df63382190fe
+
+[derle]
+ekconf  = --without-ewf --enable-sudo
+tip     = gnu
+
+[pakur]
+tip     = gnu

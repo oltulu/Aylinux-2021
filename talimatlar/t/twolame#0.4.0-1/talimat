@@ -1,0 +1,21 @@
+[paket]
+tanim   = Optimize edilmiş MPEG Ses Katmanı 2 (MP2) kodlayıcı
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.twolame.org/
+
+[gerek]
+derleme = alsa-lib
+calisma =
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/twolame
+
+[sha256]
+1       = cc35424f6019a88c6f52570b63e1baf50f62963a3eac52a03a800bb070d7c87d
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

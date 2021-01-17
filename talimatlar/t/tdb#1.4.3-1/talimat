@@ -1,0 +1,22 @@
+[paket]
+tanim   = GDBM benzeri eş zamanlı değişikliklere izin veren veritabanı erişim kütüphanesi
+paketci = milisarge
+grup    = sistem
+url     = http://tdb.samba.org/
+
+[gerek]
+derleme  = python
+calisma  =  
+
+[kaynak]
+gz      = http://samba.org/ftp/$isim
+
+[sha256]
+1       = dd4ecd9678e8d3ea772623bd81fe49b43363a2f970a76fb5468322753787aa4b
+
+[derle]
+betik  = ./configure --prefix=/usr
+
+[pakur]
+tip     = gnu
+

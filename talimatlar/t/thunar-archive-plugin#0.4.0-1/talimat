@@ -1,0 +1,22 @@
+[paket]
+tanim   = Thunar'da arşiv oluşturmak ve çıkartmak için eklenti
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://goodies.xfce.org/projects/thunar-plugins/thunar-archive-plugin
+
+[gerek]
+derleme = thunar exo intltool xfce4-dev-tools
+calisma = xarchiver
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/thunar-plugins/${isim}/${surum%.*}
+
+[sha256]
+1       = bf82fa86a388124eb3c4854249c30712b2922e61789607268ee14548549b3115
+
+[derle]
+ekconf  = --libexecdir=/usr/lib/xfce4
+tip     = gnu
+
+[pakur]
+tip     = gnu

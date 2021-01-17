@@ -1,0 +1,25 @@
+[paket]
+tanim   = Resmi Telegram Masaüstü istemcisi
+paketci = Cihan_Alkan
+grup 	= sosyal
+url     = https://desktop.telegram.org/
+
+[gerek]
+derleme = cmake ninja libdbusmenu-qt5 qt5-wayland ffmpeg
+calisma = 
+
+[kaynak]
+1  = https://github.com/telegramdesktop/tdesktop/releases/download/v${surum}/tdesktop-${surum}-full.tar.gz
+
+[sha256]
+    #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= cd tdesktop-$surum-full
+betik 	= echo "target_link_libraries(external_webrtc INTERFACE jpeg)" | tee -a cmake/external/webrtc/CMakeLists.txt
+betik 	= cmake . -B build -G Ninja -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_BUILD_TYPE=Release -DTDESKTOP_API_ID=611335 -DTDESKTOP_API_HASH=d524b414d21f4d37f08684c1df41ac9c -DTDESKTOP_LAUNCHER_BASENAME="telegramdesktop" -DDESKTOP_APP_SPECIAL_TARGET=""
+betik 	= ninja -C build
+        	      
+[pakur]
+betik 	= cd tdesktop-$surum-full
+betik 	=  DESTDIR=$PKG ninja -C build install

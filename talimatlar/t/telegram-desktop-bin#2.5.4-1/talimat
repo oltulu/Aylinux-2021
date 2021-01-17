@@ -1,0 +1,38 @@
+[paket]
+tanim   = Resmi Telegram Masaüstü istemcisi
+paketci = Cihan_Alkan
+grup 	= sosyal
+url     = https://desktop.telegram.org
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1 = https://github.com/telegramdesktop/tdesktop/releases/download/v2.5.4/tsetup.2.5.4.beta.tar.xz
+2 = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon32.png
+3 = https://aur.archlinux.org/cgit/aur.git/plain/telegram-desktop-bin.desktop?h=telegram-desktop-bin
+4 = https://aur.archlinux.org/cgit/aur.git/plain/tg.protocol?h=telegram-desktop-bin
+
+[sha256]
+    #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= cd "$SRC/"
+betik 	= install -dm755 "$PKG/usr/bin"
+betik 	= install -dm755 "$PKG/usr/share/pixmaps/"
+betik 	= install -dm755 "$PKG/usr/share/applications/"
+
+        	      
+[pakur]
+betik 	= cd "$SRC/"
+betik 	= install -Dm755 "$SRC/Telegram/Telegram" "$PKG/usr/bin/telegram-desktop"
+betik 	= chrpath --delete "$PKG/usr/bin/telegram-desktop"
+betik 	= install -Dm644 "/sources/icon32.png" "$PKG/usr/share/pixmaps/telegram.png"
+betik 	= install -Dm644 "$/sources/$isim.desktop" "$PKG/usr/share/applications/telegramdesktop.desktop"
+betik 	= install -d "$PKG/usr/share/kservices5"
+betik 	= install -d "$PKG/usr/share/kde4/services"
+betik 	= install -m644 "/sources/tg.protocol" "$PKG/usr/share/kservices5/tg.protocol"
+betik 	= ln -s "/usr/share/kservices5/tg.protocol" "$PKG/usr/share/kde4/services"
+betik 	= mkdir -p "$PKG/etc/tdesktop"
+betik 	= echo "/usr/bin/telegram-desktop" > "$PKG/etc/tdesktop/externalupdater"

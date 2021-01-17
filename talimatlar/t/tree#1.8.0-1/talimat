@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Özyinelemeli dizin listeleme aracı
+paketci = milisarge
+grup 	= sistem
+url 	= http://mama.indstate.edu/users/ice/tree
+
+[kaynak]
+tgz 	= $url/src
+
+[sha256]
+1       = 715d5d4b434321ce74706d0dd067505bb60c5ea83b5f0b3655dae40aa6f9b7c2
+
+[derle]
+betik   = sed -e 's,install -s,install ,g' -i Makefile
+
+[pakur]
+betik 	= make MANDIR=${PKG}/usr/share/man/man1 BINDIR=${PKG}/usr/bin install

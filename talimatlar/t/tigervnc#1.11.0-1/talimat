@@ -1,0 +1,28 @@
+[paket]
+tanim   = TightVNC çatalı- VNC istemci ve sunucusu
+paketci = milisarge
+grup    = ağ
+url     = https://www.tigervnc.org
+
+[gerek]
+derleme = cmake nasm xorg-util-macros fltk zlib libxtst libjpeg-turbo pixman xsetroot xorg-proto libxkbfile libxfont2 font-util gnutls libdrm perl xauth xtrans xkeyboard-config mesa
+calisma =
+
+[kaynak]
+github  = TigerVNC/tigervnc
+2       = ftp://ftp.freedesktop.org/pub/xorg/individual/xserver/xorg-server-1.20.5.tar.bz2
+dosya   = vncviewer.desktop
+
+[sha256]
+1       = f15ced8500ec56356c3bf271f52e58ed83729118361c7103eab64a618441f740
+2       = a81d8243f37e75a03d4f8c55f96d0bc25802be6ec45c3bfa5cb614c6d01bac9d
+3       = 6eaf8bd232e83d712ef52452455adbac36e461f3da93457f844f198f03ba93e9
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = gnu
+betik   = cd unix/xserver/hw/vnc
+tip     = gnu
+betik   = install -Dm0644 "$SRC"/vncviewer.desktop "$PKG"/usr/share/applications/vncviewer.desktop

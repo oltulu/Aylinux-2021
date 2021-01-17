@@ -1,0 +1,24 @@
+[paket]
+tanim   = Gtk3 saat dilimi harita widget'ı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/dashea/timezonemap
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1= ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+    #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= autoreconf -fi
+betik 	= ./configure --prefix=/usr
+betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik 	= make
+        	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install

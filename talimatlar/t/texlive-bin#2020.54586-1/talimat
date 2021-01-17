@@ -1,0 +1,59 @@
+[paket]
+tanim   = TeX Live ikili dosyaları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://tug.org/texlive/
+
+[gerek]
+derleme = zziplib poppler potrace clips t1lib pixman mpfr cairo graphite2 libpaper libsigsegv libpng libjpeg-turbo freetype texinfo gmp ffcall
+calisma = zziplib ffcall libsigsegv
+
+[kaynak]
+git      = https://github.com/Tex-Live/texlive-source
+
+[sha256]
+
+[derle]
+betik 	= cd "$SRC/texlive-source"
+betik 	= sed -i s/SELFAUTOPARENT/TEXMFROOT/ texk/tex4htk/t4ht.c
+betik 	= cp -pv texk/web2c/pdftexdir/pdftoepdf{-poppler0.86.0,}.cc
+betik 	= cp -pv texk/web2c/pdftexdir/pdftosrc{-poppler0.83.0,}.cc
+betik 	= mkdir -p Work
+betik 	= cd Work
+betik 	= ../configure --prefix=/usr -C --sysconfdir=/etc --datarootdir=/usr/share --datadir=/usr/share --mandir=/usr/share/man --disable-native-texlive-build --with-banner-add="/Milis Linux" --disable-multiplatform --disable-dialog --disable-psutils --disable-t1utils --disable-bibtexu --disable-xz --enable-shared --disable-static --with-system-zlib --with-system-zziplib --with-system-pnglib --with-system-ncurses --with-system-t1lib --with-system-poppler --with-system-freetype2 --with-system-pixman --with-system-cairo --with-system-harfbuzz --with-system-graphite --with-system-icu --with-system-gmp --with-system-mpfr --with-system-potrace --with-system-libpaper --with-freetype2-libdir=/usr/lib --with-freetype2-include=/usr/include/freetype2 --with-xdvi-x-toolkit=xaw --disable-dump-share --disable-aleph --enable-luatex --with-clisp-runtime=default --enable-xindy --disable-xindy-rules --disable-xindy-docs
+betik 	= make
+    	      
+[pakur]
+betik 	= cd "$SRC/texlive-source"
+betik 	= find utils/xindy -name Makefile -exec sed -i -e "s|^prefix =.\+$|prefix = $PKG/usr|" -e "s|^mandir =.\+$|mandir = \${prefix}/share/man|" -e "s|^datadir =.\+$|datadir = \${datarootdir}/texmf|" -e "s|^docdir =.\+$|docdir = \${datadir}/doc/xindy|" '{}' \;
+betik 	= cd Work
+betik 	= make DESTDIR="${PKG}" texmf="$PKG"/usr/share/texmf install
+betik 	= mkdir -p "${PKG}"/usr/bin
+betik 	= ln -s eptex "${PKG}"/usr/bin/platex
+betik 	= ln -s euptex "${PKG}"/usr/bin/uplatex
+betik 	= ln -s luatex "${PKG}"/usr/bin/dvilualatex
+betik 	= ln -s luatex "${PKG}"/usr/bin/dviluatex
+betik 	= ln -s luahbtex "${PKG}"/usr/bin/lualatex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/amstex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/cslatex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/csplain
+betik 	= ln -s pdftex "${PKG}"/usr/bin/eplain
+betik 	= ln -s pdftex "${PKG}"/usr/bin/etex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/jadetex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/latex
+betik 	= ln -s tex "${PKG}"/usr/bin/lollipop
+betik 	= ln -s pdftex "${PKG}"/usr/bin/mex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/mllatex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/mltex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfetex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfcslatex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfcsplain
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfjadetex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdflatex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfmex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/pdfxmltex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/texsis
+betik 	= ln -s pdftex "${PKG}"/usr/bin/utf8mex
+betik 	= ln -s pdftex "${PKG}"/usr/bin/xmltex
+betik 	= ln -s xetex "${PKG}"/usr/bin/xelatex
+

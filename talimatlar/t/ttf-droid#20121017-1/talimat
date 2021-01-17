@@ -1,0 +1,25 @@
+[paket]
+tanim   = Google’ın Android’in bir parçası olarak yayınladığı genel amaçlı fontlar
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://dejavu-fonts.github.io/
+
+[gerek]
+derleme = 
+calisma = fontconfig xorg-fonts-encodings xorg-font-utils 
+
+[kaynak]
+1      = https://sources.archlinux.org/other/community/ttf-droid/ttf-droid-20121017.tar.xz
+dosya  = serif-fontconfig.conf
+dosya  = sans-fontconfig.conf
+dosya  = sans-mono-fontconfig.conf
+dosya  = kufi-fontconfig.conf
+
+[sha1]
+1 		= 
+2 		= 
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]

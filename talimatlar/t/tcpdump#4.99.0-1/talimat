@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ağ izleme ve veri toplama aracı
+paketci = milisarge
+grup    = ağ
+url     = https://www.tcpdump.org
+
+[gerek]
+derleme = libpcap libcap-ng openssl
+calisma =
+
+[kaynak]
+gz      = $url/release
+
+[sha256]
+1       = 2cd47cb3d460b6ff75f4a9940f594317ad456cfbf2bd2c8e5151e16559db6410
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

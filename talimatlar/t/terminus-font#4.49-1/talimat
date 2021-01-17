@@ -1,0 +1,27 @@
+[paket]
+tanim   = Monospace bitmap font
+paketci = milisarge
+grup 	= kütüphane
+url     = http://terminus-font.sourceforge.net
+
+[gerek]
+derleme = fontconfig mkfontscale python bdftopcf
+calisma = encodings
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/project/$isim/$isim-$surum
+dosya   = fix-75-yes-terminus.patch
+
+[sha256]
+1 		= 0f1b205888e4e26a94878f746b8566a65c3e3742b33cf9a4e6517646d5651297
+2       = ddd86485cf6d54e020e36f1c38c56e8b21b57c23a5d76250e15c1d16fed9caa5
+
+[derle]
+yama    = 2
+betik   = make prefix=/usr x11dir=/usr/share/fonts/misc psfdir=/usr/share/kbd/consolefonts
+
+[pakur]
+betik   = make prefix=/usr x11dir=/usr/share/fonts/misc psfdir=/usr/share/kbd/consolefonts DESTDIR="$PKG" install
+betik   = install -Dm644 "$SRC/terminus-font-$surum/75-yes-terminus.conf" "$PKG/etc/fonts/conf.avail/75-yes-terminus.conf"
+betik   = install -d "$PKG/etc/fonts/conf.d"
+betik   = cd "$PKG/etc/fonts/conf.d" && ln -s ../conf.avail/75-yes-terminus.conf .
