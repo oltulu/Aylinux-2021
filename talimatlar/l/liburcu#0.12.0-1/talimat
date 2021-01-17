@@ -1,0 +1,22 @@
+[paket]
+tanim   = Kullanıcı alanı RCU (okuma-kopyalama-güncelleme) kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://liburcu.org
+arsiv   = userspace-rcu-$surum
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = https://www.lttng.org/files/urcu/userspace-rcu-${surum}.tar.bz2
+
+[sha256]
+1       = 409b1be506989e1d26543194df1a79212be990fe5d4fd84f34f019efed989f97
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

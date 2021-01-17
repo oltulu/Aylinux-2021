@@ -1,0 +1,21 @@
+[paket]
+tanim   = Intel G45 ve HD Graphics ailesi için VA-API uygulaması
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://01.org/linuxmedia/vaapi
+
+[kaynak]
+git      = https://github.com/intel/intel-vaapi-driver
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd $isim
+betik = sed -i '1s/python$/&2/' src/shaders/gpp.py
+betik = CFLAGS+=' -fcommon'
+betik = milis-meson intel-vaapi-driver build
+betik = ninja -C build
+
+[pakur]
+betik = DESTDIR="${PKG}" meson install -C build

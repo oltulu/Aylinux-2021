@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ulaştırma Bağımsız RPC kütüphanesi (SunRPC değişimi)
+paketci = milisarge
+grup    = kütüphane
+url     = http://libtirpc.sourceforge.net/
+
+[gerek]
+derleme    = krb5
+calisma    =
+
+[kaynak]
+bz2        = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1          = 2ca529f02292e10c158562295a1ffd95d2ce8af97820e3534fe1b0e3aec7561d
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

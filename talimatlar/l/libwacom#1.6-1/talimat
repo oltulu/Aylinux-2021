@@ -1,0 +1,25 @@
+[paket]
+tanim   = Wacom tabletlerini ve özelliklerini belirlemek için Kütüphane
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://linuxwacom.sourceforge.net/
+
+[gerek]
+derleme = glib libgudev
+calisma = 
+
+[kaynak]
+bz2      = https://github.com/linuxwacom/libwacom/releases/download/${isim}-${surum}
+
+[sha512]
+1 		= 2aeba01535092b26301ec9b675932bf88f8150c513274449341143a641ee942977ed3b0d35cf1d2513da056701ca0d75eff9fd44830c5a00764e37fcbfb2c051
+
+[derle]
+tip 	= gnu
+
+	
+	      
+[pakur]
+tip 	= gnu
+betik= cd tools
+betik= ./generate-hwdb > "${PKG}"/usr/lib/udev/hwdb.d/65-libwacom.hwdb

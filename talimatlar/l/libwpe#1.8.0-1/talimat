@@ -1,0 +1,21 @@
+[paket]
+tanim   = WPE WebKit için genel amaçlı kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wpewebkit.org
+
+[gerek]
+derleme    = cmake libxkbcommon mesa
+calisma    =
+
+[kaynak]
+xz         = ${url}/releases
+
+[sha256]
+1          = e2d3494fc33fe946ad917fd6a3abd127462b91bba62ef8b35507e92f8ede4188
+
+[derle]
+tip     = cmake  
+
+[pakur]
+tip     = cmake

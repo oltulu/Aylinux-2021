@@ -1,0 +1,26 @@
+[paket]
+tanim   = x86 emule kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/wfeldt/libx86emu
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = https://github.com/wfeldt/libx86emu/archive/${surum}/${isim}-${surum}.tar.gz
+
+[sha256]
+1       = 70b574ed84dcba2dc4f54a9a1c14539e84ddbe628842c638a2f98d987d879dac
+
+[derle]
+betik   = sed -i 's/-shared -Wl/-shared '"$LDFLAGS"'/g' "Makefile" 
+betik   = export CFLAGS="$CFLAGS -shared -fPIC -fvisibility=hidden -fomit-frame-pointer -w"
+betik   = echo 'touch changelog' > git2log
+betik   = echo "$surum" > VERSION
+betik   = make
+
+[pakur]
+tip     = gnu
+betik   = mv $PKG/usr/lib64 $PKG/usr/lib

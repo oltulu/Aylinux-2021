@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ses soyutlama eklentileri için soyut kütüphane
+paketci = milisarge
+grup    = kütüphane  
+url     = https://sourceforge.net/projects/libvisual/
+
+[kaynak]
+gz     = https://downloads.sourceforge.net/sourceforge/libvisual
+dosya  = libvisual-0.4.0-inlinedefineconflict.patch
+
+[sha256]
+1  = 0b4dfdb87125e129567752089e3c8b54cefed601eef169d2533d8659da8dc1d7
+2  = 5221aadfdd6ba752e9bf45d6f2b0133357f7e3e7cf286c1b36807cc2e0df5a0a
+
+[derle]
+yama   = 2
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

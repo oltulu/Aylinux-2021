@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 Oturum Yönetimi kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libice xtrans xorg-proto
+calisma = xorg-proto
+
+[kaynak]
+1       = $url/releases/individual/lib/libSM-$surum.tar.bz2
+
+[sha512]
+1 		= 74c42e27029db78475e62025b4711dbac5e22d2f8e8a24be98a1c31b03c0fc4afe859928f851800ea0b76854f12147900dc4f27bbfd3d8ea45daaaf24b70a903
+
+[derle]
+betik   = cd libSM-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libSM-$surum
+tip 	= gnu

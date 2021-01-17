@@ -1,0 +1,21 @@
+[paket]
+tanim    = VP8 and VP9 kodekleri
+paketci  = milisarge
+grup     = kütüphane 
+url      = https://www.webmproject.org/
+
+[gerek]
+derleme  = nasm  
+calisma  =  
+
+[kaynak]
+1      =  https://github.com/webmproject/libvpx/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1      = df19b8f24758e90640e1ab228ab4a4676ec3df19d23e4593375e6f3847dee03e
+
+[derle]
+dosya  = derle.sh
+
+[pakur]
+betik  = make DIST_DIR=${PKG}/usr install

@@ -1,0 +1,21 @@
+[paket]
+tanim   = MS Visio diyagramlarını okumak ve dönüştürmek için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://cgit.freedesktop.org/libreoffice/libvisio/commit/
+
+[gerek]
+derleme    = boost librevenge libxml2 icu cppunit
+calisma    =
+
+[kaynak]
+xz         = http://dev-www.libreoffice.org/src
+
+[sha256]
+1          = 8faf8df870cb27b09a787a1959d6c646faa44d0d8ab151883df408b7166bea4c
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

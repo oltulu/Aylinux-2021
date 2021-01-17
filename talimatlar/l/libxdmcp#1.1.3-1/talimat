@@ -1,0 +1,23 @@
+[paket]
+tanim   = X11 Ekran Yöneticisi Kontrol Protokolü kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-proto
+calisma = xorg-proto
+
+[kaynak]
+1       = $url/releases/individual/lib/libXdmcp-$surum.tar.bz2
+
+[sha512]
+1 		= cb1d4650f97d66e73acd2465ec7d757b9b797cce2f85e301860a44997a461837eea845ec9bd5b639ec5ca34c804f8bdd870697a5ce3f4e270b687c9ef74f25ec
+
+[derle]
+betik   = cd libXdmcp-$surum
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXdmcp-$surum
+tip     = gnu

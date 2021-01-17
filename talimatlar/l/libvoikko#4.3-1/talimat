@@ -1,0 +1,27 @@
+[paket]
+tanim   = Fince için bir yazım ve dilbilgisi denetleyicisi, heceleyici ve ilgili dil verileri koleksiyonu
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = http://voikko.sourceforge.net
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz     = https://www.puimula.org/voikko-sources/libvoikko
+
+
+
+[sha512]
+    #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik = export LANG=en_US.UTF-8
+betik 	= ./configure --prefix=/usr --enable-hfst=false --with-dictionary-path=/usr/share/voikko
+betik 	= make
+        	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install
+betik 	= mkdir -p "$PKG"/usr/lib/python3.7/site-packages
+betik 	= cp python/libvoikko.py "$PKG"/usr/lib/python3.7/site-packages/libvoikko.py

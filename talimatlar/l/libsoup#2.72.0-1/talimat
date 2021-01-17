@@ -1,0 +1,21 @@
+[paket]
+tanim   = C de HTTP kütüphane uygulaması
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/libsoup
+
+[gerek]
+derleme    = meson glib libxml2 sqlite vala libpsl glib-networking krb5 gobject-introspection
+calisma    = glib-networking
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1          = bd2ea602eba642509672812f3c99b77cbec2f3de02ba1cc8cb7206bf7de0ae2a
+
+[derle]
+tip        = meson
+
+[pakur]
+tip        = meson

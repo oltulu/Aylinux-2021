@@ -1,0 +1,18 @@
+[paket]
+tanim   = GNUTLS için ASN.1 kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gnu.org/software/libtasn1/
+
+[kaynak]
+gz      = https://ftp.gnu.org/gnu/$isim
+
+[sha256]
+#1 		= 7e528e8c317ddd156230c4e31d082cd13e7ddeb7a54824be82632209550c8cca
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

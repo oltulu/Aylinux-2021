@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 çeşitli düzeltme uzantı kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 xorg-proto
+calisma = xorg-proto
+
+[kaynak]
+1       = $url/releases/individual/lib/libXfixes-$surum.tar.bz2
+
+[sha256]
+1 		= de1cd33aff226e08cefd0e6759341c2c8e8c9faf8ce9ac6ec38d43e287b22ad6
+
+[derle]
+betik   = cd libXfixes-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXfixes-$surum
+tip 	= gnu

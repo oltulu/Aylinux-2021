@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ulaştırma Bağımsız RPC kütüphanesi (SunRPC değişimi)
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://libtirpc.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = krb5
+
+[kaynak]
+bz2      = http://downloads.sourceforge.net/sourceforge/libtirpc
+
+[sha1]
+1 		= d85717035cb9bd6c45557a1eb1351d3af9a69ff7
+
+[derle]
+betik 	= ./configure --prefix=/usr --sysconf=/etc --disable-gssapi
+betik 	= make
+	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install

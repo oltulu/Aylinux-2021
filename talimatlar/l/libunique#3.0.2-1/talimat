@@ -1,0 +1,24 @@
+[paket]
+tanim   = GTK için tek uygulama çalıştırma kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/Attic/LibUnique
+
+[gerek]
+derleme = dbus-glib gtk3 glib
+calisma =
+
+[kaynak]
+bz2     = ${GNOME_SITE}/${isim}/3.0
+
+[sha256]
+1       = 50269a87c7aabf1e25f01b3bbb280133138ffd7b6776289894c614a4b6ca968d
+
+[derle]
+betik   = sed -i Makefile -e "/MAINTAINER_CFLAGS/s/-Werror/-Wno-error/"
+ekconf  = --enable-bacon=yes --enable-dbus=yes
+tip     = gnu
+
+[pakur]
+tip     = gnu
+	

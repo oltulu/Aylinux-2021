@@ -1,0 +1,18 @@
+[paket]
+tanim   = Tamsayılı sayı tabanlı teorik uygulamalar için yüksek derecede optimize edilmiş ve taşınabilir rutinler
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libtom.org/
+
+[kaynak]
+1  = https://github.com/libtom/libtommath/releases/download/v1.1.0/ltm-$surum.tar.xz::$isim-$surum.tar.xz
+
+[sha256]
+1  = 90466c88783d1fe9f5c2364a69f5479f10d73ed616011be6196f35f7f1537ead
+
+[derle]
+betik  = make -f makefile.shared IGNORE_SPEED=1
+
+[pakur]
+betik  = make -f makefile.shared PREFIX=/usr DESTDIR=${PKG} INSTALL_GROUP=root install
+betik  = rm -f $PKG/usr/lib/*.a

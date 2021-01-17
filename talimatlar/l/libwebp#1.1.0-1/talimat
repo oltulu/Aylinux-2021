@@ -1,0 +1,23 @@
+[paket]
+tanim   = Weebp formatı için kütüphane ve çevirici aracı
+paketci = milisarge
+grup 	= kütüphane
+url     = https://developers.google.com/speed/webp
+
+[gerek]
+derleme = freeglut mesa glu libpng libjpeg-turbo tiff giflib
+calisma = 
+
+[kaynak]
+gz      = https://storage.googleapis.com/downloads.webmproject.org/releases/webp
+
+[sha512]
+1 		= e095b8fdf0096395daf12892b3b74c472868e727f23640ba7aa5922a5a028b778a6a60d8a94f696f6c0ca49577dfc9a0b599ecb74ad831ade48c6db812b71d2e
+
+[derle]
+betik   = ./autogen.sh
+ekconf  =  --enable-swap-16bit-csp 	--disable-static --enable-libwebpmux --enable-libwebpdemux --enable-libwebpdecoder
+tip     = gnu
+      
+[pakur]
+tip     = gnu

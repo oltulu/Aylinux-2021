@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 yazı tipi rasterleştirme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = freetype libfontenc xorg-proto xorg-util-macros xtrans
+calisma = 
+
+[kaynak]
+1       = $url/archive/individual/lib/libXfont2-$surum.tar.bz2
+
+[sha256]
+1 		= 0e8ab7fd737ccdfe87e1f02b55f221f0bd4503a1c5f28be4ed6a54586bac9c4e
+
+[derle]
+betik   = cd libXfont2-$surum
+ekconf  = --disable-static
+tip 	= gnu
+	      
+[pakur]
+betik   = cd libXfont2-$surum
+tip 	= gnu

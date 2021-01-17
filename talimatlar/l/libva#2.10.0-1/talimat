@@ -1,0 +1,23 @@
+[paket]
+tanim   = Linux için Video Acceleration API
+paketci = milisarge
+grup 	= kütüphane
+url     = https://01.org/linuxmedia/vaapi
+
+[gerek]
+derleme = meson libglvnd mesa libdrm libx11 libxext libxfixes wayland
+calisma = 
+
+[kaynak]
+1       = https://github.com/intel/libva/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 9b6264dade6b6d3edb59c6c4f3c9217d1d5a195635fc07da875d565f58624418
+
+[derle]
+betik   = CFLAGS+=" -DENABLE_VA_MESSAGING"
+tip     = meson
+
+[pakur]
+tip     = meson
+betik   = mkdir -p $PKG/etc;echo "LIBVA_MESSAGING_LEVEL=1" > "${PKG}"/etc/libva.conf

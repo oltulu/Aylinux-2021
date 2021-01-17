@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 istemci tarafı kitaplığı
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-util-macros xtrans libxcb
+calisma = 
+
+[kaynak]
+1       = $url/releases/individual/lib/libX11-$surum.tar.bz2
+
+[sha512]
+#1 		= 1de8e0ec466308bc48946d1ce7a7dc6bd3120b1b365cd01afd1bd51dd7369e3d1870dd379b0b7c5b07699095d59761bd23e2e02ab60929de32c39b6885016e76
+
+[derle]
+betik   = cd libX11-$surum
+ekconf  = --disable-static --disable-xf86bigfont
+tip     = gnu
+	      
+[pakur]
+betik   = cd libX11-$surum
+tip 	= gnu

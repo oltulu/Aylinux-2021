@@ -1,0 +1,23 @@
+[paket]
+tanim   = XDG Temel Dizin Spesifikasyonlarının Uygulanması
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/devnev/libxdg-basedir
+
+[kaynak]
+gz         = https://github.com/devnev/libxdg-basedir/archive
+dosya      = xdgGetRelativeHome-overflow.patch
+
+[sha256]
+1          = 1c2b0032a539033313b5be2e48ddd0ae94c84faf21d93956d53562eef4614868
+2          = ae08634dc8df691a2c651c375dc4f7a9c7c4dd208908906b910fe2d21625724d
+
+[derle]
+betik      = cd $isim-$isim-$surum
+betik      = patch -Np0 -i "${SRC}/xdgGetRelativeHome-overflow.patch"
+betik      = autoreconf -fi
+tip        = gnu
+
+[pakur]
+betik      = cd $isim-$isim-$surum
+tip        = gnu

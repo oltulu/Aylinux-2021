@@ -1,0 +1,21 @@
+[paket]
+tanim   = Libvirt sanallaştırma API için Python bağlama
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://pypi.org/project/libvirt-python
+
+[gerek]
+derleme = python libvirt apparmor
+calisma =
+
+[kaynak]
+gz      = https://libvirt.org/sources/python
+
+[sha256]
+1       = c772421ecc144f098f4ab15db700c62db9b9e6e76b876217edcfd62e9ce02750
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

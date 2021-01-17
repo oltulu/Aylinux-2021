@@ -1,0 +1,22 @@
+[paket]
+tanim   = X pencere ve çalışama alan yönetici kütüphanesi
+paketci = milisarge 
+grup    = sistem
+url     = https://gitlab.gnome.org/GNOME/libwnck
+
+[gerek]
+derleme  = gobject-introspection meson gtk3 startup-notification libxres 
+calisma  =  
+
+[kaynak]
+xz = https://download.gnome.org/sources/${isim}/${surum%.*}
+
+[sha256]
+1  = 9595835cf28d0fc6af5526a18f77f2fcf3ca8c09e36741bb33915b6e69b8e3ca
+
+[derle]
+tip   = meson
+
+[pakur]
+tip   = meson
+

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Xiph.org tarafından geliştirilen video kodeği
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://www.theora.org/
+
+[gerek]
+derleme  = libvorbis libogg 
+calisma  =  
+
+[kaynak]
+bz2   =  https://downloads.xiph.org/releases/theora
+dosya =  libtheora-1.1.1-libpng16.patch
+
+[sha256]
+1  =  b6ae1ee2fa3d42ac489287d3ec34c5885730b1296f0801ae577a35193d3affbc
+2  =  e4c9a8dc798c596ed32a2a720020ae27a0e72f5add1a47cb8fadebe0e7180d7e
+
+[derle]
+betik  =  patch -Np0 -i ../libtheora-1.1.1-libpng16.patch
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

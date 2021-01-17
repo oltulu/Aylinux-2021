@@ -1,0 +1,18 @@
+[paket]
+tanim   = USB cihazlarına erişim sağlayan kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = https://libusb.info
+
+[kaynak]
+bz2     = https://downloads.sourceforge.net/$isim
+
+[sha512]
+#1 		= 2a93ba48bb66b9775838c16d74f7269348d9bc163f94ccf2842d1108d95a41cf79f8c8065233bea410fb94261a462dbb08ecfa1a9b6d3ddf4a5980e6043f74f4
+
+[derle]
+ekconf  = --disable-udev --disable-static
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

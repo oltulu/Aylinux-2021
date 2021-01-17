@@ -1,0 +1,21 @@
+[paket]
+tanim   = Libvirt ile Glib entegrasyonu
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://libvirt.org
+
+[gerek]
+derleme = glib python vala libvirt libxml2 gobject-introspection
+calisma =
+
+[kaynak]
+1       = http://libvirt.org/sources/glib/${isim}-${surum}.tar.gz
+
+[sha256]
+1       = 7fff8ca9a2b723dbfd04223b1c7624251c8bf79eb57ec27362a7301b2dd9ebfe
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

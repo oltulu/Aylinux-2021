@@ -1,0 +1,27 @@
+[paket]
+tanim   = MATE için bir belge görüntüleyici
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = intltool itstool gobject-introspection
+calisma = djvulibre libspectre libgxps mathjax poppler-glib webkit2gtk caja texlive-bin
+
+[kaynak]
+1      = ftp://tug.org/texlive/historic/2019/texlive-$surum-source.tar.xz
+
+[sha256]
+    #1 		= 208544f6cce4bb5c0bf423a0d618929e35527d1c5ed120a5aa19f2a7a77e5c44
+
+[derle]
+betik     = cd texlive-20190410-source
+betik     = mkdir build
+betik     = cd build
+betik     = ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-system-zlib --with-system-pixman --with-system-cairo --with-system-icu --with-system-gmp --with-system-mpfr --disable-native-texlive-build --disable-static --enable-shared --disable-dvisvgm
+betik     = make
+betik = make -C texk/web2c    	      
+[pakur]
+betik     = cd texlive-20190410-source
+betik     = cd build
+betik = make -C texk/web2c DESTDIR=$PKG install-data-am install-libLTLIBRARIES

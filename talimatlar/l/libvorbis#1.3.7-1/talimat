@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ücretsiz, açık ve patentsiz ses kodeki, kabaca diğer formatlarla karşılaştırılabilir.
+paketci = yasarciv67
+grup    = medya
+url     = http://www.vorbis.com
+
+[gerek]
+derleme = libogg
+calisma = 
+
+[kaynak]
+gz      = http://downloads.xiph.org/releases/vorbis
+
+[sha256]
+1       = 6ed40e0241089a42c48604dc00e362beee00036af2d8b3f46338031c9e0351cb
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Örneklenmiş ses içeren dosyaları okumak ve yazmak için bir C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.mega-nerd.com/libsndfile
+
+[gerek]
+derleme = flac alsa-lib libvorbis
+calisma = 
+
+[kaynak]
+gz      = $url/files
+
+[sha256]
+1       = 1ff33929f042fa333aed1e8923aa628c3ee9e1eb85512686c55092d1e5a9dfa9
+
+[derle]
+ekconf  = --disable-sqlite
+tip     = gnu
+
+[pakur]
+tip     = gnu

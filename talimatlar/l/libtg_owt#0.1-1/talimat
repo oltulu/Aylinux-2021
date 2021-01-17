@@ -1,0 +1,32 @@
+[paket]
+tanim   = Resmi Telegram Masaüstü istemcisi
+paketci = Cihan_Alkan
+grup 	= sosyal
+url     = https://github.com/desktop-app/tg_owt
+
+[gerek]
+derleme = yasm
+calisma = 
+
+[kaynak]
+git = https://github.com/desktop-app/tg_owt
+git = https://chromium.googlesource.com/webm/libvpx
+git = https://chromium.googlesource.com/libyuv/libyuv
+
+[sha256]
+    #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= cd tg_owt
+betik 	= git submodule init
+betik 	= git config submodule.src/third_party/libvpx/source/libvpx.url "$SRC"/libvpx
+betik 	= git config submodule.src/third_party/libyuv.url "$SRC"/libyuv
+betik 	= git submodule update
+betik 	= mkdir build
+betik 	= cd build
+betik 	= cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DTG_OWT_SPECIAL_TARGET=linux -DTG_OWT_LIBJPEG_INCLUDE_PATH=/usr/include -DTG_OWT_OPENSSL_INCLUDE_PATH=/usr/include -DTG_OWT_OPUS_INCLUDE_PATH=/usr/include/opus -DTG_OWT_FFMPEG_INCLUDE_PATH=/usr/include ..
+betik 	= ninja
+        	      
+[pakur]
+betik 	= cd tg_owt/build
+betik 	= DESTDIR="${PKG}/" ninja install

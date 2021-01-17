@@ -1,0 +1,23 @@
+[paket]
+tanim   = Sistem istatistiklerine kullanışlı bir arayüz olan kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.i-scream.org/libstatgrab
+
+[gerek]
+derleme = ncurses
+calisma =
+
+[kaynak]
+gz      = http://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/$isim
+
+[sha256]
+1       = 5bf1906aff9ffc3eeacf32567270f4d819055d8386d98b9c8c05519012d5a196
+
+[derle]
+betik   = autoconf
+ekconf     = --disable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

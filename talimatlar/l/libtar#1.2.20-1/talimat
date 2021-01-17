@@ -1,0 +1,22 @@
+[paket]
+tanim   = POSIX tar dosyaları için C kütüphanesi
+paketci = milisarge  
+grup    = kütüphane   
+url     = https://repo.or.cz/w/libtar.git
+
+[kaynak]
+gz  = https://ftp.netbsd.org/pub/pkgsrc/distfiles
+
+[sha256]
+1   = 43c5f50e6b4398c8be35d6f3abee26064c3f26174715b60004576792e3283353
+
+[derle]
+betik  = cd $isim
+betik  = autoreconf -fi
+ekconf = --disable-encap --disable-epkg-install
+tip    = gnu
+
+[pakur]
+betik  = cd $isim
+tip    = gnu
+

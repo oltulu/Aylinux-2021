@@ -1,0 +1,26 @@
+[paket]
+tanim   = Windows Metafile Formatında -WMF vektör resim okuma kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://wvware.sourceforge.net/libwmf.html
+
+[gerek]
+derleme = libx11 libjpeg-turbo freetype libxt
+calisma =
+
+[kaynak]
+1       = https://github.com/caolanm/libwmf/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+dosya   = libwmf-freetype.patch
+
+[sha256]
+1 		= 464ff63605d7eaf61a4a12dbd420f7a41a4d854675d8caf37729f5bc744820e2
+
+[derle]
+yama    = 2
+betik   = autoreconf -vif -Ipatches
+ekconf  = --disable-static --with-gsfontdir=/usr/share/fonts/Type1 --with-fontdir=/usr/share/fonts/Type1 --with-gsfontmap=/usr/share/ghostscript/9.10/Resource/Init/Fontmap.GS
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
+betik   = rm -rf "${PKG}/usr/share/fonts"

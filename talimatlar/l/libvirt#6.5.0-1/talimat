@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sanallaştırma motorlarını kontrol etmek için Sanallaştırma API'sı
+paketci = milisarge
+grup    = kütüphane
+url     = https://libvirt.org
+
+[gerek]
+derleme = automake libtool perl pkg-config readline libcap-ng libpcap libpciaccess libnl attr gnutls python libtirpc curl lvm2 parted libgcrypt iptables jansson yajl cyrus-sasl dnsmasq apparmor bridge-utils numactl glib libxml2 libxslt python-docutils libx11
+calisma =
+
+[kaynak]
+xz      = $url/sources
+
+[sha256]
+1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = cd build
+tip     = gnu

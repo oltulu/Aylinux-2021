@@ -1,0 +1,20 @@
+[paket]
+tanim   = Güzel eğrilerin çizimini kolaylaştırır
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/fontforge/libspiro
+
+[kaynak]
+1          = https://github.com/fontforge/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 25678f69416115c9d5f909de4013f7a5a44a3f7ca901f912bb6de566cbb70e89
+
+[derle]
+betik      = autoreconf -fi;automake --foreign -Wall
+betik      = export LDFLAGS=
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = install -Dm644 libspiro.pc "${PKG}"/usr/lib/pkgconfig/libspiro.pc

@@ -1,0 +1,19 @@
+[paket]
+tanim   = UPnP geliştirme araç kütüphanesi
+paketci = milisarge  
+grup    = ağ  
+url     = http://pupnp.sourceforge.net/
+
+[kaynak]
+bz2     = https://downloads.sourceforge.net/sourceforge/pupnp
+
+[sha256]
+1       = c5a300b86775435c076d58a79cc0d5a977d76027d2a7d721590729b7f369fa43
+
+[derle]
+betik   = autoreconf -fiv
+tip     = gnu
+
+[pakur]
+tip     = gnu
+

@@ -1,0 +1,21 @@
+[paket]
+tanim   = WordPerfect Graphics'i içe aktarmak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://libwpg.sourceforge.net/
+
+[gerek]
+derleme    = libwpd librevenge
+calisma    =
+
+[kaynak]
+xz         = ${SOURCEFORGE_SITE}/$isim
+
+[sha256]
+1          = 99b3f7f8832385748582ab8130fbb9e5607bd5179bebf9751ac1d51a53099d1c
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

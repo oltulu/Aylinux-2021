@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 Giriş uzantısı kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxext libxfixes
+calisma = libxfixes
+
+[kaynak]
+1       = $url/releases/individual/lib/libXi-$surum.tar.bz2
+
+[sha512]
+1 		= 591f0860bf5904897587c4990d6c852f3729a212d1ef390362d41242440e078221877c31db2232d5cc81727fe97f4e194b077f7de917e251e60641bbd06ee218
+
+[derle]
+betik   = cd libXi-$surum
+ekconf  = --disable-static
+tip 	= gnu
+	      
+[pakur]
+betik   = cd libXi-$surum
+tip 	= gnu

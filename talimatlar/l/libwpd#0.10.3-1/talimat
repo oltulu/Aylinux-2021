@@ -1,0 +1,21 @@
+[paket]
+tanim   = WordPerfect belgelerini almak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://libwpd.sourceforge.net/
+
+[gerek]
+derleme    = librevenge
+calisma    =
+
+[kaynak]
+xz         = ${SOURCEFORGE_SITE}/$isim
+
+[sha256]
+1          = 2465b0b662fdc5d4e3bebcdc9a79027713fb629ca2bff04a3c9251fdec42dd09
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu
