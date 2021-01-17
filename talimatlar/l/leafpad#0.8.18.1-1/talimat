@@ -5,8 +5,8 @@ grup 	= lxqt
 url     = http://tarot.freeshell.org/leafpad/
 
 [gerek]
-derleme = 
-calisma = 
+derleme = gtk2
+calisma = gtk2
 
 [kaynak]
 gz = https://download.savannah.gnu.org/releases/$isim
