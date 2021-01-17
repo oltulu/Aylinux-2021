@@ -1,0 +1,30 @@
+[paket]
+tanim   = Deepin Anything dosya arama aracı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-anything
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-anything/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+2 = https://github.com/archlinux/svntogit-community/raw/packages/deepin-anything/trunk/deepin-anything-server.sysusers
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = cd deepin-anything-$surum
+betik = make VERSION=$surum
+betik = install -dm 755 "$PKG"/usr/src
+betik = cp -r kernelmod "$PKG"/usr/src/deepin-anything-$surum
+betik = install -m644 debian/deepin-anything-dkms.dkms "$PKG"/usr/src/deepin-anything-$surum/dkms.conf
+
+
+[pakur]
+betik = cd deepin-anything-$surum
+betik = make VERSION=$surum DESTDIR="$PKG" install
+betik = rm -r "$PKG"/usr/src
+betik = install -Dm644 /sources/deepin-anything-server.sysusers "$PKG/usr/lib/sysusers.d/deepin-anything-server.conf"

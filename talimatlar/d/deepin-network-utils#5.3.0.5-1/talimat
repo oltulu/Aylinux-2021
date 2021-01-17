@@ -1,0 +1,23 @@
+[paket]
+tanim   = DDE ağ araçları
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-network-utils
+
+derleme = gtest
+calisma =  
+
+[kaynak]
+git      = https://github.com/linuxdeepin/dde-network-utils
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = cd dde-network-utils
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd dde-network-utils
+betik =make INSTALL_ROOT="$PKG" install

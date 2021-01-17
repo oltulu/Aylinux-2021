@@ -1,0 +1,27 @@
+[paket]
+tanim   = DDE pano yöneticisi bileşeni
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-clipboard
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1   = https://github.com/linuxdeepin/dde-clipboard/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= cd dde-clipboard-$surum
+betik 	= sed -i '/include <QPainter>/a #include <QPainterPath>' dde-clipboard/pixmaplabel.cpp dde-clipboard/itemwidget.cpp
+betik 	= sed -i '$aOnlyShowIn=Deepin' dde-clipboard/dde-clipboard.desktop
+betik 	= cd dde-clipboard-$pkgver
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= cd dde-clipboard-$surum
+betik 	= make INSTALL_ROOT="$PKG" install

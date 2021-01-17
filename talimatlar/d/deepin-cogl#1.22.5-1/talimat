@@ -1,0 +1,25 @@
+[paket]
+tanim   = Deepin için nesne yönelimli GL/GLES Soyutlama/Yardımcı Katman
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-cogl
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz     = https://github.com/linuxdeepin/deepin-cogl/archive/$surum
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -e 's|1.15|1.16 1.15|' -i autogen.sh # Support automake 1.16
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr --enable-gles2 --enable-{kms,wayland}-egl-platform --enable-wayland-egl-server
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make -j1
+
+[pakur]
+betik =  make DESTDIR="$PKG" install

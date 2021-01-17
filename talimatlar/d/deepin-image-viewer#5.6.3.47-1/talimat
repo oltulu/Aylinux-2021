@@ -1,0 +1,27 @@
+[paket]
+tanim   = Moda arayüzü ve sorunsuz performansa sahip bir görüntü görüntüleme aracı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-image-viewer
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://github.com/linuxdeepin/deepin-image-viewer/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = cd viewer
+betik = sed -i '/#include <QDebug>/a #include <QPainterPath>' frame/toptoolbar.cpp module/view/contents/ttbcontent.cpp
+betik = sed -i '/#include <QtDebug>/a #include <QPainterPath>' module/view/contents/imageinfowidget.cpp
+betik = sed -i '/FIF_FAXG3/d' utils/unionimage.cpp
+betik = cd ../
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install -j1

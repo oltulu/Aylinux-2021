@@ -1,0 +1,36 @@
+[paket]
+tanim   = Daemon, DDE oturum ayarlarını işliyor
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/dde-daemon
+
+[gerek]
+derleme    = go
+calisma    =
+
+[kaynak]
+gz        = https://github.com/linuxdeepin/dde-daemon/archive/$surum
+
+[sha256]
+            #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd dde-daemon-$surum
+betik = export GOPATH="$SRC/build:/usr/share/gocode"
+betik = go get github.com/cryptix/wav
+betik = go get github.com/axgle/mahonia github.com/msteinert/pam github.com/gosexy/gettext github.com/rickb777/date github.com/jinzhu/gorm github.com/kelvins/sunrisesunset github.com/mozillazg/go-pinyin github.com/teambition/rrule-go golang.org/x/xerrors github.com/mattn/go-sqlite3 github.com/fsnotify/fsnotify github.com/godbus/dbus
+betik = sed -i 's#/usr/share/backgrounds/default_background.jpg#/usr/share/backgrounds/deepin/desktop.jpg#' accounts/user.go
+betik = cd ../
+betik = export CGO_CPPFLAGS="${CPPFLAGS}"
+betik = export CGO_CFLAGS="${CFLAGS}"
+betik = export CGO_CXXFLAGS="${CXXFLAGS}"
+betik = export CGO_LDFLAGS="${LDFLAGS}"
+betik = export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+betik = cd dde-daemon-$surum
+betik = make -C network/nm_generator gen-nm-code
+betik = make
+
+[pakur]
+betik = cd dde-daemon-$surum
+betik = make DESTDIR="$PKG" PAM_MODULE_DIR=usr/lib/security install
+betik = mv "$PKG"{,/usr}/lib/udev
+betik = rmdir "$PKG"/lib

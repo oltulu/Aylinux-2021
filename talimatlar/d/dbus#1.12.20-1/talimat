@@ -1,0 +1,22 @@
+[paket]
+tanim 	= Freedesktop.org için mesaj iletim sistemi
+paketci = milisarge
+grup 	= sistem
+url 	= https://www.freedesktop.org/Software/dbus
+
+[kaynak]
+gz		= https://dbus.freedesktop.org/releases/dbus/
+dosya   = dbus-profile.sh
+
+[sha512]
+#1 		= 27ae805170e9515a8bb0fba5f29d414edc70e3b6b28b7b65bbea47035b8eafa9ac4820cdc92645be6035f6748f8aa45679e1ffc84ba74a64859a3056d318b9bb
+
+[derle]
+dosya 	= derle.sh
+
+[pakur]
+betik   = make -j1 DESTDIR="$PKG" install
+servis  = dbus
+betik   = rm -rf $PKG/etc/sysconfig
+betik   = mkdir -p $PKG/etc/profile.d;cp $SRC/dbus-profile.sh $PKG/etc/profile.d/dbus.sh
+

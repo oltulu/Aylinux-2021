@@ -1,0 +1,25 @@
+[paket]
+tanim   = Deepin sistemleri
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/deepin-icon-theme
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1        = https://github.com/linuxdeepin/deepin-icon-theme/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2        = https://github.com/linuxdeepin/deepin-icon-theme/pull/23.patch::$isim-fix-installation.patch
+
+[sha256]
+    #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = patch -d ../$isim-$surum -p1 < /sources/$isim-fix-installation.patch
+betik = sed -i 's/deepin/bloom/g' ../$isim-$surum/tools/hicolor.links
+betik = find ../$isim-$surum -name "* 2.svg" -delete
+betik = make hicolor-links
+
+[pakur]
+betik = make DESTDIR="$PKG" install
+betik = cp -a ./Sea ./usr/share/icons/hicolor "$PKG"/usr/share/icons/

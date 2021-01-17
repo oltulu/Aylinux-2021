@@ -1,0 +1,25 @@
+[paket]
+tanim   = GDeepin masaüstü ortamı - Başlatıcı modülü
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/dde-launcher
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+gz        = https://github.com/linuxdeepin/dde-launcher/archive/$surum
+
+[sha256]
+            #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd dde-launcher-$surum
+#betik = sed -i 's|/usr/share/backgrounds/default_background.jpg|/usr/share/backgrounds/deepin/desktop.jpg|' src/boxframe/*.cpp
+#betik = sed -i '/include <QPainter>/a #include <QPainterPath>' src/widgets/miniframenavigation.cpp src/widgets/avatar.cpp src/widgets/miniframebutton.cpp
+betik = cmake . -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DWITHOUT_UNINSTALL_APP=
+betik = ninja
+
+[pakur]
+betik = cd dde-launcher-$surum
+betik = DESTDIR="$PKG" ninja install

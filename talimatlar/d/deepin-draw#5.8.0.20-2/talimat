@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux Deepin için hafif bir çizim aracı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-draw
+
+[gerek]
+derleme = freeimage 
+calisma =  
+
+[kaynak]
+1     = https://github.com/linuxdeepin/deepin-draw/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = sed -i '/include <DGraphicsView>/i #include <QFileDevice>' frame/cgraphicsview.h
+betik = sed -i '/include <QPainter>/a #include <QMouseEvent>' widgets/ciconbutton.cpp
+betik = qmake-qt5
+betik = make
+
+[pakur]
+betik =  make INSTALL_ROOT="$PKG" install

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux Deepin için yeni kontrol merkezi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-control-center
+
+derleme = deepin-network-utils
+calisma =  
+
+[kaynak]
+git      = https://github.com/linuxdeepin/dde-control-center
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = mkdir build
+betik = cd build
+betik =  cmake -GNinja -DDISABLE_SYS_UPDATE=YES -DDISABLE_ACTIVATOR=YES -DDISABLE_RECOVERY=YES -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib ../dde-control-center
+betik = ninja
+
+[pakur]
+betik = cd build
+betik = DESTDIR="$PKG" ninja install

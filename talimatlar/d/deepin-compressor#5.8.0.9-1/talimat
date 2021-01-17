@@ -1,0 +1,23 @@
+[paket]
+tanim   = Arşiv oluşturmak ve çıkarmak için hızlı ve hafif bir uygulama
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-compressor
+
+[gerek]
+derleme = libzip
+calisma =  
+
+[kaynak]
+1    = https://github.com/linuxdeepin/deepin-compressor/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= sed -i '/include <QPainter>/a #include <QPainterPath>' deepin-compressor/source/src/openwithdialog/openwithdialog.cpp deepin-compressor/source/src/logviewheaderview.cpp
+betik 	= cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr .
+betik 	= ninja
+            	      
+[pakur]
+betik 	=  DESTDIR="$PKG" ninja install

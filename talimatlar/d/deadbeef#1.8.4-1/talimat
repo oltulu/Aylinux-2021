@@ -1,0 +1,19 @@
+[paket]
+tanim   = Linux için bir GTK + ses oynatıcı.
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = http://deadbeef.sourceforge.net
+
+[kaynak]
+1      = https://github.com/DeaDBeeF-Player/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = ./autogen.sh 
+betik = ./configure --prefix=/usr
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install

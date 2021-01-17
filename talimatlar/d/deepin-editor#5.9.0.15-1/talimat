@@ -1,0 +1,22 @@
+[paket]
+tanim   = Deepin için basit metin düzenleyici
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-editor
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-editor/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release .
+betik = ninja
+
+[pakur]
+betik = DESTDIR="$PKG" ninja install

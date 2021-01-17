@@ -1,0 +1,27 @@
+[paket]
+tanim   = QtAV tabanlı film oynatıcı
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/deepin-movie-reborn
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+gz        = https://github.com/linuxdeepin/deepin-movie-reborn/archive/$surum
+1=https://github.com/linuxdeepin/deepin-movie-reborn/commit/cc9484fdb63589c3596d2914d180e351e0e0330a.patch::$isim-mpv-qthelper.patch
+2 = https://github.com/linuxdeepin/deepin-movie-reborn/commit/7bff486b84a6c9e8602ef2fb201cfa602d6ca1d8.patch::$isim-libavformat-version-check.patch
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd deepin-movie-reborn-$surum
+betik = patch -p1 -i /sources/$isim-mpv-qthelper.patch
+betik = patch -p1 -i /sources/$isim-libavformat-version-check.patch
+betik = sed -i '/#include <DPalette>/a #include <QPainterPath>' src/widgets/{tip,toolbutton}.h
+betik = cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release .
+betik = ninja
+
+[pakur]
+betik = cd deepin-movie-reborn-$surum
+betik = DESTDIR="$PKG" ninja install

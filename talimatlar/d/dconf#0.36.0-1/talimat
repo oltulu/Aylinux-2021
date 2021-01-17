@@ -1,0 +1,22 @@
+[paket]
+tanim   = Düşük seviye konfigürasyon sistemi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wiki.gnome.org/Projects/dconf
+
+[gerek]
+derleme = meson python glib libxslt vala dbus glib gtk3 libxml2 bash-completion
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = 9fe6bb22191fc2a036ad86fd8e7d165e9983c687b9fedccf85d46c799301da2d 
+
+[derle]
+ekconf	= -D gtk_doc=false -D man=false
+tip     = meson
+
+[pakur]
+tip     = meson

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Berkeley DB
+paketci = milisarge
+grup 	= sistem
+url     = https://www.oracle.com/technology/software/products/berkeley-db/index.html
+
+[kaynak]
+gz      = https://download.oracle.com/berkeley-db
+dosya   = db-atomic.patch
+
+[sha256]
+1 		= e0a992d740709892e81f9d93f06daf305cf73fb81b545afe72478043172c3628
+
+[derle]
+betik   = patch -p0 -i ../db-atomic.patch 
+betik   = cd build_unix
+betik   = ../dist/configure --prefix=/usr --enable-compat185 --enable-shared --enable-static --enable-cxx --enable-dbm --enable-stl
+betik   = make LIBSO_LIBS=-lpthread
+	      
+[pakur]
+betik   = cd build_unix
+tip     = gnu
+betik   = rm -r "${PKG}"/usr/docs

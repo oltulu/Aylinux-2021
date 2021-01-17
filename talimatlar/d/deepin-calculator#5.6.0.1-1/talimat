@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sıradan kullanıcılar için kullanımı kolay bir hesap makinesi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-calculator
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-calculator/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+    #1 		= SKIP
+
+[derle]
+betik = sed -i '1i#include <QPainterPath>' src/views/simplelistdelegate.cpp
+betik = sed -i '/third_party/d' tests/CMakeLists.txt
+betik = rm -r tests/third_party
+betik = cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr .
+betik = ninja
+
+[pakur]
+betik = cd deepin-desktop-base-$surum
+betik = DESTDIR="$PKG" ninja install

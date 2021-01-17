@@ -1,0 +1,18 @@
+[paket]
+tanim   = Linux Deepin için hesap yüzleri
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-account-faces
+
+[kaynak]
+1      = https://github.com/linuxdeepin/dde-account-faces/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd dde-account-faces-$surum
+
+[pakur]
+betik = cd dde-account-faces-$surum
+betik = make DESTDIR="$PKG" install

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Deepin Pokit
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/dde-polkit-agent
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1        = https://github.com/linuxdeepin/dde-polkit-agent/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+        #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd dde-polkit-agent-$surum
+betik = sed -i 's/bool is_deepin = true/bool is_deepin = false/' policykitlistener.cpp
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd dde-polkit-agent-$surum
+betik = make INSTALL_ROOT="$PKG" install

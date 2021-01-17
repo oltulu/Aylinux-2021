@@ -1,0 +1,7 @@
+[Distribution]
+Name=Aylinux
+WebsiteName=www.archlinux.gen.tr
+Website=www.archlinux.gen.tr
+Logo=/usr/share/icons/aylinux.png
+LogoLight=/usr/share/icons/aylinux.png.svg
+LogoTransparent=/usr/share/icons/aylinux.png

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Deepin masaüstü ortamı-dock modülü
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-dock
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/linuxdeepin/dde-dock
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = cd dde-dock
+betik = cmake . -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DDOCK_TRAY_USE_NATIVE_POPUP=YES
+betik = ninja
+
+[pakur]
+betik = cd dde-dock
+betik = DESTDIR="$PKG" ninja install

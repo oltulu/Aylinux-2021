@@ -1,0 +1,26 @@
+[paket]
+tanim   = Deepin için hızlı, taşınabilir, çekici dinamik kullanıcı arayüzleri oluşturmak için bir araç seti
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/sonald/clutter
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1    = https://github.com/sonald/clutter/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd clutter-$surum
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr --enable-introspection --enable-egl-backend --enable-gdk-backend --enable-wayland-backend --enable-x11-backend --enable-evdev-input --enable-wayland-compositor --disable-gtk-doc
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+
+[pakur]
+betik = cd clutter-$surum
+betik =  make DESTDIR="$PKG" install

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Resimleri görüntülemek ve düzenlemek için bir moda fotoğraf yöneticisi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-album
+
+[gerek]
+derleme = extra-cmake-modules
+calisma = udisks2-qt5 gio-qt
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-album/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+#betik = sed -i '/#include <QPainter>/a #include <QPainterPath>' deepin-album/album/frame/toptoolbar.cpp deepin-album/album/thumbnail/thumbnaildelegate.cpp deepin-album/album/widgets/dlmenuarrow.h deepin-album/album/widgets/dialogs/dfmdarrowlineexpand.cpp deepin-album/album/widgets/popupmenustyle.cpp
+#betik = sed -i '/#include <QDebug>/a #include <QPainterPath>' deepin-album/album/module/view/contents/ttbcontent.cpp
+betik = cmake . -GNinja -DCMAKE_INSTALL_PREFIX=/usr
+betik = ninja
+
+[pakur]
+betik = DESTDIR="$PKG" ninja install
+

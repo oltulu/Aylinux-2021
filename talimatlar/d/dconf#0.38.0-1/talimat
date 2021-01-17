@@ -1,0 +1,22 @@
+[paket]
+tanim   = Yapılandırma veritabanı sistemi
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://wiki.gnome.org/Projects/dconf
+
+[gerek]
+derleme = meson cmake bash-completion vala libxslt
+calisma = 
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha512]
+
+[derle]
+ekconf	= -D gtk_doc=false -D man=false
+tip     = meson
+
+    	      
+[pakur]
+tip     = meson

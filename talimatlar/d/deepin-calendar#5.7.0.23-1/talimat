@@ -1,0 +1,32 @@
+[paket]
+tanim   = Deepin Masaüstü Ortamı için Takvim
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-calendar
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+1  = https://github.com/linuxdeepin/dde-calendar/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2  = https://github.com/archlinux/svntogit-community/raw/packages/deepin-calendar/trunk/dde-calendar-icon.patch
+
+[sha1]
+1 		= SKIP
+
+[derle]
+betik = cd dde-calendar-$surum
+betik = patch -Np1 -i /sources/dde-calendar-icon.patch
+betik = sed -i '/<QQueue>/a #include <QMouseEvent>' src/widget/dayWidget/daymonthview.cpp
+betik = sed -i '/<QStylePainter>/a #include <QMouseEvent>' src/widget/schcedulesearchview.cpp
+betik = sed -i '/include <QJsonObject>/a #include <QMouseEvent>' src/view/draginfographicsview.cpp
+betik = sed -i '/include <QPainter>/a #include <QMouseEvent>' schedule-plugin/src/widget/itemwidget.h schedule-plugin/src/widget/modifyscheduleitem.h
+betik = sed -i '/include <QPainter>/a #include <QPainterPath>' src/widget/schcedulesearchview.cpp src/widget/dayWidget/daymonthview.cpp src/widget/weekWidget/weekheadview.cpp src/customWidget/customframe.cpp src/widget/yearWidget/yearview.cpp schedule-plugin/src/widget/modifyscheduleitem.h schedule-plugin/src/widget/itemwidget.h
+betik = sed -i '/include <QMessageBox>/a #include <QWheelEvent>' src/widget/yearWidget/yearwindow.cpp
+betik = cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr .
+betik = ninja
+    	      
+[pakur]
+betik = cd dde-calendar-$surum
+betik = DESTDIR="$PKG" ninja install

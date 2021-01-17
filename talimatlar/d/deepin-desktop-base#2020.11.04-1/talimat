@@ -1,0 +1,35 @@
+[paket]
+tanim   = Deepin için temel bileşen
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-desktop-bases
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-desktop-base/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+dosya      = distribution.info
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = make
+
+[pakur]
+betik = cd deepin-desktop-base-$surum
+betik = make DESTDIR="$PKG" install
+
+betik = install -Dm644 "$SRC"/distribution.info -t "$PKG"/usr/share/deepin/
+
+  # Remove Deepin distro's lsb-release
+betik = rm "$PKG"/etc/lsb-release
+
+  # Don't override systemd timeouts
+betik = rm -r "$PKG"/etc/systemd
+
+  # Make a symlink for deepin-version
+betik = ln -s ../usr/lib/deepin/desktop-version "$PKG"/etc/deepin-version
+
+  # Remove UOS logo
+betik = rm "$PKG"/usr/share/deepin/uos_logo.svg
+
+  # Remove apt-specific templates
+betik = rm -r "$PKG"/usr/share/python-apt

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Hızlı ve kolay bir şekilde önyüklenebilir bir USB bellek oluşturmak için araç
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-boot-maker
+
+[gerek]
+derleme =
+calisma = 
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-boot-maker/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -i 's|deepin-boot-maker_tr.qm|deepin-boot-maker_tr.qm|' src/translate.qrc
+betik = sed -i 's|deepin-boot-maker_tr.ts|deepin-boot-maker_tr.ts|' src/translate.qrc
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install

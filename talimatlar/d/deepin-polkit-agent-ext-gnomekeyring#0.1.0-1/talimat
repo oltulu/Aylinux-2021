@@ -1,0 +1,23 @@
+[paket]
+tanim   = Dde-polkit-agent için GNOME anahtarlık uzantısı
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/dpa-ext-gnomekeyring
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1        = https://github.com/linuxdeepin/dpa-ext-gnomekeyring/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+        #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd dpa-ext-gnomekeyring-$surum
+betik = qmake-qt5
+betik = make
+
+[pakur]
+betik = cd dpa-ext-gnomekeyring-$surum
+betik = make INSTALL_ROOT="$PKG" install

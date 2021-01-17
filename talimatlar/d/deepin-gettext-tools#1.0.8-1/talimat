@@ -1,0 +1,19 @@
+[paket]
+tanim   = Deepin Gettext Araçları
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-gettext-tools
+
+[kaynak]
+1      = https://github.com/linuxdeepin/deepin-gettext-tools/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -e 's/sudo cp/cp/' -i src/generate_mo.py
+betik = sed -e 's/qmake/qmake-qt5/' -e '/lupdate/d' -i Makefile
+
+[pakur]
+betik = cd deepin-desktop-base-$surum
+betik = make DESTDIR="$PKG" install

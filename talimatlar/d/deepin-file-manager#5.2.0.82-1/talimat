@@ -1,0 +1,24 @@
+[paket]
+tanim   = Deepin dosya yöneticisi
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-file-manager
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1  = https://github.com/linuxdeepin/dde-file-manager/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd dde-file-manager-$surum
+betik = qmake-qt5 PREFIX=/usr filemanager.pro
+betik = make
+
+[pakur]
+betik = cd dde-file-manager-$surum
+betik = make INSTALL_ROOT="$PKG" install

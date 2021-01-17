@@ -1,0 +1,24 @@
+[paket]
+tanim   = Deepin için temel pencere yöneticisi, çatal gnome mutter
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/deepin-mutter
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://github.com/linuxdeepin/deepin-mutter/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = sed -i '/SCANNERFLAGS/s/ --warn-error//' src/Makefile.am
+betik = ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/deepin-mutter --localstatedir=/var --disable-gtk-doc --enable-wayland  --enable-native-backend --disable-systemd-integration --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+
+[pakur]
+betik =  make DESTDIR="$PKG" install
