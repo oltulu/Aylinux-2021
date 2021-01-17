@@ -1,0 +1,21 @@
+[paket]
+tanim   = Glasgow Haskell Derleyici
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.haskell.org/ghc/
+
+[gerek]
+derleme = ghc-bin libxslt gmp libffi numactl ncurses perl
+calisma =
+
+[kaynak]
+1       = https://downloads.haskell.org/~ghc/${surum}/$isim-${surum}-src.tar.xz
+
+[sha256]
+1       = e0dcc0aaf3e234c5978f29e6df62947e97720ab404ec0158343df211c5480f89
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = make DESTDIR=$PKG -j1 install

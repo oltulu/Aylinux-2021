@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME için Javascript Bağlamaları
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Projects/Gjs
+
+[gerek]
+derleme = mozjs78 cairo gobject-introspection-runtime sysprof
+calisma = 
+
+[kaynak]
+git     = https://gitlab.gnome.org/GNOME/gjs
+
+
+[sha512]
+    #1 		= e5cff9f7790d2874fb1b743d823a799560c5fe82271f6cbff8b74baa70eec267fad9ac651258ee5c4de5dfce81964c73ca9a652ce3441791e44c34bcd8187770
+
+[derle]
+betik 	=  milis-meson $isim build --buildtype release -D installed_tests=false
+betik 	=  meson compile -C build
+
+    	      
+[pakur]
+betik 	=  DESTDIR="$PKG" meson install -C build

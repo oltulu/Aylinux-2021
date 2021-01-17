@@ -1,0 +1,18 @@
+[paket]
+tanim   = Qt uygulamaları için Gio sarıcı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/gio-qt
+
+[kaynak]
+1      = https://github.com/linuxdeepin/gio-qt/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_DOCS=OFF .
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install

@@ -1,0 +1,23 @@
+[paket]
+tanim   = GTK+ Kullanıcı Arayüzü Derleme çekirdek kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://glade.gnome.org
+
+
+[gerek]
+derleme = glib itstool libtool gtk3 python-gobject webkit2gtk desktop-file-utils
+calisma =
+
+[kaynak]
+1       = ${GNOME_SITE}/glade/${surum%.*}/glade-${surum}.tar.xz
+
+[sha256]
+1       = 19b546b527cc46213ccfc8022d49ec57e618fe2caa9aa51db2d2862233ea6f08
+
+[derle]
+ekconf     = --disable-static --enable-debug=info PYTHON=/usr/bin/python3 --enable-gladeui --enable-introspection --enable-gtk-doc=no --enable-man-pages=no
+tip     = gnu
+
+[pakur]
+tip     = gnu

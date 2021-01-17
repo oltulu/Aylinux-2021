@@ -1,0 +1,23 @@
+[paket]
+tanim   = Glib C++ bağlamları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gtkmm.org
+
+[gerek]
+derleme  = libsigc++ glib
+calisma  = 
+
+[kaynak]
+xz      = ${GNOME_SITE}/$isim/${surum%.*}
+
+[sha256]
+1 		= a3a1b1c9805479a16c0018acd84b3bfff23a122aee9e3c5013bb81231aeef2bc
+
+[derle]
+ekconf  = --enable-maintainer-mode
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+

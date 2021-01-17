@@ -1,0 +1,26 @@
+[paket]
+tanim  = Coğrafi kodlama hizmetleri için yardımcı kitaplık
+url    = https://gitlab.gnome.org/GNOME/geocode-glib
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git = https://gitlab.gnome.org/GNOME/geocode-glib
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = cd $isim
+betik = sed -i 's/gnome/Adwaita/' icons/meson.build
+betik = cd $SRC
+betik = milis-meson $isim build -D enable-installed-tests=false -D enable-gtk-doc=false
+betik = ninja -C build
+
+
+[pakur]
+betik =  DESTDIR="$PKG" meson install -C build

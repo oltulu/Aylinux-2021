@@ -1,0 +1,26 @@
+[paket]
+tanim   = GNU görüntü işleme programı
+paketci = milisarge
+grup    = tasarım
+url     = https://www.gimp.org
+
+[gerek]
+derleme = gegl glib-networking glib libgexiv2 gtk2 gtk3 intltool libtool perl-xml-parser aalib alsa-lib babl dbus-glib ghostscript jasper lcms2 libxcursor libxpm desktop-file-utils iso-codes mypaint-brushes1 libmypaint poppler-glib poppler-data openexr librsvg libgudev libunwind libwmf
+calisma =
+
+[kaynak]
+bz2     = https://download.gimp.org/pub/gimp/v${surum%.*}
+dosya   = gimp-0001-no-check-update.patch
+
+[sha256]
+1       = e12f9f874b1a007c4277b60aa81e0b67330be7e6153e5749ead839b902fc7b3c
+
+[derle]
+yama    = gimp-0001-no-check-update.patch
+betik   = autoreconf -vi
+ekconf	= --enable-mp --with-openexr --enable-gimp-console --disable-python --without-aa --disable-check-update
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = ln -s gimptool-2.0 "${PKG}/usr/bin/gimptool"

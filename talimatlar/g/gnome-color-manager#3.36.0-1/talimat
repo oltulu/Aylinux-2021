@@ -1,0 +1,29 @@
+[paket]
+tanim   = GNOME Masaüstü için Hesap Makinesi
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://ftp.gnome.org/pub/gnome/sources/$isim
+
+[kaynak]
+#xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+git = https://gitlab.gnome.org/GNOME/$isim
+
+[gerek]
+derleme = meson vala libsoup libgee gtksourceview4
+calisma = 
+
+    [sha1]
+#1 		= SKIP
+
+[derle]
+betik = milis-meson $isim build
+betik = meson compile -C build
+#betik = mkdir build
+#betik = cd build
+#betik = meson --prefix=/usr  --libexecdir=lib ..
+#betik = ninja
+
+
+[pakur]
+#betik = cd build
+betik = DESTDIR="$PKG" meson install -C build

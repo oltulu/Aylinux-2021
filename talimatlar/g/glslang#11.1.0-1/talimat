@@ -1,0 +1,22 @@
+[paket]
+tanim   = OpenGL ve OpenGL ES shader önyüz ve doğrulayıcı kütüphane
+paketci = milisarge  
+grup    = sistem 
+url     = https://github.com/KhronosGroup/glslang
+
+[gerek]
+derleme  = cmake ninja
+calisma  =  
+
+[kaynak]
+1  = https://github.com/KhronosGroup/glslang/archive/$surum.tar.gz::glslang-$surum.tar.gz
+
+[sha256]
+1  = b30b4668734328d256e30c94037e60d3775b1055743c04d8fd709f2960f302a9
+
+[derle]
+dosya  = derle.sh
+
+[pakur]
+dosya  = pakur.sh
+

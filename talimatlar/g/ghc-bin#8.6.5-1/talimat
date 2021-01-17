@@ -1,0 +1,26 @@
+[paket]
+tanim   = Glorious Haskell Derleyici - önceden derlenmiş ikili dosyalar
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.haskell.org/ghc/
+
+[gerek]
+derleme = numactl ncurses perl gcc libffi gmp
+calisma = libffi
+
+[kaynak]
+1       = https://downloads.haskell.org/~ghc/${surum%[!0-9]}/ghc-${surum}-x86_64-deb8-linux.tar.xz
+
+[sha256]
+1       = c419fd0aa9065fe4d2eb9a248e323860c696ddf3859749ca96a84938aee49107
+
+[derle]
+betik   = cd ghc-${surum%[!0-9]}
+betik   = ./configure --prefix=/usr
+
+[pakur]
+betik   = cd ghc-${surum%[!0-9]}
+betik   = ln -sf /usr/lib/libncursesw.so.6 libtinfo.so.5
+betik   = export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH
+betik   = make install DESTDIR="$PKG"
+betik   = ln -sf /usr/lib/libncursesw.so.6 $PKG/usr/lib/ghc-${surum%[!0-9]}/rts/libtinfo.so.5

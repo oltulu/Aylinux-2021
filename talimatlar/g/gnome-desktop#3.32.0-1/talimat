@@ -1,0 +1,22 @@
+[paket]
+tanim   = Çeşitli GNOME modülleri için ortak API içeren kütüphane
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/gnome-desktop
+
+[gerek]
+derleme = gobject-introspection meson yelp-tools xkeyboard-config iso-codes libseccomp
+calisma = gsettings-desktop-schemas gtk3 libxkbfile xkeyboard-config iso-codes libseccomp bubblewrap
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= milis-meson $SRC/$isim-$surum build -D gnome_distributor="Milis Linux®"
+betik 	= ninja -C build
+	      
+[pakur]
+betik 	= DESTDIR="$PKG" meson install -C build

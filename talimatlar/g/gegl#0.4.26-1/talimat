@@ -1,0 +1,22 @@
+[paket]
+tanim   = Grafik tabanlı görüntü işleme çerçevesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.gimp.org
+
+[gerek]
+derleme = meson babl libgexiv2 exiv2 gtk3 jasper json-glib librsvg libraw libwebp libspiro openexr ffmpeg mesa vala glu gobject-introspection lensfun python-gobject poppler-glib
+calisma =
+
+[kaynak]
+xz      = https://download.gimp.org/pub/$isim/${surum%.*}
+
+[sha256]
+1       = 7765499f27341b0d16032e665319cbc12876483ff6a944fcdf24a9c58e3e254a
+
+[derle]
+ekconf  = -Ddocs=false -Dlua=disabled  -Dworkshop=true -Dmrg=disabled -Dumfpack=disabled
+tip     = meson
+
+[pakur]
+tip     = meson

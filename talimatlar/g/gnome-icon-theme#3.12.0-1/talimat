@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME  simge teması
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://www.gnome.org
+
+[gerek]
+derleme = intltool icon-naming-utils
+calisma = hicolor-icon-theme gtk-update-icon-cache gnome-icon-theme-symbolic
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+
+[sha256]
+1 		= 359e720b9202d3aba8d477752c4cd11eced368182281d51ffd64c8572b4e503a
+
+[derle]
+betik 	patch -Np1 -i "$SRC/remove-legacy-calc.patch"
+betik 	= ./configure --prefix=/usr
+betik 	= make
+	      
+[pakur]
+tip = gnu
+betik 	= rm -f  "${PKG}/usr/share/icons/gnome/icon-theme.cache"

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Grafiksel FTP dosya aktarımı istemcisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.gftp.org
+
+[gerek]
+derleme    = gtk2 openssl
+calisma    =
+
+[kaynak]
+bz2        = $url
+
+[sha256]
+1          = 5306a46be96d6f4d23906cb1836fb3d732039621a6c7fcfa921acc21ac110bfd
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

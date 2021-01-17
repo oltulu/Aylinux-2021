@@ -1,0 +1,25 @@
+[paket]
+tanim   = GNOME için arka plan resimleri ve verileri
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://gitlab.gnome.org/GNOME/gnome-backgrounds
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz    = https://download.gnome.org/sources/$isim/${surum:0:4}
+
+[sha256]
+    #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = cd ../
+betik     = arch-meson $isim-$surum build
+betik     = meson compile -C build
+betik     = make
+    	      
+[pakur]
+betik     = cd ../
+betik     = DESTDIR="$PKG" meson install -C build

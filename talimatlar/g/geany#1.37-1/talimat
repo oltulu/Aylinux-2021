@@ -1,0 +1,29 @@
+[paket]
+tanim   = İşlevsel metin düzenleme uygulaması
+paketci = milisarge  
+grup    = sistem  
+url     = https://www.geany.org/
+
+[gerek]
+derleme  = gtk3 python vte3
+calisma  =  
+
+[kaynak]
+bz2      = https://download.${isim}.org
+dosya	 = org.geany.policy
+dosya	 = geany-monokai.conf
+
+[sha256]
+1   = 9184dd3dd40b7b84fca70083284bb9dbf2ee8022bf2be066bdc36592d909d53e
+2	= 12ac9c29843ae9d0615548a81098862b2e7d746bed9a4aeb7a1cd4329e280fc4
+
+[derle]
+betik  = autoreconf -fi
+ekconf = --enable-gtk3
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = install -d $PKG/usr/share/polkit-1/actions
+betik  = cp $SRC/org.geany.policy $PKG/usr/share/polkit-1/actions/
+betik  = cp $SRC/geany-monokai.conf $PKG/usr/share/geany/colorschemes/geany-monokai.conf 

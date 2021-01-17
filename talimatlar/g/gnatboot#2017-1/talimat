@@ -1,0 +1,18 @@
+[paket]
+tanim   = Ada programalama dili - 2017 derlenmiş hali
+paketci = milisarge  
+grup    = geliştirme  
+url     = https://www.adacore.com
+
+[kaynak]
+1       = https://mls.akdeniz.edu.tr/kaynaklar/gnat-2017.tar.xz
+
+[sha256]
+1       = 1a583fef714de9a0d3520c1d886a2351617cd5cb7000e115a214b331710d8672
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+strip   = 0
+betik   = mv usr $PKG/

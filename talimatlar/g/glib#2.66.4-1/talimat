@@ -1,0 +1,25 @@
+[paket]
+tanim	= Veri yapısı işleme için yararlı olan alt seviye kütüphaneler
+paketci	= milisarge
+grup	= kütüphane
+url		= https://wiki.gnome.org/Projects/GLib
+
+[gerek]
+derleme	= meson pcre
+calisma	= 
+
+[kaynak]
+1		= http://ftp.gnome.org/pub/gnome/sources/glib/${surum%.*}/$isim-$surum.tar.xz
+dosya   = noisy-glib-compile-schemas.diff
+
+[sha256]
+1	    = 9a2f21ed8f13b9303399de13a0252b7cbcede593d26971378ec6cb90e87f2277
+
+[derle]
+yama	= noisy-glib-compile-schemas.diff
+ekconf  = -D selinux=disabled
+tip     = meson 
+tip     = ninja 
+
+[pakur]
+tip     = meson

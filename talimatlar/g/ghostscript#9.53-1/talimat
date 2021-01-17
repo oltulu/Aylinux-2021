@@ -1,0 +1,25 @@
+[paket]
+tanim   = PostScript dili yorumlayıcı ve kütüphaneleri
+paketci = milisarge
+grup 	= sistem
+url     = https://www.ghostscript.com
+
+
+[gerek]
+derleme = cups dbus fontconfig jasper jbig2dec lcms2 libxext libxt openjpeg2 libpaper
+calisma = 
+
+[kaynak]
+xz      = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${surum/./}
+
+[sha256]
+1		= fc0f1fbacd3610c67a9f080487a0e021f14390c38a4b4df9723e2bdf2b90b619
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+betik   = make DESTDIR=${PKG} cups_serverroot=${PKG}/etc/cups cups_serverbin=${PKG}/usr/lib/cups install install-so
+betik   = rm -rf ${PKG}/usr/share/man/[^man1]*
+betik   = cd ijs && make DESTDIR=${PKG} install && cd ..
+betik   = rm -f ${PKG}/usr/lib/cups/filter/{gstopxl,gstoraster}

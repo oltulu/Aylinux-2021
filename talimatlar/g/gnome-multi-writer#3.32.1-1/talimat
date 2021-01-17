@@ -1,0 +1,23 @@
+[paket]
+tanim   = Aynı anda birden fazla USB cihazına bir ISO dosyası yazın
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Apps/MultiWriter
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+xz  = https://download.gnome.org/sources/$isim/${surum%.*}
+
+
+[sha256]
+#1 		= c419b7ce59c24492543ba95bd7dbb5fcc4b5338d2596b14820d80ec26d98fdd3
+
+[derle]
+betik 	=  milis-meson ../$isim-$surum build
+betik 	= ninja -C build
+        	      
+[pakur]
+betik 	= DESTDIR="$PKG" meson install -C build

@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNOME için tek oturum açma çerçevesi
+paketci = Cihan_Alkan
+grup    = medya
+url     = https://wiki.gnome.org/Projects/GnomeOnlineAccounts
+
+[gerek]
+derleme = meson json-glib rest gcr webkit2gtk
+calisma = webkit2gtk json-glib libsecret libsecret libsoup rest
+
+[kaynak]
+git		= https://gitlab.gnome.org/GNOME/gnome-online-accounts
+
+[sha256]
+
+[derle]
+betik = meson $isim build --prefix=/usr --libexecdir=/usr/lib -D lastfm=true -D media_server=true -D gtk_doc=false -D man=false
+betik = meson compile -C build
+
+
+[pakur]
+#betik = cd gnome-online-accounts/build
+betik		= DESTDIR="$PKG" meson install -C build

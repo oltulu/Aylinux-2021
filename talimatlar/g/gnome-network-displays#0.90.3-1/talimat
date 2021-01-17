@@ -1,0 +1,26 @@
+[paket]
+tanim   = Gnome için miracast uygulaması
+paketci = yasarciv
+grup    = medya
+url     = https://gitlab.gnome.org/GNOME/gnome-network-displays
+arsiv	= $isim-master
+
+[gerek]
+derleme = meson gtk3 faac gst-plugins-others pulseaudio python-gobject x264 gst-rtsp-server networkmanager
+calisma =
+;xdg-desktop-portal
+calisma =
+
+[kaynak]
+1		= https://gitlab.gnome.org/GNOME/gnome-network-displays/-/archive/master/gnome-network-displays-master.tar.bz2
+
+
+[sha256]
+;1		= 6296e7bd25a750cac24cf86d97819e3855a133e44553aacdb3d9f7b9b7ab56a6
+
+[derle]
+tip		= meson
+
+
+[pakur]
+tip		= meson

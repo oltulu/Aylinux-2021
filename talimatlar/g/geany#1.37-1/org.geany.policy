@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+  
+
+ <vendor>Geany</vendor>
+ <vendor_url>https://geany.org/</vendor_url>
+ <icon_name>geany</icon_name>
+
+
+ <action id="org.geany">
+ 
+ <description>Run Geany as root</description>
+ <description xml:lang="tr">Geany'yi yönetici olarak çalıştır</description>
+ <message>Authentication is required to run Geany as root.</message>
+ <message xml:lang="tr">Geany'yi yönetici olarak çalıştırmak için kimlik doğrulaması gerekli</message>
+ <defaults>
+ <allow_any>no</allow_any>
+ <allow_inactive>auth_admin</allow_inactive>
+ <allow_active>auth_admin</allow_active>
+ </defaults>
+ <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/geany</annotate>
+ <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+ </action>
+
+</policyconfig>

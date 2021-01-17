@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME şifresi ve gizli yönetici
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.gnome.org
+
+[gerek]
+derleme    = gcr libcap-ng pam openssh libxslt
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/$isim/${surum%.*}
+
+[sha256]
+1          = a4d90afc4dabe77c6ff8b606588ad782621df8efeb114cbdc619dc4e38a65eba
+
+[derle]
+ekconf     = --with-pam-dir=/usr/lib/security --disable-schemas-compile --disable-doc
+tip        = gnu
+
+[pakur]
+tip        = gnu

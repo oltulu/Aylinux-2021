@@ -1,0 +1,51 @@
+
+#!/bin/sh
+
+. /etc/rc.d/functions
+
+DAEMON=/usr/bin/glusterd
+NAME=`basename ${DAEMON}`
+OPT=""
+
+case "${1}" in
+   start)
+      log_info_msg "Starting  ${NAME^} daemon..."
+      pidlist=`pidofproc ${DAEMON}`
+
+      if [  "${?}" = "0" ]; then
+        log_info_msg2 " Already running"
+        log_success_msg2
+        exit 0;
+      fi
+      # Start as background process and assume OK
+      ${DAEMON} $OPT &
+      log_success_msg2
+      ;;
+
+   stop)
+      log_info_msg "Stopping ${NAME^} daemon..."
+      killproc ${DAEMON}
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   status)
+      statusproc ${DAEMON}
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart|status}"
+      exit 1
+      ;;
+esac
+
+exit 0
+
+# End of service
+
+

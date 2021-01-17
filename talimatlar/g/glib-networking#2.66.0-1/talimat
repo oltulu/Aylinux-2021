@@ -1,0 +1,22 @@
+[paket]
+tanim   = Glib için ağ ile ilgili giomodüller
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://gitlab.gnome.org/GNOME/glib-networking/
+
+[gerek]
+derleme    = pkg-config ca-certificates meson gnutls glib libproxy gsettings-desktop-schemas
+calisma    = gsettings-desktop-schemas
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1          = d50183046a4ff955d8cc7e953067cdfc94f14dbfda3024bf377ff37a3121dcd5
+
+[derle]
+ekconf     = -Dinstalled_tests=false -Dgnutls=enabled -Dlibproxy=enabled -Dopenssl=enabled
+tip        = meson
+
+[pakur]
+tip        = meson

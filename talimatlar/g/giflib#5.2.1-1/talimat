@@ -1,0 +1,18 @@
+[paket]
+tanim   = GIF formatındaki grafik dosyalarını düzenlemek için kullanılan kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = https://sourceforge.net/projects/giflib
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/sourceforge/$isim
+
+[sha512]
+1 		= 4550e53c21cb1191a4581e363fc9d0610da53f7898ca8320f0d3ef6711e76bdda2609c2df15dc94c45e28bff8de441f1227ec2da7ea827cb3c0405af4faa4736
+
+[derle]
+betik   = make CFLAGS="-fPIC"
+	      
+[pakur]
+betik   = make PREFIX=/usr DESTDIR="${PKG}" install
+betik   = rm -fv $PKG/usr/lib/*.a

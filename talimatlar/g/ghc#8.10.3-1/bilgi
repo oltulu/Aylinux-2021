@@ -1,0 +1,2 @@
+# after installation
+ghc-pkg recache

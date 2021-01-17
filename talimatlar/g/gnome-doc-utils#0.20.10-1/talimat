@@ -1,0 +1,22 @@
+[paket]
+tanim   = Gnome için dokümantasyon araçları
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://www.gnome.org
+
+[gerek]
+derleme = intltool gnome-common
+calisma = libxslt python docbook-xml rarian
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/0.20
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= PYTHON=/usr/bin/python3 ./configure --prefix=/usr --sysconfdir=/etc --mandir=/usr/share/man --localstatedir=/var --disable-scrollkeeper --disable-docbook --disable-gtk-doc
+betik 	= make
+	      
+[pakur]
+tip = gnu

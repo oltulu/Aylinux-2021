@@ -1,0 +1,19 @@
+[paket]
+tanim   = Unix dbm benzeri GNU veritabanı yöneticisi
+paketci = milisarge
+grup 	= temel
+url     = http://www.gnu.org/software/gdbm/gdbm.html
+
+[kaynak]
+gz      = http://ftp.gnu.org/gnu/gdbm
+
+[sha256]
+#1 		= 86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc
+
+[derle]
+betik   = ./configure --prefix=/usr --enable-libgdbm-compat
+betik   = make
+	      
+[pakur]
+tip	    = gnu
+dosya   = pakur.sh

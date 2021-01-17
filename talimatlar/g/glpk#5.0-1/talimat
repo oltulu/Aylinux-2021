@@ -1,0 +1,24 @@
+[paket]
+tanim   = LPU, MIP ve diğer sorunları çözmek için GNU Lineer Programlama Kiti
+paketci = yasarciv67
+grup    = geliştirme
+url     = http://www.gnu.org/software/glpk/glpk.html
+
+[gerek]
+derleme = gmp
+calisma =
+
+[kaynak]
+gz      = ${GNU_SITE}/glpk
+dosya   = glpk-remove-warnings.patch
+
+[sha256]
+1       = 4281e29b628864dfe48d393a7bedd781e5b475387c20d8b0158f329994721a10
+
+[derle]
+betik   = patch -p1 -i $SRC/glpk-remove-warnings.patch
+ekconf  = --with-gmp
+tip     = gnu
+
+[pakur]
+tip     = gnu

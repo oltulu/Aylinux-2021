@@ -1,0 +1,28 @@
+[paket]
+tanim   = Ana C kütüphaneleri-32
+paketci = milisarge
+grup 	= temel
+url     = https://www.gnu.org/software/libc
+arsiv   = glibc-$surum
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = http://ftp.gnu.org/gnu/glibc/glibc-$surum.tar.xz
+dosya   = glibc-2.32-fhs-1.patch
+2       = https://toolchains.bootlin.com/downloads/releases/toolchains/x86-i686/tarballs/x86-i686--glibc--stable-2020.08-1.tar.bz2
+
+[derle]
+bayrak  = 0
+yama    = glibc-2.32-fhs-1.patch
+dosya	= derle.sh
+	      
+[pakur]
+betik   = cd build
+tip     = gnu
+betik   = rm -rf $PKG/{etc,sbin,var}
+betik   = rm -rf $PKG/usr/{bin,sbin,include,share}
+betik   = mkdir -p $PKG/usr/lib
+betik   = ln -s /usr/lib32/ld-2.32.so $PKG/usr/lib/ld-linux.so.2

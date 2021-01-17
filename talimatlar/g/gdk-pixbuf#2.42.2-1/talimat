@@ -1,0 +1,27 @@
+[paket]
+tanim   = GTK için resim yükleme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://wiki.gnome.org/Projects/GdkPixbuf
+
+[gerek]
+derleme = meson tiff libjpeg-turbo gobject-introspection jasper libpng glib shared-mime-info libx11
+calisma = shared-mime-info
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.38
+dosya   = gdk-pixbuf-register.sh
+dosya   = gdk-pixbuf.loaders
+
+[sha512]
+1 		= e50badaad2ccb3c816ba0849be386ecb75ea3c7df203d0b0144541c463ad1ace86c0d190b7550e3f59f0cba9639acc5cc048b7127484287894e4df6d62777920
+
+[derle]
+betik   = sed -i '/tests/ d' meson.build 
+betik   = milis-meson  -Dbuiltin_loaders=png -Djasper=true output . 
+betik   = ninja -C output
+	      
+[pakur]
+betik   = DESTDIR="$PKG" ninja -C output install
+betik   = install -m 755 $SRC/gdk-pixbuf-register.sh $PKG/usr/bin/gdk-pixbuf-register
+betik   = install -m 644 $SRC/gdk-pixbuf.loaders $PKG/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache

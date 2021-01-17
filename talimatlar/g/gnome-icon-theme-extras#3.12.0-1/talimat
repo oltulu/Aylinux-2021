@@ -1,0 +1,21 @@
+[paket]
+tanim   = GNOME Masaüstü simgesi teması (ek simgeler)
+paketci = yasarciv67
+grup    = tasarım
+url     = http://gnome.org
+
+[gerek]
+derleme    = gtk3 icon-naming-utils gnome-icon-theme
+calisma    =
+
+[kaynak]
+xz          = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[sha256]
+1          = 4eec6cea8a7b09c4ed6ebab1a3b42539b9c61a53bec4b8872e774611cc619608
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

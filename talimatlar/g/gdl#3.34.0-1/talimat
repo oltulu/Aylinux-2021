@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME Yerleştirme Kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://developer.gnome.org/gdl/
+
+[gerek]
+derleme = pkg-config glib libxml2 gtk3 gobject-introspection
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = 52cc98ecc105148467b3b2b4e0d27ae484b1b6710d53413f771ed07ef1b737b6
+
+[derle]
+betik   = sed 's,-I$(includedir),,g' -i gdl/Makefile
+tip     = gnu
+
+[pakur]
+tip     = gnu

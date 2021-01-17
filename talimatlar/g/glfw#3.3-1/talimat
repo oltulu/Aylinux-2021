@@ -1,0 +1,22 @@
+[paket]
+tanim   = OpenGL içerikli pencere üretici kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.glfw.org
+
+[gerek]
+derleme = cmake mesa libxrandr libxi glu libxcursor libxinerama
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1 		= 32797630af0da94a1a05302bca0435eae352f593197a04670d797de2e492a5a5
+
+[derle]
+ekconf  = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON
+tip     = cmake
+	      
+[pakur]
+tip     = cmake

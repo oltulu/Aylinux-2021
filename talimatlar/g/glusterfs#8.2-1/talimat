@@ -1,0 +1,27 @@
+[paket]
+tanim   = PB seviyesinde ölçeklenebilen dağıtık dosya sistemi
+paketci = milisarge
+grup    = sistem
+url     = https://www.gluster.org
+
+[gerek]
+derleme = libaio libtirpc liburcu libxml2 fuse2 rpcsvc-proto
+calisma = python
+
+[kaynak]
+gz      = https://download.gluster.org/pub/gluster/glusterfs/LATEST
+dosya   = glusterd-init
+
+[sha256]
+1       = f905a1df27ab343f476e0c3875c51cf95c62253158a7fb5f6140843c5670f3c2
+
+[derle]
+betik   = export LC_ALL=C
+betik   = autoreconf -fi
+ekconf  = --with-mountutildir=/usr/bin ac_cv_file__etc_debian_version=no ac_cv_file__etc_SuSE_release=no ac_cv_file__etc_redhat_release=no ac_cv_file__etc_centos_release=no --enable-gnfs LEXLIB=
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = rm -rf ${PKG}/var; ${PKG}/usr/share/glusterfs/scripts/gsync-sync-gfid
+betik   = install -Dm755 ${SRC}/glusterd-init ${PKG}/etc/rc.d/init.d/glusterd

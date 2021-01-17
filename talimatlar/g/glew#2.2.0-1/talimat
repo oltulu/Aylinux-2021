@@ -1,0 +1,23 @@
+[paket]
+tanim   = OpenGL Extension Wrangler Kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://glew.sourceforge.net
+
+[gerek]
+derleme    = libxext libxmu libxi glu
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/glew/glew-${surum}.tgz
+
+[sha256]
+1          = 04de91e7e6763039bc11940095cd9c7f880baba82196a7765f727ac05a993c95
+
+[derle]
+betik      = sed -i 's|lib64|lib|' config/Makefile.linux
+betik      = sed -i '/^.PHONY: .*\.pc$/d' Makefile && make
+
+[pakur]
+betik      = make GLEW_DEST="${PKG}/usr" install.all
+betik      = rm -f $PKG/usr/lib/*.a

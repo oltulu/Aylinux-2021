@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME Bluetooth Alt Sistemi
+paketci = milisarge
+grup    = ağ
+url     = https://wiki.gnome.org/Projects/GnomeBluetooth
+
+[gerek]
+derleme = meson  bluez eudev libcanberra bluez gvfs gobject-introspection glib libxi gtk3 libnotify dconf
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1       = 3ec91076c2822cd1f9abdc8e27663c3bda4c9c8a7a9773f9e92bfbf2b745d386
+
+[derle]
+ekconf  = -Dicon-update=false -Dgtk_doc=false -Dintrospection=true
+tip     = meson
+
+[pakur]
+tip     = meson
