@@ -1,0 +1,23 @@
+[paket]
+tanim   = SDL için küçük örnek çapraz platform ağ kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libsdl.org/projects/SDL_net/
+
+[gerek]
+derleme    = sdl
+calisma    =
+
+[kaynak]
+1          = https://www.libsdl.org/projects/SDL_net/release/SDL_net-$surum.tar.gz
+
+[sha256]
+1          = 5f4a7a8bb884f793c278ac3f3713be41980c5eedccecff0260411347714facb4
+
+[derle]
+betik      = cd SDL_net-$surum
+tip        = gnu
+
+[pakur]
+betik      = cd SDL_net-$surum
+tip        = gnu

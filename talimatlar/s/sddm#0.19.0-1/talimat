@@ -1,0 +1,26 @@
+[paket]
+tanim   = QML tabanlı X11 ekran yöneticisi
+paketci = yasarciv
+grup    = sistem
+url     = http://github.com/sddm/sddm
+
+[gerek]
+derleme = cmake extra-cmake-modules qt5-declarative qt5-tools pam dbus
+calisma =
+
+[kaynak]
+1       = https://github.com/${isim}/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+dosya	= sddm.conf
+
+[sha256]
+1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
+2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
+
+[derle]
+ekconf	= -DNO_SYSTEMD=On -DBUILD_MAN_PAGES=Off -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf -DLOG_FILE=/var/run/sddm/sddm.log
+tip     = cmake
+
+[pakur]
+tip		= cmake
+dosya	= pakur.sh
+servis	= sddm

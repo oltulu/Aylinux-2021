@@ -1,0 +1,22 @@
+[paket]
+tanim   = SDL 2.x uygulamaları iin grafik desteği
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx
+arsiv   = SDL2_gfx-$surum
+
+[gerek]
+derleme = sdl2
+calisma =
+
+[kaynak]
+1      = https://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-${surum}.tar.gz
+
+[sha256]
+1      = 63e0e01addedc9df2f85b93a248f06e8a04affa014a835c2ea34bfe34e576262
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu

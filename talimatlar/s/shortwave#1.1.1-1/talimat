@@ -1,0 +1,28 @@
+[paket]
+tanim   = İnternet radyo istasyonlarını bulun ve dinleyin.
+paketci = Cihan_Alkan
+grup 	= mate
+url     =https://gitlab.gnome.org/World/Shortwave
+
+[gerek]
+derleme =  libhandy0
+calisma =  
+
+[kaynak]
+1      =${url}/-/archive/${surum}/Shortwave-${surum}.tar.gz
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik = cd "Shortwave-${surum}"
+betik = patch -Np1 -i /sources/handy.patch
+betik = milis-meson builddir --prefix=/usr
+betik = ninja -C builddir
+
+betik     = make
+    	      
+[pakur]
+betik = cd "Shortwave-${surum}"
+betik     = DESTDIR="${PKG}" ninja -C builddir install
+

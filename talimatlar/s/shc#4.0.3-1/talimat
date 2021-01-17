@@ -1,0 +1,21 @@
+[paket]
+tanim   = Shell derleyicisi, C koduna donusturur
+paketci = mmkarakaya
+grup    = sistem
+url     = https://github.com/neurobin/shc
+
+[gerek]
+derle   = 
+calisma = 
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz
+
+[sha256]
+1       = 7d7fa6a9f5f53d607ab851d739ae3d3b99ca86e2cb1425a6cab9299f673aee16
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

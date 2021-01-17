@@ -1,0 +1,33 @@
+[paket]
+tanim   = Scala ve Java için etkileşimli derleme aracı
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.scala-sbt.org
+arsiv   = $isim
+
+[gerek]
+derleme = 
+calisma = openjdk8
+
+[kaynak]
+1       = https://sbt-downloads.cdnedge.bluemix.net/releases/v${surum}/${isim}-${surum}.tgz
+
+[sha256]
+1       = 854154de27a7d8c13b5a0f9a297cd1f254cc13b44588dae507e5d4fb2741bd22
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+tip     = 
+betik   = mkdir -p "${PKG}"/usr/share/${isim}
+betik   = cp -r bin "${PKG}"/usr/share/${isim}
+betik   = rm "${PKG}"/usr/share/${isim}/bin/*.bat
+betik   = chmod -x "${PKG}"/usr/share/${isim}/bin/*
+betik   = chmod +x "${PKG}"/usr/share/${isim}/bin/sbt
+betik   = mkdir -p "${PKG}"/usr/bin
+betik   = ln -s /usr/share/${isim}/bin/sbt "${PKG}"/usr/bin/sbt
+betik   = mkdir -p "${PKG}/etc"
+betik   = cp -r conf "${PKG}"/etc/${isim}
+betik   = rm "${PKG}"/etc/${isim}/sbtconfig.txt
+betik   = ln -s /etc/${isim} "${PKG}"/usr/share/${isim}/conf

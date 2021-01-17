@@ -1,0 +1,19 @@
+[paket]
+tanim   = SoundTouch Ses İşleme Kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.surina.net/soundtouch
+
+[kaynak]
+gz         = https://gitlab.com/soundtouch/soundtouch/-/archive/${surum}
+
+[sha256]
+1          = 2826049e2f34efbc4c8a47d00c93649822b0c14e1f29f5569835704814590732
+
+[derle]
+betik      = ./bootstrap
+ekconf     = --enable-openmp
+tip        = gnu
+
+[pakur]
+tip        = gnu

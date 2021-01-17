@@ -1,0 +1,31 @@
+[paket]
+tanim   = SDL uygulamalarınızda TrueType yazı tiplerini kullanın
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libsdl.org/projects/SDL_ttf
+
+[gerek]
+derleme    = freetype sdl
+calisma    =
+
+[kaynak]
+1          = https://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-$surum.tar.gz
+dosya      = sdlttf-bug1433.patch
+dosya      = sdlttf-freetype-pkgconfig.patch
+
+[sha256]
+1          = 724cd895ecf4da319a3ef164892b72078bd92632a5d812111261cde248ebcdb7
+2          = 4baea703454b9bca9498a920485552f1b8489a5007f8f1366080b14a4cd74c90
+3          = 87412f614b97b4724cb4845db882f07c15caf098dee57a856d6dbae0f58de80d
+
+[derle]
+betik      = cd SDL_ttf-$surum
+betik      = patch -Ni ../sdlttf-bug1433.patch
+betik      = patch -Np1 -i ../sdlttf-freetype-pkgconfig.patch
+betik      = touch NEWS README AUTHORS ChangeLog
+betik      = autoreconf -vi
+tip        = gnu
+
+[pakur]
+betik      = cd SDL_ttf-$surum
+tip        = gnu

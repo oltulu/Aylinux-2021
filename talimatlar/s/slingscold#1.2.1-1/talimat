@@ -1,0 +1,27 @@
+[paket]
+tanim   = Daha hafif bir başlatıcı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://sourceforge.net/projects/slingscold/
+
+[gerek]
+derleme = 
+calisma = libpeas gtksourceview gspell
+
+[kaynak]
+1  = http://ppa.launchpad.net/noobslab/apps/ubuntu/pool/main/s/slingscold/slingscold_1.2.1.7t~NoobsLab.com.tar.gz
+dosya = 0001-Add-missing-lm-dep.patch
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= rm -rf build && mkdir build
+betik 	= cd "$SRC/slingscold_1.2.1"
+betik 	= patch -p1 < "$SRC"/0001-Add-missing-lm-dep.patch
+betik 	= cd "$SRC"/build
+betik 	= cmake ../"slingscold_1.2.1" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr 
+betik 	= make
+    	      
+[pakur]
+betik 	= cd "$SRC"/build
+betik 	= make DESTDIR="$PKG" install

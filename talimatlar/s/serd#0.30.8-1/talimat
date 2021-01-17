@@ -1,0 +1,21 @@
+[paket]
+tanim   = RDF sözdizimi için hafif C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://drobilla.net/software/serd
+
+[gerek]
+derleme    = python
+calisma    =
+
+[kaynak]
+bz2         = http://download.drobilla.net
+
+[sha256]
+1          = 6efb0efa5c2155e6bbac941cddeeabb7ed26d70a57d24178894ff169d8f6cefb
+
+[derle]
+tip        = waf 
+
+[pakur]
+tip        = waf 

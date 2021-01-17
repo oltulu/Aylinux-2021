@@ -1,0 +1,25 @@
+[paket]
+tanim   = İstemcileri adına kullanıcı kimlik doğrulaması yapan bir D-Bus hizmeti
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://gitlab.com/accounts-sso/signond/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git      = https://gitlab.com/accounts-sso/signond
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd signond
+betik 	= qmake PREFIX=/usr LIBDIR=/usr/lib CONFIG+=rtti
+betik 	= make
+            	      
+[pakur]
+betik 	= cd signond
+betik = make INSTALL_ROOT="$PKG" install
+betikrm -rf "$PKG"/usr/share/doc

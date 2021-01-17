@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sass CSS derleyicisi C gerçeklemesi
+paketci = milisarge
+grup 	= geliştirme
+url     = http://libsass.org
+
+[gerek]
+derleme = libsass
+calisma = 
+
+[kaynak]
+1       = https://github.com/sass/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 8cee391c49a102b4464f86fc40c4ceac3a2ada52a89c4c933d8348e3e4542a60
+
+[derle]
+betik 	= autoreconf -i 
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Görüntüleri SDL yüzeyleri olarak yükleme (SDL 2.x)
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libsdl.org/projects/SDL_image/
+
+[gerek]
+derleme = libpng tiff sdl2 libwebp
+calisma =
+
+[kaynak]
+1      = $url/release/SDL2_image-${surum}.tar.gz
+
+[sha256]
+1      = bdd5f6e026682f7d7e1be0b6051b209da2f402a2dd8bd1c4bd9c25ad263108d0
+
+[derle]
+betik  = cd SDL2_image-$surum
+ekconf = --disable-static --disable-jpg-shared --disable-png-shared --disable-webp-shared --disable-tif-shared
+tip    = gnu
+
+[pakur]
+betik  = cd SDL2_image-$surum
+tip    = gnu

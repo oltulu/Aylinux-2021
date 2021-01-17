@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için MIME Bilgileri
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec
+
+[gerek]
+derleme = libxml2 glib
+calisma = 
+
+[kaynak]
+xz      = https://gitlab.freedesktop.org/xdg/shared-mime-info/uploads/80c7f1afbcad2769f38aeb9ba6317a51
+
+[sha256]
+1 		= 18b2f0fe07ed0d6f81951a5fd5ece44de9c8aeb4dc5bb20d4f595f6cc6bd403e
+
+[derle]
+betik   = export ac_cv_func_fdatasync=no
+ekconf  = --disable-update-mimedb
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu

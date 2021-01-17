@@ -1,0 +1,23 @@
+[paket]
+tanim   = Görüntüleri SDL yüzeyleri olarak yükleme
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libsdl.org/projects/SDL_image/
+
+[gerek]
+derleme = sdl libwebp libpng tiff libjpeg-turbo libwebp
+calisma =
+
+[kaynak]
+1       = https://www.libsdl.org/projects/SDL_image/release/SDL_image-$surum.tar.gz
+
+[sha256]
+1       = 0b90722984561004de84847744d566809dbb9daf732a9e503b91a1b5a84e5699
+
+[derle]
+betik   = cd SDL_image-$surum
+tip     = gnu
+
+[pakur]
+betik   = cd SDL_image-$surum
+tip     = gnu

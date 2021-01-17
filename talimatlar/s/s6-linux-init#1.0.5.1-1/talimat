@@ -1,0 +1,22 @@
+[paket]
+tanim   = s6 init sistemi için linux araçları
+paketci = milisarge
+grup    = kütüphane
+url     = http://skarnet.org/software/s6-linux-init/
+
+[gerek]
+derleme = execline skalibs
+calisma =
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 978c38fe71f3d2fb44c455f2f911b409a87a384c2e14b1eb1ef138e21a956bbe
+
+[derle]
+betik   = ./configure --prefix=/usr  --libdir=/usr/lib --skeldir=/etc/s6-linux-init/skel
+betik   = make
+
+[pakur]
+tip     = gnu

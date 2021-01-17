@@ -1,0 +1,21 @@
+[paket]
+tanim   = RDF verilerini belleğe kaydetmek için hafif C kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://drobilla.net/software/sord
+
+[gerek]
+derleme    = python serd pcre
+calisma    =
+
+[kaynak]
+bz2        = http://download.drobilla.net
+
+[sha256]
+1          = 09f51174dd8f3efbd95f44f0bb0b165f08e066e052d40095de59de787987da8d
+
+[derle]
+tip        = waf 
+
+[pakur]
+tip        = waf 

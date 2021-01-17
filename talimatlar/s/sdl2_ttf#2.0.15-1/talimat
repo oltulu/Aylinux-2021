@@ -1,0 +1,23 @@
+[paket]
+tanim   = SDL 2.x uygulamalarınızda TrueType yazı tiplerini kullanma
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.libsdl.org/projects/SDL_ttf
+
+[gerek]
+derleme = freetype mesa sdl2 libsm
+calisma =
+
+[kaynak]
+1      = ${url}/release/SDL2_ttf-${surum}.tar.gz
+
+[sha256]
+1      = a9eceb1ad88c1f1545cd7bd28e7cbc0b2c14191d40238f531a15b01b1b22cd33
+
+[derle]
+betik  = cd SDL2_ttf-${surum}
+tip    = gnu
+
+[pakur]
+betik  = cd SDL2_ttf-${surum}
+tip    = gnu

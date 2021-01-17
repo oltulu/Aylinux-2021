@@ -1,0 +1,25 @@
+[paket]
+tanim   = S.M.A.R.T.'yi kontrol edin ve izleyin. etkin ATA ve SCSI Sabit Sürücüler
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = http://smartmontools.sourceforge.net
+
+[gerek]
+derleme = gobject-introspection
+calisma = xorg-mesa xorg-libdrm xorg-libxext xorg-libxdamage xorg-libxcomposite gdk-pixbuf pango xorg-libxrandr
+
+[kaynak]
+gz      = https://downloads.sourceforge.net/sourceforge/${isim}
+dosya = smartd.conf
+[sha256]
+    #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+betik 	= sed -i "/^os_hostname/c os_hostname=\"'uname -n'\"" configure.ac
+betik 	= autoreconf -fi
+betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --with-initscriptdir=no
+betik 	= make  
+
+[pakur]
+betik 	= make DESTDIR="${PKG}" install
+betik 	= install -Dm644 "${SRC}"/smartd.conf "${PKG}/etc/conf.d/smartd"

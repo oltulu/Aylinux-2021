@@ -1,0 +1,24 @@
+[paket]
+tanim   = EFI ikili ve dizinlerini imzalamak için araçlar
+paketci = milisarge
+grup    = sistem
+url     = https://build.opensuse.org/package/show/home:jejb1:UEFI/sbsigntools
+
+[gerek]
+derleme = gnu-efi-libs openssl
+calisma =
+
+[kaynak]
+git     = https://git.kernel.org/pub/scm/linux/kernel/git/jejb/sbsigntools.git
+git     = git://git.ozlabs.org/~ccan/ccan
+dosya   = 0001-sbsigntools-fix-autogen.sh-for-build-service.patch
+
+[sha256]
+3       = 9085ad181f67ac911918864783a9804af456d33c4631659e6acaaa27987786d7
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = cd ${isim}.git
+tip     = gnu

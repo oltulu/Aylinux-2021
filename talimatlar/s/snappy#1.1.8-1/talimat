@@ -1,0 +1,25 @@
+[paket]
+tanim   = Hızlı bir sıkıştırma/çözme kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://google.github.io/snappy
+
+[gerek]
+derleme    = cmake clang
+calisma    =
+
+[kaynak]
+1          = https://github.com/google/snappy/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+dosya      = snappy.pc
+
+[sha256]
+1          = 3dfa02e873ff51a11ee02b9ca391807f0c8ea0529a4924afa645fbf97163f9d4
+
+[derle]
+betik      = export CXXFLAGS+=\ -DNDEBUG ;export CXX=clang++
+ekconf     = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DBUILD_SHARED_LIBS=yes
+tip        = cmake
+
+[pakur]
+tip        = cmake
+betik      = install -Dm644 "$SRC/snappy.pc" "$PKG/usr/lib/pkgconfig/snappy.pc"

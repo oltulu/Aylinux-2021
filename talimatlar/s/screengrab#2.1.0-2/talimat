@@ -1,0 +1,23 @@
+[paket]
+tanim   = Masaüstünüzün ekran görüntülerini yakalamak için Çapraz Platform bir araç.
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/screengrab
+
+[gerek]
+derleme = cmake qt5-tools qt5-base qt5-x11extras qt5-svg kwindowsystem libqtxdg libx11 libxcb
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1		= feadd8c0a3f49b7b8005c5d0257de3b77fe8d83bf7f86eda860d08990c6fd86a
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik   = install -d "${PKG}/etc/ld.so.conf.d"
+betik   = echo "/usr/lib/${isim}" > "${PKG}/etc/ld.so.conf.d/${isim}.conf"

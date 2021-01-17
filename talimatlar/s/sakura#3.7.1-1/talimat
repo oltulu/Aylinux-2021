@@ -1,0 +1,22 @@
+[paket]
+tanim   = Vte ve GTK tabanlı terminal uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://launchpad.net/sakura
+
+[gerek]
+derleme = cmake libxft vte3
+calisma =
+
+[kaynak]
+bz2     = https://launchpad.net/sakura/trunk/${surum}/+download
+
+[sha256]
+1       = 729a4e0e750a4294bd9059243aac54df2a801250159fc550b50b0fe026ab928b
+
+[derle]
+betik   = sed -i 's|#define DEFAULT_FONT "Bitstream Vera Sans Mono 14"|#define DEFAULT_FONT "Bitstream Vera Sans Mono 10"|g' src/sakura.c
+tip     = cmake
+
+[pakur]
+tip     = cmake

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yazılım derleme aracı
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.scons.org/
+
+[gerek]
+derleme    = python
+calisma    = python
+
+[kaynak]
+gz         = https://prdownloads.sourceforge.net/scons
+
+[sha512]
+1          = 2e80b45571679d8acc0554273538f56163488df5aa9007c7c9c3a6deb2698909ab05da8df91502ea287c0cc0ff0a98f226454f67fcfb7a943570f673f4bd8f54
+
+[derle]
+tip        = py3
+
+[pakur]
+ekconf     = --standard-lib --install-data=/usr/share
+tip        = py3
+betik      = rm -f $PKG/ur/bin/*.bat

@@ -1,0 +1,18 @@
+[paket]
+tanim   = Basit tarama programı
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://gitlab.gnome.org/GNOME/simple-scan
+
+[kaynak]
+git      = https://gitlab.gnome.org/GNOME/simple-scan
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = milis-meson $isim build
+betik = meson compile -C build
+
+[pakur]
+betik = DESTDIR="$PKG" meson install -C build

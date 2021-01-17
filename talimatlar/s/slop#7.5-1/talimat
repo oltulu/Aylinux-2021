@@ -1,0 +1,21 @@
+[paket]
+tanim   = Ekrandaki bölgeyi standart çıktı olarak yazdırmak için yardımcı program
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/naelstrof/slop
+
+[gerek]
+derleme = cmake glew glm icu libxrender libxext libx11 glu
+calisma =
+
+[kaynak]
+github  = naelstrof/slop
+
+[sha256]
+1       = 94d8b6270217cd7f56ce7d4a9a75069025262830a2f91c3239b7fc07da5ea8da
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

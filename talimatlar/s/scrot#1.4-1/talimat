@@ -1,0 +1,19 @@
+[paket]
+tanim   = X için basit komut satırı ekran görüntüsü yardımcı programı
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/resurrecting-open-source-projects/scrot
+
+[gerek]
+derleme = imlib2 libxfixes libxcursor
+calisma =
+
+[kaynak]
+git     = https://github.com/darddan/scrot
+
+[derle]
+betik   = cd $isim;make
+
+
+[pakur]
+betik   = cd $isim;make PREFIX=/usr DESTDIR=$PKG install

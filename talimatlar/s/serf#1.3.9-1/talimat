@@ -1,0 +1,27 @@
+[paket]
+tanim   = Yüksek performanslı asenkron HTTP istemci kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://serf.apache.org
+
+[gerek]
+derleme  =  scons apr-util 
+calisma  =  
+
+[kaynak]
+bz2     =  https://www.apache.org/dist/serf
+dosya   =  scons-python3.patch
+
+[sha256]
+1  =  549c2d21c577a8a9c0450facb5cca809f26591f048e466552240947bdf7a87cc
+2  =  363732546098b4c9415eb5d38b595d04c660c6324a34159768d334507b7d241f
+
+[derle]
+yama   = 2
+betik  = scons CFLAGS="${CFLAGS}" LINKFLAGS="${LDFLAGS}" PREFIX=/usr GSSAPI=/usr/bin/krb5-config
+
+[pakur]
+betik  = install -d "${PKG}/usr" 
+betik  = scons install --install-sandbox="${PKG}"
+betik  = rm -f $PKG/usr/lib/*.a
+

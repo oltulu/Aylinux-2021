@@ -1,0 +1,22 @@
+[paket]
+tanim   = Kitaplık ve s6 init sistemi için başlıklar
+paketci = milisarge
+grup    = kütüphane
+url     = http://skarnet.org/software/s6/
+
+[gerek]
+derleme = execline skalibs
+calisma =
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 363db72af8fffba764b775c872b0749d052805b893b07888168f59a841e9dddd
+
+[derle]
+betik   = ./configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib
+betik   = make
+
+[pakur]
+tip     = gnu

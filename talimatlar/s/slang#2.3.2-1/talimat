@@ -1,0 +1,22 @@
+[paket]
+tanim   = S-lang betik dili
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.jedsoft.org/slang
+
+[gerek]
+derleme = pcre
+calisma =
+
+[kaynak]
+bz2     = https://www.jedsoft.org/releases/slang
+
+[sha256]
+1 	   = fc9e3b0fc4f67c3c1f6d43c90c16a5c42d117b8e28457c5b46831b8b5d3ae31a
+
+[derle]
+ekconf = --disable-static
+tip    = gnu
+	      
+[pakur]
+betik  = make DESTDIR=${PKG} install-all

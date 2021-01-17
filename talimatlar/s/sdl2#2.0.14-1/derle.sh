@@ -1,0 +1,19 @@
+cd SDL2-${surum}
+
+mkdir build
+
+cd build
+cmake .. \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DSDL_STATIC=OFF \
+  -DSDL_DLOPEN=ON \
+  -DARTS=OFF \
+  -DESD=OFF \
+  -DNAS=OFF \
+  -DALSA=ON \
+  -DPULSEAUDIO_SHARED=ON \
+  -DVIDEO_WAYLAND=ON \
+  -DRPATH=OFF \
+  -DCLOCK_GETTIME=ON \
+  -DJACK_SHARED=ON
+make
