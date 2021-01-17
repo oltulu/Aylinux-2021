@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cassowary kısıtlama çözücüsünün hızlı bir şekilde uygulanması
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/nucleic/kiwi
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/k/kiwisolver/kiwisolver-${surum}.tar.gz
+
+[sha256]
+#1       = 53eaed412477c836e1b9522c19858a8557d6e595077830146182225613b11a75
+
+[derle]
+betik	= cd $SRC/kiwisolver-$surum
+tip     = py3
+
+[pakur]
+betik	= cd $SRC/kiwisolver-$surum
+tip     = py3

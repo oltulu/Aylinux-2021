@@ -1,0 +1,26 @@
+[paket]
+tanim   = Python hızlı ve sofistike dizi tesisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.numpy.org/
+
+[gerek]
+derleme    = cython python lapack
+calisma    =
+
+[kaynak]
+1          = https://github.com/numpy/numpy/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha512]
+#1          = 9ef67d993b5d2be0ba9a9247e10b86f9e0b07c185beadcbf89e1ac0c85f0f1d25471f2a4cfb45fc9749c3afc178bd59099214ab3d5fe41d772fc5f4b5cf4d5df
+
+[derle]
+betik      = cd numpy-$surum
+betik      = python3 setup.py build_ext --inplace
+; yukarıdaki ek derleme adımıyla ile _numpyconfig.h oluştu
+tip        = py3
+
+[pakur]
+betik      = cd numpy-$surum
+tip        = py3
+

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Platforma özel uygun dizinleri belirlemek için küçük bir Python modülü
+paketci = oltulu
+grup 	= kütüphane
+url     = https://github.com/ActiveState/appdirs
+
+[gerek]
+derleme = python
+calisma = 
+
+[kaynak]
+1       = https://pypi.io/packages/source/a/appdirs/appdirs-$surum.tar.gz
+
+[md5]
+1 		= 44c679904082a2133f5566c8a0d3ab42
+
+[derle]
+betik 	= cd "$SRC"/appdirs-$surum
+betik 	= python3 setup.py build
+	      
+[pakur]
+betik 	= cd "$SRC"/appdirs-$surum
+betik 	= python3 setup.py install --root="$PKG/" --optimize=1

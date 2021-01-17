@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cairo grafik kütüphanesi için Python2 bağları
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://pycairo.readthedocs.io
+
+[gerek]
+derleme = python2 cairo
+calisma =
+
+[kaynak]
+1       = https://github.com/pygobject/pycairo/releases/download/v${surum}/pycairo-${surum}.tar.gz
+
+[sha256]
+1       = dcb853fd020729516e8828ad364084e752327d4cff8505d20b13504b32b16531
+
+[derle]
+betik	= cd $SRC/pycairo-$surum
+tip     = py2
+
+[pakur]
+betik	= cd $SRC/pycairo-$surum
+tip     = py2

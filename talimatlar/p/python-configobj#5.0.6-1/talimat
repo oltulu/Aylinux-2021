@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python için basit ama güçlü yapılandırma dosyası okuyucu ve yazıcı
+paketci = yasarciv67
+grup    = geliştirme
+url     = https://github.com/DiffSK/configobj
+
+[gerek]
+derleme    = python python-six
+calisma    = python python-six
+
+[kaynak]
+1          = https://github.com/DiffSK/configobj/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
+
+[derle]
+betik	   = cd configobj-$surum
+tip        = py3
+
+[pakur]
+betik	   = cd configobj-$surum
+tip        = py3

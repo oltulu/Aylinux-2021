@@ -1,0 +1,29 @@
+[paket]
+tanim   = Pulseaudio için 15-band ekolayzer
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/pulseaudio-equalizer-ladspa/equalizer
+
+[gerek]
+derleme = meson
+calisma = swh-plugins pulseaudio gtk3
+
+[kaynak]
+github  = pulseaudio-equalizer-ladspa/equalizer
+dosya   = pa_current_volume.patch
+
+[sha256]
+1      = 2dd14d7bdbc806bfa239bae49dbeef8ccd8bbdb53a413bd83d0ca32390ceae6f
+2      = 5612a4efb4e1adc9f1141cf4a2426f0f3ca08f869d0c4fe600703cbbb17d1d53
+
+[derle]
+betik  = mkdir -p equalizer-$surum/build
+betik  = cd equalizer-$surum/build
+betik  = milis-meson .. && ninja
+
+[pakur]
+betik  = cd equalizer-$surum/build
+betik  = DESTDIR="$PKG" meson install
+betik  = python -m compileall -d /usr/lib "$PKG"/usr/lib
+betik  = python -O -m compileall -d /usr/lib "$PKG"/usr/lib
+betik  = patch $PKG/usr/bin/pulseaudio-equalizer $SRC/pa_current_volume.patch

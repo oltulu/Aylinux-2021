@@ -1,0 +1,23 @@
+[paket]
+tanim   = Hızlı ve hafif şablon kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.makotemplates.org/
+
+[gerek]
+derleme = python
+calisma = python-markupsafe
+
+[kaynak]
+1       = https://pypi.io/packages/source/M/Mako/Mako-$surum.tar.gz
+
+[sha512]
+#1 		= 24f4bcac24598cefe0e30c780730579dd608707d1c938d8e4de5c52bcae283f9bef4c5752b3548df879d9cb6a7a9bac5a5090c55cbdc595769b492205d089b51
+
+[derle]
+betik 	= cd Mako-$surum 
+tip 	= py3
+	      
+[pakur]
+betik 	= cd Mako-$surum 
+tip 	= py3

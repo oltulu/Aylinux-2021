@@ -1,0 +1,26 @@
+[paket]
+tanim   = Python2 paketleri derleme ve dağıtım kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/pypa/setuptools
+
+[gerek]
+derleme    = unzip python2
+calisma    =
+
+[kaynak]
+1          = ${PYPI_SITE}/s/setuptools/setuptools-${surum}.zip
+
+[sha256]
+1          = 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+
+[derle]
+betik      = cd setuptools-$surum
+betik      = export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
+betik      = export SETUPTOOLS_DISABLE_VERSIONED_EASY_INSTALL_SCRIPT=1
+tip        = py2
+
+[pakur]
+betik      = cd setuptools-$surum
+tip        = py2
+betik      = rm -f $PKG/usr/bin/easy_install

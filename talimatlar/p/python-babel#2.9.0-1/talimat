@@ -1,0 +1,27 @@
+[paket]
+tanim   = Python uygulamalarını uluslararası hale getirmek için bir araç koleksiyonu
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://babel.pocoo.org/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1       = https://github.com/python-babel/babel/archive/v$surum.tar.gz::$isim-${surum}.tar.gz
+2       = http://unicode.org/Public/cldr/37/core.zip
+
+[sha256]
+#1 		= 70172e58b6bad7572a3518c26729b074acdde15e6fee6cbab6d3528ad552b786
+
+[derle]
+betik   = cp /sources/cldr-core-37.zip babel-$surum/cldr/cldr-core-37.zip
+betik   = cd "$SRC/babel-$surum"
+betik   = python setup.py import_cldr
+betik   = python setup.py build
+
+	      
+[pakur]
+betik   = cd "$SRC"/babel-${surum}
+betik   = python setup.py install --root="$PKG" --optimize=1 --skip-build

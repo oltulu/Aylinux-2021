@@ -1,0 +1,17 @@
+[paket]
+tanim   = Çalışan süreçler hakkında bilgi veren uygulama, procfs araçları
+paketci = milisarge
+grup 	= temel
+url     = http://psmisc.sourceforge.net
+
+[kaynak]
+xz      = http://prdownloads.sourceforge.net/$isim
+
+[sha256]
+#1 		= 4b7cbffdc9373474da49b85dc3457ae511c43dc7fa7d94513fe06f89dcb87880
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

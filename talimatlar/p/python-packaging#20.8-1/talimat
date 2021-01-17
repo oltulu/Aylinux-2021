@@ -1,0 +1,24 @@
+[paket]
+tanim   = Python paketleri için temel yardımcı programlar
+paketci = oltulu
+grup 	= kütüphane
+url     = https://github.com/pypa/packaging
+
+[gerek]
+derleme = python
+calisma = 
+
+[kaynak]
+1       = https://pypi.io/packages/source/p/packaging/packaging-$surum.tar.gz
+
+[sha512]
+#1 		= aa55b6fbca764e7de2992e294b7be9dc90b25f88b64ba0cd2d1d93042402d4360b4c2cdc134a94b083da0c0bc83de8fa7185c0856bcc96fa25828c10a793fba7
+
+[derle]
+betik 	= cd "$SRC"/packaging-$surum
+betik 	= python3 setup.py build
+	      
+[pakur]
+betik 	= cd "$SRC"/packaging-$surum
+  
+betik 	= python3 setup.py install --root "$PKG"

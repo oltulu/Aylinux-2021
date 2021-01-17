@@ -1,0 +1,21 @@
+[paket]
+tanim   = Enlightenment Vakfı Kütüphaneleri için Python3 bağları
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://enlightenment.org
+
+[gerek]
+derleme = python efl python-dbus
+calisma =
+
+[kaynak]
+xz      = http://download.enlightenment.org/rel/bindings/python
+
+[sha256]
+1       = fe3a566e0dc3b0f11243d398c992c374f09f9429d87f9c1451f1a5925a6361ee
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Python proglama dili
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.python.org
+
+[kaynak]
+1       = https://www.python.org/ftp/python/2.7.18/Python-$surum.tar.xz
+
+[sha512]
+#1 		= 16e814e8dcffc707b595ca2919bd2fa3db0d15794c63d977364652c4a5b92e90e72b8c9e1cc83b5020398bd90a1b397dbdd7cb931c49f1aa4af6ef95414b43e0
+
+[derle]
+betik = cd Python-$surum
+dosya 	= derle.sh
+	      
+[pakur]
+betik = betik = cd Python-$surum
+betik = mv "${PKG}"/usr/bin/idle{,2}
+betik = mv "${PKG}"/usr/bin/pydoc{,2}
+betik = mv "${PKG}"/usr/bin/2to3{,-2.7}
+
+  # clean-up reference to build directory
+betik = sed -i "s#${SRC}/Python-${surum}:##" "${PKG}"/usr/lib/python2.7/config/Makefile
+

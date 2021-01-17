@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python3 HTML/XML Parçalayıcı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://www.crummy.com/software/BeautifulSoup
+
+[gerek]
+derleme = python
+calisma = python python-chardet python-soupsieve
+
+[kaynak]
+1       = ${PYPI_SITE}/b/beautifulsoup4/beautifulsoup4-${surum}.tar.gz
+
+[sha256]
+1       = 6135db2ba678168c07950f9a16c4031822c6f4aec75a65e0a97bc5ca09789931
+
+[derle]
+betik	= cd beautifulsoup4-$surum
+tip     = py3
+
+[pakur]
+betik	= cd beautifulsoup4-$surum
+tip     = py3

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux'ta Takılabilir Kimlik Doğrulama Modülleri sistemine saf Python arayüzü
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://github.com/FirefighterBlu3/python-pam
+
+[gerek]
+#derleme = python-setuptools
+calisma =
+
+[kaynak]
+gz       = https://files.pythonhosted.org/packages/source/${isim:0:1}/${isim}
+
+[sha256]
+#1 		= c856d9c89fedb33951dd8a95727ae57c6887b02d065bbdffd2fd9dbc0183909b
+
+[derle]
+//betik 	= python2 setup.py build
+//betik 	= python2 setup.py install --root="${PKG}" --optimize=1 --skip-build
+betik 	= python setup.py build
+
+    
+[pakur]
+betik 	= python setup.py install --root="${PKG}" --optimize=1 --skip-build

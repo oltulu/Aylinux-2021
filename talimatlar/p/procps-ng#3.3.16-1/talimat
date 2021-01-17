@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sisteminizi ve süreçlerini izlemek için yardımcı programlar.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://procps.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = ncurses
+
+[kaynak]
+xz       = http://downloads.sourceforge.net/project/$isim/Production
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= ./configure --prefix=/usr --exec-prefix= --libdir=/usr/lib --docdir=/usr/share/doc/procps-ng-$surum --disable-static --disable-kill
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

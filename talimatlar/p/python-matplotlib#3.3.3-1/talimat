@@ -1,0 +1,24 @@
+[paket]
+tanim   = Geniş kapsamlı Python 2D/3D çizim kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://matplotlib.org
+
+[gerek]
+derleme = python freetype libpng qhull python-numpy python-cairo python-gobject python-pillow tk 
+calisma = python-six python-numpy python-dateutil python-parsing python-cycler python-kiwisolver python-cairo python-gobject python-pillow tk qhull ffmpeg ghostscript imagemagick 
+
+[kaynak]
+github  = matplotlib/matplotlib
+
+[sha256]
+#1       = 5462728ed3be60af21bd8a6b33f5f1632dabdb3c1b3cc279cffb05926a48255c
+
+[derle]
+betik	= cd $SRC/matplotlib-$surum
+tip     = py3
+
+[pakur]
+betik	= cd $SRC/matplotlib-$surum
+tip     = py3
+betik	= rm -rf ${PKG}/usr/lib/python3.7/site-packages/{matplotlib,mpl_toolkits}/tests/

@@ -1,0 +1,31 @@
+[paket]
+tanim   = GTK+ araç seti için Python bağlamaları
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.pygtk.org
+
+[gerek]
+derleme = python2 python2-gobject2 python2-cairo gtk2 libxml2 libglade 
+calisma =
+
+[kaynak]
+bz2     = ${GNOME_SITE}/${isim}/${surum%.*}
+dosya	= python27.patch
+dosya	= fix-leaks-of-pango-objects.patch
+
+[sha256]
+1       = cd1c1ea265bd63ff669e92a2d3c2a88eb26bcd9e5363e0f82c896e649f206912
+2		= 39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682
+3		= 0ca9e910e9bb88897089dd19752a419aa78de15463df766cb19a1d0c2dd45bcb
+
+[derle]
+yama	= python27.patch
+yama	= fix-leaks-of-pango-objects.patch
+betik	= sed -i -e 's#env python$#env python2#' examples/pygtk-demo/{,demos/}*.py
+betik	= sed -i '/^SUBDIRS =/s/docs//' Makefile.in
+betik	= PYTHON=/usr/bin/python2 ./configure --prefix=/usr --disable-docs 
+betik   = make
+
+[pakur]
+tip     = gnu
+betik	= install -m644 gtk/gtk-extrafuncs.defs "${PKG}/usr/share/pygtk/2.0/defs/"

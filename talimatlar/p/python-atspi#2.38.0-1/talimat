@@ -1,0 +1,27 @@
+[paket]
+tanim   = D-Bus AT-SPI için Python bağlamaları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://wiki.linuxfoundation.org/accessibility/atk/at-spi/at-spi_on_d-bus
+
+[gerek]
+derleme = 
+calisma = python-gobject
+
+
+[kaynak]
+git    = https://gitlab.gnome.org/GNOME/pyatspi2
+
+
+[sha256]
+#1 		= 858b589c22297cacdf437f3baff6f04b333087521ab274f7ab677cb8c6bb78e4
+
+[derle]
+betik = cd pyatspi2
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr --with-python=/usr/bin/python3
+betik = make
+    	      
+[pakur]
+betik = cd pyatspi2
+betik = make DESTDIR="$PKG" install

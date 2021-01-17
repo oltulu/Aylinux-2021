@@ -1,0 +1,24 @@
+[paket]
+tanim   = Python belgeleme araçları
+paketci = milisarge
+grup    = kütüphane
+url     = http://docutils.sourceforge.net
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/d/docutils/docutils-${surum}.tar.gz
+
+[sha256]
+1       = c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc
+
+[derle]
+betik   = cd docutils-${surum}
+tip     = py3
+
+[pakur]
+betik   = cd docutils-${surum}
+tip     = py3
+

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Python için CUPS bağları
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://pypi.org/project/pycups
+arsiv   = "pycups-${surum}"
+
+[gerek]
+derleme = python cups
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/p/pycups/pycups-${surum}.tar.bz2
+
+[sha256]
+1       = 86090f259a7c5d0d5caa3407a0e57c9e134027620cbc8f90bf4e37c8b53ed7b9	
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cycler python kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/matplotlib/cycler
+
+[gerek]
+derleme = 
+calisma = python-six
+
+[kaynak]
+gz      = https://github.com/matplotlib/cycler/archive/v$surum
+
+[sha256]
+1       = b6d217635e03024196225367b1a438996dbbf0271bec488f00584f0e7dc15cfa
+
+[derle]
+betik	= cd $SRC/cycler-$surum
+tip     = py3
+
+[pakur]
+betik	= cd $SRC/cycler-$surum
+tip     = py3

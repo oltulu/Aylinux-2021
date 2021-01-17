@@ -1,0 +1,21 @@
+[paket]
+tanim   = Pulseaudio konsol yönetim uygulaması
+paketci = milisarge
+grup    = medya
+url     = https://github.com/GeorgeFilipkin/pulsemixer
+
+[gerek]
+derleme = python
+calisma = python pulseaudio
+
+[kaynak]
+1       = https://github.com/GeorgeFilipkin/pulsemixer/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 30716666dd2552b3c59c2ed320926bb162c74d2afc385336b7f796e1f0f69af5
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

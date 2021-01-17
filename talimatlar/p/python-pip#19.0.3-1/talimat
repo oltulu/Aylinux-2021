@@ -1,0 +1,23 @@
+[paket]
+tanim   = PyPA, Python paketlerini kurmak için önerilen araç
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://pip.pypa.io/
+
+[gerek]
+derleme = python-setuptools
+calisma = python
+
+[kaynak]
+1       = https://github.com/pypa/pip/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= cd "$SRC/pip-$surum"
+betik 	= python3 setup.py build
+betik 	= python3 setup.py install --prefix=/usr --root=$PKG
+betik 	= mv $PKG/usr/bin/pip $PKG/usr/bin/pip3
+	      
+[pakur]

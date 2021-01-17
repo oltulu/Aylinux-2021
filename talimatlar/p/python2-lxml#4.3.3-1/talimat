@@ -1,0 +1,26 @@
+[paket]
+tanim   = Libxml2 ve libxslt kütüphaneleri için Python2 bağlaması
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://lxml.de/
+
+[gerek]
+derleme = libxslt python2-setuptools epydoc cython2
+calisma = 
+
+[kaynak]
+1       = https://github.com/lxml/lxml/archive/lxml-$surum.tar.gz
+
+[sha512]
+1 		= 7591cee55dea83377359da28ee9d7ba1baa028db0392023bef20047ba73d647fceea7e03fd3fc65c8c3bd65f44e42b656e451728131ef5f5fd796a1c0334a3a0
+
+[derle]
+betik 	= mv lxml-lxml-$surum lxml-$surum
+betik 	= export LC_CTYPE=en_US.UTF-8
+betik 	= cd lxml-$surum 
+betik 	= python2 setup.py build
+	      
+[pakur]
+betik 	= cd $SRC/lxml-$surum 
+betik 	= python2 setup.py install --root="$PKG" --skip-build --optimize=1
+betik 	= export LC_CTYPE=en_US.UTF-8

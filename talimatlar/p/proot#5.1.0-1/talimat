@@ -1,0 +1,27 @@
+[paket]
+tanim   = Ayrıcalık/kurulum olmadan chroot, mount --bind ve binfmt_misc
+paketci = yasarciv67
+grup    = sistem
+url     = https://proot-me.github.io
+
+[gerek]
+derleme = talloc libxslt
+calisma =
+
+[kaynak]
+1		= https://github.com/cedric-vincent/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+dosya	= 0001-Fix-use-of-size.patch
+
+[sha256]
+
+
+[derle]
+yama	= 0001-Fix-use-of-size.patch
+betik   = cd src
+betik	= make -f GNUmakefile
+
+[pakur]
+betik   = install -m755 -d "${PKG}"/usr/bin
+betik	= install -m755 src/${isim} "${PKG}"/usr/bin
+betik	= install -m755 -d "${PKG}"/usr/share/man/man1/
+betik	= install -m644 -T doc/proot/man.1 "${PKG}"/usr/share/man/man1/${isim}.1

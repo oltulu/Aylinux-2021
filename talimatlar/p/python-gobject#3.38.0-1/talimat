@@ -1,0 +1,24 @@
+[paket]
+tanim   = GLib/GObject/GIO/GTK+ için Python bağları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://wiki.gnome.org/Projects/PyGObject
+
+[gerek]
+derleme = meson python glib gobject-introspection python-cairo
+calisma = 
+
+[kaynak]
+1       = https://download.gnome.org/sources/pygobject/${surum%.*}/pygobject-${surum}.tar.xz
+
+[sha256]
+#1 		= 83f4d7e59fde6bc6b0d39c5e5208574802f759bc525a4cb8e7265dfcba45ef29
+
+[derle]
+betik 	= milis-meson pygobject-${surum} build-python -D python=/usr/bin/python3
+betik 	= ninja -C build-python
+	      
+[pakur]
+betik 	= DESTDIR="$PKG" meson install -C build-python
+betik 	= python3 -m compileall -d /usr/lib "$PKG/usr/lib"
+betik 	= python3 -O -m compileall -d /usr/lib "$PKG/usr/lib"

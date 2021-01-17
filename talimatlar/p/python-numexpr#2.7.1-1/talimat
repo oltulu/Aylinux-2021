@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python, NumPy, PyTables, pandalar için hızlı sayısal dizi ifadesi değerlendiricisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/pydata/numexpr
+
+[gerek]
+derleme    = python python-numpy
+calisma    =
+
+[kaynak]
+1          = ${PYPI_SITE}/n/numexpr/numexpr-${surum}.tar.gz
+
+[sha256]
+#1          = 37324b5981b8962102bdc8640c4f05f5589da5d1df2702418783085cb78ca217
+
+[derle]
+betik      = cd numexpr-$surum
+tip        = py3
+
+[pakur]
+betik      = cd numexpr-$surum
+tip        = py3

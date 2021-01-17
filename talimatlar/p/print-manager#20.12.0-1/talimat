@@ -1,0 +1,22 @@
+[paket]
+tanim   = Baskı işlerini ve yazıcıları yönetmek için bir araç
+paketci = Cihan_Alkan
+url     = https://www.kde.org/applications/utilities/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+xz         = https://download.kde.org/stable/release-service/$surum/src
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = cmake -B build -S ../$isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
+betik     = cmake --build build
+
+
+[pakur]
+betik      = DESTDIR="$PKG" cmake --install build

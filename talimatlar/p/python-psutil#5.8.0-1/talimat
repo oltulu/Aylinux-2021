@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python için platformlar arası bir süreç ve sistem yardımcı programı modülü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/giampaolo/psutil
+
+[gerek]
+#derleme = python python-setuptools 
+calisma = net-tools procps-ng
+
+[kaynak]
+1       = $url/archive/release-$surum.tar.gz
+
+[sha512]
+#1 		= a36c7b3d622702179329ec67d6ffe09958cf2098f28d0aba74e3b66a8872d91936020e46eb2c5b36644fbef978ecfa5dda77d7c8951abab9da1864a59e328efe
+
+[derle]
+betik 	= cd psutil-release-$surum
+betik 	= python setup.py build --build-lib=build/python
+	      
+[pakur]
+betik 	= cd psutil-release-$surum
+betik 	= python3 setup.py build --build-lib=build/python install --root="$PKG" --optimize=1

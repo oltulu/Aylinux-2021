@@ -1,0 +1,24 @@
+[paket]
+tanim   = GObject için Python2 bağları (GLib 2.x)
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.pygtk.org
+
+[gerek]
+derleme = python2 glib
+calisma =
+
+[kaynak]
+1       = ${GNOME_SITE}/pygobject/${surum%.*}/pygobject-${surum}.tar.xz
+
+[sha256]
+1       = bb9d25a3442ca7511385a7c01b057492095c263784ef31231ffe589d83a96a5a
+
+[derle]
+betik	= cd $SRC/pygobject-$surum
+betik   = NOCONFIGURE=1 autoreconf -fi
+tip     = gnu
+
+[pakur]
+betik	= cd $SRC/pygobject-$surum
+tip     = gnu

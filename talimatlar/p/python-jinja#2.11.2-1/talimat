@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python ile yazılmış basit bir pitonik şablon dili
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://palletsprojects.com/p/jinja/
+arsiv   = Jinja2-$surum
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+1       = https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-$surum.tar.gz
+
+[sha256]
+#1       = 7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3
+betik = install -Dm644 ext/Vim/jinja.vim -t "$PKG/usr/share/vim/vimfiles/syntax"

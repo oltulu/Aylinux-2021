@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cairo için Python bağları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://pycairo.readthedocs.io/en/latest
+
+[gerek]
+derleme = meson python glib cairo
+calisma = 
+
+[kaynak]
+1       = https://github.com/pygobject/pycairo/releases/download/v${surum}/pycairo-${surum}.tar.gz
+
+[sha256]
+1 		= 70172e58b6bad7572a3518c26729b074acdde15e6fee6cbab6d3528ad552b786
+
+[derle]
+betik   = cd pycairo-${surum}
+tip     = py3
+	      
+[pakur]
+betik   = cd pycairo-${surum}
+tip     = py3

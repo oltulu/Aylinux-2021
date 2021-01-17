@@ -1,0 +1,24 @@
+[paket]
+tanim   = Protokol tamponları C++ kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://developers.google.com/protocol-buffers/
+
+[gerek]
+derleme    = zlib
+calisma    =
+
+[kaynak]
+1          = https://github.com/protocolbuffers/protobuf/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = c2665a7aa2ac1a206e61b28e014486e3de59009ea2be2bde9182e0847f38b62f
+
+[derle]
+betik      = cd protobuf-$surum
+betik      = autoreconf -fi
+betik      = ./configure --prefix=/usr/local && make
+
+[pakur]
+betik      = cd protobuf-$surum
+betik      = make DESTDIR=$PKG install

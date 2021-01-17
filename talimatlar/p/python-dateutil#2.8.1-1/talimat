@@ -1,0 +1,23 @@
+[paket]
+tanim   = Python için tarih-zaman modülü
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/dateutil/dateutil
+
+[gerek]
+derleme    = python-six
+calisma    = python-six
+
+[kaynak]
+gz         = ${PYPI_SITE}/p/${isim}
+
+[sha256]
+#1          = c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e
+
+[derle]
+;don't install zoneinfo tarball
+betik      = sed -i '/package_data=/d' setup.py
+tip        = py3
+
+[pakur]
+tip        = py3

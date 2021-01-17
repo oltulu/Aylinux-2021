@@ -1,0 +1,23 @@
+[paket]
+tanim   = Nitelikli ses sunucusu
+paketci = milisarge
+grup    = medya
+url     = http://www.pulseaudio.org
+
+[gerek]
+derleme = avahi fftw jack libsm libxtst libasyncns bluez libcap glib libsndfile libsoxr orc sbc speex tdb webrtc-audio-processing xcb-util
+calisma = 
+
+[kaynak]
+xz      = http://freedesktop.org/software/pulseaudio/releases
+
+[sha256]
+1       = 961b23ca1acfd28f2bc87414c27bb40e12436efcf2158d29721b1e89f3f28057
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = gnu
+betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
+betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop

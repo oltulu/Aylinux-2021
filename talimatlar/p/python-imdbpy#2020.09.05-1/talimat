@@ -1,0 +1,25 @@
+[paket]
+tanim   = İnternet Videoları Veritabanı (IMDb) için Python bağlamaları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://imdbpy.sourceforge.io/
+
+[gerek]
+derleme =
+calisma = python-sqlalchemy
+
+[kaynak]
+1 = https://github.com/alberanid/imdbpy/archive/2020.09.05.tar.gz::$isim-${surum}.tar.gz
+2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd imdbpy-${surum}
+betik = patch -Np1 -d ../imdbpy-${surum}} </sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
+betik = python setup.py build
+	      
+[pakur]
+betik = cd imdbpy-${surum}
+betik =  python setup.py install --skip-build --optimize=1 --root="${pkgdir}/"

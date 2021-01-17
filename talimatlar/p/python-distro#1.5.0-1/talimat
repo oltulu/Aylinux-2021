@@ -1,0 +1,22 @@
+[paket]
+tanim   = Python için işletim sistemi platformu bilgisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/nir0s/distro
+arsiv   = distro-${surum}
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+1       = ${PYPI_SITE}/d/distro/distro-${surum}.tar.gz
+
+[sha256]
+1       = 0e58756ae38fbd8fc3020d54badb8eae17c5b9dcbed388b17bb55b8a5928df92
+
+[derle]
+tip     = py3
+
+[pakur]
+tip     = py3

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Lex ve yacc ayrıştırma araçlarının uygulanması
+paketci = oltulu
+grup 	= kütüphane
+url     = http://www.dabeaz.com/ply/
+
+[gerek]
+derleme = python python-setuptools
+calisma = 
+
+[kaynak]
+1       = http://www.dabeaz.com/ply/ply-$surum.tar.gz
+
+[sha512]
+1 		= 37e39a4f930874933223be58a3da7f259e155b75135f1edd47069b3b40e5e96af883ebf1c8a1bbd32f914a9e92cfc12e29fec05cf61b518f46c1d37421b20008
+
+[derle]
+
+	      
+[pakur]
+betik 	= cd ply-$surum 
+betik 	= python3 setup.py install --root "$PKG"
