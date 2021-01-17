@@ -1,0 +1,21 @@
+[paket]
+tanim   = Openbox menu düzenleyici.
+paketci = Cihan_Alkan
+grup 	= 
+url     = http://obmenu.sourceforge.net/
+
+[gerek]
+derleme = 
+calisma = python2 pygtk openbox
+
+[kaynak]
+gz     = https://downloads.sourceforge.net/$isim
+
+[md5]
+1 		= 710036a5edc9886d6d563ce46c747432
+
+[derle]
+	      
+[pakur]
+betik 	= sed -i -e 's#usr/bin/python#usr/bin/python2#g' *.py
+betik 	= python2 setup.py install --root="${PKG}" --optimize=1

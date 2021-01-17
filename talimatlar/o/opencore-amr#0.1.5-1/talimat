@@ -1,0 +1,17 @@
+[paket]
+tanim   = Adaptive Multi Rate (AMR) konuşma kodek gerçeklemesi
+paketci = milisarge  
+grup    = medya  
+url     = http://opencore-amr.sourceforge.net/
+
+[kaynak]
+gz  =  https://downloads.sourceforge.net/sourceforge/$isim
+
+[sha256]
+1   =  2c006cb9d5f651bfb5e60156dbff6af3c9d35c7bbcc9015308c0aff1e14cd341
+
+[derle]
+tip = gnu
+[pakur]
+tip = gnu
+

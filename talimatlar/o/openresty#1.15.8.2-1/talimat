@@ -1,0 +1,27 @@
+[paket]
+tanim 	= NGINX'i Lua ile genişletilmiş hızlı ve ölçeklenebilir web platformu
+paketci = milisarge
+grup 	= ağ
+url 	= https://openresty.org
+
+[gerek]
+derleme = perl pcre
+calisma = 
+
+[kaynak]
+gz     	= $url/download
+dosya   = openresty.sh
+
+[sha256]
+1       = 436b4e84d547a97a18cf7a2522daf819da8087b188468946b5a89c0dd1ca5d16
+2       = bf628aa47fb85f036f250416f13900be61dccac89736434498a80989b16ae85a
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = gnu
+betik   = install -d "$PKG"/var/lib/openresty
+betik   = rm -rf "$PKG/var/run"
+betik   = install -Dm755 $SRC/openresty.sh $PKG/etc/profile.d/openresty.sh
+servis  = openresty

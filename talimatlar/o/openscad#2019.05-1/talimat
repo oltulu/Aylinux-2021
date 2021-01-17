@@ -1,0 +1,26 @@
+[paket]
+tanim   = Solid 3D CAD modelleri
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.openscad.org
+
+[gerek]
+derleme = bison flex boost eigen double-conversion cgal harfbuzz opencsg qscintilla-qt5 qt5-tools qt5-multimedia libxml2 libzip imagemagick
+calisma =
+
+[kaynak]
+1       = http://files.openscad.org/${isim}-${surum}.src.tar.gz
+
+[sha256]
+1       = 0a16c4263ce52380819dd91c609a719d38f12f6b8c4da0e828dcbe5b70996f59
+
+[derle]
+betik   = qmake-qt5 PREFIX="/usr" && make
+betik   = convert +set date:create +set date:modify "icons/$isim.png" -resize 128x128\> "icons/$isim-128.png"
+
+[pakur]
+betik   = make INSTALL_ROOT="$PKG" install
+betik   = rm -f "$PKG/usr/share/openscad/libraries/MCAD/"*.py
+betik   = install -Dm644 "icons/$isim.desktop" "$PKG/usr/share/applications/$isim.desktop"
+betik   = install -Dm644 "icons/$isim-128.png" "$PKG/usr/share/pixmaps/$isim.png"
+betik   = install -Dm644 "icons/$isim.xml" "$PKG/usr/share/mime/packages/$isim.xml"

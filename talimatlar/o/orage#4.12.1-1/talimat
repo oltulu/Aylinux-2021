@@ -1,0 +1,22 @@
+[paket]
+tanim  = Xfce için takvim
+url    = https://www.xfce.org/
+paketci= Cihan_Alkan
+grup   = xfce4
+
+[gerek]
+derleme = intltool
+calisma = exo intltool xfce4-panel libnotify 
+
+[kaynak]
+bz2   = https://archive.xfce.org/src/apps/$isim/${surum%.*}
+
+[sha1]
+1 		= 
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --enable-libical--disable-debug
+betik = make
+
+[pakur]
+tip = gnu

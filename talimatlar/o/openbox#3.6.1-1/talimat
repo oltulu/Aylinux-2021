@@ -1,0 +1,37 @@
+[paket]
+tanim   = X için hafif pencere sistemi
+paketci = milisarge
+grup 	= sistem
+url     = http://openbox.org/dist/openbox
+
+[gerek]
+derleme = startup-notification libxml2 libxinerama libxrandr libxcursor pango imlib2 librsvg libsm
+calisma = xorg-server dejavu-fonts-ttf
+
+[kaynak]
+gz      = $url
+dosya   = openbox-3.5.0-title-matching.patch
+dosya   = openbox-3.5.0-which-2.20.patch
+dosya	= openbox-window-snap.diff
+
+[sha256]
+1 		= 8b4ac0760018c77c0044fab06a4f0c510ba87eae934d9983b10878483bde7ef7
+2		= adc0820671e6ec42ff1bb4cbb04c65e19cdf74c62bcef3a3b727adb208eb82c7
+3 		= 988acc655cf9a0fe4252c7e76d5ec2124a3f16c3ed26072fdcfd829ae9278c26
+4		= b50f3bca17ee9d9136272f9cd1ad4ea5c1955b1c9803b7d93f092f1faa5cb529
+
+[derle]
+yama    = openbox-3.5.0-title-matching.patch
+yama    = openbox-3.5.0-which-2.20.patch
+yama	= openbox-window-snap.diff
+betik   = sed -i 's|/usr/bin/env python|/usr/bin/env python2|' data/autostart/openbox-xdg-autostart
+ekconf  =  --with-x --enable-startup-notification --libexecdir=/usr/lib/openbox
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = rm -rfv "$PKG"/usr/bin/{gdm-control,gnome-panel-control,openbox-gnome-session} \
+betik   = rm -rfv "$PKG"/usr/share/gnome{,-session} \
+betik   = rm -rfv "$PKG"/usr/share/man/man1/openbox-gnome-session.1 \
+betik   = rm -rfv "$PKG"/usr/share/xsessions/openbox-gnome.desktop
+betik   = sed -i 's:startkde:/usr/bin/\0:' "$PKG"/usr/share/xsessions/openbox-kde.desktop

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Intel(R) Open Image Denoise kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://openimagedenoise.github.io
+
+[gerek]
+derleme = cmake python tbb
+calisma = 
+
+[kaynak]
+1       = https://github.com/OpenImageDenoise/oidn/releases/download/v${surum}/oidn-${surum}.src.tar.gz
+
+[sha256]
+1       = 4dd484abea8a0b3d12d346343fcb1ab7abef8f94318d8c537f69a20c2a75c4eb
+
+[derle]
+betik   = cd oidn-${surum}
+tip     = cmake
+
+[pakur]
+betik   = cd oidn-${surum}
+tip     = cmake

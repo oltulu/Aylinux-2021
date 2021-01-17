@@ -1,0 +1,28 @@
+[paket]
+tanim   = OBEX protokolü uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = http://dev.zuckschwerdt.org/openobex/
+arsiv   = ${isim}-${surum}-Source
+
+[gerek]
+derleme = libusb bluez eudev
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/${isim}/${isim}-${surum}-Source.tar.gz
+
+[sha256]
+1       = 158860aaea52f0fce0c8e4b64550daaae06df2689e05834697b7e8c7d73dd4fc
+
+[derle]
+betik   = sed -i 's|MODE="660", GROUP="plugdev"|TAG+="uaccess"|' udev/openobex.rules.in
+betik   = sed -i 's|^project ( openobex \(C.*\) )|project ( openobex \1 CXX )|' CMakeLists.txt
+ekconf  = -DCMAKE_SKIP_RPATH=ON -DCMAKE_INSTALL_UDEVRULESDIR=/usr/lib/udev/rules.d -DBUILD_DOCUMENTATION=NO
+tip     = cmake
+betik =   make openobex-apps
+
+[pakur]
+tip     = cmake
+betik   = cd ../;cp apps/lib/*.h  "${PKG}/usr/include/openobex/"
+betik   = install -m644 apps/lib/libopenobex-apps-common.a "${PKG}/usr/lib/libopenobex-apps-common.a"

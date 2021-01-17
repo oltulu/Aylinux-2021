@@ -1,0 +1,25 @@
+[paket]
+tanim   = Öncelikle sayısal hesaplamalar için tasarlanmış yüksek düzeyli dil
+paketci = milisarge
+grup    = geliştirme
+url     = https://gnu.org/software/octave
+
+[gerek]
+derleme = lapack pcre ghostscript curl fftw fontconfig fltk freetype zlib readline arpack glpk hdf5 qhull qrupdate mesa fltk portaudio graphicsmagick qscintilla-qt5 qt5-tools gl2ps
+calisma =
+
+[kaynak]
+gz      = https://ftp.gnu.org/gnu/octave
+
+[sha256]
+1       = 2fea62b3c78d6f38e9451da8a4d26023840725977dffee5250d3d180f56595e1
+
+[derle]
+betik   = autoreconf -vif
+betik   = ./configure --prefix=/usr --libexecdir=/usr/lib --enable-shared --disable-static
+betik   = LC_ALL=C make
+
+[pakur]
+tip     = gnu
+betik   = install -d "${PKG}/etc/ld.so.conf.d"
+betik   = echo "/usr/lib/${isim}/${surum}" > "${PKG}/etc/ld.so.conf.d/${isim}.conf"

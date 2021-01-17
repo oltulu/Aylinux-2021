@@ -1,0 +1,23 @@
+[paket]
+tanim   = Dogrusal olmayan acik kaynak kodlu video editoru
+paketci = mmkarakaya
+grup    = kütüphane
+url     = https://github.com/olive-editor/olive
+
+[gerek]
+derleme = cmake ffmpeg qt5-multimedia qt5-svg qt5-tools frei0r-plugins
+calisma =
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz::${isim}-${surum}.tar.gz
+
+[sha256]
+1       = cb9a5b109e67a47f03448633cbc7a257aa8e6c3c76a59c1fada77fd3d97875c1
+
+[derle]
+jobs    = 1
+betik   = qmake
+tip     = cmake
+
+[pakur]
+tip     = cmake

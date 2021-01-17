@@ -1,0 +1,29 @@
+[paket]
+tanim   = COLLADA dosyaları için akış tabanlı okuyucu ve yazar kitaplığı
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/KhronosGroup/OpenCOLLADA
+
+[gerek]
+derleme = cmake libxml2 pcre
+calisma =
+
+[kaynak]
+github  = KhronosGroup/OpenCOLLADA
+dosya   = opencollada-pcre.patch
+
+[sha256]
+1       = d9db0c0a518aa6ac0359626f222707c6ca1b63a83cbf229d97a5999c9cde347b
+
+[derle]
+betik   = cd OpenCOLLADA-$surum
+yama    = 2
+ekconf  = -DUSE_SHARED=TRUE -DUSE_STATIC=OFF
+tip     = cmake
+
+[pakur]
+betik   = cd OpenCOLLADA-$surum
+tip     = cmake
+betik   = echo "/usr/lib/opencollada" > $SRC/opencollada.conf
+betik   = install -Dm644 $SRC/opencollada.conf $PKG/etc/ld.so.conf.d/opencollada.conf
+

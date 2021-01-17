@@ -1,0 +1,20 @@
+[paket]
+tanim   = Sert gövde dinamiklerini simüle etmek için yüksek performanslı kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.ode.org
+
+[kaynak]
+1          = https://bitbucket.org/odedevs/ode/downloads/ode-${surum}.tar.gz
+
+[sha256]
+1          = 4ba3b76f9c1314160de483b3db92b0569242a07452cbb25b368e75deb3cabf27
+
+[derle]
+betik      = ./bootstrap
+betik      = export CXXFLAGS='-w -Ofast -fpermissive'
+ekconf     = --disable-static  --enable-shared --enable-double-precision --enable-libccd --enable-ou --enable-silent-rules
+tip        = gnu
+
+[pakur]
+tip        = gnu

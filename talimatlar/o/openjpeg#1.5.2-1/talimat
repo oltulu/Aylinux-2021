@@ -1,0 +1,24 @@
+[paket]
+tanim   = Açık kaynaklı JPEG 2000 codec bileşeni C dilinde yazılmış
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.openjpeg.org/
+
+[gerek]
+derleme    = libpng lcms2 tiff
+calisma    =
+
+[kaynak]
+gz         = $SOURCEFORGE_SITE/openjpeg.mirror/${surum}
+
+[sha256]
+1          = 15df7b194a5d8dba0052cd21c17a4dc761149a770a907d73fffb972078c28a87
+
+[derle]
+betik      = autoreconf -fi
+betik      = rm -rf thirdparty
+ekconf     = --enable-shared --disable-static --disable-silent-rules
+tip        = gnu
+
+[pakur]
+tip        = gnu

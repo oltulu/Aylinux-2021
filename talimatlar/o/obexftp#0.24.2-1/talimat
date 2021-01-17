@@ -1,0 +1,23 @@
+[paket]
+tanim   = OBject EXchange dosya aktarım uygulaması
+paketci = milisarge
+grup    = ağ
+url     = http://dev.zuckschwerdt.org/openobex/wiki/ObexFtp
+arsiv   = ${isim}-${surum}-Source
+
+[gerek]
+derleme = openobex fuse2 bluez
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/openobex/${isim}-${surum}-Source.tar.gz
+
+[sha256]
+1       = d40fb48e0a0eea997b3e582774b29f793919a625d54b87182e31a3f3d1c989a3
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik   = sed -i '/Requires:/s/bluetooth//' ${PKG}/usr/lib/pkgconfig/obexftp.pc

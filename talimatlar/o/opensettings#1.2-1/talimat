@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNOME'un sistemd olmadan çalışmasını sağlamak için birkaç GSD bileşeninden oluşan çatal
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://github.com/ataraxialinux/opensettings
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz      = https://github.com/ataraxialinux/opensettings/archive/$surum
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	= autoreconf -vif
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --bindir=/usr/bin
+betik 	= make
+        	      
+[pakur]
+betik 	= make DESTDIR=$PKG install

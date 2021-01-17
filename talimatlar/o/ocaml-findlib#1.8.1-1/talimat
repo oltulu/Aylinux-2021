@@ -1,0 +1,28 @@
+[paket]
+tanim   = OCaml paket yöneticisi
+paketci = milisarge
+grup    = kütüphane
+url     = http://projects.camlcity.org/projects/findlib.html
+
+[gerek]
+derleme = ncurses ocaml
+calisma =
+
+[kaynak]
+1       = http://download.camlcity.org/download/findlib-${surum}.tar.gz
+
+[sha256]
+1       = 8e85cfa57e8745715432df3116697c8f41cb24b5ec16d1d5acd25e0196d34303
+
+[derle]
+betik   = cd "findlib-$surum"
+betik   = unset LDFLAGS;unset CFLAGS;unset CXXFLAGS
+betik   = ./configure -sitelib /usr/lib/ocaml -config /etc/findlib.conf -mandir /usr/share/man
+betik   = make all opt
+
+[pakur]
+strip   = 0
+betik   = cd "findlib-$surum"
+betik   = make prefix="$PKG" install
+betik   = install -Dm755 src/findlib/ocamlfind_opt "$PKG/usr/bin/ocamlfind_opt"
+betik   = mv $PKG/bin/* $PKG/usr/bin/ ; rm -rf $PKG/bin

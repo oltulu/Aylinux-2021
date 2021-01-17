@@ -1,0 +1,27 @@
+[paket]
+tanim   = OpenCL (Open Computing Language) başlık dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.khronos.org/registry/cl
+
+[gerek]
+derleme = python
+calisma =
+
+[kaynak]
+git     = https://github.com/KhronosGroup/OpenCL-Headers
+git     = https://github.com/KhronosGroup/OpenCL-CLHPP
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik   = cd "${SRC}"/OpenCL-Headers/CL
+betik   = install -dm755 "${PKG}"/usr/include/CL
+betik   = for h in *.h; do install -m 644 ${h} "${PKG}"/usr/include/CL/ ;done
+betik   = rm "${PKG}"/usr/include/CL/{cl_d3d,cl_dx9}*.h
+betik   = cd "${SRC}"/OpenCL-CLHPP
+betik   = python gen_cl_hpp.py -i input_cl.hpp -o cl.hpp
+betik   = install -m 644 cl.hpp "${PKG}"/usr/include/CL/
+betik   = install -m 644 include/CL/cl2.hpp "${PKG}"/usr/include/CL/cl2.hpp
+

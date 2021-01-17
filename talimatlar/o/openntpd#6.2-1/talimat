@@ -1,0 +1,27 @@
+[paket]
+tanim   = Ağ Zaman Protokolünün ücretsiz, kullanımı kolay uygulaması
+paketci = milisarge
+grup    = sistem
+url     = http://openntpd.org
+arsiv   = ${isim}-${surum}p3
+
+[gerek]
+derleme = openssl 
+calisma = ca-certificates
+
+[kaynak]
+1       = http://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/${isim}-${surum}p3.tar.gz
+
+[sha256]
+1       = 7b02691524197e01ba6b1b4b7595b33956e657ba6d5c4cf2fc20ea3f4914c13a
+
+[derle]
+betik   = autoreconf -fi
+betik   = CFLAGS+=' -fcommon'
+ekconf  = --with-privsep-user=ntp --with-cacert=/etc/ssl/certs.pem
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -d ${PKG}/var/lib/ntp
+servis  = ntpd

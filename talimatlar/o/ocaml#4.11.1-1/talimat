@@ -1,0 +1,23 @@
+[paket]
+tanim   = Caml dilinin ana uygulaması
+paketci = milisarge
+grup    = geliştirme
+url     = http://ocaml.org/
+
+[gerek]
+derleme = ncurses
+calisma =
+
+[kaynak]
+gz     = https://caml.inria.fr/distrib/ocaml-${surum%.*}
+
+[sha256]
+1      = 2b728f8a0e90da14f22fdc04660f2ab33819cdbb12bff0ceae3fdbb0133cf7a6
+
+[derle]
+bayrak = yok
+betik  = ./configure --prefix /usr --mandir /usr/share/man
+betik  = LC_ALL=C make --debug=v world.opt
+
+[pakur]
+tip    = gnu

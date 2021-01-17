@@ -1,0 +1,23 @@
+[paket]
+tanim   = Seyrek hacim veri yapısı ve araçları
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://openvdb.org
+
+[gerek]
+derleme = cmake ninja boost ilmbase openexr glfw glu jemalloc mesa blosc cppunit tbb
+calisma =
+
+[kaynak]
+github  = AcademySoftwareFoundation/openvdb
+
+[sha256]
+1       = 97bc8ae35ef7ccbf49a4e25cb73e8c2eccae6b235bac86f2150707efcd1e910d
+
+[derle]
+betik   = mkdir build;cd build
+betik   = cmake ../ -DCMAKE_INSTALL_PREFIX=/usr -DOPENVDB_BUILD_DOCS=OFF -DOPENVDB_BUILD_UNITTESTS=OFF -DCMAKE_NO_SYSTEM_FROM_IMPORTED=TRUE -DOPENVDB_ENABLE_RPATH=OFF || make
+
+[pakur]
+tip     = cmake
+

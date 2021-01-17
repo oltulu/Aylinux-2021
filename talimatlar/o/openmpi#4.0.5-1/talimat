@@ -1,0 +1,30 @@
+[paket]
+tanim   = Yüksek Performanslı Mesaj İletme Kütüphanesi
+paketci = milisarge
+grup    = sistem
+url     = https://www.open-mpi.org/
+
+[gerek]
+derleme = hwloc zlib libnl
+calisma =
+
+[kaynak]
+bz2     = ${url}/software/ompi/v${surum%.*}/downloads
+2       = https://github.com/open-mpi/ompi/commit/41717c8b7318cedbb9ce070e82613ee0ed0205fc.patch::openmpi-4.0.2-fix-calculation.patch
+
+[sha256]
+1       = 900bf751be72eccf06de9d186f7b1c4b5c2fa9fa66458e53b77778dffdfe4057
+2       = 51b8606151bdc75cf7d34e94846a9213da3c347d3744ad19164917f7fc314166
+
+[derle]
+yama    = openmpi-4.0.2-fix-calculation.patch
+betik   = ./configure --prefix=/usr --sysconfdir=/etc/${isim} --enable-mpi-fortran=all --libdir=/usr/lib/${isim} --enable-builtin-atomics --enable-mpi-cxx --enable-memchecker --enable-pretty-print-stacktrace --without-slurm --with-hwloc=/usr --with-libltdl=/usr FC=/usr/bin/gfortran LDFLAGS="${LDFLAGS} -Wl,-z,noexecstack"
+betik  = make
+
+[pakur]
+tip     = gnu
+betik   = install -dm 755 "${PKG}/usr/lib/pkgconfig"
+betik   = for i in ompi-c.pc ompi-cxx.pc ompi-f77.pc ompi-f90.pc ompi.pc; do ln -sf "/usr/lib/openmpi/pkgconfig/${i}" "${PKG}/usr/lib/pkgconfig/" ;done
+
+betik   = install -dm 755 "${PKG}/etc/ld.so.conf.d"
+betik   = echo "/usr/lib/${isim}" > "${PKG}"/etc/ld.so.conf.d/${isim}.conf

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Görüntüleri okumak ve yazmak için kütüphane
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://sites.google.com/site/openimageio/home
+
+[gerek]
+derleme = cmake boost giflib libraw openjpeg libwebp libjpeg-turbo tiff libpng openexr freetype opencolorio ffmpeg
+calisma =
+
+[kaynak]
+1       = https://github.com/OpenImageIO/oiio/archive/Release-${surum}.0.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = da27e191349ef473220c7a373921e6d4c69d9924acd87140af55ce9d00ad58f8
+
+[derle]
+betik	= cd $SRC/oiio-*
+ekconf  = -DUSE_OPENGL=0 -DUSE_QT=0 -DUSE_PYTHON=0 -DOIIO_BUILD_TESTS=0 -DSTOP_ON_WARNING=0
+tip     = cmake
+
+[pakur]
+betik	= cd $SRC/oiio-*
+tip     = cmake
+

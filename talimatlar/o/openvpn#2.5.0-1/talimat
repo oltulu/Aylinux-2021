@@ -1,0 +1,28 @@
+[paket]
+tanim   = Kullanımı kolay, sağlam ve yapılandırılabilir bir VPN
+paketci = milisarge
+grup    = ağ
+url     = https://www.openvpn.net
+
+[gerek]
+derleme    = iproute2 openssl lzo pam pkcs11-helper
+calisma    =
+
+[kaynak]
+xz         = http://build.openvpn.net/downloads/releases
+dosya      = openvpn-service.sh
+
+[sha256]
+1          = fb8ca66bb7807fff595fbdf2a0afd085c02a6aa47715c9aa3171002f9f1a3f91
+2          = 2d61fc16cac566048937ca41d8186733dd51683d4994cd029ccdffa955ae955a
+
+[derle]
+ekconf     = --enable-pkcs11 --enable-iproute2 --disable-systemd
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = install -d -m0750 "${PKG}"/etc/openvpn/{client,server}
+betik      = install -d -m0755 "${PKG}"/usr/share/openvpn
+betik      = cp -r sample/sample-config-files "${PKG}"/usr/share/openvpn/examples
+betik      = install -m755 $SRC/openvpn-service.sh "${PKG}"/usr/bin/openvpn-service

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Openexr dinamik resim formatlama kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.openexr.com
+
+[gerek]
+derleme = ilmbase
+calisma = 
+
+[kaynak]
+1       = https://github.com/openexr/openexr/releases/download/v$surum/$isim-$surum.tar.gz
+
+[sha256]
+1 		= fd6cb3a87f8c1a233be17b94c74799e6241d50fc5efd4df75c7a4b9cf4e25ea6
+
+[derle]
+ekconf  = --disable-static
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

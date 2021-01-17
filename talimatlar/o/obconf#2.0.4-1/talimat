@@ -1,0 +1,26 @@
+[paket]
+tanim   = Openbox pencere yöneticisi için GTK + tabanlı bir konfigürasyon aracı
+paketci = Cihan_Alkan
+grup 	= 
+url     = http://openbox.org/wiki/ObConf:About
+
+[gerek]
+derleme = 
+calisma = openbox gtk3
+
+[kaynak]
+gz     = http://openbox.org/dist/$isim
+dosya   = stop-using-libglade.patch
+dosya   = switch-to-gtk3.patch
+
+[md5]
+1 		= 9271c5d2dc366d61f73665a5e8bceabc
+
+[derle]
+betik 	= patch -Np1 -i "${SRC}"/stop-using-libglade.patch
+betik 	= patch -Np1 -i "${SRC}"/switch-to-gtk3.patch
+betik 	= autoreconf -fi
+tip = gnu	
+      
+[pakur]
+tip = gnu

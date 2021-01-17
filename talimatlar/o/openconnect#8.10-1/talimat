@@ -1,0 +1,22 @@
+[paket]
+tanim   = Cisco AnyConnect VPN yazılımı için ücretsiz istemci
+paketci = milisarge
+grup    = ağ
+url     = http://www.infradead.org/openconnect
+
+[gerek]
+derleme = gnutls libxml2 zlib lz4 libproxy pcsc-lite krb5 
+calisma = vpnc
+
+[kaynak]
+gz      = ftp://ftp.infradead.org/pub/${isim}
+
+[sha256]
+1       = d3089c651dffacb75a6531ebe40ec1d044ed51eeff77ef989ba08322d933ae1c
+
+[derle]
+ekconf  = --with-vpnc-script=/etc/vpnc/vpnc-script
+tip     = gnu
+
+[pakur]
+tip     = gnu

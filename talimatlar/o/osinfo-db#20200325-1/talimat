@@ -1,0 +1,21 @@
+[paket]
+tanim   = İşletim sistemleri hakkında Osinfo veritabanı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://libosinfo.org
+
+[gerek]
+derleme = osinfo-db-tools
+calisma =
+
+[kaynak]
+1       = https://releases.pagure.org/libosinfo/${isim}-${surum}.tar.xz!
+
+[sha256]
+1       = 35bb4ce40e9f3a3fd2045173cc00135f03a726dbff0a001b07f69505a7247d84
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+betik   = osinfo-db-import --root "$PKG" --system /sources/$isim-$surum.tar.xz

@@ -1,0 +1,24 @@
+[paket]
+tanim   = OCaml paket yöneticisi
+paketci = milisarge
+grup    = geliştirme
+url     = http://opam.ocamlpro.com
+
+[gerek]
+derleme    = ocaml unzip
+calisma    = bubblewrap
+
+[kaynak]
+1          = https://github.com/ocaml/opam/releases/download/$surum/opam-full-$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 776c7e64d6e24c2ef1efd1e6a71d36e007645efae94eaf860c05c1929effc76f
+
+[derle]
+betik   = cd "opam-full-$surum"
+betik   = ./configure --prefix=/usr
+betik   = make lib-ext all -j1 OCAMLC='ocamlc -unsafe-string' OCAMLOPT='ocamlopt -unsafe-string'
+
+[pakur]
+betik   = make -C "opam-full-$surum" DESTDIR="$PKG" install
+betik   = rm -rf "$PKG/usr/doc"

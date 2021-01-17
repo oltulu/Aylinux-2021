@@ -1,0 +1,29 @@
+[paket]
+tanim   = OpenGL kullanarak görüntü tabanlı CSG oluşturma kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.opencsg.org
+
+[gerek]
+derleme = glew glu mesa
+calisma =
+
+[kaynak]
+1       = http://www.opencsg.org/OpenCSG-${surum}.tar.gz
+
+[sha256]
+1       = d952ec5d3a2e46a30019c210963fcddff66813efc9c29603b72f9553adff4afb
+
+[derle]
+betik   = cd "$SRC/OpenCSG-$surum"
+betik   = sed -i 's|-rpath,../lib|-rpath,/usr/lib|' src/Makefile
+betik   = cd src && make
+
+[pakur]
+betik   = cd "$SRC/OpenCSG-$surum"
+betik   = install -D lib/libopencsg.so.$surum "$PKG/usr/lib/libopencsg.so.$surum"
+betik   = install -D include/opencsg.h "$PKG/usr/include/opencsg.h"
+betik   = cd "$PKG/usr/lib/"
+betik   = ln -s libopencsg.so.$surum libopencsg.so.1.4
+betik   = ln -s libopencsg.so.$surum libopencsg.so.1
+betik   = ln -s libopencsg.so.$surum libopencsg.so

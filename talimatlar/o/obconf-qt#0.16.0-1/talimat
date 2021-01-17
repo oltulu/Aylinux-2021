@@ -1,0 +1,21 @@
+[paket]
+tanim   = LXQt Openbox yapılandırma aracı
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/obconf-qt
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-x11extras qt5-tools openbox desktop-file-utils
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+;1       = d8c05ce9d1497f1aaec903874ef6f8bb4a35c530e59ccccc71ac3f488a179bed
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

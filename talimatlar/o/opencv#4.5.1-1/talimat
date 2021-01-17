@@ -1,0 +1,25 @@
+[paket]
+tanim   = Bilgisayarla görme ve makine öğrenimi yazılım kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = https://opencv.org
+
+[gerek]
+derleme = pkg-config cmake lapack eigen ffmpeg libpng libjpeg-turbo libgphoto2 tiff jasper openexr gtk3 ocl-icd python tbb mesa gst-plugins-base glew hdf5 python-numpy
+calisma = python-numpy
+
+[kaynak]
+1       = https://github.com/opencv/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+2       = https://github.com/opencv/opencv_contrib/archive/$surum.tar.gz::opencv_contrib-$surum.tar.gz
+dosya   = opencv-includedir.patch
+
+[sha256]
+1       = 68bc40cbf47fdb8ee73dfaf0d9c6494cd095cf6294d99de445ab64cf853d278a
+2       = acb8e89c9e7d1174e63e40532125b60d248b00e517255a98a419d415228c6a55
+3       = a96e35c9592e655b21a62cfe04e864a10e21535ad900e5de67356b9e9f40ca10
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = cmake

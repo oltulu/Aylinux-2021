@@ -1,0 +1,21 @@
+[paket]
+tanim   = Tablet PC'lerde veya hareket engelli kullanıcılar için kullanışlı ekran klavyesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://launchpad.net/onboard
+
+[gerek]
+derleme = python-distutils-extra
+calisma = 
+
+[kaynak]
+gz    =https://launchpad.net/$isim/${surum%.*}/$surum/+download
+
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= python3 setup.py build
+    	      
+[pakur]
+betik 	= python3 setup.py install --root="$PKG" --optimize=1

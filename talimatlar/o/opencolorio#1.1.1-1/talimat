@@ -1,0 +1,32 @@
+[paket]
+tanim   = Eksiksiz bir renk yönetimi çözümü
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://opencolorio.org
+
+[gerek]
+derleme = cmake lcms2 boost python tinyxml yaml-cpp
+calisma =
+
+[kaynak]
+1       = https://github.com/imageworks/OpenColorIO/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+dosya	= 8d48ee8da42de2d878db7b42586db8b3c67f83e1.patch
+
+[sha256]
+1       = c9b5b9def907e1dafb29e37336b702fff22cc6306d445a13b1621b8a754c14c8
+2		= bbdec6e79be745cf4c566b50524c16e639712b21dab20963818c8c4ecb679f45
+
+[derle]
+betik	= cd $SRC/OpenColorIO-$surum
+betik	= sed -i "s/-Werror//g" src/core/CMakeLists.txt
+betik	= sed -i "s/-Werror//g" src/pyglue/CMakeLists.txt  
+betik	= sed -i "s/push(hidden)/push(default)/g" src/core/OCIOYaml.cpp
+yama	= 8d48ee8da42de2d878db7b42586db8b3c67f83e1.patch
+ekconf  = -DUSE_EXTERNAL_LCMS=ON -DUSE_EXTERNAL_TINYXML=ON -DUSE_EXTERNAL_YAML=ON -DOCIO_USE_SSE=OFF
+tip     = cmake
+
+[pakur]
+betik	= cd $SRC/OpenColorIO-$surum
+tip     = cmake
+betik   = mv $PKG/usr/lib/static/libOpenColorIO.a $PKG/usr/lib/libOpenColorIO.a
+betik   = rmdir $PKG/usr/lib/static

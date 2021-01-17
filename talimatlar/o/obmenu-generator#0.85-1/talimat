@@ -1,0 +1,21 @@
+[paket]
+tanim   = Openbox Window Manager için hızlı bir boru / statik menü üreticisi (simgeler desteği ile).
+paketci = Cihan_Alkan
+grup 	= openbox
+url     = https://github.com/trizen/$isim
+
+[gerek]
+derleme = 
+calisma = openbox perl perl-data-dump perl-linux-desktopfiles
+
+[kaynak]
+1     = https://github.com/trizen/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 084ebf6787face853b9b1559d3d4bd5fe787d2ce33b51a5c3304a705b2ab1333
+
+[derle]
+	      
+[pakur]
+betik 	= install -Dm755 "$isim" "$PKG/usr/bin/$isim"
+betik 	= install -Dm644 "schema.pl" "$PKG/etc/xdg/$isim/schema.pl"

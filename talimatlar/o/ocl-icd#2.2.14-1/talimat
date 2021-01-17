@@ -1,0 +1,22 @@
+[paket]
+tanim   = Jenerik OpenCL ICD yükleyici/çoğullama çözücüsü
+paketci = milisarge
+grup    = kütüphane
+url     = https://forge.imag.fr/projects/ocl-icd/
+
+[gerek]
+derleme = ruby automake opencl-headers
+calisma =
+
+[kaynak]
+github  = OCL-dev/${isim}
+
+[sha256]
+1       = 17500e5788304eef5b52dbe784cec197bdae64e05eecf38317840d2d05484272
+
+[derle]
+betik   = autoreconf -fiv
+betik   = ./configure --prefix=/usr && make
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,18 @@
+[paket]
+tanim   = Çok yönlü ses iletişim kodeki
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.opus-codec.org
+
+[kaynak]
+gz      = https://archive.mozilla.org/pub/$isim
+
+[sha256]
+1       = 65b58e1e25b2a114157014736a3d9dfeaad8d41be1c8179866f144a2fb44ff9d
+
+[derle]
+ekconf  = --enable-float-approx --enable-custom-modes
+tip     = gnu
+
+[pakur]
+tip     = gnu
