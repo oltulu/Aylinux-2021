@@ -1,0 +1,38 @@
+[paket]
+tanim   = 0ad gerçek zamanlı strateji oyunu
+paketci = milisarge
+grup    = oyun
+url     = https://play0ad.com
+arsiv   = ${isim}-${surum}-alpha
+
+[gerek]
+derleme = perl cmake nspr python sdl2 boost gloox enet openal libpng libsodium libxml2 miniupnpc wxgtk3 libxcursor
+calisma = 0ad-data
+
+[kaynak]
+1       = https://releases.wildfiregames.com/${isim}-${surum}-alpha-unix-build.tar.xz
+dosya   = update-workspaces.sh
+
+[sha256]
+1       = 01bff7641ee08cac896c54d518d7e4b01752513105558f212e3199d747512a37
+
+[derle]
+betik   = export SHELL=/bin/bash
+betik   = sed -i "s/env python/env python2/g" libraries/source/cxxtest-4.4/bin/cxxtestgen
+betik   = cd build/workspaces
+betik   = cp -f $SRC/update-workspaces.sh .
+betik   = unset CPPFLAGS 
+betik   = CXXFLAGS+=' -DU_USING_ICU_NAMESPACE=1'
+betik   = export SDL2_CONFIG="pkg-config sdl2"
+betik   = export WX_CONFIG="wx-config"
+betik   = ./update-workspaces.sh --without-pch --bindir=/usr/bin --libdir=/usr/lib/0ad --datadir=/usr/share/0ad/data
+betik   = cd gcc;verbose=1 make
+
+[pakur]
+betik = install -d "${PKG}"/usr/{bin,lib/0ad,share/0ad/data}
+betik = install -Dm755 binaries/system/pyrogenesis "${PKG}/usr/bin"
+betik = install -Dm755 binaries/system/*.so "${PKG}/usr/lib/0ad"
+betik = cp -r binaries/data/l10n/ "${PKG}/usr/share/0ad/data/"
+betik = install -Dm755 build/resources/0ad.sh "${PKG}/usr/bin/0ad"
+betik = install -Dm644 build/resources/0ad.desktop "${PKG}/usr/share/applications/0ad.desktop"
+betik = install -Dm644 build/resources/0ad.png "${PKG}/usr/share/pixmaps/0ad.png"
