@@ -1,0 +1,25 @@
+[paket]
+tanim   = Renkli cihazları yönetmek için sistem arka plan programı
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://www.freedesktop.org/software/colord
+
+[gerek]
+derleme = libgusb sane lcms2
+calisma = libgusb lcms2 sane
+
+[kaynak]
+git      = https://github.com/hughsie/colord
+
+[sha256]
+
+[derle]
+betik 	= cd colord
+betik 	= mkdir build
+betik 	= cd build
+betik 	= meson --prefix=/usr --sysconfdir=/etc -D libcolordcompat=true -Ddaemon_user=colord -Dvapi=true -Dsystemd=false  -Dsane=true -Dlibcolordcompat=true -Dargyllcms_sensor=false -Dbash_completion=false -Ddocs=false -Dman=false ..
+betik 	= ninja
+	      
+[pakur]
+betik 	= cd colord/build
+betik 	= DESTDIR=$PKG ninja install

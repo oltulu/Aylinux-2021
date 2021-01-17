@@ -1,0 +1,22 @@
+[paket]
+tanim   = CPU, anakart ve daha fazlası hakkında bilgi toplayan ücretsiz yazılım
+paketci = yasarciv67
+grup    = sistem
+url     = https://x0rg.github.io/CPU-X
+arsiv	= CPU-X-$surum
+
+[gerek]
+derleme = cmake nasm curl ncurses pciutils procps-ng json-c gtk3 libcpuid 
+calisma =
+
+[kaynak]
+github  = X0rg/CPU-X
+
+[sha256]
+1       = f266388e13c527a5d1d98ec70957b1284f67aa89470cf71bc98ecb41c21542eb
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

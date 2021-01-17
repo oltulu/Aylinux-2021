@@ -1,0 +1,30 @@
+[paket]
+tanim   = ConnMan için GTK arayüzü
+paketci = yasarciv67
+grup    = ağ
+url     = https://github.com/jgke/connman-gtk
+arsiv	= $isim
+
+[gerek]
+derleme = meson cmake intltool glib gtk3 connman openconnect
+calisma = connman
+
+[kaynak]
+git		= ${url}
+dosya	= launch-to-tray.patch
+dosya	= connman-gtk_tr.patch
+
+[sha256]
+;1       = fc1da266c4216d34db7c38f7329c698b42666389ce32a8df58a818af9eee2262
+2		= 8737840dc4881d2b9f7bc6f7f87846cb02eb6e1eeb96abd9a679ce58123b70f0
+3		= a00969a40fc82a55c8d5295fad0a089c24423660180b6f99748affab19009f2a
+
+
+[derle]
+yama	= launch-to-tray.patch
+yama	= connman-gtk_tr.patch
+ekconf	= -Duse_status_icon=true -Duse_openconnect=yes
+tip     = meson
+
+[pakur]
+tip     = meson

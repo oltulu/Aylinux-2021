@@ -1,0 +1,22 @@
+[paket]
+tanim   = Coin CLP, CBC ve CGL’lerin çoğunu destekleyen kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = https://projects.coin-or.org/CoinMP
+
+[kaynak]
+1          = http://www.coin-or.org/download/source/CoinMP/CoinMP-${surum}.tgz
+
+[sha256]
+1          = 3459fb0ccbdd39342744684338984ac4cc153fb0434f4cae8cf74bd67490a38d
+
+[derle]
+betik      = cd CoinMP-$surum
+betik      = export COIN_SKIP_PROJECTS="Sample"
+tip        = gnu
+
+[pakur]
+betik      = cd CoinMP-$surum
+tip        = gnu
+betik      = rm -rf $PKG/tmp
+betik      = rm -rf $PKG/usr/share/coin/doc

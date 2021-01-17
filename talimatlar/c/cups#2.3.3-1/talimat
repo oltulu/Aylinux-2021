@@ -1,0 +1,25 @@
+[paket]
+tanim   = Yazdırma biriktiricisi ve ilgili yardımcı programlar
+paketci = milisarge
+grup 	= sistem
+url     = http://www.cups.org
+
+[gerek]
+derleme = libpaper dbus libjpeg-turbo libgcrypt gnutls libusb tiff libpng avahi krb5
+calisma = 
+
+[kaynak]
+1       = https://github.com/apple/cups/releases/download/v${surum}/cups-${surum}-source.tar.gz
+dosya   = cups-1.6.2-statedir.patch
+dosya   = cups.pam
+dosya   = cups.logrotate
+
+[sha256]
+1 	    = 261fd948bce8647b6d5cb2a1784f0c24cc52b5c4e827b71d726020bcc502f3ee
+2 	    = 23349c96f2f7aeb7d48e3bcd35a969f5d5ac8f55a032b0cfaa0a03d7e37ea9af
+            
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh

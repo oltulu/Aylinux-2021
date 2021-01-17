@@ -1,0 +1,30 @@
+[paket]
+tanim   = Kullanıcıları, oturum açma oturumlarını ve koltukları tanımlamak ve izlemek için bir çerçeve
+paketci = milisarge
+grup    = kütüphane
+url     = http://consolekit2.github.io/ConsoleKit2
+
+[gerek]
+derleme    = glib polkit libx11 dbus
+calisma    =
+
+[kaynak]
+1          = https://github.com/ConsoleKit2/ConsoleKit2/releases/download/${surum}/ConsoleKit2-${surum}.tar.bz2::${isim}-${surum}.tar.bz2
+dosya      = pam-foreground-compat.ck
+
+[sha256]
+1          = 9af223096ece88b217bcd3fe85093390a8d1527b6492124b0e90ea7688ec934b
+2          = 8e197a732d676e12e8fa918c0587522d432b7756987273de2e940a625a38ee8a
+
+[derle]
+betik      = cd ConsoleKit2-$surum
+ekconf     = --with-rundir=/run --libexecdir=/usr/lib/ConsoleKit --enable-polkit --enable-pam-module --enable-udev-acl --with-dbus-services=/usr/share/dbus-1/services --with-xinitrc-dir=/etc/X11/xinit/xinitrc.d --with-pam-module-dir=/usr/lib/security --without-systemdsystemunitdir --disable-cgroups
+tip        = gnu
+
+[pakur]
+betik      = cd ConsoleKit2-$surum
+tip        = gnu
+betik      = rm -rf "${PKG}"/run
+betik      = mv -v $PKG/etc/X11/xinit/xinitrc.d/90-consolekit{,.sh}
+betik      = cp $SRC/pam-foreground-compat.ck $PKG/usr/lib/ConsoleKit/run-session.d/
+betik      = chmod -v 755 $PKG/usr/lib/ConsoleKit/run-session.d/pam-foreground-compat.ck

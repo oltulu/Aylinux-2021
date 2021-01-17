@@ -1,0 +1,21 @@
+[paket]
+tanim   = Konsol arayüzlü müzik çalıcı uygulama
+paketci = milisarge 
+grup    = medya  
+url     = https://cmus.github.io/
+
+[gerek]
+derleme  = faad2 ffmpeg flac jack libao libcdio-paranoia libmad libmodplug libmp4v2 libmpcdec pulseaudio libsamplerate libvorbis opusfile wavpack libdiscid 
+calisma  =  
+
+[kaynak]
+1      = https://github.com/cmus/cmus/archive/v${surum}.tar.gz::cmus-$surum.tar.gz
+
+[sha256]
+1      = 756ce2c6241b2104dc19097488225de559ac1802a175be0233cfb6fbc02f3bd2
+
+[derle]
+betik  = ./configure prefix=/usr && make
+
+[pakur]
+tip    = gnu

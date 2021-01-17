@@ -1,0 +1,26 @@
+[paket]
+tanim   = Nesne yönelimli GL / GLES Soyutlama / Yardımcı Katman
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://blogs.gnome.org/clutter/
+
+[gerek]
+derleme = gobject-introspection
+calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr
+
+[kaynak]
+xz   = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[md5]
+1 		= 
+
+[derle]
+#betik	= cd $isim
+betik	= NOCONFIGURE=1 ./autogen.sh
+betik	= ./configure --prefix=/usr --disable-gtk-doc--enable-gles2 --enable-{kms,wayland}-egl-platform --enable-wayland-egl-server
+betik	= make
+
+	      
+[pakur]
+#betik	= cd $isim
+tip 	= gnu

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Yük anahtarları veya kbdcontrol için uygun bir tuş eşlemesine bir XKB klavye açıklamasını derleyin
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = http://anonscm.debian.org/cgit/d-i/console-setup.git/
+
+[kaynak]
+1      = http://ftp.de.debian.org/debian/pool/main/c/console-setup/console-setup_${surum}.tar.xz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd ../
+
+[pakur]
+betik = cd console-setup
+betik = install -d ${PKG}/usr/bin/
+betik = install -m755 Keyboard/ckbcomp ${PKG}/usr/bin/

@@ -1,0 +1,29 @@
+[paket]
+tanim   = Hızlı, taşınabilir ve zorlayıcı dinamik kullanıcı arayüzleri oluşturmak için bir araç seti
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://blogs.gnome.org/clutter/
+
+[gerek]
+derleme = gobject-introspection cogl
+calisma = gtk3 cogl libinput json-glib
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[md5]
+#1 		= 
+
+[derle]
+betik	= cd $isim-$surum
+#betik	= rm ./autogen.sh
+#betik	= cp $SRC/autogen.sh $SRC/$isim/
+#betik	= chmod +x ./autogen.sh
+#betik	= NOCONFIGURE=1 ./autogen.sh
+betik	= ./configure --prefix=/usr --enable-introspection --enable-egl-backend --enable-gdk-backend --enable-wayland-backend --enable-x11-backend --enable-evdev-input -enable-wayland-compositor --disable-gtk-doc
+betik	= make
+
+	      
+[pakur]
+betik	= cd $isim-$surum
+tip 	= gnu

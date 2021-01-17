@@ -1,0 +1,22 @@
+[paket]
+tanim   = GTK + ile entegrasyon
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://gitlab.gnome.org/GNOME/clutter-gtk
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+git = https://gitlab.gnome.org/GNOME/clutter-gtk
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+betik   = milis-meson $isim build
+betik   = ninja -C build
+
+[pakur]
+betik   = DESTDIR="$PKG" meson install -C build

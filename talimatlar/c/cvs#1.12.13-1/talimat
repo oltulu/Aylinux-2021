@@ -1,0 +1,25 @@
+[paket]
+tanim   = CVS sürüm kontrol sistemi
+paketci = milisarge
+grup    = ağ
+url     = http://www.nongnu.org/cvs/
+
+[gerek]
+derleme = openssh krb5 vim
+calisma =
+
+[kaynak]
+bz2     = http://ftp.gnu.org/non-gnu/cvs/source/feature/$surum
+
+[sha256]
+1       = 78853613b9a6873a30e1cc2417f738c330e75f887afdaf7b3d0800cb19ca515e
+
+[derle]
+cppflags = ""
+betik    = sed -i -e 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
+betik    = find . -name Makefile.am | xargs sed -i -e 's/^INCLUDES/AM_CPPFLAGS/'
+betik    = AUTOMAKE='automake --add-missing' autoreconf
+tip      = gnu
+
+[pakur]
+tip      = gnu

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Temel sistem özelliklerini için yardımcı programlar
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/coreutils
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/coreutils
+
+[sha256]
+#1 		= ff7a9c918edce6b4f4b2725e3f9b37b0c4d193531cac49a48b56c4d0d3a9e9fd
+
+[derle]
+betik 	= FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/tools --enable-install-program=hostname
+betik 	= make
+	      
+[pakur]
+tip     = gnu
+betik   = rm -rf $PKG/tools/share/info

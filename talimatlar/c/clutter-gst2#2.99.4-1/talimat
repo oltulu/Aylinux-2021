@@ -1,0 +1,27 @@
+[paket]
+tanim   = Clutter için GStreamer bağlamaları
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://gitlab.gnome.org/GNOME/clutter-gst
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+1 = https://ftp.acc.umu.se/pub/GNOME/sources/clutter-gst/2.99/clutter-gst-2.99.4.tar.xz
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+betik   = cd clutter-gst-2.99.4
+#betik   = git tag -f 3.0.26 7e191b675decc87bca263f08c1b01a694c74d44a
+#betik   = NOCONFIGURE=1 ./autogen.sh
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --disable-debug  --disable-gtk-doc
+#betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
+
+[pakur]
+betik   = cd clutter-gst-2.99.4
+betik   = make DESTDIR="$PKG" install

@@ -1,0 +1,28 @@
+[paket]
+tanim   = LLVM için C dili kütüphaneleri
+paketci = milisarge
+grup    = sistem  
+url     = https://clang.llvm.org
+arsiv   = ${isim}-${surum}.src
+
+[gerek]
+derleme = llvm cmake ninja python2 compiler-rt python
+calisma =  
+
+[kaynak]
+1  =  https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/clang-$surum.src.tar.xz
+2  =  https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/clang-tools-extra-$surum.src.tar.xz
+3  =  https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/llvm-$surum.src.tar.xz
+dosya = enable-SSP-and-PIE-by-default.patch
+
+[sha256]
+1  = f99afc382b88e622c689b6d96cadfa6241ef55dca90e87fc170352e12ddb2b24
+2  = d093782bcfcd0c3f496b67a5c2c997ab4b85816b62a7dd5b27026634ccf5c11a
+3  = c5d8e30b57cbded7128d78e5e8dad811bff97a8d471896812f57fa99ee82cdf3
+4  = 9e557a18f3ca96cc5cc9b62d2e308b993025523b2aca0735248118a928c8c3ff
+
+[derle]
+dosya  =  derle.sh
+
+[pakur]
+dosya  =  pakur.sh

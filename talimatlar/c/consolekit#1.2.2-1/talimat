@@ -1,0 +1,40 @@
+[paket]
+tanim   = Kullanıcıları, oturum açma oturumlarını ve koltukları tanımlamak ve izlemek için bir çerçeve
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://consolekit2.github.io/ConsoleKit2
+
+[gerek]
+derleme    = glib polkit libx11 dbus
+calisma    =
+
+[kaynak]
+1 = https://github.com/ConsoleKit2/ConsoleKit2/archive/1.2.2.tar.gz::${isim}-${surum}.tar.gz
+2 = https://notabug.org/oltulu/Ceviri/raw/master/ConsoleKit2.pot
+dosya = consolekit.tmpfiles.conf
+5    = https://crux.nu/ports/crux-3.6/opt/consolekit/pam-foreground-compat.ck
+3 = https://crux.nu/ports/crux-3.6/opt/consolekit/warning-to-debug.patch
+4 = https://crux.nu/ports/crux-3.6/opt/consolekit/system-session
+[sha256]
+#1          = 9af223096ece88b217bcd3fe85093390a8d1527b6492124b0e90ea7688ec934b
+#2          = 8e197a732d676e12e8fa918c0587522d432b7756987273de2e940a625a38ee8a
+
+[derle]
+betik      = cd ConsoleKit2-$surum
+betik      = patch -p1 -i /sources/warning-to-debug.patch
+betik      =cp  /sources/ConsoleKit2.pot po/tr.po
+betik      = echo "tr" >> po/LINGUAS
+betik      = ./autogen.sh
+betik      = NOCONFIGURE=1 ./autogen.sh
+betik      = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --localstatedir=/var --libexecdir=/usr/lib/ConsoleKit --with-xinitrc-dir=/etc/X11/xinit/xinitrc.d --enable-udev-acl --enable-pam-module --disable-nls
+betik      = make
+
+[pakur]
+betik = cd ConsoleKit2-$surum
+tip = gnu
+betik = rm -rf "${PKG}"/run
+betik = mv -v $PKG/etc/X11/xinit/xinitrc.d/90-consolekit{,.sh}
+betik = install -D -m 0644 /sources/system-session $PKG/etc/pam.d/system-session
+betik = install -m 0755 /sources/pam-foreground-compat.ck $PKG/etc/ConsoleKit/run-session.d/
+betik = chmod -v 755 $PKG/etc/ConsoleKit/run-session.d/pam-foreground-compat.ck
+betik = install -Dm644 "$SRC"/consolekit.tmpfiles.conf "$PKG"/usr/lib/tmpfiles.d/consolekit.conf

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Connman için Qt arayüz
+paketci = yasarciv
+grup    = ağ
+url     = https://github.com/andrew-bibb/cmst
+
+[gerek]
+derleme = qt5-base connman
+calisma = connman
+
+[kaynak]
+xz      = https://github.com/andrew-bibb/cmst/releases/download/$surum
+
+[sha256]
+1       = b81d56fa363b2e700090bc6901d22d42b6f0a0da9547ab8c6fca7ec93b17c14a
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake
+

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Compiz Reloaded çekirdek modülü
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/compiz-reloaded
+arsiv   = "compiz-${surum}"
+
+[gerek]
+derleme = libtool libxslt fuse glib glu inotify-tools libsm libxcomposite libxcursor
+calisma =
+
+[kaynak]
+1       = https://github.com/compiz-reloaded/compiz/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = bb5af1f646c610ebbc686a5cef9bbcaab13f9d14e18f1463c1e96df4c4a9b80a
+
+[derle]
+betik   = NOCONFIGURE=1 ./autogen.sh
+tip     = gnu
+
+[pakur]
+tip     = gnu

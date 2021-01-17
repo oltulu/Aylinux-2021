@@ -1,0 +1,41 @@
+[paket]
+tanim  = Eklentiler ve CCSM ile Aiglx ve Xgl için bileşik yönetici
+url    = https://launchpad.net/compiz
+paketci= Cihan_Alkan
+grup   = xfce4
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+bz2   = https://launchpad.net/${isim}/${surum:0:6}/${surum}/+download
+1 = https://aur.archlinux.org/cgit/aur.git/plain/focus-prevention-disable.patch?h=compiz
+2 = https://aur.archlinux.org/cgit/aur.git/plain/gcc10_common_fix.patch?h=compiz
+3 = https://aur.archlinux.org/cgit/aur.git/plain/gtk-extents.patch?h=compiz
+4 = https://aur.archlinux.org/cgit/aur.git/plain/no-compile-gschemas.patch?h=compiz
+5 = https://aur.archlinux.org/cgit/aur.git/plain/remove-unused-or-broken-buttons.patch?h=compiz
+6 = https://aur.archlinux.org/cgit/aur.git/plain/reverse-unity-config.patch?h=compiz
+7 = https://aur.archlinux.org/cgit/aur.git/plain/screenshot-launch-fix.patch?h=compiz
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik =  patch -p1 -i "/sources/reverse-unity-config.patch?h=compiz"
+betik =  patch -p1 -i "/sources/focus-prevention-disable.patch?h=compiz"
+betik =  patch -p1 -i "/sources/gtk-extents.patch?h=compiz"
+betik =  patch -p1 -i "/sources/screenshot-launch-fix.patch?h=compiz"
+betik =  patch -p1 -i "/sources/no-compile-gschemas.patch?h=compiz"
+betik =  patch -p1 -i "/sources/gcc10_common_fix.patch?h=compiz"
+betik =  patch -p1 -i "/sources/remove-unused-or-broken-buttons.patch?h=compiz"
+betik =  mkdir build; cd build
+betik =  cmake .. -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_INSTALL_LIBDIR="/usr/lib" -DCOMPIZ_DISABLE_SCHEMAS_INSTALL=On -DCOMPIZ_BUILD_WITH_RPATH=Off -DCOMPIZ_PACKAGING_ENABLED=On -DBUILD_GTK=On -DBUILD_METACITY=On -DBUILD_KDE4=Off -DCOMPIZ_BUILD_TESTING=Off -DCOMPIZ_WERROR=Off -DCOMPIZ_DEFAULT_PLUGINS="composite,opengl,decor,resize,place,move,compiztoolbox,staticswitcher,regex,animation,wall,ccp"
+betik =  make
+
+[pakur]
+betik =  cd  build
+betik =  make DESTDIR="${PKG}" install
+betik =  CMAKE_DIR=$(cmake --system-information | grep '^CMAKE_ROOT' | awk -F\" '{print $2}')
+betik =  install -dm755 "${PKG}${CMAKE_DIR}/Modules/"
+betik =  install -m644 ../cmake/FindCompiz.cmake "${PKG}${CMAKE_DIR}/Modules/"

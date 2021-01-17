@@ -1,0 +1,26 @@
+[paket]
+tanim   = Cinnamon için Javascript Bağlamaları
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cjs
+
+[gerek]
+derleme = autoconf-archive dbus gobject-introspection samurai glib meson js78
+calisma = dbus-glib gtk3 gobject-introspection js78 libffi
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+[sha512]
+#1 		= e5cff9f7790d2874fb1b743d823a799560c5fe82271f6cbff8b74baa70eec267fad9ac651258ee5c4de5dfce81964c73ca9a652ce3441791e44c34bcd8187770
+
+[derle]
+betik 	= mkdir -p "${SRC}"/${isim}-${surum}/builddir 
+betik 	= cd "${SRC}"/${isim}-${surum}/builddir
+betik 	= meson --prefix=/usr --libexecdir=/usr/lib --buildtype=plain -Dinstalled_tests=false ..
+betik 	= samu
+	      
+[pakur]
+betik 	= cd "${SRC}"/${isim}-${surum}/builddir
+betik 	= DESTDIR="${PKG}" samu install

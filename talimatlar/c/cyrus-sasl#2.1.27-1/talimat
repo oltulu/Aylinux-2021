@@ -1,0 +1,28 @@
+[paket]
+tanim   = Kimlik doğrulama ve güvenlik katman kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.cyrusimap.org/sasl
+
+[kaynak]
+gz      = https://www.cyrusimap.org/releases
+dosya   = gdbm-errno.patch
+dosya   = 0003-Update-saslauthd.conf-location-in-documentation.patch
+dosya   = 0006-Enable-autoconf-maintainer-mode.patch
+dosya   = 0010-Update-required-libraries-when-ld-as-needed-is-used.patch
+dosya   = 0013-Don-t-use-la-files-for-opening-plugins.patch
+dosya   = 0020-Restore-LIBS-after-checking-gss_inquire_sec_context_.patch
+dosya   = 0022-Fix-keytab-option-for-MIT-Kerberos.patch
+dosya   = 0032-Add-with_pgsql-include-postgresql-to-include-path.patch
+
+[sha256]
+1 	    = 26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+tip 	= gnu
+servis  = saslauthd
+
+; /etc/sysconfig/saslauthd dosyasında AUTHMECH parametresi ayarlanarak istenilen kimlik doğrulama belirlenir.

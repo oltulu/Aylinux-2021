@@ -1,0 +1,18 @@
+[paket]
+tanim   = C ++ birim test çerçevesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://cppunit.sourceforge.net
+
+[kaynak]
+gz         = http://dev-www.libreoffice.org/src
+
+[sha256]
+1          = 3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
+
+[derle]
+betik      = autoreconf -fi
+tip        = gnu
+
+[pakur]
+tip        = gnu

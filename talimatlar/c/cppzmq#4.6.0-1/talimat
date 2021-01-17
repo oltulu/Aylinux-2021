@@ -1,0 +1,21 @@
+[paket]
+tanim   = ZMQ C++ bağlamları
+paketci = milisarge
+grup    = ağ
+url     = http://www.zeromq.org
+
+[gerek]
+derleme = cmake zeromq curl lz4 util-linux
+calisma =
+
+[kaynak]
+github  = zeromq/cppzmq
+
+[sha256]
+1       = e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

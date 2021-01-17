@@ -1,0 +1,779 @@
+From b89ccd58e232b2e98c83938a69d1a7c8286379ba Mon Sep 17 00:00:00 2001
+From: yasarciv <yasarciv@protonmail.com>
+Date: Sun, 7 Jun 2020 13:31:21 +0300
+Subject: [PATCH] add-turkish-lang
+
+---
+ po/LINGUAS |   1 +
+ po/tr.po   | 753 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 754 insertions(+)
+ create mode 100644 po/tr.po
+
+diff --git a/po/LINGUAS b/po/LINGUAS
+index b1f2f13..a3532f3 100644
+--- a/po/LINGUAS
++++ b/po/LINGUAS
+@@ -2,3 +2,4 @@ fi
+ pt
+ ru
+ es
++tr
+diff --git a/po/tr.po b/po/tr.po
+new file mode 100644
+index 0000000..50be7c8
+--- /dev/null
++++ b/po/tr.po
+@@ -0,0 +1,753 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: connman-gtk 1.1.1\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2015-11-05 12:20+0200\n"
++"PO-Revision-Date: 2020-05-07 13:26+0300\n"
++"Last-Translator: Yaşar Çiv <yasarciv@protonmail.com>\n"
++"Language-Team: Milis Linux\n"
++"Language: tr\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Plural-Forms: nplurals=1; plural=0;\n"
++"X-Language: tr_TR\n"
++"X-Source-Language: C\n"
++
++#: src/agent.c:158
++msgid "Authentication required"
++msgstr "Kimlik doğrulaması gerekiyor"
++
++#: src/config.c:62
++msgid "Use fsid with openconnect"
++msgstr "Openconnect ile fsid kullan"
++
++#: src/config.c:67
++msgid "Use status icon"
++msgstr "Durum simgesini kullan"
++
++#: src/config.c:70
++msgid "Launch to tray by default"
++msgstr "Varsayılan olarak tepside başlat"
++
++#: src/config.c:74
++msgid "Settings"
++msgstr "Ayarlar"
++
++#: src/connection.c:68
++msgid "Wired"
++msgstr "Kablolu"
++
++#: src/connection.c:70
++msgid "Wireless"
++msgstr "Kablosuz"
++
++#: src/connection.c:72
++msgid "Bluetooth"
++msgstr "Bluetooth"
++
++#: src/connection.c:74
++msgid "Cellular"
++msgstr "Hücresel"
++
++#: src/connection.c:76
++msgid "P2P"
++msgstr "P2P"
++
++#: src/connection.c:78 src/vpn.c:102 src/vpn.c:176
++msgid "VPN"
++msgstr "VPN"
++
++#: src/connection.c:80
++msgid "Unknown"
++msgstr "Bilinmeyen"
++
++#: src/connection.c:91
++msgid "W_ired"
++msgstr "K_ablolu"
++
++#: src/connection.c:93
++msgid "_Wireless"
++msgstr "_Kablosuz"
++
++#: src/connection.c:95
++msgid "_Bluetooth"
++msgstr "_Bluetooth"
++
++#: src/connection.c:97
++msgid "_Cellular"
++msgstr "Hü_cresel"
++
++#: src/connection.c:99
++msgid "_P2P"
++msgstr "_P2P"
++
++#: src/connection.c:101
++msgid "_VPN"
++msgstr "_VPN"
++
++#: src/connection.c:103
++msgid "_Unknown"
++msgstr "_Bilinmeyen"
++
++#: src/dialog.c:192 src/dialog.c:287
++msgid "_OK"
++msgstr "_Tamam"
++
++#: src/dialog.c:193
++msgid "_Cancel"
++msgstr "_İptal"
++
++#: src/dialog.c:283
++msgid "Operation failed"
++msgstr "İşlem başarısız oldu"
++
++#: src/main.c:95
++msgid "_Settings"
++msgstr "_Ayarlar"
++
++#: src/main.c:415 src/vpn.c:145
++msgid "Failed to connect to ConnMan."
++msgstr "ConnMan'a bağlanılamadı."
++
++#: src/main.c:573
++msgid "Failed to connect to system DBus."
++msgstr "Sistem DBus'una bağlanılamadı."
++
++#: src/main.c:619 src/settings.c:689
++msgid "Network Settings"
++msgstr "Ağ Ayarları"
++
++#: src/service.c:334 src/settings.c:160 src/settings.c:387
++msgid "IPv4 address"
++msgstr "IPv4 adresi"
++
++#: src/service.c:335
++msgid "IPv4 gateway"
++msgstr "IPv4 ağ geçidi"
++
++#: src/service.c:336 src/settings.c:161 src/settings.c:388
++msgid "IPv6 address"
++msgstr "IPv6 adresi"
++
++#: src/service.c:337
++msgid "IPv6 gateway"
++msgstr "IPv6 ağ geçidi"
++
++#: src/service.c:339 src/settings.c:158
++msgid "MAC address"
++msgstr "MAC adresi"
++
++#: src/service.c:406
++msgid "IEEE8021x secured services have to be manually configured."
++msgstr "IEEE8021x güvenli hizmetlerinin elle yapılandırılması gerekir."
++
++#: src/service.c:410 src/service.c:442
++msgid "Failed to toggle connection state."
++msgstr "Bağlantı durumu değiştirilemedi."
++
++#: src/service.c:517
++msgid "Hidden ieee8021x secured network"
++msgstr "Gizli ieee8021x güvenli ağ"
++
++#: src/service.c:518
++msgid "Hidden WPA secured network"
++msgstr "Gizli WPA güvenli ağı"
++
++#: src/service.c:519
++msgid "Hidden WPS secured network"
++msgstr "Gizli WPS güvenli ağı"
++
++#: src/service.c:520
++msgid "Hidden unsecured network"
++msgstr "Gizli güvenli olmayan ağ"
++
++#: src/service.c:544 src/settings.c:359
++msgid "Direct"
++msgstr "Doğrudan"
++
++#: src/service.c:546 src/settings.c:242 src/settings.c:246 src/settings.c:361
++msgid "Automatic"
++msgstr "Otomatik"
++
++#: src/service.c:548 src/settings.c:136 src/settings.c:239
++msgid "None"
++msgstr "Yok"
++
++#: src/service.c:560
++msgid "On"
++msgstr "Açık"
++
++#: src/service.c:561
++msgid "Off"
++msgstr "Kapalı"
++
++#: src/settings.c:136 src/settings.c:140
++msgid "Security"
++msgstr "Güvenlik"
++
++#: src/settings.c:149 src/settings.c:380
++msgid "_Info"
++msgstr "B_ilgi"
++
++#: src/settings.c:152
++msgid "Autoconnect"
++msgstr "Otomatik bağlantı"
++
++#: src/settings.c:155 src/settings.c:383
++msgid "Name"
++msgstr "Ad"
++
++#: src/settings.c:156 src/settings.c:385
++msgid "State"
++msgstr "Durum"
++
++#: src/settings.c:159
++msgid "Interface"
++msgstr "Arayüz"
++
++#: src/settings.c:162 src/settings.c:305 src/settings.c:329 src/settings.c:389
++msgid "Nameservers"
++msgstr "Ad sunucuları"
++
++#: src/settings.c:187
++msgid "IP _details"
++msgstr "IP _ayrıntıları"
++
++#: src/settings.c:188
++msgid "IPv4 method"
++msgstr "IPv4 yöntemi"
++
++#: src/settings.c:189 src/settings.c:195 src/settings.c:260 src/settings.c:268
++msgid "Address"
++msgstr "Adres"
++
++#: src/settings.c:190 src/settings.c:196 src/settings.c:261 src/settings.c:271
++#: src/settings_content.c:676
++msgid "Gateway"
++msgstr "Ağ Geçidi"
++
++#: src/settings.c:194
++msgid "IPv6 method"
++msgstr "IPv6 yöntemi"
++
++#: src/settings.c:215
++msgid "IPv_4"
++msgstr "IPv_4"
++
++#: src/settings.c:220
++msgid "IPv_6"
++msgstr "IPv_6"
++
++#: src/settings.c:236 src/settings.c:356
++msgid "Method"
++msgstr "Yöntem"
++
++#: src/settings.c:254 src/settings.c:363
++msgid "Manual"
++msgstr "Elle"
++
++#: src/settings.c:263 src/settings.c:275 src/settings_content.c:674
++msgid "Netmask"
++msgstr "Ağ Maskesi"
++
++#: src/settings.c:265 src/settings_content.c:675 src/settings_content.c:911
++msgid "Prefix length"
++msgstr "Önek uzunluğu"
++
++#: src/settings.c:284
++msgid "Privacy"
++msgstr "Gizlilik"
++
++#: src/settings.c:289 src/technology.c:143
++msgid "Disabled"
++msgstr "Devre dışı"
++
++#: src/settings.c:291
++msgid "Enabled"
++msgstr "Etkin"
++
++#: src/settings.c:293
++msgid "Prefered"
++msgstr "Tercih edilen"
++
++#: src/settings.c:303
++msgid "_Servers"
++msgstr "_Sunucular"
++
++#: src/settings.c:306 src/settings.c:334
++msgid "Timeservers"
++msgstr "Zaman sunucuları"
++
++#: src/settings.c:307 src/settings.c:342
++msgid "Domains"
++msgstr "Alan adları"
++
++#: src/settings.c:308
++msgid "Proxy method"
++msgstr "Proxy yöntemi"
++
++#: src/settings.c:312 src/settings.c:369
++msgid "URL"
++msgstr "URL"
++
++#: src/settings.c:314 src/settings.c:372
++msgid "Servers"
++msgstr "Sunucular"
++
++#: src/settings.c:316 src/settings.c:374
++msgid "Excludes"
++msgstr "Dışlananlar"
++
++#: src/settings.c:328
++msgid "_Nameservers"
++msgstr "Ad su_nucuları"
++
++#: src/settings.c:333
++msgid "_Timeservers"
++msgstr "_Zaman sunucuları"
++
++#: src/settings.c:337
++msgid "Custom Timeservers"
++msgstr "Özel Zaman sunucuları"
++
++#: src/settings.c:341
++msgid "_Domains"
++msgstr "Alan a_dları"
++
++#: src/settings.c:354
++msgid "_Proxy"
++msgstr "_Proxy"
++
++#: src/settings.c:384
++msgid "Type"
++msgstr "Tür"
++
++#: src/settings.c:386
++msgid "Host"
++msgstr "Ana bilgisayar"
++
++#: src/settings.c:401
++msgid "Server fingerprint"
++msgstr "Sunucu parmak izi"
++
++#: src/settings.c:403 src/settings.c:416
++msgid "Certificate Authority file"
++msgstr "Sertifika Yetkilisi dosyası"
++
++#: src/settings.c:405 src/settings.c:418
++msgid "Client certificate file"
++msgstr "İstemci sertifika dosyası"
++
++#: src/settings.c:407
++msgid "VPN host"
++msgstr "VPN ana bilgisayarı"
++
++#: src/settings.c:420
++msgid "Client private key file"
++msgstr "İstemci özel anahtar dosyası"
++
++#: src/settings.c:422
++msgid "Maximum transmission unit (MTU)"
++msgstr "Maksimum iletim ünitesi (MTU)"
++
++#: src/settings.c:424
++msgid "Peer certificate type"
++msgstr "Eş sertifika türü"
++
++#: src/settings.c:426
++msgid "Protocol"
++msgstr "Protokol"
++
++#: src/settings.c:427
++msgid "Port"
++msgstr "Bağlantı noktası"
++
++#: src/settings.c:428
++msgid "Authenticate using username/password"
++msgstr "Kullanıcı adı/parola kullanarak kimlik doğrulaması"
++
++#: src/settings.c:430
++msgid "Private key password file"
++msgstr "Özel anahtar parola dosyası"
++
++#: src/settings.c:432
++msgid "Do not cache password"
++msgstr "Parolayı önbelleğe alma"
++
++#: src/settings.c:434
++msgid "Cipher"
++msgstr "Şifre"
++
++#: src/settings.c:436
++msgid "Message digest algorithm for packet authentication"
++msgstr "Paket kimlik doğrulaması için ileti özeti algoritması"
++
++#: src/settings.c:438
++msgid "Use fast LZO compression"
++msgstr "Hızlı LZO sıkıştırması kullanın"
++
++#: src/settings.c:440
++msgid "External configuration file"
++msgstr "Harici yapılandırma dosyası"
++
++#: src/settings.c:449
++msgid "Group username"
++msgstr "Grup kullanıcı adı"
++
++#: src/settings.c:450 src/settings.c:473 src/settings.c:511
++msgid "Username"
++msgstr "Kullanıcı adı"
++
++#: src/settings.c:451
++msgid "IKE Authentication mode"
++msgstr "IKE Kimlik Doğrulama modu"
++
++#: src/settings.c:453
++msgid "Diffie-Hellman group"
++msgstr "Diffie-Hellman grubu"
++
++#: src/settings.c:454
++msgid "Domain"
++msgstr "Alan adı"
++
++#: src/settings.c:455
++msgid "Vendor"
++msgstr "Satıcı"
++
++#: src/settings.c:456
++msgid "Local port"
++msgstr "Yerel bağlantı noktası"
++
++#: src/settings.c:457
++msgid "Cisco port"
++msgstr "Cisco bağlantı noktası"
++
++#: src/settings.c:458
++msgid "Application version"
++msgstr "Uygulama sürümü"
++
++#: src/settings.c:460
++msgid "NAT traversal method"
++msgstr "NAT geçiş yöntemi"
++
++#: src/settings.c:462
++msgid "DPD idle timeout"
++msgstr "DPD boşta kalma zaman aşımı"
++
++#: src/settings.c:463
++msgid "Single DES encryption"
++msgstr "Tek DES şifrelemesi"
++
++#: src/settings.c:465
++msgid "No encryption"
++msgstr "Şifreleme yok"
++
++#: src/settings.c:474
++msgid "Maximum bandwidth (bps)"
++msgstr "En yüksek bant genişliği (bps)"
++
++#: src/settings.c:475
++msgid "Maximum transmit bandwidth (tx)"
++msgstr "En yüksek iletim bant genişliği (tx)"
++
++#: src/settings.c:477
++msgid "Maximum receive bandwidth (rx)"
++msgstr "En yüksek alma bant genişliği (rx)"
++
++#: src/settings.c:479
++msgid "Use length bit"
++msgstr "Uzunluk bitini kullan"
++
++#: src/settings.c:480
++msgid "Use challenge authentication"
++msgstr "Sınama kimlik doğrulamasını kullan"
++
++#: src/settings.c:482
++msgid "Default route"
++msgstr "Varsayılan rota"
++
++#: src/settings.c:483
++msgid "Use seq numbers"
++msgstr "Sıra numarası kullan"
++
++#: src/settings.c:484
++msgid "Window size"
++msgstr "Pencere boyutu"
++
++#: src/settings.c:485
++msgid "Use only one control channel"
++msgstr "Yalnızca bir denetim kanalı kullan"
++
++#: src/settings.c:487
++msgid "Redial if disconnected"
++msgstr "Bağlantı kesilirse yeniden ara"
++
++#: src/settings.c:489
++msgid "Redial timeout"
++msgstr "Yeniden arama zaman aşımı"
++
++#: src/settings.c:491
++msgid "Maximum redial tries"
++msgstr "En fazla yeniden arama denemesi"
++
++#: src/settings.c:493
++msgid "Require PAP"
++msgstr "PAP gerektir"
++
++#: src/settings.c:494
++msgid "Require CHAP"
++msgstr "CHAP gerektir"
++
++#: src/settings.c:495
++msgid "Require authentication"
++msgstr "Kimlik doğrulaması gerektir"
++
++#: src/settings.c:497
++msgid "Accept only these peers"
++msgstr "Sadece bu eşleri kabul et"
++
++#: src/settings.c:499
++msgid "Authentication file location"
++msgstr "Kimlik doğrulama dosyasının konumu"
++
++#: src/settings.c:501
++msgid "Listen address"
++msgstr "Dinleme adresi"
++
++#: src/settings.c:502
++msgid "Use IPSec SA"
++msgstr "IPSec SA kullan"
++
++#: src/settings.c:503
++msgid "UDP Port"
++msgstr "UDP Bağlantı Noktası"
++
++#: src/settings.c:519
++msgid "Dead peer check count"
++msgstr "Ölü eş denetleme sayısı"
++
++#: src/settings.c:521
++msgid "Dead peer check interval"
++msgstr "Ölü eş denetleme aralığı"
++
++#: src/settings.c:523
++msgid "Debug level"
++msgstr "Hata ayıklama düzeyi"
++
++#: src/settings.c:524
++msgid "Refuse EAP authentication"
++msgstr "EAP kimlik doğrulamasını reddet"
++
++#: src/settings.c:526
++msgid "Refuse PAP authentication"
++msgstr "PAP kimlik doğrulamasını reddet"
++
++#: src/settings.c:528
++msgid "Refuse CHAP authentication"
++msgstr "CHAP kimlik doğrulamasını reddet"
++
++#: src/settings.c:530
++msgid "Refuse MSCHAP authentication"
++msgstr "MSCHAP kimlik doğrulamasını reddet"
++
++#: src/settings.c:532
++msgid "Refuse MSCHAPv2 authentication"
++msgstr "MSCHAPv2 kimlik doğrulamasını reddet"
++
++#: src/settings.c:534
++msgid "Disable BSD compression"
++msgstr "BSD sıkıştırmasını devre dışı bırak"
++
++#: src/settings.c:536
++msgid "Disable DEFLATE compression"
++msgstr "DEFLATE sıkıştırmasını devre dışı bırak"
++
++#: src/settings.c:538
++msgid "Require the use of MPPE"
++msgstr "MPPE kullanımını gerektir"
++
++#: src/settings.c:540
++msgid "Require the use of MPPE 40 bit"
++msgstr "MPPE 40 bit kullanımını gerektir"
++
++#: src/settings.c:542
++msgid "Require the use of MPPE 128 bit"
++msgstr "MPPE 128 bit kullanımını gerektir"
++
++#: src/settings.c:544
++msgid "Allow MPPE to use stateful mode"
++msgstr "MPPE'nin durum bilgisi kipini kullanmasına izin ver"
++
++#: src/settings.c:546
++msgid "No Van Jacobson compression"
++msgstr "Van Jacobson sıkıştırması yok"
++
++#: src/settings.c:565
++msgid "_Clear settings"
++msgstr "_Ayarları temizle"
++
++#: src/settings.c:567
++msgid "_Reset"
++msgstr "Sıfı_rla"
++
++#: src/settings.c:568
++msgid "_Forget"
++msgstr "_Unut"
++
++#: src/settings.c:569
++msgid "Set all properties to defaults."
++msgstr "Tüm özellikleri varsayılanlara ayarla."
++
++#: src/settings.c:570
++msgid "Remove this service."
++msgstr "Bu hizmeti kaldır."
++
++#: src/settings.c:699
++msgid "_Apply"
++msgstr "Uygul_a"
++
++#: src/settings_content.c:670
++msgid "IP version"
++msgstr "IP sürümü"
++
++#: src/settings_content.c:673
++msgid "Network"
++msgstr "Ağ"
++
++#: src/status.c:87
++msgid "Open app"
++msgstr "Uygulamayı aç"
++
++#: src/status.c:88
++msgid "Exit"
++msgstr "Çıkış"
++
++#: src/technology.c:120 src/vpn.c:178
++msgid "Connected"
++msgstr "Bağlı"
++
++#: src/technology.c:135
++msgid "Tethering"
++msgstr "İnternet paylaşımı"
++
++#: src/technology.c:138 src/vpn.c:182
++msgid "Not connected"
++msgstr "Bağlı değil"
++
++#: src/technology.c:220
++msgid "Disable _tethering"
++msgstr "İn_ternet paylaşımını devre dışı bırak"
++
++#: src/technology.c:222 src/technology.c:312
++msgid "Enable _tethering"
++msgstr "İn_ternet paylaşımını etkinleştir"
++
++#: src/technology.c:245 src/technology.c:307 src/technology.c:576
++msgid "_Connect"
++msgstr "_Bağlan"
++
++#: src/technology.c:247 src/technology.c:572
++msgid "Re_connect"
++msgstr "Yeniden _bağlan"
++
++#: src/technology.c:249 src/technology.c:574
++msgid "Dis_connect"
++msgstr "Bağlantıyı _kes"
++
++#: src/technology.c:619
++msgid "Failed to enable ethernet tethering."
++msgstr "Ethernet internet paylaşımı etkinleştirilemedi."
++
++#: src/technology.c:620
++msgid ""
++"Ethernet tethering has to be manually allowed in /etc/connman/main.conf."
++msgstr ""
++"/etc/connman/main.conf içinde Ethernet internet paylaşımına elle izin "
++"verilmelidir."
++
++#: src/util.c:119
++msgid "Idle"
++msgstr "Boşta"
++
++#: src/util.c:121
++msgid "Failure"
++msgstr "Başarısız"
++
++#: src/util.c:123
++msgid "Association"
++msgstr "Bağlantı"
++
++#: src/util.c:125
++msgid "Configuration"
++msgstr "Yapılandırma"
++
++#: src/util.c:127
++msgid "Ready"
++msgstr "Hazır"
++
++#: src/util.c:129
++msgid "Disconnected"
++msgstr "Bağlantı kesildi"
++
++#: src/util.c:131
++msgid "Online"
++msgstr "Çevrimiçi"
++
++#: src/util.c:133
++msgid "Error"
++msgstr "Hata"
++
++#: src/util.c:139
++msgid "Out of range"
++msgstr "Kapsama alanı dışında"
++
++#: src/util.c:141
++msgid "PIN missing"
++msgstr "PIN eksik"
++
++#: src/util.c:143
++msgid "DHCP failed"
++msgstr "DHCP başarısız oldu"
++
++#: src/util.c:145
++msgid "Connecting failed"
++msgstr "Bağlanma başarısız oldu"
++
++#: src/util.c:147
++msgid "Login failed"
++msgstr "Giriş başarısız oldu"
++
++#: src/util.c:149
++msgid "Authentication failed"
++msgstr "Kimlik doğrulama başarısız oldu"
++
++#: src/util.c:151
++msgid "Invalid key"
++msgstr "Geçersiz anahtar"
++
++#: src/vpn.c:180
++msgid "Connecting"
++msgstr "Bağlanıyor"
++
++#: src/wireless.c:131
++msgid "Set Access Point SSID and passphrase"
++msgstr "Erişim Noktası SSID'sini ve parolasını ayarla"
++
++#: src/wireless.c:143
++msgid "SSID"
++msgstr "SSID"
++
++#: src/wireless.c:144
++msgid "Passphrase"
++msgstr "Parola"
++
++#: src/wireless.c:145
++msgid "_Show passphrase"
++msgstr "Parolayı gö_ster"

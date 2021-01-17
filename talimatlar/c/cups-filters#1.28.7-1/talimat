@@ -1,0 +1,25 @@
+[paket]
+tanim   = OpenPrinting CUPS Filtreleri
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.linuxfoundation.org/openprinting/cups-filters
+
+[gerek]
+derleme = ghostscript glib mupdf liblouis cups avahi qpdf poppler lcms2 python dejavu-fonts-ttf
+calisma = 
+
+[kaynak]
+1       = http://openprinting.org/download/cups-filters/${isim}-${surum}.tar.xz
+dosya   = cups-browsed-init
+
+[sha256]
+1       = a166ff60a56ef7c19df93129fb79b31ffadb4de32b26fc6b1ce03b75a016559e
+2       = 4866e438873a30d3bc7e01fa75610d4b147f3a62992ab7a57418a9e36d053ac6
+
+[derle]
+ekconf  = --with-rcdir=no --enable-avahi --with-browseremoteprotocols=DNSSD,CUPS --enable-auto-setup-driverless --with-test-font-path=/usr/share/fonts/TTF/DejaVuSans.ttf
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm755 ${SRC}/cups-browsed-init ${PKG}/etc/rc.d/init.d/cups-browsed

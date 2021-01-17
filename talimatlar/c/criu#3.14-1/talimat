@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux için bir işlem denetleme/geri yükleme uygulaması
+paketci = milisarge
+grup    = sistem
+url     = http://criu.org/
+
+[gerek]
+derleme = python protobuf libcap libnet libnl protobuf-c
+calisma =
+
+[kaynak]
+bz2     = https://download.openvz.org/criu
+
+[sha256]
+1       = f63f30188b84e9a611429f732381f27e37c60cde0afc9821600f8597d21e39cb
+
+[derle]
+betik   = unset CPPFLAGS;unset LDFLAGS;unset CFLAGS;unset CXXFLAGS
+betik   = make
+
+[pakur]
+betik   = make install-lib install-criu install-compel DESTDIR=${PKG} PREFIX=/usr LOGROTATEDIR=/etc/logrotate.d LIBEXECDIR=/usr/lib LIBDIR=/usr/lib SBINDIR=/usr/bin
+betik   = rm -rf ${PKG}/usr/lib/systemd
+betik   = rm -f $PKG/usr/lib/criu/scripts/systemd-autofs-restart.sh

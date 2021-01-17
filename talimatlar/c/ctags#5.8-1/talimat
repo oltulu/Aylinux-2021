@@ -1,0 +1,17 @@
+[paket]
+tanim   = Kaynak koddaki dil dosyalarındaki nesneleri listeleme aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://ctags.io
+
+[kaynak]
+gz      = http://prdownloads.sourceforge.net/$isim
+
+[sha256]
+1 		= 0e44b45dcabe969e0bbbb11e30c246f81abe5d32012db37395eb57d66e9e99c7
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+betik   = make prefix=${PKG}/usr bindir=${PKG}/usr/bin mandir=${PKG}/usr/share/man install 

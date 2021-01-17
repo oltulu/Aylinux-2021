@@ -1,0 +1,25 @@
+[paket]
+tanim   = System-config-printer uygulaması için PolicyKit dosyaları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.freedesktop.org/software/cups-pk-helper/releases/
+
+[gerek]
+derleme = cups polkit
+calisma = 
+
+[kaynak]
+xz      = $url
+
+[sha256]
+1 		= 959af8f2f5a2761e7e498b61c9caf25ae963335031eae9972d999e9a0d97a228
+
+[derle]
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/cups-pk-helper
+betik   = make
+	      
+[pakur]
+tip     = gnu
+betik   = install -dm755 "${PKG}"/usr/share/dbus-1/system.d
+betik   = mv "${PKG}"/etc/dbus-1/system.d/* "${PKG}"/usr/share/dbus-1/system.d
+betik   = rm -rf "${PKG}"/etc/dbus-1

@@ -1,0 +1,17 @@
+[paket]
+tanim   = Linux için İşlemci kullanımı sınırlandırma uygulaması
+paketci = GoksuBay
+grup    = sistem
+url     = https://github.com/opsengine/cpulimit
+
+[kaynak]
+github  = opsengine/cpulimit
+
+[sha256]
+1               = 64312f9ac569ddcadb615593cd002c94b76e93a0d4625d3ce1abb49e08e2c2da
+
+[derle]
+betik   = make
+
+[pakur]
+betik   = install -Dm755 src/cpulimit "$PKG"/usr/bin/cpulimit

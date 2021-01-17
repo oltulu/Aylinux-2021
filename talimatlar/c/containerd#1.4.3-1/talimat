@@ -1,0 +1,27 @@
+[paket]
+tanim   = Açık ve güvenilir bir konteyner çalışma zamanı
+paketci = milisarge
+grup    = sistem
+url     = https://containerd.io
+
+[gerek]
+derleme = go libseccomp btrfs-progs
+calisma = runc btrfs-progs
+
+[kaynak]
+1       = https://github.com/containerd/containerd/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[derle]
+betik   = cd $SRC
+betik   = mkdir -p src/github.com/containerd
+betik   = ln -rTsf $isim-$surum src/github.com/containerd/containerd
+betik   = export GOPATH="$SRC"
+betik   = cd src/github.com/containerd/containerd
+betik   = export CGO_LDFLAGS="$LDFLAGS"
+betik   = export GOFLAGS="-trimpath"
+betik   = make VERSION=v$surum.m REVISION=$_commit.m
+
+[pakur]
+betik   = export GOPATH="$SRC"
+betik   = cd $SRC/src/github.com/containerd/containerd
+betik   = make install DESTDIR="$PKG/usr"

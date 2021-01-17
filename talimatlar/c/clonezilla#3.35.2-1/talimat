@@ -1,0 +1,23 @@
+[paket]
+tanim   = ncurses bölüm ve disk görüntüleme/klonlama programı
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://clonezilla.org
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz      = https://free.nchc.org.tw/drbl-core/src/stable
+1= https://github.com/archlinux/svntogit-community/raw/packages/clonezilla/trunk/usrbin.patch
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = patch -Np0 -i /sources/usrbin.patch
+
+	      
+[pakur]
+betik     = make DESTDIR="$PKG" install  

@@ -1,0 +1,18 @@
+[paket]
+tanim   = Çoklu protokol destekli dosya transfer uygulaması
+paketci = milisarge
+grup    = temel
+url     = http://curl.haxx.se
+
+[kaynak]
+xz      = $url/download
+
+[sha256]
+#1       = 9252332a7f871ce37bfa7f78bdd0a0e3924d8187cc27cb57c76c9474a7168fb3
+
+[derle]
+betik   = ./configure $confopt --with-ca-path=/etc/ssl/certs --enable-threaded-resolver --disable-static
+betik   = make
+
+[pakur]
+tip     = gnu

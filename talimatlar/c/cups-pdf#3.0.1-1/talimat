@@ -1,0 +1,25 @@
+[paket]
+tanim   = CUPS için PDF yazıcı
+paketci = milisarge
+grup    = yazıcı
+url     = https://www.cups-pdf.de
+
+[gerek]
+derleme = cups 
+calisma = ghostscript
+
+[kaynak]
+1       = $url/src/${isim}_${surum}.tar.gz
+
+[sha256]
+1       = 738669edff7f1469fe5e411202d87f93ba25b45f332a623fb607d49c59aa9531
+
+[derle]
+betik   = gcc $CFLAGS -o $isim src/cups-pdf.c -lcups ${LDFLAGS}
+
+[pakur]
+betik   = install -D -m700 cups-pdf "$PKG"/usr/lib/cups/backend/cups-pdf
+betik   = cd extra
+betik   = install -D -m644 CUPS-PDF_noopt.ppd "$PKG"/usr/share/cups/model/CUPS-PDF_noopt.ppd
+betik   = install -D -m644 CUPS-PDF_opt.ppd "$PKG"/usr/share/cups/model/CUPS-PDF_opt.ppd
+betik   = install -D -m644 cups-pdf.conf "$PKG"/etc/cups/cups-pdf.conf

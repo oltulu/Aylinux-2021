@@ -1,0 +1,22 @@
+[paket]
+tanim   = C için küçük yapılandırma dosyası ayrıştırıcı kitaplığı
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/martinh/libconfuse/
+
+[gerek]
+derleme = glibc
+calisma =
+
+[kaynak]
+github  = martinh/libconfuse
+
+[sha256]
+1       = 2cf7e032980aff8f488efba61510dc3fb95e9a4b9183f985dea457a5651b0e2c
+
+[derle]
+ekconf  = --enable-shared --enable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

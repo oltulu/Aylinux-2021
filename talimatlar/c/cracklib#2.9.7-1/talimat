@@ -1,0 +1,27 @@
+[paket]
+tanim   = Parola Kontrol Kitaplığı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/cracklib/cracklib
+
+[gerek]
+derleme =
+calisma = 
+
+[kaynak]
+gz     = https://github.com/cracklib/cracklib/releases/download/v$surum
+
+
+
+[sha512]
+        #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --without-python
+betik 	= make
+            	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install
+betik 	= mkdir -p "$PKG"/usr/share/dict
+betik 	= ln -sf /usr/share/cracklib/cracklib-small "$PKG"/usr/share/dict/cracklib-small
+betik 	= sh ./util/cracklib-format dicts/cracklib-small | sh ./util/cracklib-packer "$PKG"/usr/share/cracklib/pw_dict
