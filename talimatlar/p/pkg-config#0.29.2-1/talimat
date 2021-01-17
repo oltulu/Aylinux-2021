@@ -1,0 +1,18 @@
+[paket]
+tanim   = Derleme ve bağlama bayraklarını yöneten kütüphane
+paketci = milisarge
+grup 	= temel
+url     = http://pkgconfig.freedesktop.org
+
+[kaynak]
+gz      = $url/releases
+
+[sha256]
+1 		= 6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
+
+[derle]
+betik 	= ./configure --prefix=/usr --with-internal-glib --disable-host-tool
+betik 	= make
+	      
+[pakur]
+tip 	= gnu

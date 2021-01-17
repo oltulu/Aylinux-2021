@@ -1,0 +1,21 @@
+[paket]
+tanim   = X ve Cairo için piksel kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://cgit.freedesktop.org/pixman
+
+[gerek]
+derleme = meson libpng
+calisma = 
+
+[kaynak]
+bz2     = https://xorg.freedesktop.org/releases/individual/lib
+
+[sha512]
+1 		= 0683b7f67caa0881b23188b7e6f8487c7e0a1257a912686616b7d862efd5a9efdb51641c81ec54905a6f6b1029d796ca4e25c0909db28fc29fa3617bf09f9cf9
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+betik	= cd $SRC && DESTDIR="$PKG" meson install -C build

@@ -1,0 +1,22 @@
+[paket]
+tanim   = SAX2 XML Ayrıştırıcısına Perl arabirimi
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://metacpan.org/release/XML-SAX
+arsiv   = XML-SAX-$surum
+
+[gerek]
+derleme = perl perl-xml-sax-base perl-xml-namespacesupport 
+calisma =
+
+[kaynak]
+1       = ${CPAN_SITE}/XML/XML-SAX-${surum}.tar.gz
+
+[sha256]
+1       = 4506c387043aa6a77b455f00f57409f3720aa7e553495ab2535263b4ed1ea12a
+
+[derle]
+tip     = perl
+
+[pakur]
+betik   = PERLLIB=blib/lib make install DESTDIR="$PKG"

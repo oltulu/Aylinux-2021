@@ -1,0 +1,17 @@
+[paket]
+tanim   = Uygulamalar ile kullanıcıları yetkilendiren kütüphane
+paketci = milisarge
+grup 	= temel
+url     = http://www.kernel.org/pub/libs/pam
+
+[kaynak]
+1       = https://github.com/linux-pam/linux-pam/releases/download/v$surum/Linux-PAM-$surum.tar.xz
+
+[sha256]
+#1 		= eff47a4ecd833fbf18de9686632a70ee8d0794b79aecb217ebd0ce11db4cd0db
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

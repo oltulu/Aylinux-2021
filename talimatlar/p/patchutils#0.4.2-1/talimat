@@ -1,0 +1,21 @@
+[paket]
+tanim   = Düzeltme eki dosyalarında çalışan programların koleksiyonu
+paketci = milisarge
+grup    = sistem
+url     = http://cyberelk.net/tim/data/patchutils
+
+[gerek]
+derleme = 
+calisma = perl
+
+[kaynak]
+xz      = $url/stable/
+
+[sha256]
+1       = cf55d4db83ead41188f5b6be16f60f6b76a87d5db1c42f5459d596e81dabe876
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

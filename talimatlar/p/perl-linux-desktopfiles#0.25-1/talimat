@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux masaüstü dosyalarını ayrıştırmak için çok hızlı bir Perl modülü.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://metacpan.org/release/Linux-DesktopFiles
+
+[gerek]
+derleme = perl
+calisma = perl-xml-sax-expat
+
+[kaynak]
+1     = https://cpan.metacpan.org/authors/id/T/TR/TRIZEN/Linux-DesktopFiles-${surum}.tar.gz
+
+[sha512]
+1 		= a825b014e85e53cf0a142c7d239948f288930627a517444d21a81b8ee898ab3bc1b7dc8864df7b76b2f3a982280ffcb09325f492d0d83950c682110999d5e107
+
+[derle]
+betik = cd $SRC/Linux-DesktopFiles-${surum}
+betik = perl Makefile.PL
+betik = make
+	      
+[pakur]
+betik = cd $SRC/Linux-DesktopFiles-${surum}
+tip = gnu

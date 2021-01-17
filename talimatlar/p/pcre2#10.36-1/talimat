@@ -1,0 +1,17 @@
+[paket]
+tanim   = Perl5 uyumlu kurallı ifadeler kütüphanesi
+paketci = milisarge
+grup    = temel
+url     = https://www.pcre.org
+
+[kaynak]
+bz2     = https://ftp.pcre.org/pub/pcre
+
+[sha256]
+#1       = 35514dff0ccdf02b55bd2e9fa586a1b9d01f62332c3356e379eabb75f789d8aa
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+tip     = gnu

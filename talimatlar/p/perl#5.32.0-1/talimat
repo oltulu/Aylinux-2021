@@ -1,0 +1,20 @@
+[paket]
+tanim   = Perl proglama dilia
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.perl.org
+
+[kaynak]
+gz      = http://ftp.funet.fi/pub/CPAN/src
+
+[sha256]
+#1 		= 3ebf85fe65df2ee165b22596540b7d5d42f84d4b72d84834f74e2e0b8956c347
+
+[derle]
+betik   = sh Configure -des -Dprefix=/tools -Dlibs=-lm -Uloclibpth -Ulocincpth ; make
+
+[pakur]
+betik   = mkdir -pv $PKG/tools/bin
+betik   = cp -v perl cpan/podlators/scripts/pod2man $PKG/tools/bin
+betik   = mkdir -pv $PKG/tools/lib/perl5/$surum
+betik   = cp -Rv lib/* $PKG/tools/lib/perl5/$surum

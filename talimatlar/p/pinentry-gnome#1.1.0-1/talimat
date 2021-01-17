@@ -1,0 +1,25 @@
+[paket]
+tanim   = PIN-Entry için Gnome arayüz
+paketci = milisarge
+grup 	= sistem
+url     = https://gnupg.org/related_software/pinentry
+arsiv   = pinentry-$surum
+
+[gerek]
+derleme = libgpg-error libassuan gcr
+calisma = 
+
+[kaynak]
+1       = https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-$surum.tar.bz2
+
+[sha256]
+1 	    = 68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570
+
+[derle]
+ekconf  = --enable-pinentry-tty --enable-pinentry-curses --enable-fallback-curses --enable-pinentry-gnome3
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
+betik   = rm -f $PKG/usr/bin/pinentry-{tty,curses}
+betik   = rm -f $PKG/usr/bin/pinentry

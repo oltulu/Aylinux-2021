@@ -1,0 +1,25 @@
+[paket]
+tanim   = GTK + 2.x için perl bağlantıları
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://gtk2-perl.sourceforge.net/
+
+[gerek]
+derleme = perl-extutils-pkgconfig perl-extutils-depends
+calisma = gtk2 pango-perl
+
+[kaynak]
+1     = https://downloads.sourceforge.net/sourceforge/gtk2-perl/Gtk2-${surum}.tar.gz
+
+[sha256]
+1 		= a2ed6902f7f29f7c8dddbe58119589f433252a12132c295c54afbac587cc8480
+
+[derle]
+betik = cd $SRC/Gtk2-${surum}
+betik = export PERL_USE_UNSAFE_INC=1
+betik = PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+betik = make
+	      
+[pakur]
+betik = cd $SRC/Gtk2-${surum}
+betik = make install DESTDIR="${PKG}"

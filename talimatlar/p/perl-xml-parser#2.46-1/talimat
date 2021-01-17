@@ -1,0 +1,21 @@
+[paket]
+tanim   = Expat tabanlı Perl XML ayrıştıcı kütüphanesi
+paketci = milisarge
+grup 	= temel
+url     = http://search.cpan.org/dist/XML-Parser
+
+[kaynak]
+1       = http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/XML-Parser-$surum.tar.gz
+
+[sha256]
+#1 		= 1ae9d07ee9c35326b3d9aad56eae71a6730a73a116b9fe9e8a4758b7cc033216
+
+[derle]
+betik   = cd XML-Parser-${surum}
+betik   = perl Makefile.PL INSTALLDIRS=vendor
+betik   = make
+      
+[pakur]
+betik   = cd XML-Parser-${surum}
+tip	    = gnu
+betik   = rm -rf $PKG/usr/lib/perl5/5.28/core_perl

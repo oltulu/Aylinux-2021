@@ -1,0 +1,21 @@
+[paket]
+tanim   = Qt Pulseaudio karıştırıcısı
+paketci = yasarciv
+grup    = medya
+url     = https://github.com/lxqt/pavucontrol-qt
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools pulseaudio
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 12a9b9965c3cfaf2335a741a6727b2decf7fec7c9a44817a28d66c8b3caa89d4
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

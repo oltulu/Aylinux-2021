@@ -1,0 +1,22 @@
+[paket]
+tanim   = Paralel, indeksli xz kompresör
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/vasi/pixz
+
+[gerek]
+derleme = 
+calisma = libpeas gtksourceview gspell
+
+[kaynak]
+gz    = https://github.com/vasi/pixz/releases/download/v$surum
+
+[sha256]
+    #1 		= 4b46d17e087fbea163d20a18eac6a75c2c2d75ae6999d88dc1cecd1456b74e3f
+
+[derle]
+betik 	= ./configure --prefix=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= make DESTDIR="$PKG" install

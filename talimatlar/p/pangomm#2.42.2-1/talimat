@@ -1,0 +1,23 @@
+[paket]
+tanim   = Pango C++ bağlamları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.gtkmm.org
+
+[gerek]
+derleme  = libsigc++ glibmm cairomm pango
+calisma  = 
+
+[kaynak]
+xz      = ${GNOME_SITE}/$isim/${surum%.*}
+
+[sha256]
+1 		= ca6da067ff93a6445780c0b4b226eb84f484ab104b8391fb744a45cbc7edbf56
+
+[derle]
+ekconf  = --enable-maintainer-mode
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+

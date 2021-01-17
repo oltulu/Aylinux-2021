@@ -1,0 +1,20 @@
+[paket]
+tanim   = ZIP arşiv dosyalarına perl arayüzü sağlama
+paketci = milisarge
+grup    = kütüphane
+url     = https://metacpan.org/release/Archive-Zip
+
+[kaynak]
+1          = ${CPAN_SITE}/Archive/Archive-Zip-${surum}.tar.gz
+
+[sha256]
+1          = 743179fe0464d273cf4531d108bcdce9d76426eba0af61d98922d9d3d163db84
+
+[derle]
+betik  = cd Archive-Zip-${surum}
+betik  = perl Makefile.PL INSTALLDIRS=vendor
+betik  = make
+
+[pakur]
+betik  = cd Archive-Zip-${surum}
+tip    = gnu

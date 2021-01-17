@@ -1,0 +1,25 @@
+[paket]
+tanim   = SCard API (PC/SC) kullanarak akıllı karta erişmek için ara yazılım
+paketci = milisarge
+grup    = kütüphane
+url     = https://salsa.debian.org/debian/pcsc-lite
+
+[gerek]
+derleme    = python
+calisma    =
+
+[kaynak]
+bz2        = https://pcsclite.apdu.fr/files
+
+[sha256]
+1          = d76d79edc31cf76e782b9f697420d3defbcc91778c3c650658086a1b748e8792
+
+[derle]
+ekconf     =  --enable-filter --enable-ipcdir=/run/pcscd --enable-libudev --enable-usbdropdir=/usr/lib/pcsc/drivers --disable-libsystemd
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = install -d "$PKG/usr/lib/pcsc/drivers"
+servis     = pcscd
+

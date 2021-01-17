@@ -1,0 +1,24 @@
+[paket]
+tanim   = Perl için basit XML ayrıştırıcı
+paketci = oltulu
+grup 	= kütüphane
+url     = https://search.cpan.org/dist/XML-Simple/
+
+[gerek]
+derleme = perl
+calisma = perl-xml-sax-expat
+
+[kaynak]
+1     = https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-${surum}.tar.gz
+
+[sha512]
+1 		= 0f1a6a1bdb8f6ac6fa4deef33d09930eb4758b4a3ed4431624004ffa2b1eb02f0d6ce14cb4942162cb76f7aa39fea4ec6a71e1eb9ebd464b710db7024bdd990c
+
+[derle]
+betik = cd $SRC/XML-Simple-$surum
+betik = perl Makefile.PL INSTALLDIRS=vendor
+betik = make
+	      
+[pakur]
+betik = cd $SRC/XML-Simple-$surum
+tip = gnu

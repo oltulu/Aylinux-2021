@@ -1,0 +1,22 @@
+[paket]
+tanim   = XML belgeleri yazmak için Perl uzantısı
+paketci = milisarge
+grup    = kütüphane
+url     = https://metacpan.org/release/XML-Writer
+arsiv   = XML-Writer-$surum
+
+[gerek]
+derleme = perl
+calisma = perl
+
+[kaynak]
+1       = https://www.cpan.org/authors/id/J/JO/JOSEPHW/XML-Writer-$surum.tar.gz
+
+[sha256]
+1       = e080522c6ce050397af482665f3965a93c5d16f5e81d93f6e2fe98084ed15fbe
+
+[derle]
+tip     = perl
+
+[pakur]
+tip     = gnu

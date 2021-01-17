@@ -1,0 +1,10 @@
+	sed -i -e "s:python:python3:g" src/spy/pcsc-spy
+	./configure --prefix=/usr \
+	--sbindir=/usr/bin \
+	--sysconfdir=/etc \
+	--enable-filter \
+	--enable-ipcdir=/run/pcscd \
+	--enable-libudev \
+	--enable-usbdropdir=/usr/lib/pcsc/drivers \
+	--disable-libsystemd
+    make

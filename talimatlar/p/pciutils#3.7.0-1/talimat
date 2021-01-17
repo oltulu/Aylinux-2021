@@ -1,0 +1,21 @@
+[paket]
+tanim 	= PCI bus konfigürasyon kitaplığı ve araçları
+paketci = gysddn
+grup 	  = sistem
+url 	  = https://mj.ucw.cz/sw/pciutils/
+
+[gerek]
+derleme = 
+calisma = hwids
+
+[kaynak]
+gz 	  = ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci
+
+[sha256]
+
+[derle]
+dosya  = derle.sh
+
+[pakur]
+betik  = make SHARED=yes PREFIX=/usr SBINDIR=/usr/bin SHAREDIR=/usr/share/hwdata MANDIR=/usr/share/man DESTDIR="$PKG" install install-lib
+betik  = rm -rf $PKG/usr/{sbin/update-pciids,share/{man/man8/update-pciids.8,hwdata}}

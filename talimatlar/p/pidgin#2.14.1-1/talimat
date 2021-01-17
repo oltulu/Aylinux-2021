@@ -1,0 +1,27 @@
+[paket]
+tanim   = Ncurses tabanlı mesajlaşma istemcisi - geliştirme dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = https://pidgin.im/
+
+[gerek]
+derleme    = glib gtk3 libxext libxml2 gst-plugins-base libidn2 python avahi dbus-glib networkmanager nss cyrus-sasl libsm farstream gst-plugins-good
+calisma    = startup-notification
+
+[kaynak]
+bz2        = ${SOURCEFORGE_SITE}/$isim
+dosya      = purple-remote-python3.patch
+
+[sha256]
+1          = 2747150c6f711146bddd333c496870bfd55058bab22ffb7e4eb784018ec46d8f
+2          = 4eb6be9310e4d5d1b906b1d579c395000ee0af6d6f5056307233512151d1f4b1
+
+[derle]
+yama       = 2
+betik      = autoreconf -fi
+ekconf     = --disable-gtkui --disable-schemas-install --disable-meanwhile --disable-gnutls --enable-cyrus-sasl --disable-doxygen --enable-nm --with-system-ssl-certs=/etc/ssl/certs --disable-perl --disable-tk --disable-tcl --enable-vv --disable-idn
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = rm -rf ${PKG}/etc/gconf

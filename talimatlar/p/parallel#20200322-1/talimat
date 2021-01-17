@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Paralel işleri yürütmek için kabuk aracı
+paketci = milisarge
+grup 	= sistem
+url 	= https://www.gnu.org/software/parallel/
+
+[kaynak]
+bz2		= ${GNU_SITE}/${isim}
+
+[sha256]
+1       = 77eaf5b58830c23e9607ced9e8a916ac4e17f40cfc86f224289df1e6505023d6
+
+[derle]
+tip		= gnu
+
+[pakur]
+tip		= gnu

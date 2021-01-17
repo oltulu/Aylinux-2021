@@ -1,0 +1,21 @@
+[paket]
+tanim   = Metnin düzenlenmesi ve oluşturulması için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.pango.org/
+
+[gerek]
+derleme    = pango
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/0.0
+
+[sha256]
+1          = 552092b3b6c23f47f4beee05495d0f9a153781f62a1c4b7ec53857a37dfce046
+
+[derle]
+tip        = gnu
+
+[pakur]
+tip        = gnu

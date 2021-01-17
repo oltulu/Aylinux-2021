@@ -1,0 +1,24 @@
+[paket]
+tanim   = Perl modülleri oluşturun, test edin ve kurun
+paketci = oltulu
+grup 	= kütüphane
+url     = https://search.cpan.org/dist/Module-Build
+
+[gerek]
+derleme = perl
+calisma = 
+
+[kaynak]
+1     = https://search.cpan.org/CPAN/authors/id/L/LE/LEONT/Module-Build-$surum.tar.gz
+
+[sha512]
+1 		= 51e0d73cecf450062121c3223b1a4c6f8a8c260fc2345d1c1a5e13ddcbd2b7bc2578411ac254420e27720b9e00a8efc9a9daa3159e9cba5338a188734b35c738
+
+[derle]
+betik = cd $SRC/Module-Build-$surum
+betik = perl Build.PL installdirs=vendor
+betik = perl Build
+	      
+[pakur]
+betik = cd $SRC/Module-Build-$surum
+betik = perl Build install destdir="$PKG"

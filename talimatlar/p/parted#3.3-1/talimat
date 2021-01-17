@@ -1,0 +1,28 @@
+[paket]
+tanim   = Bir disk bölümleme ve bölüm yeniden boyutlandırma aracı.
+paketci = yasarciv67
+grup	= sistem
+url 	= http://www.gnu.org/software/parted/index.html
+
+[gerek]
+derleme = lvm2
+calisma = 
+
+[kaynak]
+xz 		= http://ftp.gnu.org/gnu/$isim
+dosya 	= 0001-fat16.patch
+dosya 	= 0002-include.patch
+
+[sha256]
+1 		= 858b589c22297cacdf437f3baff6f04b333087521ab274f7ab677cb8c6bb78e4
+2 		= 20f54040e58bbbef6ed043c8be98dda5696035349c3efad850972c938f08f84a
+3 		= 789d6ef8fcff389f9f74bd9e377aff9949ab5b317a80bd38cec39510bd40cef6
+
+[derle]
+yama    = 2
+yama    = 3
+ekconf  = --disable-static --disable-rpath
+tip     = gnu
+
+[pakur]
+tip     = gnu

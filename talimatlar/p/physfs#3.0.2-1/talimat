@@ -1,0 +1,22 @@
+[paket]
+tanim   = Çeşitli arşivlere soyut erişim sağlamak için kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://icculus.org/physfs/
+
+[gerek]
+derleme    = cmake zlib readline
+calisma    =
+
+[kaynak]
+bz2        = http://icculus.org/physfs/downloads
+
+[sha256]
+1          = 304df76206d633df5360e738b138c94e82ccf086e50ba84f456d3f8432f9f863
+
+[derle]
+ekconf     = -DPHYSFS_BUILD_TEST=OFF -DPHYSFS_BUILD_STATIC=OFF
+tip        = cmake
+
+[pakur]
+tip        = cmake

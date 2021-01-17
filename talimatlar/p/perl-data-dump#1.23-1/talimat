@@ -1,0 +1,24 @@
+[paket]
+tanim   = Veri yapılarının oldukça basılması
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://metacpan.org/release/Data-Dump
+
+[gerek]
+derleme = perl
+calisma = 
+
+[kaynak]
+1     = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Data-Dump-${surum}.tar.gz
+
+[sha1]
+1 		= 7da875cde34b6fe32b680eaa0c70121e4b69f09b
+
+[derle]
+betik = cd $SRC/Data-Dump-${surum}
+betik = perl Makefile.PL INSTALLDIRS=vendor
+betik = make
+	      
+[pakur]
+betik = cd $SRC/Data-Dump-${surum}
+tip = gnu

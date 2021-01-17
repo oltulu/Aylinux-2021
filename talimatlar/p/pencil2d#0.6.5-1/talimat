@@ -1,0 +1,24 @@
+[paket]
+tanim   = 2D elle çizilmiş animasyonlar yapmak için kolay, sezgisel bir araç
+paketci = milisarge
+grup    = medya
+url     = https://pencil2d.org
+
+[gerek]
+derleme = qt5-tools qt5-multimedia qt5-svg qt5-xmlpatterns ffmpeg
+calisma =
+
+[kaynak]
+github  = pencil2d/pencil
+
+[sha256]
+1       = 9be6d699cb5a960af89a10ee77dce33ddfe050eb3f0327a055e13f395d92afe6
+
+[derle]
+betik   = cd pencil-$surum
+betik   = qmake-qt5 PREFIX=/usr CONFIG+=release DEFINES+=QT_NO_DEBUG_OUTPUT DEFINES+=PENCIL2D_RELEASE
+betik   = make
+
+[pakur]
+betik   = cd pencil-$surum
+betik   = make install INSTALL_ROOT="${PKG}"

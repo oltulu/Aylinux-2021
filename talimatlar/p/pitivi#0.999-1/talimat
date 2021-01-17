@@ -1,0 +1,26 @@
+[paket]
+tanim 	= GStreamer çerçevesini kullanarak ses/video projeleri için düzenleyici
+paketci = yasarciv67
+grup 	= medya
+url 	= http://pitivi.org/
+
+[gerek]
+derleme = meson gst-transcoder gstreamer-editing-services gst-plugins-others gsound gtk3 libnotify python-cairo python-gobject python-numpy python-matplotlib intltool itstool frei0r-plugins  
+calisma = gst-plugins-others gst-transcoder gstreamer-editing-services gsound gtk3 libnotify python-cairo python-gobject python-numpy python-matplotlib frei0r-plugins
+
+[kaynak]
+xz 		= https://download.gnome.org/sources/$isim/$surum
+1    	= https://mls.akdeniz.edu.tr/git/milislinux/ceviriler/raw/branch/master/pitivi/tr-0.999-1.po
+
+[sha256]
+1 		= cb6f8a831383e698c2117ca7caec77b8167a6b2e2b0fb9c375e6a4f7c815b757
+2 		= b967267c0e6d5b5ded0ee29df25331780b047eb644e80e7bbfe9dfd8140d357d
+
+[derle]
+betik 	= mv $SRC/tr-$surum-$devir.po po/tr.po
+betik 	= sed -i "s/install_dir : join_paths(get_option('datadir'), 'appdata')/install_dir : join_paths(get_option('datadir'), 'metainfo')/" data/meson.build
+tip 	= meson
+
+[pakur]
+tip 	= meson
+betik   = rm -rf $PKG/usr/share/help

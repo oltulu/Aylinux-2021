@@ -1,0 +1,21 @@
+[paket]
+tanim   = Partition Image, bölümleri birçok formatta bir görüntü dosyasına kaydeder.
+paketci = Cihan_Alkan
+url     =https://www.partimage.org/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+bz2          =https://downloads.sourceforge.net/${isim}
+
+[sha256]
+#          = 55a461003ece0a4daeffb8b7ac2178977c5ce024a7e688d24f6d2230465b50ba
+
+[derle]
+betik     =  ./configure  --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --enable-pam
+betik     =  make
+
+[pakur]
+betik      = make DESTDIR="$PKG" install

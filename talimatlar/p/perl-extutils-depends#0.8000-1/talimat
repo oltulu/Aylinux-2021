@@ -1,0 +1,24 @@
+[paket]
+tanim   = Perl depends modülü
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://search.cpan.org/dist/ExtUtils-Depends/
+
+[gerek]
+derleme = perl
+calisma = perl
+
+[kaynak]
+1     = https://www.cpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-$surum.tar.gz
+
+[md5]
+1 		= ac2d17114f1b50624a8f37381c90485e
+
+[derle]
+betik = cd ExtUtils-Depends-${surum}
+betik = perl Makefile.PL INSTALLDIRS=vendor
+betik = make
+	      
+[pakur]
+betik = cd ExtUtils-Depends-${surum}
+betik = make install DESTDIR="${PKG}"

@@ -1,0 +1,26 @@
+[paket]
+tanim   = Zarif, basit, temiz yuva
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://launchpad.net/plank
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+xz     = https://launchpad.net/plank/1.0/$surum/+download
+
+[sha256]
+    #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+#betik     = cd plank
+betik     = sed 's/0.19.6/0.20/' -i configure.ac
+betik     = NOCONFIGURE=1 ./autogen.sh
+betik     = ./configure --prefix=/usr --sysconfdir=/etc --disable-apport
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+    	      
+[pakur]
+betik     = make DESTDIR="${PKG}" -C ../plank-$surum install

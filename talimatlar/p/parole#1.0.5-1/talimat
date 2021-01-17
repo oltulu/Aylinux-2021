@@ -1,0 +1,21 @@
+[paket]
+tanim   = Modern basit medya oynatıcı
+paketci = yasarciv67
+grup    = medya
+url     = https://docs.xfce.org/apps/parole/start
+
+[gerek]
+derleme = intltool dbus-glib gst-plugins-base gst-plugins-others libnotify taglib libxfce4ui 
+calisma = gst-plugins-others
+
+[kaynak]
+bz2     = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
+
+[sha256]
+1       = 1adb4bd96c4cc4b4a79eeafe1316e170f506426e3737e8ba8898f7ea6bec572a
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

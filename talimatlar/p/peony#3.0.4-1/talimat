@@ -1,0 +1,25 @@
+[paket]
+tanim   = UKUI masaüstü için dosya yöneticisi
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/ukui/peony
+
+[gerek]
+derleme = poppler-qt5
+calisma = poppler-qt5
+
+[kaynak]
+1      = ${url}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+[sha512]
+1 		= 4d958548007a64fed522adbce2abb855c963c76b7ae5b22d107eecaf268eeee4f7eca40aea1a6019148853be622401b783304ca025b89b5307f5dfb2c007cc94
+
+[derle]
+betik 	= qmake-qt5
+betik 	= make
+	      
+[pakur]
+betik 	= make INSTALL_ROOT="$PKG" install
+betik 	= install -Dm644 data/peony{,-computer,-home,-trash}.desktop -t "$PKG"/usr/share/applications/
+betik 	= install -Dm644 data/peony-desktop.desktop -t "$PKG"/etc/xdg/autostart/

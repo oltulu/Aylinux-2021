@@ -1,0 +1,24 @@
+[paket]
+tanim   = PulseAudio ses kontrol uygulaması
+paketci = milisarge 
+grup    = medya 
+url     = https://freedesktop.org/software/pulseaudio/pavucontrol
+
+[gerek]
+derleme  =  gtkmm libcanberra gtk3 pulseaudio libsigc++ 
+calisma  =  
+
+[kaynak]
+xz = $url
+
+[sha256]
+1  = 8fc45bac9722aefa6f022999cbb76242d143c31b314e2dbb38f034f4069d14e2
+
+[derle]
+betik  =  NOCONFIGURE=1 ./bootstrap.sh
+ekconf = --enable-gtk3
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

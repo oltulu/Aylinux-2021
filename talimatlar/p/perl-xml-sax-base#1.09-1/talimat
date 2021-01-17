@@ -1,0 +1,22 @@
+[paket]
+tanim   = Perl Base sınıfı SAX Sürücüler ve Süzgeçler
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://metacpan.org/release/XML-SAX-Base
+arsiv   = XML-SAX-Base-${surum}
+
+[gerek]
+derleme = perl
+calisma =
+
+[kaynak]
+1       = https://www.cpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-$surum.tar.gz
+
+[sha256]
+1       = 66cb355ba4ef47c10ca738bd35999723644386ac853abbeb5132841f5e8a2ad0
+
+[derle]
+tip     = perl
+
+[pakur]
+tip     = gnu

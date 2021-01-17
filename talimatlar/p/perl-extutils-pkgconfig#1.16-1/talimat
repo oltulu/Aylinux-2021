@@ -1,0 +1,24 @@
+[paket]
+tanim   = Perl Pkgconfig modülü 
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://gtk2-perl.sourceforge.net/
+
+[gerek]
+derleme = perl
+calisma = perl
+
+[kaynak]
+1     = https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-PkgConfig-$surum.tar.gz
+
+[md5]
+1 		= b86318f2b6ac6af3ee985299e1e38fe5
+
+[derle]
+betik = cd ExtUtils-PkgConfig-${surum}
+betik = perl Makefile.PL INSTALLDIRS=vendor
+betik = make
+	      
+[pakur]
+betik = cd ExtUtils-PkgConfig-${surum}
+betik = make install DESTDIR="${PKG}"

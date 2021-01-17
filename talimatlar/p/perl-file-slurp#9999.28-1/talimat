@@ -1,0 +1,23 @@
+[paket]
+tanim  =  Dosya işlem kütüphanesi
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://search.cpan.org/dist/File-Slurp
+
+[kaynak]
+1       = https://cpan.metacpan.org/authors/id/C/CA/CAPOEIRAB/File-Slurp-$surum.tar.gz
+
+[sha256]
+1       = 0587ce010bcb79db9e744f14b5498be97bf2c7f2474d971916d92f0a10827cee
+
+[derle]
+betik  = cd  "$SRC"/File-Slurp-$surum
+betik  = PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+betik  = make
+
+[pakur]
+betik  = cd  "$SRC"/File-Slurp-$surum
+tip    = gnu
+betik  = find "$PKG" -name '.packlist' -delete
+betik  = find "$PKG" -name '*.pod' -delete
+

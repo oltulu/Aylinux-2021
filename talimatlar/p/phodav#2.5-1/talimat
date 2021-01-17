@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME Web Dav uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = https://wiki.gnome.org/phodav
+
+[gerek]
+derleme = eudev pkg-config glib meson libsoup libxml2 avahi
+calisma =
+
+[kaynak]
+xz      = ${GNOME_SITE}/${isim}/${surum}
+
+[sha256]
+1       = 7dddc2b75e04d0866bb9c9a83028a597ebd73ef4c37bd6ebe1032a870b43b8c3
+
+[derle]
+ekconf  = -Dsystemd=disabled -Davahi=enabled -Dgtk_doc=disabled -Dudev=enabled
+tip     = meson
+
+[pakur]
+tip     = meson

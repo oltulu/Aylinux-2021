@@ -1,0 +1,22 @@
+[paket]
+tanim   = SAX2 NamespaceSupport sınıfına Perl modülü
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://metacpan.org/release/XML-NamespaceSupport
+arsiv   = XML-NamespaceSupport-$surum
+
+[gerek]
+derleme = perl
+calisma =
+
+[kaynak]
+1       = ${CPAN_SITE}/XML/XML-NamespaceSupport-${surum}.tar.gz
+
+[sha256]
+1       = 47e995859f8dd0413aa3f22d350c4a62da652e854267aa0586ae544ae2bae5ef
+
+[derle]
+tip     = perl
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,19 @@
+[paket]
+tanim  =  Perl gettext erişim bağlamı
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://metacpan.org/release/gettext
+arsiv   = Locale-gettext-$surum
+
+[kaynak]
+1      = ${CPAN_SITE}/Locale/gettext-${surum}.tar.gz
+
+[sha256]
+1      = 909d47954697e7c04218f972915b787bd1244d75e3bd01620bc167d5bbc49c15
+
+[derle]
+tip    = perl
+
+[pakur]
+tip    = gnu
+
