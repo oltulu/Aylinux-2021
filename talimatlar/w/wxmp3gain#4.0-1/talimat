@@ -1,0 +1,22 @@
+[paket]
+tanim		= MP3Gain için ücretsiz bir ön uç
+paketçi		= yasarciv67
+grup		= medya
+url			= https://cfgnunes.com/wxmp3gain/
+
+[gerek]
+derleme		= cmake mp3gain wxgtk3 gtk3
+calisma		= mp3gain
+
+[kaynak]
+1			= https://github.com/cfgnunes/wxmp3gain/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1			= 10ffaf8f7cb1231df01ba40459e688112f8f0b35fea16076a5150bcb795e6d5f
+
+[derle]
+betik		= sed -i '/^Comment/a Comment[tr]=MP3Gain için ücretsiz bir ön uç.' $SRC/$isim-$surum/debian/menu/wxmp3gain.desktop
+tip			= cmake
+
+[pakur]
+tip			= cmake

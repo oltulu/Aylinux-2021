@@ -1,0 +1,22 @@
+[paket]
+tanim   = WPA kablosuz ağlar için anahtar müzakeresi sağlayan bir yardımcı program
+paketci = oltulu
+grup 	= sistem
+url     = http://hostap.epitest.fi/wpa_supplicant
+
+[gerek]
+derleme = libnl dbus libxml2
+calisma = 
+
+[kaynak]
+1      = http://hostap.epitest.fi/releases/wpa_supplicant-$surum.tar.gz
+
+[sha1]
+1 		= 
+
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+dosya 	= pakur.sh

@@ -1,0 +1,23 @@
+[paket]
+tanim   = Açık kaynak MIDI sentezleyici 
+paketci = yasarciv67 
+grup    = kütüphane
+url     = https://www.mindwerks.net/projects/wildmidi
+
+[gerek]
+derleme  = cmake alsa-lib     
+calisma  = 
+
+[kaynak]
+gz  = https://github.com/Mindwerks/wildmidi/archive
+
+[sha256]
+1   = 498e5a96455bb4b91b37188ad6dcb070824e92c44f5ed452b90adbaec8eef3c5
+
+[derle]
+betik = cd $isim-$isim-$surum
+tip   = cmake
+
+[pakur]
+betik  = cd $isim-$isim-$surum
+tip    = cmake

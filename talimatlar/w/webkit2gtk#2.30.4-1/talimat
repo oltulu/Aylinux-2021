@@ -1,0 +1,26 @@
+[paket]
+tanim   = GTK+ Web içerik motoru
+paketci = milisarge  
+grup    = ağ 
+url     = https://webkitgtk.org
+
+[gerek]
+derleme    = ninja gperf gobject-introspection ruby cmake python geoclue enchant gst-plugins-base libxslt libsecret libwebp openjpeg2 harfbuzz gtk3 libnotify hyphen woff2 libwpe wpebackend-fdo bubblewrap gst-plugins-others libseccomp xdg-dbus-proxy
+calisma    =
+
+
+[kaynak]
+1     = https://webkitgtk.org/releases/webkitgtk-${surum}.tar.xz
+
+[sha256]
+1     = 6b80f0637a80818559ac8fd50db3b394f41cb61904fb9b3ed65fa51635806512
+
+[derle]
+betik  = mkdir build ; cd build 
+betik  = cmake ../webkitgtk-$surum -G Ninja -DPORT=GTK -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SKIP_RPATH=ON -DLIBEXEC_INSTALL_DIR=/usr/lib -DLIB_INSTALL_DIR=/usr/lib -Wno-dev
+betik  = sed -i -e 's/lib64/usr\/lib/g' $SRC/build/CMakeCache.txt
+betik  = ninja ${MAKEJOBS}
+
+[pakur]
+tip    = ninja
+

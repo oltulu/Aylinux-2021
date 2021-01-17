@@ -1,0 +1,22 @@
+[paket]
+tanim   = Komutların tam yolunu gösteren bir yardımcı program
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://savannah.gnu.org/projects/which/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz      = https://ftp.gnu.org/gnu/$isim
+
+[sha1]
+1 		= 
+
+[derle]
+betik = ./configure --prefix=/usr
+betik 	= make
+    	      
+[pakur]
+betik = make DESTDIR="$PKG" install

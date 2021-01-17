@@ -1,0 +1,21 @@
+[paket]
+tanim   = Wayland protokol kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://wayland.freedesktop.org
+
+[gerek]
+derleme = wayland
+calisma = 
+
+[kaynak]
+xz      = $url/releases
+
+[sha256]
+1 		= 9782b7a1a863d82d7c92478497d13c758f52e7da4f197aa16443f73de77e4de7
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

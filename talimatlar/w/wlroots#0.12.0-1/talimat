@@ -1,0 +1,23 @@
+[paket]
+tanim   = Modüler Wayland compositor kitaplığı
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/swaywm/wlroots
+
+[gerek]
+derleme = cmake meson mesa libglvnd libdrm wayland libinput libxkbcommon pixman wayland-protocols libxcb xcb-util-cursor xcb-util xcb-util-image
+calisma =
+
+[kaynak]
+1       = https://github.com/swaywm/wlroots/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = c9e9f4f6d2f526d0b2886daf3ec37e64831773059aa669fb98a88522a1626bdb
+
+[derle]
+ekconf  = -Dlibseat=disabled -Dlogind=disabled -Dxcb-errors=enabled -Dxcb-icccm=enabled -Dxwayland=enabled -Dxcb-errors=disabled -Dxcb-icccm=disabled
+
+tip     = meson
+
+[pakur]
+tip     = meson

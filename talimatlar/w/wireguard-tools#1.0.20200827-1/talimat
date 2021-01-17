@@ -1,0 +1,20 @@
+[paket]
+tanim   = Kernel modül destekli ileri seviye güvenli vpn uygulaması araçları
+paketci = milisarge
+grup 	= ağ
+url     = https://www.wireguard.com
+
+[gerek]
+derleme = 
+calisma = wireguard-kernel
+
+[kaynak]
+xz    	= https://git.zx2c4.com/wireguard-tools/snapshot
+
+[derle]
+betik   = make -C src/
+
+[pakur]
+betik   = make -C src/ DESTDIR="${PKG}/" WITH_BASHCOMPLETION=yes WITH_WGQUICK=yes WITH_SYSTEMDUNITS=no install
+betik   = install -d -m0755 "${PKG}"/usr/share/${isim}/
+betik   = cp -r contrib/ "${PKG}"/usr/share/${isim}/examples/

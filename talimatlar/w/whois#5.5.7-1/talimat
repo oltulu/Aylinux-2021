@@ -1,0 +1,24 @@
+[paket]
+tanim   = Akıllı WHOIS istemcisi
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/rfc1036/whois
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git      = https://github.com/rfc1036/whois
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd $isim
+betik 	= make CONFIG_FILE=/etc/whois.conf CFLAGS="$CFLAGS $CPPFLAGS" HAVE_ICONV=1
+    	      
+[pakur]
+betik = cd $isim
+betik 	= make prefix=/usr BASEDIR="$PKG" install-whois
+betik 	= install -Dm644 whois.conf -t "$PKG/etc"

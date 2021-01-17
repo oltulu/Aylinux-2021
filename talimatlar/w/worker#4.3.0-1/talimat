@@ -1,0 +1,22 @@
+[paket]
+tanim 	= X için dosya yöneticisi
+paketci	= milisarge
+grup 	= sistem
+url 	= http://www.boomerangsworld.de/worker
+
+[gerek]
+derleme = avfs libx11 file xorg-proto
+calisma = 
+
+[kaynak]
+bz2  	= http://www.boomerangsworld.de/cms/${isim}/downloads
+
+[sha256]
+1 		= 64df0d02c1d6e03edfbf665184a8822b95f7aa42c586ee898ce650fbc7d28a0b
+
+[derle]
+betik   = CPPFLAGS="-O0 -std=gnu++14" LDFLAGS=-pthread ./configure --enable-xft --prefix=/usr --disable-cxx-check
+betik	= make
+
+[pakur]
+tip     = gnu

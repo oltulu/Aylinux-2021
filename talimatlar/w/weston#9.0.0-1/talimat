@@ -1,0 +1,23 @@
+[paket]
+tanim   = Wayland düzenleyicinin referans uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = https://wayland.freedesktop.org/
+
+[gerek]
+derleme = libinput libdrm meson wayland wayland-protocols libpng libxkbcommon pixman pango cairo mtdev libwebp mesa libva libxcursor lcms2
+calisma =
+
+[kaynak]
+xz      = https://wayland.freedesktop.org/releases
+
+[sha256]
+1       = 5cf5d6ce192e0eb15c1fc861a436bf21b5bb3b91dbdabbdebe83e1f83aa098fe
+
+[derle]
+betik   = milis-meson $SRC/$isim-$surum build --libexec=lib/weston -D b_lto=false -D simple-dmabuf-drm=auto -Dtest-junit-xml=false -Dsystemd=false -Dlauncher-logind=false -Dbackend-rdp=false -Dcolor-management-colord=false -Dremoting=false -Dpipewire=false
+betik   = ninja -C build
+
+
+[pakur]
+betik   = DESTDIR="$PKG" meson install -C build

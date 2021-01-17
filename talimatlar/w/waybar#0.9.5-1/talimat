@@ -1,0 +1,26 @@
+[paket]
+tanim   = Wlroots tabanlı pencere yöneticileri için Polybar benzeri bar
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/Alexays/Waybar
+
+[gerek]
+derleme = meson libnl cmake glib wayland gobject-introspection libinput gtkmm spdlog jsoncpp fmt gtk-layer-shell pulseaudio
+calisma =
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+2       = https://github.com/HowardHinnant/date/archive/v3.0.0.tar.gz::date-3.0.0.tar.gz
+3       = https://github.com/mesonbuild/hinnant-date/releases/download/3.0.0-1/hinnant-date.zip
+
+[sha256]
+1       = d49c09ee253ca9cc9688d1b4d8602adc9bdae613b02e2fa1a2e7277ddc9e82e8
+2       = 87bba2eaf0ebc7ec539e5e62fc317cb80671a337c1fb1b84cb9e4d42c6dbebe3
+
+[derle]
+betik   = cd $SRC; mv Waybar-$surum waybar-$surum; mv date-3.0.0 waybar-$surum/subprojects/
+ekconf  = -Dmpd=disabled -Ddbusmenu-gtk=disabled -Dgtk-layer-shell=enabled -Dlibudev=enabled -Dman-pages=disabled -Dsystemd=disabled -Drfkill=enabled
+tip     = meson
+
+[pakur]
+tip     = meson

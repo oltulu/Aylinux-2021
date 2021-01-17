@@ -1,0 +1,28 @@
+[paket]
+tanim    = Ses sıkıştırma, işleme kütüphanesi
+paketci  = milisarge  
+grup     = kütüphane 
+url      = http://www.wavpack.com
+
+[kaynak]
+bz2  = $url
+2    = https://github.com/dbry/WavPack/commit/d5bf76b5.patch::CVE-2018-6767.patch
+3    = https://github.com/dbry/WavPack/commit/36a24c78.patch::CVE-2018-7253.patch
+4    = https://github.com/dbry/WavPack/commit/8e3fe45a.patch::CVE-2018-7254.patch
+
+[sha256]
+1  = 1939627d5358d1da62bc6158d63f7ed12905552f3a799c799ee90296a7612944
+2  = b5fad0bb3e9501709cb935f13eb5ff09a89168c06575b99d76c826e0462e201c
+3  = 2ab4589c16caddf7f9a1d99f10b3476505732355b98fdfca194e22172b08696c
+4  = 41a6c1ce80df806b3f96a7a2fa379372bb0ac91f55cb51b9e784574325a84347
+
+[derle]
+yama   = CVE-2018-6767.patch
+yama   = CVE-2018-7253.patch
+yama   = CVE-2018-7254.patch
+ekconf = --disable-asm
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

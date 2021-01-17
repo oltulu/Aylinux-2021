@@ -1,0 +1,23 @@
+[paket]
+tanim   = Milis üzerinde Windows imaj yazıcı
+paketci = Mehmet AKDEMİR
+grup    = medya
+url     = https://github.com/slacka/WoeUSB
+arsiv 	= WoeUSB-$surum
+
+[gerek]
+derleme = wxgtk3 parted ntfs-3g
+calisma = 
+
+[kaynak]
+1	  	= https://github.com/slacka/WoeUSB/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 0cab88a1113506f39d2f1c19532b2cd8d968c6a9f59129953c000e29e73f3d4f
+
+[derle]
+betik	= autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip		= gnu

@@ -1,0 +1,33 @@
+[paket]
+tanim   = Sconsa göre modellenen genel amaçlı yapı sistemi
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://waf.io/${isim}
+
+[gerek]
+derleme = gobject-introspection intltool
+calisma = accountsservice cinnamon-desktop dbus-glib libgnomekbd python-cairo python-gobject python-setproctitle python-xapp xapps
+
+[kaynak]
+1      = https://waf.io/${isim}-${surum}.tar.bz2
+2      = https://notabug.org/oltulu/Milis2/raw/master/talimatlar/w/waf%232.0.21-1/building-waf.md
+
+[sha512]
+1 		= b76c32d5992757af1f483dc59dc439e414d06d0325eaf1c8ac20bc20ee62bee25d8a97099d80e6d8e3a2ca9c9aeadf0543c2ba5005479e9617c1fbcfd60ba6b8
+
+[derle]
+betik 	= sed -e "/test(i/ s|dirname|'python3.7/site-packages/waf'|" -i waf-light
+betik 	= head -n 30 waf | tail -n 28 | sed -e 's/# //g; s/"""//g' > LICENSE
+betik 	= ./waf-light configure --prefix=/usr build --make-waf
+betik 	= sed -i '/^#==>$/,/^#<==$/d' waf
+    	      
+[pakur]
+betik 	= install -vDm 755 waf -t "$PKG/usr/bin"
+betik 	= install -vDm 644 wscript -t "$PKG/usr/share/$isim"
+betik 	= install -vDm 644 waflib/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib"
+betik 	= install -vDm 644 waflib/Tools/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib/Tools"
+betik 	= install -vDm 644 waflib/extras/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib/extras"
+betik 	= python -m compileall -d "/usr/lib/python3.7" "${PKG}/usr/lib/python3.7"
+betik 	= python -O -m compileall -d "/usr/lib/python${_py_ver}" "${PKG}/usr/lib/python3.7"
+betik 	= install -vDm 644 LICENSE -t "${PKG}/usr/share/licenses/${isim}"
+#betik 	= install -vDm 644 {README,../building-waf}.md -t "${PKG}/usr/share/doc/${isim}"

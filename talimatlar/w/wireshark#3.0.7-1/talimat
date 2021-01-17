@@ -1,0 +1,23 @@
+[paket]
+tanim   = Ağ protokolü analizörü
+paketci = milisarge
+grup    = ağ
+url     = https://www.wireshark.org
+
+[gerek]
+derleme = perl python libcap cmake ninja krb5 qt5-base qt5-tools qt5-multimedia qt5-svg snappy libpcap lua52 gnutls libmaxminddb libgcrypt sbc c-ares libxml2 libnghttp2 spandsp libssh
+calisma =
+
+[kaynak]
+1       = https://www.wireshark.org/download/src/${isim}-${surum}.tar.xz
+
+[sha256]
+1       = 3b2b279017753398b8d5deb440db5f98a205eea35f9417e5fa2893947e7992f2
+
+[derle]
+betik   = sed 's| Rev Unknown from unknown||' -i tools/make-version.pl
+betik   = cmake . -GNinja  $CMAKE_OPTS -DCMAKE_INSTALL_RPATH= -DCMAKE_SKIP_RPATH=ON
+betik   = ninja
+
+[pakur]
+betik   = DESTDIR="${PKG}" ninja install

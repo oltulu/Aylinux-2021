@@ -1,0 +1,25 @@
+[paket]
+tanim   = Bir dizi pastebin hizmetine yapıştırmayı otomatikleştiren bir komut dosyası
+paketci = Cihan_Alkan
+grup 	= mate
+url     = http://wgetpaste.zlin.dk/
+
+[gerek]
+derleme = meson xtrans
+calisma = cinnamon-desktop dbus-glib libsm libcanberra xapps
+
+[kaynak]
+1      = http://wgetpaste.zlin.dk/$isim-$surum.tar.bz2
+2     = http://wgetpaste.zlin.dk/$isim.example
+
+
+[sha256]
+#1 		= 66301a1eb748f646c419ced76f3388d8d6af0436716c737842cd85f359bd38d4
+
+[derle]
+
+	      
+[pakur]
+betik 	= install -Dm755 $isim $PKG/usr/bin/$isim
+betik 	= install -Dm644 _${isim} $PKG/usr/share/zsh/site-functions/_${isim}
+betik 	= install -Dm644 /sources/${isim}.example $PKG/usr/share/${isim}/${isim}.example

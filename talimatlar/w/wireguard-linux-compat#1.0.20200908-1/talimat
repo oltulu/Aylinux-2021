@@ -1,0 +1,20 @@
+[paket]
+tanim   = Kernel modül destekli ileri seviye güvenli vpn uygulaması
+paketci = milisarge
+grup 	= ağ
+url     = https://www.wireguard.com
+
+[gerek]
+derleme = kernel5519
+calisma = 
+
+[kaynak]
+xz    	= https://git.zx2c4.com/wireguard-linux-compat/snapshot
+
+[derle]
+betik   = unset LDFLAGS
+betik   = make -C src/ KERNELDIR=/usr/lib/modules/5.5.19-milis/build module
+     
+[pakur]
+betik   = install -v -D -m644 src/wireguard.ko $PKG/usr/lib/modules/5.5.19-milis/extra/wireguard.ko
+

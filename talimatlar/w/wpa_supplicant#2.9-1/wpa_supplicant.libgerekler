@@ -1,0 +1,11 @@
+libcrypto.so.1.1
+libc.so.6
+libdbus-1.so.3
+libdl.so.2
+libm.so.6
+libnl-3.so.200
+libnl-genl-3.so.200
+libnl-route-3.so.200
+libreadline.so.8
+librt.so.1
+libssl.so.1.1

@@ -1,0 +1,24 @@
+[paket]
+tanim   = EWMH uyumlu pencere yöneticileri için etkileşim aracı
+paketci = milisarge
+grup    = sistem
+url     = https://sites.google.com/site/tstyblo/wmctrl/
+
+[gerek]
+derleme = libxmu glib
+calisma =
+
+[kaynak]
+1       = https://sites.google.com/site/tstyblo/wmctrl/wmctrl-${surum}.tar.gz
+dosya   = wmctrl_1.07-6.diff
+
+[sha256]
+1       = d78a1efdb62f18674298ad039c5cbdb1edb6e8e149bb3a8e3a01a4750aa3cca9
+
+[derle]
+yama    = wmctrl_1.07-6.diff
+betik   = ./configure --bindir="$PKG/usr/bin" --mandir="$PKG/usr/share/man"
+betik   = make
+
+[pakur]
+betik   = make install

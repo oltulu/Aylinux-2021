@@ -1,0 +1,17 @@
+[paket]
+tanim   = HTTP, HTTPS ve FTP protokolü bazlı dosya indirme uygulaması
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.gnu.org/software/wget
+
+[kaynak]
+gz     	= http://ftp.gnu.org/gnu/$isim
+
+[sha256]
+#1 		= b783b390cb571c837b392857945f5a1f00ec6b043177cc42abb8ee1b542ee1b3
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+tip     = gnu

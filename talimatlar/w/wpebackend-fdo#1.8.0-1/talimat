@@ -1,0 +1,21 @@
+[paket]
+tanim   = WPE WebKit için freedesktop.org arka ucu
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://wpewebkit.org
+
+[gerek]
+derleme    = cmake libwpe glib mesa wayland
+calisma    =
+
+[kaynak]
+xz          = ${url}/releases
+
+[sha256]
+1          = a919ca4a5bc445f9419a5b7f3781cfc98e5abcf5d7259eb1869f5ab20fd18baf
+
+[derle]
+tip     = cmake  
+
+[pakur]
+tip     = cmake

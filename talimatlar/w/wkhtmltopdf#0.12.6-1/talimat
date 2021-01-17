@@ -1,0 +1,22 @@
+[paket]
+tanim   = Webkit kullanarak HTML'yi PDF'ye dönüştürme
+paketci = milisarge
+grup    = ofis
+url     = https://wkhtmltopdf.org
+
+[gerek]
+derleme = qt5-tools qt5-xmlpatterns qt5-svg qt5-webkit qt5-svg
+calisma =
+
+[kaynak]
+1       = https://github.com/wkhtmltopdf/wkhtmltopdf/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = adcced78492e7366d940c66a1327a85d3ae8c45190f486f545fdaa84cac662f0
+
+[derle]
+ekconf  = INSTALLBASE=/usr
+tip     = qmake
+
+[pakur]
+tip     = qmake
