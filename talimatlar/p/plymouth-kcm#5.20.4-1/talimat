@@ -1,0 +1,25 @@
+[paket]
+tanim   = Plymouth (Boot) temasını yönetmek için KCM
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://invent.kde.org/plasma/plymouth-kcm.git
+
+[gerek]
+derleme =
+calisma =  
+
+[kaynak]
+xz     = https://download.kde.org/stable/plasma/$surum
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake .. -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/usr/share/ECM -DBUILD_TESTING=OFF
+betik 	= make
+                	      
+[pakur]
+betik 	= cd build
+tip = gnu

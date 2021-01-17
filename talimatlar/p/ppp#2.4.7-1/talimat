@@ -1,0 +1,35 @@
+[paket]
+tanim   = PPP (Point-to-Point Protocol) arkaplan uygulaması
+paketci = milisarge
+grup 	= sistem
+url     = https://ppp.samba.org
+
+[gerek]
+derleme = libpcap
+calisma = 
+
+[kaynak]
+gz      = https://ftp.samba.org/pub/ppp
+dosya   = CVE-2015-3310.patch
+3       = https://github.com/paulusmack/ppp/commit/50a2997b.patch::ppp-build-fix.patch
+4       = https://github.com/paulusmack/ppp/commit/3c7b86229f7bd2600d74db14b1fe5b3896be3875.patch::ppp-openssl.patch
+dosya   = $isim-ip-up
+dosya   = $isim-ip-down
+dosya   = $isim-ipv6-up
+dosya   = $isim-ipv6-down
+dosya   = $isim-options
+dosya   = $isim-ipv6-up.d.iface-config.sh
+dosya   = $isim-ip-down.d.dns.sh
+dosya   = $isim-ip-up.d.dns.sh
+
+[sha256]
+1 		= 02e0a3dd3e4799e33103f70ec7df75348c8540966ee7c948e4ed8a42bbccfb30
+
+[derle]
+yama    = 2
+yama    = ppp-build-fix.patch
+yama    = ppp-openssl.patch
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

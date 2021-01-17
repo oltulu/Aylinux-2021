@@ -1,0 +1,25 @@
+[paket]
+tanim   = Rust ile yazılmış birden fazla USB cihazını paralel olarak yazabilen Linux yardımcı programı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/pop-os/popsicle
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://notabug.org/oltulu/Ceviri/raw/master/popsicle.tar.gz
+
+
+
+[sha512]
+    #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+
+[derle]
+betik 	= cd $isim
+betik 	= make
+        	      
+[pakur]
+betik 	= cd $isim
+betik 	= make DESTDIR="${PKG}/" prefix=/usr install

@@ -1,0 +1,29 @@
+[paket]
+tanim   = Postgresql veritabanı
+paketci = milisarge
+grup 	= sistem
+url     = https://www.postgresql.org
+
+[gerek]
+derleme = krb5 libxml2 python tcl openssl pam icu openldap llvm clang
+calisma = 
+
+[kaynak]
+bz2    = https://ftp.postgresql.org/pub/source/v${surum}
+dosya  = postgresql-run-socket.patch
+dosya  = postgresql-perl-rpath.patch
+dosya  = postgresql.pam
+dosya  = postgresql.logrotate
+dosya  = postgresql-check-db-dir
+
+[sha256]
+1 		= bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
+2       = 8538619cb8bea51078b605ad64fe22abd6050373c7ae3ad6595178da52f6a7d9
+3       = 5f73b54ca6206bd2c469c507830261ebd167baca074698d8889d769c33f98a31
+6       = 4fbd656cc30de8d82b2e19a93d5ef7ad5770a8942123b785c15d1b8dc78ea6d1
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

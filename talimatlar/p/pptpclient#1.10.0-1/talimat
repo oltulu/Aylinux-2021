@@ -1,0 +1,26 @@
+[paket]
+tanim   = Noktadan Noktaya Tünel Protokolü İstemcisi
+paketci = milisarge
+grup    = ağ
+url     = http://pptpclient.sourceforge.net/
+arsiv   = pptp-${surum}
+
+[gerek]
+derleme = 
+calisma = iproute2 ppp
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/pptpclient/files/pptp-${surum}.tar.gz
+
+[sha256]
+1       = 82492db8e487ce73b182ee7f444251d20c44f5c26d6e96c553ec7093aefb5af4
+
+[derle]
+betik   = sed -i -e "/CFLAGS  =/ c\CFLAGS = ${CFLAGS}" Makefile
+betik   = sed -i -e "/LDFLAGS =/ c\LDFLAGS = ${LDFLAGS}" Makefile
+betik   = sed -i 's#/bin/ip#/usr/bin/ip#' routing.c
+betik   = sed -i "/BINDIR/s#/sbin#/bin#" Makefile
+betik   = make
+
+[pakur]
+tip     = gnu

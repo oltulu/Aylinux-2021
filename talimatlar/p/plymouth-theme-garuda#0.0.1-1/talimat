@@ -1,0 +1,23 @@
+[paket]
+tanim   = Garuda linux plymouth teması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://gitlab.com/garuda-linux/themes-and-settings/plymouth-theme-garuda
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git      = https://gitlab.com/garuda-linux/themes-and-settings/plymouth-theme-garuda
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd $SRC/plymouth-theme-garuda
+                	      
+[pakur]
+betik 	= cd $SRC/plymouth-theme-garuda
+betik 	= mkdir -p $PKG/usr/share/plymouth/themes/plymouth-theme-garuda
+betik 	= install -Dm644 * "${PKG}"/usr/share/plymouth/themes/plymouth-theme-garuda

@@ -1,0 +1,24 @@
+[paket]
+tanim   = Panellerinizde pencere düğmelerini göstermek için Plazma 5 uygulaması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/psifidotos/applet-window-buttons
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git     = https://github.com/psifidotos/applet-window-buttons
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake ../applet-window-buttons -DCMAKE_INSTALL_PREFIX=/usr
+            	      
+[pakur]
+betik 	= cd build
+betik 	= make DESTDIR="$PKG" install

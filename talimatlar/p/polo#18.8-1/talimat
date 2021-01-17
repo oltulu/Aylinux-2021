@@ -1,0 +1,36 @@
+[paket]
+tanim = Güçlü modern bir dosya yöneticisi.
+paketci = yasarciv67
+grup = sistem
+url = https://teejee2008.github.io/polo
+
+[gerek]
+derleme = gtk3 libgee libsoup vte3 rsync gvfs p7zip vala json-glib
+calisma = 
+
+[kaynak]
+1 = https://github.com/teejee2008/polo/archive/v$surum-beta.tar.gz::$isim-$surum.tar.gz
+2 = https://notabug.org/milislinux/ceviriler/raw/master/polo/polo-tr.po
+dosya = 0001-Re-add-support-for-vte291-0.52.patch
+dosya = polo-gtk.desktop
+
+[sha256]
+1 = 1112469c2107ac1ed08d1f2f966d7ee21baff773ff56dc56c137eaef2468515f
+2 = 0b73f28f5804586aa883910ee0a1df20d8432d992266106244e59f9e6e3d11a7
+3 = 6b19fac433edad8e126a6c66816e03509d04fce6ab5ee85bedbed4f134b4d6a9
+4 = 6f4f17088eaf06f81a63a6012ba9f287e07d417809fae4ae36056662209858d7
+
+[derle]
+betik = cd $SRC/$isim-$surum-beta
+yama = 3
+betik = cp ../polo-tr.po $SRC/$isim-$surum-beta/po/
+betik = make
+
+[pakur]
+betik = cd $SRC/$isim-$surum-beta
+tip = gnu   
+betik = mkdir -p $PKG/usr/share/locale/tr/LC_MESSAGES/
+betik = msgfmt -o $PKG/usr/share/locale/tr/LC_MESSAGES/polo.mo $SRC/polo-tr.po
+betik = ln -s /usr/bin/polo-gtk $PKG/usr/bin/polo
+betik = rm $PKG/usr/bin/polo-uninstall
+betik = mv ../polo-gtk.desktop $PKG/usr/share/applications/

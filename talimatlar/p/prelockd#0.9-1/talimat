@@ -1,0 +1,22 @@
+[paket]
+tanim   = bellek eşlemeli ikili dosyaları ve kitaplıkları, düşük bellek koşullarında sistem yanıtını iyileştirmek için bellekte kilitleyen bir arka plan programıdır.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/hakavlad/prelockd
+
+[gerek]
+derleme = gobject-introspection
+calisma = xorg-mesa xorg-libdrm xorg-libxext xorg-libxdamage xorg-libxcomposite gdk-pixbuf pango xorg-libxrandr
+
+[kaynak]
+1      = https://github.com/hakavlad/prelockd/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+#1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
+
+[derle]
+
+betik 	= cd $SRC
+    	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" PREFIX="/usr" SBINDIR="/usr/bin" SYSCONFDIR="/etc" install

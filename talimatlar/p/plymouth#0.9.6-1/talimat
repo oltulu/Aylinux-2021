@@ -1,0 +1,42 @@
+[paket]
+tanim   = Çekirdek modu ayarı desteğine sahip bir grafik önyükleme açılış ekranı
+paketci = Cihan_Alkan
+url     =http://www.freedesktop.org/wiki/Software/Plymouth
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          =https://gitlab.freedesktop.org/plymouth/plymouth/-/archive/master/plymouth-master.tar.gz
+dosya = aylinux-logo.png
+dosya = plymouth-start.path
+dosya = plymouth.encrypt_hook
+dosya = plymouth.encrypt_install
+dosya = plymouth.initcpio_hook
+dosya = plymouth.initcpio_install
+dosya = plymouth-quit.service.in.patch
+dosya = plymouth-update-initrd.patch
+dosya = plymouthd.defaults
+
+[sha256]
+#          = 55a461003ece0a4daeffb8b7ac2178977c5ce024a7e688d24f6d2230465b50ba
+
+[derle]
+betik     =  cd plymouth-master
+betik     =  patch -p1 -i $SRC/plymouth-update-initrd.patch
+betik     =  patch -p1 -i $SRC/plymouth-quit.service.in.patch
+betik      = install -Dm644 "$SRC/plymouthd.defaults" src/plymouthd.defaults
+betik     = LDFLAGS="$LDFLAGS -ludev" ./autogen.sh --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc --localstatedir=/var --libdir=/usr/lib --libexecdir=/usr/lib --sbindir=/usr/bin --enable-drm --enable-tracing --enable-pango --enable-gtk=no --with-release-file=/etc/os-release  --with-logo=/usr/share/plymouth/aylinux-logo.png --enable-documentation=no --with-background-color=0x000000 --with-background-start-color-stop=0x000000 --with-background-start-color-stop=0x000000 --with-background-end-color-stop=0x4D4D4D --without-rhgb-compat-link --without-system-root-install --disable-systemd-integration
+betik     = make
+
+[pakur]
+betik     =  cd plymouth-master
+betik      = make DESTDIR="$PKG" install
+betik      = install -Dm644 "$SRC/aylinux-logo.png"             "$PKG/usr/share/plymouth/aylinux-logo.png"
+betik      = install -Dm644 "$SRC/plymouth.encrypt_hook"     "$PKG/usr/lib/initcpio/hooks/plymouth-encrypt"
+betik      = install -Dm644 "$SRC/plymouth.encrypt_install"  "$PKG/usr/lib/initcpio/install/plymouth-encrypt"
+betik      = install -Dm644 "$SRC/plymouth.initcpio_hook"    "$PKG/usr/lib/initcpio/hooks/plymouth"
+betik      = install -Dm644 "$SRC/plymouth.initcpio_install" "$PKG/usr/lib/initcpio/install/plymouth"
+betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/usr/share/plymouth/plymouthd.defaults"
+betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/etc/plymouth/plymouthd.conf"

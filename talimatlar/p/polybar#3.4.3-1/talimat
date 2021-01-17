@@ -1,0 +1,23 @@
+[paket]
+tanim   = Hızlı ve kullanımı kolay durum çubuğu
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/polybar/polybar
+arsiv   = $isim
+
+[gerek]
+derleme = cmake xcb-proto python cairo xcb-util-image xcb-util-wm xcb-util-xrm zlib xcb-util-renderutil xcb-util-cursor libxcb jsoncpp alsa-lib
+calisma = awesome-fonts
+
+[kaynak]
+1       = ${url}/releases/download/${surum}/polybar-${surum}.tar
+
+[sha256]
+1       = d4ed121c1d3960493f8268f966d65a94d94c4646a4abb131687e37b63616822f
+
+[derle]
+ekconf  = -DENABLE_ALSA=ON
+tip     = cmake
+
+[pakur]
+tip     = cmake

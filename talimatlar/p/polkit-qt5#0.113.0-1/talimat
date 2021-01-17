@@ -1,0 +1,26 @@
+[paket]
+tanim   = Geliştiricilerin güzel bir Qt tarzı API ile PolicyKit API'ye erişmesine olanak tanıyan bir kitaplık
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://download.kde.org/stable/polkit-qt-1
+
+[gerek]
+derleme = 
+calisma = qt5-base
+
+[kaynak]
+1      = https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-$surum.tar.xz
+
+[sha256]
+1 		= 5b866a2954ef10ffb66156e2fe8ad0321b5528a8df2e4a91b02f5041ce5563a7
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake ../polkit-qt-1-$surum -DCMAKE_INSTALL_PREFIX=/usr
+betik 	= make
+    	      
+[pakur]
+betik 	= cd build
+betik 	= make DESTDIR="$PKG" install
+betik 	= mv $PKG/usr/lib64 $PKG/usr/lib

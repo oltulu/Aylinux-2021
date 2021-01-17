@@ -1,0 +1,23 @@
+[paket]
+tanim   = MIDI verilerinin gerçek zamanlı girişi ve çıkışı
+paketci = milisarge
+grup    = kütüphane
+url     = http://portmedia.sourceforge.net/
+arsiv   = portmidi-1
+
+[gerek]
+derleme = cmake unzip alsa-lib
+calisma =
+
+[kaynak]
+git     = https://github.com/schollz/portmidi-1
+
+[derle]
+betik   = sed -e "s|/usr/local|/usr|g" -i */CMakeLists.txt pm_python/setup.py
+ekconf  = -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY=Release -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=Release -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=Release
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik   = ln -s libportmidi.so ${PKG}/usr/lib/libporttime.so
+betik   = ln -s libportmidi.a ${PKG}/usr/lib/libporttime.a

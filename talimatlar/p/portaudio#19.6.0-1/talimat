@@ -1,0 +1,24 @@
+[paket]
+tanim   = Taşınabilir çapraz platform ses I/O kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.portaudio.com
+
+[gerek]
+derleme    = alsa-lib jack
+calisma    =
+
+[kaynak]
+1          = http://www.portaudio.com/archives/pa_stable_v190600_20161030.tgz::$isim-$surum.tar.gz
+
+[sha256]
+1          = f5a21d7dcd6ee84397446fa1fa1a0675bb2e8a4a6dceb4305a8404698d8d1513
+
+[derle]
+betik      = cd $isim
+ekconf     = --enable-cxx --with-jack
+tip        = gnu
+
+[pakur]
+betik      = cd $isim
+tip        = gnu

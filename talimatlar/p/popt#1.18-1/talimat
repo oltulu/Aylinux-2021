@@ -1,0 +1,18 @@
+[paket]
+tanim   = Komut satırı seçenek ayrıştırıcı
+paketci = milisarge
+grup 	= temel
+url     = http://rpm5.org
+
+[kaynak]
+gz     	= https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x
+
+[sha256]
+#1 		= e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8
+
+[derle]
+tip     = gnu
+     
+[pakur]
+tip     = gnu
+betik   = rm -f $PKG/usr/lib/*.a

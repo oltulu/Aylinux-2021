@@ -1,0 +1,22 @@
+[paket]
+tanim   = Poly/ML Standard ML (SML) programlama dili
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.polyml.org/
+
+[gerek]
+derleme = libffi
+calisma =
+
+[kaynak]
+github  = ${isim}/${isim}
+
+[sha256]
+1       = fa0507b44470b4e07a061ef6a8896efe42710d8436e15721d743572ad2f7753b
+
+[derle]
+ekconf  = --with-system-libffi --enable-shared
+tip     = gnu
+
+[pakur]
+tip     = gnu

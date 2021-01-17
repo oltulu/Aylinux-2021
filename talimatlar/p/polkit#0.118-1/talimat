@@ -1,0 +1,29 @@
+[paket]
+tanim   = Yetkilendirme araç seti
+paketci = milisarge
+grup 	= sistem
+url     = https://www.freedesktop.org/wiki/Software/polkit
+
+[gerek]
+derleme = glib gobject-introspection spidermonkey
+calisma = 
+
+[kaynak]
+gz      = https://www.freedesktop.org/software/polkit/releases
+dosya   = polkit-1.pam
+
+[sha256]
+1 		= 88170c9e711e8db305a12fdb8234fac5706c61969b94e084d0f117d8ec5d34b1
+2 		= 336599f2092de0f728d674dbc4bb5ed35f3ca832a0ab4f2ea1f4748b0c89fcd3
+
+[derle]
+betik   = autoreconf -fi
+betik   = sed -e 's,/sys/fs/cgroup/systemd/,/sys/fs/cgroup,g' -i configure
+ekconf  = --disable-systemd --disable-libsystemd-login --disable-libelogind --disable-static --with-authfw=pam  --with-os-type=milis --with-mozjs=mozjs-60.0
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
+betik   = install -d -o root -g 102 -m 750 "$pkgdir"/{etc,usr/share}/polkit-1/rules.d
+betik   = cp -rf $SRC/polkit-1.pam $PKG/etc/pam.d/polkit-1
+

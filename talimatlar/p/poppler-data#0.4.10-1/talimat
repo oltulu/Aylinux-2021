@@ -1,0 +1,19 @@
+[paket]
+tanim   = Poppler PDF oluşturma kütüphanesi için verileri kodlama
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://poppler.freedesktop.org
+
+[kaynak]
+gz      = $url
+
+[sha256]
+1       = 1f9c7e7de9ecd0db6ab287349e31bf815ca108a5a175cf906a90163bdbe32012
+
+[derle]
+betik   = echo "Derleme olmayacak"
+
+[pakur]
+betik   = make prefix=/usr DESTDIR=$PKG install
+betik   = install -m755 -d $PKG/usr/share/licenses/$isim
+betik	= install -m644 COPYING COPYING.adobe  $PKG/usr/share/licenses/$isim/

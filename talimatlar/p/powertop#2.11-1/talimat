@@ -1,0 +1,22 @@
+[paket]
+tanim   = Güç tüketimi ve güç yönetimi ile ilgili sorunları teşhis etmek için bir araç
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://01.org/powertop/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://github.com/fenrus75/powertop/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+[sha1]
+#1 		= 
+
+[derle]
+betik = ./autogen.sh
+betik = ./configure.ac --prefix=/usr --sbindir=/usr/bin
+betik = make
+    	      
+[pakur]
+betik = make DESTDIR="${PKG}" install
