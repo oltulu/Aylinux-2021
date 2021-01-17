@@ -1,0 +1,22 @@
+[paket]
+tanim   = Komut satırı düzenleme ve tarihçe erişimleri sunan kütüphane
+paketci = milisarge
+grup 	= onsistem
+url     = http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+
+[kaynak]
+gz      = http://ftp.gnu.org/gnu/readline
+
+[sha256]
+#1 		= e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
+
+[derle]
+betik 	= ./configure --prefix=/usr
+betik 	= make -j1 SHLIB_LIBS=-lncurses
+	      
+[pakur]
+betik 	= make -j1 DESTDIR=$PKG install
+betik 	= mv $PKG/usr/lib/lib*.so.* $PKG/usr/lib
+betik 	= ln -sf ../../lib/libhistory.so.$surum $PKG/usr/lib/libhistory.so
+betik 	= ln -sf ../../lib/libreadline.so.$surum $PKG/usr/lib/libreadline.so
+

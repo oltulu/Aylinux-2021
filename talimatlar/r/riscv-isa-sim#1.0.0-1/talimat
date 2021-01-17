@@ -1,0 +1,19 @@
+[paket]
+tanim   = Spike, RISC-V ISA Simulatorü
+paketci = milisarge
+grup	= sistem
+url 	= https://github.com/riscv/riscv-isa-sim
+arsiv   = riscv-isa-sim
+
+[gerek]
+derleme = dtc
+calisma = 
+
+[kaynak]
+git 	= https://github.com/riscv/riscv-isa-sim
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

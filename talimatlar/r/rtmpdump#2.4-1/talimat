@@ -1,0 +1,27 @@
+[paket]
+tanim   = RTMP akışlarını indirme aracı
+paketci = yasarciv67
+grup    = ağ
+url     = https://rtmpdump.mplayerhq.hu
+
+[gerek]
+derleme = gnutls zlib
+calisma = 
+
+[kaynak]
+1 = https://git.ffmpeg.org/gitweb/rtmpdump.git/snapshot/c5f04a58fc2aeea6296ca7c44ee4734c18401aa3.tar.gz
+
+[sha256]
+1 = fd8c21263d93fbde8bee8aa6c5f6a657789674bb0f9e74f050651504d5f43b46
+
+[derle]
+betik  = cd $isim-c5f04a5
+betik  = sed -e 's/^CRYPTO=OPENSSL/#CRYPTO=OPENSSL/' -e 's/#CRYPTO=GNUTLS/CRYPTO=GNUTLS/' -i Makefile -i librtmp/Makefile
+betik  = sed -e 's|OPT=|&-fPIC |' -e 's|OPT|OPTS|' -e 's|CFLAGS=.*|& $(OPT)|' -i librtmp/Makefile
+betik  = make CC="gcc" OPT="$CFLAGS" XLDFLAGS="$LDFLAGS" SYS=posix $MAKEJOBS
+
+[pakur]
+betik = cd $isim-c5f04a5
+betik = install -d $PKG/usr/lib
+betik = make prefix=/usr sbindir=/usr/bin mandir=/usr/share/man DESTDIR=$PKG install
+betik = rm -f $PKG/usr/lib/*.a

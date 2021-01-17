@@ -1,0 +1,23 @@
+[paket]
+tanim   = Ruby programlama dili
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.ruby-lang.org
+
+[gerek]
+derleme    = libffi libyaml gdbm
+calisma    =
+
+[kaynak]
+1          = https://cache.ruby-lang.org/pub/ruby/${surum%.*}/${isim}-${surum}.tar.bz2
+
+[sha256]
+1          = fa1ecc67b99fa13201499002669412eae7cfbe2c30c4f1f4526e8491edfc5fa7
+
+[derle]
+betik      = rm -rf gems
+ekconf     = --sharedstatedir=/var/lib --libexecdir=/usr/lib/ruby --enable-shared --disable-rpath --with-dbm-type=gdbm_compat
+tip        = gnu
+
+[pakur]
+betik      = make DESTDIR=${PKG} install-nodoc

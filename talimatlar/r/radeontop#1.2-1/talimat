@@ -1,0 +1,23 @@
+[paket]
+tanim   = Radeon ekran karti izleme araci
+paketci = mmkarakaya
+grup    = sistem
+url     = https://github.com/clbr/radeontop
+
+[gerek]
+derleme = libdrm libxcb ncurses
+calisma = 
+
+[kaynak]
+1       = $url/archive/v${surum}.tar.gz
+
+[sha256]
+1       = dced8f8e64e6bfac1f4054b5cdd986e984b80766547ba272870bc25291c68349
+
+[derle]
+betik   = sed -i "s/sbin/bin/" Makefile
+betik   = export amdgpu=1
+betik   = make
+
+[pakur]
+tip     = gnu

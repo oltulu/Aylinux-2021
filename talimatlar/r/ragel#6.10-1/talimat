@@ -1,0 +1,19 @@
+[paket]
+tanim   = Sonlu durum makinelerini normal dillerden çalıştırılabilir C, C ++, Objective-C veya D koduna derler.
+paketci = oltulu
+grup 	= geliştirme
+url     = http://www.complang.org/ragel/
+
+[kaynak]
+gz      = https://www.colm.net/files/$isim
+
+[md5]
+1 		= 748cae8b50cffe9efcaa5acebc6abf0d
+
+[derle]
+betik   = ./configure --prefix=/usr CXXFLAGS="$CXXFLAGS -std=gnu++98" 
+betik   = make
+	      
+[pakur]
+tip = gnu
+betik   = install -m0644 -D ragel.vim "$PKG"/usr/share/vim/vimfiles/syntax/ragel.vim

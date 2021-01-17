@@ -1,0 +1,22 @@
+[paket]
+tanim   = RESTful kütüphane
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.gnome.org
+
+[gerek]
+derleme    = glib libxml2 libsoup gobject-introspection
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/${isim}/${surum%.*}
+
+[sha256]
+1          = 0513aad38e5d3cedd4ae3c551634e3be1b9baaa79775e53b2dba9456f15b01c9
+
+[derle]
+betik      = autoreconf -fi
+tip        = gnu
+
+[pakur]
+tip        = gnu

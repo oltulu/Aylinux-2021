@@ -1,0 +1,23 @@
+[paket]
+tanim   = SAX/DOM tarzı API ile C++ için hızlı bir JSON ayrıştırıcı/oluşturucu
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/miloyip/rapidjson
+
+[gerek]
+derleme = cmake
+calisma =
+
+[kaynak]
+github  = miloyip/${isim}
+
+[sha256]
+1       = bf7ced29704a1e696fbccf2a2b4ea068e7774fa37f6d7dd4039d0787f8bed98e
+
+[derle]
+betik   = find -name CMakeLists.txt | xargs sed -e 's|-Werror||' -i
+betik   = export CXXFLAGS="-Wno-type-limits"
+tip     = cmake
+
+[pakur]
+tip     = cmake

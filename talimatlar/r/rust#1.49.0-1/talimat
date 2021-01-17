@@ -1,0 +1,29 @@
+[paket]
+tanim   = Rust, sistem programlama dili
+paketci = milisarge
+grup 	= geliştirme
+url     = http://www.rust-lang.org
+arsiv   = ${isim}c-$surum-src
+
+[gerek]
+derleme = libssh2 python cmake llvm
+calisma =
+
+[kaynak]
+1      = https://static.rust-lang.org/dist/rustc-$surum-src.tar.xz
+2      = https://static.rust-lang.org/dist/2020-05-07/rust-std-1.44.0-x86_64-unknown-linux-gnu.tar.xz!
+3      = https://static.rust-lang.org/dist/2020-05-07/rustc-1.44.0-x86_64-unknown-linux-gnu.tar.xz!
+4      = https://static.rust-lang.org/dist/2020-05-07/cargo-0.45.0-x86_64-unknown-linux-gnu.tar.xz!
+
+[sha256]
+1 	   = f8412adac2f5d974b2f06c5bd4be7361084d18a678d098bf05de5ccfa57b74a9
+2      = fe1d8d81950eea1f67219abc49bc1ae88b2b27fd02d1bffa38b43bc5bff05124
+3 	   = a18b89572ff2e55eb9e0428efcdb60eacd82fe28c4d825d169b0ffc9e3c55ceb
+4 	   = 4ee5811bfb5fd0eb26fcf7f9b57f4e8fced458219ba52bff6d2474321ff39c18
+
+[derle]
+dosya  = derle.sh
+	      
+[pakur]
+betik  = export DESTDIR="$PKG"
+betik  = LC_ALL=C python3 ./x.py install

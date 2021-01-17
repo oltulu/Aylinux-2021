@@ -1,0 +1,22 @@
+[paket]
+tanim   = RDF Sorgu Kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://librdf.org/rasqal
+
+[gerek]
+derleme    = raptor
+calisma    =
+
+[kaynak]
+1          = http://librdf.org/dist/source/rasqal-${surum}.tar.gz
+
+[sha256]
+1          = 6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c
+
+[derle]
+ekconf     = --enable-release
+tip        = gnu
+
+[pakur]
+tip        = gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Pencere değiştirici ve çalıştırma iletişim kutu desteği
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/davatorium/rofi
+
+[gerek]
+derleme = check glib libxinerama librsvg libxkbcommon pango startup-notification xcb-util-wm xcb-util-xrm
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = c487a8a010345bd596c433702e054db3728f0e8f275c325f58ee2e9a1259c614
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

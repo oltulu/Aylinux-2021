@@ -1,0 +1,23 @@
+[paket]
+tanim   = Windows Uzak Masaüstü Hizmetleri için açık kaynaklı istemci
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.rdesktop.org/
+
+[gerek]
+derleme = openssl alsa-lib libsamplerate libxrandr pcsc-lite libgssglue krb5 libxcursor libtasn1 gnutls
+calisma =
+
+[kaynak]
+gz      = https://github.com/rdesktop/rdesktop/releases/download/v${surum}
+
+[sha256]
+1       = 473c2f312391379960efe41caad37852c59312bc8f100f9b5f26609ab5704288
+
+[derle]
+betik   = ./bootstrap
+ekconf  = --with-ipv6 --enable-smartcard
+tip     = gnu
+
+[pakur]
+tip     = gnu

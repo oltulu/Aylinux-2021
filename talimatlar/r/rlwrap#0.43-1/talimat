@@ -1,0 +1,16 @@
+[paket]
+tanim   = Readline tarzı uygulamalara destek tarihçe sağlar
+paketci = milisarge  
+grup    = sistem   
+url     = https://github.com/hanslub42/rlwrap
+
+[kaynak]
+1      = https://github.com/hanslub42/rlwrap/archive/v${surum}.tar.gz:: rlwrap-$surum.tar.gz
+
+[derle]
+betik  = autoreconf -vi
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

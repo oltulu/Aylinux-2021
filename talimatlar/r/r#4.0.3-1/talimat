@@ -1,0 +1,25 @@
+[paket]
+tanim   = İstatistik hesaplamalar için programlama dil ve ortamı
+paketci = milisarge
+grup    = geliştirme
+url     = https://www.r-project.org
+arsiv   = R-${surum}
+
+[gerek]
+derleme = lapack libpng libjpeg-turbo tiff ncurses pcre2 libxt libxmu pango tk
+calisma =
+
+[kaynak]
+1       = https://cran.r-project.org/src/base/R-${surum%%.*}/R-${surum}.tar.gz
+dosya   = r.png
+dosya   = r.desktop
+dosya   = R.conf
+
+[sha256]
+1       = d3bceab364da0876625e4097808b42512395fdf41292f4915ab1fd257c1bbe75
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+dosya   = pakur.sh

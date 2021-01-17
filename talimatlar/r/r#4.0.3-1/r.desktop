@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=R
+GenericName=environment for statistical computing
+GenericName[tr]=istatistiksel hesaplama ortamı
+Comment=language and environment for statistical computing and graphics
+Comment[tr]=istatistiksel hesaplama ve grafik için dil ve ortamı
+Exec=R
+Icon=/usr/share/pixmaps/r.png
+DocPath=/usr/lib/R/doc/html/index.html
+StartupNotify=true
+Terminal=true
+Type=Application
+Categories=Math;Science;Education
+

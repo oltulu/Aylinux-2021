@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ağ üzerinden dosya senkronizasyonu sağlayan uygulama
+paketci = milisarge
+grup 	= temel
+url     = http://samba.anu.edu.au/rsync
+
+[kaynak]
+gz     	= http://rsync.samba.org/ftp/$isim
+dosya   = rsyncd.conf
+dosya   = rsync.xinetd
+
+[sha256]
+1 		= 55cc554efec5fdaad70de921cd5a5eeb6c29a95524c715f3bbf849235b0800c0
+2 		= 733ccb571721433c3a6262c58b658253ca6553bec79c2bdd0011810bb4f2156b
+3 		= da0ec9ce07bf2edafbc8e44020da29a58038b00c3048a22de57017c56318a767
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+tip     = gnu
+dosya   = pakur.sh

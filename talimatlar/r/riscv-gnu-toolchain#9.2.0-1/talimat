@@ -1,0 +1,28 @@
+[paket]
+tanim   = RISC-V 64bit GNU derleme araç seti 
+paketci = milisarge
+grup 	= geliştirme
+url     = https://github.com/riscv/riscv-gnu-toolchain
+
+[gerek]
+derleme = texinfo autoconf automake python expat flex bison libtool
+calisma = 
+
+[kaynak]
+git     = https://github.com/riscv/riscv-gnu-toolchain
+
+[derle]
+betik   = echo "derleme yok"
+
+[pakur]
+strip   = 0
+betik 	= cd $SRC/riscv-gnu-toolchain
+betik 	= git submodule update --init --recursive
+betik 	= rm -rf build;mkdir  build;cd build
+betik   = unset CFLAGS;unset CPPFLAGS;unset CXXFLAGS;unset LDFLAGS
+betik 	= ../configure --prefix=$PKG/usr/local/riscv64
+betik 	= make linux
+betik 	= rm -rf $PKG/usr/local/riscv64/share/info
+betik 	= rm -rf $PKG/usr/local/riscv64/sysroot/usr/share/info
+betik   = cd  $PKG/usr/local/riscv64/sysroot/usr/include/gnu
+betik   = ln -s stubs-lp64d.h stubs-lp64.h

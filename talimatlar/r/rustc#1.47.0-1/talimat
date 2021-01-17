@@ -1,0 +1,25 @@
+[paket]
+tanim   = Rust programlama dili, güvenli, eşzamanlı, pratik bir dil olacak şekilde tasarlanmıştır.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://static.rust-lang.org/
+
+[gerek]
+derleme = cmake python
+calisma = 
+
+
+[kaynak]
+1      = http://static.rust-lang.org/dist/$isim-$surum-src.tar.gz
+
+[md5]
+1 		= 
+
+[derle]
+betik   = NOCONFIGURE=1 ./autogen.sh
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --enable-gtk-doc -with-ca-certificates=/etc/ssl/certs
+betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
+    	      
+[pakur]
+tip = gnu

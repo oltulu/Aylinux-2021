@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=urxvt (tabbed)
+Comment=An unicode capable and tabbed rxvt clone
+Name[tr]=urxvt (sekmeli)
+Comment[tr]=Unicode destekli rvtx terminali
+Exec=urxvt-tabbed
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;

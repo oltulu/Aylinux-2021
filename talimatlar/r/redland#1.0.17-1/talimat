@@ -1,0 +1,22 @@
+[paket]
+tanim   = RDF geliştirme dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = http://librdf.org
+
+[gerek]
+derleme    = postgresql db rasqal mariadb  postgresql sqlite unixodbc
+calisma    =
+
+[kaynak]
+gz         = http://librdf.org/dist/source
+
+[sha256]
+1          = de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
+
+[derle]
+ekconf     = --enable-release --with-raptor=system --with-rasqal=system --with-sqlite=3 --with-bdb=no
+tip        = gnu
+
+[pakur]
+tip        = gnu

@@ -1,0 +1,27 @@
+[paket]
+tanim   = RTL Wireless çipleri için modifiye kernel modülleri
+paketci = milisarge
+grup 	= ağ
+url     = https://github.com/lwfinger/rtlwifi_new
+
+[gerek]
+derleme = kernel
+calisma = 
+
+[kaynak]
+
+[derle]
+betik   = unset LDFLAGS
+betik   = git clone https://github.com/lwfinger/rtlwifi_new.git -b extended $SRC/rtlwifinew
+betik   = cd $SRC/rtlwifinew
+betik   = export KVER="5.4.6-milis"
+betik   = make KVER=$KVER KSRC=/usr/lib/modules/$KVER/build
+     
+[pakur]
+betik   = cd $SRC/rtlwifinew
+betik   = export KVER="5.4.6-milis"
+betik   = sed -i '/@depmod/d' Makefile
+betik   = mkdir -p $PKG/usr/lib/modules/$KVER/kernel/drivers/net/wireless/realtek/rtlwifi
+betik   = mkdir -p $PKG/usr/lib/firmware/{rtlwifi,rtw88}
+betik   = make KVER=$KVER KSRC=/usr/lib/modules/$KVER/build MODDESTDIR=$PKG/usr/lib/modules/$KVER/kernel/drivers/net/wireless/realtek/rtlwifi COMPRESS_GZIP=y FIRMWAREDIR=$PKG/usr/lib/firmware/ install
+

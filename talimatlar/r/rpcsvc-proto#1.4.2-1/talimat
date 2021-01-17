@@ -1,0 +1,15 @@
+[paket]
+tanim   = Rpcsvc protokolü
+paketci = milisarge  
+grup    = kütüphane    
+url     = https://github.com/thkukuk/rpcsvc-proto
+
+[kaynak]
+1       = https://github.com/thkukuk/rpcsvc-proto/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+
+[derle]
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu

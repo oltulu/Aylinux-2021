@@ -1,0 +1,21 @@
+[paket]
+tanim   = Dosyaların karma toplamlarını doğrulamak için yardımcı program
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://github.com/rhash/RHash
+
+[kaynak]
+github  = rhash/RHash
+
+[sha256]
+#1 		= be536a56acfefc87dbc8b1db30fc639020e41edf05518185ea98630e3df7c04c
+
+[derle]
+betik   = cd RHash-$surum
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --extra-cflags="$CFLAGS" --extra-ldflags="$LDFLAGS"
+betik   = make
+	      
+[pakur]
+betik   = cd RHash-$surum
+tip     = gnu
+betik   = make -C librhash DESTDIR="$PKG" install-lib-headers install-lib-shared install-so-link

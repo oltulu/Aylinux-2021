@@ -1,0 +1,32 @@
+[paket]
+tanim   = Xft yazı tiplerini ve Unicode destekli terminal
+paketci = milisarge
+grup    = sistem
+url     = http://software.schmorp.de/pkg/rxvt-unicode.html
+
+[gerek]
+derleme = libxft perl startup-notification libnsl
+calisma =
+
+[kaynak]
+bz2     = http://dist.schmorp.de/${isim}
+dosya   = urxvt.desktop
+dosya   = urxvtc.desktop
+dosya   = urxvt-tabbed.desktop
+
+[sha256]
+1       = e94628e9bcfa0adb1115d83649f898d6edb4baced44f5d5b769c2eeb8b95addd
+
+[derle]
+dosya   = derle.sh
+
+[pakur]
+betik   = export TERMINFO="${SRC}/terminfo"
+betik   = install -d "${TERMINFO}"
+tip     = gnu
+betik   = for _f in urxvt urxvtc urxvt-tabbed; do install -Dm 644 $SRC/${_f}.desktop "${PKG}/usr/share/applications/${_f}.desktop" ; done
+betik   = sed -i 's/\"rxvt\"/"urxvt"/' doc/rxvt-tabbed
+betik   = install -Dm 755 doc/rxvt-tabbed "${PKG}/usr/bin/urxvt-tabbed"
+betik   = install -dm 755 "${PKG}/usr/share/"
+betik   = mv $SRC/terminfo "${PKG}/usr/share/"
+

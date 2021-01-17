@@ -1,0 +1,18 @@
+[paket]
+tanim   = Hızlı C tabanlı tanıyıcılar oluşturmak için araç
+paketci = milisarge
+grup    = kütüphane
+url     = http://re2c.org/
+
+[kaynak]
+xz      = https://github.com/skvadrik/${isim}/releases/download/${surum}
+
+[sha256]
+1       = b2bc1eb8aaaa21ff2fcd26507b7e6e72c5e3d887e58aa515c2155fb17d744278
+
+[derle]
+ekconf  = --enable-golang
+tip     = gnu
+
+[pakur]
+tip     = gnu

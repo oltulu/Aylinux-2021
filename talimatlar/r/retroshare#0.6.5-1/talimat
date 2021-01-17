@@ -1,0 +1,24 @@
+[paket]
+tanim   = Merkezi olmayan, özel ve güvenli iletişim ve paylaşım platformu
+paketci = milisarge
+grup    = ağ
+url     = https://retroshare.cc
+arsiv   = RetroShare-${surum}
+
+[gerek]
+derleme = qt5-tools libupnp libxss qt5-multimedia qt5-x11extras sqlcipher
+calisma =
+
+[kaynak]
+github  = RetroShare/RetroShare
+
+[sha256]
+1       = 901a1d1f282e04118fbe0e24190355b4a8f355a806cc5448738b1d691b46f5d5
+
+[derle]
+betik   = export LC_ALL=C
+betik   = qmake CONFIG-=debug CONFIG+=release CONFIG+=no_libresapihttpserver  RetroShare.pro
+betik   = make || make
+
+[pakur]
+betik   = make INSTALL_ROOT="${PKG}" install

@@ -1,0 +1,7 @@
+libacl.so.1
+libcrypto.so.1.1
+libc.so.6
+liblz4.so.1
+libpopt.so.0
+libxxhash.so.0
+libzstd.so.1

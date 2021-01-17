@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=urxvt (client)
+Comment=An unicode capable rxvt clone client for urxvtd
+Name[tr]=urxvt (istemci)
+Comment[tr]=Unicode destekli rvtxd istemcisi
+Exec=urxvtc
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;

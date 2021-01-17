@@ -1,0 +1,22 @@
+[paket]
+tanim   = Dosyaları çeşitli karakter kümeleri ve kullanımlar arasında dönüştürür
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/rrthomas/recode
+
+[gerek]
+derleme =  python
+calisma =
+
+[kaynak]
+gz      = https://github.com/rrthomas/recode/releases/download/v${surum}
+
+[sha256]
+1       = 46c5828ac6f5fb759ecf98b16a674188d901b84675b0dbbc0afc03c542d3a954
+
+[derle]
+ekconf     = --without-included-gettext 
+tip     = gnu
+
+[pakur]
+tip     = gnu

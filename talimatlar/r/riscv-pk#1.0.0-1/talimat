@@ -1,0 +1,24 @@
+[paket]
+tanim   = RISC-V proxy kernel ve bootloader
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/riscv/riscv-pk
+arsiv   = riscv-isa-sim
+
+[gerek]
+derleme =
+calisma = riscv-gnu-toolchain
+
+[kaynak]
+git     = https://github.com/riscv/riscv-pk
+
+[derle]
+betik   = mkdir -p build ;cd build
+betik   = export CFLAGS=""
+betik   = export RISCV=/usr/local/riscv64
+betik   = "$SRC/$isim/configure" --prefix=$RISCV --host=riscv64-unknown-linux-gnu
+betik   = make
+
+[pakur]
+strip   = 0
+betik   = DESTDIR="$PKG" PREFIX=/usr make -C build install

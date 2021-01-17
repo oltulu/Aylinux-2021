@@ -1,0 +1,21 @@
+[paket]
+tanim 	= X için uygulama başlatma uygulaması
+paketci	= milisarge
+grup 	= sistem
+url 	= http://www.boomerangsworld.de/cms/tools/runner.html
+
+[gerek]
+derleme = libx11 libice libsm libxinerama libxft
+calisma = 
+
+[kaynak]
+bz2   	= http://www.boomerangsworld.de/cms/tools/downloads
+
+[sha256]
+1 		= 90fa121e6fc8b3448686edb684a8e0c922507c4a52bebca03244c9bfeaaf5c4f
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

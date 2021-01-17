@@ -1,0 +1,23 @@
+[paket]
+tanim   = Gerçek Zamanlı Politika ve Watchdog Daemon
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/heftig/rtkit
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+git     = https://github.com/heftig/rtkit
+
+[sha512]
+
+[derle]
+betik	= milis-meson $isim build -D installed_tests=false
+
+
+        	      
+[pakur]
+betik   = DESTDIR="$PKG" meson install -C build
+betik   = install -Dm644 /dev/stdin "$PKG/usr/lib/sysusers.d/$isim.conf"
