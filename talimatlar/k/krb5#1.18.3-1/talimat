@@ -1,0 +1,21 @@
+[paket]
+tanim   = MIT Kerberos ağ kimlik doğrulama uygulaması
+paketci = milisarge
+grup 	= sistem
+url     = http://web.mit.edu/kerberos
+
+[gerek]
+derleme = openldap
+calisma = keyutils openldap
+
+[kaynak]
+gz      = ${url}/dist/krb5/${surum}
+
+[sha256]
+1 		= 5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+dosya   = pakur.sh

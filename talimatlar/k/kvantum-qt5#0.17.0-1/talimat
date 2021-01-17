@@ -1,0 +1,23 @@
+[paket]
+tanim   = Qt5 için SVG tabanlı tema motoru (yapılandırma aracı ve ekstra temalar dahil)
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/tsujan/Kvantum
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =  
+
+[kaynak]
+1      = https://github.com/tsujan/Kvantum/archive/V${surum}/${isim}-${surum}.tar.gz
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd $SRC
+betik 	= cmake -B build -S Kvantum-${surum}/Kvantum -DCMAKE_INSTALL_PREFIX=/usr
+betik 	= make -C build
+            	      
+[pakur]
+betik 	= make -C build DESTDIR="${PKG}" install

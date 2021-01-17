@@ -1,0 +1,31 @@
+[paket]
+tanim   = Qt4/Qt5, KDE ve LXQt için SVG tabanlı tema motoru
+paketci = yasarciv67
+grup    = tasarım
+url     = https://github.com/tsujan/Kvantum
+arsiv	= Kvantum-$surum/Kvantum
+
+[gerek]
+derleme = cmake qt5-tools qt5-svg qt5-x11extras kwindowsystem
+calisma =
+
+[kaynak]
+1       = https://github.com/tsujan/Kvantum/archive/V${surum}.tar.gz::$isim-$surum.tar.gz
+dosya	= kvantummanager_tr.ts
+
+[sha256]
+1       = 4795b786f4c3b9fd580e2dd1202ce9ec1ad209ade142043f043106912bb946b8
+2		= 8f70bbfe38f786f5c6de5d463d5a4b8c0821c53839eef3249353af6fb6a950ad
+
+[derle]
+betik	= mv $SRC/kvantummanager_tr.ts kvantummanager/data/translations
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik	= cd $PKG/usr/share/applications
+betik	= sed -i '/^Name=Kvantum Manager/a Comment[tr]=Kvantum temalarını yüklemek, seçmek ve değiştirmek için basit bir Arayüz' kvantummanager.desktop
+betik	= sed -i '/^Name=Kvantum Manager/a Name[tr]=Kvantum Yöneticisi' kvantummanager.desktop
+
+
+; Bundan sonraki sürümde dil dosyası ve .desktop dosyası düzeltmeleri gözden geçirilecek

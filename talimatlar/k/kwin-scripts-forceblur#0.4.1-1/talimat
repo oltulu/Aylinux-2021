@@ -1,0 +1,23 @@
+[paket]
+tanim   = Kullanıcı tanımlı pencerelerde bulanıklaştırma efektini zorla etkinleştir
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/esjeon/kwin-forceblur
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = $url/releases/download/v$surum/forceblur-$surum.kwinscript
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= betik 	= install -d "$PKG/usr/share/kwin/scripts/forceblur"
+                	      
+[pakur]
+
+betik 	= cp -r bin/ contents/ LICENSE image.png metadata.desktop "$PKG/usr/share/kwin/scripts/forceblur/"
+betik 	= install -Dm644 metadata.desktop "$PKG/usr/share/kservices5/kwin-script-forceblur.desktop"
