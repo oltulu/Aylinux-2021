@@ -1,0 +1,26 @@
+[paket]
+tanim    = Lua Openssl bağlamları
+paketci  = milisarge 
+grup     = kütüphane
+url      = https://github.com/brunoos/luasec/wiki
+
+[gerek]
+derleme  = lua luasocket
+calisma  = lua luasocket
+
+[kaynak]
+1   = https://github.com/brunoos/luasec/archive/luasec-$surum.tar.gz
+
+[sha256]
+1   = cc9fc92df3be56add5c9687319951f457c31f5d12ac19cfc09d53056dc24f04e
+
+[derle]
+betik = unset CFLAGS;unset LDFLAGS
+betik = cd "$SRC"/luasec-luasec-$surum
+betik = make linux DEFS="-DWITH_LUASOCKET -DOPENSSL_NO_SSL3"
+
+[pakur]
+betik = cd luasec-luasec-$surum
+betik = install -dm755 "$PKG/usr/lib/lua/5.3"
+betik = make LUACPATH="$PKG/usr/lib/lua/5.3" LUAPATH="$PKG/usr/share/lua/5.3" install
+

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Dosya sistemlerinin birden çok fiziksel disk ve bölüm arasında yayılmasını sağlayan araçlar
+paketci = milisarge
+grup 	= temel
+url     = http://sourceware.org/lvm2
+
+[kaynak]
+git     	= https://sourceware.org/git/lvm2
+
+[sha256]
+#1 		= 070b2e7d34c8069602741c7483be715327f62875f5ce1f5727627fbea2481f4d
+
+[derle]
+betik   = cd lvm2
+dosya   = derle.sh
+     
+[pakur]
+betik   = cd lvm2
+tip     = gnu

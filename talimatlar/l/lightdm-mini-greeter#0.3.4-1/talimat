@@ -1,0 +1,22 @@
+[paket]
+tanim   = Minimal, Yapılandırılabilir, Tek Kullanıcı GTK3 LightDM Karşılayıcısı
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/prikhi/lightdm-mini-greeter
+
+[gerek]
+derleme    = gtk3 lightdm libxklavier
+calisma    =
+
+[kaynak]
+1          = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1          = 6276b5ce6c97b7685788a41969c01335007cfc0163d9d6fd16462cff70622831
+
+[derle]
+betik      = ./autogen.sh
+tip        = gnu
+
+[pakur]
+tip        = gnu

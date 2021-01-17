@@ -1,0 +1,22 @@
+[paket]
+tanim   = Genel SMBus erişimi ve donanım izleme için kullanıcı alanı araçlarının toplanması
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://dl.lm-sensors.org/lm-sensors/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = http://ftp.osuosl.org/pub/blfs/conglomeration/lmsensors/lm_sensors-$surum.tar.bz2
+
+[sha1]
+1 		= SKIP
+
+[derle]
+betik 	= cd $SRC/lm_sensors-$surum
+betik 	= make PREFIX=/usr DESTDIR=$PKG BUILD_STATIC_LIB=0 MANDIR=/usr/share/man
+betik 	= make PREFIX=/usr DESTDIR=$PKG BUILD_STATIC_LIB=0 MANDIR=/usr/share/man install
+	      
+[pakur]

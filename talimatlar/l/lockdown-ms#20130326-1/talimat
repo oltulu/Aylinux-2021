@@ -1,0 +1,22 @@
+[paket]
+tanim   = MS sertifikalı UEFI makinesini taklit eden SecureBoot anahtarları
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://fedoraproject.org/wiki/Testing_secureboot_with_KVM
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+1 = https://fedorapeople.org/~crobinso/secureboot/LockDown_ms.efi
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+betik   = cd "${SRC}"
+
+[pakur]
+betik   =  install -D -m0644 "/sources/LockDown_ms.efi" "${PKG}/usr/lib/lockdown-ms/LockDown_ms.efi"
+

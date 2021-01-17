@@ -1,0 +1,13 @@
+groupadd -g 65 lightdm       &&
+useradd  -c "Lightdm Daemon" \
+         -d /var/lib/lightdm \
+         -u 65 -g lightdm    \
+         -s /bin/false lightdm
+
+install -v -dm755 -o lightdm -g lightdm /var/lib/lightdm      &&
+install -v -dm755 -o lightdm -g lightdm /var/lib/lightdm-data &&
+install -v -dm755 -o lightdm -g lightdm /var/cache/lightdm    &&
+install -v -dm770 -o lightdm -g lightdm /var/log/lightdm
+
+cp -v /etc/inittab{,-orig} &&
+sed -i '/initdefault/ s/3/5/' /etc/inittab

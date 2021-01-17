@@ -1,0 +1,26 @@
+[paket]
+tanim   = Lua destekli metin düzenleme uygulaması
+paketci = milisarge  
+grup    = düzenleyici  
+url     = https://github.com/rxi/lite
+
+[gerek]
+derleme = sdl2
+calisma = 
+
+[kaynak]
+github  = rxi/lite
+dosya	= lite.desktop
+
+[sha256]
+;1   	= 35ab2f69fae9697366ad16d1e2221a0663be23c7e5bdf28a72f9013615d31bc0
+2	    = a0c9496c2340cbbc91b60dcad261782db4317c22cd1cbe086623e13d1363df42
+
+[derle]
+betik   = ./build.sh
+
+[pakur]
+betik   = install -Dm755 lite $PKG/usr/lib/lite-editor/lite
+betik   = cp -r data $PKG/usr/lib/lite-editor/
+betik   = cp -r icon.ico $PKG/usr/lib/lite-editor/
+betik   = install -Dm755 $SRC/lite.desktop $PKG/usr/share/applications/lite.desktop

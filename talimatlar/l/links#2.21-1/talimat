@@ -1,0 +1,24 @@
+[paket]
+tanim   = GPL altında yayınlanan grafik ve metin modu web tarayıcısı
+paketci = milisarge
+grup    = ağ
+url     = http://links.twibright.com
+
+[gerek]
+derleme = gpm openssl
+calisma =
+
+[kaynak]
+1       = http://links.twibright.com/download/links-${surum}.tar.bz2
+
+[sha256]
+1       = 285eed8591c7781ec26213df82786665aaa1b9286782e8a7a1a7e2a6e1630d63
+
+[derle]
+betik   = cd intl; ./gen-intl; ./synclang ; cd ../
+betik   = sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" configure
+ekconf  = --with-ssl --disable-graphics --without-x --without-fb --disable-javascript
+tip     = gnu
+
+[pakur]
+tip     = gnu

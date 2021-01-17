@@ -1,0 +1,21 @@
+[paket]
+tanim    = Lua Posix bağlamları
+paketci  = milisarge 
+grup     = kütüphane
+url      = https://github.com/luaposix/luaposix
+
+[gerek]
+derleme  = lua
+calisma  = lua
+
+[kaynak]
+github   = luaposix/luaposix
+
+[sha256]
+1        = a4edf2f715feff65acb009e8d1689e57ec665eb79bc36a6649fae55eafd56809
+
+[derle]
+betik = lua5.3 build-aux/luke version=5.3 PREFIX=/usr LUA_INCDIR="/usr/include" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS $CFLAGS"
+
+[pakur]
+betik = lua5.3 build-aux/luke PREFIX="${PKG}/usr" install

@@ -1,0 +1,19 @@
+[paket]
+tanim   = YAML 1.1 kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://pyyaml.org/wiki/LibYAML
+
+[kaynak]
+1       = https://github.com/yaml/libyaml/archive/${surum}.tar.gz::yaml-$surum.tar.gz
+
+[sha256]
+1 	    = 46bca77dc8be954686cff21888d6ce10ca4016b360ae1f56962e6882a17aa1fe
+
+[derle]
+betik   = autoreconf -fi
+ekconf  = --disable-static
+tip     = gnu
+
+[pakur]
+tip     = gnu

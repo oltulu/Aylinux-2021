@@ -1,0 +1,27 @@
+[paket]
+tanim   = Karışık Tamsayılı Doğrusal Programlama (MILP) çözücü
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/projects/lpsolve
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/$isim/lp_solve_${surum}_source.tar.gz
+dosya      = cflags.patch
+dosya      = lpsolve-5.5.2.0.defines.patch
+
+[sha256]
+1          = 201a7c62b8b3360c884ee2a73ed7667e5716fc1e809755053b398c2f5b0cf28a
+
+[derle]
+betik      = cd lp_solve_5.5
+yama       = 2 
+yama       = 3 
+betik      = cd lpsolve55   ; sh -x ccc
+betik      = cd ../lp_solve ; sh -x ccc
+
+[pakur]
+betik      = cd lp_solve_5.5
+betik      = install -dm755 "${PKG}"/usr/{bin,lib,include/lpsolve}
+betik      = install -m755 lp_solve/bin/ux*/lp_solve "${PKG}"/usr/bin/
+betik      = install -m755 lpsolve55/bin/ux*/liblpsolve55.so "${PKG}"/usr/lib/
+betik      = install -m644 lp*.h "${PKG}"/usr/include/lpsolve/

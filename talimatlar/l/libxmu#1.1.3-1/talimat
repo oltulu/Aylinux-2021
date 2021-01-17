@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 çeşitli mikro yardımcı programlar kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxt libxext libx11
+calisma = 
+
+[kaynak]
+1       = $url/releases/individual/lib/libXmu-$surum.tar.bz2
+
+[sha512]
+1 		= 8c6cc65b22aa031ad870dd92736681a068a0878a425a53dbed909943da1136c4a24034d467cfd3785c3a8d78f66850b69f1ebe1eb24aaf9bc176b1d171a5c762
+
+[derle]
+betik   = cd libXmu-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXmu-$surum
+tip 	= gnu

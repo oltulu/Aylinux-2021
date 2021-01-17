@@ -1,0 +1,22 @@
+[paket]
+tanim   = GTK tema değiştirici uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://lxde.org
+
+[gerek]
+derleme = libx11 gtk3 dbus-glib
+calisma =
+
+[kaynak]
+xz      = https://downloads.sourceforge.net/lxde
+
+[sha256]
+1       = 7222d858b8fef4b7967c42142d61e82ded6dd42dc5ef1d59caad775795928b38
+
+[derle]
+ekconf  = --enable-dbus --enable-gtk3
+tip     = gnu
+
+[pakur]
+tip     = gnu

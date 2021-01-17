@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 Direct Graphics Access eklenti kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = libxext xorg-util-macros
+calisma = 
+
+[kaynak]
+1       = $url/releases/individual/lib/libXxf86dga-$surum.tar.bz2
+
+[sha512]
+1 		= 0e77c4003aeba737b10c17d55aeefa935fc57c4ba9e8f79a834f3f8c690d6a1d98f69ad707eded784346c1cf40c41829719d257283b5eae3207147fb4c79ed89
+
+[derle]
+betik   = cd libXxf86dga-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXxf86dga-$surum
+tip 	= gnu

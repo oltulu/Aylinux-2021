@@ -1,0 +1,23 @@
+[paket]
+tanim   = LightDM görüntü yöneticisi için bir yapılandırma aracı
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/${isim}
+
+[gerek]
+derleme = desktop-file-utils lightdm-slick-greeter
+calisma = lightdm-slick-greeter
+
+[kaynak]
+git      =https://github.com/linuxmint/${isim}
+
+[sha512]
+#1 		= 873a01071dca3b8ba4b732ddad5e3257d0186ecb75ad1d77ad2c1ba5927cc2da69f042bc7d0bfc342c7ce2c5a3bc4d2ec96cc26e0b40ce9171ee782750a66c21
+    
+[derle]
+betik 	= cd $isim
+betik 	= make
+    	      
+[pakur]
+betik 	= cd $isim
+betik 	= cp -r usr $PKG

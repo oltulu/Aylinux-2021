@@ -1,0 +1,27 @@
+[paket]
+tanim    = Lua modülleri için dağıtım ve yönetim sistemi
+paketci  = milisarge 
+grup     = geliştirme 
+url      = https://luarocks.org/
+
+[gerek]
+derleme  = lua zip
+calisma  = lua luasocket luasec unzip
+
+[kaynak]
+gz  = https://luarocks.org/releases
+
+[sha256]
+1   = 66c1848a25924917ddc1901e865add8f19f2585360c44a001a03a8c234d3e796
+
+[derle]
+betik  =  ./configure --prefix=/usr
+betik  =  make ./build/luarocks ./build/luarocks-admin ./build/config-5.3.lua
+betik  =  make LUA_VERSION=5.1 LUA_INTERPRETER=lua5.1 LUA_INCDIR=/usr/include/lua5.1 ./build/config-5.1.lua
+betik  =  make LUA_VERSION=5.2 LUA_INTERPRETER=lua5.2 LUA_INCDIR=/usr/include/lua5.2 ./build/config-5.2.lua
+
+[pakur]
+betik  =  make DESTDIR="${PKG}" install
+betik  =  make DESTDIR="${PKG}" LUA_VERSION=5.1 install-config
+betik  =  make DESTDIR="${PKG}" LUA_VERSION=5.2 install-config
+

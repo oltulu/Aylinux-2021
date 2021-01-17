@@ -1,0 +1,19 @@
+[paket]
+tanim   = Linux API başlıkları(headers)
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.kernel.org
+
+[kaynak]
+1      = $url/pub/linux/kernel/v5.x/linux-$surum.tar.xz
+
+[sha256]
+#1 		= 0c68f5655528aed4f99dae71a5b259edc93239fa899e2df79c055275c21749a1
+
+[derle]
+betik 	= cd  linux-${surum};make mrproper;make headers_check
+	      
+[pakur]
+betik   = cd  linux-${surum}
+betik   = make INSTALL_HDR_PATH=dest headers_install;mkdir -p $PKG/usr/include
+betik   = cp -rv dest/include/* $PKG/usr/include

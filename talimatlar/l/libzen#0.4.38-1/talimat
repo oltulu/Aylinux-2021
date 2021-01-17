@@ -1,0 +1,25 @@
+[paket]
+tanim   = Libmediainfo ve mediainfo için paylaşılan kitaplık
+paketci = milisarge
+grup    = kütüphane
+url     = http://mediaarea.net/MediaInfo
+arsiv   = ZenLib/Project/GNU/Library
+
+[gerek]
+derleme = automake libtool pkg-config
+calisma =
+
+[kaynak]
+1       = https://mediaarea.net/download/source/${isim}/${surum}/${isim}_${surum}.tar.bz2
+
+[sha256]
+1       = 594e07bb4a0472cd9da258b3c4e050e9a37a39cccd85e3d8b5bf597d027b7eda
+
+[derle]
+betik   = ./autogen.sh
+ekconf  = --enable-shared
+tip     = gnu
+
+[pakur]
+tip     = gnu
+dosya   = pakur.sh

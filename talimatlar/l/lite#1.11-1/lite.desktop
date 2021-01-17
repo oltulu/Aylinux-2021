@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Lite
+GenericName=Lite Editor
+GenericName[tr]=Metin Düzenleyici
+Comment[tr]=Metin Düzenleyici
+Keywords=Editor
+Keywords[tr]=Düzenleyici
+Exec=/usr/lib/lite-editor/lite
+Icon=/usr/lib/lite-editor/icon.ico
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/plain
+StartupNotify=true
+Categories=Editor;

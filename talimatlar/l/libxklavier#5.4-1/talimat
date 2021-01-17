@@ -1,0 +1,23 @@
+[paket]
+tanim   = X Klavye eklentisi için programlama arayüz kütüphanesi
+paketci = milisarge  
+grup    = kütüphane 
+url     = https://www.freedesktop.org/wiki/Software/LibXklavier/
+
+[gerek]
+derleme  = gobject-introspection libxfixes git glib libxkbfile libxml2 xkeyboard-config libxi iso-codes 
+calisma  =  
+
+[kaynak]
+bz2  = https://people.freedesktop.org/~svu
+
+[sha256]
+1    = 17a34194df5cbcd3b7bfd0f561d95d1f723aa1c87fca56bc2c209514460a9320
+
+[derle]
+ekconf = --with-xkb-bin-base=/usr/bin --with-xkb-base=/usr/share/X11/xkb --disable-gtk-doc
+tip    = gnu
+
+[pakur]
+tip    = gnu
+

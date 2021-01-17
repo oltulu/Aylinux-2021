@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 pixmap kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 xorg-proto libxt libxext 
+calisma = 
+
+[kaynak]
+1       = $url/releases/individual/lib/libXpm-$surum.tar.bz2
+
+[sha256]
+1 		= fd6a6de3da48de8d1bb738ab6be4ad67f7cb0986c39bd3f7d51dd24f7854bdec
+
+[derle]
+betik   = cd libXpm-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXpm-$surum
+tip 	= gnu

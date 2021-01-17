@@ -1,0 +1,22 @@
+[paket]
+tanim   = Lightdm için GTK karşılayıcı
+paketci = milisarge
+grup    = sistem
+url     = https://launchpad.net/lightdm-gtk-greeter
+
+[gerek]
+derleme    = gtk3 libxklavier lightdm
+calisma    =
+
+[kaynak]
+gz         = ${url}/${surum%.*}/${surum}/+download
+
+[sha256]
+1          = 255cf4039ab2536020ca8714bdc98300c8f71719183bbb5b18ef96f43c2e3ade
+
+[derle]
+ekconf     = --libexecdir=/usr/lib/lightdm --with-libxklavier -with-gtk3 --enable-nls
+tip        = gnu
+
+[pakur]
+tip        = gnu

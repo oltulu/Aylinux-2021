@@ -1,0 +1,24 @@
+[paket]
+tanim   = Http_parser ile ilgili geliştirme dosyaları
+paketci = milisarge
+grup    = kütüphane
+url     = https://llhttp.org/
+
+[kaynak]
+1          = https://github.com/nodejs/llhttp/archive/release/v${surum}.tar.gz::$isim-$surum.tar.gz
+dosya      = llhttp-Makefile
+
+[sha256]
+1          = eeb07e60a8f4113b110dd758756da3db69e4e2575b0407afb0a7755aef504dbb
+
+[derle]
+betik      = cd llhttp-release-v${surum}
+betik      = make -f $SRC/llhttp-Makefile
+
+[pakur]
+betik      = cd llhttp-release-v${surum}
+betik      = install -Dm755 libllhttp.so.1.0 $PKG/usr/lib/libllhttp.so.1.0
+betik      = ln -s libllhttp.so.1.0 ${PKG}/usr/lib/libllhttp.so.1
+betik      = ln -s libllhttp.so.1 ${PKG}/usr/lib/libllhttp.so
+betik      = cp -r include $PKG/usr/
+

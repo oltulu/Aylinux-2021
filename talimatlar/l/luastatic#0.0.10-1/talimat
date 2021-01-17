@@ -1,0 +1,22 @@
+[paket]
+tanim   = Lua kaynak kodunu C ile ikili hale getirme aracı
+paketci = milisarge
+grup    = geliştirme
+url     = https://github.com/ers35/luastatic
+
+[gerek]
+derleme = lua
+calisma =
+
+[kaynak]
+1       = $url/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = da102c8fb61a66ffb6421cee3120bbb56cf548607d394f00896939109633e40e
+
+[derle]
+betik   = LUA=lua5.3 LIBLUA_A=/usr/lib/liblua.a LUA_INCLUDE=/usr/include make
+
+[pakur]
+betik   = install -Dm755 luastatic $PKG/usr/bin/luastatic
+	

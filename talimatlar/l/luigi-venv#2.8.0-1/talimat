@@ -1,0 +1,20 @@
+[paket]
+tanim   = İş akışı yönetimi, görev planlama modülü
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/spotify/luigi
+
+[kaynak]
+
+[gerek]
+derleme = python-virtualenv
+calisma = python-virtualenv
+
+[derle]
+
+[pakur]
+betik   = mkdir $PKG/opt
+betik   = virtualenv /opt/luigi
+betik   = source /opt/luigi/bin/activate
+betik   = pip3 install luigi
+betik   = mv /opt/luigi $PKG/opt/

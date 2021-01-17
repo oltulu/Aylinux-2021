@@ -1,0 +1,21 @@
+[paket]
+tanim    = Multimedya akışları için c++ kütüphaneleri
+paketci  = milisarge  
+grup     = kütüphane  
+url      = http://live555.com/liveMedia
+
+[kaynak]
+1  =  http://live555.com/liveMedia/public/live.$surum.tar.gz
+
+[sha256]
+1  =  a3dcd157865186cf883c3a80b4bb09637e91fff96b234b2c780a7f7dcc7a35dc
+
+[derle]
+betik  = cd live
+betik  = sed -E 's|(\$\(INCLUDES\) -I. -O2 -DSOCKLEN_T=socklen_t)|\1 -fPIC -DRTSPCLIENT_SYNCHRONOUS_INTERFACE=1|g' -i config.linux
+betik  = ./genMakefiles linux
+betik  = make
+
+[pakur]
+dosya  = pakur.sh
+

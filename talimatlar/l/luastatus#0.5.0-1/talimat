@@ -1,0 +1,22 @@
+[paket]
+tanim   = Lua'da yazılmış bar içerik üreticisi 
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/shdown/luastatus
+
+[gerek]
+derleme = cmake libnl libx11 libxcb xcb-util xcn-util-wm yajl alsa-lib glib
+calisma =
+
+[kaynak]
+github  = shdown/luastatus
+
+[sha256]
+1       = 16c19533d9f1eb2155d0410f68394927d352afba208b1a8dfd7c89093ce3dbf7
+
+[derle]
+ekconf  = -DBUILD_DOCS=OFF
+tip     = cmake
+
+[pakur]
+tip     = cmake

@@ -1,0 +1,23 @@
+[paket]
+tanim   = XML ayrıştırma kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.xmlsoft.org/
+
+[gerek]
+derleme = python
+calisma = 
+
+[kaynak]
+gz      = ftp://xmlsoft.org/libxml2
+
+[sha512]
+#1 		= cb7784ba4e72e942614e12e4f83f4ceb275f3d738b30e3b5c1f25edf8e9fa6789e854685974eed95b362049dbf6c8e7357e0327d64c681ed390534ac154e6810
+
+[derle]
+betik 	= NOCONFIGURE=1 ./autogen.sh
+ekconf  = --disable-static --with-threads -without-docbook -with-history --without-python
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

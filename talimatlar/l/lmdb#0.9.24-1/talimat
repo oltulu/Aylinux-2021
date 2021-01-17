@@ -1,0 +1,22 @@
+[paket]
+tanim    = Symas Lightning Memory-Mapped veritabanı
+paketci  = milisarge
+grup     = sistem 
+url      = https://symas.com/mdb
+
+[kaynak]
+1      = https://github.com/LMDB/lmdb/archive/LMDB_$surum.tar.gz::lmdb-$surum.tar.gz
+dosya  = lmdb.pc
+
+[sha512]
+1  = c3a96c27f13c072ef5861bcea045d82f0a220dbd938579411ea6c38ac0696b3620c71f1e2cc56d31db5105f3533da95aba1ac34653d8bdcfa4f2f1fb831cccb1
+2  = 0349d4b08a1f93fe338d8f8e3e5a83e24211a46f999fe529bc1ac49c8c4975559d95a548c203d9427e3f82d62e934ba3cd1be6f734f9b9405b2a26477be4ed33
+
+[derle]
+betik  = sed -e "s|@PKGVER@|${surum}|" -i lmdb.pc
+betik  = cd "${SRC}"/lmdb-LMDB_${surum}/libraries/liblmdb
+betik  = make prefix=/usr
+
+[pakur]
+dosya  = pakur.sh
+

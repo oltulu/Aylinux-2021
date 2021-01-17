@@ -1,0 +1,25 @@
+[paket]
+tanim	= LightDM GTK+ Greeter için ayar düzenleyici
+paketci	= yasarciv67
+grup	= sistem
+url	= https://launchpad.net/lightdm-gtk-greeter-settings
+
+[gerek]
+derleme	= python-distutils-extra gtk3 python-gobject lightdm-gtk-greeter 
+calisma	= 
+
+[kaynak]
+gz	= $url/${surum%.*}/$surum/+download
+2	= http://launchpadlibrarian.net/466555232/po_lightdm-gtk-greeter-settings-tr.po
+
+[sha256]
+1	= 4364d8b25b23d2ef4856d19724fd6c67de9a2d3c1b3833f7a5441145fd39dcb7
+2	= 3c250a2f0de73ecbccf5d3492efb3844b705151ac3a64dbbf720efe483de9e95
+
+[derle]
+betik	= mv $SRC/po_lightdm-gtk-greeter-settings-tr.po $SRC/$isim-$surum/po/tr.po
+tip		= py3
+
+[pakur]
+betik	= python3 setup.py install --root="${PKG}" --optimize='1' --xfce-integration
+

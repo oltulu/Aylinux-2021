@@ -1,0 +1,12 @@
+libaio.so.1
+libblkid.so.1
+libc.so.6
+libdevmapper-event-lvm2.so.2.03
+libdevmapper-event.so.1.02
+libdevmapper.so.1.02
+libdl.so.2
+liblvm2cmd.so.2.03
+libm.so.6
+libpthread.so.0
+libreadline.so.8
+libudev.so.1

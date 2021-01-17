@@ -1,0 +1,24 @@
+[paket]
+tanim   = X11 araç kiti iç kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = libsm libx11 xorg-util-macros
+calisma = 
+
+[kaynak]
+1       = $url/releases/individual/lib/libXt-$surum.tar.bz2
+
+[sha256]
+1 		= b31df531dabed9f4611fc8980bc51d7782967e2aff44c4105251a1acb5a77831
+
+[derle]
+betik   = cd libXt-$surum
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+betik   = cd libXt-$surum
+tip 	= gnu

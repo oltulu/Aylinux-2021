@@ -1,0 +1,22 @@
+[paket]
+tanim   = Low Level Virtual Machine - Derleyici platformu
+paketci = milisarge
+grup 	= geliştirme
+url     = http://llvm.org/
+
+[gerek]
+derleme = python ninja cmake
+calisma = 
+
+[kaynak]
+1       = https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/$isim-$surum.src.tar.xz
+
+[sha256]
+1 	= c5d8e30b57cbded7128d78e5e8dad811bff97a8d471896812f57fa99ee82cdf3
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+betik   = cd $SRC/$isim-$surum.src/build && DESTDIR=$PKG ninja install
+betik   = pushd ../utils/lit;python3 setup.py install --root="$PKG" -O1;popd

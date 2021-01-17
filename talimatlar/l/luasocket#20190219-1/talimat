@@ -1,0 +1,23 @@
+[paket]
+tanim    = Lua ağ destek kütüphanesi
+paketci  = milisarge 
+grup     = kütüphane
+url      = https://github.com/diegonehab/luasocket
+
+[gerek]
+derleme  = lua
+calisma  = lua
+
+[kaynak]
+1   = https://github.com/diegonehab/luasocket/archive/144fa01c2f204e3b1b13c834f2644d100dba701b.tar.gz
+
+[sha256]
+1   = 7fa6738eeebe38998bd325f15c1b31bbb9dfecfa187d4f0220e8dc75cc907bb4
+
+[derle]
+betik = cd "$SRC"/luasocket-144fa01c2f204e3b1b13c834f2644d100dba701b
+betik = MYCFLAGS=$CFLAGS MYLDFLAGS=$LDFLAGS make LUAV=5.3 linux
+
+[pakur]
+betik = cd "$SRC"/luasocket-144fa01c2f204e3b1b13c834f2644d100dba701b
+betik = make DESTDIR="$PKG/" LUAV=5.3 prefix=/usr install-unix

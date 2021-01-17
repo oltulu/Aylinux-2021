@@ -1,0 +1,19 @@
+[paket]
+tanim 	= Çalışan Unix işlemleri için açılmış dosyaları gösterir
+paketci = gysddn
+grup 	= sistem
+url 	= https://people.freebsd.org/~abe/
+
+[kaynak]
+gz 	    = https://fossies.org/linux/misc
+
+[sha256]
+#1       = 3df912bd966fc24dc73ddea3e36a61d79270b21b085936a4caabca56e5b486a2
+
+[derle]
+betik   = sed -i 's|/\* #define\tHASSECURITY\t1 \*/|#define\tHASSECURITY\t1|' dialects/linux/machine.h
+betik   = ./Configure -n linux && make ${MAKEJOBS}
+
+[pakur]
+betik   = install -Dm0755 lsof $PKG/usr/bin/lsof 
+betik   = install -Dm0644 Lsof.8 $PKG/usr/share/man/man8/lsof.8

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Lua, meta programlama dili
+paketci = milisarge
+grup 	= onsistem
+url     = http://www.lua.org
+
+[kaynak]
+gz      = https://www.lua.org/ftp
+dosya	= liblua.so.patch
+
+[sha256]
+1 		= 0c2eed3f960446e1a3e4b9a1ca2f3ff893b6ce41942cf54d5dd59ab4b3b058ac
+2 		= 2cc83c77423a2dda3696766b2d1ccee2796e052ab04d5178905f41ed9241a3d8
+
+[derle]
+dosya 	= derle.sh
+	      
+[pakur]
+dosya   = pakur.sh
