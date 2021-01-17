@@ -1,0 +1,22 @@
+[paket]
+tanim   = Qt için Wayland bileşenleri
+paketci = yasarciv
+grup 	= kütüphane
+url     = https://www.qt.io
+arsiv   = qtwayland-everywhere-src-$surum
+
+[gerek]
+derleme = qt5-declarative libxcomposite vulkan-headers
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtwayland-everywhere-src-$surum.tar.xz
+
+[sha256]
+1 		= e2ff47b874f283a952efd6a8aaf5e8cdc462b5216dda1051b60fc6e80ac657b6
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake

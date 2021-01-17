@@ -1,0 +1,22 @@
+[paket]
+tanim   = QT uygulama için betik üretme
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.qt.io
+arsiv   = qtscript-everywhere-src-$surum
+
+[gerek]
+derleme = qt5-base
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtscript-everywhere-src-$surum.tar.xz
+
+[sha256]
+1 		= 0a62152835363a9cc20558d0c2953ec03426324138578baa18fc2cc4d62b18ca
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake

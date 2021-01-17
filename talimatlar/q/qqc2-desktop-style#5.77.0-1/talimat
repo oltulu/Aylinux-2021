@@ -1,0 +1,24 @@
+[paket]
+tanim   = Qt Quick Controls 2'nin masaüstü temanızı takip etmesini sağlayan bir stil
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://community.kde.org/Frameworks
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+    #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = cd ../
+betik     = cmake -B build -S $isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
+betik     = cmake --build build
+    	      
+[pakur]
+betik     = cd ../
+betik     = DESTDIR=$PKG cmake --install build

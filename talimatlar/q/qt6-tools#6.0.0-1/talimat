@@ -1,0 +1,42 @@
+[paket]
+tanim   = X11 için platforma özel API'ler sağlar
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://www.qt.io
+
+[gerek]
+derleme = qt5-declarative clang qt5-webkit
+calisma = qt5-base hicolor-icon-theme
+
+[kaynak]
+1      = https://download.qt.io/official_releases/qt/${surum%.*}/${surum}/submodules/qttools-everywhere-src-${surum}.tar.xz
+
+[sha256]
+#1 		= c9e92d2f0d369e44bb1a60e9fa6d970f8d9893d653212305e04be5e6daec2cd8
+
+[derle]
+betik = cmake -B build -S everywhere-src-${surum}
+betik = cmake --build build
+	      
+[pakur]
+betik = DESTDIR="$PKG" cmake --install build
+betik = mkdir -p "$PKG"/usr/bin $PKG/usr/bin/
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/assistant $PKG/usr/bin/assistant
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/designer $PKG/usr/bin/designer
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lconvert $PKG/usr/bin/lconvert
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/linguist $PKG/usr/bin/linguist
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lprodump $PKG/usr/bin/lprodump
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lrelease $PKG/usr/bin/lrelease
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lrelease-pro $PKG/usr/bin/lrelease-pro
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lupdate $PKG/usr/bin/lupdate
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/lupdate-pro $PKG/usr/bin/lupdate-pro
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/pixeltool $PKG/usr/bin/pixeltool
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdbus $PKG/usr/bin/qdbus
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdbusviewer $PKG/usr/bin/qdbusviewer
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdistancefieldgenerator $PKG/usr/bin/qdistancefieldgenerator
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdoc $PKG/usr/bin/qdoc
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qhelpgenerator $PKG/usr/bin/qhelpgenerator
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qtattributionsscanner $PKG/usr/bin/qtattributionsscanner
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qtdiag $PKG/usr/bin/qtdiag
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qtpaths $PKG/usr/bin/qtpaths
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qtplugininfo $PKG/usr/bin/qtplugininfo

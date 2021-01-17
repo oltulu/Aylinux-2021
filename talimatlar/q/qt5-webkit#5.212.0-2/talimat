@@ -1,0 +1,24 @@
+[paket]
+tanim   = WebKit2 - QML API sınıfları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.qt.io
+
+[gerek]
+derleme = cmake ruby qt5-tools qt5-webchannel qt5-sensors qt5-location libxcomposite gst-plugins-base libwebp libxslt hyphen woff2
+calisma = 
+
+[kaynak]
+1       = https://github.com/qtwebkit/qtwebkit/releases/download/qtwebkit-${surum}-alpha4/qtwebkit-${surum}-alpha4.tar.xz
+
+[sha256]
+1 		= 9ca126da9273664dd23a3ccd0c9bebceb7bb534bddd743db31caf6a5a6d4a9e6
+
+[derle]
+betik	= mkdir build;cd build
+betik	= cmake ../qtwebkit-${surum}-alpha4 -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS="${CXXFLAGS} -DNDEBUG" -DPORT=Qt -DENABLE_TOOLS=OFF
+betik	= make
+  
+[pakur]
+betik	= cd $SRC/build
+tip     = gnu

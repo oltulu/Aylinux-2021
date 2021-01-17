@@ -1,0 +1,21 @@
+[paket]
+tanim   = Görsel bir süreç yöneticisi, 'top' veya 'ps' nin X11 sürümü
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/qps
+
+[gerek]
+derleme = cmake lxqt-build-tools lxqt-config qt5-tools qt5-x11extras
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = b2217a68fd7f7a50c15245de8b11741c3400342231776cf7ff58693b87cbb4b4
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

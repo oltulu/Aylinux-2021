@@ -1,0 +1,28 @@
+[paket]
+tanim   = QT geliştirme dosyaları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.qt.io
+
+[gerek]
+derleme = qt5-base vulkan-headers qt5-declarative
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qttools-everywhere-src-$surum.tar.xz
+dosya   = designer.desktop
+dosya   = linguist.desktop
+dosya   = qdbusviewer.desktop
+dosya   = assistant.desktop
+
+[sha256]
+1 		= c98ee5f0f980bf68cbf0c94d62434816a92441733de50bd9adbe9b9055f03498
+
+[derle]
+betik   = mkdir -p build;cd build;qmake ../${isim/5-/}-everywhere-src-${surum} && make
+
+[pakur]
+betik   = cd build
+betik   = make INSTALL_ROOT=$PKG install
+betik   = find $PKG/usr/lib -type f -name '*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;
+dosya   = pakur.sh

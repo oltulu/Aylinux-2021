@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME masaüstü için PolicyKit entegrasyonu
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.freedesktop.org/wiki/Software/PolicyKit
+
+[gerek]
+derleme    = gobject-introspection polkit gtk3
+calisma    =
+
+[kaynak]
+xz         = ${GNOME_SITE}/$isim/$surum
+dosya      = polkit-gnome-authentication-agent-1.desktop
+
+[sha256]
+1          = 1784494963b8bf9a00eedc6cd3a2868fb123b8a5e516e66c5eda48df17ab9369
+
+[derle]
+ekconf     = --libexecdir=/usr/lib/polkit-gnome
+tip        = gnu
+
+[pakur]
+tip        = gnu
+betik      = install -Dm644 "$SRC/polkit-gnome-authentication-agent-1.desktop" "$PKG/usr/share/applications/polkit-gnome-authentication-agent-1.desktop"

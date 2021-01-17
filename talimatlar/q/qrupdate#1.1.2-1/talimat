@@ -1,0 +1,21 @@
+[paket]
+tanim   = QR ve Cholesky ayrışmalarının hızlı güncellemeleri için Fortran kütüphanesi
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://sourceforge.net/projects/qrupdate
+
+[gerek]
+derleme = lapack
+calisma =
+
+[kaynak]
+gz		= https://downloads.sourceforge.net/project/qrupdate/qrupdate/1.2
+
+[sha256]
+1		= e2a1c711dc8ebc418e21195833814cb2f84b878b90a2774365f0166402308e08
+
+[derle]
+betik   = make PREFIX=/usr solib
+
+[pakur]
+betik   = make PREFIX=/usr DESTDIR=$PKG install

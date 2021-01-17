@@ -1,0 +1,36 @@
+[paket]
+tanim   = QML ve JavaScript dilleri için sınıflar
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://www.qt.io
+
+[gerek]
+derleme = python
+calisma = qt5-base
+
+[kaynak]
+1      = https://download.qt.io/official_releases/qt/${surum%.*}/${surum}/submodules/${isim/6-/}-everywhere-src-${surum}.tar.xz
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cmake -B build -S everywhere-src-${surum}
+betik = cmake --build build
+	      
+[pakur]
+betik = DESTDIR="$PKG" cmake --install build
+betik = mkdir -p "$PKG"/usr/bin $PKG/usr/bin/
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qml $PKG/usr/bin/qml
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlcachegen $PKG/usr/bin/qmlcachegen
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmleasing $PKG/usr/bin/qmleasing
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlformat $PKG/usr/bin/qmlformat
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlimportscanner $PKG/usr/bin/qmlimportscanner
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmllint $PKG/usr/bin/qmllint
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlplugindump $PKG/usr/bin/qmlplugindump
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlpreview $PKG/usr/bin/qmlpreview
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlprofiler $PKG/usr/bin/qmlprofiler
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmlscene $PKG/usr/bin/qmlscene
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmltestrunner $PKG/usr/bin/qmltestrunner
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmltime $PKG/usr/bin/qmltime
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmltyperegistrar $PKG/usr/bin/qmltyperegistrar

@@ -1,0 +1,22 @@
+[paket]
+tanim   = QT tabanlı torrent istemcisi
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.qbittorrent.org/
+
+[gerek]
+derleme = qt5-tools libtorrent-rasterbar qt5-declarative qt5-base qt5-svg
+calisma =
+
+[kaynak]
+xz      = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1       = 144ebed8f2482a1adb894ae201e23f431d65b01dbb65c1567276c4e34673f694
+
+[derle]
+betik   = ./configure --prefix=/usr --disable-systemd
+betik   = make
+
+[pakur]
+betik   = make INSTALL_ROOT="${PKG}" install

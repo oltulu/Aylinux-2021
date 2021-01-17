@@ -1,0 +1,19 @@
+[paket]
+tanim   = Box2D QML eklentisi
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/qml-box2d/qml-box2d
+arsiv   = $isim
+
+[gerek]
+derleme = qt5-declarative 
+calisma = qt5-multimedia
+
+[kaynak]
+git     = $url
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake

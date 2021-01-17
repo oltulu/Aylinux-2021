@@ -1,0 +1,23 @@
+[paket]
+tanim   = QT5 Video, ses, kamera, radyo bağlamları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.qt.io
+
+[gerek]
+derleme = qt5-base gst-plugins-others qt5-declarative
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtmultimedia-everywhere-src-$surum.tar.xz
+
+[sha256]
+1 		= ed6e75bec9c98559c0fbc91ff746185b1e1845139b2c7a5a843e1e8880697d99
+
+[derle]
+betik   = mkdir -p build;cd build;qmake ../qtmultimedia-everywhere-src-$surum && make
+
+[pakur]
+betik   = cd build
+betik   = make INSTALL_ROOT=$PKG install
+betik   = find $PKG/usr/lib -type f -name '*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;

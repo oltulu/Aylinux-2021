@@ -1,0 +1,22 @@
+[paket]
+tanim   = İçerik korumalı PDF dönüştürme uygulaması
+paketci = milisarge
+grup    = ofis
+url     = https://github.com/qpdf/qpdf
+
+[gerek]
+derleme = gnutls libjpeg-turbo
+calisma =
+
+[kaynak]
+gz      = ${url}/releases/download/release-${isim}-${surum}
+
+[sha256]
+1       = 5d2277c738188b7f4e3f01a6db7f2937ed6df54671f1fba834cd3d7ff865827b
+
+[derle]
+ekconf  = --disable-static --enable-crypto-gnutls --disable-crypto-openssl --disable-implicit-crypto --enable-show-failed-test-output
+tip     = gnu
+
+[pakur]
+tip     = gnu

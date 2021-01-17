@@ -1,0 +1,21 @@
+[paket]
+tanim   = Qt ile yazılmış hafif terminal emülatörü
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/qterminal
+
+[gerek]
+derleme = cmake lxqt-build-tools qtermwidget qt5-tools qt5-x11extras desktop-file-utils
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 550f39aeb705cd58f8296a07e3bb5553fdba5ebccb837a83798fcc4f7af30b9e
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

@@ -1,0 +1,21 @@
+[paket]
+tanim   = QTerminal için terminal widget'ı
+paketci = yasarciv
+grup    = sistem
+url     = https://github.com/lxqt/qtermwidget
+
+[gerek]
+derleme = cmake lxqt-build-tools qt5-tools
+calisma =
+
+[kaynak]
+xz      = $url/releases/download/${surum}
+
+[sha256]
+1       = 9266fe2b9d8b8c7297960660c13f816093706f18453c883671445ed49123b938
+
+[derle]
+tip     = cmake
+
+[pakur]
+tip     = cmake

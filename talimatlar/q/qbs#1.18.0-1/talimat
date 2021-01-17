@@ -1,0 +1,23 @@
+[paket]
+tanim   = Qbs derleme aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://www.qt.io/Qbs
+arsiv   = qbs-src-$surum
+
+[gerek]
+derleme = qt5-script
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qbs/$surum/qbs-src-$surum.tar.gz
+
+[sha256]
+1 		= 308160223c0bd7492d56fb5d7b7f705bfb130947ac065bf39280ec6d7cbe4f6a
+
+[derle]
+betik   = qmake QBS_INSTALL_PREFIX=/usr CONFIG+=qbs_enable_project_file_updates QBS_LIBEXEC_INSTALL_DIR=/usr/lib/qbs QBS_LIBEXEC_DESTDIR=../../../lib/qbs QBS_RELATIVE_LIBEXEC_PATH=../lib/qbs qbs.pro
+betik   = make
+
+[pakur]
+tip     = qmake

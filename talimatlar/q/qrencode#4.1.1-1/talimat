@@ -1,0 +1,22 @@
+[paket]
+tanim   = QR Kodu sembolündeki verileri kodlamak için C kitaplığı.
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://fukuchi.org/works/qrencode/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+bz2      = https://fukuchi.org/works/qrencode
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= ./configure --prefix=/usr
+betik 	= make
+        	      
+[pakur]
+betik 	= make prefix="$PKG/usr" install

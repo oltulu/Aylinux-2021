@@ -1,0 +1,22 @@
+[paket]
+tanim   = Qt/С ++ ile yazılmış hızlı ve hafif RSS/Atom besleme okuyucu
+paketci = milisarge
+grup    = ağ 
+url     = https://quiterss.org
+
+[gerek]
+derleme = qt5-tools desktop-file-utils qt5-multimedia qt5-webkit
+calisma = 
+
+[kaynak]
+1       = https://github.com/QuiteRSS/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 5177a15d5799536e6554022d7765eeb19f66976ab88844457cbe2df66a6d784e
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake
+betik   = rm -r "$PKG/usr/share/pixmaps/"

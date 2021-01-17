@@ -1,0 +1,27 @@
+[paket]
+tanim   = Chromium tarayıcı projesine dayalı web uygulamaları destek aracı
+paketci = milisarge
+grup 	= ağ
+url     = https://www.qt.io
+arsiv   = ${isim/5-/}-everywhere-src-${surum}
+
+[gerek]
+derleme = clang qt5-webchannel qt5-location libxcomposite libxrandr libxcursor pciutils libxss libxml2 protobuf2 libevent snappy nss libxslt ffmpeg libvpx krb5 python2 gperf jsoncpp ninja qt5-tools poppler minizip re2
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtwebengine-everywhere-src-$surum.tar.xz
+2    	= https://code.qt.io/cgit/qt/qtwebengine-chromium.git/patch/?id=4e828b3b::qtbug-86752.patch
+
+
+[sha256]
+1 		= f903e98fe3cd717161252710125fce011cf882ced96c24968b0c38811fbefdf2
+2		= b9fde4d76a031c4bdba19b628ff9435647f54915546d977869568093f361d1b9
+
+[derle]
+betik   = patch -d src/3rdparty -p1 -i "$KAYNAK_DIZIN"/qtbug-86752.patch
+betik   = mkdir -p build;cd build;qmake -spec linux-clang ../ -- -proprietary-codecs -system-ffmpeg -webp -spellchecker -webengine-icu -webengine-kerberos && make -j2
+
+[pakur]
+betik   = cd build
+tip     = qmake

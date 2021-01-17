@@ -1,0 +1,27 @@
+[paket]
+tanim   = Qt5 Yapılandırma Aracı
+paketci = milisarge
+grup    = kütüphane
+url     = https://sourceforge.net/projects/qt5ct
+
+[gerek]
+derleme = qt5-tools qt5-svg
+calisma =
+
+[kaynak]
+bz2     = ${SOURCEFORGE_SITE}/project/qt5ct
+dosya	= qt5ct.sh
+
+[sha256]
+1       = f24030e90d8b923b60c320b2db5b4c0fcc47f9f35ac4c52060ab3c6e423057dc
+2       = 0920fc31f681e6625171f034ce41a134b328f44fdd794df9ba14101c0f9f1e07
+
+[derle]
+betik   = qmake-qt5 $isim.pro && make
+
+[pakur]
+betik   = make INSTALL_ROOT=$PKG install
+betik	= install -Dm644 $SRC/qt5ct.sh  $PKG/etc/profile.d/qt5ct.sh
+betik	= cd $PKG/usr/share/applications
+betik	= sed -i '/^Name=Qt5 Settings/a Name[tr]=Qt5 Ayarları' qt5ct.desktop
+betik	= sed -i '/^Comment=Qt5 Configuration Tool/a Comment[tr]=Qt5 Yapılandırma Aracı' qt5ct.desktop

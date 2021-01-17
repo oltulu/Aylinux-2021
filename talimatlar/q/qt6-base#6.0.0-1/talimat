@@ -1,0 +1,42 @@
+[paket]
+tanim   = Çapraz platform uygulaması ve kullanıcı arabirimi çerçevesi
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = https://www.qt.io
+
+[gerek]
+derleme = mariadb sqlite unixodbc postgresql alsa-lib gtk3 pulseaudio cups freetds vulkan-headers
+calisma = libjpeg-turbo xcb-util-keysyms xcb-util-renderutil libgl fontconfig xdg-utils shared-mime-info xcb-util-wm libxrender libxi sqlite xcb-util-image mesa tslib libinput libxkbcommon-x11 libproxy double-conversion
+
+[kaynak]
+1      = https://download.qt.io/official_releases/qt/6.0/6.0.0/submodules//submodules/qtbase-everywhere-src-${surum}.tar.xz
+
+[sha256]
+#1 		= fddfd8852ef7503febeed67b876d1425160869ae2b1ae8e10b3fb0fedc5fe701
+
+[derle]
+betik = cmake -B build -S qtbase-everywhere-src-${surum} -DCMAKE_INSTALL_PREFIX=/usr -DINSTALL_BINDIR=lib/qt6/bin -DINSTALL_DOCDIR=share/doc/qt6 -DINSTALL_ARCHDATADIR=lib/qt6 -DINSTALL_DATADIR=share/qt6 -DINSTALL_INCLUDEDIR=include/qt6 -DINSTALL_MKSPECSDIR=lib/qt6/mkspecs -DINSTALL_EXAMPLESDIR=share/doc/qt6/examples -DQT_FEATURE_journald=ON -DQT_FEATURE_openssl_linked=ON
+betik = cmake --build build   
+
+[pakur]
+betik = DESTDIR="$PKG" cmake --install build
+betik = mkdir -p "$PKG"/usr/bin
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/androiddeployqt $PKG/usr/bin/androiddeployqt
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/androidtestrunner $PKG/usr/bin/androidtestrunner
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/cmake_automoc_parser $PKG/usr/bin/cmake_automoc_parser
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/moc $PKG/usr/bin/moc
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdbuscpp2xml $PKG/usr/bin/qdbuscpp2xml
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qdbusxml2cpp $PKG/usr/bin/qdbusxml2cpp
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qlalr $PKG/usr/bin/qlalr
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qmake $PKG/usr/bin/qmake
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-cmake $PKG/usr/bin/qt-cmake
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-cmake-private $PKG/usr/bin/t-cmake-private
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-cmake-private-install.cmake $PKG/usr/bin/qt-cmake-private-install.cmake
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-cmake-standalone-test $PKG/usr/bin/qt-cmake-standalone-test
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-configure-module $PKG/usr/bin/qt-configure-module
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qt-internal-configure-tests $PKG/usr/bin/qt-internal-configure-tests
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/qvkgen $PKG/usr/bin/qvkgen
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/rcc $PKG/usr/bin/rcc
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/syncqt.pl $PKG/usr/bin/syncqt.pl
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/tracegen $PKG/usr/bin/tracegen
+betik = ln -rs "$PKG"/usr/lib/qt6/bin/uic $PKG/usr/bin/uic

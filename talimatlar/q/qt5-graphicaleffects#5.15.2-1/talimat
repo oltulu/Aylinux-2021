@@ -1,0 +1,22 @@
+[paket]
+tanim   = Qt Quick2 ile kullanım için QT bağları
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.qt.io
+arsiv   = qtgraphicaleffects-everywhere-src-$surum
+
+[gerek]
+derleme = qt5-declarative
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtgraphicaleffects-everywhere-src-$surum.tar.xz
+
+[sha256]
+1 		= f4a4d3e1c6d8b0b200b6759ebb615344275957d56d2ef6a33641f853120466d1
+
+[derle]
+tip     = qmake
+
+[pakur]
+tip     = qmake

@@ -1,0 +1,20 @@
+[paket]
+tanim   = Pascal için Qt5 arayüz bağları
+paketci = milisarge
+grup    = kütüphane
+url     = https://svn.freepascal.org/svn/lazarus/trunk/lcl/interfaces/qt5/cbindings
+arsiv   = $isim
+
+[gerek]
+derleme = qt5-base qt5-x11extras subversion
+calisma =
+
+[kaynak]
+svn     = $url::$isim
+
+[derle]
+betik   = svn up -r 63484
+betik   = qmake-qt5 "QT += x11extras" && make
+
+[pakur]
+betik   = make INSTALL_ROOT="$PKG" install

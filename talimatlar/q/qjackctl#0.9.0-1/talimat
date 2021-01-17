@@ -1,0 +1,21 @@
+[paket]
+tanim   = JACK Audio Connection Kit - Qt GUI Arayüzü
+paketci = milisarge
+grup    = kütüphane
+url     = http://qjackctl.sourceforge.net
+
+[gerek]
+derleme = alsa-lib qt5-tools jack portaudio desktop-file-utils jack
+calisma =
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/${isim}
+
+[sha256]
+1       = 9db46376cfacb2e2ee051312245f5f7c383c9f5a958c0e3d661b9bd2a9246b7d
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,28 @@
+[paket]
+tanim   = PDF işleme kitaplığı-Qt5 bağlamları
+paketci = milisarge
+grup    = kütüphane
+url     = https://poppler.freedesktop.org
+arsiv   = "poppler-${surum}"
+
+[gerek]
+derleme = cmake qt5-base libpng tiff lcms2 fontconfig cairo openjpeg2 poppler
+calisma =
+
+[kaynak]
+1       = ${url}/poppler-${surum}.tar.xz
+
+[sha256]
+1       = 434ecbbb539c1a75955030a1c9b24c7b58200b7f68d2e4269e29acf2f8f13336
+
+[derle]
+betik   = export CPLUS_INCLUDE_PATH=/usr/include/openjpeg-2.3
+ekconf  = -DENABLE_UNSTABLE_API_ABI_HEADERS=ON -DENABLE_GLIB=OFF -DENABLE_QT5=ON -DENABLE_UTILS=OFF -DENABLE_CPP=OFF
+tip     = cmake
+
+[pakur]
+tip     = cmake
+betik   = rm -f ${PKG}/usr/lib/libpoppler.*
+betik   = for f in poppler-cairo poppler-splash poppler; do rm -f ${PKG}/usr/lib/pkgconfig/${f}.pc; done
+betik   = mv $PKG/usr/include/poppler/qt5 $PKG/usr/ ; rm -rf $PKG/usr/include/poppler/*
+betik   = mv $PKG/usr/qt5 $PKG/usr/include/poppler/

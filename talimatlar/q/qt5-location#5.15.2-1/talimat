@@ -1,0 +1,25 @@
+[paket]
+tanim   = Konum, uydu ve alan izleme sınıflarına erişim sağlar
+paketci = yasarciv67
+grup 	= ağ
+url     = https://www.qt.io
+
+[gerek]
+derleme = qt5-declarative
+calisma = 
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtlocation-everywhere-src-$surum.tar.xz
+
+
+[sha256]
+1 		= 093af763a70d126c4b9f6a22ebf8218fe95dc0151e40666b2389fdf55c9f1a2c
+
+[derle]
+betik   = mkdir -p build;cd build;qmake ../${isim/5-/}-everywhere-src-${surum} && make
+
+[pakur]
+betik   = cd build
+betik   = make INSTALL_ROOT=$PKG install
+betik   = find $PKG/usr/lib -type f -name '*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;
+

@@ -1,0 +1,30 @@
+[paket]
+tanim   = Scintilla C++ sınıfları için QT5 bağı
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.riverbankcomputing.com/software/qscintilla/intro
+
+[gerek]
+derleme = qt5-tools
+calisma =
+
+[kaynak]
+1       = https://www.riverbankcomputing.com/static/Downloads/QScintilla/$surum/QScintilla-$surum.tar.gz
+
+[sha256]
+1       = 9361e26fd7fb7b5819a7eb92c5c1880a18de9bd3ed9dd2eb008e57388696716b
+
+[derle]
+betik   = cd "$SRC"/QScintilla-${surum}
+betik   = export QMAKEFEATURES=$PWD/Qt4Qt5/features/
+betik   = cd Qt4Qt5
+betik   = qmake-qt5 && make
+betik   = cd ../designer-Qt4Qt5
+betik   = qmake-qt5 INCLUDEPATH+=../Qt4Qt5 QMAKE_LIBDIR+=../Qt4Qt5
+betik   = make
+
+[pakur]
+betik   = cd QScintilla-${surum}/Qt4Qt5
+betik   = make DESTDIR="${PKG}" INSTALL_ROOT="${PKG}" install
+betik   = cd ../designer-Qt4Qt5
+betik   = make DESTDIR="${PKG}" INSTALL_ROOT="${PKG}" install

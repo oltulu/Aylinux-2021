@@ -1,0 +1,31 @@
+[paket]
+tanim   = Qt5 için ek tarz eklentileri
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/qt/qtstyleplugins
+arsiv   = qtstyleplugins-335dbece103e2cbf6c7cf819ab6672c2956b17b3
+
+[gerek]
+derleme = gtk2 qt5-base
+calisma =
+
+[kaynak]
+1       = ${url}/archive/335dbece103e2cbf6c7cf819ab6672c2956b17b3.tar.gz::$isim-$surum.tar.gz
+dosya   = 0001-fix-build-against-Qt-5.15.patch
+dosya   = 0002-fix-gtk2-background.patch
+
+[sha256]
+1       = 29ec24fa8df64be161ad06d0e5af3ba1a20bfe265004f5fe4ab9f5f3abf9a5ba
+2       = 5ca6dca183a0b3b7359cce2ff1480faa0c5cf0eb7742ad3edb38cd97fe5077a0
+3       = deaed645fbaa7b20ec88e612be906990d5cb95781cb5ebd3815558b8f4a8b4c8
+
+[derle]
+yama    = 0001-fix-build-against-Qt-5.15.patch
+yama    = 0002-fix-gtk2-background.patch
+betik	= qmake PREFIX=/usr CONFIG+='nostrip' QMAKE_CFLAGS_RELEASE="$CFLAGS" QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS" && make
+
+[pakur]
+betik   = make INSTALL_ROOT=$PKG install
+betik   = mkdir -p $PKG/etc/profile.d
+betik   = echo "export QT_QPA_PLATFORMTHEME=gtk2" > $PKG/etc/profile.d/qt5-styleplugins.sh
+betik   = chmod +x $PKG/etc/profile.d/qt5-styleplugins.sh

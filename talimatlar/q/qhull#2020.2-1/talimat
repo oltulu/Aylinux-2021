@@ -1,0 +1,28 @@
+[paket]
+tanim   = Dışbükey gövdeye hacimleri, yüzey alanlarını ve yaklaşımları hesaplar
+paketci = yasarciv67
+grup    = bilimsel
+url     = http://www.qhull.org
+
+[gerek]
+derleme = cmake
+calisma =
+
+[kaynak]
+1       = https://github.com/qhull/qhull/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2		= https://github.com/qhull/qhull/commit/a5d0e644.patch::qhull-pic.patch
+dosya	= qhull-no-static.patch
+
+[sha256]
+1       = cf7235b76244595a86b9407b906e3259502b744528318f2178155e5899d6cf9f
+2		= edb77b3b949628eb6759920de8cd3216e179f8b54f16e357c0d4b5fe8bc06131
+3		= 8c9e7bda62da8f9c02429b0839610adf6e22525e0de6eb6df2a95cf3dad8b7ab
+
+[derle]
+yama	= qhull-pic.patch
+yama	= qhull-no-static.patch
+tip     = cmake
+
+[pakur]
+tip     = cmake
+
