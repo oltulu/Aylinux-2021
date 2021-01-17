@@ -1,0 +1,33 @@
+[paket]
+tanim   = Sanal Dağıtılmış Ethernet
+paketci = milisarge
+grup    = kütüphane
+url     = http://sourceforge.net/projects/vde
+
+[gerek]
+derleme    = openssl python
+calisma    =
+
+[kaynak]
+1          = ${SOURCEFORGE_SITE}/vde/vde2-$surum.tar.bz2
+dosya      = vde_cryptcab-compile-against-openssl-1.1.0.patch
+dosya      = dhcpd.conf.sample
+dosya      = iptables.rules.sample
+dosya      = vde-config.sample
+dosya      = vde-connection.sample
+
+[sha256]
+1          = cbea9b7e03097f87a6b5e98b07890d2275848f1fe4b9fcda77b8994148bc9542
+
+[derle]
+bayrak     = yok
+yama       = 2
+ekconf     = --libexecdir=/usr/lib/vde2 --enable-experimental
+tip        = gnu
+
+[pakur]
+betik      = make prefix=$PKG/usr sysconfdir=$PKG/etc sbindir=$PKG/usr/bin libexecdir=$PKG/usr/lib/vde2 install
+betik      = install -D -m 644 ../vde-config.sample $PKG/etc/vde/vde-config.sample
+betik      = install -D -m 644 ../vde-connection.sample $PKG/etc/vde/vde-connection.sample
+betik      = install -D -m 644 ../dhcpd.conf.sample $PKG/usr/share/vde2/dhcpd.conf.sample
+betik      = install -D -m 644 ../iptables.rules.sample $PKG/usr/share/vde2/iptables.rules.sample

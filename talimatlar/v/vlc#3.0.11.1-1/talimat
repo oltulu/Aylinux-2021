@@ -1,0 +1,29 @@
+[paket]
+tanim   = Çoklu platform destekli ses ve video oynatıcı
+paketci = milisarge 
+grup    = medya
+url     = https://www.videolan.org/vlc
+
+[gerek]
+derleme = a52dec libdvbpsi libxpm libdca lua libmatroska taglib libmpcdec ffmpeg faad2 libupnp libmad libmpeg2 xcb-util-keysyms libxinerama libsecret qt5-base qt5-svg qt5-x11extras  freetype fribidi harfbuzz fontconfig libxml2 gnutls libproxy wayland-protocols aribb24 gst-plugins-base live555 libnotify libbluray flac libdc1394 libavc1394 libcaca gtk3 librsvg avahi libmtp libdvdcss samba mesa mpg123 libdvdread libogg libshout libmodplug libvpx libvorbis speex opus libtheora libpng libjpeg-turbo x265 x264 libass pulseaudio alsa-lib jack libsamplerate libsoxr aom dav1d libgme
+calisma =  
+
+[kaynak]
+xz    = https://download.videolan.org/pub/videolan/vlc/${surum}
+dosya = vlc_qt_5_15.patch
+dosya = vlc-3.0.11.1-srt_1.4.2.patch
+dosya = vlc-lua53_compat.patch
+
+[sha256]
+1     = 189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8
+2     = 4fc70eaec81a82bc29321ddb4fd303367b7b8cb58625de889644256daf38abed
+3     = db3be0e5a79cddced198d53b0932be9ca397fe52369524ea37e4ef2872e28596
+4     = d1cb88a1037120ea83ef75b2a13039a16825516b776d71597d0e2eae5df2d8fa
+
+[derle]
+dosya = derle.sh
+
+[pakur]
+tip   = gnu
+betik = for res in 16 32 48 128 256; do install -Dm 644 "share/icons/${res}x${res}/vlc.png" "${PKG}/usr/share/icons/hicolor/${res}x${res}/apps/vlc.png"; done
+betik = rm -rf $PKG/usr/share/kde4

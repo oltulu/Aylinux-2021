@@ -1,0 +1,20 @@
+[paket]
+tanim   = Güçlü konsol tababnlı metin düzenleyici
+paketci = milisarge
+grup 	= temel
+url     = https://www.vim.org
+
+[kaynak]
+github  = $isim/$isim
+dosya   = vimrc
+
+[sha256]
+1 		= 92f97f005f27c17b0cc15fffa084038361b957c40501c4c0eb263fcd0fc6fd11
+
+[derle]
+betik   = echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
+tip     = gnu
+     
+[pakur]
+tip     = gnu
+betik   = mkdir $PKG/etc ; cp $SRC/vimrc $PKG/etc/

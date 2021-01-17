@@ -1,0 +1,29 @@
+[paket]
+tanim   = Kullanımı kolay ekran kaydetme yazılımı
+paketci = yasarciv67
+grup    = medya
+url     = http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html
+
+[gerek]
+derleme = alsa-lib libx11 libxrandr qt5-base qt5-tools qt5-x11extras qt5-multimedia v4l-utils ffmpeg gstreamer gst-plugins-base gst-plugins-others 
+calisma =
+
+[kaynak]
+1       = https://github.com/vkohaupt/vokoscreenNG/archive/$surum.tar.gz::$isim-$surum.tar.gz
+dosya	= vokoscreen-install.pri
+
+[sha256]
+1       = b7652c46df024ea785f0845003c716a46bb2e961613d7623b70c5aa505e3eb75
+2		= 11fda96ec37ed2a8c66f6b6e8654872f9f4cf19203e7b8039e4801b1846070e0
+
+[derle]
+betik	= cd $SRC/${isim}NG-${surum}
+betik	= cp ../$isim-install.pri src/install.pri
+betik	= echo 'include(install.pri)' >> src/vokoscreenNG.pro
+betik	= mkdir -p $SRC/build && cd $SRC/build
+betik   = qmake-qt5 ../${isim}NG-${surum}/src/vokoscreenNG.pro QMAKE_CFLAGS="${CFLAGS}" QMAKE_CXXFLAGS="${CXXFLAGS}" CONFIG+=release CONFIG+=c++14
+betik	= make
+
+[pakur]
+betik	= cd $SRC/build
+betik	= make INSTALL_ROOT=${PKG} install

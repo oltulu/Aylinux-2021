@@ -1,0 +1,23 @@
+[paket]
+tanim   = Milis için güzel bir fare teması
+paketci = yasarciv
+grup    = tasarım
+url     = https://gitlab.com/sonakinci41/volantes-cursors-milis
+arsiv	= $isim-master
+
+[gerek]
+derleme = inkscape xcursorgen
+calisma = 
+
+[kaynak]
+1		= https://gitlab.com/sonakinci41/volantes-cursors-milis/-/archive/master/volantes-cursors-milis-master.tar.bz2
+	
+
+[sha256]
+1       = 4bded4a5cbce732f67ba1db9282baf1e231524763753241b5a21c6331536a47e
+
+[derle]
+betik   = make build
+
+[pakur]
+betik   = make install DESTDIR=$PKG PREFIX=/usr

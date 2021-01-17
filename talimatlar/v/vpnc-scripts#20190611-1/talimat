@@ -1,0 +1,21 @@
+[paket]
+tanim   = VPNC ve OpenConnect için ağ yapılandırma komut dosyaları
+paketci = yasarciv67
+grup    = kütüphane
+url     = http://www.infradead.org/openconnect/vpnc-script.html
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1       = ftp://ftp.infradead.org/pub/${isim}/${isim}-${surum}.tar.gz
+
+[sha256]
+1       = e0953af7aa336fa9f50d4db6325239024f0d6e5a95ea4ad260918c791ca96473
+
+[derle]
+betik   = echo "Derleme olmayacak"
+
+[pakur]
+betik   = install -Dm755 $SRC/$isim-$surum/vpnc-script  $PKG/usr/libexec/vpnc-scripts

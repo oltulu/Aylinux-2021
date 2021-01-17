@@ -1,0 +1,2237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: variety\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-22 12:22+0200\n"
+"PO-Revision-Date: 2020-01-06 08:23+0000\n"
+"Last-Translator: Yaşar Çiv <yasarciv@protonmail.com>\n"
+"Language-Team: Launchpad Turkish Translators <https://launchpad.net/~lp-l10n-"
+"tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2020-01-09 18:32+0000\n"
+"X-Generator: Launchpad (build bceb5ef013b87ef7aafe0755545ceb689ca7ac60)\n"
+"Language: tr\n"
+"X-Language: tr_TR\n"
+"X-Source-Language: C\n"
+
+#: ../variety/AddFlickrDialog.py:148
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:94
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:99
+#: ../data/plugins/downloaders/WallhavenSource.py:72
+msgid "No images found"
+msgstr "Resim bulunamadı"
+
+#: ../variety/FlickrDownloader.py:44
+msgid "Images from Flickr"
+msgstr "Flickr resimleri"
+
+#: ../variety/FolderChooser.py:67
+msgid "Choose a folder"
+msgstr "Bir dizin seç"
+
+#: ../variety/FolderChooser.py:70 ../variety/PreferencesVarietyDialog.py:584
+#: ../variety/PreferencesVarietyDialog.py:625
+msgid "Cancel"
+msgstr "İptal et"
+
+#: ../variety/FolderChooser.py:70
+msgid "OK"
+msgstr "Tamam"
+
+#: ../variety/ImageFetcher.py:62 ../variety/ImageFetcher.py:108
+msgid "Fetching"
+msgstr "Alınıyor"
+
+#: ../variety/ImageFetcher.py:66 ../variety/ImageFetcher.py:76
+#: ../variety/ImageFetcher.py:83 ../variety/ImageFetcher.py:117
+#: ../variety/VarietyWindow.py:2458
+msgid "Not an image"
+msgstr "Bir resim değil"
+
+#: ../variety/ImageFetcher.py:123
+msgid "Image too small, ignoring it"
+msgstr "Resim çok küçük, görmezden geliniyor"
+
+#: ../variety/ImageFetcher.py:148
+#, c-format
+msgid "Sorry, got %s error..."
+msgstr "Üzgünüm, %s hatası var..."
+
+#: ../variety/ImageFetcher.py:149
+msgid "This means the link is no longer valid"
+msgstr "Bu, bağlantının artık geçerli olmadığı anlamına gelir"
+
+#: ../variety/ImageFetcher.py:153
+msgid "Fetch failed for some reason"
+msgstr "Getirme bazı nedenlerden dolayı başarısız oldu"
+
+#: ../variety/ImageFetcher.py:155
+msgid ""
+"To get more information, please run Variety from terminal with -v option and "
+"retry the action"
+msgstr ""
+"Daha fazla bilgi almak için, lütfen Variety'yi terminalden -v seçeneğiyle "
+"çalıştırın ve eylemi yeniden deneyin"
+
+#: ../variety/indicator.py:63 ../variety/indicator.py:110
+#: ../variety/indicator.py:179
+msgid "_Next"
+msgstr "_Sonraki"
+
+#: ../variety/indicator.py:68 ../variety/indicator.py:115
+#: ../variety/indicator.py:184
+msgid "_Previous"
+msgstr "_Önceki"
+
+#: ../variety/indicator.py:75
+msgid "Current desktop wallpaper"
+msgstr "Geçerli masaüstü duvar kağıdı"
+
+#: ../variety/indicator.py:79
+msgid "Show origin"
+msgstr "Kökeni göster"
+
+#: ../variety/indicator.py:90 ../variety/ThumbsManager.py:177
+#: ../variety/VarietyWindow.py:730
+msgid "Copy to _Favorites"
+msgstr "_Sık Kullanılanlara Kopyala"
+
+#: ../variety/indicator.py:95 ../variety/VarietyWindow.py:739
+#: ../data/ui/PreferencesVarietyDialog.ui:3289
+msgid "Move to Favorites"
+msgstr "Sık Kullanılanlara Taşı"
+
+#: ../variety/indicator.py:101 ../variety/ThumbsManager.py:197
+msgid "Delete to _Trash"
+msgstr "_Çöpe Gönder"
+
+#: ../variety/indicator.py:120 ../variety/indicator.py:189
+msgid "_Next, skipping forward history"
+msgstr "_İleri, ilerleme geçmişi atlanarak"
+
+#: ../variety/indicator.py:130
+msgid ""
+"Tip: Scroll wheel over icon\n"
+"for Next and Previous"
+msgstr ""
+"İpucu: İleri veya Geri için simge\n"
+"üzerinde kaydırma tekerleği kullan"
+
+#: ../variety/indicator.py:136 ../variety/indicator.py:200
+#: ../variety/VarietyWindow.py:872 ../variety/VarietyWindow.py:894
+msgid "Pause on current"
+msgstr "Geçerlide duraklat"
+
+#: ../variety/indicator.py:140
+msgid "_Image"
+msgstr "_Resim"
+
+#: ../variety/indicator.py:147 ../variety/ThumbsManager.py:206
+msgid "Where is it from?"
+msgstr "Bu nereden?"
+
+#: ../variety/indicator.py:151
+msgid "Show without effects"
+msgstr "Etkiler olmadan göster"
+
+#: ../variety/indicator.py:161
+msgid "Google Image Search"
+msgstr "Google Resim Arama"
+
+#: ../variety/indicator.py:168 ../variety/ThumbsManager.py:169
+msgid "Set EXIF Rating"
+msgstr "EXIF Puanını Ayarla"
+
+#: ../variety/indicator.py:206 ../variety/VarietyWindow.py:901
+msgid "Save to Favorites"
+msgstr "Sık Kullanılanlara Kaydet"
+
+#: ../variety/indicator.py:211
+msgid "View Favorites..."
+msgstr "Sık Kullanılanları Görüntüle..."
+
+#: ../variety/indicator.py:218
+msgid "Copy to Clipboard"
+msgstr "Panoya Kopyala"
+
+#: ../variety/indicator.py:228
+msgid "Google Quote"
+msgstr "Google Alıntısı"
+
+#: ../variety/indicator.py:233
+msgid "Google Author"
+msgstr "Google Yazarı"
+
+#: ../variety/indicator.py:240 ../variety/indicator.py:296
+msgid "Preferences..."
+msgstr "Tercihler..."
+
+#: ../variety/indicator.py:250
+msgid "Turn off"
+msgstr "Kapat"
+
+#: ../variety/indicator.py:255
+msgid "_Quote"
+msgstr "_Alıntı"
+
+#: ../variety/indicator.py:262
+msgid "_History"
+msgstr "_Geçmiş"
+
+#: ../variety/indicator.py:268
+msgid "_Wallpaper Selector"
+msgstr "Duvar Kağıdı Seçici"
+
+#: ../variety/indicator.py:276
+msgid "Recent _Downloads"
+msgstr "Son _İndirilenler"
+
+#: ../variety/indicator.py:284
+msgid "Start Slideshow"
+msgstr "Slayt Gösterisi Başlat"
+
+#: ../variety/indicator.py:300
+msgid "About"
+msgstr "Hakkında"
+
+#: ../variety/indicator.py:304 ../data/ui/PreferencesVarietyDialog.ui:3991
+msgid "Donate"
+msgstr "Bağış Yap"
+
+#: ../variety/indicator.py:308
+msgid "Quit"
+msgstr "Çık"
+
+#: ../variety/__init__.py:121
+msgid "Terminating signal received, quitting..."
+msgstr "Sonlandırma sinyali alındı, çıkılıyor ..."
+
+#: ../variety/__init__.py:195
+msgid ""
+"Variety is already running. Sending the command to the running instance."
+msgstr "Variety zaten çalışıyor. Komutu çalışan örneğe gönderme."
+
+#: ../variety/PreferencesVarietyDialog.py:85
+msgid " (Profile: {})"
+msgstr " (Profil: {})"
+
+#: ../variety/PreferencesVarietyDialog.py:87
+#: ../data/ui/PreferencesVarietyDialog.ui:121
+msgid "Variety Preferences"
+msgstr "Variety Tercihleri"
+
+#: ../variety/PreferencesVarietyDialog.py:246
+msgid "All"
+msgstr "Tümü"
+
+#: ../variety/PreferencesVarietyDialog.py:392
+#: ../variety/PreferencesVarietyDialog.py:591
+#: ../data/ui/PreferencesVarietyDialog.ui:342
+msgid "Images"
+msgstr "Resimler"
+
+#: ../variety/PreferencesVarietyDialog.py:392
+msgid "Add individual wallpaper images"
+msgstr "Bireysel duvar kağıdı görüntüleri ekle"
+
+#: ../variety/PreferencesVarietyDialog.py:394
+msgid "Folders"
+msgstr "Dizinler"
+
+#: ../variety/PreferencesVarietyDialog.py:395
+msgid "Searched recursively for up to 10000 images, shown in random order"
+msgstr ""
+"Rastgele sırayla gösterilen 10000'e kadar resim için özyinelemeli olarak "
+"arandı"
+
+#: ../variety/PreferencesVarietyDialog.py:401
+msgid "Sequential Albums (order by filename)"
+msgstr "Sıralı albümler (dosya adına göre sıralanmış)"
+
+#: ../variety/PreferencesVarietyDialog.py:402
+msgid "Searched recursively for images, shown in sequence (by filename)"
+msgstr ""
+"Sırayla gösterilen (dosya adına göre) görüntüler için özyinelemeli olarak "
+"arama yapıldı"
+
+#: ../variety/PreferencesVarietyDialog.py:408
+msgid "Sequential Albums (order by date)"
+msgstr "Sıralı Albümler (tarihe göre sıralanmış)"
+
+#: ../variety/PreferencesVarietyDialog.py:409
+msgid "Searched recursively for images, shown in sequence (by file date)"
+msgstr ""
+"Sırayla gösterilen  (dosya tarihine göre) görüntüler için özyinelemeli "
+"olarak arama yapıldı"
+
+#: ../variety/PreferencesVarietyDialog.py:415 ../data/ui/AddFlickrDialog.ui:83
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../variety/PreferencesVarietyDialog.py:415
+msgid "Fetch images from Flickr"
+msgstr "Flickr'dan görüntü getir"
+
+#: ../variety/PreferencesVarietyDialog.py:457
+msgid "Remove the source, keep the files"
+msgstr "Kaynağı kaldır, dosyaları sakla"
+
+#: ../variety/PreferencesVarietyDialog.py:459
+msgid "Remove the sources, keep the files"
+msgstr "Kaynakları kaldır, dosyaları sakla"
+
+#: ../variety/PreferencesVarietyDialog.py:470
+msgid "Remove the source and delete the downloaded files"
+msgstr "Kaynağı kaldır ve indirilen dosyaları sil"
+
+#: ../variety/PreferencesVarietyDialog.py:472
+msgid "Remove the sources and delete the downloaded files"
+msgstr "Kaynakları kaldır ve indirilen dosyaları sil"
+
+#: ../variety/PreferencesVarietyDialog.py:507
+#, c-format
+msgid ""
+"Using this source requires wallpaper changing enabled at intervals of %d "
+"minutes or less. Settings were adjusted automatically."
+msgstr ""
+"Bu kaynağı kullanmak için, %d dakika veya daha kısa aralıklarla duvar kağıdı "
+"değişikliğinin etkinleştirilmesi gerekir. Ayarlar otomatik olarak yapıldı."
+
+#: ../variety/PreferencesVarietyDialog.py:581
+msgid "Add Images"
+msgstr "Resimleri Ekle"
+
+#: ../variety/PreferencesVarietyDialog.py:584
+#: ../variety/PreferencesVarietyDialog.py:625
+msgid "Add"
+msgstr "Ekle"
+
+#: ../variety/PreferencesVarietyDialog.py:609
+msgid ""
+"Add Folders - Only add the root folders, subfolders are searched recursively"
+msgstr ""
+"Dizinleri Ekle - Sadece kök dizinleri ekleyin, alt dizinler tekrarlı olarak "
+"aranır"
+
+#: ../variety/PreferencesVarietyDialog.py:613
+msgid ""
+"Add Sequential Albums (ordered by filename). Subfolders are searched "
+"recursively."
+msgstr ""
+"Sıralı Albümler Ekle (dosya adına göre sıralanır). Alt klasörler "
+"özyinelemeli olarak aranır."
+
+#: ../variety/PreferencesVarietyDialog.py:617
+msgid ""
+"Add Sequential Albums (ordered by date). Subfolders are searched recursively."
+msgstr ""
+"Sıralı Albümler Ekle (tarihe göre sıralanır). Alt klasörler özyinelemeli "
+"olarak aranır."
+
+#: ../variety/PreferencesVarietyDialog.py:771
+#: ../data/ui/PreferencesVarietyDialog.ui:3304
+msgid "Edit..."
+msgstr "Düzenle..."
+
+#: ../variety/PreferencesVarietyDialog.py:773
+msgid "Open Folder"
+msgstr "Dizin Aç"
+
+#: ../variety/PreferencesVarietyDialog.py:779
+msgid "View Image"
+msgstr "Resmi Görüntüle"
+
+#: ../variety/PreferencesVarietyDialog.py:1160
+#: ../variety/PreferencesVarietyDialog.py:1167
+msgid "No write permissions"
+msgstr "Yazma izni yok"
+
+#: ../variety/PreferencesVarietyDialog.py:1242
+msgid "Could not adjust permissions"
+msgstr "İzinler ayarlanamadı"
+
+#: ../variety/QuotesEngine.py:243
+msgid "No quote plugins"
+msgstr "Alıntı eklentisi yok"
+
+#: ../variety/QuotesEngine.py:243
+msgid "There are no quote plugins installed"
+msgstr "Kurulu alıntı eklentisi yok"
+
+#: ../variety/QuotesEngine.py:250
+msgid "No suitable quote plugins"
+msgstr "Uygun alıntı eklentisi yok"
+
+#: ../variety/QuotesEngine.py:251
+msgid ""
+"You have no quote plugins which support searching by keywords and authors"
+msgstr ""
+"Anahtar kelimelere ve yazarlara göre arama yapmayı destekleyen alıntı "
+"eklentileriniz yok"
+
+#: ../variety/QuotesEngine.py:266
+msgid "Could not fetch quotes"
+msgstr "Alıntı alınamadı"
+
+#: ../variety/QuotesEngine.py:267
+msgid "Quotes services may be down, we will continue trying"
+msgstr "Alıntıların hizmetleri düşebilir, denemeye devam edeceğiz"
+
+#: ../variety/QuotesEngine.py:271
+msgid "Could not find quotes"
+msgstr "Alıntılar bulunamadı"
+
+#: ../variety/QuotesEngine.py:272
+msgid "Maybe you are searching for something very obscure?"
+msgstr "Belki çok belirsiz bir şey arıyor olabilir misin?"
+
+#: ../variety/Texts.py:21
+msgid "Keep original"
+msgstr "Aslını koru"
+
+#: ../variety/Texts.py:22
+msgid "Grayscale"
+msgstr "Gri tonlama"
+
+#: ../variety/Texts.py:23
+msgid "Heavy blur"
+msgstr "Ağır bulanıklık"
+
+#: ../variety/Texts.py:24
+msgid "Soft blur"
+msgstr "Hafif bulanıklık"
+
+#: ../variety/Texts.py:25
+msgid "Oil painting"
+msgstr "Yağlı boya"
+
+#: ../variety/Texts.py:26
+msgid "Pointilism"
+msgstr "Pointilizm"
+
+#: ../variety/Texts.py:27
+msgid "Pixellate"
+msgstr "Pikselleştir"
+
+#: ../variety/Texts.py:31
+msgid "The Favorites folder"
+msgstr "Sık Kullanılanlar dizini"
+
+#: ../variety/Texts.py:32
+msgid "The Fetched folder"
+msgstr "Getirilenler dizini"
+
+#: ../variety/Texts.py:35
+msgid ""
+"Recommended by Variety. Adapts to your taste as you mark images as favorite "
+"or trash."
+msgstr ""
+"Variety tarafından önerilir. Resimleri sık kullanılan veya çöp olarak "
+"işaretlediğinizde zevkinize uyar."
+
+#: ../variety/Texts.py:39
+msgid ""
+"Latest favorites by the other users of Variety. [May contain NSFW images]"
+msgstr ""
+"Variety'nin diğer kullanıcıları tarafından en son sık kullanılanlar. [NSFW "
+"görüntüleri içerebilir]"
+
+#: ../variety/Texts.py:41 ../data/plugins/downloaders/DesktopprDownloader.py:27
+msgid "Random wallpapers from Desktoppr.co"
+msgstr "Desktoppr.co'dan rastgele duvar kağıtları"
+
+#: ../variety/Texts.py:42
+msgid "NASA's Astronomy Picture of the Day"
+msgstr "NASA'nın Günün Astronomi Resmi"
+
+#: ../variety/Texts.py:45 ../data/plugins/downloaders/EarthDownloader.py:33
+msgid "World Sunlight Map - live wallpaper from Die.net"
+msgstr "Dünya Güneş Işığı Haritası - Die.net canlı duvar kağıdı"
+
+#: ../variety/Texts.py:47 ../data/plugins/downloaders/BingDownloader.py:30
+msgid "Bing Photo of the Day"
+msgstr "Günün Bing Fotoğrafı"
+
+#: ../variety/Texts.py:50 ../data/plugins/downloaders/UnsplashDownloader.py:30
+msgid "High-resolution photos from Unsplash.com"
+msgstr "Unsplash.com'dan yüksek çözünürlüklü fotoğraflar"
+
+#: ../variety/Texts.py:58
+msgid ""
+"You can change the wallpaper back and forth by scrolling the mouse wheel on "
+"top of the indicator icon."
+msgstr ""
+"Duvar kağıdını gösterge simgesinin üstünde fare tekerleğini kaydırarak ileri "
+"ve geri değiştirebilirsiniz."
+
+#: ../variety/Texts.py:61
+msgid ""
+"If you want to run custom commands every time the wallpaper changes or if "
+"you use an alternative desktop environment, please edit the scripts in "
+"{PROFILE_PATH}scripts. There are examples there for various desktop "
+"environments."
+msgstr ""
+"Duvar kağıdı her değiştiğinde özel komutları çalıştırmak isterseniz veya "
+"alternatif bir masaüstü ortamı kullanırsanız, lütfen {PROFİLE_PATH}scripts "
+"içindeki betiği düzenleyin. Çeşitli masaüstü ortamları için örnekler var."
+
+#: ../variety/Texts.py:70
+msgid ""
+"Applying a heavy blurring filter is a great way to get abstract-looking and "
+"unobtrusive, yet colorful wallpapers, similar in spirit to the default one "
+"in Ubuntu."
+msgstr ""
+"Ağır bir bulanıklaştırma etkisi uygulamak, Ubuntu'daki varsayılana benzer "
+"soyut ve göze batmayan, ancak renkli duvar kağıtları elde etmenin harika bir "
+"yoludur."
+
+#: ../variety/Texts.py:73
+msgid ""
+"Adding your own custom filters is quite easy: open "
+"{PROFILE_PATH}variety.conf in an editor and use the existing filters as an "
+"example. Every filter is just a line of options to be passed to "
+"ImageMagick's convert command."
+msgstr ""
+"Kendi özel süzgeçlerinizi eklemek oldukça kolaydır: "
+"{PROFILE_PATH}variety.conf dosyasını bir düzenleyicide açın ve mevcut "
+"süzgeçleri örnek olarak kullanın. Her süzgeç, ImageMagick'in convert "
+"komutuna iletilecek bir seçenek satırıdır."
+
+#: ../variety/Texts.py:79
+msgid ""
+"To enable desktop notifications when the wallpaper changes, uncomment the "
+"two lines at the bottom of {PROFILE_PATH}scripts/set_wallpaper."
+msgstr ""
+"Duvar kağıdı değiştiğinde masaüstü bildirimlerini etkinleştirmek için, "
+"{PROFILE_PATH}scripts/set_wallpaper altındaki iki satırın işaretini kaldırın."
+
+#: ../variety/Texts.py:85
+msgid ""
+"When you choose to save quotes to Favorites, these are by default saved to "
+"{PROFILE_PATH}favorite_quotes.txt. This file is compatible with Variety's "
+"local files quote source. If you want to use it - copy it to "
+"~/.config/variety/pluginconfig/quotes/ and enable the Local Files quote "
+"source. This file is also compatible with the Unix fortune utility."
+msgstr ""
+"Alıntıları Sık Kullanılanlara kaydetmeyi seçtiğinizde, bunlar varsayılan "
+"olarak {PROFILE_PATH}favorite_quotes.txt dosyasına kaydedilir. Bu dosya "
+"Variety'nin Yerel Dosya alıntı kaynağı ile uyumludur. Kullanmak istiyorsanız "
+"- ~/.config/variety/pluginconfig/quotes/ dizinine kopyalayın ve Yerel "
+"Dosyalar alıntı kaynağını etkinleştirin. Bu dosya Unix fortune yardımcı "
+"programıyla da uyumludur."
+
+#: ../variety/ThumbsManager.py:41 ../data/ui/PreferencesVarietyDialog.ui:1242
+msgid "Bottom"
+msgstr "Alt"
+
+#: ../variety/ThumbsManager.py:42
+msgid "Top"
+msgstr "Üst"
+
+#: ../variety/ThumbsManager.py:43
+msgid "Left"
+msgstr "Sol"
+
+#: ../variety/ThumbsManager.py:44 ../data/ui/PreferencesVarietyDialog.ui:1173
+msgid "Right"
+msgstr "Sağ"
+
+#: ../variety/ThumbsManager.py:117
+msgid "Position"
+msgstr "Konum"
+
+#: ../variety/ThumbsManager.py:121 ../data/ui/PreferencesVarietyDialog.ui:2771
+msgid "Size"
+msgstr "Boyut"
+
+#: ../variety/ThumbsManager.py:125
+msgid "Maximum Shown Images"
+msgstr "Gösterilen En Fazla Resim"
+
+#: ../variety/ThumbsManager.py:139
+msgid "Show Containing Folder"
+msgstr "İçeren Dizini Göster"
+
+#: ../variety/ThumbsManager.py:152 ../variety/VarietyWindow.py:761
+msgid "Fetched: Show Origin"
+msgstr "Getirildi: Kökeni Göster"
+
+#: ../variety/ThumbsManager.py:154 ../variety/VarietyWindow.py:763
+#: ../variety/VarietyWindow.py:885
+#, c-format
+msgid "View at %s"
+msgstr "%s'de görüntüle"
+
+#: ../variety/ThumbsManager.py:186 ../variety/VarietyWindow.py:731
+msgid "Move to _Favorites"
+msgstr "_Sık Kullanılanlara Taşı"
+
+#: ../variety/ThumbsManager.py:220
+msgid "Close"
+msgstr "Kapat"
+
+#: ../variety/ThumbsManager.py:240
+msgid "Could not set EXIF rating"
+msgstr "EXIF derecelendirmesi ayarlanamadı"
+
+#: ../variety/ThumbsManager.py:260
+msgid "Unrated"
+msgstr "Derecelendirilmemiş"
+
+#: ../variety/ThumbsManager.py:267
+msgid "Rejected"
+msgstr "Reddedilen"
+
+#: ../variety/ThumbsManager.py:380
+msgid "Variety History"
+msgstr "Variety Geçmişi"
+
+#: ../variety/ThumbsManager.py:382
+msgid "Variety Recent Downloads"
+msgstr "Variety Son İndirilenler"
+
+#: ../variety/ThumbsManager.py:384
+msgid "Variety Images"
+msgstr "Variety Resimleri"
+
+#: ../variety/VarietyOptionParser.py:51
+#, c-format
+msgid "%prog [options] [files or urls]"
+msgstr "%prog [seçenekler] [dosyalar veya url'ler]"
+
+#: ../variety/VarietyOptionParser.py:69
+msgid ""
+"Profile name or full path to the configuration folder Variety should use. If "
+"not specified, this is ~/.config/variety/. If just a name is used instead of "
+"a full path, the profile folder will be ~/.config/variety-profiles/<name>. "
+"Use only when initially starting Variety - changing the profile path "
+"requires restart. Several instances of Variety can be started when using "
+"different profiles, each with its own separate configuration. This can be "
+"used for example to control several different screens or workspaces under "
+"desktop environments like XFCE which allow this. To pass commands to a "
+"running instance, pass the same --profile argument as the one it was started "
+"with in subsequent commands."
+msgstr ""
+"Profil adı veya Variety yapılandırma dizini tam yolunu kullanmanız gerekir. "
+"Belirtilmezse, bu ~/.config/variety/ şeklindedir. Tam yol yerine yalnızca "
+"bir ad kullanılırsa, profil dizini ~/.config/variety-profiles/<name> olur. "
+"Yalnızca ilk olarak Variety'yi başlatırken kullanın - profil yolunu "
+"değiştirmek için yeniden başlatma gerekir. Her biri kendi ayrı "
+"yapılandırmasına sahip farklı profiller kullanıldığında çeşitli Variety "
+"örnekleri başlatılabilir. Bu, örneğin, buna izin veren XFCE gibi masaüstü "
+"ortamlarında birkaç farklı ekranı veya çalışma alanını kontrol etmek için "
+"kullanılabilir. Komutları çalışan bir örneğe iletmek için, sonraki "
+"komutlarda başlatıldığı ile aynı --profile argümanını iletin."
+
+#: ../variety/VarietyOptionParser.py:90
+msgid ""
+"Show logging messages (-vv to -vvvvv will profile various parts of Variety "
+"with increasing detail"
+msgstr ""
+"Günlük iletilerini göster (-vv - -vvvvv, Variety'nin çeşitli bölümlerini "
+"artan ayrıntılarla profillendirir"
+
+#: ../variety/VarietyOptionParser.py:95
+msgid "Make the running instance quit"
+msgstr "Çalışan örneğini bırak"
+
+#: ../variety/VarietyOptionParser.py:106
+msgid ""
+"Print the current wallpaper location. Used only when the application is "
+"already running."
+msgstr ""
+"Geçerli duvar kağıdı konumunu yazdır. Sadece uygulama zaten çalışıyorsa "
+"kullanılır."
+
+#: ../variety/VarietyOptionParser.py:115
+msgid "Set the given file as wallpaper, absolute path required"
+msgstr "Verilen dosyayı duvar kağıdı olarak ayarla, mutlak yol gerekli"
+
+#: ../variety/VarietyOptionParser.py:119
+msgid "Show Next wallpaper"
+msgstr "Sonraki Duvar Kağıdını Göster"
+
+#: ../variety/VarietyOptionParser.py:123
+msgid "Show Previous wallpaper"
+msgstr "Önceki Duvar Kağıdını Göster"
+
+#: ../variety/VarietyOptionParser.py:130
+msgid "Show Next wallpaper, skipping the forward history"
+msgstr "İlerleme geçmişini atlayarak Sonraki duvar kağıdını göster"
+
+#: ../variety/VarietyOptionParser.py:139
+msgid ""
+"Move current wallpaper to Trash. Used only when the application is already "
+"running."
+msgstr ""
+"Geçerli duvar kağıdını Çöpe taşı. Sadece uygulama zaten çalışıyorsa "
+"kullanılır."
+
+#: ../variety/VarietyOptionParser.py:149
+msgid ""
+"Copy current wallpaper to Favorites. Used only when the application is "
+"already running."
+msgstr ""
+"Geçerli duvar kağıdını Sık Kullanılanlara kopyala. Sadece uygulama zaten "
+"çalışıyorsa kullanılır."
+
+#: ../variety/VarietyOptionParser.py:158
+msgid ""
+"Move current wallpaper to Favorites. Used only when the application is "
+"already running."
+msgstr ""
+"Geçerli duvar kağıdını Sık Kullanılanlara taşı. Sadece uygulama zaten "
+"çalışıyorsa kullanılır."
+
+#: ../variety/VarietyOptionParser.py:163
+msgid "Pause on current image"
+msgstr "Geçerli resimde durakla"
+
+#: ../variety/VarietyOptionParser.py:167
+msgid "Resume regular image changes"
+msgstr "Düzenli resim değişikliklerine devam et"
+
+#: ../variety/VarietyOptionParser.py:174
+msgid "Toggle Pause/Resume state"
+msgstr "Durdurma/Devam Geçişi durumu"
+
+#: ../variety/VarietyOptionParser.py:178
+msgid "Show Next quote"
+msgstr "Sonraki alıntıyı göster"
+
+#: ../variety/VarietyOptionParser.py:185
+msgid "Show Previous quote"
+msgstr "Önceki alıntıyı göster"
+
+#: ../variety/VarietyOptionParser.py:192
+msgid "Show Next quote, skipping the forward history"
+msgstr "İlerleme geçmişini atlayarak Sonraki alıntıyı göster"
+
+#: ../variety/VarietyOptionParser.py:199
+msgid "Toggle Quotes Pause/Resume state"
+msgstr "Alıntıların Geçişini Durdur/Devam durumu"
+
+#: ../variety/VarietyOptionParser.py:206
+msgid "Save the current quote to Favorites"
+msgstr "Geçerli alıntıyı Sık Kullanılanlara kaydet"
+
+#: ../variety/VarietyOptionParser.py:210
+msgid "Toggle History display"
+msgstr "Tarih görünümünü değiştir"
+
+#: ../variety/VarietyOptionParser.py:217
+msgid "Toggle Recent Downloads display"
+msgstr "Son İndirilenler ekranını değiştir"
+
+#: ../variety/VarietyOptionParser.py:225
+msgid "Show Preferences dialog"
+msgstr "Tercihler iletişim kutusunu göster"
+
+#: ../variety/VarietyOptionParser.py:234
+msgid ""
+"Show manual wallpaper selector - the thumbnail bar filled with images from "
+"the active image sources"
+msgstr ""
+"Elle duvar kağıdı seçiciyi göster - etkin resim kaynaklarından görüntülerle "
+"dolu küçük resim çubuğu"
+
+#: ../variety/VarietyOptionParser.py:244
+msgid ""
+"Sets and applies an option. The option names are the same that are used in "
+"Variety's config file ~/.config/variety/variety.conf. Multiple options can "
+"be set in a single command. Example: 'variety --set-option icon Dark --set-"
+"option clock_enabled True'. USE WITH CAUTION: You are changing the settings "
+"file directly in an unguarded way."
+msgstr ""
+"Bir seçenek belirler ve uygular. Seçenek isimleri Variety'nin yapılandırma "
+"dosyası ~/.config/variety/variety.conf'da kullanılanla aynıdır. Tek bir "
+"komutta çoklu seçenekler ayarlanabilir. Örnek: 'variety --set-option icon "
+"Dark --set-option clock_enabled True'. DİKKATLİ KULLAN: Ayar dosyasını "
+"doğrudan korumasız bir şekilde değiştiriyorsunuz."
+
+#: ../variety/VarietyOptionParser.py:257
+msgid "options --next/--fast-forward and --previous are mutually exclusive"
+msgstr ""
+"seçenekler --next/--fast-forward ve --previous karşılıklı olarak "
+"ayrıcalıklıdır"
+
+#: ../variety/VarietyOptionParser.py:260
+msgid "options --trash and --favorite are mutually exclusive"
+msgstr "seçenekler --trash ve --favorite karşılıklı olarak ayrıcalıklıdır"
+
+#: ../variety/VarietyOptionParser.py:263
+msgid "options --pause and --resume are mutually exclusive"
+msgstr "seçenekler --pause ve --resume karşılıklı olarak ayrıcalıklıdır"
+
+#: ../variety/VarietyOptionParser.py:268
+msgid ""
+"options --quotes-next/--quotes-fast-forward and --quotes-previous are "
+"mutually exclusive"
+msgstr ""
+"--quotes-next/--quotes-fast-forward ve --quotes-previous seçenekleri "
+"birbirini dışlar"
+
+#: ../variety/VarietyWindow.py:726 ../variety/VarietyWindow.py:901
+#: ../variety/VarietyWindow.py:2857
+msgid "Already in Favorites"
+msgstr "Zaten Sık Kullanılanlarda"
+
+#: ../variety/VarietyWindow.py:827
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: ../variety/VarietyWindow.py:849
+#, c-format
+msgid "Author: %s"
+msgstr "Yazar: %s"
+
+#: ../variety/VarietyWindow.py:874 ../variety/VarietyWindow.py:896
+msgid "Resume regular changes"
+msgstr "Düzenli değişiklikleri devam ettir"
+
+#: ../variety/VarietyWindow.py:1047
+msgid "Filtering too strict?"
+msgstr "Süzme çok mu katı?"
+
+#: ../variety/VarietyWindow.py:1048
+msgid ""
+"Variety is finding too few images that match your image filtering criteria"
+msgstr "Variety, resim süzme ölçütlerinize uyan çok az resim buluyor"
+
+#: ../variety/VarietyWindow.py:1630
+msgid "Please add more image sources or wait for some downloads"
+msgstr ""
+"Lütfen daha fazla resim kaynağı ekleyin yada bazı indirmeleri bekleyin"
+
+#: ../variety/VarietyWindow.py:1632
+msgid "Please add more image sources"
+msgstr "Lütfen daha fazla resim kaynağı ekleyin"
+
+#: ../variety/VarietyWindow.py:1633
+msgid "No more wallpapers"
+msgstr "Daha fazla duvar kağıdı yok"
+
+#: ../variety/VarietyWindow.py:1902
+msgid "Current wallpaper is not in the image sources"
+msgstr "Geçerli duvar kağıdı resim kaynaklarında değil"
+
+#: ../variety/VarietyWindow.py:1935
+#, c-format
+msgid ""
+"Could not move to %s. You probably don't have permissions to move this file."
+msgstr ""
+"%s konumuna taşınamadı. Büyük olasılıkla bu dosyayı taşımak için izinleriniz "
+"yok."
+
+#: ../variety/VarietyWindow.py:1942
+#, c-format
+msgid ""
+"Could not copy to %s. You probably don't have permissions to copy this file."
+msgstr ""
+"%s konumuna kopyalanamadı. Büyük olasılıkla bu dosyayı kopyalamak için "
+"izniniz yok."
+
+#: ../variety/VarietyWindow.py:1967 ../variety/VarietyWindow.py:1990
+msgid "Cannot delete"
+msgstr "Silinemedi"
+
+#: ../variety/VarietyWindow.py:1968
+#, c-format
+msgid "You don't have permissions to delete %s to Trash."
+msgstr "%s dosyasını çöp kutusuna göndermek için izniniz yok."
+
+#: ../variety/VarietyWindow.py:1991
+msgid "Deleting to trash failed, check variety.log for more information."
+msgstr ""
+"Çöpe gönderme başarısız, daha fazla bilgi için variety.log dosyasını kontrol "
+"edin."
+
+#: ../variety/VarietyWindow.py:2302
+msgid ""
+"I will open an editor with the config file and apply the changes after you "
+"save and close the editor."
+msgstr ""
+"Yapılandırma dosyasıyla bir editör açacağım ve sen değişiklikleri kaydedip "
+"kapattıktan sonra değişiklikleri uygulayacağım."
+
+#: ../variety/VarietyWindow.py:2464
+msgid "Added to queue"
+msgstr "Sıraya eklendi"
+
+#: ../variety/VarietyWindow.py:2465 ../variety/VarietyWindow.py:2478
+msgid "Press Next to see it"
+msgstr "Görmek için İleri'ye basın"
+
+#: ../variety/VarietyWindow.py:2477
+msgid "Fetched"
+msgstr "Getirildi"
+
+#: ../variety/VarietyWindow.py:2528
+msgid "Unsupported source type"
+msgstr "Desteklenmeyen kaynak türü"
+
+#: ../variety/VarietyWindow.py:2529 ../variety/VarietyWindow.py:2577
+msgid "Are you running the most recent version of Variety?"
+msgstr "Variety'nin en son sürümünü mü kullanıyorsunuz?"
+
+#: ../variety/VarietyWindow.py:2539
+msgid "New image source added"
+msgstr "Yeni resim kaynağı eklendi"
+
+#: ../variety/VarietyWindow.py:2541
+msgid "Image source already exists, enabling it"
+msgstr "Resim kaynağı zaten var, onu etkinleştirin"
+
+#: ../variety/VarietyWindow.py:2567
+msgid "Fetched and applied"
+msgstr "Getirildi ve uygulandı"
+
+#: ../variety/VarietyWindow.py:2572
+msgid "It works!"
+msgstr "İşe yarıyor!"
+
+#: ../variety/VarietyWindow.py:2572
+msgid "Yay, Variety links work. Great!"
+msgstr "Variety bağlantıları çalışıyor. Harika!"
+
+#: ../variety/VarietyWindow.py:2576
+msgid "Unsupported command"
+msgstr "Desteklenmeyen komut"
+
+#: ../variety/VarietyWindow.py:2581
+msgid "Could not process the given variety:// URL"
+msgstr "Verilen variety:// URL işlenemedi"
+
+#: ../variety/VarietyWindow.py:2582
+msgid "Run with logging enabled to see details"
+msgstr "Ayrıntıları görmek için günlüğe kaydetme ile çalıştır"
+
+#: ../variety/VarietyWindow.py:2944
+msgid "Variety: New desktop entry"
+msgstr "Variety: Yeni masaüstü girişi"
+
+#: ../variety/VarietyWindow.py:2946
+msgid "We created a new desktop entry in ~/.local/share/applications "
+msgstr "~/.local/share/apps içinde yeni bir masaüstü girişi oluşturduk "
+
+#: ../variety/VarietyWindow.py:2971
+msgid "Variety: Created autostart desktop entry"
+msgstr "Variety: Otomatik başlatma masaüstü girişi oluşturuldu"
+
+#: ../variety/VarietyWindow.py:2973
+msgid ""
+"We created a new desktop entry in ~/.config/autostart. Variety should start "
+"automatically on next restart."
+msgstr ""
+"~/.config/autostart içinde yeni bir masaüstü girişi oluşturduk.  Variety bir "
+"sonraki yeniden başlatmada otomatik olarak başlamalıdır."
+
+#: ../variety/VarietyWindow.py:2980
+msgid "Could not create autostart entry"
+msgstr "Otomatik başlatma girişi oluşturulamadı"
+
+#: ../variety/VarietyWindow.py:2982
+msgid ""
+"An error occurred while creating the autostart desktop entry\n"
+"Please run from a terminal with the -v flag and try again."
+msgstr ""
+"Otomatik başlatma masaüstü girişi oluşturulurken bir hata oluştu\n"
+"Lütfen bir terminalden -v bayrağıyla çalıştırın ve tekrar deneyin."
+
+#: ../variety/VarietyWindow.py:3045
+msgid "No images"
+msgstr "Resim yok"
+
+#: ../variety/VarietyWindow.py:3045
+msgid "There are no images in the slideshow folders"
+msgstr "Slayt gösterisi dizinlerinde resim yok"
+
+#: ../data/plugins/downloaders/APODDownloader.py:29
+msgid "NASA Astro Pic of the Day"
+msgstr "Günün NASA Astronomi Resmi"
+
+#: ../data/plugins/downloaders/ChromeOSWallpapersDownloader.py:30
+msgid "Chrome OS Wallpapers"
+msgstr "Chrome OS Duvar Kağıtları"
+
+#: ../data/plugins/downloaders/EarthviewDownloader.py:32
+msgid "Google Earth View Wallpapers"
+msgstr "Google Earth Görünümü Duvar Kağıtları"
+
+#: ../data/plugins/downloaders/MediaRSSSource.py:33
+msgid "Configurable source for fetching images from MediaRSS feeds"
+msgstr ""
+"MediaRSS beslemelerinden görüntüleri almak için yapılandırılabilir kaynak"
+
+#: ../data/plugins/downloaders/MediaRSSSource.py:46
+msgid ""
+"Please paste the URL of the Media RSS feed below. Please note that only "
+"Media RSS feeds are supported, not arbitrary RSS feeds. Media RSS feeds "
+"contain media:content tags linking directly to the actual image content. "
+"Some examples of sites that provide Media RSS feeds are: <a "
+"href='https://picasaweb.google.com/'>Picasa</a>, <a "
+"href='http://www.deviantart.com'>deviantART</a>, <a "
+"href='http://www.smugmug.com/browse/'>SmugMug</a>, <a "
+"href='http://www.flickr.com'>Flickr</a>, <a "
+"href='http://interfacelift.com'>InterfaceLIFT</a>."
+msgstr ""
+"Lütfen Medya RSS özet akışının URL'sini aşağıya yapıştırın.  Rasgele RSS "
+"yayınlarının değil, yalnızca Medya RSS yayınlarının desteklendiğini lütfen "
+"unutmayın.  Medya RSS beslemeleri, doğrudan gerçek görüntü içeriğine "
+"bağlantı veren medya:içerik etiketleri içerir.  Medya RSS beslemesi sağlayan "
+"sitelere bazı örnekler: <a href='https://picasaweb.google.com/'>Picasa</a>, "
+"<a href='http://www.deviantart.com'>deviantART</a>, <a "
+"href='http://www.smugmug.com/browse/'>SmugMug</a>, <a "
+"href='http://www.flickr.com'>Flickr</a>, <a "
+"href='http://interfacelift.com'>InterfaceLIFT</a>."
+
+#: ../data/plugins/downloaders/MediaRSSSource.py:58
+msgid "Paste the URL of the Media RSS feed here: "
+msgstr "Medya RSS beslemesinin URL'sini buraya yapıştırın: "
+
+#: ../data/plugins/downloaders/MediaRSSSource.py:61
+#: ../data/plugins/downloaders/WallhavenSource.py:68
+msgid "Fetch images from a MediaRSS feed"
+msgstr "Bir MediaRSS özet akışından görüntü getir"
+
+#: ../data/plugins/downloaders/MediaRSSSource.py:68
+msgid ""
+"This does not seem to be a valid Media RSS feed URL or there is no content "
+"there."
+msgstr ""
+"Bu geçerli bir Medya RSS besleme URL'si gibi görünmüyor veya orada içerik "
+"yok."
+
+#: ../data/plugins/downloaders/RedditSource.py:35
+msgid "Configurable source for fetching images from Reddit"
+msgstr "Reddit'ten görüntü almak için yapılandırılabilir kaynak"
+
+#: ../data/plugins/downloaders/RedditSource.py:48
+msgid ""
+"Enter the name of a subreddit or paste the full URL of a subreddit or a <a "
+"href='http://reddit.com'>Reddit</a> user. You may specify sort order and "
+"time period if you wish. Variety will use posts to direct images or to Imgur "
+"pages within the first 100 submissions returned by Reddit.\n"
+"\n"
+"Example: You may specify simply 'comics' or <a "
+"href='http://www.reddit.com/r/comics'>http://www.reddit.com/r/comics</a>\n"
+"Example: Top posts from the month: <a "
+"href='http://www.reddit.com/r/comics/top/?sort=top&amp;t=month'>http://www.re"
+"ddit.com/r/comics/top/?sort=top&amp;t=month</a>"
+msgstr ""
+"Bir alt dizinin adını girin veya bir alt dizinin veya bir <a "
+"href='http://reddit.com'>Reddit</a> kullanıcısının tam URL'sini yapıştırın. "
+"İsterseniz sıralama düzenini ve zaman aralığını belirleyebilirsiniz. "
+"Variety, görüntüleri yönlendirmek veya Reddit tarafından döndürülen ilk 100 "
+"başvuru içindeki İmgur sayfalarına gönderir.\n"
+"\n"
+"Örnek: Basitçe 'çizgi roman' veya <a "
+"href='http://www.reddit.com/r/comics'>http://www.reddit.com/r/comics</a>belir"
+"tebilirsiniz.\n"
+"Örnek: Ayın en popüler gönderileri: <a "
+"href='http://www.reddit.com/r/comics/top/?sort=top&amp;t=month'>http://www.re"
+"ddit.com/r/comics/top/?sort=top&amp;t=month</a>"
+
+#: ../data/plugins/downloaders/RedditSource.py:59
+msgid "URL or name of a subreddit: "
+msgstr "URL veya bir alt alanın adı: "
+
+#: ../data/plugins/downloaders/RedditSource.py:62
+msgid "Fetch images from a given subreddit or user"
+msgstr "Belirli bir subreddit veya kullanıcıdan görüntüler getir"
+
+#: ../data/plugins/downloaders/RedditSource.py:73
+msgid "This does not seem to be a valid Reddit URL"
+msgstr "Bu geçerli bir Reddit URL'si gibi görünmüyor"
+
+#: ../data/plugins/downloaders/RedditSource.py:79
+#: ../data/plugins/downloaders/RedditSource.py:85
+msgid "We could not find any image submissions there."
+msgstr "Orada herhangi bir resim gönderisi bulamadık."
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:81
+msgid "Configurable source for fetching photos from Unsplash.com"
+msgstr "Unsplash.com'dan fotoğraf almak için yapılandırılabilir kaynak"
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:96
+msgid "We do not support this type of URL"
+msgstr "Bu URL türünü desteklemiyoruz"
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:101
+msgid "Oops, this didn't work. Is the remote service up?"
+msgstr "Hay aksi, bu işe yaramadı. Uzaktan hizmet çalışıyor mu?"
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:108
+msgid ""
+"We use the <a href='https://unsplash.com'>Unsplash</a> API to fetch random "
+"images that match the given search term or URL. The Unsplash API is rate-"
+"limited, so Variety fetches images from Unsplash sources as a reduced rate.\n"
+"\n"
+"Please specify either a search keyword, or the URL of a search result, user "
+"or collection.\n"
+"Example: <a href='https://unsplash.com/collections/3863203/desktop-"
+"wallpapers'>https://unsplash.com/collections/3863203/desktop-wallpapers</a>\n"
+"Example: <a "
+"href='https://unsplash.com/@pawel_czerwinski'>https://unsplash.com/@pawel_cze"
+"rwinski</a>"
+msgstr ""
+"Belirli bir arama terimiyle veya URL'siyle eşleşen rastgele resimler "
+"getirmek için <a href='https://unsplash.com'>Unsplash</a> API'sını "
+"kullanıyoruz. Unsplash API'si hız sınırlıdır, bu nedenle Variety, Unsplash "
+"kaynaklarından görüntüleri indirimli bir oran olarak getirir.\n"
+"Lütfen bir arama anahtar kelimesi veya bir arama sonucu, kullanıcı veya "
+"koleksiyonun URL'sini belirtin.\n"
+"Örnek: <a href='https://unsplash.com/collections/3863203/desktop-"
+"wallpapers'>https://unsplash.com/collections/3863203/desktop-wallpapers</a>\n"
+"Örnek: <a "
+"href='https://unsplash.com/@pawel_czerwinski'>https://unsplash.com/@pawel_cze"
+"rwinski</a>"
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:119
+msgid "Search keyword or URL: "
+msgstr "Anahtar kelime veya URL ara: "
+
+#: ../data/plugins/downloaders/UnsplashConfigurableSource.py:122
+msgid "Fetches images from Unsplash.com for a given criteria"
+msgstr "Belirli bir kriter için Unsplash.com'dan resim getirir"
+
+#: ../data/plugins/downloaders/WallhavenSource.py:34
+msgid "Configurable source for fetching images from Wallhaven.cc"
+msgstr "Wallhaven.cc'den görüntü almak için yapılandırılabilir kaynak"
+
+#: ../data/plugins/downloaders/WallhavenSource.py:50
+msgid ""
+"<a href='http://wallhaven.cc'>Wallhaven.cc</a> provides a variety of image "
+"search options. Below you can specify keywords to search for, or visit <a "
+"href='http://wallhaven.cc'>Wallhaven.cc</a>, setup your search criteria "
+"there, ensure you like the results, and paste the full Wallhaven URL in the "
+"box.\n"
+"\n"
+"If you specify keywords, the most liked safe-for-work images that match all "
+"of the keywords will be used. \n"
+"\n"
+"If you specify a Wallhaven URL, please choose the sorting criteria carefully "
+"- Variety regularly requests images, but uses only images from the first "
+"several hundred returned. Random or Date will mean this image source will "
+"have a longer 'lifetime' till it is exhausted. Favorites will provide better "
+"images and Relevance will provide closer matches when searching for phrases "
+"or colors."
+msgstr ""
+"<a href='http://wallhaven.cc'>Wallhaven.cc</a> çeşitli resim arama "
+"seçenekleri sunar. Aşağıda arayacağınız anahtar kelimeleri belirleyebilir "
+"veya <a href='http://wallhaven.cc'>Wallhaven.cc</a> adresini ziyaret "
+"edebilir, arama kriterlerinizi oraya ayarlayabilir, sonuçları "
+"beğendiğinizden emin olabilir ve kutudaki tam Wallhaven URL'sini "
+"yapıştırabilirsiniz.\n"
+"\n"
+"If you specify keywords, the most liked safe-for-work images that match all "
+"of the keywords will be used. \n"
+"\n"
+"Bir Wallhaven URL'si belirtirseniz, lütfen sıralama ölçütlerini dikkatli bir "
+"şekilde seçin - Variety düzenli olarak resim ister, ancak yalnızca "
+"döndürülen ilk birkaç yüz resmi kullanır. Rastgele veya Tarih, bu resim "
+"kaynağının tükenene kadar daha uzun bir 'ömrü' olacağı anlamına gelir. Sık "
+"kullanılanlar daha iyi resimler sağlar ve Alaka Düzeyi ifadeler veya renkler "
+"ararken daha yakın eşleşmeler sağlar."
+
+#: ../data/plugins/downloaders/WallhavenSource.py:65
+msgid "Enter keywords or paste URL here: "
+msgstr "Anahtar kelimeleri girin veya URL'yi buraya yapıştırın: "
+
+#: ../data/plugins/quotes/GoodreadsSource.py:129
+msgid "Fetches quotes from Goodreads.com"
+msgstr "Goodreads.com'dan alıntılar getirir"
+
+#: ../data/plugins/quotes/LocalFilesSource.py:37
+msgid ""
+"Displays quotes, defined in local text files.\n"
+"Put your own txt files in: {}pluginconfig/quotes/.\n"
+"The file format is:\n"
+"\n"
+"quote -- author\n"
+".\n"
+"second quote -- another author\n"
+".\n"
+"etc...\n"
+"\n"
+"Example: http://rvelthuis.de/zips/quotes.txt"
+msgstr ""
+"Yerel metin dosyalarında tanımlanan alıntıları görüntüler.\n"
+"Kendi txt dosyalarınızı: {}pluginconfig/quotes/ dizinine koyun.\n"
+"Dosya biçimi:\n"
+"\n"
+"alıntı -- yazar\n"
+".\n"
+"ikinci alıntı -- başka bir yazar\n"
+".\n"
+"vb...\n"
+"\n"
+"Örnek: http://rvelthuis.de/zips/quotes.txt"
+
+#: ../data/plugins/quotes/QuotationsPageSource.py:34
+msgid "Fetches quotes from TheQuotationsPage.com"
+msgstr "TheQuotationsPage.com'dan alıntılar getirir"
+
+#: ../data/ui/AboutVarietyDialog.ui:9
+msgid "About Variety"
+msgstr "Variety Hakkında"
+
+#: ../data/ui/AboutVarietyDialog.ui:14
+msgid "Copyright (c) 2012-2019, Peter Levi, James Lu & Variety contributors"
+msgstr ""
+"Telif hakkı (c) 2012-2019, Peter Levi, James Lu ve Variety katkıcıları"
+
+#: ../data/ui/AboutVarietyDialog.ui:15
+msgid "An automatic wallpaper changer, downloader and manager."
+msgstr "Otomatik bir duvar kağıdı değiştirici, indirici ve yönetici."
+
+#: ../data/ui/AboutVarietyDialog.ui:17
+msgid "http://peterlevi.com/variety"
+msgstr "http://peterlevi.com/variety"
+
+#: ../data/ui/AboutVarietyDialog.ui:18
+msgid ""
+"# Copyright (c) 2012-2019, Peter Levi, James Lu & Variety contributors\n"
+"# This program is free software: you can redistribute it and/or modify it\n"
+"# under the terms of the GNU General Public License version 3, as published\n"
+"# by the Free Software Foundation.\n"
+"#\n"
+"# This program is distributed in the hope that it will be useful, but\n"
+"# WITHOUT ANY WARRANTY; without even the implied warranties of\n"
+"# MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR\n"
+"# PURPOSE.  See the GNU General Public License for more details.\n"
+"#\n"
+"# You should have received a copy of the GNU General Public License along\n"
+"# with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"# Telif Hakkı (c) 2012-2019, Peter Levi, James Lu ve Variety katkıda "
+"bulunanlar\n"
+"# Bu program ücretsiz bir yazılımdır: Özgür Yazılım Vakfı tarafından "
+"yayınlanan\n"
+"# GNU Genel Kamu Lisansı sürüm 3 koşulları altında yeniden dağıtabilir "
+"ve/veya\n"
+"# değiştirebilirsiniz.\n"
+"#\n"
+"# Bu program faydalı olacağı ümidiyle dağıtılmaktadır, ancak\n"
+"# HERHANGİ BİR GARANTİSİ YOKTUR; TİCARİ OLABİLİRLİK, MEMNUNİYET KALİTESİ\n"
+"# veya BELİRLİ BİR AMACA UYGUNLUK zımni garantileri olmadan.\n"
+"# Daha fazla bilgi için GNU Genel Kamu Lisansına bakınız.\n"
+"#\n"
+"# Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış "
+"olmanız gerekir.\n"
+"# Değilse, bkz. <http://www.gnu.org/licenses/>.\n"
+
+#: ../data/ui/AddConfigurableDialog.ui:160
+msgid "Just a moment to check for images"
+msgstr "Görüntüleri kontrol etmek için az bekleyin"
+
+#: ../data/ui/AddConfigurableDialog.ui:187 ../data/ui/AddFlickrDialog.ui:360
+msgid "  "
+msgstr "  "
+
+#: ../data/ui/AddFlickrDialog.ui:9
+msgid "Variety - add Flickr as an image source"
+msgstr "Variety - Flickr'ı bir resim kaynağı olarak ekle"
+
+#: ../data/ui/AddFlickrDialog.ui:101
+msgid ""
+"Please specify the <a href=\"http://flickr.com\">Flickr</a> search criteria. "
+"Photos that match all of the chosen criteria will be downloaded. Leave "
+"unneeded criteria empty."
+msgstr ""
+"Lütfen <a href=\"http://flickr.com\">Flickr</a> arama kriterlerini belirtin. "
+"Seçilen kriterlerin hepsine uyan fotoğraflar indirilecektir. Gereksiz "
+"kriterleri boş bırakın."
+
+#: ../data/ui/AddFlickrDialog.ui:124
+#: ../data/ui/PreferencesVarietyDialog.ui:1440
+msgid "Tags: "
+msgstr "Etiketler: "
+
+#: ../data/ui/AddFlickrDialog.ui:155
+msgid ""
+"A comma-separated list of tags. A photo has to contain all of them "
+"simultaneosly in order to match.\n"
+"Example: yellow,car"
+msgstr ""
+"Virgülle ayrılmış bir etiket listesi. Bir fotoğrafın eşleşmesi için hepsini "
+"aynı anda içermesi gerekir.\n"
+"Örnek: sarı,araba"
+
+#: ../data/ui/AddFlickrDialog.ui:171
+msgid "User: "
+msgstr "Kullanıcı: "
+
+#: ../data/ui/AddFlickrDialog.ui:202
+msgid ""
+"Please insert the URL to the user's photostream or to one of their photos.\n"
+"Example: <a href=\"http://www.flickr.com/photos/peter-"
+"levi/\">http://www.flickr.com/photos/peter-levi/</a>"
+msgstr ""
+"Lütfen URL'yi kullanıcının fotoğraf akışına veya fotoğraflarından birine "
+"ekleyin.\n"
+"Örnek: <a href=\"http://www.flickr.com/photos/peter-"
+"levi/\">http://www.flickr.com/photos/peter-levi/</a>"
+
+#: ../data/ui/AddFlickrDialog.ui:218
+msgid "Group: "
+msgstr "Grup: "
+
+#: ../data/ui/AddFlickrDialog.ui:248
+msgid ""
+"Please insert the group's URL.\n"
+"Example: <a "
+"href=\"http://www.flickr.com/groups/wallpapers/\">http://www.flickr.com/group"
+"s/wallpapers/</a>"
+msgstr ""
+"Lütfen grubun URL'sini ekleyin.\n"
+"Örnek: <a "
+"href=\"http://www.flickr.com/groups/wallpapers/\">http://www.flickr.com/group"
+"s/wallpapers/</a>"
+
+#: ../data/ui/AddFlickrDialog.ui:264
+msgid "Text:"
+msgstr "Metin:"
+
+#: ../data/ui/AddFlickrDialog.ui:295
+msgid ""
+"Free text search in photos' titles, descriptions and tags. Exclude terms by "
+"prepending them with -.\n"
+"Example: apple -pie"
+msgstr ""
+"Fotoğrafların başlıklarında, açıklamalarında ve etiketlerinde serbest metin "
+"araması. Şartları - ile hazırlayarak hariç tutun.\n"
+"Örnek: apple -pie"
+
+#: ../data/ui/AddFlickrDialog.ui:334
+msgid "Just a moment to check this search"
+msgstr "Bu aramayı kontrol etmek için sadece bir dakika"
+
+#: ../data/ui/EditFavoriteOperationsDialog.ui:8
+#: ../data/ui/EditFavoriteOperationsDialog.ui:91
+msgid "Copy to Favorites vs. Move to Favorites"
+msgstr "Sık Kullanılanlara Kopyala vs. Sık Kullanılanlara Taşı"
+
+#: ../data/ui/EditFavoriteOperationsDialog.ui:24
+msgid "Reset to Default"
+msgstr "Varsayılana Sıfırla"
+
+#: ../data/ui/EditFavoriteOperationsDialog.ui:110
+msgid ""
+"Select whether your prefer 'Copy to Favorites' or 'Move to Favorites' in the "
+"menu depending on the image location:"
+msgstr ""
+"Görüntü konumuna bağlı olarak, menüden 'Sık Kullanılanlara Kopyala' veya'Sık "
+"Kullanılanlara Taşı' tercihinizi seçin:"
+
+#: ../data/ui/EditFavoriteOperationsDialog.ui:155
+msgid ""
+"Please enter one entry per line, each entry in the form <Folder>:<Copy, Move "
+"or Both>, where Folder can be Downloaded, Fetched, Others or a specific "
+"folder path.\n"
+"Order is important. When an image is shown, the first folder in this list "
+"which contains the image will determine which operations will be shown in "
+"Variety's menu. 'Others' matches any file and should be last in the list.\n"
+"\n"
+"Example:\n"
+"\tDownloaded:Copy\n"
+"\tFetched:Move\n"
+"\t/pics/RandomImages:Move\n"
+"\t/pics/OrganizedAlbums:Copy\n"
+"\tOthers:Both"
+msgstr ""
+"Lütfen her satır başına bir giriş, <Dizin>:<Kopyala, Taşı veyaHer İkisi>, "
+"Dizinin İndirilebileceği, Getirilen, Diğerleri veya belirli birdizin yolunun "
+"bulunduğu bir biçimde giriş girin.\n"
+"Düzen önemlidir. Bir resim gösterildiğinde, bu listedeki görüntüyü içeren "
+"ilk dizin Variety'nin menüsünde hangi işlemlerin gösterileceğini belirler. "
+"'Diğerleri' herhangi bir dosyayla eşleşir ve listede sonuncu olmalıdır.\n"
+"\n"
+"Örnek:\n"
+"\tİndirilenler:Kopyala\n"
+"\tGetirilenler:Taşı\n"
+"\t/resimler/RastgeleResimler:Taşı\n"
+"\t/resimler/DüzenlenmişAlbümler:Kopyala\n"
+"\tDiğerleri:Her ikiside"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:24
+msgid "seconds"
+msgstr "saniye"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:28
+#: ../data/ui/PreferencesVarietyDialog.ui:50
+msgid "minutes"
+msgstr "dakika"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:32
+#: ../data/ui/PreferencesVarietyDialog.ui:54
+msgid "hours"
+msgstr "saat"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:36
+#: ../data/ui/PreferencesVarietyDialog.ui:58
+msgid "days"
+msgstr "gün"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:196
+#: ../data/ui/PreferencesVarietyDialog.ui:672
+msgid "General"
+msgstr "Genel"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:209
+msgid "Start Variety when the computer starts"
+msgstr "Bilgisayar başladığında Variety'i başlat"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:236
+msgid "Change wallpaper every "
+msgstr "Her duvar kağıdını değiştir "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:257
+#: ../data/ui/PreferencesVarietyDialog.ui:258
+#: ../data/ui/PreferencesVarietyDialog.ui:275
+#: ../data/ui/PreferencesVarietyDialog.ui:276
+msgid "Minimum interval is 5 seconds"
+msgstr "En az aralık 5 saniyedir"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:303
+msgid "Change wallpaper on start"
+msgstr "Başlangıçta duvar kağıdını değiştir"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:390
+msgid "Enabled"
+msgstr "Etkin"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:401
+msgid "Type"
+msgstr "Tür"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:412
+msgid "Location"
+msgstr "Konum"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:448
+msgid "_Add..."
+msgstr "_Ekle..."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:454
+#: ../data/ui/PreferencesVarietyDialog.ui:455
+msgid "Add images, folders or online image sources"
+msgstr "Resimler, dizinler veya çevrimiçi resim kaynakları ekle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:467
+msgid "_Open Folder"
+msgstr "Dizin _Aç"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:472
+#: ../data/ui/PreferencesVarietyDialog.ui:473
+#: ../data/ui/PreferencesVarietyDialog.ui:491
+#: ../data/ui/PreferencesVarietyDialog.ui:492
+msgid "Edit the selected source"
+msgstr "Seçilen kaynağı düzenle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:486
+msgid "_Edit..."
+msgstr "_Düzenle..."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:505
+msgid "_Remove..."
+msgstr "_Kaldır..."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:511
+#: ../data/ui/PreferencesVarietyDialog.ui:512
+msgid "Remove selected image sources"
+msgstr "Seçilen resim kaynaklarını kaldır"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:525
+msgid "_Use"
+msgstr "_Kullan"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:530
+#: ../data/ui/PreferencesVarietyDialog.ui:531
+msgid "Enable the selected sources and disable all others"
+msgstr "Seçilen kaynakları etkinleştir ve diğerlerini devre dışı bırak"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:582
+msgid "Favorites"
+msgstr "Sık Kullanılanlar"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:606
+msgid "Copy favorite wallpapers to "
+msgstr "Sık kullanılan duvar kağıtlarını kopyala "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:691
+msgid "Filters"
+msgstr "Süzgeçler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:716
+msgid ""
+"Randomly apply these filters to the displayed wallpapers (thanks to the "
+"wonderful ImageMagick):"
+msgstr ""
+"Bu süzgeçleri görüntülenen duvar kağıtlarına rastgele uygulayın (harika "
+"ImageMagick'e teşekkürler):"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:788
+msgid "Quotes"
+msgstr "Alıntılar"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:801
+msgid "Show random wise quotes on the desktop"
+msgstr "Masaüstünde rastgele akıllı alıntıları göster"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:840
+msgid "Text color: "
+msgstr "Metin rengi: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:869
+msgid "Text font: "
+msgstr "Metin yazı tipi: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:913
+msgid "Backdrop color: "
+msgstr "Zemin rengi: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:941
+msgid "Backdrop opacity: "
+msgstr "Zemin matlığı: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:955
+msgid " Transparent"
+msgstr " Saydam"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:986
+msgid "Opaque"
+msgstr "Mat"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1004
+msgid "Draw a text shadow"
+msgstr "Metin gölgesi çiz"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1028
+#: ../data/ui/PreferencesVarietyDialog.ui:1777
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1059
+msgid "Quotes area width: "
+msgstr "Alıntıların alan genişliği: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1073
+msgid "Narrow "
+msgstr "Dar "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1104
+msgid "Wide"
+msgstr "Geniş"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1128
+msgid "Horizontal position: "
+msgstr "Yatay konum: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1142
+msgid "Left "
+msgstr "Sol "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1197
+msgid "Vertical position: "
+msgstr "Dikey konum: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1211
+msgid "Top "
+msgstr "Üst "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1264
+msgid "Placement"
+msgstr "Yerleştirme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1298
+msgid "Show quotes from these sources: "
+msgstr "Bu kaynaklardan alıntıları göster: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1372
+msgid ""
+"<small><a href='http://peterlevi.com/variety/wiki/Plugins'>More "
+"plugins</a></small>"
+msgstr ""
+"<small><a href='http://peterlevi.com/variety/wiki/Plugins'>Daha fazla "
+"eklenti</a></small>"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1391
+msgid "Show only these tags and authors. Leave empty to show random quotes."
+msgstr ""
+"Sadece bu etiketleri ve yazarları göster. Rastgele alıntıları göstermek için "
+"boş bırakın."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1453
+msgid "Example: funny, inspirational"
+msgstr "Örnek: komik, ilham verici"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1466
+msgid "Example: Albert Einstein, Voltaire"
+msgstr "Örnek: Albert Einstein, Voltaire"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1479
+msgid "Authors: "
+msgstr "Yazarlar: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1500
+msgid "Sources and filtering"
+msgstr "Kaynaklar ve süzme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1526
+msgid "Change quote every "
+msgstr "Her alıntıyı değiştir "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1547
+#: ../data/ui/PreferencesVarietyDialog.ui:1548
+#: ../data/ui/PreferencesVarietyDialog.ui:1565
+#: ../data/ui/PreferencesVarietyDialog.ui:1566
+msgid "Minimum interval is 10 seconds"
+msgstr "En az aralık 10 saniyedir"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1593
+msgid "Regular change"
+msgstr "Düzenli değişim"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1622
+msgid "Clock"
+msgstr "Saat"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1635
+msgid ""
+"Show a nice big digital clock on the desktop, displaying the current time "
+"and date"
+msgstr ""
+"Masaüstünde şu anki saati ve tarihi gösteren güzel bir dijital saat göster"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1640
+msgid ""
+"To configure the clock's appearance edit the clock_filter property in "
+"Variety's settings file (~/.config/variety/variety.conf). Use the comments "
+"in ~/.config/variety/variety_latest_default.conf as a guide."
+msgstr ""
+"Saatin görünümünü yapılandırmak için Variety'nin ayarlar dosyasındaki "
+"clock_filter özelliğini düzenleyin (~/.config/variety/variety.conf). "
+"~/.config/variety/variety_latest_default.conf dosyasındaki yorumları kılavuz "
+"olarak kullanın."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1676
+msgid "Clock font: "
+msgstr "Saat yazı tipi: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1719
+msgid "Date font: "
+msgstr "Tarih yazı tipi: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1760
+msgid ""
+"These don't work? <a "
+"href=\"https://answers.launchpad.net/variety/+faq/2138\">Read here</a>. How "
+"to further configure the clock? <a "
+"href=\"http://peterlevi.com/variety/2012/11/configuring-the-clock/\">Read "
+"here</a>."
+msgstr ""
+"Bunlar çalışmıyor mu? <a "
+"href=\"https://answers.launchpad.net/variety/+faq/2138\">Burayı oku</a>. "
+"Saat nasıl yapılandırılır? <a "
+"href=\"http://peterlevi.com/variety/2012/11/configuring-the-clock/\">Burayı "
+"okuyun</a>."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1803
+msgid "Effects"
+msgstr "Etkiler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1831
+msgid "Images for slideshow"
+msgstr "Slayt gösterisi için resimler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1853
+msgid "Favorite images"
+msgstr "Sık kullanılan resimler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1872
+msgid "Images in all enabled image sources"
+msgstr "Tüm etkin resim kaynaklarındaki resimler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1890
+msgid "All images in the Downloads folder"
+msgstr "İndirilenler dizinindeki tüm resimler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1915
+msgid "Custom folder (includes images in subfolders) "
+msgstr "Özel dizin (alt dizinlerdeki görüntüleri içerir) "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1977
+msgid "Order of images in slideshow "
+msgstr "Slayt gösterisindeki resimlerin sırası "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1991
+msgid "Random"
+msgstr "Rastgele"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1992
+msgid "By name, A to Z"
+msgstr "A'dan Z'ye isimle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1993
+msgid "By name, Z to A"
+msgstr "Z'den A'ya isimle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1994
+msgid "By date, oldest first"
+msgstr "En eski tarihle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:1995
+msgid "By date, newest first"
+msgstr "En yeni tarihle"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2027
+msgid "Screen"
+msgstr "Ekran"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2052
+msgid "Run on monitor"
+msgstr "Monitörde çalıştır"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2088
+msgid "Window mode for the slideshow "
+msgstr "Slayt gösterisi için pencere modu "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2102
+msgid "Fullscreen"
+msgstr "Tam ekran"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2103
+msgid "Desktop (stays below other windows)"
+msgstr "Masaüstü (diğer pencerelerin altında kalır)"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2104
+msgid "Maximized window"
+msgstr "Büyütülen pencere"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2105
+msgid "Normal window"
+msgstr "Normal pencere"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2150
+msgid "Dynamics"
+msgstr "Dinamik"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2177
+msgid "Interval between image changes "
+msgstr "Görüntü değişiklikleri arasındaki mesafe "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2206
+msgid " seconds"
+msgstr " saniye"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2235
+msgid "Quick fade "
+msgstr "Hızlı solma "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2265
+msgid "Slow fade"
+msgstr "Yavaş solma"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2289
+msgid "Less zoom"
+msgstr "Daha az yakınlaştırma"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2318
+msgid "More zoom"
+msgstr "Daha fazla yakınlaştırma"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2342
+msgid "Less pan"
+msgstr "Daha az göster"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2371
+msgid "More pan"
+msgstr "Daha fazla göster"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2395
+msgid "Reset to defaults"
+msgstr "Varsayılana sıfırla"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2429
+msgid "Changes on this page take effect after the slideshow is restarted"
+msgstr ""
+"Slayt gösterisi yeniden başlatıldıktan sonra bu sayfadaki değişiklikler "
+"etkili olur"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2442
+msgid "Start slideshow now"
+msgstr "Slay gösterisini şimdi başlat"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2470
+msgid "Slideshow"
+msgstr "Slayt gösterisi"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2497
+msgid "Fetch folder"
+msgstr "Dizini getir"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2520
+msgid "Save manually downloaded wallpapers to "
+msgstr "Elle indirilen duvar kağıtlarını kaydet "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2574
+msgid "Drag and drop"
+msgstr "Sürükle ve bırak"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2594
+msgid ""
+"Variety's icon in the launcher serves as a drop target. Drop any image URL "
+"or file on it and it will be saved to your fetch folder. You can then press "
+"Next to see it on your desktop.\n"
+"To show the icon in the launcher choose About or Preferences. You may wish "
+"to lock it there for easy drag-and-drop access."
+msgstr ""
+"Variety'nin simgesi başlatıcıda bir bırakma hedefi olarak hizmet veriyor. "
+"Üzerine herhangi bir resim URL'sini veya dosyayı bırakın ve getirme dizinine "
+"kaydedilecektir. Daha sonra düğmesine basabilirsiniz. Masaüstünüzde görmek "
+"için ilerleyin.\n"
+"Başlatıcıdaki simgeyi göstermek için Hakkında veya Tercihler'i seçin. Kolay "
+"sürükle-bırak erişimi için orada kilitlemek isteyebilirsiniz."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2628
+msgid "Clipboard monitoring"
+msgstr "Pano izleme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2641
+msgid "Monitor clipboard for image URLs and fetch them"
+msgstr "Resim URL'leri için panoya göz atın ve onları getirin"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2663
+msgid "But fetch only when the URL host is one of these:"
+msgstr "Ancak, yalnızca URL sunucusu bunlardan biri olduğunda getir:"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2728
+msgid "Manual downloading"
+msgstr "Elle indirme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2748
+msgid "When possible use images that:"
+msgstr "Mümkün olduğunda görüntüleri kullanın:"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2784
+msgid "Have landscape orientation"
+msgstr "Manzara yönlendirmesi var"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2809
+msgid "Are big at least "
+msgstr "En azından büyükler "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2831
+msgid "50"
+msgstr "50"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2832
+msgid "80"
+msgstr "80"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2833
+msgid "100"
+msgstr "100"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2848
+#, c-format
+msgid "% of the screen resolution"
+msgstr "Ekran çözünürlüğünün yüzdesi"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2882
+msgid "Color"
+msgstr "Renk"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2901
+msgid "Are dark or light:"
+msgstr "Koyu veya aydınlık:"
+
+#. Color option - images that are dark or light
+#: ../data/ui/PreferencesVarietyDialog.ui:2923
+msgctxt "Color option - images that are dark or light"
+msgid "Dark"
+msgstr "Koyu"
+
+#. Color option - images that are dark or light
+#: ../data/ui/PreferencesVarietyDialog.ui:2924
+msgctxt "Color option - images that are dark or light"
+msgid "Light"
+msgstr "Aydınlık"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2949
+msgid "Contain this color: "
+msgstr "Bu rengi içerir: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:2985
+msgid "(Takes effect after some initial searching)"
+msgstr "(İlk aramadan sonra etkili olur)"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3024
+msgid "Rating"
+msgstr "Değerlendirme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3041
+msgid "Have EXIF rating at least "
+msgstr "En az EXIF değerlendirmesi var "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3064
+msgid "1"
+msgstr "1"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3065
+msgid "2"
+msgstr "2"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3066
+msgid "3"
+msgstr "3"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3067
+msgid "4"
+msgstr "4"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3068
+msgid "5"
+msgstr "5"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3104
+msgid "Color and size"
+msgstr "Renk ve boyut"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3131
+msgid "Indicator Icon"
+msgstr "Gösterge Simgesi"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3154
+msgid "Indicator icon:"
+msgstr "Gösterge simgesi:"
+
+# Simge seçeneği
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3170
+msgctxt "Icon option"
+msgid "Light"
+msgstr "Aydınlık"
+
+# Simge seçeneği
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3171
+msgctxt "Icon option"
+msgid "Dark"
+msgstr "Koyu"
+
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3172
+msgctxt "Icon option"
+msgid "Number 1"
+msgstr "1 numara"
+
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3173
+msgctxt "Icon option"
+msgid "Number 2"
+msgstr "2 numara"
+
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3174
+msgctxt "Icon option"
+msgid "Number 3"
+msgstr "3 numara"
+
+#. Icon option
+#: ../data/ui/PreferencesVarietyDialog.ui:3175
+msgctxt "Icon option"
+msgid "Number 4"
+msgstr "4 numara"
+
+# Simge seçeneği
+#: ../data/ui/PreferencesVarietyDialog.ui:3176
+msgctxt "Icon option"
+msgid "Use current wallpaper"
+msgstr "Geçerli duvar kağıdını kullan"
+
+# Simge seçeneği
+#: ../data/ui/PreferencesVarietyDialog.ui:3177
+msgctxt "Icon option"
+msgid "Custom image..."
+msgstr "Özel resim..."
+
+# Simge seçeneği
+#: ../data/ui/PreferencesVarietyDialog.ui:3178
+msgctxt "Icon option"
+msgid "None"
+msgstr "Yok"
+
+# Simge seçeneği
+#: ../data/ui/PreferencesVarietyDialog.ui:3195
+msgid "Select an icon"
+msgstr "Bir simge seç"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3219
+msgid ""
+"When the icon is hidden, Variety can be controlled from the command line, or "
+"from the launcher quicklist. Run \"variety --help\" to see all available "
+"commands."
+msgstr ""
+"Simge gizlendiğinde, Variety komut satırından veya başlatıcı hızlı "
+"listesinden kontrol edilebilir. Kullanılabilir tüm komutları görmek için "
+"\"variety --help\" komutunu çalıştırın."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3249
+msgid "Favorites Operations"
+msgstr "Sık Kullanılanlar İşlemleri"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3272
+msgid "Favorites operations to show in main menu:"
+msgstr "Ana menüde gösterilecek sık kullanılan işlemler:"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3288
+msgid "Copy to Favorites"
+msgstr "Sık kullanılanlara kopyala"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3290
+msgid "Both Copy and Move"
+msgstr "Hem Kopyala hem de Taşı"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3291
+msgid "Depends on folder..."
+msgstr "Dizine bağlı ..."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3348
+msgid "Login Screen Support"
+msgstr "Giriş Ekranı Desteği"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3370
+msgid ""
+"Make sure the wallpapers set by Variety will be used on the login screen"
+msgstr ""
+"Variety tarafından ayarlanan duvar kağıtlarının giriş ekranında "
+"kullanılacağından emin olun"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3394
+msgid ""
+"<b>Privacy warning:</b> To show your wallpaper LightDM needs read "
+"permissions over the image. With this option on, Variety will copy the "
+"wallpapers to a public folder and change their permissions to make them "
+"readable by all. By default, the folder is ~/Pictures if your home folder in "
+"not encrypted, and /usr/share/backgrounds if it is. Please use with care on "
+"multiuser systems."
+msgstr ""
+"<b>Gizlilik uyarısı:</b> Duvar kağıdınızı göstermek için LightDM görüntü "
+"üzerinde okuma izinlerine ihtiyaç duyar. Bu seçenek açık olduğunda, Variety "
+"duvar kağıtlarını herkese açık bir dizine kopyalar ve herkes tarafından "
+"okunabilir hale getirmek için izinlerini değiştirir. Varsayılan olarak, "
+"dizin, ev dizininiz şifrelenmemişse ve /usr/share/backgrounds ise ~/Pictures "
+"dizinidir. Çok kullanıcılı sistemlerde dikkatli kullanın."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3416
+msgid "Copy wallpaper image files to this folder: "
+msgstr "Duvar kağıdı görüntü dosyalarını bu dizine kopyalayın: "
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3443
+msgid "Reset to default"
+msgstr "Varsayılana sıfırla"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3458
+msgid "Still doesn't work?"
+msgstr "Hala çalışmıyor mu?"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3488
+msgid ""
+"It seems your home folder is encrypted, so using folders inside it will not "
+"work."
+msgstr ""
+"Ev dizininiz şifreli görünüyor, bu yüzden içindeki dizinleri kullanmak işe "
+"yaramayacak."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3509
+msgid "You don't have write permissions for this folder."
+msgstr "Bu dizin için yazma izniniz yok."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3526
+msgid "Permissions do not allow LightDM to read files from this folder."
+msgstr "İzinler, LightDM'nin bu dizindeki dosyaları okumasına izin vermez."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3543
+msgid ""
+"Variety can adjust the permissions, but you will have to provide superuser "
+"privileges."
+msgstr ""
+"Variety izinleri ayarlayabilir, ancak süper kullanıcı ayrıcalıkları vermeniz "
+"gerekir."
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3600
+msgid "Customize"
+msgstr "Özelleştirme"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3619
+#: ../data/ui/PreferencesVarietyDialog.ui:3865
+msgid "Tips and tricks"
+msgstr "Ipuçları ve Püf noktaları"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3667
+msgid "Recent changes"
+msgstr "Son değişiklikler"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3719
+msgid "Visit website"
+msgstr "Siteyi ziyaret et"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3754
+msgid "Report a bug or request a feature"
+msgstr "Bir hatayı bildirin veya bir özellik isteyin"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3788
+msgid "Send feedback"
+msgstr "Geribildirim gönder"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3821
+#: ../data/ui/PreferencesVarietyDialog.ui:3885
+msgid "Donate to Variety"
+msgstr "Variety'e bağış yap"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3833
+#: ../data/ui/PreferencesVarietyDialog.ui:3919
+msgid "Donate via PayPal"
+msgstr "PayPal ile bağış yapın"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3903
+msgid ""
+"I am developing Variety in my spare time, which usually means the late hours "
+"after my kids go to bed. Any amount you donate will be appreciated. It will "
+"show me Variety is valued by you - the users - and will motivate me to "
+"continue working actively on it.\n"
+"\n"
+"Thank you,\n"
+"Peter Levi"
+msgstr ""
+"Boş zamanlarımda Variety'yi geliştiriyorum, bu da genellikle çocuklarımın "
+"yatağına gittiği geç saatler anlamına geliyor. Bağışladığınız herhangi bir "
+"miktar takdir edilecek. Bu bana Variety'nin sizin tarafınızdan - "
+"kullanıcılar - değer verildiğini gösterecek ve aktif olarak çalışmaya devam "
+"etmem için beni motive edecek.\n"
+"\n"
+"Teşekkür ederim,\n"
+"Peter Levi"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3951
+msgid "To donate in Bitcoin, please send to this wallet:"
+msgstr "Bitcoin'de bağış yapmak için lütfen bu cüzdana gönderin:"
+
+#: ../data/ui/PreferencesVarietyDialog.ui:3964
+msgid "1EHtkck9pw2Ry4NP6Es8rAXWEeADLdkqcu"
+msgstr "1EHtkck9pw2Ry4NP6Es8rAXWEeADLdkqcu"
+
+#: ../data/ui/PrivacyNoticeDialog.ui:14
+msgid "Variety - Privacy Notice"
+msgstr "Variety - Gizlilik Bildirimi"
+
+#: ../data/ui/PrivacyNoticeDialog.ui:45
+msgid "Reject and Quit"
+msgstr "Reddet ve Çık"
+
+#: ../data/ui/PrivacyNoticeDialog.ui:58
+msgid "Accept and Continue"
+msgstr "Kabul et ve Devam et"
+
+#: ../data/ui/PrivacyNoticeDialog.ui:97
+msgid "<span font=\"15\" weight=\"bold\">Privacy Notice</span>"
+msgstr "<span font=\"15\" weight=\"bold\">Gizlilik Bildirimi</span>"
+
+#. Main text for the Privacy Notice dialog
+#: ../data/ui/PrivacyNoticeDialog.ui:124
+msgid ""
+"Before we start, here are some things you need to be aware of and agree to:\n"
+"\n"
+"<b>Variety is an open-source application, provided as is, without any "
+"warranties</b>. By using it, you agree to the terms and conditions of the <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU GPLv3 license</a> "
+"under which it is distributed.  \n"
+"\n"
+"<b>Variety is an internet-connected application.</b> With default settings, "
+"Variety downloads images from the internet. Web servers it downloads from "
+"may collect information about your device, like IP address. Variety does not "
+"send any personally identifiable information. By using Variety, you accept "
+"its use of internet connectivity. Note that all online image sources can be "
+"disabled. \n"
+"\n"
+"<b>Variety fetches and applies rate limiting settings defined by the "
+"development team.</b> This may affect the rate at which it downloads new "
+"images, but it helps ensure Variety can work regardless of how many people "
+"are running it. These settings will be downloaded from gist.github.com where "
+"we host them.\n"
+"\n"
+"<b>Some image sources require us to track additional information when "
+"enabled.</b> For example the terms of <a "
+"href=\"https://help.unsplash.com/en/articles/2511245-unsplash-api-"
+"guidelines\">Unsplash</a> require us to track and report when users download "
+"and view images from Unsplash."
+msgstr ""
+"Başlamadan önce, bilmeniz ve kabul etmeniz gereken bazı şeyler şunlardır:\n"
+"\n"
+"<b>Variety, herhangi bir garanti olmaksızın olduğu gibi sağlanan açık "
+"kaynaklı bir uygulamadır</b>. Bunu kullanarak, altında dağıtıldığı <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU GPLv3 "
+"lisansının</a> kayıt ve şartlarını kabul etmiş olursunuz. \n"
+"\n"
+"<b>Variety internete bağlı bir uygulamadır.</b> Varsayılan ayarlarla, "
+"Variety görüntüleri internetten indirir. İndirdiği web sunucuları, IP adresi "
+"gibi cihazınız hakkında bilgi toplayabilir. Variety herhangi bir kişisel "
+"kimlik bilgisi göndermez. Variety kullanarak, internet bağlantısı "
+"kullanımını kabul etmiş olursunuz. Tüm çevrimiçi görüntü kaynaklarının devre "
+"dışı bırakılabileceğini unutmayın. \n"
+"\n"
+"<b>Variety, geliştirme ekibi tarafından tanımlanan hız sınırlama ayarlarını "
+"alır ve uygular.</b> Bu, yeni görüntüler indirme hızını etkileyebilir, ancak "
+"Variety'nin kaç kişi çalıştırdığına bakılmaksızın çalışabilmesini sağlar. Bu "
+"ayarlar, barındırdığımız gist.github.com adresinden indirilecektir.\n"
+"\n"
+"<b>Bazı görüntü kaynakları etkinleştirildiğinde ek bilgileri izlememizi "
+"gerektirir.</b> Örneğin, <a "
+"href=\"https://help.unsplash.com/en/articles/2511245-unsplash-api-"
+"guidelines\">Unsplash</a> terimleri, kullanıcılar Unsplash'tan resimleri "
+"indirip görüntülerken izlememizi ve raporlamamızı gerektirir."
+
+#: ../data/ui/WelcomeDialog.ui:13 ../data/ui/WelcomeDialog.ui:76
+msgid "Welcome to Variety!"
+msgstr "Variety'e hoşgeldiniz!"
+
+#: ../data/ui/WelcomeDialog.ui:38
+msgid "Continue"
+msgstr "Devam"
+
+#: ../data/ui/WelcomeDialog.ui:94
+msgid ""
+"Variety is an automatic wallpaper changer. It rotates your desktop wallpaper "
+"on a regular basis using local images or images downloaded from various "
+"online sources. It runs quietly in the background - to control it, click "
+"this icon in your system tray:"
+msgstr ""
+"Variety bir otomatik duvar kağıdı değiştiricidir. Çeşitli çevrimiçi "
+"kaynaklardan indirilen resimler veya yerel resimler kullanarak masaüstü "
+"duvar kağıdınızı düzenli olarak döndürür. Arkaplanda sessizce çalışır - "
+"kontrol etmek için sistem çekmecenizdeki simgeye tıklayın:"
+
+#: ../data/ui/WelcomeDialog.ui:124
+msgid ""
+"Variety is open-source software, created by Peter Levi, a software developer "
+"from Bulgaria. If you like it, please <a "
+"href=\"http://peterlevi.com/variety/donate/\">donate</a>."
+msgstr ""
+"Variety, Bulgaristan'dan bir yazılım geliştiricisi olan Peter Levi "
+"tarafından oluşturulan açık kaynaklı bir yazılımdır. Beğendiysen lütfen <a "
+"href=\"http://peterlevi.com/variety/donate/\">bağış yap</a>."
+
+#: ../data/ui/WelcomeDialog.ui:143
+msgid ""
+"Now please take some time to set your preferences on the following screens."
+msgstr ""
+"Şimdi tercihlerinizi aşağıdaki ekranlarda ayarlamak için biraz zaman ayırın."

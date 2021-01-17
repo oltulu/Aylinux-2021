@@ -1,0 +1,31 @@
+[paket]
+tanim   = Cisco vpn konsantratörü için istemci
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/streambinder/vpnc
+
+[gerek]
+derleme = libgcrypt iproute2 openssl
+calisma =
+
+[kaynak]
+1       = https://github.com/streambinder/vpnc/archive/fa0689cc9a67d02a614c7a2406dfe2e794825a31.tar.gz::$isim-$surum-$devir.tar.gz
+2       = http://git.infradead.org/users/dwmw2/vpnc-scripts.git/snapshot/c0122e891f7e033f35f047dad963702199d5cb9e.tar.gz::vpnc-scripts-c0122e891f7e033f35f047dad963702199d5cb9e.tar.gz
+dosya   = vpnc.conf
+
+[sha256]
+1       = 1f42f85817d5310e193dd37e43d52666dcc181b763ffaa0ba62e3d983378ca90
+2       = aa3378529917a9e46f636cfc7d807eacfed30822252130e6355427903301e19a
+
+[derle]
+betik   = mv vpnc-fa* vpnc
+betik   = mv vpnc-scripts-* vpnc-scripts
+betik   = cd vpnc
+betik   = sed 's|^#OPENSSL|OPENSSL|g' -i Makefile
+betik   = ln -sf ../../vpnc-scripts/vpnc-script src
+betik   = ln -sf ../../vpnc.conf src
+betik   = make
+  
+[pakur]
+betik   = cd vpnc
+betik   = make PREFIX=/usr SBINDIR=/usr/bin DESTDIR=${PKG} install

@@ -1,0 +1,23 @@
+[paket]
+tanim    = Linux için Video4 kütüphane ve araçları
+paketci  = milisarge  
+grup     = medya
+url      = https://linuxtv.org/
+
+[gerek]
+derleme  = alsa-lib libjpeg-turbo
+calisma  = sysfsutils
+
+[kaynak]
+bz2    =  https://linuxtv.org/downloads/$isim
+
+[sha256]
+1      =  f9dac1878e3d5636eab7f56bb209fdfc66b94ee8a2aae54dcb4282fe63a678ae
+
+[derle]
+tip    = gnu
+
+[pakur]
+tip    = gnu
+betik  = rm "${PKG}/usr/bin/ivtv-ctl"
+

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Sanal makineleri yönetmek için masaüstü kullanıcı arayüzü
+paketci = yasarciv67
+grup    = sistem
+url     = https://virt-manager.org
+
+[gerek]
+derleme = gtk3 python python-gobject python-requests vte3 python-cairo gtksourceview libosinfo libvirt-python libvirt-glib gtk-vnc  
+calisma = gtk3 python python-gobject python-requests vte3 python-cairo gtksourceview libosinfo libvirt-python libvirt-glib gtk-vnc 
+
+[kaynak]
+gz		= https://virt-manager.org/download/sources/virt-manager
+
+[sha512]
+1		= aa97af52b3552c087beab8701762c21e8e6d818c9787d5376ed4e1ae40a34d5e8870c4c00fda9cb17a2340d1dff5b17e853182df720cdd9ea4c91cf01502a33a
+
+[derle]
+tip     = py3
+
+[pakur]
+betik   = python3 setup.py --no-update-icon-cache --no-compile-schemas install --root $PKG

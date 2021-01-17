@@ -1,0 +1,25 @@
+[paket]
+tanim   = Intel'in Vulkan mesa sürücüsü
+paketci = Cihan_Alkan
+grup 	= sürücü
+url     = https://www.mesa3d.org/
+
+[gerek]
+derleme = meson glslang libclc
+calisma = 
+
+[kaynak]
+1      = https://mesa.freedesktop.org/archive/mesa-${surum}.tar.xz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = milis-meson mesa-$surum build -D b_lto=true -D b_ndebug=true -D platforms=x11,wayland -D dri-drivers=i915,i965,r100,r200,nouveau -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris,zink -D vulkan-drivers=amd,intel,swrast -D vulkan-overlay-layer=true -D vulkan-device-select-layer=true -D swr-arches=avx,avx2 -D dri3=enabled -D egl=enabled -D gallium-extra-hud=true -D gallium-nine=true -D gallium-omx=bellagio -D gallium-opencl=icd -D gallium-va=enabled -D gallium-vdpau=enabled -D gallium-xa=enabled -D gallium-xvmc=disabled -D gbm=enabled -D gles1=disabled -D gles2=enabled -D glvnd=true -D glx=dri -D libunwind=enabled -D llvm=enabled -D lmsensors=enabled -D osmesa=gallium -D shared-glapi=enabled -D valgrind=enabled
+betik = meson configure build
+betik = ninja -C build
+betik = meson compile -C build
+betik = DESTDIR="${SRC}/fakeinstall" meson install -C build
+
+[pakur]
+pakur.sh

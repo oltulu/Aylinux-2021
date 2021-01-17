@@ -1,0 +1,43 @@
+#! /bin/sh
+
+. /etc/rc.d/functions
+
+DESC="vnStat daemon"
+NAME=vnstatd
+DAEMON=/usr/bin/$NAME
+DAEMON_ARGS="-d"
+PIDFILE=/var/run/vnstat/vnstat.pid
+SCRIPTNAME=/etc/init.d/vnstat
+
+# Exit if the package is not installed
+[ -x "$DAEMON" ] || exit 0
+
+
+case "$1" in
+  start)
+	log_info_msg "Starting $DESC"
+    start_daemon -p "${PIDFILE}" ${DAEMON} ${DAEMON_ARGS}
+    evaluate_retval
+    ;;
+  stop)
+	log_info_msg "Stopping  $DESC: $NAME"
+    killproc -p "${PIDFILE}" ${DAEMON}
+    evaluate_retval
+    ;;
+  status)
+	log_info_msg "Checking $DESC: "
+    statusproc  -p "${PIDFILE}" ${DAEMON}
+    ;;
+  restart)
+	log_info_msg "Restarting $DESC: $NAME"
+	$0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+	echo "Usage: $SCRIPTNAME {start|stop|restart|status}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

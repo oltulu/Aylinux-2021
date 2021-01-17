@@ -1,0 +1,24 @@
+[paket]
+tanim   = GTK için Sanal terminal eklenti kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://wiki.gnome.org/Apps/Terminal/VTE
+
+[gerek]
+derleme = gnutls gobject-introspection vala gtk3
+calisma = 
+
+[kaynak]
+1       = https://download.gnome.org/sources/vte/${surum%.*}/vte-$surum.tar.xz
+
+[sha512]
+1 		= f78b3d532ca47e53c1bb51db6780697ce4692d493c0030d2dc4beb63a2595e44a43eb409ee31b94e4551eae259ac1baa8f06825a02fd66df8352e192f4ea1988
+
+[derle]
+betik   = cd vte-$surum
+ekconf  = --libexecdir=/usr/lib/vte --disable-static --enable-introspection
+tip 	= gnu
+	      
+[pakur]
+betik   = cd vte-$surum
+tip 	= gnu

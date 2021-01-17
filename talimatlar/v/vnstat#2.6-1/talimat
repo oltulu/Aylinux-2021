@@ -1,0 +1,25 @@
+[paket]
+tanim   = Terminal tabanlı ağ trafik monitörü
+paketci = milisarge
+grup    = ağ
+url     = https://humdi.net/vnstat/
+
+[gerek]
+derleme = libgd sqlite
+calisma =
+
+[kaynak]
+gz      = $url
+dosya   = vnstat.service
+
+[sha256]
+1       = 89276e0a7281943edb554b874078278ad947dc312938a2451e03eb80679f7ff7
+2       = 60dacdfeb3daec29c140f7d45d680e02bbf800c2860cd6d99f6ab0732aec35e2
+
+[derle]
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = install -Dm755 $SRC/vnstat.service $PKG/etc/rc.d/init.d/vnstat

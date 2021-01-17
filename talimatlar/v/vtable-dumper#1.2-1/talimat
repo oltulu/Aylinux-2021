@@ -1,0 +1,17 @@
+[paket]
+tanim   = C++ paylaşımlı kütüphanelerinin sanal tablolarının içeriğini listeleme aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://github.com/lvc/vtable-dumper
+
+[kaynak]
+1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1 		= 6993781b6a00936fc5f76dc0db4c410acb46b6d6e9836ddbe2e3c525c6dd1fd2
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
