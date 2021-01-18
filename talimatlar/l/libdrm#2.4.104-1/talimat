@@ -12,7 +12,7 @@ calisma =
 xz      = https://dri.freedesktop.org/${isim}
 
 [sha256]
-1 		= ddf31baa8e49473624860bd166ce654dc349873f7a6c7b3305964249315c78a7
+#1 		= ddf31baa8e49473624860bd166ce654dc349873f7a6c7b3305964249315c78a7
 
 [derle]
 betik   = cd $SRC
