@@ -1,0 +1,21 @@
+[paket]
+tanim   = X Klavye açıklama derleyicisi
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxkbfile
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= b00d1eb08c19be86044418c8ea3bfc3c3973406c481878270138a70ed9dab348acb8e4d0af8678879598ffbd7df1c640a63d0abad3d7481758be99af8dd7734e
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = X olaylarını yazma aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-proto libx11 libxrandr
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha256]
+1 		= 66bc4f1cfa1946d62612737815c34164e4ce40fcebd2c9e1d7e7a1117ad3ad09
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

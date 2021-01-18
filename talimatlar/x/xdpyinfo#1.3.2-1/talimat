@@ -1,0 +1,21 @@
+[paket]
+tanim   = Display bilgi aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxext libxtst libxxf86vm libxxf86dga libxrender libxcomposite libxinerama libdmx
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 2c9097c13778c7a7fe5a9b3ee04b28512ff6028231eca91ecdf6104c742be470678920d37a4f540fece7e39dccbea34802271f359ab80618027b2856c8912e7d
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

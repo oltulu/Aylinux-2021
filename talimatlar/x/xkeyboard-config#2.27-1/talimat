@@ -1,11 +1,11 @@
 [paket]
 tanim   = X klavye yapılandırma dosyaları
-paketci = Cihan_Alkan
+paketci = milisarge
 grup 	= kütüphane
 url     = http://xorg.freedesktop.org
 
 [gerek]
-derleme = xorg-xkbcomp xorg-libxslt
+derleme = xkbcomp
 calisma = 
 
 [kaynak]
@@ -15,8 +15,11 @@ bz2      = $url/archive/individual/data/$isim
 1 		= ae29177461f9d2c6ce1c56c0b8b147600e3f0ecd15e8754c9531811702d9a030a31f42679a88a9fb706bec458974c337ee2a0180f22573702caa7184eb94017e
 
 [derle]
-betik = ./configure --prefix=/usr --with-xkb-base=/usr/share/X11/xkb --with-xkb-rules-symlink=xorg --enable-compat-rules=yes
-betik = make
+ekconf  = --with-xkb-base=/usr/share/X11/xkb --with-xkb-rules-symlink=xorg --enable-compat-rules=yes
+tip 	= gnu
 	      
 [pakur]
 tip 	= gnu
+betik   = rm -f $PKG/usr/share/X11/xkb/compiled
+betik   = install -m755 -d $PKG/var/lib/xkb
+	

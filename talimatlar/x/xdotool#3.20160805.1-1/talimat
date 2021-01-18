@@ -1,0 +1,24 @@
+[paket]
+tanim   = X için klavye ve fare simule aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://www.semicomplete.com/projects/xdotool
+
+[gerek]
+derleme = libxtst libxinerama libxkbcommon
+calisma = 
+
+[kaynak]
+github  = jordansissel/xdotool
+
+[sha256]
+1 		= ddafca1239075c203769c17a5a184587731e56fbe0438c09d08f8af1704e117a
+
+[derle]
+betik   = make WITHOUT_RPATH_FIX=1
+tip 	= gnu
+	      
+[pakur]
+betik   = make PREFIX="$PKG/usr" INSTALLMAN="$PKG/usr/share/man" install
+;Remove execute bit from header file
+betik   = chmod -x "$PKG/usr/include/xdo.h"

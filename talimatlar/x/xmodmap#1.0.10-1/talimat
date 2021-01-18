@@ -1,0 +1,21 @@
+[paket]
+tanim   = X tuş takımı ve klavye yerleşim ayarlaması
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 324c7dcef843186088f16b3bc47485eb3c9b4331e56ce43b692deb4bb3d4f4f27512480e91a379cceac8383df920dc5e37cd825246b50b6343291cec48134c04
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

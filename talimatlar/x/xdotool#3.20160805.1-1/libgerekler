@@ -1,0 +1,9 @@
+libxdo.so.3
+libm.so.6
+libX11.so.6
+librt.so.1
+libc.so.6
+libXtst.so.6
+libXinerama.so.1
+libxkbcommon.so.0
+

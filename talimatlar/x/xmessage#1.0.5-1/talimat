@@ -1,0 +1,21 @@
+[paket]
+tanim   = X Display bir mesaj ve sorguyu pencerede gösterme
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxaw
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= a8423c3986b1576fa67800c315a605a527bb9a8f594ac269a736ae7b91eed0d4d83deb89148197dc3cd3f0e51894146958ce2979f78e97dcdb99c5326e34dabe
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

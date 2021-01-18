@@ -1,0 +1,26 @@
+[paket]
+tanim   = Xlock X ekran kilidini sağlar
+paketci = milisarge
+grup    = sistem
+url     = http://sillycycle.com/xlockmore.html
+
+[gerek]
+derleme  = freetype libxt libxext libxinerama
+calisma  =
+
+[kaynak]
+xz       = http://sillycycle.com/xlock
+
+[sha256]
+1        = 5976a5c3662828d14522c90e06f28ddcfc8e57788fde08eb8b7a70e9ef3bab71
+
+[derle]
+betik    = export CFLAGS="-D_DEFAULT_SOURCE"
+betik    = export X_EXTRA_LIBS="$LDFLAGS"
+ekconf   = --with-xinerama
+tip      = gnu
+
+[pakur]
+tip      = gnu
+betik    = make INSTPGMFLAGS= xapploaddir=${PKG}/usr/share/X11/app-defaults bindir=${PKG}/usr/bin mandir=${PKG}/usr/share/man/man1 prefix=${PKG}/usr install
+betik    = chmod u+s ${PKG}/usr/bin/xlock

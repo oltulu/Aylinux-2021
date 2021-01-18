@@ -1,0 +1,32 @@
+[paket]
+tanim   = X.Org başlatma programı
+paketci = milisarge
+grup 	= kütüphane
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-proto libx11 xauth xrdb xmodmap
+calisma =
+
+
+[kaynak]
+bz2     = $url/releases/individual/app
+dosya   = 06_move_serverauthfile_into_tmp.diff
+dosya   = fs25361.patch
+dosya   = fs46369.patch
+dosya   = xserverrc
+
+[sha512]
+1 		= 6cbc5d025a891c419f3f4493381b2fca57a67d78df866d2f16a83426f86bad6eca7f240fac12b25cbcc63df0fec41f625407184e044898602d66483715315340
+
+[derle]
+yama    = 2
+yama    = 3
+yama    = 4
+betik   = sed -i -e 's/XSLASHGLOB.sh/XSLASHGLOB/' xinitrc.cpp
+ekconf  = --with-xinitdir=/etc/X11/xinit
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu
+betik   = install -m644 "${SRC}/xserverrc" "${PKG}/etc/X11/xinit/xserverrc"

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xwd den gelen X penceresini yazdırma
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxmu
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= d5dfb936ec4ad0067d02654dec8e862fe337ff6a2c2f974b2b3a612a829c2e728a0d51e7aba00ed2a94dc96dc50cc69f2c59f522e0635013f5f4f5bb3f4ab967
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

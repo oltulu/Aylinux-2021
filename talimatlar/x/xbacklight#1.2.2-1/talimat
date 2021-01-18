@@ -1,0 +1,21 @@
+[paket]
+tanim   = X için arka ışık ayarlama
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xcb-util
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 4dca70ef8e3494b19ea126c46395807cddc007b2b09a133810daeb77ae27fa36ac4eec7813828248fc195abe27f59700cfa58ee65ef3a020a51f73e5107678ec
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

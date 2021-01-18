@@ -1,0 +1,21 @@
+[paket]
+tanim   = X11 için X istemci kaynaklarını sonlandırma
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxmu
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 4603a1794f114f5cea2c885020c9d073c8421d1e785c99ff6b936ae97139c8dac8020a187b5bbd0fa6d56ed6fab879441b42ba900cc5f2f5a534dafdc86b9249
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

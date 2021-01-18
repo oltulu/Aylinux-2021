@@ -1,0 +1,21 @@
+[paket]
+tanim   = DRI sürücülerinin sorgu ayarlama aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libglvnd
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 7ddd9e19abaef93e4d85004293528ec3814ef84c470d496dbb8dc8313d804bb7520406de8d33d2bc2b3af942bd0a5d5032a109b2726438a966af63ea680a102f
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

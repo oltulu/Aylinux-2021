@@ -1,0 +1,14 @@
+libXext.so.6
+libXtst.so.6
+libX11-xcb.so.1
+libX11.so.6
+libxcb.so.1
+libXxf86vm.so.1
+libXxf86dga.so.1
+libXi.so.6
+libXrender.so.1
+libXcomposite.so.1
+libXinerama.so.1
+libdmx.so.1
+libc.so.6
+

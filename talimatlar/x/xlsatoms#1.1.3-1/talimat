@@ -1,0 +1,21 @@
+[paket]
+tanim   = X sunucuda tanimlanmış iç atomları listeler
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxcb
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= c267ccfdc5a83e834bfb5c3b144e22642badcadef4eb146eeec2df6fe6f85e9379500ae4219912c70fa2e535036a1a96cf496381f5d814e79af075e03c975f30
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

@@ -1,0 +1,21 @@
+[paket]
+tanim   = Tüm karakterleri bir X yazı tipinde görüntüleyin
+paketci = milisarge
+grup    = sistem
+url     = https://wiki.freedesktop.org/xorg/
+
+[gerek]
+derleme = xorg-util-macros gettext pkg-config libxaw freetype libxft libxkbfile
+calisma = fontconfig
+
+[kaynak]
+bz2     = ${XORG_SITE}/app
+
+[sha256]
+1       = 192f938ba5830e84cc807d8ead2ad9655b43eaed6500c830f3e083aad10ed958
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

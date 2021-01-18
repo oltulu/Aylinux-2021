@@ -1,0 +1,22 @@
+[paket]
+tanim   = X11 panosuna komut satırı arayüzü
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/astrand/xclip
+
+[gerek]
+derleme = libxmu
+calisma =
+
+[kaynak]
+1       = https://github.com/astrand/xclip/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758
+
+[derle]
+betik   = autoreconf -fi
+tip     = gnu
+
+[pakur]
+tip     = gnu

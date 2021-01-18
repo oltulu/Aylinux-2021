@@ -1,0 +1,21 @@
+[paket]
+tanim   = XKB araç demoları
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxaw libxt libx11 xorg-proto
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 5bb6cb52ac02a4ec18332559853815585ca86e00e8c6452483af10c4db75811fe00952575dbbad5b7d03b9d6498830fb45d617b1b3c5c1cea8445f1131856a4d
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu

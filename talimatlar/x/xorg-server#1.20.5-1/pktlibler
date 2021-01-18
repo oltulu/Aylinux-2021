@@ -1,0 +1,12 @@
+libint10.so
+libvgahw.so
+libvbe.so
+libfb.so
+libwfb.so
+libshadow.so
+libfbdevhw.so
+libshadowfb.so
+libexa.so
+libglamoregl.so
+modesetting_drv.so
+libglx.so

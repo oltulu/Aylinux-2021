@@ -1,0 +1,21 @@
+[paket]
+tanim   = XKB olay takibi
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxkbfile
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 7628eddd0e1dc0c4df8e61eb3f6a6bf0e9d92a87e96bb2f5248ba5bd3d99d868885c36860b78e8ea2eaba3bb9a420067ef95c4d58c1254fa3d12fb25dd4e60e7
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
