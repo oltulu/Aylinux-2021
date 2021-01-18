@@ -1,0 +1,25 @@
+[paket]
+tanim   = Erlang programlama dili
+paketci = milisarge
+grup    = geliştirme
+url     = http://www.erlang.org/
+
+[gerek]
+derleme    = ncurses unixodbc openssl zlib
+calisma    =
+
+[kaynak]
+1          = https://github.com/erlang/otp/archive/OTP-${surum}.tar.gz
+
+[sha256]
+1          = 65ab58ce79181895afc66716cc735a0ada4a3b705a525407d7e1d4c5deb95e72
+
+[derle]
+betik      = cd otp-OTP-$surum
+betik      = ./otp_build autoconf
+ekconf     =  --enable-builtin-zlib --enable-smp-support --with-odbc
+tip        = gnu
+
+[pakur]
+betik      = cd otp-OTP-$surum
+tip        = gnu

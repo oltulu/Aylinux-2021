@@ -1,0 +1,23 @@
+[paket]
+tanim   = EGL Harici Platform arayüzü
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://github.com/NVIDIA/eglexternalplatform
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git = https://github.com/NVIDIA/eglexternalplatform
+
+[sha1]
+1 = 
+
+[derle]
+betik = cd $isim
+    	      
+[pakur]
+betik = cd $isim
+betik = install -Dt "$PKG/usr/include/EGL" -m644 interface/*
+betik = install -Dt "$PKG/usr/share/pkgconfig" -m644 *.pc

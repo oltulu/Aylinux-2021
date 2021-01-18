@@ -1,0 +1,18 @@
+[paket]
+tanim   = XML ayrıştırıcı C kütüphanesi
+paketci = milisarge
+grup 	= temel
+url     = http://expat.sourceforge.net
+
+[kaynak]
+bz2     = http://downloads.sourceforge.net/$isim
+
+[sha256]
+#1 		= 17b43c2716d521369f82fc2dc70f359860e90fa440bea65b3b85f0b246ea81f2
+
+[derle]
+betik   = ./configure --prefix=/usr --disable-static
+betik   = make
+      
+[pakur]
+tip	    = gnu

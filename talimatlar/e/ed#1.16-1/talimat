@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Metin dosyalarını düzenleyen, değiştiren, gösteren ve oluşturan bir metin düzenleyicisidir.
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://www.gnu.org/software/ed/
+
+[kaynak]
+lz       = https://ftp.gnu.org/gnu/$isim
+
+[sha256]
+1       = ad4489c0ad7a108c514262da28e6c2a426946fb408a3977ef1ed34308bdfd174
+
+[derle]
+tip     = gnu
+	      
+[pakur]
+tip     = gnu

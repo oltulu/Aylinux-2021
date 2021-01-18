@@ -1,0 +1,22 @@
+[paket]
+tanim   = Gnome'un Gözü: Bir resim görüntüleme ve kataloglama programı
+paketci = Cihan_Alkan
+grup 	= grafik
+url     = https://wiki.gnome.org/Apps/EyeOfGnome
+
+[gerek]
+derleme = gobject-introspection meson yelp-tools
+calisma = gnome-desktop libexif lcms2 exempi libpeas librsvg dconf
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum:0:4}
+
+[sha1]
+1 		= 
+
+[derle]
+betik = milis-meson ../$isim-$surum build -D gtk_doc=false
+betik = ninja -C build
+	      
+[pakur]
+betik = DESTDIR="$PKG" meson install -C build

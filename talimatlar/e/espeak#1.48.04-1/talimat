@@ -1,0 +1,24 @@
+[paket]
+tanim   = Metin-Konuşma motoru
+paketci = milisarge
+grup    = kütüphane
+url     = http://espeak.sourceforge.net
+
+[gerek]
+derleme = unzip pulseaudio portaudio
+calisma =
+
+[kaynak]
+1       = ${SOURCEFORGE_SITE}/${isim}/${isim}-${surum}-source.zip
+
+[sha256]
+1       = bf9a17673adffcc28ff7ea18764f06136547e97bbd9edf2ec612f09b207f0659
+
+[derle]
+betik   = cd espeak-1.48.04-source/src
+betik   = cp portaudio19.h portaudio.h
+betik   = make CXXFLAGS="$CXXFLAGS -w -std=c++98" AUDIO=pulseaudio
+
+[pakur]
+betik   = cd espeak-1.48.04-source/src
+tip     = gnu

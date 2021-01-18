@@ -1,0 +1,23 @@
+[paket]
+tanim   = Enlightenment Vakfı Kütüphaneleri
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://enlightenment.org
+
+[gerek]
+derleme    = meson ninja avahi bullet libpng libjpeg-turbo gst-plugins-base zlib luajit tiff openssl curl dbus fontconfig freetype fribidi pulseaudio libsndfile libx11 libxau libxcomposite libxdamage libxdmcp libxext libxfixes libxinerama libxrandr libxrender libxss libxtst libxcursor libxp libxi mesa libglvnd giflib util-linux poppler libraw libspectre librsvg libxkbfile ibus libwebp vlc connman
+calisma    =
+
+[kaynak]
+xz         = https://download.enlightenment.org/rel/libs/efl
+
+[sha256]
+;1          = 53cea69eaabe443a099fb204b7353e968e7bb62b41fbb0da24451403c7a56901
+
+[derle]
+betik	   = export CFLAGS="$CFLAGS -fvisibility=hidden"
+ekconf     =  -Dsystemd=false -Dbuild-tests=false -Dnetwork-backend=connman -Dopengl=full -Decore-imf-loaders-disabler=scim -Dglib=true -Devas-loaders-disabler=json -Dbuild-examples=false -Dfb=true -Ddrm=true -Dcrypto=openssl
+tip        = meson
+
+[pakur]
+tip        = meson

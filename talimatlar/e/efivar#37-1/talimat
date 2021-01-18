@@ -1,0 +1,17 @@
+[paket]
+tanim   = EFI değişkenlerini işlemek için kütüphane - geliştirme dosyaları
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/rhinstaller/efivar
+
+[kaynak]
+git     = $url
+
+[sha256]
+
+[derle]
+betik   = cd $SRC/$isim;make -j1
+
+[pakur]
+betik   = cd $SRC/$isim;
+betik   = make -j1 DESTDIR="${PKG}/" libdir="/usr/lib/" install

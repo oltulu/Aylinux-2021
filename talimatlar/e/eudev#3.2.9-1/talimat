@@ -1,0 +1,19 @@
+[paket]
+tanim   = Dinamik aygıt düğümleri oluşturma araçları
+paketci = milisarge
+grup 	= temel
+url     = http://www.gentoo.org/proj/en/eudev
+
+[kaynak]
+gz     	= http://dev.gentoo.org/~blueness/eudev
+2  	    = https://ftp.osuosl.org/pub/lfs/lfs-packages/8.2/udev-lfs-20171102.tar.bz2
+
+[sha256]
+#1 		= 3004614bd253c1f98558460215027aaf60d7592c70be27fd384ec01db87bf062
+2 		= 8bba924fc84ae0f0e3058530b4abe2ce9ac26111240d93d8b4725de05a29bdb4
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+dosya   = pakur.sh

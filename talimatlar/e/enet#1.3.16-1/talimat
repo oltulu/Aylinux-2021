@@ -1,0 +1,21 @@
+[paket]
+tanim   = Güvenilir UDP ağ kütüphanesi
+paketci = milisarge
+grup    = kütüphane
+url     = http://enet.bespin.org
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+gz      = http://enet.bespin.org/download
+
+[sha256]
+1       = 5abdf63346e54272344d8184b5a2f333d202d809d28123911cbd993e5772bdfb
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu

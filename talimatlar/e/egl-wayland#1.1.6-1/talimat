@@ -1,0 +1,24 @@
+[paket]
+tanim   = EGLStream tabanlı Wayland harici platformu
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://github.com/NVIDIA/egl-wayland
+
+[gerek]
+derleme = eglexternalplatform
+calisma = 
+
+[kaynak]
+git    = https://github.com/NVIDIA/egl-wayland
+1= https://github.com/archlinux/svntogit-packages/raw/packages/egl-wayland/trunk/10_nvidia_wayland.json
+
+[sha1]
+1 		= 
+  
+[derle]
+betik = milis-meson $isim build
+betik = meson compile -C build
+    	      
+[pakur]
+betik = DESTDIR="$PKG" meson install -C build
+betik = install -Dt "$PKG/usr/share/egl/egl_external_platform.d" -m644 /sources/10_nvidia_wayland.json

@@ -1,0 +1,25 @@
+[paket]
+tanim   = UEFI Ürün Yazılımı Önyükleme Yöneticisi Değişkenlerini değiştirme aracı
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/rhinstaller/efibootmgr
+
+[gerek]
+derleme = efivar popt
+calisma =
+
+[kaynak]
+git     = $url
+
+[sha256]
+
+[derle]
+betik   = cd $isim
+betik   = make EXTRA_CFLAGS="-Os" EFIDIR="/boot/EFI"
+
+[pakur]
+betik   = cd $isim
+betik   = install -d "${PKG}/usr/bin/"
+betik   = install -D -m0755 src/efibootmgr ${PKG}/usr/bin/efibootmgr
+betik   = install -d "${PKG}/usr/share/man/man8/"
+betik   = install -D -m0644 src/efibootmgr.8 ${PKG}/usr/share/man/man8/efibootmgr.8

@@ -1,0 +1,25 @@
+[paket]
+tanim   = Emacs düzenleyicisi
+paketci = milisarge
+grup    = ofis
+url     = http://www.gnu.org/software/emacs
+
+[gerek]
+derleme = librsvg giflib libxpm gtk3 desktop-file-utils alsa-lib gnutls jansson cairo harfbuzz
+calisma =
+
+[kaynak]
+xz      = ${GNU_SITE}/${isim}
+
+[sha256]
+1       = 4a4c128f915fc937d61edfc273c98106711b540c9be3cd5d2e2b9b5b2f172e41
+
+[derle]
+betik   = ac_cv_lib_gif_EGifPutExtensionLast=yes ./configure ${CONF_OPT} --with-x-toolkit=gtk3 --with-xft --with-wide-int --with-modules --with-cairo --with-harfbuzz
+betik   = make
+
+[pakur]
+tip     = gnu
+betik   = mv "$PKG"/usr/bin/{ctags,ctags.emacs}
+betik   = mv "$PKG"/usr/share/man/man1/{ctags.1.gz,ctags.emacs.1}
+betik   = find "$PKG"/usr/share/emacs/$surum -exec chown root:root {} \;

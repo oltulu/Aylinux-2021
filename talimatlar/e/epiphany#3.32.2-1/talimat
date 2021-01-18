@@ -1,0 +1,22 @@
+[paket]
+tanim   = WebKit işleme motorunu temel alan bir GNOME web tarayıcısı
+paketci = Cihan_Alkan
+grup 	= grafik
+url     = https://wiki.gnome.org/Apps/Web
+
+[gerek]
+derleme = docbook-xml startup-notification lsb-release gobject-introspection yelp-tools appstream-glib meson
+calisma = webkit2gtk gcr icu libdazzle libhandy
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum:0:4}
+
+[sha1]
+1 		= 
+
+[derle]
+betik = milis-meson ../$isim-$surum build -D distributor_name="Milis Linux®"
+betik = ninja -C build
+	      
+[pakur]
+betik = DESTDIR="$PKG" meson install -C build

@@ -1,0 +1,17 @@
+[paket]
+tanim   = Ext2,3 ve 4 dosya sistemleri için araçlar
+paketci = milisarge
+grup 	= temel
+url     = http://e2fsprogs.sourceforge.net
+
+[kaynak]
+xz     	= https://www.kernel.org/pub/linux/kernel/people/tytso/$isim/v$surum
+
+[sha256]
+#1 		= 1fa9d0e13f30f1cae9035fe74ed8ad01bfaae99c2c0b9b970318bdb5d738fcd4
+
+[derle]
+dosya   = derle.sh
+     
+[pakur]
+dosya   = pakur.sh

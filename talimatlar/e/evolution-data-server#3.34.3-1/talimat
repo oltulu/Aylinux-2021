@@ -1,0 +1,27 @@
+[paket]
+tanim   = Randevulara ve kişilere merkezi erişim
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://wiki.gnome.org/Apps/Evolution
+
+[gerek]
+derleme  = 
+calisma  = libphonenumber 
+
+[kaynak]
+xz = https://download.gnome.org/sources/$isim/${surum:0:4}
+#1 = https://github.com/void-linux/void-packages/raw/master/srcpkgs/evolution-data-server/patches/gen-tables.patch
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+#betik   = patch -Np1 -i /sources/gen-tables.patch
+betik   = mkdir build
+betik   = cd build
+betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_UOA=OFF -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=ON -DENABLE_GOOGLE=ON DUSE_SYSTEMD=OFF -D USE_SYSTEMD=OFF -DENABLE_GOOGLE_AUTH=OFF -DWITH_OPENLDAP=OFF -DWITH_KRB5=OFF -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DENABLE_GOOGLE=OFF -DWITH_SYSTEMDUSERUNITDIR=no ..
+betik   = make
+
+[pakur]
+betik   = cd build
+betik   = make DESTDIR=$PKG install
