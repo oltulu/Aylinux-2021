@@ -1,0 +1,19 @@
+[paket]
+tanim	= Unicode için uluslararası bileşenler kütüphanesi
+paketci	= yasarciv67
+grup	= kütüphane
+url	    = http://www.icu-project.org/
+
+[kaynak]
+1	    = https://github.com/unicode-org/icu/releases/download/release-68-2/icu4c-68_2-src.tgz
+
+[sha256]
+#1	    = 627d5d8478e6d96fc8c90fed4851239079a561a6a8b9e48b0892f24e82d31d6c
+
+[derle]
+betik   = cd $SRC/icu/source
+tip	    = gnu
+
+[pakur]
+betik	= cd $SRC/icu/source
+tip	    = gnu

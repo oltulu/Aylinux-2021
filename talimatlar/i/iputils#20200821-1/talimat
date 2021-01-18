@@ -1,0 +1,25 @@
+[paket]
+tanim   = Yapılandırma veritabanı sistemi
+paketci = Cihan_Alkan
+grup 	= ukui
+url     = https://github.com/iputils/iputils
+
+[gerek]
+derleme = meson
+calisma = 
+
+[kaynak]
+git      = https://github.com/iputils/iputils
+
+[sha512]
+
+[derle]
+betik	= mkdir -p build
+betik	= cd build
+betik	= milis-meson ../$isim -DBUILD_RARPD=true -DBUILD_TFTPD=true
+betik	= ninja
+
+        	      
+[pakur]
+betik	= cd build
+betik	= DESTDIR="$PKG" ninja install

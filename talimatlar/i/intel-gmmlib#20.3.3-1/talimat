@@ -1,0 +1,22 @@
+[paket]
+tanim   = Intel Grafik Bellek Yönetim Kitaplığı
+paketci = Cihan_Alkan
+grup 	= sürücü
+url     =  https://github.com/intel/gmmlib/
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =  
+
+[kaynak]
+gz      = https://github.com/${isim/-//}/archive
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cmake -B build -S gmmlib-${isim}-${surum} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DRUN_TEST_SUITE=ON -Wno-dev
+betik 	= make -C build
+                	      
+[pakur]
+betik 	= make -C build DESTDIR="${PKG}" install

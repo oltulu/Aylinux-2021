@@ -1,0 +1,25 @@
+[paket]
+tanim   = Resim görüntüleme, işleme kütüphane ve aracı
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.imagemagick.org
+
+[gerek]
+derleme = ghostscript openexr libwmf librsvg libxml2 openjpeg2 libraw libwebp chrpath glu jbigkit lcms2 libxext liblqr libraqm libpng
+calisma = 
+
+[kaynak]
+1       = https://www.imagemagick.org/download/releases/ImageMagick-${surum%.*}-${surum##*.}.tar.xz
+
+[sha256]
+1 		= 6b4ec4ebc1a164493150dfffda258f0c4fdc092fdb354f9b3a8a13c2dae2c91f
+
+[derle]
+dosya   = derle.sh
+	      
+[pakur]
+betik   = cd ImageMagick-${surum%.*}-${surum##*.}
+tip 	= gnu
+betik   = find "$PKG/usr/lib/perl5" -name '*.so' -exec chrpath -d {} +
+betik   = rm "$PKG"/etc/ImageMagick-${surum%%.*}/type-{apple,urw-base35,windows}.xml
+betik   = rm "$PKG"/usr/lib/*.a

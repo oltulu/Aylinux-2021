@@ -1,0 +1,31 @@
+[paket]
+tanim   = Java Web Start uygulaması
+paketci = milisarge
+grup    = kütüphane
+url     = https://github.com/AdoptOpenJDK/IcedTea-Web
+arsiv   = IcedTea-Web-${isim}-${surum}
+
+[gerek]
+derleme = openjdk8 rust glib zip npapi-sdk
+calisma = openjdk8 
+
+[kaynak]
+gz      = https://github.com/AdoptOpenJDK/IcedTea-Web/archive
+
+[sha256]
+1       = a0c12cd2d7793f05428a02e49159c7f3f70694f48e23787ffdb6588b0db7c862
+
+[derle]
+betik   = autoreconf -fiv
+betik   = ./configure --prefix=/usr/share/${isim} --datarootdir=/usr/share --with-itw-libs=DISTRIBUTION
+betik   = make
+
+
+[pakur]
+tip      = gnu
+betik   = install -Dm 644 javaws.png -t "${PKG}"/usr/share/pixmaps
+betik   = install -Dm 644 *.desktop -t "${PKG}"/usr/share/applications
+betik   = install -m 755 -d "${PKG}"/usr/bin
+betik   = for file in ${PKG}/usr/share/${isim}/bin/*; do ln -sf "/usr/share/${isim}/bin/$(basename "${file}")" "${PKG}"/usr/bin; done
+betik   = install -m 755 -d "${PKG}"/usr/lib/mozilla/plugins/
+betik   = ln -sf /usr/share/${isim}/lib/IcedTeaPlugin.so "${PKG}"/usr/lib/mozilla/plugins/

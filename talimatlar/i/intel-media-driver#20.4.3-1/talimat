@@ -1,0 +1,22 @@
+[paket]
+tanim   = VAAPI için Intel Medya Sürücüsü - Broadwell + iGPU'lar
+paketci = Cihan_Alkan
+grup 	= driver
+url     =  https://github.com/intel/media-driver/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = https://github.com/${isim/-//}/archive/${isim%-*}-${surum}.tar.gz
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cmake -B build -S ${isim#*-}-${isim%-*}-${surum} -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DINSTALL_DRIVER_SYSCONF=OFF -Wno-dev
+betik 	= make -C build
+                	      
+[pakur]
+betik 	=  make -C build DESTDIR="$PKG" install

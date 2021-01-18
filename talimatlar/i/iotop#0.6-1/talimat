@@ -1,0 +1,21 @@
+[paket]
+tanim   = İşlemlerin G/Ç kullanımını görüntüleme
+paketci = milisarge
+grup    = sistem
+url     = http://guichaz.free.fr/iotop
+
+[gerek]
+derleme = python
+calisma = python
+
+[kaynak]
+bz2     = http://guichaz.free.fr/iotop/files
+
+[sha256]
+1       = 3adea2a24eda49bbbaeb4e6ed2042355b441dbd7161e883067a02bfc8dcef75b
+
+[derle]
+betik   = sed -i '7,13d' setup.py
+
+[pakur]
+betik   = python setup.py install --prefix=/usr --root="${PKG}" --optimize=1

@@ -1,0 +1,25 @@
+[paket]
+tanim   = İ3bar için esnek zamanlayıcı
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/vivien/i3blocks
+
+[gerek]
+derleme = bash-completion
+calisma =
+
+[kaynak]
+1       = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = 41764d771043d0c06c23d75b1e3ca6b2b94279191483d03f10c5e034d6722ebf
+
+[derle]
+betik   = ./autogen.sh
+ekconf  = SYSCONFDIR=/etc
+tip     = gnu
+
+[pakur]
+tip     = gnu
+
+;i3blocks.conf

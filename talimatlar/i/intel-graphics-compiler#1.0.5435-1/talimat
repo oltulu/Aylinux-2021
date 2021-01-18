@@ -1,0 +1,23 @@
+[paket]
+tanim   = OpenCL için Intel Grafik Derleyici
+paketci = Cihan_Alkan
+grup 	= driver
+url     =  https://github.com/intel/intel-graphics-compiler
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1 = ${url}/archive/igc-${surum}.tar.gz
+git      = https://github.com/intel/vc-intrinsics
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	=  cmake -B build -S ${isim}-igc-${surum} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DIGC_OPTION__ARCHITECTURE_TARGET='Linux64' -DIGC_PREFERRED_LLVM_VERSION='11.0.0' -DVC_INTRINSICS_SRC="${srcdir}/vc-intrinsics" -DINSTALL_SPIRVDLL=0 -DINSTALL_GENX_IR=ON -Wno-dev
+betik 	= make -C build
+                	      
+[pakur]
+betik 	= make -C build DESTDIR="${PKG}" install

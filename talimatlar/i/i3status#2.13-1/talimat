@@ -1,0 +1,25 @@
+[paket]
+tanim   = I3bar, dzen2, xmobar veya benzeri programlar için durum çubuğu üreticisi
+paketci = milisarge
+grup    = sistem
+url     = https://www.i3wm.org/i3status/
+
+[gerek]
+derleme = pkg-config alsa-lib confuse libcap libnl yajl pulseaudio
+calisma =
+
+[kaynak]
+bz2     = ${url}
+
+[sha256]
+1       = ce89c9ff8565f62e88299f1a611229afdfc356b4e97368a5f8c4f06ad2fa1466
+
+[derle]
+betik   = ac_cv_path_PATH_ASCIIDOC="" ac_cv_path_PATH_XMLTO="" ./configure --prefix=/
+betik   = cd x86_64-pc-linux-gnu
+betik   = sed -i -e 's/\$(MANS)//g' Makefile
+betik   = make -j8
+
+[pakur]
+betik   = install -Dm755 x86_64-pc-linux-gnu/i3status $PKG/usr/bin/i3status
+betik   = install -Dm644 i3status.conf $PKG/etc/i3status.conf

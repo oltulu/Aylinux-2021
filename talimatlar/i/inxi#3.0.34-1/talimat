@@ -1,0 +1,23 @@
+[paket]
+tanim 	= Komut satırı için zengin özellikli sistem bilgi aracı
+paketci = gysddn
+grup 	= sistem
+url 	= https://github.com/smxi/inxi
+
+[gerek]
+derleme = 
+calisma = perl pciutils procps-ng dmidecode hddtemp lm_sensors tree
+
+[kaynak]
+1 	    = https://github.com/smxi/inxi/archive/$surum-1.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+1       = db3c331706772f68de68191abcde8f9eedabef001fc39c1683dd71f54610c77e
+
+[derle]
+betik   = echo "Derleme yapılmayacak."
+
+[pakur]
+betik 	= cd $isim-$surum-1
+betik 	= install -D -m755 $isim "$PKG/usr/bin/$isim"
+betik 	= install -D -m755 $isim.1 "$PKG/usr/share/man/man1/$isim.1"

@@ -1,0 +1,19 @@
+[paket]
+tanim   = Ağ çıkış testleri gerçekleştiren uygulama
+paketci = milisarge
+grup    = ağ
+url     = https://iperf.fr/
+
+[kaynak]
+gz      = ${SOURCEFORGE_SITE}/${isim}2
+
+[sha256]
+1       = c88adec966096a81136dda91b4bd19c27aae06df4d45a7f547a8e50d723778ad
+
+[derle]
+ekconf  = --enable-ipv6 --enable-multicast --enable-threads ac_cv_sizeof_bool=0
+
+tip     = gnu
+
+[pakur]
+tip     = gnu

@@ -1,0 +1,22 @@
+[paket]
+tanim   = Akıllı Giriş Veriyolu
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://github.com/ibus/ibus
+
+[gerek]
+derleme    = gettext intltool python dbus-glib python-gobject gtk3 iso-codes json-glib libnotify librsvg python-xdg
+calisma    =
+
+[kaynak]
+gz         = https://github.com/ibus/ibus/releases/download/${surum}
+
+[sha256]
+1          = adc1e5e620d6a89a49306f022b50561f2c05218dec13d0c9b136dc8b6568a2b9
+
+[derle]
+ekconf     = --enable-ui --enable-memconf --enable-gtk3 --disable-gtk2 --disable-tests --disable-schemas-compile --disable-dconf --disable-python2 --disable-emoji-dict --disable-unicode-dict
+tip        = gnu
+
+[pakur]
+tip        = gnu

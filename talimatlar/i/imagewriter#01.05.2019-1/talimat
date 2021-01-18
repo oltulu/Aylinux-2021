@@ -1,0 +1,19 @@
+[paket]
+tanim   = USB disklere ham disk görüntüleri ve hibrit iso yazmak için grafik yardımcı
+paketci = yasarciv67
+grup    = sistem
+url     = https://github.com/openSUSE/imagewriter
+arsiv	= $isim
+
+[gerek]
+derleme = qt5-base desktop-file-utils udisks
+calisma =
+
+[kaynak]
+git		= $url
+
+[derle]
+betik  = qmake PREFIX=$PKG/usr DEFINES=USEUDISKS2 $isim.pro && make
+
+[pakur]
+tip     = gnu

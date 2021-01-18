@@ -1,0 +1,22 @@
+[paket]
+tanim   = XML-PO dosyaları arası çevirici
+paketci = milisarge
+grup    = kütüphane
+url     = http://itstool.org/
+
+[gerek]
+derleme    = python libxml2
+calisma    =
+
+[kaynak]
+bz2        = http://files.itstool.org/itstool
+
+[sha256]
+1          = 6233cc22726a9a5a83664bf67d1af79549a298c23185d926c3677afa917b92a9
+
+[derle]
+ekconf     = PYTHON=/usr/bin/python3
+tip        = gnu
+
+[pakur]
+tip        = gnu

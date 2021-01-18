@@ -1,0 +1,24 @@
+[paket]
+tanim   = Tango'nun yeni simgelerinin isimlerini GNOME ve KDE masaüstleri tarafından kullanılan eski isimlerle eşleştirir.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://www.icu-project.org/
+
+[gerek]
+derleme = perl-xml-simple
+calisma = 
+
+[kaynak]
+gz      = https://sources.archlinux.org/other/$isim
+dosya   = remove-legacy-calc.patch
+
+[sha256]
+1 		= 044ab2199ed8c6a55ce36fd4fcd8b8021a5e21f5bab028c0a7cdcf52a5902e1c
+
+[derle]
+betik = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/icon-naming-utils --localstatedir=/var
+betik = make
+	      
+[pakur]
+tip =   gnu
+betik = mv "$PKG/usr/share/pkgconfig" "$PKG/usr/lib/pkgconfig"

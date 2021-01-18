@@ -1,0 +1,18 @@
+[paket]
+tanim   = Kaynak koddan çevrilebilir kelime çıkaran uluslararası dil aracı
+paketci = milisarge
+grup 	= temel
+url     = http://freedesktop.org/wiki/Software/intltool
+
+[kaynak]
+gz      = http://edge.launchpad.net/intltool/trunk/$surum/+download
+
+[sha256]
+1 		= 67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd
+
+[derle]
+betik   = sed -i 's:\\\${:\\\$\\{:' intltool-update.in
+tip	    = gnu
+      
+[pakur]
+tip	    = gnu
