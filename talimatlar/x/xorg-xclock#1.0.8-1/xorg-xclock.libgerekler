@@ -1,0 +1,9 @@
+libc.so.6
+libm.so.6
+libX11.so.6
+libXaw.so.7
+libXft.so.2
+libxkbfile.so.1
+libXmu.so.6
+libXrender.so.1
+libXt.so.6
