@@ -11,10 +11,12 @@ gz      = http://ftp.funet.fi/pub/CPAN/src
 #1 		= 3ebf85fe65df2ee165b22596540b7d5d42f84d4b72d84834f74e2e0b8956c347
 
 [derle]
-betik   = sh Configure -des -Dprefix=/tools -Dlibs=-lm -Uloclibpth -Ulocincpth ; make
+betik   = ./Configure -des -Dprefix=/usr -Dvendorprefix=/usr -Dprivlib=/usr/lib/perl5/${surum%.*} -Dsitelib=/usr/lib/perl5/site_perl/${surum%.*} -Dvendorlib=/usr/lib/perl5/site_perl/${surum%.*} -Darchname=linux -Dman1ext=1pm -Dman3ext=3pm -Di_gdbm -Di_db -Duseshrplib -Dusethreads -Doptimize="$CFLAGS"
+betik = make
 
 [pakur]
-betik   = mkdir -pv $PKG/tools/bin
-betik   = cp -v perl cpan/podlators/scripts/pod2man $PKG/tools/bin
-betik   = mkdir -pv $PKG/tools/lib/perl5/$surum
-betik   = cp -Rv lib/* $PKG/tools/lib/perl5/$surum
+betik   = make DESTDIR=$PKG install
+#betik   = mkdir -pv $PKG/tools/bin
+#betik   = cp -v perl cpan/podlators/scripts/pod2man $PKG/tools/bin
+#betik   = mkdir -pv $PKG/tools/lib/perl5/$surum
+#betik   = cp -Rv lib/* $PKG/tools/lib/perl5/$surum
