@@ -8,7 +8,7 @@ url     = https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
 gz      = https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${surum}/src
 
 [sha256]
-1 		= 15ea32c7b100217b6e3193bc03e77f485d9bf7504051443ba9ce86d1c17c6b5a
+#1 		= 15ea32c7b100217b6e3193bc03e77f485d9bf7504051443ba9ce86d1c17c6b5a
 
 [derle]
 betik   = cd $SRC/nspr-$surum/nspr
