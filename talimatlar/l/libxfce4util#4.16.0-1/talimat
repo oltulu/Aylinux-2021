@@ -12,7 +12,7 @@ calisma  =
 bz2  = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
 
 [sha256]
-1    = 32ad79b7992ec3fd863e8ff2f03eebda8740363ef9d7d910a35963ac1c1a6324
+#1    = 32ad79b7992ec3fd863e8ff2f03eebda8740363ef9d7d910a35963ac1c1a6324
 
 [derle]
 ekconf = --disable-debug
