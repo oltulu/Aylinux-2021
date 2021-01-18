@@ -1,0 +1,21 @@
+[paket]
+tanim   = Taşınabilir C ++ kaynak kitaplıkları
+paketci = milisarge
+grup    = kütüphane
+url     = https://www.boost.org/
+
+[gerek]
+derleme    = icu python2 python zstd
+calisma    =
+
+[kaynak]
+1          = https://dl.bintray.com/boostorg/release/$surum/source/boost_1_71_0.tar.gz
+
+[sha256]
+1          = 96b34f7468f26a141f6020efb813f1a2f3dfb9797ecf76a7d7cbd843cc95f5bd
+
+[derle]
+dosya      = derle.sh
+
+[pakur]
+dosya      = pakur.sh

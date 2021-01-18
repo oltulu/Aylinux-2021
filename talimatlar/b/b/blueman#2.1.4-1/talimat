@@ -1,0 +1,25 @@
+[paket]
+tanim   = GTK Bluetooth Yöneticisi
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/blueman-project/blueman
+
+[gerek]
+derleme = intltool iproute2 cython gtk3 bluez python python-gobject bluez
+calisma = startup-notification python-gobject
+
+[kaynak]
+xz      = https://github.com/blueman-project/blueman/releases/download/${surum}
+
+[sha256]
+1       = 3bd02e0cc9e2c1424df1fc2015da710a280ef4c657515727e47eafabf8c2cfde
+
+[derle]
+betik   = sed -i 's|/usr/sbin/bluetoothd|/usr/lib/bluetooth/bluetoothd|' apps/blueman-report.in
+betik   = sed -i '/^dbusdir =/ s/sysconfdir/datadir/' data/configs/Makefile.{am,in}
+ekconf  = --enable-thunar-sendto=no --disable-schemas-compile --disable-appindicator
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = mkdir -p $PKG/etc/dbus-1/system.d/

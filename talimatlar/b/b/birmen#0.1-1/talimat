@@ -1,0 +1,24 @@
+[paket]
+tanim   = Brisk menü ayarları
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://notabug.org/oltulu/BirMen
+
+[gerek]
+derleme = qt5-tools
+calisma = gsettings-qt
+
+[kaynak]
+git      = https://notabug.org/oltulu/BirMen
+
+[sha512]
+    #1 		= 5b09b73cda93a67c26784b94bafab8e6083b26a3fd3cc2494e8e75090ae1d8a396c02a9d9e0f7f74864cd0b6172d70692f410b18bbc5110b462072ed3beb08e3
+
+[derle]
+betik 	= cd BirMen
+betik 	= qmake-qt5 PREFIX=/usr
+betik 	= make
+        	      
+[pakur]
+betik 	= cd BirMen
+betik 	= make INSTALL_ROOT="$PKG" install
