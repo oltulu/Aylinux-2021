@@ -13,7 +13,7 @@ bz2     = https://archive.xfce.org/src/apps/$isim/0.8
 dosya   = org.xfce.xfce4-terminal.policy
 
 [sha256]
-1       = 9ba23bf86d350ef8a95d2dfb50bbd1bbb2144d82985a779ec28caf47faaeeeeb
+#1       = 9ba23bf86d350ef8a95d2dfb50bbd1bbb2144d82985a779ec28caf47faaeeeeb
 
 [derle]
 ekconf = --libexecdir=/usr/lib/xfce4  --disable-debug
