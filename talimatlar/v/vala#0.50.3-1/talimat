@@ -12,7 +12,7 @@ calisma =
 xz      = https://ftp.gnome.org/pub/gnome/sources/vala/${surum%.*}
 
 [sha512]
-1 		= 898ed675e0bdfac1ca2367363f6a5b930f021b3b6bc848314b8c1d43f37a312abfc54492eaa5e35f0d83b5b688fe27e5555ea46f1aba89a92cde7e6e8173d4fe
+#1 = 898ed675e0bdfac1ca2367363f6a5b930f021b3b6bc848314b8c1d43f37a312abfc54492eaa5e35f0d83b5b688fe27e5555ea46f1aba89a92cde7e6e8173d4fe
 
 [derle]
 betik   = sed '/array-uint8-uchar-compat.vala/d' -i tests/Makefile.am
