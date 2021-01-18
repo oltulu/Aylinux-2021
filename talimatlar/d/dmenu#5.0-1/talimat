@@ -1,0 +1,22 @@
+[paket]
+tanim   = X için basit menü aracı
+paketci = milisarge
+grup 	= sistem
+url     = https://dl.suckless.org
+
+[gerek]
+derleme = libxinerama libxft freetype
+calisma = 
+
+[kaynak]
+gz      = $url/tools
+
+[sha512]
+#1 		= c2779209fe012de8ca1cdd72923da6d594f4a8368c85c3c0e0afd4ae489a95fe0e6f05a947d115b6b389aa7170ab14c2c645a2031353b0a08f38327ab461fe65
+
+[derle]
+betik   = echo "CPPFLAGS+=${CPPFLAGS}" >> config.mk && echo "CFLAGS+=${CFLAGS}" >> config.mk && echo "LDFLAGS+=${LDFLAGS}" >> config.mk
+betik   = make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11 FREETYPEINC=/usr/include/freetype2	      
+
+[pakur]
+betik   = make PREFIX=/usr DESTDIR="${PKG}" install
