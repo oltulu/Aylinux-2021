@@ -1,0 +1,23 @@
+[paket]
+tanim   = Unicode terminaller için Yerel ve ISO2022 desteği
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libfontenc
+calisma = 
+
+[kaynak]
+tgz     = https://invisible-mirror.net/archives/${isim}
+dosya   = git_fixes.diff
+
+[sha512]
+#1 		= e834e89fca9987f6d82701f53d3c450cc64b93a804b11465b4a7ec5cb3a5c4ef30115df57dec3cbdbafa46e4a4f1bb4759b723123e2ff2f6b1c12207015638e6
+
+[derle]
+betik   = ./configure --prefix=/usr --enable-fontenc
+betik   = make
+	      
+[pakur]
+tip 	= gnu
