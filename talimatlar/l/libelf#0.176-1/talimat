@@ -9,16 +9,18 @@ derleme =
 calisma = libtirpc
 
 [kaynak]
-bz2      = https://sourceware.org/elfutils/ftp/${surum}
+1= https://sourceware.org/elfutils/ftp/${surum}/elfutils-${surum}.tar.bz2
 
 [sha1]
-1 		= 6511203cae7225ae780501834a7ccd234b14889a
+#1 		= 6511203cae7225ae780501834a7ccd234b14889a
 
 [derle]
+betik 	= cd elfutils-${surum}
 betik 	= CFLAGS+=" -g"
 betik 	= ./configure --prefix=/usr --program-prefix="eu-" --enable-deterministic-archives
 betik 	= make
 	      
 [pakur]
+betik 	= cd elfutils-${surum}
 tip 	= gnu
 betik 	= mv libelf "${PKG}/usr"
