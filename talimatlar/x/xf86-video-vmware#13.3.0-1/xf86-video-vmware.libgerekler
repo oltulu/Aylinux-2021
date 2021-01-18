@@ -1,0 +1,6 @@
+libc.so.6
+libdrm.so.2
+libudev.so.1
+libX11.so.6
+libxatracker.so.2
+libXext.so.6
