@@ -13,7 +13,7 @@ calisma = dbus
 dosya   = NetworkManager.conf
 
 [sha256]
-1 		= 7995802c67e54fc58be4c0e3d2095d943f53f4300a93bde7ff48822a0b1f62ea
+#1 		= 7995802c67e54fc58be4c0e3d2095d943f53f4300a93bde7ff48822a0b1f62ea
 
 [derle]
 dosya   = derle.sh
