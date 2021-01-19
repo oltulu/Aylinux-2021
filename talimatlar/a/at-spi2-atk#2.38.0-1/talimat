@@ -12,7 +12,7 @@ calisma	=
 xz		= http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [sha256]
-1		= 0b51e6d339fa2bcca3a3e3159ccea574c67b107f1ac8b00047fa60e34ce7a45c
+#1		= 0b51e6d339fa2bcca3a3e3159ccea574c67b107f1ac8b00047fa60e34ce7a45c
 
 [derle]
 tip	    = meson
