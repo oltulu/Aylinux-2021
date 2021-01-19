@@ -12,7 +12,7 @@ calisma = ppp
 1       = https://www.freedesktop.org/software/ModemManager/ModemManager-$surum.tar.xz
 
 [sha256]
-1 		= fa556bb4ba1f1478e709b71151b4de8f7d136d80e51c64e887fc1fd8926cdc70
+#1 = fa556bb4ba1f1478e709b71151b4de8f7d136d80e51c64e887fc1fd8926cdc70
 
 [derle]
 betik   = cd ModemManager-$surum
