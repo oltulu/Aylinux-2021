@@ -12,7 +12,7 @@ calisma  = sysfsutils
 bz2    =  https://linuxtv.org/downloads/$isim
 
 [sha256]
-1      =  f9dac1878e3d5636eab7f56bb209fdfc66b94ee8a2aae54dcb4282fe63a678ae
+#1      =  f9dac1878e3d5636eab7f56bb209fdfc66b94ee8a2aae54dcb4282fe63a678ae
 
 [derle]
 tip    = gnu
