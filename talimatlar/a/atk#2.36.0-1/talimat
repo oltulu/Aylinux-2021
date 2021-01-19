@@ -22,5 +22,4 @@ betik = ninja -C build
 	      
 [pakur]
 betik = DESTDIR="$PKG" meson install -C build
-tip 	= meson
 
