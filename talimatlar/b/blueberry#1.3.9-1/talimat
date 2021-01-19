@@ -1,0 +1,21 @@
+[paket]
+tanim   = Bluetooth yapılandırma aracı
+paketci = Cihan_Alkan 
+grup    = cinnamon  
+url     = https://github.com/linuxmint/blueberry
+
+[gerek]
+derleme  = 
+calisma  = gnome-bluetooth
+
+[kaynak]
+gz = https://github.com/linuxmint/blueberry/archive/$surum
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+betik   = make
+
+[pakur]
+betik   = cp -r etc usr "$PKG"

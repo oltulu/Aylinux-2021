@@ -1,0 +1,23 @@
+[paket]
+tanim   = Keyfi bir hassas hesap makinesi dili
+paketci = milisarge
+grup    = kütüphane
+url     = http://www.gnu.org/software/bc/bc.html
+
+[gerek]
+derleme = readline
+calisma =
+
+[kaynak]
+gz      = http://ftpmirror.gnu.org/gnu/$isim
+
+[sha256]
+#1       = 17d5493633bff5585d9f375bc4df5925157cd1c70ccd7c22a635be75c172523a
+
+[derle]
+betik  = ./configure --prefix=/usr --with-readline
+betik  = make
+
+
+[pakur]
+betik  = make DESTDIR=$PKG install

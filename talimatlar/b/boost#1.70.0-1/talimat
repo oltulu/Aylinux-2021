@@ -1,0 +1,20 @@
+[paket]
+tanim   = Boost, bir takım serbest yorumlanmış taşınabilir C ++ kaynak kitaplığı sağlar.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://boost.sourceforge.net/
+
+[gerek]
+derleme = icu python3 python2
+calisma = 
+
+[kaynak]
+1      = https://dl.bintray.com/boostorg/release/$surum/source/${isim}_${surum//./_}.tar.bz2
+
+[sha1]
+1 		= 
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]

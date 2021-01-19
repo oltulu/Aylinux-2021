@@ -1,0 +1,25 @@
+[paket]
+tanim   = Breeze simge teması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://community.kde.org/Frameworks
+
+[gerek]
+derleme = extra-cmake-modules qt5-base
+calisma = 
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+#1 		= 9ba194a2b2a4b2c0702ac39f340dba62772f8fed450b6b5eb6e2d06a33a1c6f5
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake "$SRC/$isim-$surum" -DCMAKE_INSTALL_PREFIX=/usr -DBINARY_ICONS_RESOURCE=ON -DBUILD_TESTING=OFF
+betik 	= make
+	      
+[pakur]
+betik 	= cd build
+tip = gnu

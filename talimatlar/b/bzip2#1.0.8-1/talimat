@@ -6,25 +6,12 @@ url     = http://www.bzip.org/
 
 [kaynak]
 gz      = https://sourceware.org/pub/bzip2
-1 = https://github.com/archlinux/svntogit-packages/raw/packages/bzip2/trunk/bzip2.pc
 
 [sha256]
 #1 		= a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd
 
 [derle]
-betik 	= cp /sources/bzip2.pc bzip2.pc
-betik 	= sed "s|@VERSION@|$surum|" -i bzip2.pc
-betik 	= make -f Makefile-libbz2_so CC="gcc $CFLAGS $CPPFLAGS $LDFLAGS"
-betik 	= make bzip2 bzip2recover CC="gcc $CFLAGS $CPPFLAGS $LDFLAGS"
+betik 	= make
 	      
 [pakur]
-betik   =  install -dm755 "$PKG"/usr/{bin,lib,include,share}
-betik   =  install -m755 bzip2-shared "$PKG"/usr/bin/bzip2
-betik   =  install -m755 bzip2recover bzdiff bzgrep bzmore "$PKG"/usr/bin
-betik   =  ln -sf bzip2 "$PKG"/usr/bin/bunzip2
-betik   =  ln -sf bzip2 "$PKG"/usr/bin/bzcat
-betik   =  cp -a libbz2.so* "$PKG"/usr/lib
-betik   =  ln -s libbz2.so.$surum "$PKG"/usr/lib/libbz2.so
-betik   =  ln -s libbz2.so.$surum "$PKG"/usr/lib/libbz2.so.1
-betik   =  install -m644 bzlib.h "$PKG"/usr/include/
-
+betik   = make PREFIX=$PKG/tools install
