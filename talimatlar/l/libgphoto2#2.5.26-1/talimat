@@ -12,7 +12,7 @@ calisma    =
 bz2        = ${SOURCEFORGE_SITE}/gphoto
 
 [sha256]
-1          = d8af23364aa40fd8607f7e073df74e7ace05582f4ba13f1724d12d3c97e8852d
+#1          = d8af23364aa40fd8607f7e073df74e7ace05582f4ba13f1724d12d3c97e8852d
 
 [derle]
 betik      = autoreconf -fi
