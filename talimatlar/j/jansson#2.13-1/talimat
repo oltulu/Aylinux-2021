@@ -8,7 +8,7 @@ url     = http://www.digip.org/jansson
 bz2     = http://www.digip.org/$isim/releases
 
 [sha256]
-1 		= 645d72cc5dbebd4df608d33988e55aa42a7661039e19a379fcbe5c79d1aee1d2
+#1 		= 645d72cc5dbebd4df608d33988e55aa42a7661039e19a379fcbe5c79d1aee1d2
 
 [derle]
 ekconf  = --disable-static
