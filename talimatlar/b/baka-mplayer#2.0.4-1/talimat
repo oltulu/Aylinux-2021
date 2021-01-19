@@ -1,0 +1,24 @@
+[paket]
+tanim   = Ücretsiz ve açık kaynaklı, çapraz platform, libmpv tabanlı bir multimedya oynatıcı. Qt5 yapısı
+paketci = Cihan_Alkan
+url     = http://bakamplayer.u8sand.net/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1          = https://github.com/u8sand/Baka-MPlayer/archive/v$pkgver.tar.gz::$isim-$surum.tar.gz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = mkdir -p build
+betik     = cd build
+betik     = qmake-qt5 ../Baka-MPlayer-$surum/src CONFIG+=release CONFIG+=install_translations -spec linux-g++
+betik     = make -j$(nproc)
+
+[pakur]
+betik      = cd build
+betik      = make INSTALL_ROOT="$PKG" install
