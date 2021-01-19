@@ -1,6 +1,6 @@
 [paket]
 tanim   = GTK ve GNOME erişebilirlik araç seti kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.gtk.org
 
@@ -9,15 +9,18 @@ derleme = gobject-introspection meson glib
 calisma = 
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/${surum%.*}
+1  = https://gitlab.gnome.org/GNOME/atk/-/archive/master/atk-master.tar.gz
 
 [sha512]
-1 		= 8cd2a3ee006f21835f3e564f2e1de4ae61bd9529b4c0b4f2e3ece88e905e2dd36b67affb089f41582806a1397576602a526a4b8698303708894f20af97ecac22
+#1 		= 8cd2a3ee006f21835f3e564f2e1de4ae61bd9529b4c0b4f2e3ece88e905e2dd36b67affb089f41582806a1397576602a526a4b8698303708894f20af97ecac22
 
 [derle]
-ekconf  = --buildtype=release
-tip 	= meson
-tip 	= ninja
+#betik = cd atk-master
+betik = milis-meson $isim-master  build -D docs=false
+betik = ninja -C build
+
 	      
 [pakur]
+betik = DESTDIR="$PKG" meson install -C build
 tip 	= meson
+
