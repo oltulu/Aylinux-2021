@@ -8,7 +8,7 @@ url 	= https://www.nongnu.org/dmidecode
 xz 	    = http://download.savannah.nongnu.org/releases/$isim
 
 [sha256]
-1       = 077006fa2da0d06d6383728112f2edef9684e9c8da56752e97cd45a11f838edd
+#1 = 077006fa2da0d06d6383728112f2edef9684e9c8da56752e97cd45a11f838edd
 
 [derle]
 betik   = sed -i "s:sbin:bin:g" Makefile
