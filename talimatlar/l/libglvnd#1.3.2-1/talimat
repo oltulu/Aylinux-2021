@@ -12,7 +12,7 @@ calisma =
 1       = https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v${surum}/libglvnd-v${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1 		= b26c931ff79feced0d1ac69332797a08427308fa85541282ee9995680c880b24
+#1 = b26c931ff79feced0d1ac69332797a08427308fa85541282ee9995680c880b24
 
 [derle]
 betik   = milis-meson $isim-v$surum build -D gles1=false
