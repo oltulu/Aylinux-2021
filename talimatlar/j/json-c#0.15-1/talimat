@@ -8,7 +8,7 @@ url     = https://github.com/json-c/json-c/wiki
 gz      = https://s3.amazonaws.com/json-c_releases/releases
 
 [sha512]
-1 		= e984db2a42b9c95b52c798b2e8dd1b79951a8dcba27370af30c43b9549fbb00008dbcf052a535c528209aaee38e6d1f760168b706905ae72f3e704ed20f8a1a1
+#1 = e984db2a42b9c95b52c798b2e8dd1b79951a8dcba27370af30c43b9549fbb00008dbcf052a535c528209aaee38e6d1f760168b706905ae72f3e704ed20f8a1a1
 
 [derle]
 ekconf  = --disable-static
