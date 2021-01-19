@@ -12,7 +12,7 @@ calisma  =
 gz  = https://downloads.sourceforge.net/$isim
 
 [sha256]
-1  =  5b68f9dd1ed38de558de687f40e255a39e4d5e32ef3de601f0ac19dd5682bba0
+#1  =  5b68f9dd1ed38de558de687f40e255a39e4d5e32ef3de601f0ac19dd5682bba0
 
 [derle]
 ekconf = --with-udev=/usr/lib/udev
