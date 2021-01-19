@@ -13,7 +13,7 @@ tgz     = $url/software/download/OpenLDAP/openldap-release
 dosya   = openldap-ntlm.patch
 
 [sha512]
-1 		= d424079e34207e3d24383a2bea70a07ded40714982a6767174d2b2cb208cd94feab5ef12157accae915b8e404e5773a7547aaef65f06b44dc3cc09c6a64d5a11
+#1 = d424079e34207e3d24383a2bea70a07ded40714982a6767174d2b2cb208cd94feab5ef12157accae915b8e404e5773a7547aaef65f06b44dc3cc09c6a64d5a11
 
 [derle]
 dosya   = derle.sh
