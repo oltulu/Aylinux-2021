@@ -12,7 +12,7 @@ calisma = libgcrypt
 xz      = https://www.kernel.org/pub/linux/utils/cryptsetup/v${surum%.*}
 
 [sha256]
-1 		= a3eeb2741f8f3376d16585191f3c60e067dd987e096c3c4b073fab7748b1c897
+#1 = a3eeb2741f8f3376d16585191f3c60e067dd987e096c3c4b073fab7748b1c897
 
 [derle]
 betik   = ./configure --prefix=/usr --sbindir=/usr/bin --with-crypto_backend=openssl
