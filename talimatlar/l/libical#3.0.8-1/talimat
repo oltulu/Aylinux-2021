@@ -11,7 +11,7 @@ derleme = cmake glib libxml2
 github  = $isim/$isim
 
 [sha256]
-1 		= 20f39343701ccd3ad896a9f9e982fdf85c1d3a35572e9d962216b69a64aef2ae
+#1 = 20f39343701ccd3ad896a9f9e982fdf85c1d3a35572e9d962216b69a64aef2ae
 
 [derle]
 ekconf  = -DSHARED_ONLY=true -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib
