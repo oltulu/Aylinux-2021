@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/pmem/ndctl/archive/v$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha512]
-1 	    = 3e468d0c87a27c45f25cc8e165bab5e2914748a3a755a6393b35655178b91a6a9d6fbb16c3ff06df5463caa4fe29432f53130b30ba5cda4faf165d72f382db46
+#1 = 3e468d0c87a27c45f25cc8e165bab5e2914748a3a755a6393b35655178b91a6a9d6fbb16c3ff06df5463caa4fe29432f53130b30ba5cda4faf165d72f382db46
 
 [derle]
 betik 	= sed -i 's|^modprobedir =.*|modprobedir = /usr/lib/modprobe.d/|' Makefile.am
