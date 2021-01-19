@@ -11,7 +11,7 @@ derleme = glib libgcrypt vala gobject-introspection
 xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
 
 [sha256]
-1 		= 3bfa889d260e0dbabcf5b9967f2aae12edcd2ddc9adc365de7a5cc840c311d15
+#1 = 3bfa889d260e0dbabcf5b9967f2aae12edcd2ddc9adc365de7a5cc840c311d15
 
 [derle]
 ekconf  = --disable-static --disable-gtk-doc --disable-manpages
