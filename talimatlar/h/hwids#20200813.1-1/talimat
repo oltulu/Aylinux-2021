@@ -12,7 +12,7 @@ calisma =
 gz 	  = https://github.com/gentoo/hwids/archive
 
 [sha256]
-1     = e4498020b2c1a1ea5faf1e9d30bda0ae161aaf8e8fb17f40e1c6b8dc896c5d9e
+#1     = e4498020b2c1a1ea5faf1e9d30bda0ae161aaf8e8fb17f40e1c6b8dc896c5d9e
 
 [derle]
 betik  = echo "Derleme yapılmayacak."
