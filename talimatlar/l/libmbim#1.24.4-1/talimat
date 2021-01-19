@@ -12,7 +12,7 @@ calisma =
 xz      = https://www.freedesktop.org/software/$isim
 
 [sha256]
-1 		= 7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268
+#1 = 7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268
 
 [derle]
 ekconf  = --disable-static
