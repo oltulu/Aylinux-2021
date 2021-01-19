@@ -12,7 +12,7 @@ calisma	=
 xz		= http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [sha512]
-1		= cec6ea1426b25d9738c5c401a1038b39e04b1e989b7ef8e02590d117b35cfb253b260cc6e41b09e10e007801fedcb7702c48ba7f3a0c7b6c1f16edd4e8ad0cca
+#1		= cec6ea1426b25d9738c5c401a1038b39e04b1e989b7ef8e02590d117b35cfb253b260cc6e41b09e10e007801fedcb7702c48ba7f3a0c7b6c1f16edd4e8ad0cca
 
 [derle]
 ekconf  = -Dx11=yes -Dintrospection=yes -Ddbus_daemon=/usr/bin/dbus-daemon
