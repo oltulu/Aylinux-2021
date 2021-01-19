@@ -12,7 +12,7 @@ calisma =
 bz2     = https://github.com/dirkvdb/$isim/releases/download/$surum
 
 [sha256]
-1       = e5c31299d064968198cd378f7488e52cd5e738fac998eea780bc77d7f32238c2
+#1       = e5c31299d064968198cd378f7488e52cd5e738fac998eea780bc77d7f32238c2
 
 [derle]
 ekconf  = -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DENABLE_GIO=ON -DENABLE_THUMBNAILER=ON
