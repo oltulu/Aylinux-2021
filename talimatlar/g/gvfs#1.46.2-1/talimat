@@ -12,7 +12,7 @@ calisma    =
 xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [sha256]
-1          = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
+#1 = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
 
 [derle]
 ekconf     = -Dsystemduserunitdir=no -Dtmpfilesdir=no -Dlogind=false -Dgoa=false -Dgoogle=false
