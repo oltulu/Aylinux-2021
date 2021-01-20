@@ -12,7 +12,7 @@ calisma    =
 xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [sha256]
-1          = 720c5f4379513dc11fd97dc75336eb0c0d3338c53128044d9fabec4374f4bc47
+#1          = 720c5f4379513dc11fd97dc75336eb0c0d3338c53128044d9fabec4374f4bc47
 
 [derle]
 tip        = meson
