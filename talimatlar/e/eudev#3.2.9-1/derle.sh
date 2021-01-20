@@ -8,11 +8,11 @@ BLKID_CFLAGS="-I/tools/include"
 EOF
 fi
 
-	./configure $confopt \
-	--with-rootprefix=      \
+	./configure --with-rootprefix=/usr \
 	--with-rootlibdir=/usr/lib  \
 	--enable-manpages       \
 	--disable-static        \
+	--sbindir=/usr/bin \
 	--config-cache \
 	--enable-kmod \
 	--disable-gtk-doc-html \
