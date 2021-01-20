@@ -12,7 +12,7 @@ calisma    =
 xz         = https://download.gnome.org/sources/$isim/${surum%.*}
 
 [sha256]
-1          = ea36959b1421fc8e72caa222f30ec3234d0ed95990e2bf28943a85f33eadad2d	
+#1          = ea36959b1421fc8e72caa222f30ec3234d0ed95990e2bf28943a85f33eadad2d	
 
 [derle]
 tip        = gnu
