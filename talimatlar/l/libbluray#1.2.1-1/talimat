@@ -12,7 +12,7 @@ calisma  =
 bz2 = https://download.videolan.org/pub/videolan/libbluray/$surum
 
 [sha256]
-1   = a3dd452239b100dc9da0d01b30e1692693e2a332a7d29917bf84bb10ea7c0b42
+#1   = a3dd452239b100dc9da0d01b30e1692693e2a332a7d29917bf84bb10ea7c0b42
 
 [derle]
 ekconf = --disable-optimizations --disable-bdjava-jar
