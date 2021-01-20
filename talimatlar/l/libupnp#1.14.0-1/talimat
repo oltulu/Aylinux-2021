@@ -8,7 +8,7 @@ url     = http://pupnp.sourceforge.net/
 bz2     = https://downloads.sourceforge.net/sourceforge/pupnp
 
 [sha256]
-1       = c5a300b86775435c076d58a79cc0d5a977d76027d2a7d721590729b7f369fa43
+#1       = c5a300b86775435c076d58a79cc0d5a977d76027d2a7d721590729b7f369fa43
 
 [derle]
 betik   = autoreconf -fiv
