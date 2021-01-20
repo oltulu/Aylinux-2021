@@ -8,7 +8,7 @@ url     = https://fr.wikipedia.org/wiki/SBC_%28codec%29
 xz      = http://www.kernel.org/pub/linux/bluetooth
 
 [sha256]
-1       = 518bf46e6bb3dc808a95e1eabad26fdebe8a099c1e781c27ed7fca6c2f4a54c9
+#1       = 518bf46e6bb3dc808a95e1eabad26fdebe8a099c1e781c27ed7fca6c2f4a54c9
 
 [derle]
 ekconf  = --disable-static --disable-tester
