@@ -12,7 +12,7 @@ calisma =
 xz      = http://freedesktop.org/software/pulseaudio/releases
 
 [sha256]
-1       = 961b23ca1acfd28f2bc87414c27bb40e12436efcf2158d29721b1e89f3f28057
+#1       = 961b23ca1acfd28f2bc87414c27bb40e12436efcf2158d29721b1e89f3f28057
 
 [derle]
 dosya   = derle.sh
