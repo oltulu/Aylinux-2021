@@ -10,7 +10,7 @@ calisma =
 
 [kaynak]
 gz      = http://user-dirs.freedesktop.org/releases
-dosya   = xdg-user-dirs
+#dosya   = xdg-user-dirs
 
 [sha1]
 1 		= 
@@ -20,4 +20,4 @@ tip = gnu
 	      
 [pakur]
 tip = gnu
-betik 	= install -D ../$isim $PKG/etc/X11/xinit/xinitrc.d/xdg-user-dirs
+#betik 	= install -D ../$isim $PKG/etc/X11/xinit/xinitrc.d/xdg-user-dirs
