@@ -12,7 +12,7 @@ calisma = dosfstools ntfs-3g btrfs-progs reiserfsprogs xfsprogs gpart jfsutils u
 gz     = https://sourceforge.net/projects/$isim/files/$isim/$isim-$surum
 
 [sha256]
-1      = 0999b9a3deb57010956db6630ae7205813999147043171049a7b6c333be93e96
+#1      = 0999b9a3deb57010956db6630ae7205813999147043171049a7b6c333be93e96
 
 [derle]
 betik  = sed -i 's/Exec=/Exec=pkexec /g' gparted.desktop.in.in
