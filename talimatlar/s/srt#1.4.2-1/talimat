@@ -12,7 +12,7 @@ calisma    =
 1		   = https://github.com/Haivision/srt/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1		   = c2ba0bb9382ab42f9eebac831dc021e7da26b2971aaeb30a891dd24297bd929c
+#1		   = c2ba0bb9382ab42f9eebac831dc021e7da26b2971aaeb30a891dd24297bd929c
 
 [derle]
 ekconf	   = -DCMAKE_INSTALL_BINDIR=/usr/bin -DCMAKE_INSTALL_INCLUDEDIR=/usr/include 
