@@ -1,6 +1,6 @@
 [paket]
 tanim   = OpenType metin şekillendirme motoru
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = sistem
 url     = http://www.freedesktop.org/software/harfbuzz
 
@@ -9,10 +9,10 @@ derleme = freetype glib gobject-introspection cairo icu graphite2
 calisma = 
 
 [kaynak]
-xz      = http://www.freedesktop.org/software/$isim/release
+git      = https://github.com/harfbuzz/harfbuzz
 
 [sha256]
-1 		= fed00dc797b7ba3ca943225f0a854baaed4c1640fff8a31d455cd3b5caec855c
+#1 		= fed00dc797b7ba3ca943225f0a854baaed4c1640fff8a31d455cd3b5caec855c
 
 [derle]
 betik   = NOCONFIGURE=1 ./autogen.sh
