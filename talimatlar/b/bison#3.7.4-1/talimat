@@ -11,7 +11,7 @@ xz      = http://ftp.gnu.org/gnu/bison
 #1 		= 039ee45b61d95e5003e7e8376f9080001b4066ff357bde271b7faace53b9d804
 
 [derle]
-betik 	= ./configure --prefix=/tools
+betik 	= ./configure --prefix=/usr --datadir=/usr/share
 betik 	= make
 	      
 [pakur]
