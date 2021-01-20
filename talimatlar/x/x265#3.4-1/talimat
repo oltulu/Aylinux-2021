@@ -18,7 +18,7 @@ calisma  =
 dosya  =  derle.sh
 
 [pakur]
-betik  =  cd $SRC/x265_3.4.1/build-8
+betik  =  cd $SRC/x265_3.4/build-8
 betik  =  make DESTDIR="${PKG}" install
 betik  =  rm -f $PKG/usr/lib/*.a
 
