@@ -9,10 +9,10 @@ derleme  = cmake nasm
 calisma  =  
 
 [kaynak]
-1  = https://bitbucket.org/multicoreware/x265/downloads/x265_${surum}.tar.gz
+1  = https://crux.ster.zone/downloads/$isim/${isim}_$surum.tar.gz
 
 [sha256]
-1  = 6f785f1c9a42e00a56402da88463bb861c49d9af108be53eb3ef10295f2a59aa
+#1  = 6f785f1c9a42e00a56402da88463bb861c49d9af108be53eb3ef10295f2a59aa
 
 [derle]
 dosya  =  derle.sh
