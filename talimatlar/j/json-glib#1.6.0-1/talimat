@@ -16,6 +16,7 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [derle]
 betik = meson setup build . --prefix=/usr --buildtype=plain -D gtk_doc=disabled -D tests=false
-
+betik = meson compile -C build -j
+	
 [pakur]
-tip        = meson
+betik =  DESTDIR=$PKG meson install -C build
