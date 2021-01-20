@@ -4,6 +4,10 @@ paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://www.fftw.org/
 
+[gerek]
+derleme = libdatrie
+calisma = 
+
 [kaynak]
 xz      = https://linux.thai.net/pub/thailinux/software/${isim}
 
