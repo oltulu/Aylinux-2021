@@ -12,7 +12,7 @@ calisma =
 xz  	= http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [sha256]
-1		= d2c0c253a5328a0eccb00cdd66ce2c8713fabd2c9836000b6e22a8b06ba3ddd2
+#1		= d2c0c253a5328a0eccb00cdd66ce2c8713fabd2c9836000b6e22a8b06ba3ddd2
 
 [derle]
 betik	= milis-meson -Dgir=true -Denable_docs=false build
