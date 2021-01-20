@@ -1,4 +1,4 @@
-cd x265_3.1.2
+cd x265_3.4.1
   for d in 8 10 12; do
     if [[ -d build-$d ]]; then
       rm -rf build-$d
