@@ -12,7 +12,7 @@ calisma  =
 xz = https://github.com/libass/libass/releases/download/$surum
 
 [sha256]
-1  = 881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2
+#1  = 881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2
 
 [derle]
 ekconf = --enable-harfbuzz --enable-fontconfig
