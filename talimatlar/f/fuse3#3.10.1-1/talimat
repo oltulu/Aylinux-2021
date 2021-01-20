@@ -13,7 +13,7 @@ calisma =
 dosya   = fuse.conf
 
 [sha256]
-1 		= 6dc3b702f2d13187ff4adb8bcbdcb913ca0510ce0020e4d87bdeb4d794173704
+#1 = 6dc3b702f2d13187ff4adb8bcbdcb913ca0510ce0020e4d87bdeb4d794173704
 
 [derle]
 betik   = cd fuse-$surum
