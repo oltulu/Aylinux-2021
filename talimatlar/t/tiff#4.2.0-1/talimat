@@ -12,7 +12,7 @@ calisma =
 gz      = https://download.osgeo.org/libtiff
 
 [sha256]
-1 		= 2c52d11ccaf767457db0c46795d9c7d1a8d8f76f68b0b800a3dfe45786b996e4
+#1 		= 2c52d11ccaf767457db0c46795d9c7d1a8d8f76f68b0b800a3dfe45786b996e4
 
 [derle]
 tip 	= gnu
