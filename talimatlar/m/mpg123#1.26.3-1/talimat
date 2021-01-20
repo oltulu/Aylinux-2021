@@ -12,7 +12,7 @@ calisma  =
 bz2  = https://downloads.sourceforge.net/sourceforge/$isim
 
 [sha256]
-1    = df063307faa27c7d9efe63d2139b1564cfc7cdbb7c6f449c89ef8faabfa0eab2
+#1    = df063307faa27c7d9efe63d2139b1564cfc7cdbb7c6f449c89ef8faabfa0eab2
 
 [derle]
 ekconf = --enable-int-quality --with-module-suffix=.so --with-audio="alsa oss sdl jack pulse"
