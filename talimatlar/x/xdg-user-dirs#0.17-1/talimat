@@ -16,6 +16,7 @@ gz      = http://user-dirs.freedesktop.org/releases
 1 		= 
 
 [derle]
+ekconf= --disable-documentation
 tip = gnu
 	      
 [pakur]
