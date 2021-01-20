@@ -15,8 +15,10 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 #1          = 720c5f4379513dc11fd97dc75336eb0c0d3338c53128044d9fabec4374f4bc47
 
 [derle]
-tip        = meson
+betik = cd $SRC
+betik = = meson setup build . --prefix=/usr --buildtype=plain -D gtk_doc=disabled -D tests=false
 
 [pakur]
+betik = cd $SRC
 tip        = meson
 betik      = rm -r "$PKG"/usr/{lib,share}/installed-tests
