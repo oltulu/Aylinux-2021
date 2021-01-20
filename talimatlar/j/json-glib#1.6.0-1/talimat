@@ -19,4 +19,3 @@ betik = meson setup build . --prefix=/usr --buildtype=plain -D gtk_doc=disabled 
 
 [pakur]
 tip        = meson
-betik      = rm -r "$PKG"/usr/{lib,share}/installed-tests
