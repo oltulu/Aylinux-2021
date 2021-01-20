@@ -15,9 +15,11 @@ git      = https://github.com/harfbuzz/harfbuzz
 #1 		= fed00dc797b7ba3ca943225f0a854baaed4c1640fff8a31d455cd3b5caec855c
 
 [derle]
+betik   = cd harfbuzz
 betik   = NOCONFIGURE=1 ./autogen.sh
 ekconf  = --with-glib --with-gobject --with-graphite2 --with-icu --with-freetype --with-cairo
 tip     = gnu
   
 [pakur]
+betik   = cd harfbuzz
 tip	    = gnu
