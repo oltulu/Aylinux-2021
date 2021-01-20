@@ -12,7 +12,7 @@ calisma =
 xz  	= ${GNOME_SITE}/${isim}/${surum}
 
 [sha256]
-1		= b61f64e5f6a48aa0abc7a53cdcbce60de81908ca36048a64730978fcd9ac9863
+#1		= b61f64e5f6a48aa0abc7a53cdcbce60de81908ca36048a64730978fcd9ac9863
 
 [derle]
 ekconf  = -Duseprebuilt=true
