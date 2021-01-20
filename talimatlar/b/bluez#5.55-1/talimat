@@ -19,7 +19,7 @@ dosya    = 0009-adapter-Don-t-refresh-adv_manager-for-non-LE-devices.patch
 dosya    = obexd-init
 
 [sha256]
-1 		= 68cdab9e63e8832b130d5979dc8c96fdb087b31278f342874d992af3e56656dc
+#1 		= 68cdab9e63e8832b130d5979dc8c96fdb087b31278f342874d992af3e56656dc
 
 [derle]
 yama    = 0001-enable-dbus-without-systemd.patch
