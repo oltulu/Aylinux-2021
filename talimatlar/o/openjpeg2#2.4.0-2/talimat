@@ -13,7 +13,7 @@ calisma =
 github  = uclouvain/openjpeg
 
 [sha256]
-1       = 63f5a4713ecafc86de51bfad89cc07bb788e9bba24ebbf0c4ca637621aadb6a9
+#1       = 63f5a4713ecafc86de51bfad89cc07bb788e9bba24ebbf0c4ca637621aadb6a9
 
 [derle]
 tip     = cmake
