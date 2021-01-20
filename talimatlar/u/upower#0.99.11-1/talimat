@@ -1,6 +1,6 @@
 [paket]
 tanim    = Cihazların güç yönetim takibi ve loglanması
-paketci  = milisarge
+paketci  = Cihan_Alkan
 grup     = sistem 
 url      = https://upower.freedesktop.org
 
@@ -9,15 +9,17 @@ derleme  = python libusb libimobiledevice libgudev  gobject-introspection
 calisma  =  
 
 [kaynak]
-xz  = https://gitlab.freedesktop.org/upower/upower/uploads/c438511024b9bc5a904f8775cfc8e4c4
+git  = https://gitlab.freedesktop.org/upower/upower
 
 [sha256]
-1   = 642251b97080ede8be6dbfeaf8f30ff6eadd6eb27aa137bc50f5b9b2295ba29d
+#1   = 642251b97080ede8be6dbfeaf8f30ff6eadd6eb27aa137bc50f5b9b2295ba29d
 
 [derle]
+betik = cd $isim
 ekconf = --disable-gtk-doc --with-backend=linux
 tip    = gnu
 
 [pakur]
+betik = cd $isim
 tip    = gnu
 
