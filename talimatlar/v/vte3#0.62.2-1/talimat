@@ -15,7 +15,7 @@ git       = https://gitlab.gnome.org/GNOME/vte
 #1 		= f78b3d532ca47e53c1bb51db6780697ce4692d493c0030d2dc4beb63a2595e44a43eb409ee31b94e4551eae259ac1baa8f06825a02fd66df8352e192f4ea1988
 
 [derle]
-betik   = milis-meson vte build -D b_lto=false
+betik   = milis-meson vte build -D b_lto=false -D _systemd=false
 betik   = meson compile -C build
 
 	      
