@@ -12,7 +12,7 @@ calisma    =
 1          = https://github.com/AbiWord/enchant/archive/v${surum}.tar.gz::enchant-${surum}.tar.gz
 
 [sha512]
-1          = 8876596bfa7cf36470fab97d44c3acbb074e5bbe9d59a6cbcf654c3a472a6c2ff5c6d4eb1f9c35e852e2c68863a56a3b39cdae031fab462bee47455b31eb4fb7
+#1          = 8876596bfa7cf36470fab97d44c3acbb074e5bbe9d59a6cbcf654c3a472a6c2ff5c6d4eb1f9c35e852e2c68863a56a3b39cdae031fab462bee47455b31eb4fb7
 
 [derle]
 betik      = ./bootstrap
