@@ -9,15 +9,17 @@ derleme    = gtk3 libxklavier lightdm
 calisma    =
 
 [kaynak]
-gz         = https://github.com/Xubuntu/lightdm-gtk-greeter/archive
+git         = https://github.com/Xubuntu/lightdm-gtk-greeter
 
 [sha256]
 #1          = 255cf4039ab2536020ca8714bdc98300c8f71719183bbb5b18ef96f43c2e3ade
 
 [derle]
+betik = cd $isim
 betik = NOCONFIGURE=1 ./autogen.sh
 ekconf     = --libexecdir=/usr/lib/lightdm --with-libxklavier -with-gtk3 --enable-nls
 tip        = gnu
 
 [pakur]
+betik = cd $isim
 tip        = gnu
