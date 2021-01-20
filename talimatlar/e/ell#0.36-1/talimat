@@ -8,7 +8,7 @@ url     = https://01.org/ell
 xz      = https://mirrors.edge.kernel.org/pub/linux/libs/$isim
 
 [sha256]
-1 	    = 42fdb9e24ff561a101389d51445cab1ff7d55f5385dc22a05b0493088cf99e30
+#1 	    = 42fdb9e24ff561a101389d51445cab1ff7d55f5385dc22a05b0493088cf99e30
 
 [derle]
 tip 	= gnu
