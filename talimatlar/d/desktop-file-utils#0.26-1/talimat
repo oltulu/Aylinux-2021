@@ -12,7 +12,7 @@ calisma =
 xz      = https://www.freedesktop.org/software/desktop-file-utils/releases
 
 [sha256]
-1 		= a1de5da60cbdbe91e5c9c10ac9afee6c3deb019e0cee5fdb9a99dddc245f83d9
+#1 		= a1de5da60cbdbe91e5c9c10ac9afee6c3deb019e0cee5fdb9a99dddc245f83d9
 
 [derle]
 tip 	= gnu
