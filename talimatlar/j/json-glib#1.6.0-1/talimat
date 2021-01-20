@@ -1,6 +1,6 @@
 [paket]
 tanim   = GLib tabanlı kütüphaneler ve uygulamalar için JSON ayrıştırıcısı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://live.gnome.org/JsonGlib
 
@@ -16,7 +16,7 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [derle]
 betik = cd $SRC
-betik = = meson setup build . --prefix=/usr --buildtype=plain -D gtk_doc=disabled -D tests=false
+betik = meson setup build . --prefix=/usr --buildtype=plain -D gtk_doc=disabled -D tests=false
 
 [pakur]
 betik = cd $SRC
