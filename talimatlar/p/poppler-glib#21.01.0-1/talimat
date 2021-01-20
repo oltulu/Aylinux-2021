@@ -21,7 +21,3 @@ tip     = cmake
 
 [pakur]
 tip     = cmake
-betik	= rm $PKG/usr/lib/libpoppler.so*
-betik	= rm $PKG/usr/lib/pkgconfig/poppler.pc
-betik	= rm $PKG/usr/lib/pkgconfig/poppler-splash.pc
-betik	= rm $PKG/usr/lib/pkgconfig/poppler-cairo.pc
