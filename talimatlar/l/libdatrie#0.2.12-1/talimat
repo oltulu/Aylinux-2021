@@ -1,0 +1,18 @@
+[paket]
+tanim   = Junichi Aoe tarafından önerildiği gibi, trie'yi temsil etmek için çift dizili yapının uygulanması.
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://www.fftw.org/
+
+[kaynak]
+xz      = https://linux.thai.net/pub/thailinux/software/libthai
+
+[sha256]
+#1       = 6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303
+
+[derle]
+betik   = ./configure --prefix=/usr --disable-static
+betik   = make
+
+[pakur]
+betik   = make DESTDIR="${PKG}" install
