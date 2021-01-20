@@ -9,19 +9,19 @@ derleme  = python libusb libimobiledevice libgudev  gobject-introspection
 calisma  =  
 
 [kaynak]
-git  = https://gitlab.freedesktop.org/upower/upower
+xz  = https://$isim.freedesktop.org/releases
 
 [sha256]
 #1   = 642251b97080ede8be6dbfeaf8f30ff6eadd6eb27aa137bc50f5b9b2295ba29d
 
 [derle]
-betik = cd $isim
-betik = sed -e 's|libplist >= 0.12|libplist-2.0 >= 2.2|' -i configure.ac # support libplist 2.2
+#betik = cd $isim
+betik = sed -e 's|libplist >= 0.12|libplist-2.0 >= 2.2|' -i configure.ac #  libplist 2.2 desteği
 betik = NOCONFIGURE=1 ./autogen.sh
 betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib --disable-static --disable-gtk-doc --with-backend=linux
 betik = make 
 
 [pakur]
-betik = cd $isim
+#betik = cd $isim
 tip    = gnu
 
