@@ -28,4 +28,4 @@ dosya   = derle.sh
 [pakur]
 betik   = cd ${isim}-${surum}-beta15
 tip     = gnu
-betik   = install -Dm644 "$SRC/hddtemp.db" "${PKG}/usr/share/${isim}/hddtemp.db"
+betik   = install -Dm644 "/sources/hddtemp.db" "${PKG}/usr/share/${isim}/hddtemp.db"
