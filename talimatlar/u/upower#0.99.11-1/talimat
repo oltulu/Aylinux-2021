@@ -16,8 +16,10 @@ git  = https://gitlab.freedesktop.org/upower/upower
 
 [derle]
 betik = cd $isim
-ekconf = --disable-gtk-doc --with-backend=linux
-tip    = gnu
+betik = sed -e 's|libplist >= 0.12|libplist-2.0 >= 2.2|' -i configure.ac # support libplist 2.2
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib --disable-static --disable-gtk-doc --with-backend=linux
+betik = make 
 
 [pakur]
 betik = cd $isim
