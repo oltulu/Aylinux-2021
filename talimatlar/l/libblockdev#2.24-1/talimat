@@ -12,7 +12,7 @@ calisma = mdadm
 gz      = $url/releases/download/$surum-1
 
 [sha256]
-1       = 3cf4aea5f48da0cfa59737f91ebf2a2d6424cb59b4180c9716fff3d49fd90ce0
+#1       = 3cf4aea5f48da0cfa59737f91ebf2a2d6424cb59b4180c9716fff3d49fd90ce0
 
 [derle]
 betik   = export CFLAGS+=" $(pkg-config --cflags nss)"
