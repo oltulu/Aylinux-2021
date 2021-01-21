@@ -15,7 +15,7 @@ xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
 1 		= 
 
 [derle]
-betik 	= milis-meson $SRC/$isim-$surum build -D gnome_distributor="Milis Linux®"
+betik 	= milis-meson $SRC/$isim-$surum build -D gnome_distributor="Bizim Linux®"
 betik 	= ninja -C build
 	      
 [pakur]
