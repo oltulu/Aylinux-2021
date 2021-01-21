@@ -9,10 +9,10 @@ derleme  = nasm
 calisma  =  
 
 [kaynak]
-bz2      = http://downloads.xvid.org/downloads
+gz      = https://downloads.xvid.com/downloads
 
 [sha256]
-1        = 7c20f279f9d8e89042e85465d2bcb1b3130ceb1ecec33d5448c4589d78f010b4
+#1        = 7c20f279f9d8e89042e85465d2bcb1b3130ceb1ecec33d5448c4589d78f010b4
 
 [derle]
 betik  = cd xvidcore/build/generic
