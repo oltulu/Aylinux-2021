@@ -22,5 +22,4 @@ calisma =
 dosya  = derle.sh
 	      
 [pakur]
-betik  = export DESTDIR="$PKG"
-betik  = LC_ALL=C python3 ./x.py install
+dosya  = pakur.sh
