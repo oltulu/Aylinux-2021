@@ -14,10 +14,10 @@ dosya   = remove-generic-name-assignment-and-aliasing.patch
 
 [sha256]
 1 		= fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7
-2       = 21d85a4f6ea7856074a4eb5c5fce6a10e764d11ff4336e92c4f009815efebb0c
+#2       = 21d85a4f6ea7856074a4eb5c5fce6a10e764d11ff4336e92c4f009815efebb0c
 
 [derle]
-yama    = 2
+#yama    = 2
 
 [pakur]
 dosya   = pakur.sh
