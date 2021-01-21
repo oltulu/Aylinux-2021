@@ -9,12 +9,12 @@ derleme = meson tiff libjpeg-turbo gobject-introspection jasper libpng glib shar
 calisma = shared-mime-info
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.38
+xz      = http://download.gnome.org/sources/$isim/${surum:0:4}
 dosya   = gdk-pixbuf-register.sh
 dosya   = gdk-pixbuf.loaders
 
 [sha512]
-1 		= e50badaad2ccb3c816ba0849be386ecb75ea3c7df203d0b0144541c463ad1ace86c0d190b7550e3f59f0cba9639acc5cc048b7127484287894e4df6d62777920
+#1 = e50badaad2ccb3c816ba0849be386ecb75ea3c7df203d0b0144541c463ad1ace86c0d190b7550e3f59f0cba9639acc5cc048b7127484287894e4df6d62777920
 
 [derle]
 betik   = sed -i '/tests/ d' meson.build 
