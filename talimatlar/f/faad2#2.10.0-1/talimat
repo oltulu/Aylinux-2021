@@ -5,10 +5,10 @@ grup    = medya
 url     = http://faac.sourceforge.net/ 
 
 [kaynak]
-gz     = https://downloads.sourceforge.net/sourceforge/faac
+gz     = https://github.com/knik0/faad2/archive/$surum
 
 [sha256]
-1      = 985c3fadb9789d2815e50f4ff714511c79c2710ac27a4aaaf5c0c2662141426d
+#1      = 985c3fadb9789d2815e50f4ff714511c79c2710ac27a4aaaf5c0c2662141426d
 
 [derle]
 tip    = gnu
