@@ -9,7 +9,7 @@ derleme    = yasm
 calisma    =
 
 [kaynak]
-1          = ${SOURCEFORGE_SITE}/${isim}/${isim}_${surum}_src_all.tar.bz2
+gz       = https://github.com/jinfeihan57/p7zip/archive/v$surum
 dosya      = CVE-2016-9296.patch
 dosya      = CVE-2017-17969.patch
 dosya      = CVE-2018-5996.patch
