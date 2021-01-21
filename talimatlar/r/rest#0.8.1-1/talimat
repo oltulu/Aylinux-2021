@@ -9,18 +9,16 @@ derleme    = glib libxml2 libsoup gobject-introspection
 calisma    =
 
 [kaynak]
-git         = https://gitlab.gnome.org/GNOME/librest
+xz         = https://download.gnome.org/sources/rest/${surum%.*}
 
 [sha256]
 #1          = 0513aad38e5d3cedd4ae3c551634e3be1b9baaa79775e53b2dba9456f15b01c9
 
 [derle]
-betik      = cd librest
 betik      = NOCONFIGURE=1 ./autogen.sh
 betik      = ./configure --prefix=/usr --sysconfdir=/etc
 betik      = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik      = make
 
 [pakur]
-betik      = cd librest
 tip        = gnu
