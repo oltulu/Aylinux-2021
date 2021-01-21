@@ -9,10 +9,10 @@ derleme = libpng
 calisma = 
 
 [kaynak]
-gz      = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927
+gz      = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9530
 
 [sha256]
-1 		= a4f6bf15d217e7816aa61b92971597c801e81f0a63f9fe1daee60fb88e0f0602
+#1 = a4f6bf15d217e7816aa61b92971597c801e81f0a63f9fe1daee60fb88e0f0602
 
 [derle]
 ekconf  = --disable-static
