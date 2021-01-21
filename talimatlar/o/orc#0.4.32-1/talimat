@@ -12,7 +12,7 @@ xz      = http://gstreamer.freedesktop.org/src/orc
 
 [derle]
 betik = cd $SRC
-betik   = milis-meson $isim-$surum build
+betik   = milis-meson $isim-$surum build -D gtk_doc=disabled
 betik   = meson compile -C build
 
 	      
