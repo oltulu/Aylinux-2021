@@ -1,22 +1,21 @@
 [paket]
 tanim   = DTS Coherent Acoustics akış çözücü kütüphanesi
-paketci = milisarge  
+paketci = Cihan_Alkan  
 grup    = kütüphane 
 url     = https://www.videolan.org/developers/libdca.html
 
 [kaynak]
-bz2  = https://download.videolan.org/pub/videolan/$isim/$surum
+bz2  = hhttps://download.videolan.org/pub/videolan/$isim/$surum
 
 [sha512]
 #1    = d264128019e7fd295a35691636311f81960c17802dbbc67764c4e00b2fdf12ebc69b057a4947b57551a130e5cfd1fef3fe3558c7067216ea04a0b6bbb881b4f1
 
 [derle]
-tip    = gnu
+betik  =  ./bootstrap
+betik  =  ./configure --prefix=/usr --disable-static
+betik  =  make
 
 [pakur]
 tip    = gnu
-betik  =  rm -f "${PKG}/usr/share/man/man1"/{extract_dts,dtsdec}.1
-betik  =  ln -s dcadec.1.gz "${PKG}/usr/share/man/man1/dtsdec.1.gz"
-betik  =  ln -s extract_dca.1.gz "${PKG}/usr/share/man/man1/extract_dts.1.gz"
-betik  =  rm -f "${PKG}/usr/lib/libdts.a"
+
 
