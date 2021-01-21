@@ -1,4 +1,4 @@
- cd "rustc-$surum-src"
+ #cd "rustc-$surum-src"
 
   cat >config.toml <<END
 [llvm]
