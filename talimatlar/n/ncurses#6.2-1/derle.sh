@@ -1,5 +1,5 @@
 sed -i s/mawk// configure
-./configure --prefix=/tools \
+./configure --prefix=/usr \
 --with-shared   \
 --without-debug \
 --without-ada   \
