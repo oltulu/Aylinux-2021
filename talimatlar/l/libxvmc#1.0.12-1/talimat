@@ -12,7 +12,7 @@ calisma =
 1       = $url/releases/individual/lib/libXvMC-$surum.tar.bz2
 
 [sha512]
-1 		= 4fe49e956ac97a45d851292cbba7bf242706aaf3bd9eb7ea4d2fc50e40745115d857a4fe179d2b87bc7cb6f9ac93911e89a167f02f6d1ae25a59df9a517a2476
+#1 = 4fe49e956ac97a45d851292cbba7bf242706aaf3bd9eb7ea4d2fc50e40745115d857a4fe179d2b87bc7cb6f9ac93911e89a167f02f6d1ae25a59df9a517a2476
 
 [derle]
 betik   = cd libXvMC-$surum
