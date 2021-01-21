@@ -13,7 +13,7 @@ calisma =
 1      = https://static.rust-lang.org/dist/rustc-$surum-src.tar.xz
 2      = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/compiler-rt-11.0.0.src.tar.xz
 #3      = https://static.rust-lang.org/dist/2020-05-07/rustc-1.44.0-x86_64-unknown-linux-gnu.tar.xz!
-34      = https://static.rust-lang.org/dist/2020-05-07/cargo-0.45.0-x86_64-unknown-linux-gnu.tar.xz!
+#4      = https://static.rust-lang.org/dist/2020-05-07/cargo-0.45.0-x86_64-unknown-linux-gnu.tar.xz!
 
 [sha256]
 #1 = 
