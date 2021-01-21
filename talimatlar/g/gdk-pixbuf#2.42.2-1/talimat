@@ -17,11 +17,12 @@ dosya   = gdk-pixbuf.loaders
 #1 = e50badaad2ccb3c816ba0849be386ecb75ea3c7df203d0b0144541c463ad1ace86c0d190b7550e3f59f0cba9639acc5cc048b7127484287894e4df6d62777920
 
 [derle]
-betik   = sed -i '/tests/ d' meson.build 
-betik   = milis-meson  -Dbuiltin_loaders=png -Djasper=true output . 
-betik   = ninja -C output
+betik   = cd $SRC
+betik   = meson setup build $isim-$surum --prefix=/usr --buildtype=plain -D installed_tests=false -D man=false
+betik   = meson compile -C build
 	      
 [pakur]
-betik   = DESTDIR="$PKG" ninja -C output install
+betik   = cd $SRC
+betik   = DESTDIR=$PKG meson install  -C build
 betik   = install -m 755 $SRC/gdk-pixbuf-register.sh $PKG/usr/bin/gdk-pixbuf-register
 betik   = install -m 644 $SRC/gdk-pixbuf.loaders $PKG/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
