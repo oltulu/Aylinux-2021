@@ -1,6 +1,6 @@
 [paket]
 tanim   = Rust, sistem programlama dili
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= geliştirme
 url     = http://www.rust-lang.org
 arsiv   = ${isim}c-$surum-src
