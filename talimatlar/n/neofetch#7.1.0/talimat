@@ -1,0 +1,22 @@
+[paket]
+tanim   = BASH ile yazılmış ve görüntülerin görüntülenmesini destekleyen bir CLI sistem bilgi aracı.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://github.com/dylanaraps/neofetc
+
+[gerek]
+derleme = 
+calisma = xorg-xdpyinfo xorg-xprop
+
+[kaynak]
+git    = https://github.com/dylanaraps/neofetc
+
+[sha256]
+#1 		= 8cee391c49a102b4464f86fc40c4ceac3a2ada52a89c4c933d8348e3e4542a60
+
+[derle]
+betik 	= cd "${isim}"
+	      
+[pakur]
+betik 	= cd "${isim}"
+betik 	= make DESTDIR="$pkgdir" install
