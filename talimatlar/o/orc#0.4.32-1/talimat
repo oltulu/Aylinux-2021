@@ -8,7 +8,7 @@ url     = https://gstreamer.freedesktop.org/projects/orc.html
 xz      = http://gstreamer.freedesktop.org/src/orc
 
 [sha256]
-1 		= 4f8901f9144b5ec17dffdb33548b5f4c7f8049b0d1023be3462cdd64ec5a3ab2
+#1 = 4f8901f9144b5ec17dffdb33548b5f4c7f8049b0d1023be3462cdd64ec5a3ab2
 
 [derle]
 betik   = NOCONFIGURE=1 ./autogen.sh
