@@ -10,10 +10,10 @@ derleme = python samba
 calisma = 
 
 [kaynak]
-1       = https://pypi.io/packages/source/p/pysmbc/pysmbc-${surum}.tar.bz2
+1       = https://pypi.io/packages/source/p/pysmbc/pysmbc-${surum}.tar.gz
 
 [sha256]
-1 		= 23483b555ff0483a6c3b4bd4047185d252198f972e3d6bc6ea7806e30a507684
+#1 = 23483b555ff0483a6c3b4bd4047185d252198f972e3d6bc6ea7806e30a507684
 
 [derle]
 tip     = py3
