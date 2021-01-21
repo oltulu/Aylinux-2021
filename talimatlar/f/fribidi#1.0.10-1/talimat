@@ -1,14 +1,14 @@
 [paket]
 tanim   = Unicode çift yönlü algoritmanın ücretsiz uygulanması
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = sistem
 url     = https://github.com/fribidi/fribidi/
 
 [kaynak]
-1       = $url/releases/download/v$surum/$isim-$surum.tar.bz2
+xz     = https://github.com/$isim/$isim/releases/download/v$surum
 
 [sha256]
-1       = 6a64f2a687f5c4f203a46fa659f43dd43d1f8b845df8d723107e8a7e6158e4ce
+#1       = 6a64f2a687f5c4f203a46fa659f43dd43d1f8b845df8d723107e8a7e6158e4ce
 
 [derle]
 tip     = gnu
