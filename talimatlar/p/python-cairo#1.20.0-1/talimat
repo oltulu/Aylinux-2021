@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/pygobject/pycairo/releases/download/v${surum}/pycairo-${surum}.tar.gz
 
 [sha256]
-1 		= 70172e58b6bad7572a3518c26729b074acdde15e6fee6cbab6d3528ad552b786
+#1 		= 70172e58b6bad7572a3518c26729b074acdde15e6fee6cbab6d3528ad552b786
 
 [derle]
 betik   = cd pycairo-${surum}
