@@ -11,11 +11,11 @@ xz      = http://gstreamer.freedesktop.org/src/orc
 #1 = 4f8901f9144b5ec17dffdb33548b5f4c7f8049b0d1023be3462cdd64ec5a3ab2
 
 [derle]
-betik = $SRC
+betik = cd $SRC
 betik   = milis-meson $isim-$surum build
 betik   = meson compile -C build
 
 	      
 [pakur]
-betik = $SRC
+betik = cd $SRC
 tip     = meson
