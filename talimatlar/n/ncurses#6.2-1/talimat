@@ -15,4 +15,4 @@ dosya 	= derle.sh
 	      
 [pakur]
 tip     = gnu
-betik   = ln -s libncursesw.so $PKG/tools/lib/libncurses.so
+betik   = ln -s libncursesw.so $PKG/usr/lib/libncurses.so
