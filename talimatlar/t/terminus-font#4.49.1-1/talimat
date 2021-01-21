@@ -9,7 +9,7 @@ derleme = fontconfig mkfontscale python bdftopcf
 calisma = encodings
 
 [kaynak]
-gz      = https://downloads.sourceforge.net/project/$isim/$isim-$surum
+gz      = https://downloads.sourceforge.net/project/$isim/$isim-4.49
 dosya   = fix-75-yes-terminus.patch
 
 [sha256]
