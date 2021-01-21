@@ -12,7 +12,7 @@ calisma  =
 bz2      = ftp://ftp.freetds.org/pub/freetds/stable
 
 [sha256]
-1        = 27ca0796d255b4cfff706c6af1d4b0819f30f6ec0f01f9ae4007914a7d805ecd
+#1        = 27ca0796d255b4cfff706c6af1d4b0819f30f6ec0f01f9ae4007914a7d805ecd
 
 [derle]
 ekconf   = --sysconfdir=/etc/freetds --enable-msdblib --with-unixodbc=/usr --with-openssl
