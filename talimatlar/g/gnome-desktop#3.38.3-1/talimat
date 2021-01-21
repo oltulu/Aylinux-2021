@@ -15,8 +15,8 @@ xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
 1 		= 
 
 [derle]
-betik 	= milis-meson $SRC/$isim-$surum build -D gnome_distributor="Bizim Linux®"
-betik 	= ninja -C build
+betik 	= milis-meson $SRC/$isim-$surum build --prefix=/usr --libexecdir=/usr/lib/$isim --buildtype=plain -Db_ndebug=true -Dgnome_distributor="Bizim Linux" -Dudev=enabled -Dgtk_doc=false -Ddesktop_docs=false -Dsystemd=disabled
+betik 	= meson compile -C build
 	      
 [pakur]
 betik 	= DESTDIR="$PKG" meson install -C build
