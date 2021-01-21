@@ -15,9 +15,9 @@ xz	    = https://download.gnome.org/sources/$isim/${surum%.*}
 #1	    = ffdfe2368fb2e34a547898b01aac0520d52d8627fdeb1c306559bcb503ab5e9c
 
 [derle]
-ekconf  = -D gtk_doc=false -D doctool=false -Dcairo=false
-tip     = meson
+betik = cd $SRC
+betik = meson build $isim-$surum --prefix /usr -D cairo=disabled -D doctool=disabled
 tip     = ninja
 
 [pakur]
-tip     = meson
+betik = DESTDIR=$PKG meson install -C build
