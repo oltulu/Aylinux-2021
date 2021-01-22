@@ -15,10 +15,9 @@ xz     = https://download-mirror.savannah.gnu.org/releases/$isim
 #1 		= dfad66f419ea9577f09932e0730c0c887bdcbdbc8152fa7477a0c39d69a5b68476761deed6864ddcc5cf18d100a7a3f728049768e24afcb04b1a74b25b6acf7e
 
 [derle]
-betik   = sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
-betik   = sed -r "s:.*(#.*SUBPIXEL_(RENDERING|HINTING 2)) .*:\1:g" -i include/freetype/config/ftoption.h
-ekconf  = --with-harfbuzz=no --enable-freetype-config --disable-static
-tip     = gnu
+betik   = ./configure --prefix=/usr --with-zlib --with-harfbuzz=no --enable-freetype-config
+betik   =  make
+   
       
 [pakur]
-tip 	= gnu
+betik   =  make DESTDIR=$PKG install
