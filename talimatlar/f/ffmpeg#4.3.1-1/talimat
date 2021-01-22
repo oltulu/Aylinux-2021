@@ -12,7 +12,7 @@ calisma  =
 xz  = ${url}/releases
 
 [sha256]
-1   = 023f10831a97ad93d798f53a3640e55cd564abfeba807ecbe8524dac4fedecd5
+#1   = 023f10831a97ad93d798f53a3640e55cd564abfeba807ecbe8524dac4fedecd5
 
 [derle]
 dosya  =  derle.sh
