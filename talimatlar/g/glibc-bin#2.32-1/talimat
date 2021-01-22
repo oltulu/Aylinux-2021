@@ -1,0 +1,24 @@
+[paket]
+tanim   = https://www.gnu.org/software/libc
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.aylinux.kripto.com.tr
+
+[gerek]
+derleme = 
+calisma = tzdata
+
+[kaynak]
+1      = https://ftp5.gwdg.de/pub/linux/archlinux/core/os/x86_64/glibc-2.32-5-x86_64.pkg.tar.zst
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = mkdir -pv $PKG/elma
+betik = rmdir $PKG/elma
+	      
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+betik 	= cp -r $SRC/etc $PKG/
+betik 	= cp -r $SRC/var $PKG/
