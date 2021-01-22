@@ -15,8 +15,11 @@ xz      = https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7
 #1 		= 71f0899de0ffb2a39b25928042114e2bbfde7fbf2029d9f91f60bf60794916d13f544fc97337e4e3282e7faa17e79a8012b0e08f98805bee543c0ba4e5d5a905
 
 [derle]
-ekconf  = --disable-static --disable-guile --with-default-trust-store-pkcs11="pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit"
-tip 	= gnu
-	      
+betik  = ./configure --prefix=/usr --with-zlib --disable-static --with-idn --enable-openssl-compatibility --enable-guile --with-guile-site-dir=no --with-default-trust-store-pkcs11="pkcs11:model=p11-kit-trust;manufacturer=PKCS%2311%20Kit"
+betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik  = make
+
 [pakur]
 tip 	= gnu
+betik  = find "$PKG/usr/share/info" -name '*.info*' -exec gzip -n -9 {} \;
+betik  = find "$PKG/usr/share/man" -exec gzip -n -9 {} \;
