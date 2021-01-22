@@ -1,11 +1,11 @@
 [paket]
 tanim   = C ++ programları için güvenli çağrı kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://libsigcplusplus.github.io/libsigcplusplus
 
 [kaynak]
-xz      = https://github.com/libsigcplusplus/libsigcplusplus/releases/download/$surum
+git      = https://github.com/libsigcplusplus/libsigcplusplus
 
 [sha256]
 #1 = b1ca0253379596f9c19f070c83d362b12dfd39c0a3ea1dd813e8e21c1a097a98
@@ -15,4 +15,4 @@ betik  = milis-meson libsigcplusplus build -D maintainer-mode=true
 betik  = meson compile -C build
 	      
 [pakur]
-tip 	= meson
+betik  =  	= DESTDIR="$PKG" meson install -C build
