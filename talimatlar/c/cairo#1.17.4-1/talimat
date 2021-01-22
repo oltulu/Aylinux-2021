@@ -9,7 +9,7 @@ derleme	= glib libpng pixman freetype fontconfig libxext libxrender xcb-util
 calisma	= 
 
 [kaynak]
-git	    = https://gitlab.freedesktop.org/cairo/cairo
+xz	    = https://cairographics.org/snapshots
 dosya   = fix-library-versioning.diff
 dosya   = xlib-xcb.diff
 
@@ -17,9 +17,9 @@ dosya   = xlib-xcb.diff
 #1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 
 [derle]
-betik = patch -p1 -d $isim -i $SRC/fix-library-versioning.diff
-betik = patch -p1 -d $isim -i $SRC/xlib-xcb.diff
-betik = meson setup build $isim --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled
+betik = patch -p1 -d ../$isim-$surum -i $SRC/fix-library-versioning.diff
+betik = patch -p1 -d ../$isim-$surum -i $SRC/xlib-xcb.diff
+betik = meson setup build ../$isim-$surum --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled
 betik = meson compile -C build
 
 
