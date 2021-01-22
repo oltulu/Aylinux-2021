@@ -1,3 +1,4 @@
+cd $SRC
 patch -d $isim-$surum -p1 -i $SRC/$isim-nocheck-fixincludes.patch
     patch -d $isim-$surum -p1 -i $SRC/$isim-4.7.3-multilib-dirs.patch
 mkdir build
