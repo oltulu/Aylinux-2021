@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNU Derleyici Koleksiyonu - C ve C ++ ön uçları
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.aylinux.kripto.com.tr
+
+[gerek]
+derleme = 
+calisma = tzdata
+
+[kaynak]
+1      = http://ftp.riken.jp/Linux/manjaro/stable/core/x86_64/gcc-10.2.0-4-x86_64.pkg.tar.zst
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = mv /sources/gcc-10.2.0-4-x86_64.pkg.tar.zst $SRC/gcc-10.2.0.tar.xz
+betik = tar -xf gcc-10.2.0.tar.xz -C $SRC
+	      
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+#betik 	= cp -r $SRC/etc $PKG/
+#betik 	= cp -r $SRC/var $PKG/
