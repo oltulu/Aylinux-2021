@@ -1,6 +1,6 @@
 [paket]
 tanim   = Çoklu çıktı aygıtlarını destekleyen 2D grafik kitaplığıdır.
-paketci	= yasarciv67
+paketci	= Cihan_Alkan
 grup	= kütüphane
 url	    = http://www.cairographics.org/
 
@@ -10,18 +10,19 @@ calisma	=
 
 [kaynak]
 git	    = https://gitlab.freedesktop.org/cairo/cairo
-dosya   = 0001-ft-Use-FT_Done_MM_Var-instead-of-free-when-available.patch
+dosya   = fix-library-versioning.diff
+dosya   = xlib-xcb.diff
 
 [sha256]
 #1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 
 [derle]
-betik = cd cairo
-yama    = 2
-betik   = NOCONFIGURE=1 ./autogen.sh
-ekconf	= --localstatedir=/var --disable-static --disable-gl --enable-tee --enable-svg --enable-ps --enable-pdf --enable-gobject 
-tip  	= gnu
+betik = patch -p1 -d $isim -i $SRC/fix-library-versioning.diff
+betik = patch -p1 -d $isim -i $SRC/xlib-xcb.diff
+betik = meson setup build $isim --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled
+betik = meson compile -C build
+
 
 [pakur]
-betik = cd cairo
-tip	    = gnu
+betik = DESTDIR=$PKG meson install -C build
+betik = chmod +x $PKG/usr/bin/cairo-trace
