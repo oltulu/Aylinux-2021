@@ -15,8 +15,8 @@ calisma = tzdata
 1 		= SKIP
 
 [derle]
-betik = mkdir -pv $PKG/elma
-betik = rmdir $PKG/elma
+betik = mv /sources/glibc-2.32-5-x86_64.pkg.tar.zst $SRC/glibc-2.32.tar.xz
+betik = tar -xf glibc-2.32.tar.xz -C $SRC
 	      
 [pakur]
 betik 	= cp -r $SRC/usr $PKG/
