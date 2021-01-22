@@ -1,0 +1,24 @@
+[paket]
+tanim    = Alliance for Open Media video kodeği
+paketci  = milisarge 
+grup     = kütüphane  
+url      = https://aomedia.org/
+
+[gerek]
+derleme  = cmake ninja python yasm
+calisma  =  
+
+[kaynak]
+1  = https://aomedia.googlesource.com/aom/+archive/v${surum%.*}-errata${surum##*.}.tar.gz::$isim-$surum.tar.gz
+dosya = libaom-version.patch
+
+[sha256]
+1  = 9055d3d0b4e28b353d1fcba1412bd1ea7186168cf5674a5325bb6aa01d564a87
+
+[derle]
+dosya  = derle.sh
+
+[pakur]
+betik  = cd $SRC
+betik  = DESTDIR="${PKG}" cmake --build build --target install
+
