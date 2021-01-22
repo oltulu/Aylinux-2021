@@ -17,9 +17,9 @@ dosya   = noisy-glib-compile-schemas.diff
 
 [derle]
 yama	= noisy-glib-compile-schemas.diff
-ekconf  = -D selinux=disabled
+ekconf  = --prefix=/usr -D nls=disabled -D selinux=disabled -D gtk_doc=false
 tip     = meson 
-tip     = ninja 
+#tip     = ninja 
 
 [pakur]
 tip     = meson
