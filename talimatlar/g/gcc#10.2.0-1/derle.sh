@@ -1,50 +1,39 @@
-	mv -v ../mpfr-* mpfr
-	mv -v ../gmp-* gmp
-	mv -v ../mpc-* mpc
-	
-	for file in gcc/config/{linux,i386/linux{,64}}.h
-	do
-	  cp -uv $file{,.orig}
-	  sed -e 's@/lib\(64\)\?\(32\)\?/ld@/tools&@g' \
-		  -e 's@/usr@/tools@g' $file.orig > $file
-	  echo '
-	#undef STANDARD_STARTFILE_PREFIX_1
-	#undef STANDARD_STARTFILE_PREFIX_2
-	#define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"
-	#define STANDARD_STARTFILE_PREFIX_2 ""' >> $file
-	  touch $file.orig
-	done
+patch -d $isim-$version -p1 -i /sources/$isim-nocheck-fixincludes.patch
+    patch -d $isim-$surum -p1 -i /sources/$isim-4.7.3-multilib-dirs.patch
+mkdir build
+    cd build
+    ../$name-$version/configure --prefix=/usr \
+                                --libexecdir=/usr/lib \
+                                --enable-languages=c,c++,objc \
+                                --enable-threads=posix \
+                                --enable-__cxa_atexit \
+                                --enable-clocale=gnu \
+                                --enable-shared \
+                                --disable-nls \
+                                --with-x=no \
+                                --with-system-zlib \
+                                --enable-multilib \
+				--enable-default-pie \
+				--enable-default-ssp \
+                                --with-pkgversion="bizim_linux"
+				 make bootstrap
+   
+   make -j1 DESTDIR=$PKG install
 
-	case $(uname -m) in
-	  x86_64)
-		sed -e '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64
-	  ;;
-	esac
+    install -d $PKG/lib
+    ln -sf ../usr/bin/cpp $PKG/lib/cpp
+    ln -sf gcc $PKG/usr/bin/cc
+    ln -sf g++ $PKG/usr/bin/c++
 
-	mkdir -v build
-	cd build
+    mv $PKG/usr/lib/gcc/*/$surum/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$surum/include/
+    rm -r $PKG/usr/share/{info,$isim-$surum} 
+    rm -r $PKG/usr/bin/*-linux-gnu-*
+    rm -r $PKG/usr/lib/gcc/*/$version/{install-tools,include-fixed} 
 
-	../configure         \
-    --target=$ONSISTEM_TARGET   \
-    --prefix=/tools            \
-    --with-glibc-version=2.11  \
-    --with-sysroot=$ONSISTEM_CHROOT  \
-    --with-newlib              \
-    --without-headers          \
-    --with-local-prefix=/tools \
-    --with-native-system-header-dir=/tools/include \
-    --disable-nls              \
-    --disable-shared           \
-    --disable-multilib         \
-    --disable-decimal-float    \
-    --disable-threads          \
-    --disable-libatomic        \
-    --disable-libgomp          \
-    --disable-libmpx           \
-    --disable-libquadmath      \
-    --disable-libssp           \
-    --disable-libvtv           \
-    --disable-libstdcxx        \
-    --enable-languages=c,c++
+    for D in lib{,32}; do
+        install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/${D}
+        mv $PKG/usr/${D}/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/${D}
+    done
 
-	make
+    sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
+				
