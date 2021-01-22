@@ -17,6 +17,7 @@ calisma =
 [derle]
 betik   = export LIBPOSTFIX=/
 betik   = export CXXFLAGS+=' -fPIC'
+betik   = ./autogen.sh NOCONFIG
 tip     = gnu
 	      
 [pakur]
