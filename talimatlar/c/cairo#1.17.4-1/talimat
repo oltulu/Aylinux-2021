@@ -19,7 +19,7 @@ dosya   = xlib-xcb.diff
 [derle]
 betik = patch -p1 -d ../$isim-$surum -i $SRC/fix-library-versioning.diff
 betik = patch -p1 -d ../$isim-$surum -i $SRC/xlib-xcb.diff
-betik = meson setup build ../$isim-$surum --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled
+betik = meson setup build ../$isim-$surum --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled --disable-gl
 betik = meson compile -C build
 
 
