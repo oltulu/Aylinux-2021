@@ -1,0 +1,20 @@
+[paket]
+tanim   = C ++ bağlamalarının ortak yapı dosyaları
+paketci = Cihan_Alkan  
+grup    = sistem 
+url     = https://www.gtkmm.org/
+
+[gerek]
+derleme  = graphviz
+calisma  =  
+
+[kaynak]
+xz       = https://download.gnome.org/sources/$isim/${surum%.*}
+
+[derle]
+betik    = meson setup ../$isim-$surum build --prefix=/usr --buildtype=plain -Db_ndebug=true
+betik    = meson compile -C build 
+	
+
+[pakur]
+betik    = DESTDIR=$PKG meson install -C build
