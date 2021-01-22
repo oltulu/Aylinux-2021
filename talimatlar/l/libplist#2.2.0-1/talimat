@@ -9,19 +9,21 @@ derleme  = python cython glib
 calisma  =
 
 [kaynak]
-bz2  = http://www.libimobiledevice.org/downloads
+git  = https://github.com/libimobiledevice/libplist
 
 [sha256]
 1    = 3a7e9694c2d9a85174ba1fa92417cfabaea7f6d19631e544948dc7e17e82f602
 
 [derle]
-betik = sed -i 's,-L$(libdir),,g' cython/Makefile.am
-betik = pip3 install python-config;[ ! -f /usr/bin/python-config ] && ln -s /usr/bin/python3.7-config /usr/bin/python-config
-betik = export PYTHON_CPPFLAGS=" -I/usr/include/python3.7"
-betik = export PYTHON_LDFLAGS=" -L/usr/lib -lpython3.7"
-betik = autoreconf -fi
-tip   = gnu
+betik =  cd $isim
+betik = git cherry-pick -n 42bb64ba96
+betik = NOCONFIGURE=1 ./autogen.sh
+betik = ./configure --prefix=/usr
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik =make
+
 
 [pakur]
-tip   = gnu
+betik =  cd $isim
+betik   = make DESTDIR="$PKG" install
 betik = install -D -m644 cython/plist.pxd "${PKG}"/usr/include/plist/cython/plist.pxd
