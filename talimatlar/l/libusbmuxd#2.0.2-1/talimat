@@ -16,6 +16,7 @@ git  =  https://github.com/libimobiledevice/libusbmuxd
 
 [derle]
 betik = cd $isim
+betik = NOCONFIGURE=1 ./autogen.sh
 tip    = gnu
 
 [pakur]
