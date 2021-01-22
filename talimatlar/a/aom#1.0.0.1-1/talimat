@@ -13,7 +13,7 @@ calisma  =
 dosya = libaom-version.patch
 
 [sha256]
-1  = 9055d3d0b4e28b353d1fcba1412bd1ea7186168cf5674a5325bb6aa01d564a87
+#1  = 9055d3d0b4e28b353d1fcba1412bd1ea7186168cf5674a5325bb6aa01d564a87
 
 [derle]
 dosya  = derle.sh
