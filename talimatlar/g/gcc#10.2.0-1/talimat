@@ -5,10 +5,12 @@ grup 	= onsistem
 url     = http://ftp.gnu.org/gnu/
 
 [kaynak]
-1      = $url/gmp/gmp-6.1.2.tar.xz
-2      = https://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz
-3      = https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+#1      = $url/gmp/gmp-6.1.2.tar.xz
+#2      = https://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz
+#3      = https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
 xz     = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
+dosya = $isim-nocheck-fixincludes.patch
+dosya = $isim-4.7.3-multilib-dirs.patch
 
 [sha256]
 #1 		= 87b565e89a9a684fe4ebeeddb8399dce2599f9c9049854ca8c0dfbdea0e21912
