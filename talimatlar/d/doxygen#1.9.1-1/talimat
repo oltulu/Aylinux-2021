@@ -1,7 +1,7 @@
 [paket]
 tanim   = C ++, C, Java, IDL ve PHP dilleri için bir dokümantasyon sistemi
 paketci = Cihan_Alkan
-grup 	= cinnamon
+grup 	=  
 url     = http://www.doxygen.org/
 
 [gerek]
@@ -21,6 +21,6 @@ betik 	= cmake --build build
  
 	      
 [pakur]
-betik 	= cd SRC
+betik 	= cd $SRC
 betik 	=  DESTDIR=$PKG cmake --install build
 
