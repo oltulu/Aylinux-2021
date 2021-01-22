@@ -12,7 +12,7 @@ calisma  =
 xz       = https://gstreamer.freedesktop.org/src/$isim
 
 [sha256]
-1        = e3f044246783fd685439647373fa13ba14f7ab0b346eadd06437092f8419e94e
+#1        = e3f044246783fd685439647373fa13ba14f7ab0b346eadd06437092f8419e94e
 
 [derle]
 ekconf   = -Dptp-helper-permissions=capabilities -Dpackage-origin=https://www.milislinux.org -Ddbghelp=disabled -Dgobject-cast-checks=disabled -Dglib-asserts=disabled -Dglib-checks=disabled -Dgtk_doc=disabled
