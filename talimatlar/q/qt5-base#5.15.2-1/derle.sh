@@ -1,8 +1,5 @@
 # from archlinux
 patch -p1 -i ../qt5-base-cflags.patch # Use system CFLAGS
-patch -p1 -i ../qtbug-86604.patch # Fix multiscreen issues in Plasma
-patch -p1 -i ../qtbug-86319.patch # Fix SIGTRAP with gdb
-
 
 ./configure -confirm-license -opensource -v \
 -prefix /usr \
