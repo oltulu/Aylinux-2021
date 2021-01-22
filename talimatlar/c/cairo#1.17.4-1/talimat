@@ -9,7 +9,7 @@ derleme	= glib libpng pixman freetype fontconfig libxext libxrender xcb-util
 calisma	= 
 
 [kaynak]
-xz	    = https://cairographics.org/snapshots
+bz2	    = https://gitlab.freedesktop.org/cairo/cairo/-/archive/$surum
 dosya   = fix-library-versioning.diff
 dosya   = xlib-xcb.diff
 
@@ -17,12 +17,10 @@ dosya   = xlib-xcb.diff
 #1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 
 [derle]
-betik = patch -p1 -d ../$isim-$surum -i $SRC/fix-library-versioning.diff
-betik = patch -p1 -d ../$isim-$surum -i $SRC/xlib-xcb.diff
-betik = meson setup build ../$isim-$surum --prefix=/usr --buildtype=plain -D spectre=disabled -D tee=enabled -D tests=disabled --disable-gl
-betik = meson compile -C build
+betik = ./configure --prefix=/usr --disable-static --enable-tee --disable-gl
+betik = sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
 
 
 [pakur]
-betik = DESTDIR=$PKG meson install -C build
-betik = chmod +x $PKG/usr/bin/cairo-trace
+tip = gnu
