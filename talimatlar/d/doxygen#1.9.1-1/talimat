@@ -6,7 +6,7 @@ url     = http://www.doxygen.org/
 
 [gerek]
 derleme = autoconf-archive intltool python xf86-input-wacom
-calisma = cinnamon-desktop colord dbus-glib libcups libgnomekbd libgudev libnotify librsvg libwacom nss polkit pulseaudio upower
+calisma =  
 
 [kaynak]
 1      = http://doxygen.nl/files/$isim-$surum.src.tar.gz
