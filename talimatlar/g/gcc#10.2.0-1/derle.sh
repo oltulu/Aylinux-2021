@@ -1,8 +1,8 @@
-patch -d $isim-$version -p1 -i /sources/$isim-nocheck-fixincludes.patch
-    patch -d $isim-$surum -p1 -i /sources/$isim-4.7.3-multilib-dirs.patch
+patch -d $isim-$surum -p1 -i $SRC/$isim-nocheck-fixincludes.patch
+    patch -d $isim-$surum -p1 -i $SRC/$isim-4.7.3-multilib-dirs.patch
 mkdir build
     cd build
-    ../$name-$version/configure --prefix=/usr \
+    ../$isim-$surum/configure --prefix=/usr \
                                 --libexecdir=/usr/lib \
                                 --enable-languages=c,c++,objc \
                                 --enable-threads=posix \
@@ -35,5 +35,5 @@ mkdir build
         mv $PKG/usr/${D}/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/${D}
     done
 
-    sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
+   # sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
 				
