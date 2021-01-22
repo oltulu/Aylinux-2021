@@ -1,6 +1,8 @@
-./configure \
-		--prefix=/usr \
-		--mandir=/usr/share/man \
+./configure --prefix=/usr \
+		--disable-rpath \
+		--disable-rpath-install \
 		--bundled-libraries=NONE \
-		--without-ldb-lmdb
+		--builtin-libraries=replace \
+                --with-modulesdir=/usr/lib/ldb/modules \
+                --with-privatelibdir=/usr/lib/ldb
     make
