@@ -9,7 +9,7 @@ derleme = python xmlto desktop-file-utils glib cups eudev libusb libnotify gtk3
 calisma = python-pycups python-pysmbc python-gobject libsecret cups-pk-helper python-dbus python-requests
 
 [kaynak]
-gz      = ${url}/releases/download/${surum}
+gz      =https://github.com/OpenPrinting/system-config-printer/releases/download/v${surum}
 dosya	= 0001-Fix-constructing-the-auth-dialog.patch
 dosya	= printer-docbook.patch
 
