@@ -8,7 +8,7 @@ url     = https://www.rodsbooks.com/gdisk
 gz      = https://downloads.sourceforge.net/project/$isim/$isim/$surum
 
 [sha256]
-1       = b663391a6876f19a3cd901d862423a16e2b5ceaa2f4a3b9bb681e64b9c7ba78d
+#1       = b663391a6876f19a3cd901d862423a16e2b5ceaa2f4a3b9bb681e64b9c7ba78d
 
 [derle]
 betik   = make
