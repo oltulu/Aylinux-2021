@@ -12,11 +12,21 @@ calisma	=
 bz2	    = https://gitlab.freedesktop.org/cairo/cairo/-/archive/$surum
 dosya   = fix-library-versioning.diff
 dosya   = xlib-xcb.diff
+dosya =  gtk-doc.m4
+dosya = gtk-doc.make
+dosya = gtkdocize
+
 
 [sha256]
 #1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 
 [derle]
+betik = cp $SRC/gtkdocize /usr/bin/
+betik = mkdir /usr/share/gtk-doc
+betik = mkdir /usr/share/gtk-doc/data
+betik = cp $SRC/gtk-doc.make /usr/share/gtk-doc/data/
+betik = mkdir /usr/share/aclocal
+betik = cp $SRC/gtk-doc.m4 /usr/share/aclocal/
 betik = sed -i 's/have_png/use_png/g' configure.ac
 betik = NOCONFIGURE=1 ./autogen.sh
 betik = ./configure --prefix=/usr --disable-static --enable-tee --disable-gl
