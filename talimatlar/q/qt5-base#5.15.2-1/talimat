@@ -12,8 +12,8 @@ calisma =
 [kaynak]
 1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qtbase-everywhere-src-$surum.tar.xz
 dosya   = qt5-base-cflags.patch
-dosya   = qtbug-86604.patch
-dosya   = qtbug-86319.patch
+#dosya   = qtbug-86604.patch
+3dosya   = qtbug-86319.patch
 
 [sha256]
 #1 		= 33960404d579675b7210de103ed06a72613bfc4305443e278e2d32a3eb1f3d8c
