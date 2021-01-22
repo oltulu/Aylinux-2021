@@ -15,9 +15,9 @@ xz      = ${GNOME_SITE}/$isim/${surum%.*}
 #1 = ca6da067ff93a6445780c0b4b226eb84f484ab104b8391fb744a45cbc7edbf56
 
 [derle]
-ekconf  = --enable-maintainer-mode
-tip 	= gnu
+betik  = milis-meson ../$isim-$surum build -D maintainer-mode=true
+betik  = meson compile -C build
 	      
 [pakur]
-tip 	= gnu
+tip 	= meson
 
