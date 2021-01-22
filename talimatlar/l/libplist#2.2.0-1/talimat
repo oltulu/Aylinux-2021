@@ -12,7 +12,7 @@ calisma  =
 git  = https://github.com/libimobiledevice/libplist
 
 [sha256]
-1    = 3a7e9694c2d9a85174ba1fa92417cfabaea7f6d19631e544948dc7e17e82f602
+#1    = 3a7e9694c2d9a85174ba1fa92417cfabaea7f6d19631e544948dc7e17e82f602
 
 [derle]
 betik =  cd $isim
