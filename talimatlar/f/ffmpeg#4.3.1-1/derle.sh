@@ -5,7 +5,6 @@
 --disable-stripping \
 --enable-fontconfig \
 --enable-gmp \
---enable-gnutls \
 --enable-gpl \
 --enable-ladspa \
 --enable-libaom \
