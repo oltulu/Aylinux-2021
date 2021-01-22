@@ -1,6 +1,6 @@
 [paket]
 tanim   = USB Multiplex Daemon
-paketci = milisarge  
+paketci = Cihan_Alkan  
 grup    = sistem  
 url     = https://marcansoft.com/blog/iphonelinux/usbmuxd/
 
@@ -9,14 +9,16 @@ derleme  = libusb libplist
 calisma  =  
 
 [kaynak]
-bz2  =  http://www.libimobiledevice.org/downloads
+git  =  https://github.com/libimobiledevice/libusbmuxd
 
 [sha256]
-1    = 1aa21391265d2284ac3ccb7cf278126d10d354878589905b35e8102104fec9f2
+#1    = 1aa21391265d2284ac3ccb7cf278126d10d354878589905b35e8102104fec9f2
 
 [derle]
+betik = cd $isim
 tip    = gnu
 
 [pakur]
+betik = cd $isim
 tip    = gnu
 
