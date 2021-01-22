@@ -11,7 +11,7 @@ xz      = http://ftp.gnu.org/gnu/grep
 #1 		= b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514
 
 [derle]
-betik   = ./configure --prefix=/tools;make
+betik   = ./configure --prefix=/usr;make
 	      
 [pakur]
 tip     = gnu
