@@ -9,14 +9,17 @@ derleme  = python cython libplist libusbmuxd gnutls libgcrypt
 calisma  =
 
 [kaynak]
-1  =  https://github.com/libimobiledevice/libimobiledevice/archive/5a85432719fb3d18027d528f87d2a44b76fd3e12.zip::$isim-$surum.zip
+git  =  https://github.com/libimobiledevice/libimobiledevice
 
 [derle]
-betik  =  cd ${isim}-5a85432719fb3d18027d528f87d2a44b76fd3e12
-betik  =  ./autogen.sh
-tip    = gnu
+betik  =  cd ${isim}
+betik  =  git cherry-pick -n eea4f1be91
+betik  =  NOCONFIGURE=1 ./autogen.sh
+betik  =  ./configure --prefix=/usr --disable-openssl
+betik  =  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik  =  make
 
 [pakur]
-betik  =  cd ${isim}-5a85432719fb3d18027d528f87d2a44b76fd3e12
+betik  =  cd ${isim}
 tip    = gnu
 
