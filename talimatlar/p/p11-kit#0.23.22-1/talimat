@@ -9,7 +9,7 @@ derleme = libtasn1
 calisma = 
 
 [kaynak]
-gz      = https://github.com/p11-glue/p11-kit/releases/download/$surum
+xz      = https://github.com/p11-glue/p11-kit/releases/download/$surum
 dosya   = 0001-Build-and-install-libnssckbi-p11-kit.so.patch
 
 [sha512]
