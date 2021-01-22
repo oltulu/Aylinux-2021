@@ -15,9 +15,10 @@ xz       = https://gstreamer.freedesktop.org/src/$isim
 #1        = e3f044246783fd685439647373fa13ba14f7ab0b346eadd06437092f8419e94e
 
 [derle]
-ekconf   = -Dptp-helper-permissions=capabilities -Dpackage-origin=https://www.milislinux.org -Ddbghelp=disabled -Dgobject-cast-checks=disabled -Dglib-asserts=disabled -Dglib-checks=disabled -Dgtk_doc=disabled
-tip      = meson
+betik   = meson setup build ../$isim-$surum --prefix=/usr --libexecdir=/usr/lib -D buildtype=plain -D gtk_doc=disabled -D nls=disabled -D package-name="GStreamer (Bizim Linux)" -D package-origin="https://bizimlinux.org/"
+betik   = meson compile -C build 
+
 
 [pakur]
-tip      = meson
+betik   = DESTDIR=$PKG meson install -C build
 
