@@ -15,4 +15,4 @@ betik  = milis-meson libsigcplusplus build -D maintainer-mode=true
 betik  = meson compile -C build
 	      
 [pakur]
-betik  =  	= DESTDIR="$PKG" meson install -C build
+betik  =  DESTDIR="$PKG" meson install -C build
