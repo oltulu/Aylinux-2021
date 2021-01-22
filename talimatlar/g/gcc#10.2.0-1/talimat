@@ -23,5 +23,5 @@ dosya 	= derle.sh
 	      
 [pakur]
 betik   = cd build
-tip     = gnu
-betik   = mv $PKG/tools/lib64/*  $PKG/tools/lib/ ; rm -rf $PKG/tools/{lib64,share}
+#tip     = gnu
+betik   = sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
