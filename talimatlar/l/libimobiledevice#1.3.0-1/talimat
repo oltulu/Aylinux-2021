@@ -16,7 +16,7 @@ betik  =  cd ${isim}
 betik  =  git cherry-pick -n eea4f1be91
 betik  =  NOCONFIGURE=1 ./autogen.sh
 betik  =  ./configure --prefix=/usr --disable-openssl
-betik  =  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+#betik  =  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik  =  make
 
 [pakur]
