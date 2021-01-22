@@ -13,7 +13,7 @@ git	    = https://gitlab.freedesktop.org/cairo/cairo
 dosya   = 0001-ft-Use-FT_Done_MM_Var-instead-of-free-when-available.patch
 
 [sha256]
-1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
+#1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
 
 [derle]
 betik = cd cairo
