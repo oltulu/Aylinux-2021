@@ -15,6 +15,9 @@ bz2     = https://gnupg.org/ftp/gcrypt/$isim
 #1 		= b831fc337eb14806897e224b0d1e78d1f8e9db91dffa818a015a4aa104144e2d971e5a855904907ee2bb9990a9d526de32d6787e1cae98e28a65c3258b2b1ea1
 
 [derle]
+betik = sed -i "s:t-secmem::" tests/Makefile.am
+betik = sed -i "s:t-sexp::" tests/Makefile.am
+betik = autoreconf -vfi
 tip 	= gnu
 	      
 [pakur]
