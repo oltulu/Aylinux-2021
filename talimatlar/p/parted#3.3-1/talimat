@@ -21,7 +21,7 @@ dosya 	= 0002-include.patch
 [derle]
 yama    = 2
 yama    = 3
-ekconf  = --disable-static --disable-rpath
+ekconf  = --disable-static --disable-rpath --disable-device-mapper
 tip     = gnu
 
 [pakur]
