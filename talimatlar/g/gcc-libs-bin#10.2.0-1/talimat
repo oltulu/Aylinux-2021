@@ -1,0 +1,24 @@
+[paket]
+tanim   = GCC tarafından gönderilen çalışma zamanı kitaplıkları
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.aylinux.kripto.com.tr
+
+[gerek]
+derleme = 
+calisma = glibc
+
+[kaynak]
+1      = http://ftp.riken.jp/Linux/manjaro/stable/core/x86_64/gcc-libs-10.2.0-4-x86_64.pkg.tar.zst
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = mv /sources/gcc-libs-10.2.0-4-x86_64.pkg.tar.zst $SRC/gcc-libs-10.2.0.tar.xz
+betik = tar -xf gcc-libs-10.2.0.tar.xz -C $SRC
+	      
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+#betik 	= cp -r $SRC/etc $PKG/
+#betik 	= cp -r $SRC/var $PKG/
