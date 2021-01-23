@@ -12,7 +12,7 @@ calisma =
 xz      = $url/download
 
 [sha512]
-1 		= dbd441d0d7d5ba4fb352d64d150d163d4cdcf8340059457c291dc1fc69d1606ff6589732cb41a7fcfe106af0192977b243d7d68c4d95b90ece7abb620df360e3
+#1 		= dbd441d0d7d5ba4fb352d64d150d163d4cdcf8340059457c291dc1fc69d1606ff6589732cb41a7fcfe106af0192977b243d7d68c4d95b90ece7abb620df360e3
 
 [derle]
 ekconf  = -Denable-wayland=true -Denable-docs=false -Denable-x11=true
