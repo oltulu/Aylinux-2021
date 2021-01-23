@@ -18,7 +18,7 @@ calisma =
 [derle]
 betik   = cd ntfs-3g_ntfsprogs-$surum
 betik   = sed 's|$(DESTDIR)/sbin|$(DESTDIR)/usr/bin|' -i {ntfsprogs,src}/Makefile.in
-yama    = 2
+#yama    = 2
 ekconf  = --disable-ldconfig --disable-static --with-fuse=external --enable-xattr-mappings --enable-posix-acls --enable-extras
 tip     = gnu
 
