@@ -1,0 +1,21 @@
+[paket]
+tanim   = X11 için ölçeklenebilir yazı tipi dizin işlemi
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto xorg-util-macros freetype libfontenc
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 4d243160e1f7f8dfa6a8f53349c1a42a55fc99426455ebdef58352c5e951fce8b4f1fbd1061a76c9a148095b002eac372db1ae5e2647d2ccb4886635b317b18c
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
