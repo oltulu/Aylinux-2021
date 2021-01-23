@@ -1,0 +1,21 @@
+[paket]
+tanim   = X sunucudaki pencereleri yazdırmak için komut satırı uygulaması
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxcb
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= d3ab103a0a311e08d1eabc4346750c21eb7d2fbcdc27cab0989a2624b9cd488911614fcf9832603353450114b1231a8f8262cab16e090a0d458d83ec7b6b959b
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
