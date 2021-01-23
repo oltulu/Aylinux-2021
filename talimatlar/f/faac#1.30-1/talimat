@@ -16,6 +16,7 @@ calisma    =
 
 [derle]
 betik = cd faac-1_30
+betik = ./bootstrap
 tip        = gnu
 
 [pakur]
