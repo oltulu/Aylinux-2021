@@ -15,7 +15,9 @@ calisma    =
 #1 = d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
 
 [derle]
+betik = faac-1_30
 tip        = gnu
 
 [pakur]
+betik = faac-1_30
 tip        = gnu
