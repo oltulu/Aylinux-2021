@@ -1,0 +1,22 @@
+[paket]
+tanim   = X için kullanıcı tercihleri uygulaması
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxmu
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= f24714c9a82081a09d3054bbad98553de9366992f22eaf3e2bcadbb58fad1d3dad2547fef6fa9898d8a9df064573c29df9d82a5c801fa92248604c95f65dc83d
+
+[derle]
+ekconf  = --without-fontcache --without-xf86misc
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
