@@ -14,7 +14,7 @@ dosya      = sane-network.patch
 dosya      = sane.xinetd
 
 [sha256]
-1          = 31260f3f72d82ac1661c62c5a4468410b89fb2b4a811dabbfcc0350c1346de03
+#1          = 31260f3f72d82ac1661c62c5a4468410b89fb2b4a811dabbfcc0350c1346de03
 
 [derle]
 betik      = cd sane-backends-$surum
