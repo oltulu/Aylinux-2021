@@ -20,4 +20,4 @@ tip     = ninja
 
 [pakur]
 tip     = ninja
-betik   = rm -r $PKG/usr/{lib,share}/installed-tests
+#betik   = rm -r $PKG/usr/{lib,share}/installed-tests
