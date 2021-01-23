@@ -15,4 +15,4 @@ dosya 	= derle.sh
 	      
 [pakur]
 tip     = gnu
-betik   = rm -rf $PKG/tools/share/info
+betik   = rm -rf $PKG/usr/share/info
