@@ -1,0 +1,21 @@
+[paket]
+tanim   = X pencere sistemi resim ters çıktı aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 27a0ce7481978ae6cd94b0d94374af72185e270d68f2496620e148bb00945427c4827138d9efc48745e6382e3da3390ed0cdff7dbd02dcf9706e8ecccae97184
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
