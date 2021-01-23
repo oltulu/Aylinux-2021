@@ -19,7 +19,7 @@ dosya   = polkit-1.pam
 [derle]
 betik   = autoreconf -fi
 betik   = sed -e 's,/sys/fs/cgroup/systemd/,/sys/fs/cgroup,g' -i configure
-ekconf  = --disable-systemd --disable-libsystemd-login --disable-libelogind --disable-static --with-authfw=pam  --with-os-type=milis --with-mozjs=mozjs-60.0
+ekconf  = --disable-systemd --disable-libsystemd-login --disable-libelogind ---disable-man-pages -disable-static --with-authfw=pam  --with-os-type=milis --with-mozjs=mozjs-78.0
 tip     = gnu
 	      
 [pakur]
