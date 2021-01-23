@@ -9,7 +9,7 @@ derleme    = libmp4v2
 calisma    =
 
 [kaynak]
-1        = https://github.com/knik0/${pkgname}/archive/${surum/./_}.tar.gz::$isim-$surum.tar.gz
+1        = https://github.com/knik0/${isim}/archive/${surum/./_}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 #1 = d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
