@@ -1,0 +1,21 @@
+[paket]
+tanim   = X oturumlarını sistem utmp / utmpx veritabanlarına kaydedin
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros xorg-proto
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 7e3c2bdcadb7133aace463b58d8c6108d315ec95d2a42509073eeddc7f02644092a4b3168bd3b426c041736a016291092e0bf8368acd620dbeff96d53d12f98c
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
