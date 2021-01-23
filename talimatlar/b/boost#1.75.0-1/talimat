@@ -14,7 +14,7 @@ calisma    =
 #1          = 96b34f7468f26a141f6020efb813f1a2f3dfb9797ecf76a7d7cbd843cc95f5bd
 
 [derle]
-betik      = cd ${isim}_${surum//./_}h
+betik      = cd $SRC
 
 [pakur]
 betik      = cd ${isim}_${surum//./_}
