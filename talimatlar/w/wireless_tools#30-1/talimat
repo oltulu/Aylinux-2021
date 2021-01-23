@@ -1,0 +1,23 @@
+[paket]
+tanim 	= Kablosuz alanı yönlendirmeye yarayan araç
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://hewlettpackard.github.io/wireless-tools/Tools.html
+
+[kaynak]
+1     	= www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/wireless_tools.30.pre9.tar.gz
+
+[sha256]
+1       = abd9c5c98abf1fdd11892ac2f8a56737544fe101e1be27c6241a564948f34c63
+
+[derle]
+betik 	= cd "$SRC/wireless_tools.30"
+betik 	= sed '/BUILD_STATIC =/d' -i Makefile
+betik  	= make CFLAGS="${CFLAGS} -I." LDFLAGS="${LDFLAGS}"
+	      
+[pakur]
+betik  	= cd "$SRC/wireless_tools.30"
+betik 	= make INSTALL_DIR="$PKG/usr/bin" INSTALL_LIB="$PKG/usr/lib" INSTALL_INC="$PKG/usr/include" INSTALL_MAN="$PKG/usr/share/man" install
+betik   = rm -f $PKG/usr/lib/libiw.a
+		
+
