@@ -16,7 +16,7 @@ gz      = ftp://xmlsoft.org/libxml2
 
 [derle]
 betik 	= NOCONFIGURE=1 ./autogen.sh
-ekconf  = --disable-static --with-threads -without-docbook -with-history --without-python
+ekconf  = --disable-static --with-threads -without-docbook -with-history
 tip 	= gnu
 	      
 [pakur]
