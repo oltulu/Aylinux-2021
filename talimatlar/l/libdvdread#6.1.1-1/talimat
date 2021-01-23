@@ -12,7 +12,7 @@ calisma  =
 bz2  = https://get.videolan.org/libdvdread/${surum}
 
 [sha256]
-1    = 28ce4f0063883ca4d37dfd40a2f6685503d679bca7d88d58e04ee8112382d5bd
+#1    = 28ce4f0063883ca4d37dfd40a2f6685503d679bca7d88d58e04ee8112382d5bd
 
 [derle]
 betik  = autoreconf -fi
