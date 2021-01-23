@@ -1,0 +1,21 @@
+[paket]
+tanim   = X.Org yetkilendirme ayarları programı
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxmu
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha256]
+1 		= 5afe42ce3cdf4f60520d1658d2b17face45c74050f39af45dccdc95e73fafc4d
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
