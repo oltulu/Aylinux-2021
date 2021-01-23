@@ -12,7 +12,7 @@ calisma = libglvnd
 xz      = https://mesa.freedesktop.org/archive
 
 [sha512]
-1       = 5ef28334ecb7effaaf597ea3efe0406af62419e6fa629e835d843161ab8d83515626ec0f0495c4cc66af9e5669398ac96c16ca626e4965a9831e1704c995fb09
+#1       = 5ef28334ecb7effaaf597ea3efe0406af62419e6fa629e835d843161ab8d83515626ec0f0495c4cc66af9e5669398ac96c16ca626e4965a9831e1704c995fb09
 
 [derle]
 dosya   = derle.sh
