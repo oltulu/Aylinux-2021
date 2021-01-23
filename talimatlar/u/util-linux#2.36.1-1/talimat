@@ -15,4 +15,6 @@ dosya   = derle.sh
      
 [pakur]
 tip     = gnu
+betik   = mv /usr/sbin/* /usr/bin/
+betik   = mv rmdir /usr/sbin
 betik   = rm -rf $PKG/usr/share/bash-completion
