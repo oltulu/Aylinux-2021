@@ -9,7 +9,7 @@ derleme  =  cmake
 calisma  =  
 
 [kaynak]
-1      = https://github.com/KhronosGroup/Vulkan-Headers/archive/v${surum}.tar.gz::vulkan-headers-$surum.tar.gz
+1     = https://github.com/KhronosGroup/Vulkan-Headers/archive/v${surum}.tar.gz::vulkan-headers-$surum.tar.gz
 
 [sha256]
 1      = 85e012c3d6a6e8b54203cb214f5b737d9ce032e3a64e9bf5816a5a59ca0f6d6a
