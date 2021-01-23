@@ -1,0 +1,22 @@
+[paket]
+tanim   = X için kaynak veritabanı aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxmu
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 14e1cdfb2152fb28f1f4641b177ab236648d7e967a95b952bf4cfce8d3e1ef085e85385354e3381aaf644462e8888a1847f755ab4016ecb4cb4a715b001dd2ef
+
+[derle]
+ekconf  = --with-cpp=/usr/bin/cpp,/usr/bin/mcpp
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
