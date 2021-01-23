@@ -1,0 +1,23 @@
+[paket]
+tanim   = ATSC A/52 akış çözücü kütüphanesi
+paketci = milisarge  
+grup    = kütüphane  
+url     = http://liba52.sourceforge.net/
+
+[kaynak]
+gz     = http://liba52.sourceforge.net/files
+dosya  = a52dec-0.7.4-build.patch
+dosya  = a52dec-stderr.patch
+
+[derle]
+yama   = 2
+yama   = 3
+betik  = sed -i 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
+betik  = mv configure.in configure.ac
+betik  = ./bootstrap
+betik  = ./configure --prefix=/usr --enable-shared --disable-static && make
+
+[pakur]
+tip    = gnu
+betik  = install -m644 liba52/a52_internal.h "${PKG}/usr/include/a52dec/"
+
