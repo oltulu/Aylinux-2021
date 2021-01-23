@@ -1,0 +1,16 @@
+[paket]
+tanim   = X-Video bilgi yardımcı programı
+paketci = Cihan_Alkan  
+grup    = kütüphane  
+url     = http://xorg.freedesktop.org
+
+[kaynak]
+bz2     = https://www.x.org/releases/individual/app
+
+
+[derle]
+betik  = ./configure --prefix=/usr
+betik  = make
+
+[pakur]
+tip    = gnu
