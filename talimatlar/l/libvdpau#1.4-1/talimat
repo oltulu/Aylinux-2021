@@ -9,10 +9,10 @@ derleme = libxext xorg-proto libx11
 calisma = 
 
 [kaynak]
-bz2     = https://gitlab.freedesktop.org/vdpau/$isim/uploads/14b620084c027d546fa0b3f083b800c6
+bz2     = https://gitlab.freedesktop.org/vdpau/$isim/-/archive/$surum
 
 [sha512]
-1 		= 86aa3f2a39cb73a597bf417da2eeef73ff01160ed9f54dff3725785ff5a289f47040496de44e2f5292d59657d4746e369b3fa307c4f83a32f7cc28e4cd8bce6f
+#1 		= 86aa3f2a39cb73a597bf417da2eeef73ff01160ed9f54dff3725785ff5a289f47040496de44e2f5292d59657d4746e369b3fa307c4f83a32f7cc28e4cd8bce6f
 
 [derle]
 ekconf  = --disable-dependency-tracking --disable-documentation
