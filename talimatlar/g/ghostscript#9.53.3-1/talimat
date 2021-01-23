@@ -19,6 +19,7 @@ calisma =
 dosya   = derle.sh
      
 [pakur]
+betik   = cd ghostpdl-9.53.3
 betik   = make DESTDIR=${PKG} cups_serverroot=${PKG}/etc/cups cups_serverbin=${PKG}/usr/lib/cups install install-so
 betik   = rm -rf ${PKG}/usr/share/man/[^man1]*
 betik   = cd ijs && make DESTDIR=${PKG} install && cd ..
