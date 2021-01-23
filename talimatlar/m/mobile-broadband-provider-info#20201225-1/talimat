@@ -12,7 +12,7 @@ calisma =
 xz      = https://download.gnome.org/sources/$isim/$surum
 
 [sha256]
-1 		= c22d64a565d1975b9eecb6ed2eeaef18634bc6f385c8137d05e845d8fb3cce5b
+#1 		= c22d64a565d1975b9eecb6ed2eeaef18634bc6f385c8137d05e845d8fb3cce5b
 
 [derle]
 betik   = autoreconf -fi
