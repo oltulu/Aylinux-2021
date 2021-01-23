@@ -11,7 +11,7 @@ xz      = $url
 1 		= 4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066
 
 [derle]
-betik 	= ./configure --prefix=/tools;make;make check
+betik 	= ./configure --prefix=/usr;make;make check
 	      
 [pakur]
 betik 	= make prefix=$PKG/tools install
