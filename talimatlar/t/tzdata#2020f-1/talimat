@@ -5,7 +5,7 @@ url     = https://www.iana.org/time-zones
 
 [gerek]
 derleme    = 
-calisma    = wxgtk3
+calisma    = 
 
 [kaynak]
 1          = https://www.iana.org/time-zones/repository/releases/tzcode$surum.tar.gz
