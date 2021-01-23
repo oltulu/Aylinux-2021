@@ -21,4 +21,4 @@ tip     = cmake
 	      
 [pakur]
 betik   = cd ${isim#lib}-${surum}-Source
-tip     = gnu
+tip     = cmake
