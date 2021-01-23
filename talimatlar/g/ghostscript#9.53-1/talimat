@@ -10,10 +10,10 @@ derleme = cups dbus fontconfig jasper jbig2dec lcms2 libxext libxt openjpeg2 lib
 calisma = 
 
 [kaynak]
-xz      = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${surum/./}
+1  = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${surum//./}/ghostpdl-${surum}.tar.gz
 
 [sha256]
-1		= fc0f1fbacd3610c67a9f080487a0e021f14390c38a4b4df9723e2bdf2b90b619
+#1		= fc0f1fbacd3610c67a9f080487a0e021f14390c38a4b4df9723e2bdf2b90b619
 
 [derle]
 dosya   = derle.sh
