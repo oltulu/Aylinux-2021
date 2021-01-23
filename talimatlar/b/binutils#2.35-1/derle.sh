@@ -8,10 +8,10 @@ RANLIB=ranlib \
 sed -i '/^development=/s/true/false/' ../bfd/development.sh
 sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" ../libiberty/configure
 ../configure                   \
---prefix=/tools            	   \
+--prefix=/usr            	   \
 --disable-nls                  \
 --disable-werror               \
---with-lib-path=/tools/lib     \
+--with-lib-path=/usr/lib     \
 --with-sysroot
 
 make 
