@@ -1,0 +1,22 @@
+[paket]
+tanim   = XCB cursor kütüphanesi
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://xcb.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxcb xcb-util-renderutil xcb-util-image
+calisma = 
+
+[kaynak]
+bz2     = $url/dist
+
+[sha256]
+1 	    = 05a10a0706a1a789a078be297b5fb663f66a71fb7f7f1b99658264c35926394f
+
+[derle]
+ekconf  = --disable-static
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu
