@@ -1,3 +1,4 @@
+cd ghostpdl-9.53.3
 # force it to use system libs.
 rm -rf cups/libs freetype jbig2dec jpeg lcms2mt libpng openjpeg tiff zlib
 
