@@ -1,0 +1,21 @@
+[paket]
+tanim   = X11R6 oturum yönetimini desteklemeyen X uygulamalarının X11R6 oturumuna katılmasına izin verir.
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxmu libxt libsm
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 4945c92c0f07c5dba5698889f415e78ce406939f4a36eb977309488c27385ce4ce04235c4e850a90a451fea8d7885ded7c6b18db71335c7731b38aaeefa9fcb7
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
