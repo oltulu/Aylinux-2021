@@ -14,7 +14,13 @@ calisma    =
 #1          = 96b34f7468f26a141f6020efb813f1a2f3dfb9797ecf76a7d7cbd843cc95f5bd
 
 [derle]
-dosya      = derle.sh
+betik      = cd ${isim}_${surum//./_}h
 
 [pakur]
-dosya      = pakur.sh
+betik      = cd ${isim}_${surum//./_}
+betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=gcc --with-python=python3
+
+betik      = ./b2 stage -j8 variant=release threading=multi link=shared,static debug-symbols=off
+
+betik      = ./b2 install threading=multi link=shared
+betik      = ln -svf detail/sha1.hpp $PKG/usr/include/boost/uuid/sha1.hpp
