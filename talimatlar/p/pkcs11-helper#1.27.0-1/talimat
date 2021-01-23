@@ -9,7 +9,7 @@ derleme    = gnutls nss openssl
 calisma    =
 
 [kaynak]
-bz2        = https://github.com/OpenSC/${isim}/releases/download/${isim}-${surum}
+bz2        = https://github.com/OpenSC/${isim}/releases/download/${isim}-${surum%.0}
 
 [sha256]
 1          = 10dd8a1dbcf41ece051fdc3e9642b8c8111fe2c524cb966c0870ef3413c75a77
