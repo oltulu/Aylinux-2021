@@ -1,0 +1,21 @@
+[paket]
+tanim   = X11 Klavye ayarlama uygulaması
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxkbfile
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha256]
+1 		= a9ddb3963f263ba13f0ea105d8c45a531832140530217cc559587bb94f02d3e1
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
