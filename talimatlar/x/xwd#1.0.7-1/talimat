@@ -1,0 +1,21 @@
+[paket]
+tanim   = X pencere sistemi resim çıktısı aracı
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libxt libxkbfile
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha512]
+1 		= 6fdb0a115ae505169bbc7fcc45580daf26bced2e26e0bf9a877636016038931a8386e8edcbe015f4024be508d0461906adef4834cf22a445e3c282f0b8fad17e
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
