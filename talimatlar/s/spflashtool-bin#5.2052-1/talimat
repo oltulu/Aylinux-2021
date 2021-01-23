@@ -1,0 +1,33 @@
+[paket]
+tanim   = SP Flash Tool, MediaTek (MTK) SmartPhone'unuzu flaşlamak için bir uygulamadır.
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = http://spflashtools.com/category/linux
+
+[gerek]
+derleme = 
+calisma = qtwebkit libpng12
+
+[kaynak]
+1      = http://spflashtools.com/wp-content/uploads/SP_Flash_Tool_v${surum}_Linux.zip
+
+[sha256]
+#1 		= 9f31e45e65c0b270c0dae431460c53bc0a254dc98385947e3ab507b7b986a162
+
+[derle]
+dosya = derle.sh
+	      
+[pakur]
+betik 	= rm "${SRC}/SP_Flash_Tool_v${surum}_Linux/flash_tool.sh"
+betik 	= rm -r "${SRC}/SP_Flash_Tool_v${surum}_Linux/bin"
+betik 	= rm -r "${SRC}/SP_Flash_Tool_v${surum}_Linux/lib"
+betik 	= rm -r "${SRC}/SP_Flash_Tool_v${surum}_Linux/plugins"
+betik 	= rm -r "${SRC}/SP_Flash_Tool_v${surum}_Linux/Driver"
+betik 	= install -Dm644 -t "${PKG}/opt/spflashtool/" "${SRC}/SP_Flash_Tool_v${surum}_Linux/"*
+betik 	= chmod 755 "${PKG}/opt/spflashtool/flash_tool"
+betik 	= install -Dm755 "${SRC}/spflashtool" "${PKG}/usr/bin/spflashtool"
+betik 	= install -Dm644 "${SRC}/spflashtool.png" "${PKG}/usr/share/pixmaps/spflashtool.png"
+betik 	= install -Dm644 "${SRC}/spflashtool.desktop" "${PKG}/usr/share/applications/spflashtool.desktop"
+betik 	= install -Dm644 "${SRC}/60-spflashtool.rules" "${PKG}/usr/lib/udev/rules.d/60-spflashtool.rules"
+
+
