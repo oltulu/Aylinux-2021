@@ -1,4 +1,4 @@
-ekconf="--disable-oss-output --disable-oss-wrapper --disable-tcpwrap --with-pulsedsp-location='/usr/lib/pulseaudio'
+ekconf="-prefix=/usr --sysconfdir=/etc --localstatedir=/var \--disable-oss-output --disable-oss-wrapper --disable-tcpwrap --with-pulsedsp-location='/usr/lib/pulseaudio'
  --enable-jack --disable-lirc --disable-hal-compat --disable-gconf --enable-orc
  --with-database=tdb --with-udev-rules-dir=/usr/lib/udev/rules.d --disable-bluez4
  --disable-esound --disable-gtk3 --enable-bluez5 --disable-bluez5-ofono-headset
