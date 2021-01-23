@@ -1,0 +1,22 @@
+[paket]
+tanim   = Randr komut satır arayüzü
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-util-macros libx11 libxrandr
+calisma = 
+
+[kaynak]
+bz2     = $url/releases/individual/app
+
+[sha256]
+1 		= c1cfd4e1d4d708c031d60801e527abc9b6d34b85f2ffa2cadd21f75ff38151cd
+
+[derle]
+tip 	= gnu
+	      
+[pakur]
+tip 	= gnu
+betik   = rm -f $PKG/usr/bin/xkeystone
