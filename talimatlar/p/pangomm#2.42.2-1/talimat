@@ -19,5 +19,5 @@ betik  = milis-meson ../$isim-$surum build -D maintainer-mode=true
 betik  = meson compile -C build
 	      
 [pakur]
-tip 	= meson
+betik  =  DESTDIR="$PKG" meson install -C build
 
