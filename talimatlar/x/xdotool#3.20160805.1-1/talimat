@@ -16,7 +16,7 @@ github  = jordansissel/xdotool
 
 [derle]
 betik   = make WITHOUT_RPATH_FIX=1
-tip 	= gnu
+#tip 	= gnu
 	      
 [pakur]
 betik   = make PREFIX="$PKG/usr" INSTALLMAN="$PKG/usr/share/man" install
