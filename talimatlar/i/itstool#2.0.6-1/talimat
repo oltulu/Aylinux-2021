@@ -16,6 +16,7 @@ git        = https://github.com/itstool/itstool
 
 [derle]
 betik = cd $isim
+betik = autoreconf -fvi
 ekconf     = PYTHON=/usr/bin/python3
 tip        = gnu
 
