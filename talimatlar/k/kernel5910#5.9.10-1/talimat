@@ -1,0 +1,23 @@
+[paket]
+tanim   = Milis Linux Kararlı Kernel sürümü
+paketci = milisarge
+grup 	= temel
+url     = http://www.kernel.org
+
+[gerek]
+derleme = linux-firmware intel-ucode elfutils
+calisma = 
+
+[kaynak]
+1     = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-$surum.tar.xz
+dosya = kernel-$surum-config
+
+[sha256]
+1 = f591b2f2e939ae6bd35cae2dc3cb87f9472e439695df7f23ed0a341a2c66f030
+
+[derle]
+dosya = derle.sh
+     
+[pakur]
+strip = yok
+dosya = pakur.sh
