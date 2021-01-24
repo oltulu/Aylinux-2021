@@ -5,8 +5,8 @@ grup 	= geliştirme
 url     = http://www.cmake.org
 
 [gerek]
-derleme = libuv rhash jsoncpp libuv
-calisma = 
+derleme = libuv rhash jsoncpp 
+calisma = jsoncpp libuv
 
 [kaynak]
 gz      = https://github.com/Kitware/CMake/releases/download/v$surum
