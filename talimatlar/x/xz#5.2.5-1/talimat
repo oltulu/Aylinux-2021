@@ -11,7 +11,7 @@ xz      = http://tukaani.org/xz
 #1 		= 9717ae363760dedf573dad241420c5fea86256b65bc21d2cf71b2b12f0544f4b
 
 [derle]
-betik 	= ./configure --prefix=/tools ;make
+betik 	= ./configure --prefix=/usr ;make
 	      
 [pakur]
 tip 	= gnu
