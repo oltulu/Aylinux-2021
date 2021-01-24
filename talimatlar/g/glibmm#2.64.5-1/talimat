@@ -15,9 +15,11 @@ xz      = ${GNOME_SITE}/$isim/${surum%.*}
 #1 		= a3a1b1c9805479a16c0018acd84b3bfff23a122aee9e3c5013bb81231aeef2bc
 
 [derle]
-ekconf  = --enable-maintainer-mode
-tip 	= gnu
+betik  = cd $SRC
+betik  = milis-meson $isim-$surum build -D maintainer-mode=true
+betik  = meson compile -C build
 	      
 [pakur]
-tip 	= gnu
+betik  = cd $SRC
+betik 	= DESTDIR="$PKG" meson install -C build
 
