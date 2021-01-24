@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-1      = https://github.com/lm-sensors/lm-sensors/archive/V${surum//./-}.tar.gz::$isim-$surum.tar.gz
+1      = https://github.com/lm-sensors/lm-sensors/archive/V${surum//./-}/lm_sensors-$surum.tar.gz
 
 [sha1]
 1 		= SKIP
