@@ -11,7 +11,8 @@ gz      = http://download.savannah.gnu.org/releases/$isim
 1 		= 5ead72b358ec709ed00bbf7a9eaef1654baad937c001c044fe8b74c57f5324e7
 
 [derle]
-dosya 	= derle.sh
+betik 	= ./configure --libdir=/usr/lib --libexecdir=/usr/lib --prefix=/usr --sysconfdir=/etc
+betik 	= make
 	      
 [pakur]
 tip 	= gnu
