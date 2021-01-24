@@ -1,4 +1,4 @@
-./configure --prefix=/tools \
+./configure --prefix=/usr \
 --without-xml2 \
 --without-nettle \
 --disable-static \
