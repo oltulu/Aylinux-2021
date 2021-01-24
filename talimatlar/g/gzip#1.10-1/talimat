@@ -11,7 +11,7 @@ xz      = http://ftp.gnu.org/gnu/gzip
 1 		= 8425ccac99872d544d4310305f915f5ea81e04d0f437ef1a230dc9d1c819d7c0
 
 [derle]
-betik   = ./configure --prefix=/tools;make
+betik   = ./configure --prefix=/usr;make
 	      
 [pakur]
 tip     = gnu
