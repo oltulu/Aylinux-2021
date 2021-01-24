@@ -6,7 +6,7 @@ url     = http://www.xmlsoft.org/
 
 [gerek]
 derleme = libxml2 libgcrypt
-calisma = 
+calisma = libxml2 libgcrypt
 
 [kaynak]
 gz      = http://xmlsoft.org/sources
