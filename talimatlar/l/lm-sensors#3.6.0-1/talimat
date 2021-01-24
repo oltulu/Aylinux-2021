@@ -15,10 +15,9 @@ calisma =
 1 		= SKIP
 
 [derle]
-#betik 	= cd $SRC/lm_sensors-$surum
-betik 	= make install PREFIX=/usr ETCDIR=/usr/etc MANDIR=/usr/share/man DESTDIR=$PKG
+betik  = cd "lm-sensors-${surum//./-}"
+betik  = make PREFIX=/usr
 
-	      
 [pakur]
-betik 	= make PREFIX=/usr DESTDIR=$PKG BUILD_STATIC_LIB=0 MANDIR=/usr/share/man install
-
+betik  = cd "lm-sensors-${surum//./-}"
+betik  = make BUILD_STATIC_LIB=0 PREFIX=/usr SBINDIR=/usr/bin MANDIR=/usr/share/man DESTDIR="${PKG}" install
