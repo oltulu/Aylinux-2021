@@ -1,6 +1,6 @@
 [paket]
 tanim   = POSIX Erişim Kontrol Listelerini Yönetme Komutları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= onsistem
 url     = http://savannah.nongnu.org/projects/acl
 
@@ -11,7 +11,8 @@ gz      = http://mirror.rackdc.com/savannah/acl
 #1 		= 06be9865c6f418d851ff4494e12406568353b891ffe1f596b34693c387af26c7
 
 [derle]
-dosya 	= derle.sh
+betik 	= ./configure --prefix=/usr --bindir=/usr/bin --disable-static --libexecdir=/usr/lib --libdir=/usr/lib 
+betik 	= make
 	      
 [pakur]
 tip 	= gnu
