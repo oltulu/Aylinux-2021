@@ -6,7 +6,7 @@ url 	= https://wireless.kernel.org/en/users/Documentation/iw
 
 [gerek]
 derleme = libnl
-calisma = 
+calisma = libnl
 
 [kaynak]
 xz     	= https://www.kernel.org/pub/software/network/$isim
