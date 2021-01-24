@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://github.com/shdown/luastatus
 
 [gerek]
-derleme = cmake libnl libx11 libxcb xcb-util xcn-util-wm yajl alsa-lib glib
+derleme = cmake libnl libx11 libxcb xcb-util yajl alsa-lib glib
 calisma =
 
 [kaynak]
