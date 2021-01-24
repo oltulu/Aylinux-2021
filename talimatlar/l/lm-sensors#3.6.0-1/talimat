@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-1      = http://ftp.osuosl.org/pub/blfs/conglomeration/lmsensors/lm-sensors-$surum.tar.bz2
+1      = http://ftp.osuosl.org/pub/blfs/conglomeration/lmsensors/lm-sensors-$surum.tar.gz
 
 [sha1]
 1 		= SKIP
