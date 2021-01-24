@@ -9,7 +9,7 @@ derleme = libnftnl libmnl
 calisma = 
 
 [kaynak]
-bz2     = https://www.netfilter.org/projects/iptables/files
+bz2     = ttps://www.netfilter.org/projects/$isim/files
 dosya   = empty.rules
 dosya   = empty-filter.rules
 dosya   = empty-mangle.rules
