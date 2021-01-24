@@ -1,6 +1,6 @@
 [paket]
 tanim   = Metin dosyaları verileriyle oynamaya yarayan uygulama
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= onsistem
 url     = http://www.gnu.org/software/gawk
 
@@ -11,7 +11,8 @@ xz      = http://ftp.gnu.org/gnu/gawk
 #1 		= 50f091ed0eb485ad87dbb620d773a3e2c31a27f75f5e008f7bf065055f024406
 
 [derle]
-betik 	= ./configure --prefix=/tools;make
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib --sysconfdir=/etc --without-libsigsegv
+betik 	= make
 	      
 [pakur]
 tip     = gnu
