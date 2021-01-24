@@ -6,7 +6,7 @@ url     = http://www.aylinux.kripto.com.tr
 
 [gerek]
 derleme = 
-calisma = glibc
+calisma = 
 
 [kaynak]
 1      = http://ftp.riken.jp/Linux/manjaro/stable/core/x86_64/gcc-libs-10.2.0-4-x86_64.pkg.tar.zst
