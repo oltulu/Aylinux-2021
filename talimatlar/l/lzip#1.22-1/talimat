@@ -2,7 +2,7 @@
 tanim   = Lzip kayıpsız sıkıştırma algoritmaya sahip uygulama
 paketci = milisarge
 grup 	= onsistem
-url     = http://download.savannah.gnu.org/releases/lzip/lzip
+url     = http://download.savannah.gnu.org/releases/lzip
 
 [kaynak]
 gz      = $url
