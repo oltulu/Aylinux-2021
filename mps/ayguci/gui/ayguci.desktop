@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Ayguci
+Name[tr]=Ayguci
+Comment=Ayguci System Manager Frontend
+Comment[tr]= Ayguci Sistem Bilgi ve Yönetim Uygulama Arayüzü
+Exec=/usr/milis/ayguci/gui/ayguci-pkexec
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=/usr/milis/ayguci/gui/icons/ayguci.svg
+Keywords=ayguci;system
+Keywords[tr]=ayguci;sistem
+Categories=System;Utility
