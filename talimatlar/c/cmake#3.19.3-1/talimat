@@ -6,7 +6,7 @@ url     = http://www.cmake.org
 
 [gerek]
 derleme = libuv rhash jsoncpp 
-calisma = jsoncpp libuv
+calisma = jsoncpp libuv rhash
 
 [kaynak]
 gz      = https://github.com/Kitware/CMake/releases/download/v$surum
