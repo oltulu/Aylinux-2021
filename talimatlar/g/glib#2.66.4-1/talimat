@@ -5,7 +5,7 @@ grup	= kütüphane
 url		= https://wiki.gnome.org/Projects/GLib
 
 [gerek]
-derleme	= meson pcre
+derleme	= meson pcre ninja
 calisma	= 
 
 [kaynak]
