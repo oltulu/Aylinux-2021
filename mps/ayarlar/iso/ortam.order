@@ -86,3 +86,4 @@ luafilesystem
 luasocket
 nettle
 libtasn1
+libunistring
