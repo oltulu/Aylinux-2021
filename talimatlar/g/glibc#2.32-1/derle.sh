@@ -7,6 +7,7 @@ cd build
 		--enable-kernel=4.9 \
 		--enable-add-ons \
 		--enable-static-nss \
+		--with-headers  \
 		--enable-stack-protector=strong \
 		--disable-profile \
 		--disable-werror \
