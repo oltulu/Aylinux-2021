@@ -14,4 +14,4 @@ gz      = https://www.openssl.org/source
 dosya 	= derle.sh
 	      
 [pakur]
-betik 	= make DESTDIR=${PKG} MANDIR=/tools/share/man MANSUFFIX=ssl install
+betik 	= make DESTDIR=${PKG} MANDIR=/usr/share/man MANSUFFIX=ssl install
