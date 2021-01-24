@@ -6,8 +6,8 @@ cd build
 		--with-headers=$PKG/usr/include \
 		--enable-kernel=4.9 \
 		--enable-add-ons \
+		--with-headers=/usr/include  \
 		--enable-static-nss \
-		--with-headers  \
 		--enable-stack-protector=strong \
 		--disable-profile \
 		--disable-werror \
