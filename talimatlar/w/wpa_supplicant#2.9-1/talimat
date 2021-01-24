@@ -6,7 +6,7 @@ url     = http://hostap.epitest.fi/wpa_supplicant
 
 [gerek]
 derleme = libnl dbus
-calisma = 
+calisma = dbus libnl
 
 [kaynak]
 gz      = https://w1.fi/releases
