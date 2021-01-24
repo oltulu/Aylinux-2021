@@ -9,14 +9,14 @@ derleme =
 calisma = 
 
 [kaynak]
-1      = http://ftp.osuosl.org/pub/blfs/conglomeration/lmsensors/lm-sensors-3-6-0.tar.gz
+1      = https://github.com/lm-sensors/lm-sensors/archive/V${_surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha1]
 1 		= SKIP
 
 [derle]
 #betik 	= cd $SRC/lm_sensors-$surum
-betik 	= make PREFIX=/usr DESTDIR=$PKG BUILD_STATIC_LIB=0 MANDIR=/usr/share/man
+betik 	= make install PREFIX=/usr ETCDIR=/usr/etc MANDIR=/usr/share/man DESTDIR=$PKG
 
 	      
 [pakur]
