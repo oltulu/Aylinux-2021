@@ -11,7 +11,7 @@ bz2     = http://ftp.gnu.org/gnu/tar
 #1 		= e4bb9e08e12e7fa9f11fef544efc85e59ba34538593d9ad38148c7ca2bfbb566
 
 [derle]
-betik   = FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/tools ; make 
+betik   = FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/usr ; make 
 
 [pakur]
 tip     = gnu
