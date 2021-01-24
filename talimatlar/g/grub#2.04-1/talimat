@@ -6,7 +6,7 @@ url     = http://www.gnu.org/software/grub
 
 [gerek]
 derleme = freetype python fuse2 font-unifont-bdf
-calisma = os-prober
+calisma = os-prober fuse2 freetype
 
 [kaynak]
 xz      = http://ftp.gnu.org/gnu/grub
