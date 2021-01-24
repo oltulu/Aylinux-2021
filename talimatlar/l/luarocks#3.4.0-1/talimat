@@ -12,7 +12,7 @@ calisma  = lua luasocket luasec unzip
 gz  = https://luarocks.org/releases
 
 [sha256]
-1   = 66c1848a25924917ddc1901e865add8f19f2585360c44a001a03a8c234d3e796
+#1   = 66c1848a25924917ddc1901e865add8f19f2585360c44a001a03a8c234d3e796
 
 [derle]
 betik  =  ./configure --prefix=/usr
