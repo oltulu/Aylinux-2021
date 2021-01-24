@@ -14,4 +14,4 @@ xz      = $url
 betik 	= ./configure --prefix=/usr;make;make check
 	      
 [pakur]
-betik 	= make prefix=$PKG/tools install
+betik 	= make prefix=$PKG/usr install
