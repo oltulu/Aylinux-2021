@@ -15,7 +15,7 @@ calisma    = xdg-utils desktop-file-utils unzip
 #1          = 335bed86e10a1428d54196edf5c828e79ceed05049e83896114aa46f0a950a2f
 
 [derle]
-betik     = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$isim --mandir=/usr/share/man --disable-doc
+betik     = ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/$isim --mandir=/usr/share/man --enable-gtk3 --disable-doc
 betik        = make
 
 [pakur]
