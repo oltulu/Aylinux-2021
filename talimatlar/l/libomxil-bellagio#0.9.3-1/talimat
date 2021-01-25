@@ -15,6 +15,7 @@ dosya  = libomx-fedora-fixes.patch
 yama   = 2
 betik  = sed -e 's/-Werror//' -i configure.ac
 betik  = autoreconf -fiv
+betik  = CFLAGS+=' -fcommon'
 tip    = gnu
 
 [pakur]
