@@ -12,7 +12,7 @@ url     = http://www.tcl.tk/
 
 [derle]
 betik   = cd tcl$surum/unix
-betik   = ./configure --prefix=/tools ; make
+betik   = ./configure --prefix=/usr ; make
       
 [pakur]
 dosya 	= pakur.sh
