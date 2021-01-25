@@ -7,7 +7,7 @@ arsiv   = gtk+-$surum
 
 [gerek]
 derleme = sassc meson gobject-introspection glib libxcomposite libxinerama libxdamage libxrandr pango shared-mime-info at-spi2-atk mesa wayland wayland-protocols libxkbcommon fribidi cups gdk-pixbuf libepoxy
-calisma = shared-mime-info wayland-protocols mesa
+calisma = shared-mime-info wayland-protocols mesa at-spi2-atk atk 
 
 [kaynak]
 1       = http://ftp.acc.umu.se/pub/gnome/sources/gtk+/3.24/gtk+-$surum.tar.xz
