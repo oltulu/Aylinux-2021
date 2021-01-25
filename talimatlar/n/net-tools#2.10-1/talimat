@@ -17,6 +17,8 @@ betik   = yes "" | make
 
 [pakur]
 betik   = make DESTDIR="${PKG}" install
+betik   = mv $PKG/sbin $PKG/usr/bin 
+betik   = mv $PKG/bin/* $PKG/usr/bin/
 betik   = rm "${PKG}"/usr/bin/{nis,yp}domainname
   # hostname inetutils ile kuruluyor zaten
 betik   = rm "${PKG}"/usr/bin/{hostname,dnsdomainname,domainname}
