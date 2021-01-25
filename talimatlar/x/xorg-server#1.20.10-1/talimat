@@ -1,0 +1,25 @@
+[paket]
+tanim   = X Pencere sisteminin temel sunucusu
+paketci = milisarge
+grup 	= sistem
+url     = http://xorg.freedesktop.org
+
+[gerek]
+derleme = xorg-proto pixman libx11 mesa xtrans libxkbfile libxfont2 libpciaccess libxv libxmu libxrender libxi libxaw libdmx libxtst libxres xkbcomp xorg-util-macros font-util libepoxy xcb-util xcb-util-image xcb-util-renderutil xcb-util-wm xcb-util-keysyms libxshmfence libunwind wayland-protocols libglvnd
+calisma = xauth
+
+[kaynak]
+bz2     = https://ftp.x.org/pub/individual/xserver
+
+[sha512]
+#1 		= 625f0626b122cf95600abe382c3217348999357a0e2d2443092f1b67cff1c98d7ef09303884ceaeac181e0555dc56b0d4d44bda45cc464dac2d9a50c5b32d631
+
+[derle]
+ekconf  = --with-fontrootdir=/usr/share/fonts/X11 --with-xkb-output=/var/lib/xkb --enable-dri --with-sha1=libcrypto --disable-systemd-logind --enable-glamor --enable-install-setuid --enable-suid-wrapper --with-log-dir=/var/log
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
+betik   = install -m 755 -d $PKG/etc/X11/xorg.conf.d && mkdir -p $PKG/etc/sysconfig
+betik   = install -m 755 -d $PKG/usr/share/xsessions
+
