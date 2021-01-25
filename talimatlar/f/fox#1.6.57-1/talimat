@@ -6,7 +6,7 @@ url	    = http://www.fox-toolkit.org
 
 [gerek]
 derleme	= libxcursor libxft libxrandr libxi libpng tiff glu mesa
-calisma	= 
+calisma	= tiff glu
 
 [kaynak]
 gz	    = $url/ftp
