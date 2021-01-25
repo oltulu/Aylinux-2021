@@ -6,7 +6,7 @@ url     = http://www.fftw.org/
 
 [gerek]
 derleme = libdatrie
-calisma = 
+calisma = libdatrie
 
 [kaynak]
 xz      = https://linux.thai.net/pub/thailinux/software/${isim}
