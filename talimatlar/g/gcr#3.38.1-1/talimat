@@ -16,8 +16,12 @@ dosya   = 10-gcr.conf
 #1       = aaf9bed017a2263c6145c89a1a84178f9f40f238426463e4ae486694ef5f6601
 
 [derle]
-ekconf  = -Dgtk_doc=false
-tip      = meson
+betik = cd $SRC
+betik  = meson setup build $isim-$surum --prefix=/usr --libexecdir=/usr/lib --buildtype=plain -D gtk_doc=false
+betik      = meson compile -C build 
+	
+
 [pakur]
-tip     = meson
+betik = cd $SRC
+betik     = DESTDIR=$PKG meson install -C build
 betik   = install -Dt "$PKG/etc/security/limits.d" -m644 $SRC/10-gcr.conf
