@@ -20,4 +20,5 @@ tip    = gnu
 
 [pakur]
 tip    = gnu
+betik = rm -r $PKG/tmp
 
