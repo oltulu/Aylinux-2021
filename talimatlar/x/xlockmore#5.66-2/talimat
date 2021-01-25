@@ -6,7 +6,7 @@ url     = http://sillycycle.com/xlockmore.html
 
 [gerek]
 derleme  = freetype libxt libxext libxinerama
-calisma  =
+calisma  = glu
 
 [kaynak]
 xz       = http://sillycycle.com/xlock
