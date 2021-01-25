@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/glib-networking/
 
 [gerek]
 derleme    = pkg-config ca-certificates meson gnutls glib libproxy gsettings-desktop-schemas
-calisma    = gsettings-desktop-schemas
+calisma    = gsettings-desktop-schemas libproxy
 
 [kaynak]
 xz         = ${GNOME_SITE}/${isim}/${surum%.*}
