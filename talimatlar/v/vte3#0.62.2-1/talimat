@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/Terminal/VTE
 
 [gerek]
 derleme = gnutls gobject-introspection vala gtk3
-calisma = fribidi
+calisma = fribidi atk
 
 [kaynak]
 git       = https://gitlab.gnome.org/GNOME/vte
