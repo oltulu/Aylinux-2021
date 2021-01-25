@@ -12,6 +12,7 @@ configure_args=(
  -Dsuspend_resume=consolekit
  -Dpppd=/usr/bin/pppd
  -Dqt=false
+ -Dconcheck=false
  -Dpppd_plugin_dir=/usr/lib/pppd/2.4.7
  -Dresolvconf=/usr/bin/resolvconf
  -Ddhclient=/usr/bin/dhclient
