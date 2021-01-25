@@ -88,3 +88,4 @@ nettle
 libtasn1
 libunistring
 gnutls
+libseccomp
