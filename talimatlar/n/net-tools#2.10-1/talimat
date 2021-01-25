@@ -1,0 +1,23 @@
+[paket]
+tanim   = Yardımcı ağ araçları
+paketci = milisarge
+grup    = ağ
+url     = https://github.com/ecki/net-tools
+
+[kaynak]
+xz     = https://downloads.sourceforge.net/project/net-tools
+
+[sha256]
+#1       = 1d3bbfa96fcf4e5c67663c1866b312ec2cf011c01b158c798371e4e07742e0f8
+
+[derle]
+betik   = export BINDIR='/usr/bin' SBINDIR='/usr/bin'
+betik   = yes "" | make
+
+
+[pakur]
+betik   = make DESTDIR="${PKG}" install
+betik   = rm "${PKG}"/usr/bin/{nis,yp}domainname
+  # hostname inetutils ile kuruluyor zaten
+betik   = rm "${PKG}"/usr/bin/{hostname,dnsdomainname,domainname}
+betik   = rm -r "${PKG}"/usr/share/man/man1
