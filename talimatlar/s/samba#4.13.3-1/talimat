@@ -13,8 +13,8 @@ gz     = http://us1.samba.org/samba/ftp/stable
 dosya  = samba.pam
 
 [sha256]
-1   = 34f30494b6b63700f54be22be636e8a6e0430577166a76a017075e11c02a1ebb
-2   = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
+#1   = 34f30494b6b63700f54be22be636e8a6e0430577166a76a017075e11c02a1ebb
+#2   = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
 
 [derle]
 dosya  = derle.sh
