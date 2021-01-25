@@ -6,7 +6,7 @@ url     = https://github.com/rhinstaller/efibootmgr
 
 [gerek]
 derleme = efivar popt
-calisma =
+calisma = efivar
 
 [kaynak]
 git     = $url
