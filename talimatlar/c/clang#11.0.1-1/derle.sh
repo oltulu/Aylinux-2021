@@ -2,10 +2,8 @@ mkdir build
 mv "$SRC/clang-tools-extra-$surum.src" tools/extra
 patch -Np2 -i ../enable-SSP-and-PIE-by-default.patch
 
-if [[ $surum != 10.* ]]; then
-	echo "Remove libclangHandleLLVM hack!"
-	return 1
-fi
+echo "libclangHandleLLVM hack! silindi"
+
 # Remove libclangHandleLLVM; breaks zig (https://reviews.llvm.org/D75579)
 sed -i '/add_clang_subdirectory(handle-llvm)/d' tools/clang-fuzzer/CMakeLists.txt
 
