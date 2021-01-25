@@ -23,3 +23,4 @@ betik   = rm "${PKG}"/usr/bin/{nis,yp}domainname
   # hostname inetutils ile kuruluyor zaten
 betik   = rm "${PKG}"/usr/bin/{hostname,dnsdomainname,domainname}
 betik   = rm -r "${PKG}"/usr/share/man/man1
+betik   = rmdir $PKG/bin
