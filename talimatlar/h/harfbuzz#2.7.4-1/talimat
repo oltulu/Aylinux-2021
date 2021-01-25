@@ -6,7 +6,7 @@ url     = http://www.freedesktop.org/software/harfbuzz
 
 [gerek]
 derleme = freetype glib gobject-introspection cairo icu graphite2
-calisma = 
+calisma = graphite2
 
 [kaynak]
 git      = https://github.com/harfbuzz/harfbuzz
