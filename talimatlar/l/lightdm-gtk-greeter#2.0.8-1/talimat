@@ -6,7 +6,7 @@ url     = https://launchpad.net/lightdm-gtk-greeter
 
 [gerek]
 derleme    = gtk3 libxklavier lightdm xfce4-dev-tools
-calisma    =
+calisma    = libxklavier
 
 [kaynak]
 git         = https://github.com/Xubuntu/lightdm-gtk-greeter
