@@ -6,7 +6,7 @@ url     = https://dri.freedesktop.org
 
 [gerek]
 derleme = meson libpciaccess
-calisma = 
+calisma = libpciaccess
 
 [kaynak]
 xz      = https://dri.freedesktop.org/${isim}
