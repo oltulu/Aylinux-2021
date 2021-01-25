@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/NetworkManager
 
 [gerek]
 derleme = cmake meson networkmanager vala gcr gtk3 iso-codes mobile-broadband-provider-info gobject-introspection
-calisma = iso-codes
+calisma = iso-codes gcr
 
 [kaynak]
 xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
