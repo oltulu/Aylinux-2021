@@ -6,7 +6,7 @@ url     = https://directory.fsf.org/wiki/Hsetroot
 
 [gerek]
 derleme = imlib2 libxinerama
-calisma = 
+calisma = imlib2
 
 [kaynak]
 gz      = ftp://ftp.netbsd.org/pub/pkgsrc/distfiles
