@@ -6,7 +6,7 @@ url     = https://www.freedesktop.org/wiki/Software/VDPAU
 
 [gerek]
 derleme = libglvnd libvdpau libx11 cmake
-calisma = 
+calisma = libva
 
 [kaynak]
 github  = i-rinat/$isim
