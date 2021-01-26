@@ -6,13 +6,13 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libx11 libxcursor libpng
-calisma = 
+calisma = libpng
 
 [kaynak]
 bz2     = $url/releases/individual/app
 
 [sha512]
-1 		= bd13ad23691d3daa2d5dcdc5902cf62e3dcb97a0289aff362e6cd85866a1d8cafb64f98800a75bfb4cf1f3c76244ca20201847dff594543d136d0abaec7011d2
+#1 		= bd13ad23691d3daa2d5dcdc5902cf62e3dcb97a0289aff362e6cd85866a1d8cafb64f98800a75bfb4cf1f3c76244ca20201847dff594543d136d0abaec7011d2
 
 [derle]
 tip 	= gnu
