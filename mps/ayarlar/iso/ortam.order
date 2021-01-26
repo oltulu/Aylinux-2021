@@ -1,4 +1,5 @@
 glibc-bin
+gcc-libs-bin
 zlib
 file
 readline
