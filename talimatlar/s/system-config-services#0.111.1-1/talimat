@@ -21,4 +21,4 @@ bz2   = https://notabug.org/oltulu/Aylinux/raw/master
 betik   = make
 	      
 [pakur]
-betik   = make DESTDIR="${pkgdir}" install
+betik   = make DESTDIR="${PKG}" install
