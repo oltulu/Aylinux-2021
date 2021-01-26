@@ -6,7 +6,7 @@ url		= https://www.freedesktop.org/wiki/Accessibility/AT-SPI2
 
 [gerek]
 derleme	=  at-spi2-core atk glib libxml2
-calisma	=
+calisma	= at-spi2-core atk glib
 
 [kaynak]
 xz		= http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
