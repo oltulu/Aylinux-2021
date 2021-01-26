@@ -12,7 +12,7 @@ calisma =
 1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtmultimedia-everywhere-src-$surum.tar.xz
 
 [sha256]
-1 		= ed6e75bec9c98559c0fbc91ff746185b1e1845139b2c7a5a843e1e8880697d99
+#1 		= ed6e75bec9c98559c0fbc91ff746185b1e1845139b2c7a5a843e1e8880697d99
 
 [derle]
 betik   = mkdir -p build;cd build;qmake ../qtmultimedia-everywhere-src-$surum && make
