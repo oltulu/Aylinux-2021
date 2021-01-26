@@ -12,7 +12,7 @@ xz    	= https://www.kernel.org/pub/linux/utils/usb/$isim
 
 [gerek]
 derleme = libusb	
-calisma = hwids
+calisma = hwids libusb
 
 [derle]
 betik   = ./autogen.sh --prefix=/usr
