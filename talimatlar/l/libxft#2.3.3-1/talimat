@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libxrender fontconfig
-calisma = 
+calisma = libxrender fontconfig
 
 [kaynak]
 1       = $url/releases/individual/lib/libXft-$surum.tar.bz2
