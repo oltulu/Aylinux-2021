@@ -1,6 +1,6 @@
 [paket]
 tanim   = C de HTTP kütüphane uygulaması
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://wiki.gnome.org/Projects/libsoup
 
