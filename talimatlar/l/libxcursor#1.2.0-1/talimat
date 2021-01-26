@@ -6,14 +6,14 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libxrender libxfixes
-calisma = libx11 xorg-proto
+calisma = libx11 xorg-proto libxrender libxfixes
 
 [kaynak]
 1       = $url/releases/individual/lib/libXcursor-$surum.tar.bz2
 dosya   = index.theme
 
 [sha512]
-1 		= 2b12d0fd17e311ce269dbba58588698885815eb07aa44d48525ed5cd9e5f379bb90138a792a191e2f74888ab10b3ca9a4f507f21de0984ed79748973ab927a03
+#1 = 2b12d0fd17e311ce269dbba58588698885815eb07aa44d48525ed5cd9e5f379bb90138a792a191e2f74888ab10b3ca9a4f507f21de0984ed79748973ab927a03
 
 [derle]
 betik   = cd libXcursor-$surum
