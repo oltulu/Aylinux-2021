@@ -12,12 +12,17 @@ calisma =
 1       = ${GNOME_SITE}/pygobject/${surum%.*}/pygobject-${surum}.tar.xz
 
 [sha256]
-1       = bb9d25a3442ca7511385a7c01b057492095c263784ef31231ffe589d83a96a5a
+#1       = bb9d25a3442ca7511385a7c01b057492095c263784ef31231ffe589d83a96a5a
 
 [derle]
 betik	= cd $SRC/pygobject-$surum
+betik   = find . \( -name '*.py' -o -name '*.py.in' \) -exec sed -i '1s|python$|&2|' {} +
+#betik   = autoreconf -fvi
 betik   = NOCONFIGURE=1 autoreconf -fi
-tip     = gnu
+betik   = CPPFLAGS+=' -Wno-deprecated-declarations'
+betik   = ./configure --prefix=/usr --disable-introspection PYTHON=/usr/bin/python2
+betik   = sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
 
 [pakur]
 betik	= cd $SRC/pygobject-$surum
