@@ -1,5 +1,4 @@
 glibc-bin
-tzdata
 zlib
 file
 readline
