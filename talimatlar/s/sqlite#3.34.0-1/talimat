@@ -12,7 +12,7 @@ calisma = readline zlib
 1       = https://www.sqlite.org/2021/sqlite-autoconf-3340100.tar.gz
 
 [sha256]
-1 		= 905279142d81c23e0a8803e44c926a23abaf47e2b274eda066efae11c23a6597
+#1 		= 905279142d81c23e0a8803e44c926a23abaf47e2b274eda066efae11c23a6597
 
 [derle]
 betik   = cd sqlite-autoconf-3340100
