@@ -6,7 +6,7 @@ url     = https://dl.suckless.org
 
 [gerek]
 derleme = libxinerama libxft freetype
-calisma = 
+calisma = fontconfig
 
 [kaynak]
 gz      = $url/tools
