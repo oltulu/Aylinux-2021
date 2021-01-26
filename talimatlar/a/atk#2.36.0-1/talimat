@@ -6,7 +6,7 @@ url     = https://www.gtk.org
 
 [gerek]
 derleme = gobject-introspection meson glib
-calisma = 
+calisma = gobject-introspection glib
 
 [kaynak]
 1  = https://gitlab.gnome.org/GNOME/atk/-/archive/master/atk-master.tar.gz
