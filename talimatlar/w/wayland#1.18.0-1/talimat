@@ -1,18 +1,18 @@
 [paket]
 tanim   = Wayland görüntüleme sunucusu
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= sistem
 url     = https://wayland.freedesktop.org/
 
 [gerek]
 derleme = meson libxml2
-calisma = 
+calisma = libxml2
 
 [kaynak]
 xz      = $url/releases
 
 [sha256]
-1 		= 4675a79f091020817a98fd0484e7208c8762242266967f55a67776936c2e294d
+#1 		= 4675a79f091020817a98fd0484e7208c8762242266967f55a67776936c2e294d
 
 [derle]
 ekconf  = --buildtype plain -Ddocumentation=false
