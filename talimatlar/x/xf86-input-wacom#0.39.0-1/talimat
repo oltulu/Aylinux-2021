@@ -1,12 +1,12 @@
 [paket]
 tanim   = X.Org wacom tablet sürücüsü
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://github.com/linuxwacom/xf86-input-wacom
 
 [gerek]
 derleme = xorg-proto xorg-server libxi libxinerama libxrandr
-calisma = 
+calisma = libxi libxinerama libxrandr libx11
 
 [kaynak]
 bz2     = $url/releases/download/$isim-$surum
