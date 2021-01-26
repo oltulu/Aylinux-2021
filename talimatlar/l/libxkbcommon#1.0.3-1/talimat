@@ -5,8 +5,8 @@ grup 	= kütüphane
 url     = https://www.xkbcommon.org
 
 [gerek]
-derleme = meson wayland wayland-protocols libxcb xkeyboard-config
-calisma = 
+derleme = meson wayland wayland-protocols libxcb xkeyboard-config libxml2
+calisma = libxml2
 
 [kaynak]
 xz      = $url/download
