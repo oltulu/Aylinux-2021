@@ -18,6 +18,8 @@ bz2   = https://notabug.org/oltulu/Aylinux/raw/master
 
 
 [derle]
+betik   = find . -name '*.py' | xargs sed -i "s|#!/usr/bin/python|#!/usr/bin/python2|"
+betik   = sed -i 's|python|python2|g' py_rules.mk
 betik   = make
 	      
 [pakur]
