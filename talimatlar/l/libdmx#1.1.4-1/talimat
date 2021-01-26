@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = libxext xorg-util-macros
-calisma = 
+calisma = libxext libx11
 
 [kaynak]
 bz2     = $url/releases/individual/lib
