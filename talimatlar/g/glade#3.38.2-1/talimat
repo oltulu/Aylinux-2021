@@ -1,6 +1,6 @@
 [paket]
 tanim   = GTK uygulamaları için Kullanıcı Arayüzü Oluşturucu
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://glade.gnome.org
 
@@ -12,7 +12,7 @@ calisma =
 xz      = http://ftp.gnome.org/pub/GNOME/sources/glade/3.38
 
 [sha256]
-1       = 19b546b527cc46213ccfc8022d49ec57e618fe2caa9aa51db2d2862233ea6f08
+#1       = 19b546b527cc46213ccfc8022d49ec57e618fe2caa9aa51db2d2862233ea6f08
 
 [derle]
 betik   = cd $SRC
