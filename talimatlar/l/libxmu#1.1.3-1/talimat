@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libxt libxext libx11
-calisma = 
+calisma = libxt
 
 [kaynak]
 1       = $url/releases/individual/lib/libXmu-$surum.tar.bz2
