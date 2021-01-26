@@ -6,7 +6,7 @@ url     = https://www.freedesktop.org
 
 [gerek]
 derleme = libx11 xcb-util
-calisma = 
+calisma = xcb-util
 
 [kaynak]
 gz      = https://www.freedesktop.org/software/startup-notification/releases
