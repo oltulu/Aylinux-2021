@@ -1,0 +1,24 @@
+[paket]
+tanim   = Servis ayar uygulaması
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = 
+
+
+[gerek]
+derleme = 
+calisma = gtk2
+
+[kaynak]
+1       = http://download.hanbit.co.kr/centos/7/system-config-services-0.111.1-1.fc20.noarch.rpm
+
+
+[sha256]
+#1 		= 33960404d579675b7210de103ed06a72613bfc4305443e278e2d32a3eb1f3d8c
+
+
+[derle]
+betik   = make
+	      
+[pakur]
+betik   = make DESTDIR="${pkgdir}" install
