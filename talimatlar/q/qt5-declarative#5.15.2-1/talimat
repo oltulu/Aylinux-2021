@@ -12,7 +12,7 @@ calisma =
 1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qtdeclarative-everywhere-src-$surum.tar.xz
 
 [sha256]
-1 		= 7e30f0ccba61f9d71720b91d7f7523c23677f23cd96065cb71df1b0df329d768
+#1 		= 7e30f0ccba61f9d71720b91d7f7523c23677f23cd96065cb71df1b0df329d768
 
 [derle]
 betik   = mkdir -p build;cd build;qmake ../qtdeclarative-everywhere-src-$surum && make
