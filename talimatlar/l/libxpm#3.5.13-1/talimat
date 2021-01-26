@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libx11 xorg-proto libxt libxext 
-calisma = 
+calisma = libxt
 
 [kaynak]
 1       = $url/releases/individual/lib/libXpm-$surum.tar.bz2
