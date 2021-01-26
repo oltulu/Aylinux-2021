@@ -6,7 +6,7 @@ url     = http://www.freedesktop.org/wiki/Software/libinput
 
 [gerek]
 derleme = meson libwacom ninja glib
-calisma = libevdev mtdev libwacom gtk3 
+calisma = libevdev mtdev libwacom gtk3 cairo glib
 
 [kaynak]
 xz      = http://freedesktop.org/software/$isim
