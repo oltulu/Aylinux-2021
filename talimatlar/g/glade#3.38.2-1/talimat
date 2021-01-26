@@ -9,16 +9,18 @@ derleme = itstool gobject-introspection python-gobject webkit2gtk meson
 calisma =
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/GNOME/sources/glade/3.36
+xz      = http://ftp.gnome.org/pub/GNOME/sources/glade/3.38
 
 [sha256]
 1       = 19b546b527cc46213ccfc8022d49ec57e618fe2caa9aa51db2d2862233ea6f08
 
 [derle]
-betik   = ./autogen.sh
-ekconf  = --disable-man-pages --disable-gtk-doc-html
-tip     = gnu
+betik   = cd $SRC
+betik   = meson setup build $isim-$surum -D man=false --prefix=/usr --buildtype=plain
+betik   = meson compile -C build
+
 
 [pakur]
-tip     = gnu
+betik   = cd $SRC
+betik   = DESTDIR=$PKG meson install -C build
 	
