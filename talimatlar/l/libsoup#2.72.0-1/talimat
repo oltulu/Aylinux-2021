@@ -15,7 +15,12 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 #1          = bd2ea602eba642509672812f3c99b77cbec2f3de02ba1cc8cb7206bf7de0ae2a
 
 [derle]
-tip        = meson
+betik = cd $SRC
+betik = meson setup build $isim-$surum --prefix=/usr --buildtype=plain
+betik = sed -i 's|-R/usr/lib||g' build/build.ninja
+betik = meson compile -C build
+	
 
 [pakur]
-tip        = meson
+betik = cd $SRC
+betik = DESTDIR=$PKG meson install -C build
