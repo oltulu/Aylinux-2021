@@ -24,3 +24,4 @@ betik   = make
 	      
 [pakur]
 betik   = make DESTDIR="${PKG}" install
+betik   = rm -r ${PKG}/sbin
