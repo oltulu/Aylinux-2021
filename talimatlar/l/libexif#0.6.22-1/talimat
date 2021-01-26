@@ -8,10 +8,10 @@ url     = https://sourceforge.net/projects/libexif
 bz2     = https://downloads.sourceforge.net/sourceforge/$isim
 
 [sha256]
-1 		= 16cdaeb62eb3e6dfab2435f7d7bccd2f37438d21c5218ec4e58efa9157d4d41a
+#1 		= 16cdaeb62eb3e6dfab2435f7d7bccd2f37438d21c5218ec4e58efa9157d4d41a
 
 [derle]
-ekconf  = --disable-static
+ekconf  = --disable-nls --disable-static
 tip 	= gnu
 	      
 [pakur]
