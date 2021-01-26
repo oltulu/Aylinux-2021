@@ -6,7 +6,7 @@ url     = https://www.freedesktop.org/wiki/Software/VDPAU
 
 [gerek]
 derleme = libxext xorg-proto libx11
-calisma = 
+calisma = libx11 libxext
 
 [kaynak]
 bz2     = https://gitlab.freedesktop.org/vdpau/$isim/-/archive/$surum
