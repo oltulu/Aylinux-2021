@@ -9,15 +9,16 @@ derleme = tcl
 calisma = readline zlib
 
 [kaynak]
-1       = https://www.sqlite.org/2021/sqlite-autoconf-$(printf "%i%.2i%.2i%.2i" ${surum//./ }).tar.gz
+1       = https://www.sqlite.org/2021/sqlite-autoconf-3340100.tar.gz
 
 [sha256]
 1 		= 905279142d81c23e0a8803e44c926a23abaf47e2b274eda066efae11c23a6597
 
 [derle]
-betik   = cd sqlite-autoconf-$(printf "%i%.2i%.2i%.2i" ${surum//./ })
+betik   = cd sqlite-autoconf-3340100
 betik   = CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_FTS3=1  $CFLAGS" ./configure --prefix=/usr --enable-readline
 betik   = make 
 	      
 [pakur]
+betik   = cd sqlite-autoconf-3340100
 betik   = make DESTDIR=$PKG install
