@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = libxext libxrender xorg-util-macros
-calisma = 
+calisma = libxrender
 
 [kaynak]
 1       = $url/releases/individual/lib/libXrandr-$surum.tar.bz2
