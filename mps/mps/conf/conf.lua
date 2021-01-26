@@ -25,6 +25,7 @@ local mpsconf={
 		bin={["https://github.com/oltulu/Aylinux-2021"]="mps/bin"},
 		ayarlar={["https://github.com/oltulu/Aylinux-2021"]="mps/ayarlar"},
 		ayguci={["https://github.com/oltulu/Aylinux-2021"]="mps/ayguci"},
+		mps={["https://github.com/oltulu/Aylinux-2021"]="mps/mps"},
 	},
 }
 
