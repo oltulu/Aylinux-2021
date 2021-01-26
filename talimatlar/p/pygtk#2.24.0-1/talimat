@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = http://www.pygtk.org
 
 [gerek]
-derleme = python2 python2-gobject2 python2-cairo gtk2 libxml2 libglade 
+derleme = python2 python2-gobject2 python2-cairo gtk2 libxml2 glade 
 calisma =
 
 [kaynak]
