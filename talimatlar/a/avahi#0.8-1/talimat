@@ -9,7 +9,8 @@ derleme = python glib dbus libcap libdaemon
 calisma = 
 
 [kaynak]
-gz      = https://github.com/lathiat/avahi/releases/download/v$surum
+gz      = http://avahi.org/download
+1= https://crux.nu/ports/crux-3.6/contrib/avahi/reverse-move-to-run.patch
 
 
 [sha256]
@@ -17,16 +18,12 @@ gz      = https://github.com/lathiat/avahi/releases/download/v$surum
 
 [derle]
 dosya   = derle.sh
-tip     = gnu
 
 [pakur]
-tip     = gnu
+betik     = make DESTDIR=$PKG install
+
+betik     = ln -s avahi-compat-libdns_sd/dns_sd.h $PKG/usr/include/dns_sd.h
+betik     = install -D -m 0755 $SRC/avahi-daemon.rc $PKG/etc/rc.d/avahi-daemon
 betik   = rm -f "$PKG"/etc/avahi/services/{,sftp-}ssh.service
-;Enable 'disallow_other_stacks' option by default.
-betik   = 	sed -e 's,\#\(disallow-other-stacks\).*,\1=yes,' -i ${PKG}/etc/avahi/avahi-daemon.conf
-;Set 'enable-dbus=warn' option by default to not require dbus.
-betik   = sed -e 's,\#\(enable-dbus\).*,\1=warn,' -i ${PKG}/etc/avahi/avahi-daemon.conf
-;mdnsresponder compat
-betik   = ln -s avahi-compat-libdns_sd/dns_sd.h "$PKG/usr/include/dns_sd.h"
 servis  = avahi
 betik   = rm -rf ${PKG}/etc/sysconfig
