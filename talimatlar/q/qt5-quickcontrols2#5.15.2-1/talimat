@@ -13,7 +13,7 @@ calisma =
 1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtquickcontrols2-everywhere-src-$surum.tar.xz
 
 [sha256]
-1       = e902b3baf9fe02a5bd675fc71118e282bb6a128c94f45be6f65d7d6db991f2af
+#1       = e902b3baf9fe02a5bd675fc71118e282bb6a128c94f45be6f65d7d6db991f2af
 
 [derle]
 tip     = qmake
