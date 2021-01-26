@@ -1,4 +1,4 @@
-patch -Np1 -i ../reverse-move-to-run.patch
+patch -Np1 -i /sources/reverse-move-to-run.patch
   NOCONFIGURE=1 ./autogen.sh
   ./configure --prefix=/usr \
     --sysconfdir=/etc \
