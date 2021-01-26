@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-proto xorg-server libinput libx11 libxi libxtst libevdev
-calisma = 
+calisma = libx11 libxi libxtst
 
 [kaynak]
 bz2     = $url/releases/individual/driver
