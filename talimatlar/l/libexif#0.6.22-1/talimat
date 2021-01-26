@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://sourceforge.net/projects/libexif
 
 [kaynak]
-bz2     = https://downloads.sourceforge.net/sourceforge/$isim
+xz     = https://github.com/$isim/$isim/releases/download/$isim-${surum//./_}-release
 
 [sha256]
 #1 		= 16cdaeb62eb3e6dfab2435f7d7bccd2f37438d21c5218ec4e58efa9157d4d41a
