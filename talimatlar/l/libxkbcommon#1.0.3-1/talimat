@@ -6,7 +6,7 @@ url     = https://www.xkbcommon.org
 
 [gerek]
 derleme = meson wayland wayland-protocols libxcb xkeyboard-config libxml2
-calisma = libxml2
+calisma = libxml2 libxcb wayland
 
 [kaynak]
 xz      = $url/download
