@@ -6,7 +6,7 @@ url	    = http://www.gtk.org
 
 [gerek]
 derleme	=  meson cairo gobject-introspection fontconfig freetype glib harfbuzz libxft fribidi
-calisma = fribidi libthai
+calisma = fribidi libthai libxft cairo
 
 [kaynak]
 xz  	= http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
