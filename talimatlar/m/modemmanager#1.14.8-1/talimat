@@ -1,6 +1,6 @@
 [paket]
 tanim   = Mobil ağ için modem ayarlama kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.freedesktop.org/wiki/Software/ModemManager
 
@@ -17,7 +17,7 @@ calisma = ppp libqmi libmbim libgudev polkit
 [derle]
 betik   = cd ModemManager-$surum
 betik   = sed -i configure -e"s; -Werror;;g"
-ekconf  = --disable-static --with-polkit=permissive --with-udev-base-dir=/usr/lib/udev --with-dbus-sys-dir=/usr/share/dbus-1/system.d
+ekconf  = --disable-static --with-polkit=permissive --with-udev-base-dir=/usr/lib/udev --enable-gtk-doc=false --with-dbus-sys-dir=no
 tip     = gnu
 	      
 [pakur]
