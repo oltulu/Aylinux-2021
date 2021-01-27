@@ -6,7 +6,7 @@ url     = https://pagure.io/newt
 
 [gerek]
 derleme = slang tcl python
-calisma = 
+calisma = slang python2
 
 [kaynak]
 gz      = https://releases.pagure.org/$isim
