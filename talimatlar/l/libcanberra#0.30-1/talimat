@@ -6,7 +6,7 @@ url      = http://0pointer.de/lennart/projects/libcanberra
 
 [gerek]
 derleme  = gtk3 libvorbis gstreamer alsa-lib tdb pulseaudio vala
-calisma  =  
+calisma  = libvorbis pulseaudio alsa-lib gstreamer
 
 [kaynak]
 1  = http://pkgs.fedoraproject.org/repo/pkgs/libcanberra/libcanberra-${surum}.tar.xz/34cb7e4430afaf6f447c4ebdb9b42072/libcanberra-${surum}.tar.xz
