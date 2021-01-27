@@ -6,7 +6,7 @@ url     = https://github.com/pmem/ndctl
 
 [gerek]
 derleme = eudev json-c keyutils bash-completion
-calisma = 
+calisma = json-c
 
 [kaynak]
 1       = https://github.com/pmem/ndctl/archive/v$surum.tar.gz::$isim-$surum.tar.gz
