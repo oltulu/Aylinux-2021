@@ -6,7 +6,7 @@ url     = https://github.com/storaged-project/libblockdev
 
 [gerek]
 derleme = gobject-introspection libbytesize parted cryptsetup nss volume_key libyaml ndctl dmraid
-calisma = mdadm
+calisma = mdadm cryptsetup volume_key dmraid libbytesize ndctl
 
 [kaynak]
 gz      = $url/releases/download/$surum-1
