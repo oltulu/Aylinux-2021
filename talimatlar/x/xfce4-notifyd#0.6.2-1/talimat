@@ -6,7 +6,7 @@ url     = https://docs.xfce.org/apps/notifyd/start
 
 [gerek]
 derleme = intltool glib dbus-glib libnotify xfce4-panel desktop-file-utils
-calisma =
+calisma = libnotify
 
 [kaynak]
 bz2     = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
