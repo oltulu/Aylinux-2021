@@ -6,7 +6,7 @@ url	    = https://www.fltk.org
 
 [gerek]
 derleme	= libjpeg-turbo libpng mesa alsa-lib freetype libxinerama libxft libglvnd glu
-calisma	= libjpeg-turbo libglvnd glu
+calisma	= libjpeg-turbo libglvnd glu libxft
 
 [kaynak]
 1 	    = http://fltk.org/pub/fltk/$surum/fltk-$surum-source.tar.gz
