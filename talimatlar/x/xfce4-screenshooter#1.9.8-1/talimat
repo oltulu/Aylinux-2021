@@ -1,12 +1,12 @@
 [paket]
 tanim   = Xfce paneli için ekran görüntüsü yapan eklenti
-paketci = yasarciv67
-grup    = masaustu
+paketci = Cihan_Alkan
+grup    = xfce
 url     = https://goodies.xfce.org/projects/applications/xfce4-screenshooter
 
 [gerek]
 derleme    = glib libxfce4ui xfce4-panel exo libsoup
-calisma    = desktop-file-utils
+calisma    = desktop-file-utils libsoup
 
 [kaynak]
 bz2        = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
