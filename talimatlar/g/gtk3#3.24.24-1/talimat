@@ -1,9 +1,8 @@
 [paket]
 tanim   = GTK + Araç Seti, grafik kullanıcı arayüzleri oluşturmak için kullanılan çoklu platform araç kitidir. 
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= sistem
 url     = http://www.gtk.org/
-arsiv   = gtk+-$surum
 
 [gerek]
 derleme = sassc meson gobject-introspection glib libxcomposite libxinerama libxdamage libxrandr pango shared-mime-info at-spi2-atk mesa wayland wayland-protocols libxkbcommon fribidi cups gdk-pixbuf libepoxy
@@ -20,7 +19,7 @@ calisma = shared-mime-info wayland-protocols mesa at-spi2-atk atk libxinerama li
 [derle]
 betik   = export CFLAGS+=" -DG_ENABLE_DEBUG -DG_DISABLE_CAST_CHECKS"
 betik   = update-mime-database /usr/share/mime
-betik   = milis-meson -D broadway_backend=true -Dgtk_doc=false D colord=yes -Dman=false build
+betik   = milis-meson gtk build -D broadway_backend=true -Dgtk_doc=false D colord=yes -Dman=false
 betik     = meson compile -C build
 	  
 [pakur]
