@@ -1,0 +1,26 @@
+[paket]
+tanim   = Perl / CPAN Modülü Ayrıştırma :: Yapp: OO LALR ayrıştırıcı modülleri oluşturur
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://search.cpan.org/dist/Parse-Yapp
+
+[gerek]
+derleme    = perl
+calisma    = perl
+
+[kaynak]
+1         = https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-$surum.tar.gz
+
+[sha256]
+#1 = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
+
+[derle]
+betik     = cd "$SRC"/Parse-Yapp-$surum
+betik     = PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+betik     = make
+
+[pakur]
+betik     = cd "$SRC"/Parse-Yapp-$surum
+betik     = make install DESTDIR="$PKG"
+betik     = find "$PKG" -name '.packlist' -delete
+betik     = find "$PKG" -name '*.pod' -delete
