@@ -6,7 +6,7 @@ url     = https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
 
 [gerek]
 derleme = autoconf213 rust llvm nspr python icu
-calisma = icu
+calisma = icu nspr
 
 [kaynak]
 
