@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = libxv
-calisma = 
+calisma = libxv
 
 [kaynak]
 1       = $url/releases/individual/lib/libXvMC-$surum.tar.bz2
@@ -22,3 +22,4 @@ tip     = gnu
 [pakur]
 betik   = cd libXvMC-$surum
 tip 	= gnu
+betik   = rm $PKG/usr/include/X11/extensions/vldXvMC.h
