@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = libxfce4ui libwnck exo garcon libnotify thunar
-calisma  =  
+calisma  = libnotify
 
 [kaynak]
 bz2    = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
