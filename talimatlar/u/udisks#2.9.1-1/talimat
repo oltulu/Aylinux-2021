@@ -1,12 +1,12 @@
 [paket]
 tanim   = Diskler ve depolama aygıtlarına erişmek ve bunları değiştirmek için uygulama, araçlar ve kitaplıklar.
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = sistem
 url     = http://www.freedesktop.org/wiki/Software/udisks
 
 [gerek]
 derleme = gobject-introspection libgudev libatasmart parted polkit acl libblockdev ntfs-3g gptfdisk dosfstools sg3_utils
-calisma = ntfs-3g btrfs-progs gptfdisk dosfstools
+calisma = ntfs-3g btrfs-progs gptfdisk dosfstools libblockdev libatasmart
 
 [kaynak]
 bz2     = https://github.com/storaged-project/udisks/releases/download/udisks-$surum
