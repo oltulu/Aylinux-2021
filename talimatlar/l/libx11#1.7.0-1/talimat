@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-proto xorg-util-macros xtrans libxcb
-calisma = 
+calisma = libxcb
 
 [kaynak]
 1       = $url/releases/individual/lib/libX11-$surum.tar.bz2
