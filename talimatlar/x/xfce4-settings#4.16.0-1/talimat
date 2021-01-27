@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = exo garcon libxfce4ui xfconf libnotify libxklavier xf86-input-libinput libxcursor
-calisma  = xf86-input-libinput adwaita-icon-theme
+calisma  = xf86-input-libinput adwaita-icon-theme libnotify libxklavier colord
 
 [kaynak]
 bz2   = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
