@@ -6,7 +6,7 @@ url		= https://www.freedesktop.org/wiki/Accessibility/AT-SPI2
 
 [gerek]
 derleme	= meson dbus glib libxtst
-calisma	= 
+calisma	= libxtst libxi
 
 [kaynak]
 git		= https://gitlab.gnome.org/GNOME/at-spi2-core
