@@ -6,7 +6,7 @@ url     = http://www.graphviz.org
 
 [gerek]
 derleme = libgd librsvg libxaw pango
-calisma = 
+calisma = libgd librsvg
 
 [kaynak]
 gz      = https://www2.graphviz.org/Packages/stable/portable_source
