@@ -6,7 +6,7 @@ url     = https://ppp.samba.org
 
 [gerek]
 derleme = libpcap
-calisma = 
+calisma = libpcap
 
 [kaynak]
 gz      = https://ftp.samba.org/pub/ppp
