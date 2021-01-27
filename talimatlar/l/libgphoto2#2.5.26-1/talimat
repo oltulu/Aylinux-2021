@@ -6,7 +6,7 @@ url     = http://www.gphoto.org
 
 [gerek]
 derleme    = libexif libusb libjpeg-turbo
-calisma    =
+calisma    = libexif libusb libjpeg-turbo
 
 [kaynak]
 bz2        = ${SOURCEFORGE_SITE}/gphoto
