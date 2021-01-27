@@ -6,7 +6,7 @@ url     = https://docs.xfce.org/apps/ristretto/start
 
 [gerek]
 derleme = intltool exo libexif librsvg
-calisma = tumbler
+calisma = tumbler libexif
 
 [kaynak]
 bz2      = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
