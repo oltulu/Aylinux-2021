@@ -6,7 +6,7 @@ url      = https://www.gnu.org/software/libcdio
 
 [gerek]
 derleme  =  libcdio 
-calisma  =  
+calisma  =  libcdio
 
 [kaynak]
 1  =  https://ftp.gnu.org/gnu/libcdio/libcdio-paranoia-10.2+2.0.0.tar.bz2
