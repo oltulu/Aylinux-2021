@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/Vala
 
 [gerek]
 derleme = glib graphviz libxslt
-calisma = 
+calisma = graphviz
 
 [kaynak]
 xz      = https://ftp.gnome.org/pub/gnome/sources/vala/${surum%.*}
