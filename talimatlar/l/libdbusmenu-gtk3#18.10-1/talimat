@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://wiki.gnome.org/Apps/Brasero
 
 [gerek]
-derleme = 
+derleme = gnome-common
 calisma = 
 
 [kaynak]
