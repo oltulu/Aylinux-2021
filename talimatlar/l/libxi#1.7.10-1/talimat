@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libxext libxfixes
-calisma = libxfixes
+calisma = libxfixes libxext
 
 [kaynak]
 1       = $url/releases/individual/lib/libXi-$surum.tar.bz2
