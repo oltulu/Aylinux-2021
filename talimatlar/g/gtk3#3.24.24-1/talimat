@@ -18,11 +18,13 @@ calisma = shared-mime-info wayland-protocols mesa at-spi2-atk atk libxinerama li
 
 [derle]
 betik   = export CFLAGS+=" -DG_ENABLE_DEBUG -DG_DISABLE_CAST_CHECKS"
+betik = cd $SRC
 betik   = update-mime-database /usr/share/mime
-betik   = milis-meson gtk build -D broadway_backend=true -Dgtk_doc=false -D colord=yes -Dman=false
+betik   = milis-meson gtk+-$surum build -D broadway_backend=true -Dgtk_doc=false -D colord=yes -Dman=false
 betik     = meson compile -C build
 	  
 [pakur]
+betik = cd $SRC
 betik     = DESTDIR="$PKG" meson install -C build
 #betik   = rm -rf $PKG/usr/share/icons/hicolor
 #betik   = cd $SRC/hicolor-icon-theme-0.17 && make DESTDIR=$PKG install
