@@ -6,7 +6,7 @@ url     = https://www.gtkmm.org
 
 [gerek]
 derleme  = libsigc++ glibmm cairomm pango
-calisma  = 
+calisma  = cairomm
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
