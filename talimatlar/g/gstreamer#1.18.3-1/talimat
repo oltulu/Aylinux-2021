@@ -6,7 +6,7 @@ url     = https://gstreamer.freedesktop.org/
 
 [gerek]
 derleme  = cmake meson python libxml2 glib gtk3 libcap libunwind gobject-introspection bash-completion
-calisma  =  
+calisma  = libunwind
 
 [kaynak]
 xz       = https://gstreamer.freedesktop.org/src/$isim
