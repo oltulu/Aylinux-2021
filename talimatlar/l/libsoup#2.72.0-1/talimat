@@ -16,7 +16,7 @@ xz        = https://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [derle]
 betik = cd $SRC
-betik = meson setup build $isim-$surum --prefix=/usr
+betik = meson setup build $isim-$surum --prefix=/usr -Dvapi=enabled -Dgssapi=disabled
 betik = sed -i 's|-R/usr/lib||g' build/build.ninja
 betik = meson compile -C build
 	
