@@ -6,7 +6,7 @@ url     = https://www.freedesktop.org/wiki/Software/libmbim
 
 [gerek]
 derleme = libgudev libmbim python
-calisma = 
+calisma = libgudev libmbim
 
 [kaynak]
 xz      = https://www.freedesktop.org/software/$isim
