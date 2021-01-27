@@ -6,7 +6,7 @@ url     = https://libimobiledevice.org/
 
 [gerek]
 derleme  = python cython libplist libusbmuxd gnutls libgcrypt
-calisma  =
+calisma  = libplist libusbmuxd
 
 [kaynak]
 git  =  https://github.com/libimobiledevice/libimobiledevice
