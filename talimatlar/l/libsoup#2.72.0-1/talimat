@@ -16,7 +16,7 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [derle]
 betik = cd $SRC
-betik = meson setup build $isim-$surum --prefix=/usr --buildtype=plain
+betik = meson setup build $isim-$surum --prefix=/usr
 betik = sed -i 's|-R/usr/lib||g' build/build.ninja
 betik = meson compile -C build
 	
