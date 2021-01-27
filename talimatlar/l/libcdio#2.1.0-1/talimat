@@ -6,7 +6,7 @@ url      =  https://www.gnu.org/software/libcdio/
 
 [gerek]
 derleme  =  libcddb ncurses 
-calisma  =  
+calisma  =  libcddb
 
 [kaynak]
 bz2    =  https://ftp.gnu.org/gnu/libcdio
