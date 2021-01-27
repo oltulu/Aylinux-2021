@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/libsoup
 
 [gerek]
 derleme    = meson glib libxml2 sqlite vala libpsl glib-networking krb5 gobject-introspection
-calisma    = glib-networking
+calisma    = glib-networking krb5 brotli
 
 [kaynak]
 xz         = ${GNOME_SITE}/${isim}/${surum%.*}
