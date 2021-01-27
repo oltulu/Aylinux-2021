@@ -6,7 +6,7 @@ url		= https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
 
 [gerek]
 derleme = sqlite nspr
-calisma = 
+calisma = sqlite nspr
 
 [kaynak]
 gz		= https://ftp.mozilla.org/pub/security/nss/releases/NSS_${surum//./_}_RTM/src
