@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/NetworkManager
 
 [gerek]
 derleme = meson nss dbus-glib libgudev libnl polkit ppp modemmanager libndp newt jansson libpsl libxslt vala gobject-introspection python-gobject mobile-broadband-provider-info
-calisma = dbus
+calisma = dbus gobject-introspection glib nss nspr
 
 [kaynak]
 1       = https://download.gnome.org/sources/NetworkManager/${surum%.*}/NetworkManager-$surum.tar.xz
