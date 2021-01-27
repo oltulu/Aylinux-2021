@@ -6,7 +6,7 @@ url     = http://web.mit.edu/kerberos
 
 [gerek]
 derleme = openldap
-calisma = keyutils openldap
+calisma = keyutils openldap lmdb
 
 [kaynak]
 gz      = https://web.mit.edu/kerberos/dist/krb5/1.18
