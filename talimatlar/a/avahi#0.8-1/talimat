@@ -6,7 +6,7 @@ url     = http://www.avahi.org/
 
 [gerek]
 derleme = python glib dbus libcap libdaemon
-calisma = 
+calisma = libdaemon libevent
 
 [kaynak]
 gz      = http://avahi.org/download
