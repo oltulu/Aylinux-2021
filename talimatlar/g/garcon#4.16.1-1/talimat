@@ -1,18 +1,18 @@
 [paket]
 tanim   = Freedesktop.org menü özelliklerinin gerçeklemesi
-paketci = milisarge  
+paketci = Cihan_Alkan  
 grup    = kütüphane  
 url     = https://www.xfce.org/
 
 [gerek]
 derleme  = intltool python libxfce4ui 
-calisma  =  
+calisma  = libxfce4ui
 
 [kaynak]
 bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
 
 [sha256]
-1   = d75e4753037a74733c07b71b8db7a656d869869f0f107f6411a306bbc87a762d
+#1   = d75e4753037a74733c07b71b8db7a656d869869f0f107f6411a306bbc87a762d
 
 [derle]
 ekconf = --disable-debug
