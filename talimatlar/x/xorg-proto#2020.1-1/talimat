@@ -22,3 +22,4 @@ tip     = ninja
 tip     = ninja
 betik   = rm -f ${PKG}/usr/include/X11/extensions/{apple,windows}*
 betik   = rm -f ${PKG}/usr/share/pkgconfig/{apple,windows}wmproto.pc
+betik   = rm -f ${PKG}/usr/include/X11/extensions/XKBgeom.h
