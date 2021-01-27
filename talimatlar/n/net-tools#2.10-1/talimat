@@ -24,3 +24,4 @@ betik   = rm "${PKG}"/usr/bin/{nis,yp}domainname
 betik   = rm "${PKG}"/usr/bin/{hostname,dnsdomainname,domainname}
 betik   = rm -r "${PKG}"/usr/share/man/man1
 betik   = rmdir $PKG/bin
+betik   = rm -r "${PKG}"/usr/bin/ifconfig
