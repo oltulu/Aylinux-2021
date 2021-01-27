@@ -4,11 +4,17 @@ paketci = milisarge
 grup 	= temel
 url     = http://squashfs.sourceforge.net
 
+
 [kaynak]
 1    	= http://downloads.sourceforge.net/sourceforge/$isim/$isim$surum.tar.gz
 
 [sha256]
 #1 		= 0d605512437b1eb800b4736791559295ee5f60177e102e4d4ccd0ee241a5f3f6
+
+[gerek]
+derleme = 
+calisma = xorriso
+
 
 [derle]
 betik   = cd $isim$surum/squashfs-tools
