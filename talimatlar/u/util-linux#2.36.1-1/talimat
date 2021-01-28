@@ -18,6 +18,8 @@ tip     = gnu
 betik   = mv $PKG/usr/sbin/* $PKG/usr/bin/
 betik   = rmdir $PKG/usr/sbin
 betik   = rm -rf $PKG/usr/share/bash-completion
-
-
-
+betik   = rm -rf $PKG/usr/bin/last
+betik   = rm -rf $PKG/usr/bin/lastb
+betik   = rm -rf $PKG/usr/bin/mesg
+betik   = rm -rf $PKG/usr/bin/utmpdump
+betik   = rm -rf $PKG/usr/bin/wall 
