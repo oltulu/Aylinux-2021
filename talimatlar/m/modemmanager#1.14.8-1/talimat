@@ -17,7 +17,7 @@ calisma = ppp libqmi libmbim libgudev polkit
 [derle]
 betik   = cd ModemManager-$surum
 betik   = sed -i configure -e"s; -Werror;;g"
-ekconf  = --disable-static --with-polkit=permissive --with-udev-base-dir=/usr/lib/udev --enable-gtk-doc=false --with-dbus-sys-dir=no
+ekconf  = --sysconfdir=/etc --localstatedir=/var --disable-static --enable-more-warnings=no --enable-gtk-doc=false
 tip     = gnu
 	      
 [pakur]
