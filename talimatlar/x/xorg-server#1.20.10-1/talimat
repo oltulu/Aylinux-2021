@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-proto pixman libx11 mesa xtrans libxkbfile libxfont2 libpciaccess libxv libxmu libxrender libxi libxaw libdmx libxtst libxres xkbcomp xorg-util-macros font-util libepoxy xcb-util xcb-util-image xcb-util-renderutil xcb-util-wm xcb-util-keysyms libxshmfence libunwind wayland-protocols libglvnd
-calisma = xauth
+calisma = xauth libepoxy libunwind
 
 [kaynak]
 bz2     = https://ftp.x.org/pub/individual/xserver
