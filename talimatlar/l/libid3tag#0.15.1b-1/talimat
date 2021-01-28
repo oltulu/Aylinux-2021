@@ -1,28 +1,25 @@
 [paket]
 tanim   = Id3 etiketleme kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.underbit.com/products/mad
 
 [kaynak]
 gz      = ftp://ftp.mars.org/pub/mpeg
 dosya   = id3tag.pc
-dosya   = 10_utf16.diff
-dosya   = 11_unknown_encoding.diff
-dosya   = CVE-2008-2109.patch
-dosya   = libid3tag-gperf.patch
+
 
 [sha512]
-1 		= ade7ce2a43c3646b4c9fdc642095174b9d4938b078b205cd40906d525acd17e87ad76064054a961f391edcba6495441450af2f68be69f116549ca666b069e6d3
+#1 		= ade7ce2a43c3646b4c9fdc642095174b9d4938b078b205cd40906d525acd17e87ad76064054a961f391edcba6495441450af2f68be69f116549ca666b069e6d3
 
 [derle]
-yama    = 3
-yama    = 4
-betik   = patch -Np0 -i ${SRC}/CVE-2008-2109.patch
-yama    = 6
-;regenerate them from gperf sources
-betik   = rm compat.c frametype.c
-tip 	= gnu
+
+betik    = cd $SRC
+betik    = mkdir -p $PKG/usr/lib/pkgconfig/
+betik    = sed "s/#version#/$surum/" id3tag.pc > $PKG/usr/lib/pkgconfig/id3tag.pc
+betik    =  cd $isim-$surum
+betik    = ./configure --prefix=/usr
+betik    = make
 	      
 [pakur]
 tip 	= gnu
