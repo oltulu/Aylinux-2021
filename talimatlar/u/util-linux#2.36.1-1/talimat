@@ -18,11 +18,6 @@ tip     = gnu
 betik   = mv $PKG/usr/sbin/* $PKG/usr/bin/
 betik   = rmdir $PKG/usr/sbin
 betik   = rm -rf $PKG/usr/share/bash-completion
-betik   = rm -rf $PKG/usr/bin/newgrp
-betik   = rm -rf $PKG/usr/bin/vigr 
-betik   = rm -rf $PKG/usr/bin/vipw 
-betik   = rm -rf $PKG/usr/share/man/man1/newgrp.1.gz 
-betik   = rm -rf $PKG/usr/share/man/man8/vigr.8.gz 
-betik   = rm -rf $PKG/usr/share/man/man8/vipw.8.gz 
+
 
 
