@@ -6,7 +6,7 @@ url     = https://www.jedsoft.org/slang
 
 [gerek]
 derleme = pcre
-calisma =
+calisma = libpng
 
 [kaynak]
 bz2     = https://www.jedsoft.org/releases/slang
