@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/Sysprof
 
 [gerek]
 derleme = polkit gtk3 libdazzle
-calisma =  
+calisma =  libdazzle
 
 [kaynak]
 git      = https://gitlab.gnome.org/GNOME/sysprof
