@@ -5,7 +5,7 @@ grup 	= sistem
 url     = https://www.openldap.org
 
 [gerek]
-derleme = cyrus-sasl e2fsprogs util-linux chrpath unixodbc
+derleme = cyrus-sasl e2fsprogs util-linux chrpath unixodbc db
 calisma = 
 
 [kaynak]
