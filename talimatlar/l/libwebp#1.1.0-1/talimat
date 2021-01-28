@@ -6,7 +6,7 @@ url     = https://developers.google.com/speed/webp
 
 [gerek]
 derleme = freeglut mesa glu libpng libjpeg-turbo tiff giflib
-calisma = 
+calisma = giflib
 
 [kaynak]
 gz      = https://storage.googleapis.com/downloads.webmproject.org/releases/webp
