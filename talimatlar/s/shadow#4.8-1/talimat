@@ -17,3 +17,10 @@ dosya	= derle.sh
 	      
 [pakur]
 dosya	= pakur.sh
+betik = $PKG/usr/bin/newgrp
+betik = $PKG/usr/bin/vigr
+betik = $PKG/usr/bin/vipw
+betik = $PKG/usr/share/man/man1/newgrp.1.gz
+betik = $PKG/usr/share/man/man8/vigr.8.gz
+betik = $PKG/usr/share/man/man8/vipw.8.gz
+
