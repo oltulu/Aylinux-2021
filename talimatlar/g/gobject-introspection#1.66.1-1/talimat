@@ -6,17 +6,17 @@ url     = http://live.gnome.org/GObjectIntrospection
 
 [gerek]
 derleme	= glib meson
-calisma	= python
+calisma	= python glib
 
 [kaynak]
 git	    = https://gitlab.gnome.org/GNOME/gobject-introspection
-git	    = https://gitlab.gnome.org/GNOME/glib
+#git	    = https://gitlab.gnome.org/GNOME/glib
 
 [sha256]
 #1	    = ffdfe2368fb2e34a547898b01aac0520d52d8627fdeb1c306559bcb503ab5e9c
 
 [derle]
-betik = milis-meson gobject-introspection build -D gtk_doc=false -D doctool=disabled  -D cairo=disabled -D glib_src_dir="$SRC/glib"
+betik = milis-meson gobject-introspection build -D gtk_doc=false -D doctool=disabled  -D cairo=disabled
 betik = meson compile -C build
 
 [pakur]
