@@ -6,7 +6,7 @@ url     = https://sourceforge.net/projects/enlightenment
 
 [gerek]
 derleme = tiff giflib freetype2 libxext libpng libid3tag libjpeg-turbo
-calisma = 
+calisma = libid3tag libwebp
 
 [kaynak]
 bz2     = https://downloads.sourceforge.net/enlightenment
