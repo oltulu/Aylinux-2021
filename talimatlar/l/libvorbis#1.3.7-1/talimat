@@ -6,7 +6,7 @@ url     = http://www.vorbis.com
 
 [gerek]
 derleme = libogg
-calisma = 
+calisma = libogg
 
 [kaynak]
 gz      = http://downloads.xiph.org/releases/vorbis
