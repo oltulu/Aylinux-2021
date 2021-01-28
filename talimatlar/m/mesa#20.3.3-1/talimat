@@ -6,7 +6,7 @@ url     = http://www.xorg-mesa3d.org
 
 [gerek]
 derleme = meson cmake llvm clang vulkan-loader python-mako libxdamage libxxf86vm lm_sensors libxshmfence libxrandr libdrm libvdpau libomxil-bellagio libva libclc glslang libglvnd libunwind wayland wayland-protocols
-calisma = libglvnd llvm libdrm libxcb libxshmfence vulkan-loader wayland wayland-protocols libxxf86vm libxdamage libxfixes libxext lm_sensors
+calisma = libglvnd llvm libdrm libxcb libxshmfence vulkan-loader wayland wayland-protocols libxxf86vm libxdamage libxfixes libxext lm_sensors clang libomxil-bellagio
 
 [kaynak]
 xz      = https://mesa.freedesktop.org/archive
