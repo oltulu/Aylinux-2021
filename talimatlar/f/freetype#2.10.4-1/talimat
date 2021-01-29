@@ -6,7 +6,7 @@ url     = https://www.freetype.org/
 
 [gerek]
 derleme = libx11 libpng
-calisma = harfbuzz libpng brotli
+calisma = libpng brotli
 
 [kaynak]
 xz     = https://download-mirror.savannah.gnu.org/releases/$isim
