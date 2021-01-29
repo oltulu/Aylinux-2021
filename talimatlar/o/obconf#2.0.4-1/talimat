@@ -5,7 +5,7 @@ grup 	=
 url     = http://openbox.org/wiki/ObConf:About
 
 [gerek]
-derleme = 
+derleme = openbox
 calisma = openbox gtk3
 
 [kaynak]
