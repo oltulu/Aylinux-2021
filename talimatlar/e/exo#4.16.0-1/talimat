@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = intltool libxfce4ui perl-uri 
-calisma  = perl-uri  
+calisma  = perl-uri libxfce4ui
 
 [kaynak]
 bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
