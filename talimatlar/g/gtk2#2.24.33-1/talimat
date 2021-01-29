@@ -9,7 +9,7 @@ derleme = python2 cups atk pango libxcursor libxinerama libxrandr libxi libxcomp
 calisma = shared-mime-info
 
 [kaynak]
-1       = https://download.gnome.org/sources/gtk+/2.24/${isim}+-$surum.tar.xz
+1       = https://ftp.acc.umu.se/pub/GNOME/sources/gtk+/2.24/gtk+-$surum.tar.xz
 dosya   = xid-collision-debug.patch
 dosya   = gtkrc-2
 
