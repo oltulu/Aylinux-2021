@@ -5,8 +5,8 @@ grup    = medya
 url     = http://www.jackaudio.org
 
 [gerek]
-derleme = python2 opus libsamplerate dbus celt
-calisma =  
+derleme = python opus libsamplerate dbus celt
+calisma = opus libsamplerate celt
 
 [kaynak]
 1       = https://github.com/jackaudio/jack2/archive/v$surum.tar.gz::$isim-$surum.tar.gz
@@ -14,12 +14,12 @@ dosya   = 40-hpet-permissions.rules
 dosya   = jack-limitsd.conf
 
 [sha256]
-1       = deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
+#1       = deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33
 
 [derle]
 betik   = cd jack2-$surum
-betik   = python2 waf configure --prefix=/usr --alsa --classic --dbus
-betik   = python2 waf build ${MAKEJOBS}
+betik   = python waf configure --prefix=/usr --alsa --classic --dbus
+betik   = python waf build ${MAKEJOBS}
 
 [pakur]
 betik   = cd jack2-$surum
