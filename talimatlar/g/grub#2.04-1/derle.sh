@@ -16,7 +16,10 @@ sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
 
 cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 
-./configure $CONF_OPT \
+./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-device-mapper \
+		--disable-efiemu \
 --with-platform="pc" \
 --target="i386" \
 --enable-efiemu \
@@ -25,7 +28,9 @@ make
 
 cd ${SRC}/grub-efi
 #/autogen.sh
-./configure $CONF_OPT \
+./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-device-mapper \
 --with-platform="efi" \
 --target="x86_64" \
 --disable-efiemu \
