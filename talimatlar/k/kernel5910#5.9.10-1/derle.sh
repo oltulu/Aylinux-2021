@@ -5,8 +5,8 @@
   # standart config
   cat "${SRC}/kernel-${bsurum}-config" > ./.config
   
-  export KBUILD_BUILD_USER="milisarge"
-  export KBUILD_BUILD_HOST="mls.akdeniz.edu.tr"
+  export KBUILD_BUILD_USER="Cihan_Alkan"
+  export KBUILD_BUILD_HOST="aylinux.kripto.com.tr"
   
   # ayarları onaylama
   make olddefconfig
