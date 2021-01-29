@@ -1,0 +1,29 @@
+[paket]
+tanim   = Aylinux paket kurucu
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://github.com/oltulu/debins
+
+[gerek]
+derleme    = qt5-base qt5-graphicaleffects
+calisma    = qt5-base qt5-graphicaleffects
+
+[kaynak]
+git         = https://github.com/oltulu/debins
+1 = https://github.com/oltulu/Aylinux-2021/raw/main/mps/mps/bin/mps
+
+[sha256]
+#1 = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
+
+[derle]
+betik     = cd debins
+betik     = mkdir build
+betik     = cd build
+betik     = qmake ../
+betik     = make
+
+[pakur]
+betik     = cd debins
+betik     = mv debins $PKG/usr/bin/
+betik     = mv /sources/mps $PKG/usr/bin/paketkur
+betik     = chmod +x $PKG/usr/bin/paketkur
