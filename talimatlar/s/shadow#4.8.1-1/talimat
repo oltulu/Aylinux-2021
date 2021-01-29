@@ -16,7 +16,9 @@ xz      = https://github.com/shadow-maint/shadow/releases/download/$surum
 [derle]
 betik = rm $SRC/po/tr.po
 betik = mv /sources/shadow.po $SRC/po/tr.po
-dosya = derle.sh
+betik =  autoreconf -fsiv
+betik = ./configure --prefix=/usr --bindir=/usr/bin --sbindir=/usr/bin --libdir=/usr/lib --mandir=/usr/share/man --sysconfdir=/etc --disable-account-tools-setuid --with-libpam --with-group-name-max-length=32 --without-selinux
+betik =  make
 	      
 [pakur]
 dosya	= pakur.sh
