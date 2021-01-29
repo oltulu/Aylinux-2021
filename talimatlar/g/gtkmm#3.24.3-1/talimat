@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://www.gtkmm.org
 
 [gerek]
-derleme  = gtk3 pangomm atkmm glibmm mm-common doxygen
+derleme  = gtk3 pangomm atkmm glibmm mm-common doxygen graphviz
 calisma  = pangomm atkmm glibmm
 
 [kaynak]
