@@ -24,7 +24,7 @@ milis-meson build \
 -D glvnd=true \
 -D glx=dri \
 -D libunwind=true \
--D llvm=true \
+-D llvm=enabled \
 -D lmsensors=true \
 -D osmesa=gallium \
 -D shared-glapi=true \
