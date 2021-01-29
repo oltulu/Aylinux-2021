@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://xcb.freedesktop.org
 
 [gerek]
-derleme = python xorg-util-macros libxau
+derleme = python xorg-util-macros libxau xcb-proto
 calisma = libxdmcp xcb-proto libxau
 
 [kaynak]
