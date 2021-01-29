@@ -6,7 +6,7 @@ url      = https://sourceforge.net/projects/libavc1394/
 
 [gerek]
 derleme  = libraw1394 
-calisma  =  
+calisma  = libraw1394
 
 [kaynak]
 gz =  https://downloads.sourceforge.net/sourceforge/$isim
