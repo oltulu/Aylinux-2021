@@ -8,7 +8,7 @@ url     = http://git.videolan.org/?p=ffmpeg/nv-codec-headers.git
 1  = https://github.com/FFmpeg/nv-codec-headers/archive/n${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1  = 6181a5dac66a6990aa3baf10a77ae677f372b9068be9ef73abfd37b73fb4c745
+#1  = 6181a5dac66a6990aa3baf10a77ae677f372b9068be9ef73abfd37b73fb4c745
 
 [derle]
 betik  = make PREFIX='/usr' -C nv-codec-headers-n${surum}
