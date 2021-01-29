@@ -6,7 +6,7 @@ url     = https://www.kernel.org/pub/linux/libs/ieee1394/
 
 [gerek]
 derleme  = libraw1394 
-calisma  =  
+calisma  = libraw1394
 
 [kaynak]
 xz       = https://www.kernel.org/pub/linux/libs/ieee1394
