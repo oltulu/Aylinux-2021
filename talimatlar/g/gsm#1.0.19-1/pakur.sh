@@ -1,4 +1,4 @@
-cd gsm-1.0-pl18
+cd gsm-1.0-pl19
 
 install -m755 -d "${PKG}"/usr/{bin,lib,include/gsm,share/{licenses/${isim},man/man{1,3}}}
 
