@@ -1,6 +1,6 @@
 [paket]
 tanim   = Şifrelerin güvenli biçimde işletilmesini sağlayana uygulama
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = http://shadow.pld.org.pl
 
@@ -8,12 +8,15 @@ url     = http://shadow.pld.org.pl
 xz      = https://github.com/shadow-maint/shadow/releases/download/$surum
 1= https://www.mizrahi.com.ve/crux/ports/shadow/pwck
 2= https://www.mizrahi.com.ve/crux/ports/shadow/login.defs
+3= https://notabug.org/oltulu/Ceviri/raw/master/shadow.po
 
 [sha256]
 #1 		= 0998c8d84242a231ab0acb7f8613927ff5bcff095f8aa6b79478893a03f05583
 
 [derle]
-dosya	= derle.sh
+betik = rm $SRC/po/tr.po
+betik = mv /sources/shadow.po $SRC/po/tr.po
+dosya = derle.sh
 	      
 [pakur]
 dosya	= pakur.sh
