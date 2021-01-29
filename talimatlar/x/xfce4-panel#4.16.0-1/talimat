@@ -12,7 +12,7 @@ calisma  = desktop-file-utils libdbusmenu-glib libdbusmenu-gtk3
 bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
 
 [sha256]
-1   = d5f8f3bd7e142139987e5e62cda26135a424baabb5e47aa0c23b4169d0a66ef4
+#1   = d5f8f3bd7e142139987e5e62cda26135a424baabb5e47aa0c23b4169d0a66ef4
 
 [derle]
 ekconf = --enable-gio-unix --disable-debug
