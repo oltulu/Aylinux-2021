@@ -6,7 +6,7 @@ url     = https://xfce.org
 
 [gerek]
 derleme    = glib gdk-pixbuf freetype libpng libjpeg-turbo libgsf libopenraw poppler-glib ffmpegthumbnailer
-calisma    =
+calisma    = libgsf libopenraw poppler-glib ffmpegthumbnailer
 
 [kaynak]
 bz2         = https://archive.xfce.org/src/xfce/${isim}/${surum%.*}
