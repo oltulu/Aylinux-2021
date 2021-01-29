@@ -20,7 +20,7 @@ tip     = gnu
 
 [pakur]
 betik   = cd libedit-20190324-3.1
-betik   = make prefix="${PKG}"/usr install
+betik   = make DESTDIR=$PKG install
 betik   = rm "${PKG}"/usr/share/man/man3/history.3
 betik   = cp "${PKG}"/usr/share/man/man3/editline.3 "${PKG}"/usr/share/man/man3/el.3
 
