@@ -9,7 +9,7 @@ derleme = llvm
 calisma =
 
 [kaynak]
-1      = https://crux.ster.zone/downloads/rust/rust-$surum-crux-3.6-bin.tar.xz
+1      = https://crux.ster.zone/downloads/rust/rust-$surum-1-crux-3.6-bin.tar.xz
 
 
 [sha256]
