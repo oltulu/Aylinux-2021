@@ -6,7 +6,7 @@ url     = https://freedesktop.org/software/pulseaudio/pavucontrol
 
 [gerek]
 derleme  =  gtkmm libcanberra gtk3 pulseaudio libsigc++ 
-calisma  =  gtkmm libcanberra pulseaudio
+calisma  =  atkmm libcanberra pulseaudio libsigc++ 
 
 [kaynak]
 xz = $url
