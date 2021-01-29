@@ -1,6 +1,6 @@
 [paket]
 tanim    = Lua dosya sistemi kütüphanesi
-paketci  = milisarge 
+paketci  = Cihan_Alkan 
 grup     = kütüphane
 url      = http://keplerproject.github.io/luafilesystem
 
@@ -12,7 +12,7 @@ calisma  = lua
 1   = https://github.com/keplerproject/luafilesystem/archive/v${surum//./_}.tar.gz::$isim-${surum//./_}.tar.gz
 
 [sha256]
-1   = 23b4883aeb4fb90b2d0f338659f33a631f9df7a7e67c54115775a77d4ac3cc59
+#1   = 23b4883aeb4fb90b2d0f338659f33a631f9df7a7e67c54115775a77d4ac3cc59
 
 [derle]
 betik = cd "$SRC"/$isim-${surum//./_}
