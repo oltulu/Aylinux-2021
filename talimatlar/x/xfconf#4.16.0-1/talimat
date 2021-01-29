@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = intltool gobject-introspection vala libxfce4util 
-calisma  =  
+calisma  = libxfce4util
 
 [kaynak]
 bz2  = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
