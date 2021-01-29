@@ -13,7 +13,7 @@ dosya = gsm-shared.patch
 2  =  1b9fabd7da83a688fc0e5ec712d53c428ff5575b1d5feac8437283ade1448c2b
 
 [derle]
-betik  = cd gsm-1.0-pl18
+betik  = cd gsm-1.0-pl19
 betik  = patch -p0 -i $SRC/gsm-shared.patch
 betik  = make CCFLAGS="-c ${CFLAGS} -fPIC"
 
