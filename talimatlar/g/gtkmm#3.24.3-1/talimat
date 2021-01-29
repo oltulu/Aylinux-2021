@@ -6,7 +6,7 @@ url     = https://www.gtkmm.org
 
 [gerek]
 derleme  = gtk3 pangomm atkmm glibmm
-calisma  = pangomm atkmm glibmm pangomm
+calisma  = pangomm atkmm glibmm
 
 [kaynak]
 xz      = https://ftp.gnome.org/pub/GNOME/sources/gtkmm/${surum%.*}
