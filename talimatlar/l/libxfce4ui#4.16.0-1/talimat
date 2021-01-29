@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = intltool gobject-introspection vala libxfce4util gtk3 xfconf libsm startup-notification
-calisma  = xfconf libxfce4util
+calisma  = xfconf libxfce4util libgtop
 
 [kaynak]
 bz2  = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
