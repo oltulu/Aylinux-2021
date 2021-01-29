@@ -9,7 +9,7 @@ derleme = python2 cups atk pango libxcursor libxinerama libxrandr libxi libxcomp
 calisma = shared-mime-info
 
 [kaynak]
-1       = http://ftp.gnome.org/pub/gnome/sources/gtk+/${surum%.*}/gtk+-$surum.tar.xz
+1       = https://download.gnome.org/sources/gtk+/2.24/${isim}+-$surum.tar.xz
 dosya   = xid-collision-debug.patch
 dosya   = gtkrc-2
 
@@ -19,7 +19,7 @@ dosya   = gtkrc-2
 3 		= b124433dd4b20d1d62f073df87e253ca23b3b51625cce55f29a220a4369eda5108c0de07fdc686f570232322c3ff04f7758383f2be5aeace40f843907aa3696d
 
 [derle]
-betik   = cd gtk+-2.24.32
+betik   = cd gtk+-$surum
 yama    = 2
 betik   = sed -i '1s/python$/&2/' gtk/gtk-builder-convert
 betik   = update-mime-database /usr/share/mime
@@ -27,7 +27,7 @@ betik   = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --wit
 betik   = make
 	      
 [pakur]
-betik   = cd gtk+-2.24.32
+betik   = cd gtk+-$surum
 tip     = gnu
 betik   = mv $SRC/gtkrc-2 $SRC/gtkrc
 betik   = install -Dt "$PKG/usr/share/gtk-2.0" -m644 ../gtkrc
