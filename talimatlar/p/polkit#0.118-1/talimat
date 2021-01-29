@@ -21,7 +21,7 @@ dosya   = polkit-1.pam
 #betik   = NOCONFIGURE=1 ./autogen.sh
 #betik   = autoreconf -fi
 betik   = sed -e 's,/sys/fs/cgroup/systemd/,/sys/fs/cgroup,g' -i configure
-ekconf  = --disable-systemd --disable-libsystemd-login --disable-libelogind --disable-man-pages -disable-static --with-authfw=pam  --with-os-type=aylinux
+ekconf  = --disable-systemd --disable-libsystemd-login --disable-libelogind --disable-man-pages -disable-static --with-authfw=pam  --with-os-type=redhat
 tip     = gnu
 	      
 [pakur]
