@@ -23,3 +23,6 @@ betik   = rm -rf $PKG/usr/bin/lastb
 betik   = rm -rf $PKG/usr/bin/mesg
 betik   = rm -rf $PKG/usr/bin/utmpdump
 betik   = rm -rf $PKG/usr/bin/wall 
+betik   = rm -rf $PKG/usr/share/man/man1/newgrp.1.gz
+betik   = rm -rf $PKG/usr/share/man/man8/vigr.8.gz
+betik   = rm -rf $PKG/usr/share/man/man8/vipw.8.gz
