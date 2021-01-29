@@ -6,7 +6,7 @@ url     = http://www.gtkmm.org
 
 [gerek]
 derleme = gtk2 atkmm pangomm
-calisma =
+calisma = gtk2 atkmm pangomm
 
 [kaynak]
 1       = ${GNOME_SITE}/gtkmm/${surum%.*}/gtkmm-${surum}.tar.xz
