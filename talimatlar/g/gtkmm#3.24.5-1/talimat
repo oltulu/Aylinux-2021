@@ -1,6 +1,6 @@
 [paket]
 tanim   = GTK3 C++ bağlamları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.gtkmm.org
 
@@ -9,7 +9,7 @@ derleme  = gtk3 pangomm atkmm glibmm
 calisma  = pangomm atkmm glibmm pangomm
 
 [kaynak]
-xz      = https://download.gnome.org/sources/gtkmm/${surum%.*}
+xz      = https://ftp.gnome.org/pub/GNOME/sources/gtkmm/${surum%.*}
 
 [sha256]
 #1 		= ddfe42ed2458a20a34de252854bcf4b52d3f0c671c045f56b42aa27c7542d2fd
