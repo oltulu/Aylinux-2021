@@ -8,6 +8,7 @@ url     = http://www.cacert.org/certs
 1       = http://ftp.debian.org/debian/pool/main/c/${isim}/${isim}_${surum}.tar.xz
 dosya   = certdata2pem.c
 dosya   = remove-expired-certs.sh
+2= http://downloads.nutyx.org/x86_64/rolling/base/ca-certificates/cacert.pem
 
 [sha256]
 1       = ee4bf0f4c6398005f5b5ca4e0b87b82837ac5c3b0280a1cb3a63c47555c3a675
@@ -17,3 +18,4 @@ dosya   = derle.sh
 
 [pakur]
 dosya   = pakur.sh
+betik = mv /sources/cacert.pem $PKG/etc/ssl/cert.pem
