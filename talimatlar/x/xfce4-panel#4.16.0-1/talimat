@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = intltool gobject-introspection vala exo garcon libxfce4ui xfconf libwnck
-calisma  = desktop-file-utils 
+calisma  = desktop-file-utils libdbusmenu-glib libdbusmenu-gtk3
     
 [kaynak]
 bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
