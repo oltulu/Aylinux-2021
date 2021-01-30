@@ -6,7 +6,7 @@ url     = https://libproxy.github.io/libproxy/
 
 [gerek]
 derleme  = cmake python
-calisma  =  
+calisma  = dbus glib
 
 [kaynak]
 1  = https://github.com/libproxy/libproxy/archive/$surum.tar.gz::$isim-$surum.tar.gz
