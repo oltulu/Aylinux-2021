@@ -19,3 +19,59 @@ install -m644 "${SRC}"/{linguist,designer,assistant,qdbusviewer}.desktop \
 for b in "${PKG}"/usr/bin/*; do
 	ln -s $(basename $b) "${PKG}"/usr/bin/$(basename $b)-qt5
 done
+
+mkdir $PKG/usr/share/applications
+
+cat > $PKG/usr/share/applications/assistant-qt.desktop << "EOf"
+[Desktop Entry]
+Name=Qt5 Asistanı
+Comment=Qt5 belgelerini ve örneklerini gösterir
+Exec=assistant
+Icon=assistant
+Terminal=false
+Encoding=UTf-8
+Type=Application
+Categories=Qt;Development;Documentation;
+EOf
+
+cat > $PKG/usr/share/applications/designer-qt.desktop << "EOf"
+[Desktop Entry]
+Name=Qt5 Tasarla
+GenericName=Arayüz hazırlayıcı
+Comment=Qt5 uygulamaları için arayüz tasarımı
+Exec=designer
+Icon=designer
+mimeType=application/x-designer;
+Terminal=false
+Encoding=UTf-8
+Type=Application
+Categories=Qt;Development;
+EOf
+
+cat > $PKG/usr/share/applications/linguist-qt.desktop << "EOf"
+[Desktop Entry]
+Name=Qt5 Dil Ekle
+Comment=Qt5 uygulamalarına çeviriler ekleyin
+Exec=linguist
+Icon=linguist
+mimeType=text/vnd.trolltech.linguist;application/x-linguist;
+Terminal=false
+Encoding=UTf-8
+Type=Application
+Categories=Qt;Development;
+EOf
+
+cat > $PKG/usr/share/applications/qdbusviewer-qt.desktop << "EOf"
+[Desktop Entry]
+Name=Qt5 QDbus Görüntüleyici
+GenericName=D-Bus Hata Ayıklama
+Comment=D-Bus Uygulamalarında hata ayıklar
+Exec=qdbusviewer
+Icon=qdbusviewer
+Terminal=false
+Encoding=UTf-8
+Type=Application
+Categories=Qt;Development;Debugger;
+EOf
+
+
