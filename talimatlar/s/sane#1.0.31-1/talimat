@@ -6,7 +6,7 @@ url     = http://www.sane-project.org/
 
 [gerek]
 derleme    = avahi libjpeg-turbo tiff libgphoto2 v4l-utils libusb net-snmp
-calisma    =
+calisma    = libgphoto2 v4l-utils avahi poppler-glib net-snmp
 
 [kaynak]
 1          = https://gitlab.com/sane-project/backends/uploads/8bf1cae2e1803aefab9e5331550e5d5d/sane-backends-$surum.tar.gz
