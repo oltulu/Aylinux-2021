@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Qt Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt applications
+Name=Qt Dizayncı
+GenericName=Arayüz hazırlayın
+Comment=Qt uygulamaları için GUI tasarımı
 Exec=designer %F
 Icon=QtProject-designer
 MimeType=application/x-designer;
