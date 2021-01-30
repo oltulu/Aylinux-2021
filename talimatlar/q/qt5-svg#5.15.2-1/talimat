@@ -12,7 +12,7 @@ calisma =
 1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtsvg-everywhere-src-$surum.tar.xz
 
 [sha256]
-1 		= 308160223c0bd7492d56fb5d7b7f705bfb130947ac065bf39280ec6d7cbe4f6a
+#1 		= 308160223c0bd7492d56fb5d7b7f705bfb130947ac065bf39280ec6d7cbe4f6a
 
 [derle]
 betik   = mkdir -p build;cd build;qmake ../qtsvg-everywhere-src-$surum && make
