@@ -18,4 +18,4 @@ dosya   = derle.sh
 
 [pakur]
 dosya   = pakur.sh
-betik = mv /sources/cacert.pem $PKG/etc/ssl/cert.pem
+betik = cp /sources/cacert.pem $PKG/etc/ssl/cert.pem
