@@ -1,6 +1,6 @@
 [paket]
 tanim   = QT geliştirme dosyaları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.qt.io
 
@@ -9,7 +9,7 @@ derleme = qt5-base vulkan-headers qt5-declarative
 calisma = 
 
 [kaynak]
-1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qttools-everywhere-src-$surum.tar.xz
+#1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qttools-everywhere-src-$surum.tar.xz
 dosya   = designer.desktop
 dosya   = linguist.desktop
 dosya   = qdbusviewer.desktop
