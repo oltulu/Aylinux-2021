@@ -6,7 +6,7 @@ url     = https://www.gnupg.org
 
 [gerek]
 derleme = openldap libusb npth libgpg-error libgcrypt libksba libassuan sqlite
-calisma = pinentry npth libksba libassuan
+calisma = pinentry npth libksba libassuan libgpg-error libgcrypt
 
 [kaynak]
 bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
