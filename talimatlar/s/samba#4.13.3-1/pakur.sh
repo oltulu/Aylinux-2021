@@ -1,17 +1,24 @@
- # man pages
-    local p
-    for p in docs/manpages/*; do 
-        install -D -m 644 $p $PKG/usr/share/man/man${p##*.}/${p##*/}
-    done
+make DESTDIR=$PKG install
 
-    # cleanup
-    chmod 1777 $PKG/var/lock
+install -d $PKG/lib
+mv -v $PKG/usr/lib/libnss_win{s,bind}.so*   $PKG/lib
+ln -v -sf /lib/libnss_winbind.so.2 $PKG/usr/lib/libnss_winbind.so
+ln -v -sf /lib/libnss_wins.so.2    $PKG/usr/lib/libnss_wins.so
+   
+install -v -m644 examples/smb.conf.default $PKG/etc/samba/smb.conf.default
 
-    # config-file and start-script
-    install -d $PKG/etc/{samba,rc.d}
-    install -m 0600 examples/smb.conf.default $PKG/etc/samba
-    install -m 0755 $SRC/samba $PKG/etc/rc.d
+mkdir -pv $PKG/etc/openldap/schema
+install -v -m644 examples/LDAP/README \
+$PKG/etc/openldap/schema/README.LDAP
 
-    # revdep
-    install -d $PKG/etc/revdep.d
-    echo '/usr/lib/samba' > $PKG/etc/revdep.d/samba
+install -v -m644 examples/LDAP/samba* \
+$PKG/etc/openldap/schema
+
+install -v -m755 examples/LDAP/{get*,ol*} \
+$PKG/etc/openldap/schema
+
+
+#  cups 
+cd $PKG/usr/lib/
+install -d cups/backend
+ln -v -sf /usr/bin/smbspool $PKG/usr/lib/cups/backend/smb
