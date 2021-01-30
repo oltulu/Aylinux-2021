@@ -6,7 +6,7 @@ url     = http://libmtp.sourceforge.net
 
 [gerek]
 derleme  = libusb 
-calisma  = libusb
+calisma  = libusb libgcrypt
 
 [kaynak]
 gz  = https://downloads.sourceforge.net/$isim
