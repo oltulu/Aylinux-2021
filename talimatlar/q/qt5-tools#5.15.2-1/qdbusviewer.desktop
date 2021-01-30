@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Qt QDbusViewer 
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
+Name=Qt QDbus Görüntüleyici 
+GenericName=D-Bus Hata Ayıkla
+Comment=D-Bus uygulamalarında hata ayıklama
 Exec=qdbusviewer
 Icon=qdbusviewer
 Terminal=false
