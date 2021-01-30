@@ -1,0 +1,20 @@
+[paket]
+tanim  =  Rasgele yüksek hassasiyete sahip karmaşık sayıların aritmetiği için kütüphane
+paketci = Cihan_Alkan  
+grup    = kütüphane
+url     = http://www.multiprecision.org/
+
+[kaynak]
+1    = https://ftp.gnu.org/gnu/mpc/mpc-${surum/_/-}.tar.gz
+
+[sha256]
+1      = 4bd54929a80850754f27b568d7891e1e3e1b8d2f208d371f27d1fda09e6f12a8
+
+[derle]
+betik    = cd "${SRC}/mpc-${surum}"
+betik    = ./configure --prefix=/usr
+betik    = make
+
+[pakur]
+betik    = cd "${SRC}/mpc-${surum}"
+tip    = gnu
