@@ -6,7 +6,7 @@ url     = https://pagure.io/volume_key
 
 [gerek]
 derleme = cryptsetup glib gpgme nss python
-calisma = libassuan
+calisma = libassuan gpgme nss
 
 [kaynak]
 xz      = https://releases.pagure.org/$isim
