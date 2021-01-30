@@ -9,6 +9,7 @@ binutils
 gmp
 mpfr
 mpc
+libmpc
 shadow
 attr
 acl
