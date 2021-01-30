@@ -9,7 +9,7 @@ derleme = meson cmake llvm clang vulkan-loader python-mako libxdamage libxxf86vm
 calisma = libglvnd llvm libdrm libxcb libxshmfence vulkan-loader wayland wayland-protocols libxxf86vm libxdamage libxfixes libxext lm_sensors clang libomxil-bellagio
 
 [kaynak]
-xz      = https://distfiles.crux.guru
+xz      = https://fossies.org/linux/misc
 
 [sha512]
 #1       = 5ef28334ecb7effaaf597ea3efe0406af62419e6fa629e835d843161ab8d83515626ec0f0495c4cc66af9e5669398ac96c16ca626e4965a9831e1704c995fb09
