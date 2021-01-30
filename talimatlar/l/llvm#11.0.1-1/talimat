@@ -6,7 +6,7 @@ url     = http://llvm.org/
 
 [gerek]
 derleme = python ninja cmake
-calisma = 
+calisma = libxml2
 
 [kaynak]
 1       = https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/$isim-$surum.src.tar.xz
