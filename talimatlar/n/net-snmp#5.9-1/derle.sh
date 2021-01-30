@@ -1,5 +1,5 @@
 autoreconf -i
-PYTHONPROG=/usr/bin/python2 ./configure --prefix=/usr \
+PYTHONPROG=/usr/bin/python ./configure --prefix=/usr \
 --sysconfdir=/etc --sbindir=/usr/bin \
 --mandir=/usr/share/man \
 --enable-ucd-snmp-compatibility \
