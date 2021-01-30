@@ -6,7 +6,7 @@ url     = http://www.mega-nerd.com/libsndfile
 
 [gerek]
 derleme = flac alsa-lib libvorbis
-calisma = 
+calisma = flac alsa-lib libvorbis libogg
 
 [kaynak]
 gz      = $url/files
