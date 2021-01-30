@@ -3,6 +3,11 @@ tanim    = CDDBP, HTTP, SMTP protokolleri üzerinden CDDB sunucu erişim kütüp
 paketci  = milisarge
 grup     = medya
 url      = https://sourceforge.net/projects/libcddb
+
+[gerek]
+derleme = 
+calisma = libcdio
+
 [kaynak]
 bz2    =  https://downloads.sourceforge.net/sourceforge/$isim
 
