@@ -18,12 +18,12 @@ dosya   = jack-limitsd.conf
 
 [derle]
 betik   = cd jack2-$surum
-betik   = python waf configure --prefix=/usr --alsa --classic --dbus
-betik   = python waf build ${MAKEJOBS}
+betik   = ./waf configure --prefix=/usr --alsa
+betik   = ./waf build
 
 [pakur]
 betik   = cd jack2-$surum
-betik   = python2 waf install --destdir=$PKG
+betik   = ./waf install --destdir=$PKG
 # pam_limits(8) support
 betik   = install -Dm644 $SRC/jack-limitsd.conf $PKG/etc/security/limits.d/jack.conf
 ; gerçek zaman için audio grup izinlerinin ayarlanması
