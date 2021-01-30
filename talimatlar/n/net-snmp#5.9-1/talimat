@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = http://www.net-snmp.org/
 
 [gerek]
-derleme  = libnsl libpcap lm_sensors pciutils pcre python2 python2-setuptools
+derleme  = libnsl libpcap lm_sensors pciutils pcre python
 calisma  =  
 
 [kaynak]
@@ -16,7 +16,6 @@ gz  = https://downloads.sourceforge.net/$isim
 
 
 [derle]
-bayrak = yok
 dosya  = derle.sh
 
 [pakur]
