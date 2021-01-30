@@ -5,17 +5,17 @@ grup 	= temel
 url     = http://hightek.org/dialog
 
 [kaynak]
-1    	= https://invisible-mirror.net/archives/$isim/$isim-1.3-20201126.tgz
+1    	= https://invisible-mirror.net/archives/$isim/$isim-1.3_20210117.tgz
 
 [sha256]
 #1 		= 49c0e289d77dcd7806f67056c54f36a96826a9b73a53fb0ffda1ffa6f25ea0d3
 
 [derle]
-betik   = cd $isim-1.3-20201126
-betik   =  ./configure $confopt --enable-nls --with-libtool --with-ncursesw
+betik   = cd $isim-1.3_20210117
+betik   =  ./configure --prefix=/usr --enable-nls --with-libtool --with-ncursesw
 betik   = make
      
 [pakur]
-betik   = cd $isim-1.3-20201126
+betik   = cd $isim-1.3_20210117
 betik   = make DESTDIR=$PKG install-full
 betik   = rm -f $PKG/usr/lib/*.a
