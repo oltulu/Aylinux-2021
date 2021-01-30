@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = libxext xorg-util-macros
-calisma = xorg-proto
+calisma = xorg-proto libx11 libxext
 
 [kaynak]
 1       = $url/releases/individual/lib/libXxf86vm-$surum.tar.bz2
