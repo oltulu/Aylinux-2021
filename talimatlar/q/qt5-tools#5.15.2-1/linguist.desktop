@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Qt Linguist
-Comment=Add translations to Qt applications
+Name=Qt Dil Ekle
+Comment=Qt uygulamalarına çeviriler ekleyin
 Exec=linguist %F
 Icon=linguist
 MimeType=text/vnd.trolltech.linguist;application/x-linguist;
