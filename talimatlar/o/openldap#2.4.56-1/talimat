@@ -6,7 +6,7 @@ url     = https://www.openldap.org
 
 [gerek]
 derleme = cyrus-sasl e2fsprogs util-linux chrpath unixodbc db libxcrypt
-calisma = 
+calisma = db libxcrypt cyrus-sasl
 
 [kaynak]
 tgz     = $url/software/download/OpenLDAP/openldap-release
