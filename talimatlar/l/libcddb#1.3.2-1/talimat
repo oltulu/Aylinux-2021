@@ -6,7 +6,7 @@ url      = https://sourceforge.net/projects/libcddb
 
 [gerek]
 derleme = 
-calisma = libcdio
+calisma = 
 
 [kaynak]
 bz2    =  https://downloads.sourceforge.net/sourceforge/$isim
