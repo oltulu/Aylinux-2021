@@ -13,7 +13,7 @@ bz2     = $url/downloads
 dosya   = $isim-$surum-$devir.config
 
 [sha256]
-1 		= 0e4925392fd9f3743cc517e031b68b012b24a63b0cf6c1ff03cce7bb3846cc99
+#1 		= 0e4925392fd9f3743cc517e031b68b012b24a63b0cf6c1ff03cce7bb3846cc99
 
 [derle]
 betik   = cp $SRC/$isim-$surum-$devir.config .config
