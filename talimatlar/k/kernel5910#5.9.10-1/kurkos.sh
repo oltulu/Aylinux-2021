@@ -1,6 +1,6 @@
 #!/bin/bash
 surum=5.9.10
-sonek=milis
+sonek=aylinux
 depmod ${surum}-$sonek
 cd /boot
 
