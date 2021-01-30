@@ -19,7 +19,12 @@ dosya = $isim-4.7.3-multilib-dirs.patch
 #4 		= 79a66834e96a6050d8fe78db2c3b32fb285b230b855d0a66288235bc04b327a0
 
 [derle]
-dosya 	= derle.sh
+#dosya 	= derle.sh
+betik = sed -e '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64
+betik = mkdir -v build
+betik = cd       build
+betik = SED=sed ../configure --prefix=/usr --libdir=/usr/lib --enable-languages=c,c++,objc,fortran --disable-multilib --disable-bootstrap --with-system-zlib
+betik = make
 	      
 [pakur]
 betik   = cd build
