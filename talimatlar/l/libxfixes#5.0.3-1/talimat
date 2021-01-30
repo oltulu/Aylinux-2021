@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libx11 xorg-proto
-calisma = xorg-proto
+calisma = xorg-proto libx11
 
 [kaynak]
 1       = $url/releases/individual/lib/libXfixes-$surum.tar.bz2
