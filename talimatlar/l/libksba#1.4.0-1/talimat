@@ -6,7 +6,7 @@ url     = https://www.gnupg.org/related_software/libksba/index.html
 
 [gerek]
 derleme = libgpg-error
-calisma = 
+calisma = libgpg-error
 
 [kaynak]
 bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
