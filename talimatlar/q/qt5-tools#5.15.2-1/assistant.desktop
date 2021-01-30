@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Qt Assistant
-Comment=Shows Qt documentation and examples
+Name=Qt Asistanı
+Comment=Qt belgelerini ve örneklerini gösterir
 Exec=assistant
 Icon=assistant
 Terminal=false
