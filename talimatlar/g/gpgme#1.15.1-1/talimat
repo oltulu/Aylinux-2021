@@ -6,7 +6,7 @@ url     = https://www.gnupg.org/related_software/gpgme
 
 [gerek]
 derleme = libgpg-error libassuan gnupg
-calisma = gnupg libassuan qt5-base
+calisma = gnupg libassuan qt5-base libgpg-error
 
 [kaynak]
 bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
