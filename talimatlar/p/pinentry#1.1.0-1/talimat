@@ -6,7 +6,7 @@ url     = https://gnupg.org/related_software/pinentry
 
 [gerek]
 derleme = libgpg-error libassuan
-calisma = libassuan qt5-base gcr
+calisma = libassuan qt5-base gcr libgpg-error
 
 [kaynak]
 bz2     = https://www.gnupg.org/ftp/gcrypt/$isim
