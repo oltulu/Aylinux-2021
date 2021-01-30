@@ -6,7 +6,7 @@ url     = https://github.com/dirkvdb/ffmpegthumbnailer
 
 [gerek]
 derleme = cmake libjpeg-turbo libpng ffmpeg
-calisma =
+calisma = ffmpeg
 
 [kaynak]
 bz2     = https://github.com/dirkvdb/$isim/releases/download/$surum
