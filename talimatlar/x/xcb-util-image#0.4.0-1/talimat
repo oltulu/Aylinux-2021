@@ -6,7 +6,7 @@ url     = https://xcb.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros libxcb xcb-util
-calisma = 
+calisma = xcb-util
 
 [kaynak]
 bz2     = $url/dist
