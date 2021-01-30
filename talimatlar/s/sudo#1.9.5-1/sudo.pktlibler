@@ -1,9 +1,0 @@
-audit_json.so
-group_file.so
-libsudo_util.so
-libsudo_util.so.0
-libsudo_util.so.0.0.0
-sample_approval.so
-sudoers.so
-sudo_noexec.so
-system_group.so
