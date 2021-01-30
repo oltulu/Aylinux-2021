@@ -6,7 +6,7 @@ url     = http://www.mega-nerd.com/SRC/index.html
 
 [gerek]
 derleme = libsndfile fftw
-calisma = 
+calisma = libsndfile
 
 [kaynak]
 gz      = http://www.mega-nerd.com/SRC
