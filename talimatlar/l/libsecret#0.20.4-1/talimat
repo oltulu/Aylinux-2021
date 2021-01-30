@@ -6,6 +6,7 @@ url     = https://wiki.gnome.org/Projects/Libsecret
 
 [gerek]
 derleme = glib libgcrypt vala gobject-introspection
+calisma = libgcrypt libgpg-error
 
 [kaynak]
 xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
