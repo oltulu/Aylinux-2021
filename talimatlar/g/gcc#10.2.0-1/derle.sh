@@ -16,7 +16,7 @@ mkdir build
                                 --enable-multilib \
 				--enable-default-pie \
 				--enable-default-ssp \
-                                --with-pkgversion="bizim_linux"
+                                --with-pkgversion="aylinux"
 				 make bootstrap
    
    make -j1 DESTDIR=$PKG install
@@ -29,7 +29,7 @@ mkdir build
     mv $PKG/usr/lib/gcc/*/$surum/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$surum/include/
     rm -r $PKG/usr/share/{info,$isim-$surum} 
     rm -r $PKG/usr/bin/*-linux-gnu-*
-    rm -r $PKG/usr/lib/gcc/*/$version/{install-tools,include-fixed} 
+    rm -r $PKG/usr/lib/gcc/*/$surum/{install-tools,include-fixed} 
 
     for D in lib{,32}; do
         install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/${D}
