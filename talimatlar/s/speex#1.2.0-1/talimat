@@ -6,7 +6,7 @@ url     = https://www.speex.org
 
 [gerek]
 derleme = libogg
-calisma = speexdsp
+calisma = speexdsp libogg
 
 [kaynak]
 gz      = http://downloads.xiph.org/releases/speex
