@@ -1,16 +1,17 @@
-cat examples/smb.conf.default | \
-	sed 's|log file = .*$|log file = /var/log/samba/%m.log|g' > \
-	${PKG}/etc/samba/smb.conf
+ # man pages
+    local p
+    for p in docs/manpages/*; do 
+        install -D -m 644 $p $PKG/usr/share/man/man${p##*.}/${p##*/}
+    done
 
-# fix logrotate
-sed -i -e 's|log.%m|%m.log|g' ${PKG}/etc/samba/smb.conf
+    # cleanup
+    chmod 1777 $PKG/var/lock
 
-# fix spool directory
-sed -i 's|/usr/spool/samba|/var/spool/samba|g' ${PKG}/etc/samba/smb.conf
+    # config-file and start-script
+    install -d $PKG/etc/{samba,rc.d}
+    install -m 0600 examples/smb.conf.default $PKG/etc/samba
+    install -m 0755 $SRC/samba $PKG/etc/rc.d
 
-# PAM support
-install -Dm644 $SRC/samba.pam $PKG/etc/pam.d/samba
-
-# Link cups backend
-mkdir -p $PKG/usr/lib/cups/backend
-ln -s /usr/bin/smbspool ${PKG}/usr/lib/cups/backend/smb
+    # revdep
+    install -d $PKG/etc/revdep.d
+    echo '/usr/lib/samba' > $PKG/etc/revdep.d/samba
