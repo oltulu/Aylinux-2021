@@ -6,7 +6,7 @@ url     = http://www.jackaudio.org
 
 [gerek]
 derleme = python opus libsamplerate dbus celt
-calisma = opus libsamplerate celt
+calisma = opus libsamplerate celt libsndfile
 
 [kaynak]
 1       = https://github.com/jackaudio/jack2/archive/v$surum.tar.gz::$isim-$surum.tar.gz
