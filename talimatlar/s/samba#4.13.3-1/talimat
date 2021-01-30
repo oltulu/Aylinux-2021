@@ -6,7 +6,7 @@ url      = https://samba.org/
 
 [gerek]
 derleme  = libcap popt e2fsprogs krb5 openldap pam acl avahi tdb talloc tevent cups ldb gpgme jansson rpcsvc-proto perl-parse-yapp
-calisma  =  
+calisma  = talloc ldb jansson tevent gpgme
 
 [kaynak]
 gz     = http://us1.samba.org/samba/ftp/stable
