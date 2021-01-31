@@ -14,5 +14,9 @@ url     = http://ftp.gnu.org/gnu/
 dosya 	= derle.sh
 	      
 [pakur]
-dosya   = pakur.sh
+betik   = cd build
+betik   = make DESTDIR=$PKG install
+betik   = make -C ld clean
+betik   = make -C ld LIB_PATH=/usr/lib:/lib
+betik   = cp -v ld/ld-new $PKG/usr/bin
 betik   = rm -rf $PKG/usr/share/info
