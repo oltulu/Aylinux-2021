@@ -23,5 +23,6 @@ dosya = derle.sh
 #betik  = ninja ${MAKEJOBS}
 
 [pakur]
-tip    = ninja
+betik = cd $SRC
+betik    = DESTDIR=$PKG cmake --install build
 
