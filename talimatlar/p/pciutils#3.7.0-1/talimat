@@ -9,7 +9,7 @@ derleme =
 calisma = hwids
 
 [kaynak]
-gz 	  = ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci
+gz 	  = https://mj.ucw.cz/download/linux/pci
 
 [sha256]
 
