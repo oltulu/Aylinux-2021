@@ -1,4 +1,5 @@
- [[ -e "/usr/lib/pkgconfig/xtst.pc" && -e "/usr/lib/pkgconfig/ice.pc" ]] || PKGMK_PULSEAUDIO+=' -D x11=disabled'
+cd $SRC
+[[ -e "/usr/lib/pkgconfig/xtst.pc" && -e "/usr/lib/pkgconfig/ice.pc" ]] || PKGMK_PULSEAUDIO+=' -D x11=disabled'
   [[ -e "/usr/lib/pkgconfig/bluez.pc" && -e "/usr/lib/pkgconfig/sbc.pc" ]] || PKGMK_PULSEAUDIO+=' -D bluez5=false'
   [[ -e /usr/lib/pkgconfig/gstreamer-1.0.pc ]] && PKGMK_PULSEAUDIO+=' -D gstreamer=enabled'
   [[ -e /usr/lib/pkgconfig/bash-completion.pc ]] || PKGMK_PULSEAUDIO+=' -D bashcompletiondir=no'
