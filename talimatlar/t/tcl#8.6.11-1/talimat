@@ -15,4 +15,8 @@ betik   = cd tcl$surum/unix
 betik   = ./configure --prefix=/usr ; make
       
 [pakur]
-dosya 	= pakur.sh
+betik   = cd tcl$surum/unix
+betik   = make DESTDIR=$PKG install
+betik   = chmod -v u+w $PKG/usr/lib/libtcl8.6.so
+betik   = make install-private-headers
+betik   = ln -sv tclsh8.6 $PKG/usr/bin/tclsh
