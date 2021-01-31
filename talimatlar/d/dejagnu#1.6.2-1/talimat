@@ -4,6 +4,10 @@ paketci = milisarge
 grup 	= onsistem
 url     = http://gnu.org/gnu/dejagnu
 
+[gerek]
+derleme = expect
+calisma = expect
+
 [kaynak]
 gz      = http://ftp.gnu.org/gnu/dejagnu
 
