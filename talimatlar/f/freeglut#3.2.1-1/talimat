@@ -15,9 +15,12 @@ gz      = https://downloads.sourceforge.net/$isim
 #1 		= 9c45d5b203b26a7ff92331b3e080a48e806c92fbbe7c65d9262dd18c39cd6efdad8a795a80f499a2d23df84b4909dbd7c1bab20d7dd3555d3d88782ce9dd15b0
 
 [derle]
-betik   = cd $SRC;mkdir build;cd build
-betik   = cmake ../$isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release
+betik   = cd $SRC
+betik   = cmake -S$isim-$surum -Bbuild -GNinja DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release
+betik   = cmake --build build
+
 	      
 [pakur]
 betik   = cd ${SRC}/build
-tip 	= gnu
+betik   = = DESTDIR=$PKG cmake --install build
+betik   = ln -s glut.pc $PKG/usr/lib/pkgconfig/freeglut.pc
