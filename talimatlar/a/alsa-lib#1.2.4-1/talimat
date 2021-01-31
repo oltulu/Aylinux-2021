@@ -5,7 +5,7 @@ grup 	= sistem
 url     = https://www.alsa-project.org
 
 [gerek]
-derleme = python2
+derleme = 
 calisma = 
 
 [kaynak]
@@ -15,7 +15,7 @@ bz2      = ftp://ftp.alsa-project.org/pub/lib
 1 		= 402e39cca82d17555e3e52ef06b8ed9dcf58531da393809a7b5cf18658299fa90ee8a60bfc5213482d7a02b13140c441f1333b144556f44ab4adb786a2fb3c49
 
 [derle]
-betik =   ./configure --without-debug --prefix=/usr --with-pythonlibs="-lpthread -lm -ldl -lpython2.7" --with-pythonincludes=-I/usr/include/python2.7
+betik =   ./configure --without-debug --prefix=/usr --disable-python
 betik =   make
 	      
 [pakur]
