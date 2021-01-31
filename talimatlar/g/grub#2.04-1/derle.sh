@@ -22,6 +22,7 @@ cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 		--disable-efiemu \
 		--disable-grub-mount
 	make
+	make DESTDIR=$PKG install
 
 cd ${SRC}/grub-efi
  export CFLAGS="${CFLAGS} -Wno-error"
