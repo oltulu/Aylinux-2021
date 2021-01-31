@@ -12,3 +12,4 @@
     -D database=gdbm \
     -D tests=false
   meson compile -C build
+  
