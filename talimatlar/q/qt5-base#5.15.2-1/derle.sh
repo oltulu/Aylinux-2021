@@ -1,24 +1,33 @@
 # from archlinux
-patch -p1 -i ../qt5-base-cflags.patch # Use system CFLAGS
-
-./configure -confirm-license -opensource -v \
--prefix /usr \
--docdir /usr/share/doc/qt \
--headerdir /usr/include/qt \
--archdatadir /usr/lib/qt \
--datadir /usr/share/qt \
--sysconfdir /etc/xdg \
--examplesdir /usr/share/doc/qt/examples \
--plugin-sql-{psql,mysql,sqlite,odbc} \
--system-sqlite \
--openssl-linked \
--nomake examples \
--no-rpath \
--dbus-linked \
--system-harfbuzz \
--no-mimetype-database \
--no-use-gold-linker \
--reduce-relocations \
--no-strip
-
+./configure -prefix         /usr                        \
+            -sysconfdir     /etc/xdg                    \
+            -bindir         /usr/bin                    \
+            -plugindir      /usr/lib/qt/plugins         \
+            -importdir      /usr/lib/qt/imports         \
+            -headerdir      /usr/include/qt             \
+            -datadir        /usr/share/qt               \
+            -qmldir         /usr/lib/qt/qml             \
+            -archdatadir    /usr/lib/qt                 \
+            -docdir         /usr/share/doc/qt           \
+            -translationdir /usr/share/qt/translations  \
+            -examplesdir    /usr/share/doc/qt/examples  \
+            -plugin-sql-{psql,mysql,sqlite,odbc}        \
+            -confirm-license    \
+            -opensource         \
+            -openssl-linked     \
+            -nomake tests       \
+            -nomake examples    \
+            -optimized-qmake    \
+            -reduce-relocations \
+            -dbus-linked        \
+            -feature-menu       \
+            -feature-textdate   \
+            -feature-ftp        \
+            -system-zlib        \
+            -system-libjpeg     \
+            -system-libpng      \
+            -system-harfbuzz    \
+            -system-sqlite      \
+            -system-freetype    \
+            -no-rpath
 make
