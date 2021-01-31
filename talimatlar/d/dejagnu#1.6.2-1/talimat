@@ -11,8 +11,8 @@ gz      = http://ftp.gnu.org/gnu/dejagnu
 1 		= 0d0671e1b45189c5fc8ade4b3b01635fb9eeab45cf54f57db23e4c4c1a17d261
 
 [derle]
-betik 	= ./configure --prefix=/tools;make
+betik 	= ./configure --prefix=/usr;make
 	      
 [pakur]
 tip     = gnu
-betik   = rm -rf $PKG/tools/share/info
+betik   = rm -rf $PKG/usr/share/info
