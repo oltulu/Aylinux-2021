@@ -7,7 +7,7 @@ arsiv   = openjpeg-${surum}
 
 [gerek]
 derleme = cmake libpng tiff lcms2
-calisma = 
+calisma = lcms2
 
 [kaynak]
 github  = uclouvain/openjpeg
