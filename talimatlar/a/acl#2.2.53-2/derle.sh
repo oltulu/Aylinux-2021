@@ -1,7 +1,7 @@
 ./configure \
---prefix=/tools         \
---bindir=/tools/bin     \
+--prefix=/usr         \
+--bindir=/usr/bin     \
 --disable-static      \
---libexecdir=/tools/lib \
---libdir=/tools/lib 
+--libexecdir=/usr/lib \
+--libdir=/usr/lib 
 make
