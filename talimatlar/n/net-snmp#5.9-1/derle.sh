@@ -1,14 +1,18 @@
-autoreconf -i
-PYTHONPROG=/usr/bin/python ./configure --prefix=/usr \
---sysconfdir=/etc --sbindir=/usr/bin \
---mandir=/usr/share/man \
---enable-ucd-snmp-compatibility \
---enable-ipv6 \
---with-python-modules \
---with-default-snmp-version="3" \
---with-sys-contact="root@localhost" \
---with-sys-location="Unknown" \
---with-logfile="/var/log/snmpd.log" \
---with-mib-modules="host misc/ipfwacc ucd-snmp/diskio tunnel ucd-snmp/dlmod ucd-snmp/lmsensorsMib" \
---with-persistent-directory="/var/net-snmp"
-make NETSNMP_DONT_CHECK_VERSION=1
+#export NETSNMP_DONT_CHECK_VERSION=1
+	./configure --prefix=/usr \
+				--sysconfdir=/etc \
+				--enable-shared \
+				--enable-embedded-perl \
+				--with-perl-modules \
+				--without-rpm \
+				--with-openssl \
+				--with-zlib \
+				--with-mib-modules="ucd-snmp/lmsensorsMib smux agentx ucd-snmp/diskio" \
+				--with-sys-location="Unknown" \
+				--with-sys-contact="root@localhost" \
+				--with-default-snmp-version="3" \
+				--with-logfile=/var/log/snmp/snmpd.log \
+				--with-persistent-directory=/var/lib/snmp \
+				--with-ldflags="-lsensors"
+	make -j1
+  
