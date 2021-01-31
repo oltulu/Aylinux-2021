@@ -11,7 +11,13 @@ xz      = http://ftp.gnu.org/gnu/gettext
 #1 		= 105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
 
 [derle]
-dosya   = derle.sh
+betik   = cd gettext-tools
+betik   = EMACS="no" ./configure --prefix=/usr --disable-shared
+betik   = make -C gnulib-lib
+betik   = make -C intl pluralx.c
+betik   = make -C src msgfmt
+betik   = make -C src msgmerge
+betik   = make -C src xgettext
 	      
 [pakur]
 dosya   = pakur.sh
