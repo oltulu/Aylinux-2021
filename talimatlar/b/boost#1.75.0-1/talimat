@@ -18,7 +18,7 @@ betik      = cd $SRC
 
 [pakur]
 betik      = cd boost_1_75_0
-betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=C++ --with-python=python3
+betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=gcc --with-python=python3
 
 betik      = ./b2 stage -j8 variant=release threading=multi link=shared,static debug-symbols=off
 
