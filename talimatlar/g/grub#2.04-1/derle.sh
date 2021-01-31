@@ -20,19 +20,13 @@ cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 		--sysconfdir=/etc \
 		--enable-device-mapper \
 		--disable-efiemu \
---with-platform="pc" \
---target="i386" \
---enable-efiemu \
-$common_conf
-make
+		--disable-grub-mount
+	make
 
 cd ${SRC}/grub-efi
 #/autogen.sh
-./configure --prefix=/usr \
-		--sysconfdir=/etc \
-		--enable-device-mapper \
---with-platform="efi" \
---target="x86_64" \
---disable-efiemu \
-$common_conf
+configure --prefix=/usr \
+            --with-platform=efi --target=$ARCH \
+            --program-prefix=""
+        
 make
