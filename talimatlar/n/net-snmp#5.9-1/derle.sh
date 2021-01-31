@@ -1,6 +1,6 @@
 #export NETSNMP_DONT_CHECK_VERSION=1
 	./configure --prefix=/usr \
-				--sysconfdir=/etc \
+				--sysconfdir=/etc --sbindir=/usr/bin \
 				--enable-shared \
 				--disable-embedded-perl \
 				--with-perl-modules \
