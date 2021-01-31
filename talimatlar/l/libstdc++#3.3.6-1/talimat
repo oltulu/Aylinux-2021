@@ -15,8 +15,26 @@ url     = http://gcc.gnu.org
 
 [derle]
 betik	= cd gcc-$surum
-dosya	= derle.sh
+betik	= patch -Np1 -i /sources/gcc-3.4.3-no_multilib_amd64.patch
+betik	= patch -Np1 -i /sources/gcc-3.4.6-ucontext.patch
+betik	= sed -i "s#O_CREAT#O_CREAT, 0666#" gcc/collect2.c
+betik	= sed -i -e 's@\./fixinc\.sh@-c true@' gcc/Makefile.in
+betik	= patch -Np0 -i /sources/siginfo.patch
+betik	= mkdir ../gcc-build
+betik	= cd $SRC
+betik	= export CFLAGS="-march=${CARCH/_/-} -O2"
+betik	= export CXXFLAGS="-march=${CARCH/_/-} -O2"
+betik	= unset CPPFLAGS
+betik	= cd gcc-build
+betik	= CPP=/usr/bin/cpp ../gcc-${surum}/configure --prefix=/usr --enable-shared  --enable-languages=c++ --enable-threads=posix --enable-__cxa_atexit --disable-multilib --libdir=/usr/lib
+betik	= make all-target-libstdc++-v3 BOOT_CFLAGS="${CFLAGS}" STAGE1_CFLAGS="-O"
 	      
 [pakur]
-betik   = cd gcc-$surum/build
-tip     = gnu
+betik   = cd ${SRC}/gcc-build
+betik   = make DESTDIR=${PKG} install-target-libstdc++-v3
+
+  # Remove includefiles and libs provided by gcc
+betik   = rm -rf ${PKG}/usr/{include,share/locale}
+betik   = rm -f ${PKG}/usr/lib/*.a
+betik   = rm -f ${PKG}/usr/lib/libstdc++.so
+
