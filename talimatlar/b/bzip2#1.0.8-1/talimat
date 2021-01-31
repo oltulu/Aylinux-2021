@@ -11,23 +11,26 @@ gz      = https://sourceware.org/pub/bzip2
 #1 		= a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd
 
 [derle]
-betik 	= cp /sources/bzip2.pc bzip2.pc
-betik 	= sed "s|@VERSION@|$surum|" -i bzip2.pc
-betik 	= make -f Makefile-libbz2_so CC="gcc $CFLAGS $CPPFLAGS $LDFLAGS"
-betik 	= make bzip2 bzip2recover CC="gcc $CFLAGS $CPPFLAGS $LDFLAGS"
+betik 	= install -d $PKG/usr/{bin,lib,include,share/man/man1}
+betik 	= sed "/^CFLAGS/s/-O2/$CFLAGS/" -i Makefile Makefile-libbz2_so
+betik 	= make -f Makefile-libbz2_so
+betik 	= install libbz2.so.$surum $PKG/usr/lib
+betik 	= ln -s libbz2.so.$surum $PKG/usr/lib/libbz2.so
+betik 	= ln -s libbz2.so.$surum $PKG/usr/lib/libbz2.so.1.0
+betik 	= make clean
+betik 	= make
+
 	      
 [pakur]
-betik   = install -dm755 "$PKG"/usr/{bin,lib,include,share/man/man1}
-betik   = install -m755 bzip2-shared "$PKG"/usr/bin/bzip2
-betik   = install -m755 bzip2recover bzdiff bzgrep bzmore "$PKG"/usr/bin
-betik   = ln -sf bzip2 "$PKG"/usr/bin/bunzip2
-betik   = ln -sf bzip2 "$PKG"/usr/bin/bzcat
-betik   = cp -a libbz2.so* "$PKG"/usr/lib
-betik   = ln -s libbz2.so.$surum "$PKG"/usr/lib/libbz2.so
-betik   = ln -s libbz2.so.$surum "$PKG"/usr/lib/libbz2.so.1  
-betik   =  install -m644 bzlib.h "$PKG"/usr/include/
-betik   = install -m644 bzip2.1 "$PKG"/usr/share/man/man1/
-betik   = ln -sf bzip2.1 "$PKG"/usr/share/man/man1/bunzip2.1
-betik   = ln -sf bzip2.1 "$PKG"/usr/share/man/man1/bzcat.1
-betik   = ln -sf bzip2.1 "$PKG"/usr/share/man/man1/bzip2recover.1
+betik   = install -m 0755 bzip2 bzip2recover bzdiff bzgrep bzmore $PKG/usr/bin
+betik   = ln -s bzip2  $PKG/usr/bin/bunzip2
+betik   = ln -s bzip2  $PKG/usr/bin/bzcat
+betik   = ln -s bzdiff $PKG/usr/bin/bzcmp
+betik   = ln -s bzgrep $PKG/usr/bin/bzegrep
+betik   = ln -s bzgrep $PKG/usr/bin/bzfgrep
+betik   = ln -s bzmore $PKG/usr/bin/bzless
+betik   = install -m 0644 libbz2.a $PKG/usr/lib
+betik   = install -m 0644 bzlib.h $PKG/usr/include
+betik   = install -m 0644 *.1 $PKG/usr/share/man/man1
 betik   = install -Dm644 bzip2.pc -t "$PKG"/usr/lib/pkgconfig
+
