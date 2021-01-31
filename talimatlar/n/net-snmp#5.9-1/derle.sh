@@ -2,7 +2,7 @@
 	./configure --prefix=/usr \
 				--sysconfdir=/etc \
 				--enable-shared \
-				--enable-embedded-perl \
+				--disable-embedded-perl \
 				--with-perl-modules \
 				--without-rpm \
 				--with-openssl \
