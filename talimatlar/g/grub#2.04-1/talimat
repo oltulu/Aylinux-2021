@@ -14,13 +14,16 @@ dosya   = grub.default
 dosya   = 0004-add-GRUB_COLOR_variables.patch
 1= https://crux.nu/ports/crux-3.6/opt/grub2/grub2-10_linux.diff
 2= https://crux.nu/ports/crux-3.6/opt/grub2/grub2-00_header.diff
+
 [sha256]
 #1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
 
 [derle]
-#yama    = 0004-add-GRUB_COLOR_variables.patch
-#dosya   = derle.sh
-betik = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --infodir=/usr/share/info --enable-boot-time --disable-werror
+betik = export CFLAGS="${CFLAGS} -Wno-error"
+betik = export PYTHON=python
+betik = patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
+betik = patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
+betik = ./configure --prefix=/usr --sysconfdir=/etc --enable-device-mapper --disable-efiemu --disable-grub-mount
 betik = make
 	      
 [pakur]
