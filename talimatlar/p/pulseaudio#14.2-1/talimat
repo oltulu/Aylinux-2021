@@ -18,7 +18,7 @@ xz      = http://freedesktop.org/software/pulseaudio/releases
 dosya   = derle.sh
 
 [pakur]
-cd $SRC
+betik     = cd $SRC
 betik     =  DESTDIR=$PKG meson install -C build
 #betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
 #betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
