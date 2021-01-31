@@ -14,7 +14,7 @@
 [ -e '/usr/lib/pkgconfig/vpx.pc' ] && PKGMK_FFMPEG+=' --enable-libvpx'
 [ -e '/usr/lib/pkgconfig/vorbis.pc' ] && PKGMK_FFMPEG+=' --enable-libvorbis'
 [ -e '/usr/lib/pkgconfig/theora.pc' ] && PKGMK_FFMPEG+=' --enable-libtheora'
-[ -e '/usr/lib/pkgconfig/libpulse.pc' ] && PKGMK_FFMPEG+=' --enable-libpulse'
+#[ -e '/usr/lib/pkgconfig/libpulse.pc' ] && PKGMK_FFMPEG+=' --enable-libpulse'
 [ -e '/usr/lib/pkgconfig/fdk-aac.pc' ] && PKGMK_FFMPEG+=' --enable-libfdk-aac --enable-nonfree'
 [ -e '/usr/lib/pkgconfig/dav1d.pc' ] && PKGMK_FFMPEG+=' --enable-libdav1d'
 
