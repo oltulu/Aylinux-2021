@@ -23,7 +23,6 @@
 --enable-libopencore_amrwb \
 --enable-libopenjpeg \
 --enable-libopus \
---enable-libpulse \
 --enable-libsoxr \
 --enable-libspeex \
 --enable-libssh \
