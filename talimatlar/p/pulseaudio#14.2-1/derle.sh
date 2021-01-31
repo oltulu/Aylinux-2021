@@ -1,11 +1,14 @@
-ekconf="-prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-oss-output --disable-oss-wrapper --disable-tcpwrap --with-pulsedsp-location='/usr/lib/pulseaudio'
- --enable-jack --disable-lirc --disable-hal-compat --disable-gconf --enable-orc
- --with-database=tdb --with-udev-rules-dir=/usr/lib/udev/rules.d --disable-bluez4
- --disable-esound --disable-gtk3 --enable-bluez5 --disable-bluez5-ofono-headset
- --disable-systemd-login --disable-systemd-daemon --disable-systemd-journal
- --enable-webrtc-aec --with-bash-completion-dir=/usr/share/bash-completion/completions
- --enable-bluez5-native-headset --disable-default-build-tests"
+ [[ -e "/usr/lib/pkgconfig/xtst.pc" && -e "/usr/lib/pkgconfig/ice.pc" ]] || PKGMK_PULSEAUDIO+=' -D x11=disabled'
+  [[ -e "/usr/lib/pkgconfig/bluez.pc" && -e "/usr/lib/pkgconfig/sbc.pc" ]] || PKGMK_PULSEAUDIO+=' -D bluez5=false'
+  [[ -e /usr/lib/pkgconfig/gstreamer-1.0.pc ]] && PKGMK_PULSEAUDIO+=' -D gstreamer=enabled'
+  [[ -e /usr/lib/pkgconfig/bash-completion.pc ]] || PKGMK_PULSEAUDIO+=' -D bashcompletiondir=no'
+  [[ -e /usr/bin/zsh ]] || PKGMK_PULSEAUDIO+=' -D zshcompletiondir=no'
 
-NOCONFIGURE=1 ./bootstrap.sh
-
-./configure $confopt $ekconf
+   meson setup $isim-$surum build $PKGMK_PULSEAUDIO \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    -D buildtype=plain \
+    -D udevrulesdir=/etc/udev/rules.d \
+    -D database=gdbm \
+    -D tests=false
+  meson compile -C build
