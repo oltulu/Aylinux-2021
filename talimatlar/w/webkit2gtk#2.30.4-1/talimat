@@ -1,6 +1,6 @@
 [paket]
 tanim   = GTK+ Web içerik motoru
-paketci = milisarge  
+paketci = Cihan_Alkan  
 grup    = ağ 
 url     = https://webkitgtk.org
 
@@ -13,7 +13,7 @@ calisma    =
 1     = https://webkitgtk.org/releases/webkitgtk-${surum}.tar.xz
 
 [sha256]
-1     = 6b80f0637a80818559ac8fd50db3b394f41cb61904fb9b3ed65fa51635806512
+#1     = 6b80f0637a80818559ac8fd50db3b394f41cb61904fb9b3ed65fa51635806512
 
 [derle]
 betik  = mkdir build ; cd build 
