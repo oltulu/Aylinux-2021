@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://www.boost.org/
 
 [gerek]
-derleme    = icu python2 python zstd
+derleme    = icu python
 calisma    =
 
 [kaynak]
@@ -18,7 +18,7 @@ betik      = cd $SRC
 
 [pakur]
 betik      = cd ${isim}_${surum//./_}
-betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=gcc --with-python=python3
+betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=C++ --with-python=python3
 
 betik      = ./b2 stage -j8 variant=release threading=multi link=shared,static debug-symbols=off
 
