@@ -5,7 +5,7 @@ grup 	= onsistem
 url     = http://expect.sourceforge.net
 
 [gerek]
-derleme = 
+derleme = tcl
 calisma = tcl
 
 [kaynak]
