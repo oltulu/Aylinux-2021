@@ -20,5 +20,5 @@ dosya  = derle.sh
 
 [pakur]
 betik  = sed -i -e "s:install --basedir=\$\$dir:install --basedir=\$\$dir --root=${PKG}:" Makefile
-betik  = make DESTDIR="${PKG}" INSTALL_PREFIX="${PKG}" INSTALLDIRS=vendor install
+betik  = make install INSTALL_PREFIX=$PKG DESTDIR=$PKG
 
