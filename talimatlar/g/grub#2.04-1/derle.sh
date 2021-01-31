@@ -4,8 +4,8 @@ export PYTHON=python3
 
 cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 cd ${SRC}/grub-$surum
-patch -i /sources/$isim-00_header.diff util/grub.d/00_header.in
-patch -i /sources/$isim-10_linux.diff util/grub.d/10_linux.in
+patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
+patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
 ./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-device-mapper \
