@@ -11,7 +11,12 @@ xz      = $url
 1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
 
 [derle]
-dosya 	= derle.sh
+betik   = unset CFLAGS
+betik   = sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c
+betik   = echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
+betik   = ./configure --prefix=/usr
+betik   = make
+betik   = make -k check || true
 	      
 [pakur]
 tip     = gnu
