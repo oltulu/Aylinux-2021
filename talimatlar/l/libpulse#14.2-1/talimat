@@ -1,0 +1,24 @@
+[paket]
+tanim   = Özellikli, genel amaçlı bir ses sunucusu
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://www.freedesktop.org/wiki/Software/PulseAudio/
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://gitlab.freedesktop.org/pulseaudio/pulseaudio
+
+[sha256]
+#1 		= 1aa7325654d20d3060a0ef0ffc27febfd58ee66704ee690727dc1a77ad1069bd
+
+[derle]
+betik= cd pulseaudio
+betik 	= milis-meson pulseaudio build -D pulsedsp-location='/usr/\$LIB/pulseaudio' -D stream-restore-clear-old-devices=true -D udevrulesdir=/usr/lib/udev/rules.d
+betik 	= meson compile -C build
+	      
+[pakur]
+betik= cd pulseaudio
+betik = mv libpulse/* "$PKG"
