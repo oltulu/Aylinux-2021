@@ -1,6 +1,6 @@
 [paket]
 tanim    = Ses ve video işlemleri için toplu çözüm araç ve kütüphanesi
-paketci  = milisarge
+paketci  = Cihan_Alkan
 grup     = medya 
 url      = https://ffmpeg.org
 
@@ -19,5 +19,4 @@ dosya  =  derle.sh
 
 [pakur]
 betik  =  make DESTDIR="${PKG}" install install-man
-betik  =  install -Dm 755 tools/qt-faststart "${PKG}"/usr/bin/
 
