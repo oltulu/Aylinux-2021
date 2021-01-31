@@ -9,7 +9,7 @@ derleme    = icu python
 calisma    =
 
 [kaynak]
-1          = https://dl.bintray.com/boostorg/release/${surum}/source/boost_${surum//./_}.tar.bz2
+1          = https://dl.bintray.com/boostorg/release/$surum/source/boost_1_75_0.tar.bz2
 [sha256]
 #1          = 96b34f7468f26a141f6020efb813f1a2f3dfb9797ecf76a7d7cbd843cc95f5bd
 
@@ -17,7 +17,7 @@ calisma    =
 betik      = cd $SRC
 
 [pakur]
-betik      = cd ${isim}_${surum//./_}
+betik      = cd boost_1_75_0
 betik      = ./bootstrap.sh --prefix=$PKG/usr --with-toolset=C++ --with-python=python3
 
 betik      = ./b2 stage -j8 variant=release threading=multi link=shared,static debug-symbols=off
