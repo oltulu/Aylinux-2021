@@ -4,6 +4,10 @@ paketci = milisarge
 grup 	= onsistem
 url     = http://expect.sourceforge.net
 
+[gerek]
+derleme = 
+calisma = tcl
+
 [kaynak]
 1      = https://sourceforge.net/projects/expect/files/Expect/$surum/expect${surum}.tar.gz
 
