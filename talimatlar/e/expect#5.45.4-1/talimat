@@ -15,7 +15,7 @@ calisma = tcl
 1 		= 49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34
 
 [derle]
-betik 	= cd expect${pkgver}
+betik 	= cd expect${surum}
 betik 	= ./configure --prefix=/usr --mandir=/usr/share/man 
 betik 	= make
 	      
