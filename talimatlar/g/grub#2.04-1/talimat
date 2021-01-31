@@ -25,7 +25,7 @@ betik = export PYTHON=python
 betik = cd grub
 betik = patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
 betik = patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
-betik = ./ autogen.sh
+betik = ./autogen.sh
 betik = ./configure --prefix=/usr --sysconfdir=/etc --enable-device-mapper --disable-efiemu --disable-grub-mount
 betik = make
 	      
