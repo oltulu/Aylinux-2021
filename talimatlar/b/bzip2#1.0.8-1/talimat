@@ -32,5 +32,5 @@ betik   = ln -s bzmore $PKG/usr/bin/bzless
 betik   = install -m 0644 libbz2.a $PKG/usr/lib
 betik   = install -m 0644 bzlib.h $PKG/usr/include
 betik   = install -m 0644 *.1 $PKG/usr/share/man/man1
-betik   = install -Dm644 bzip2.pc -t "$PKG"/usr/lib/pkgconfig
+betik   = install -Dm644 /sources/bzip2.pc -t "$PKG"/usr/lib/pkgconfig/
 
