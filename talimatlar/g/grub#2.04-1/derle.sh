@@ -1,10 +1,11 @@
 cd $SRC
 export CFLAGS="${CFLAGS} -Wno-error"
 export PYTHON=python3
-patch -i /sources/$isim-00_header.diff util/grub.d/00_header.in
-patch -i /sources/$isim-10_linux.diff util/grub.d/10_linux.in
+
 cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 cd ${SRC}/grub-$surum
+patch -i /sources/$isim-00_header.diff util/grub.d/00_header.in
+patch -i /sources/$isim-10_linux.diff util/grub.d/10_linux.in
 ./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-device-mapper \
