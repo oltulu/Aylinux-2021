@@ -20,4 +20,6 @@ betik   = make -C src msgmerge
 betik   = make -C src xgettext
 	      
 [pakur]
-dosya   = pakur.sh
+betik   = cd gettext-tools	
+betik   = mkdir -p $PKG/usr/bin
+betik   = cp -v src/{msgfmt,msgmerge,xgettext} $PKG/usr/bin
