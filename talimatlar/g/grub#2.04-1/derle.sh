@@ -24,9 +24,23 @@ cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
 	make
 
 cd ${SRC}/grub-efi
-#/autogen.sh
-configure --prefix=/usr \
+ export CFLAGS="${CFLAGS} -Wno-error"
+    export PYTHON=python3
+
+    MODLIST="boot chain configfile fat ext2 linux normal ntfs part_gpt part_msdos"
+
+    for ARCH in i386 x86_64
+    do
+        mkdir $ARCH
+        cd $ARCH
+        ../grub-$version/configure --prefix=/usr \
             --with-platform=efi --target=$ARCH \
             --program-prefix=""
-        
-make
+        make
+        make DESTDIR=$PKG install
+        cd grub-core
+        ../grub-mkimage -O $ARCH-efi -d . -o grub2-$ARCH.efi -p "" $MODLIST
+        cp grub2-$ARCH.efi $PKG/usr/lib/grub/
+        cd ../..
+    done
+ 
