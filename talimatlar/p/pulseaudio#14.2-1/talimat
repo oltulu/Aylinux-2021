@@ -19,6 +19,6 @@ dosya   = derle.sh
 
 [pakur]
 cd $SRC
-tip     = gnu
-betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
-betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
+betik     =  DESTDIR=$PKG meson install -C build
+#betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
+#betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
