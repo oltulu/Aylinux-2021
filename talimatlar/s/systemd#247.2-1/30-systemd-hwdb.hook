@@ -6,6 +6,6 @@ Operation = Remove
 Target = usr/lib/udev/hwdb.d/*
 
 [Action]
-Description = Updating udev hardware database...
+Description = Udev donanım veritabanını güncelleniyor...
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/systemd-hook hwdb
