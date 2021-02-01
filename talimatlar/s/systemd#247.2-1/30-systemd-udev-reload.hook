@@ -6,6 +6,6 @@ Operation = Remove
 Target = usr/lib/udev/rules.d/*
 
 [Action]
-Description = Reloading device manager configuration...
+Description = Cihaz yöneticisi yapılandırması yeniden yükleniyor...
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/systemd-hook udev-reload
