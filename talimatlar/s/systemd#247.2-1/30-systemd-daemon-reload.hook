@@ -6,6 +6,6 @@ Operation = Remove
 Target = usr/lib/systemd/system/*
 
 [Action]
-Description = Reloading system manager configuration...
+Description = Sistem yöneticisi yapılandırması yeniden yükleniyor...
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/systemd-hook daemon-reload
