@@ -18,7 +18,7 @@ calisma  =
 betik =  cd $isim-$surum
 betik =   CFLAGS="-march=native"
 betik = NOCONFIGURE=1 ./autogen.sh
-betik =  PYTHON=/usr/bin/python3 CYTHON=/usr/bin/cython3 ./configure --prefix=/usr
+betik =  PYTHON=/usr/bin/python3 CYTHON=/usr/bin/cython3 ./configure --prefix=/usr  --enable-fortran
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik =make
 
