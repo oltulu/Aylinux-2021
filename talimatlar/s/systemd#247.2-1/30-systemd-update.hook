@@ -6,6 +6,6 @@ Operation = Remove
 Target = usr/
 
 [Action]
-Description = Arming ConditionNeedsUpdate...
+Description = Kurma Durumunun Güncellenmesi Gerekiyor...
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/systemd-hook update
