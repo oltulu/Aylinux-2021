@@ -16,7 +16,7 @@ calisma  =
 
 [derle]
 betik =  cd $isim-$surum
-#betik = git cherry-pick -n 42bb64ba96
+betik =   CFLAGS="-march=native"
 betik = NOCONFIGURE=1 ./autogen.sh
 betik =  PYTHON=/usr/bin/python3 CYTHON=/usr/bin/cython3 ./configure --prefix=/usr
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
@@ -24,6 +24,6 @@ betik =make
 
 
 [pakur]
-betik =  cd $isim
+betik =  cd $isim-$surum
 betik   = make DESTDIR="$PKG" install
 betik = install -D -m644 cython/plist.pxd "${PKG}"/usr/include/plist/cython/plist.pxd
