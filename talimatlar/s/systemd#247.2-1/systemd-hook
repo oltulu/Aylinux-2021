@@ -2,14 +2,14 @@
 
 systemd_live() {
   if [ ! -d /run/systemd/system ]; then
-    echo >&2 "  Skipped: Current root is not booted."
+    echo >&2 "  Atlandı: Mevcut kök başlatılmadı."
     exit 0
   fi
 }
 
 udevd_live() {
   if [ ! -d /run/udev ]; then
-    echo >&2 "  Skipped: Device manager is not running."
+    echo >&2 "  Atlandı: Cihaz yöneticisi çalışmıyor."
     exit 0
   fi
 }
@@ -31,7 +31,7 @@ case "$op" in
   # For use by other packages
   reload)        systemd_live; /usr/bin/systemctl try-reload-or-restart "$@" ;;
 
-  *) echo >&2 "  Invalid operation '$op'"; exit 1 ;;
+  *) echo >&2 "  Geçersiz işlem '$op'"; exit 1 ;;
 esac
 
 exit 0
