@@ -9,14 +9,14 @@ derleme  = python cython glib
 calisma  =
 
 [kaynak]
-git  = https://github.com/libimobiledevice/libplist
+1  = https://github.com/libimobiledevice/libplist/archive/$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 #1    = 3a7e9694c2d9a85174ba1fa92417cfabaea7f6d19631e544948dc7e17e82f602
 
 [derle]
-betik =  cd $isim
-betik = git cherry-pick -n 42bb64ba96
+betik =  cd $isim-$surum
+#betik = git cherry-pick -n 42bb64ba96
 betik = NOCONFIGURE=1 ./autogen.sh
 betik =  PYTHON=/usr/bin/python3 CYTHON=/usr/bin/cython3 ./configure --prefix=/usr
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
