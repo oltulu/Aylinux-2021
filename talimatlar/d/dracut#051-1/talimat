@@ -16,7 +16,7 @@ xz      = http://kernel.org/pub/linux/utils/boot/dracut
 
 [derle]
 betik = sed -i 's/"Cannot find init"/"init bulunamadı"/' modules.d/99base/init.sh
-betik   = ./configure --prefix=/usr --sysconfdir=/etc --loginstalldir=/var/log/dracut
+betik   = ./configure --prefix=/usr --sysconfdir=/etc 
 betik   = make -j1 sysconfdir=/etc prefix=/usr
 	      
 [pakur]
