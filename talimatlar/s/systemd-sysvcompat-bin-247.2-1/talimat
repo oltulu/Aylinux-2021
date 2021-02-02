@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNU Derleyici Koleksiyonu - C ve C ++ ön uçları
+paketci = Cihan_Alkan
+grup 	= geliştirme
+url     = http://www.aylinux.kripto.com.tr
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = https://ftp5.gwdg.de/pub/linux/archlinux/core/os/x86_64/systemd-sysvcompat-247.2-1-x86_64.pkg.tar.zst
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = mv /sources/systemd-sysvcompat-247.2-1-x86_64.pkg.tar.zst $SRC/systemd-sysvcompat-247.2-1.tar.xz
+betik = tar -xf systemd-sysvcompat-247.2-1.tar.xz -C $SRC
+	      
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+#betik 	= cp -r $SRC/etc $PKG/
+#betik 	= cp -r $SRC/var $PKG/
