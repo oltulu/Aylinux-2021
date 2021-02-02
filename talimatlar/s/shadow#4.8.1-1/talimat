@@ -33,5 +33,5 @@ betik   = rm -rf $PKG/usr/share/man/man1/newgrp.1.gz
 betik   = rm -rf $PKG/usr/share/man/man8/vigr.8.gz 
 betik   = rm -rf $PKG/usr/share/man/man8/vipw.8.gz 
 betik = mv $PKG/usr/sbin/* $PKG/usr/bin/
-betik = rm $PKG/usr/sbin
+betik = rmdir $PKG/usr/sbin
 
