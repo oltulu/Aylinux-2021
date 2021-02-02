@@ -11,7 +11,7 @@ calisma  = talloc ldb jansson tevent gpgme
 [kaynak]
 gz     = https://www.samba.org/samba/ftp/stable
 1= https://crux.nu/ports/crux-3.6/opt/samba/samba
-dosya  = samba.pam
+#dosya  = samba.pam
 
 [sha256]
 #1   = 34f30494b6b63700f54be22be636e8a6e0430577166a76a017075e11c02a1ebb
