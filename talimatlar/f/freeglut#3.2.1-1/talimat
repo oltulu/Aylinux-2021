@@ -21,9 +21,8 @@ betik   = mkdir build
 betik   = cd build 
 betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_LIBDIR=lib -DFREEGLUT_BUILD_DEMOS=OFF -DFREEGLUT_BUILD_STATIC_LIBS=OFF ..
 betik   = make
-
-
 	      
 [pakur]
-betik   = cd ${SRC}/build
+betik   = cd build
 betik   = make DESTDIR=$PKG install
+
