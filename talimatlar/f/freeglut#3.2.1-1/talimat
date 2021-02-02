@@ -24,4 +24,4 @@ betik   = make
 	      
 [pakur]
 betik   = cd ${SRC}/build
-betik   = = make DESTDIR=$PKG install
+betik   = make DESTDIR=$PKG install
