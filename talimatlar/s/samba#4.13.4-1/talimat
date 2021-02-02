@@ -18,7 +18,7 @@ gz     = https://www.samba.org/samba/ftp/stable
 #2   = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
 
 [derle]
-betik  = ./configure --enable-fhs --prefix=/usr --libexecdir=/usr/lib --localstatedir=/var --sysconfdir=/etc --with-privatedir=/etc/samba/private --bundled-libraries=!tdb,!talloc,!tevent,!popt,!ldb,!cmocka --without-{ad-dc,ads,ldap} --without-json
+betik  = ./configure --enable-fhs --prefix=/usr --libexecdir=/usr/lib --sbindir=/usr/bin --libdir=/usr/lib --localstatedir=/var --sysconfdir=/etc --with-privatedir=/etc/samba/private --bundled-libraries=!tdb,!talloc,!tevent,!popt,!ldb,!cmocka --without-{ad-dc,ads,ldap} --without-json
 
 [pakur]
 betik  = /usr/bin/python ./buildtools/bin/waf build 
