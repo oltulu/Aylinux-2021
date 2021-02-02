@@ -6,8 +6,8 @@ url     = http://shadow.pld.org.pl
 
 [kaynak]
 xz      = https://github.com/shadow-maint/shadow/releases/download/$surum
-1= https://www.mizrahi.com.ve/crux/ports/shadow/pwck
-2= https://www.mizrahi.com.ve/crux/ports/shadow/login.defs
+1= https://crux.nu/ports/crux-3.6/core/shadow/pwck
+2= https://crux.nu/ports/crux-3.6/core/shadow/login.defs
 3= https://notabug.org/oltulu/Ceviri/raw/master/shadow.po
 
 [sha256]
