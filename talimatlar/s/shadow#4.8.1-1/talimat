@@ -4,6 +4,10 @@ paketci = Cihan_Alkan
 grup 	= temel
 url     = http://shadow.pld.org.pl
 
+[gerek]
+derleme    = libxcrypt
+calisma    = libxcrypt
+
 [kaynak]
 xz      = https://github.com/shadow-maint/shadow/releases/download/$surum
 1= https://crux.nu/ports/crux-3.6/core/shadow/pwck
