@@ -20,5 +20,5 @@ betik = tar -xf systemd-247.2-1.tar.xz -C $SRC
 	      
 [pakur]
 betik 	= cp -r $SRC/usr $PKG/
-#betik 	= cp -r $SRC/etc $PKG/
-#betik 	= cp -r $SRC/var $PKG/
+betik 	= cp -r $SRC/etc $PKG/
+betik 	= cp -r $SRC/var $PKG/
