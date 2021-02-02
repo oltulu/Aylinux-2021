@@ -10,11 +10,13 @@ calisma =
 
 [kaynak]
 gz      = https://downloads.sourceforge.net/$isim
+1= https://crux.nu/ports/crux-3.6/opt/freeglut/gcc10.patch
 
 [sha512]
 #1 		= 9c45d5b203b26a7ff92331b3e080a48e806c92fbbe7c65d9262dd18c39cd6efdad8a795a80f499a2d23df84b4909dbd7c1bab20d7dd3555d3d88782ce9dd15b0
 
 [derle]
+betik   = patch -d ../$isim-$surum -p1 -i /sources/gcc10.patch
 betik   = mkdir build 
 betik   = cd build 
 betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_LIBDIR=lib -DFREEGLUT_BUILD_DEMOS=OFF -DFREEGLUT_BUILD_STATIC_LIBS=OFF ..
