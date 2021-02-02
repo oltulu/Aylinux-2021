@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = http://aspell.net/
 
 [gerek]
-derleme = 
+derleme = texinfo
 calisma = 
 
 [kaynak]
