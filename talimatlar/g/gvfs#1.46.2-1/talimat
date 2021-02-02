@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://wiki.gnome.org/Projects/gvfs
 
 [gerek]
-derleme    = glib openssh python meson polkit avahi dbus-glib fuse2 gcr bluez libbluray libnfs libgphoto2 libimobiledevice libmtp libcdio-paranoia libsecret libsoup libgudev gsettings-desktop-schemas samba udisks
+derleme    = glib openssh python meson polkit avahi dbus-glib fuse3 gcr bluez libbluray libnfs libgphoto2 libimobiledevice libmtp libcdio-paranoia libsecret libsoup libgudev gsettings-desktop-schemas samba udisks
 calisma    = gcr libsecret libsoup avahi libimobiledevice libplist libnfs fuse3 libgphoto2 libbluray libmtp libcdio-paranoia samba udisks libcdio
 
 [kaynak]
