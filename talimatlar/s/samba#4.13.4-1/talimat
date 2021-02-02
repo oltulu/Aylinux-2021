@@ -10,6 +10,7 @@ calisma  = talloc ldb jansson tevent gpgme
 
 [kaynak]
 gz     = https://www.samba.org/samba/ftp/stable
+1= https://crux.nu/ports/crux-3.6/opt/samba/samba
 dosya  = samba.pam
 
 [sha256]
@@ -20,4 +21,11 @@ dosya  = samba.pam
 betik  = ./configure --enable-fhs --prefix=/usr --libexecdir=/usr/lib --localstatedir=/var --sysconfdir=/etc --with-privatedir=/etc/samba/private --bundled-libraries=!tdb,!talloc,!tevent,!popt,!ldb,!cmocka --without-{ad-dc,ads,ldap} --without-json
 
 [pakur]
-dosya  = pakur.sh
+betik  = /usr/bin/python ./buildtools/bin/waf build 
+betik  = /usr/bin/python ./buildtools/bin/waf install --destdir=$PKG
+betik  = chmod 1777 $PKG/var/lock
+betik  = install -d $PKG/etc/{samba,rc.d}
+betik  = install -m 0600 examples/smb.conf.default $PKG/etc/samba
+betik  = install -m 0755 /sources/samba $PKG/etc/rc.d
+betik  = install -d $PKG/etc/revdep.d
+betik  = echo '/usr/lib/samba' > $PKG/etc/revdep.d/samba
