@@ -6,7 +6,7 @@ url     = https://developer.gnome.org/notification-spec
 
 [gerek]
 derleme = meson gnupg gtk3 libgcrypt p11-kit gobject-introspection libxslt vala
-calisma =
+calisma = libgcrypt
 
 [kaynak]
 xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
