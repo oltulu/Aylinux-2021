@@ -1,6 +1,6 @@
 [paket]
 tanim   = Ext2,3 ve 4 dosya sistemleri için araçlar
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = http://e2fsprogs.sourceforge.net
 
@@ -11,7 +11,9 @@ xz     	= https://www.kernel.org/pub/linux/kernel/people/tytso/$isim/v$surum
 #1 		= 1fa9d0e13f30f1cae9035fe74ed8ad01bfaae99c2c0b9b970318bdb5d738fcd4
 
 [derle]
-dosya   = derle.sh
+betik   =  ./configure --prefix=/usr --with-root-prefix="" --libdir=/usr/lib --sbindir=/usr/bin --enable-elf-shlibs --disable-fsck --disable-uuidd --disable-libuuid --disable-libblkid
+
+make
      
 [pakur]
 dosya   = pakur.sh
