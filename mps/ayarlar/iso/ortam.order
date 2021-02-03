@@ -91,4 +91,6 @@ libtasn1
 libunistring
 gnutls
 libseccomp
+krb5
 openldap
+cyrus-sasl
