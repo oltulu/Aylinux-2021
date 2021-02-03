@@ -91,3 +91,4 @@ libtasn1
 libunistring
 gnutls
 libseccomp
+openldap
