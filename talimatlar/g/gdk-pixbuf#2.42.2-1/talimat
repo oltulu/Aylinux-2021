@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/GdkPixbuf
 
 [gerek]
 derleme = meson tiff libjpeg-turbo gobject-introspection jasper libpng glib shared-mime-info libx11
-calisma = shared-mime-info tiff
+calisma = shared-mime-info tiff libjpeg-turbo
 
 [kaynak]
 xz      = http://download.gnome.org/sources/$isim/${surum:0:4}
