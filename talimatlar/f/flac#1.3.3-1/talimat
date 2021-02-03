@@ -6,7 +6,7 @@ url     = http://flac.sourceforge.net/
 
 [gerek]
 derleme = libogg
-calisma = 
+calisma = libogg
 
 [kaynak]
 xz      = http://downloads.xiph.org/releases/$isim
