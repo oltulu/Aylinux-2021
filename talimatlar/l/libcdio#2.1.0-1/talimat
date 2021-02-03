@@ -5,8 +5,8 @@ grup     = medya
 url      =  https://www.gnu.org/software/libcdio/
 
 [gerek]
-derleme  =  libcddb ncurses 
-calisma  =  
+derleme  = libcddb ncurses 
+calisma  = libcddb
 
 [kaynak]
 bz2    =  https://ftp.gnu.org/gnu/libcdio
