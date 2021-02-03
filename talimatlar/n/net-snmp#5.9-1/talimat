@@ -6,7 +6,7 @@ url     = http://www.net-snmp.org/
 
 [gerek]
 derleme  = libpcap lm_sensors pciutils pcre python python-setuptools python-appdirs python-packaging python-pyparsing python-ordered-set libxcrypt
-calisma  =  libxcrypt
+calisma  =  libxcrypt pciutils
 
 [kaynak]
 gz  = https://downloads.sourceforge.net/$isim
