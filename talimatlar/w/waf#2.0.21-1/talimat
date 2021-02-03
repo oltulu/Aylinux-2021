@@ -5,8 +5,8 @@ grup 	= cinnamon
 url     = https://waf.io/${isim}
 
 [gerek]
-derleme = gobject-introspection intltool
-calisma = accountsservice cinnamon-desktop dbus-glib libgnomekbd python-cairo python-gobject python-setproctitle python-xapp xapps
+derleme = unzip
+calisma = python
 
 [kaynak]
 1      = https://waf.io/${isim}-${surum}.tar.bz2
@@ -17,17 +17,15 @@ calisma = accountsservice cinnamon-desktop dbus-glib libgnomekbd python-cairo py
 
 [derle]
 betik 	= sed -e "/test(i/ s|dirname|'python3.7/site-packages/waf'|" -i waf-light
-betik 	= head -n 30 waf | tail -n 28 | sed -e 's/# //g; s/"""//g' > LICENSE
 betik 	= ./waf-light configure --prefix=/usr build --make-waf
 betik 	= sed -i '/^#==>$/,/^#<==$/d' waf
     	      
 [pakur]
 betik 	= install -vDm 755 waf -t "$PKG/usr/bin"
 betik 	= install -vDm 644 wscript -t "$PKG/usr/share/$isim"
-betik 	= install -vDm 644 waflib/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib"
-betik 	= install -vDm 644 waflib/Tools/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib/Tools"
-betik 	= install -vDm 644 waflib/extras/*.py -t "${PKG}/usr/lib/python3.7/site-packages/waf/waflib/extras"
-betik 	= python -m compileall -d "/usr/lib/python3.7" "${PKG}/usr/lib/python3.7"
-betik 	= python -O -m compileall -d "/usr/lib/python${_py_ver}" "${PKG}/usr/lib/python3.7"
-betik 	= install -vDm 644 LICENSE -t "${PKG}/usr/share/licenses/${isim}"
-#betik 	= install -vDm 644 {README,../building-waf}.md -t "${PKG}/usr/share/doc/${isim}"
+betik 	= install -vDm 644 waflib/*.py -t "${PKG}/usr/lib/python3.9/site-packages/waf/waflib"
+betik 	= install -vDm 644 waflib/Tools/*.py -t "${PKG}/usr/lib/python3.9/site-packages/waf/waflib/Tools"
+betik 	= install -vDm 644 waflib/extras/*.py -t "${PKG}/usr/lib/python3.9/site-packages/waf/waflib/extras"
+betik 	= python -m compileall -d "/usr/lib/python3.9" "${PKG}/usr/lib/python3.9"
+betik 	= python -O -m compileall -d "/usr/lib/python3.9" "${PKG}/usr/lib/python3.9"
+
