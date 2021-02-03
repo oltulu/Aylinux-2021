@@ -12,7 +12,7 @@ calisma = gst-plugins-others
 bz2     = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
 
 [sha256]
-1       = 1adb4bd96c4cc4b4a79eeafe1316e170f506426e3737e8ba8898f7ea6bec572a
+#1       = 1adb4bd96c4cc4b4a79eeafe1316e170f506426e3737e8ba8898f7ea6bec572a
 
 [derle]
 tip     = gnu
