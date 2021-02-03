@@ -6,7 +6,7 @@ url     = https://people.redhat.com/sgrubb/audit
 
 [gerek]
 derleme = 
-calisma =  
+calisma = libcap-ng
 
 [kaynak]
 gz      = https://people.redhat.com/sgrubb/audit
