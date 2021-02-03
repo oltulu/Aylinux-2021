@@ -17,7 +17,7 @@ calisma = python
 
 [derle]
 betik 	= sed -e "/test(i/ s|dirname|'python3.9/site-packages/waf'|" -i waf-light
-#betik 	= ./waf-light configure --prefix=/usr build --make-waf
+betik 	= ./waf-light configure --prefix=/usr build --make-waf
 betik 	= sed -i '/^#==>$/,/^#<==$/d' waf
     	      
 [pakur]
