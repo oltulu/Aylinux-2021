@@ -16,7 +16,7 @@ calisma = python
 1 		= b76c32d5992757af1f483dc59dc439e414d06d0325eaf1c8ac20bc20ee62bee25d8a97099d80e6d8e3a2ca9c9aeadf0543c2ba5005479e9617c1fbcfd60ba6b8
 
 [derle]
-betik 	= sed -e "/test(i/ s|dirname|'python3.7/site-packages/waf'|" -i waf-light
+betik 	= sed -e "/test(i/ s|dirname|'python3.9/site-packages/waf'|" -i waf-light
 betik 	= ./waf-light configure --prefix=/usr build --make-waf
 betik 	= sed -i '/^#==>$/,/^#<==$/d' waf
     	      
