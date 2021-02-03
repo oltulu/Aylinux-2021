@@ -4,6 +4,10 @@ paketci = milisarge
 grup    = temel
 url     = http://curl.haxx.se
 
+[gerek]
+derleme = ca-certificates
+calisma = 
+
 [kaynak]
 xz      = $url/download
 
