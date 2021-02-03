@@ -1,6 +1,6 @@
 [paket]
 tanim   = Çoklu protokol destekli dosya transfer uygulaması
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = temel
 url     = http://curl.haxx.se
 
