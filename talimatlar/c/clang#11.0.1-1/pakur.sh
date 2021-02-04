@@ -13,11 +13,11 @@ cp -a ../bindings/python/clang "${PKG}/usr/lib/python2.7/site-packages/"
 python2 -m compileall "${PKG}/usr/lib/python2.7"
 python2 -O -m compileall "${PKG}/usr/lib/python2.7"
 
-install -d "${PKG}/usr/lib/python3.7/site-packages"
-cp -a ../bindings/python/clang "${PKG}/usr/lib/python3.7/site-packages/"
-python3 -m compileall "${PKG}/usr/lib/python3.7"
-python3 -O -m compileall "${PKG}/usr/lib/python3.7"
-python3 -OO -m compileall "${PKG}/usr/lib/python3.7"
+install -d "${PKG}/usr/lib/python3.9/site-packages"
+cp -a ../bindings/python/clang "${PKG}/usr/lib/python3.9/site-packages/"
+python3 -m compileall "${PKG}/usr/lib/python3.9"
+python3 -O -m compileall "${PKG}/usr/lib/python3.9"
+python3 -OO -m compileall "${PKG}/usr/lib/python3.9"
 
 # Fix shebang in Python2 script
 sed -i '1s|/usr/bin/env python$|&2|' \
