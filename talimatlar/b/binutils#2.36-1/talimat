@@ -1,7 +1,7 @@
 [paket]
-tanim   = Bağlayıcı, assembler ve nesne dosyalarını işleme araçları. Pass-2
-paketci = milisarge
-grup 	= onsistem
+tanim   = Bağlayıcı, assembler ve nesne dosyalarını işleme araçları.
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://ftp.gnu.org/gnu/
 
 [gerek]
