@@ -1,14 +1,18 @@
 [paket]
 tanim   = Genişletilmiş öznitelikleri dosya sistemi nesneleri üzerinde yönetmek için kullanılan yardımcı programlar
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://savannah.nongnu.org/projects/attr
 
 [kaynak]
 gz      = http://download.savannah.gnu.org/releases/$isim
 
+[gerek]
+derleme = 
+calisma = 
+
 [sha256]
-1 		= 5ead72b358ec709ed00bbf7a9eaef1654baad937c001c044fe8b74c57f5324e7
+#1 		= 5ead72b358ec709ed00bbf7a9eaef1654baad937c001c044fe8b74c57f5324e7
 
 [derle]
 betik 	= ./configure --libdir=/usr/lib --libexecdir=/usr/lib --prefix=/usr --sysconfdir=/etc
