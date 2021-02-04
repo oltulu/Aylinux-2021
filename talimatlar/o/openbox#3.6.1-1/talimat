@@ -6,7 +6,7 @@ url     = http://openbox.org/dist/openbox
 
 [gerek]
 derleme = startup-notification libxml2 libxinerama libxrandr libxcursor pango imlib2 librsvg libsm
-calisma = xorg-server dejavu-fonts-ttf
+calisma = xorg-server dejavu-fonts-ttf librsvg
 
 [kaynak]
 gz      = $url
