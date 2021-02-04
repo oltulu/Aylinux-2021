@@ -6,7 +6,7 @@ url     = http://curl.haxx.se
 
 [gerek]
 derleme = ca-certificates
-calisma = 
+calisma = krb5
 
 [kaynak]
 xz      = $url/download
@@ -15,7 +15,7 @@ xz      = $url/download
 #1       = 9252332a7f871ce37bfa7f78bdd0a0e3924d8187cc27cb57c76c9474a7168fb3
 
 [derle]
-betik   = ./configure --prefix=/usr --enable-ipv6 --without-libidn --without-cyassl --enable-threaded-resolver --with-ca-bundle=/etc/ssl/cert.pem
+betik   = ./configure --prefix=/usr --enable-ipv6 --without-libidn --without-cyassl --with-random=/dev/urandom --with-libssh2 --with-gssapi --enable-threaded-resolver --with-ca-bundle=/etc/ssl/cert.pem
 betik   = make
 
 [pakur]
