@@ -5,8 +5,8 @@ grup    = temel
 url     = http://curl.haxx.se
 
 [gerek]
-derleme = ca-certificates
-calisma = krb5
+derleme = ca-certificates libssh2
+calisma = krb5 
 
 [kaynak]
 xz      = $url/download
