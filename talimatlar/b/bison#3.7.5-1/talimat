@@ -1,7 +1,7 @@
 [paket]
 tanim   = Bison paketi bir ayrıştırıcı üreteci içerir
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://www.gnu.org/software/bison/
 
 [kaynak]
