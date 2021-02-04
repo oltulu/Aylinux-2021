@@ -4,6 +4,10 @@ paketci = milisarge
 grup 	= onsistem
 url     = http://ftp.gnu.org/gnu/
 
+[gerek]
+derleme = elfutils
+calisma = elfutils
+
 [kaynak]
 1       = http://ftp.gnu.org/gnu/binutils/binutils-$surum.tar.xz
 
