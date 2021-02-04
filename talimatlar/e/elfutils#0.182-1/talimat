@@ -16,7 +16,7 @@ bz2      = https://sourceware.org/elfutils/ftp/${surum}
 
 [derle]
 betik 	= CFLAGS+=" -g"
-betik 	= ./configure --prefix=/usr --program-prefix="eu-" --enable-deterministic-archives
+betik 	= ./configure --prefix=/usr --program-prefix="eu-" --enable-deterministic-archives --disable-libdebuginfod 
 betik 	= make
 	      
 [pakur]
