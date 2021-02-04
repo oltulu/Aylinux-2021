@@ -94,3 +94,4 @@ libseccomp
 krb5
 openldap
 cyrus-sasl
+brotli
