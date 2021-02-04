@@ -12,7 +12,7 @@ calisma =
 bz2      = https://sourceware.org/elfutils/ftp/${surum}
 
 [sha1]
-1 		= 6511203cae7225ae780501834a7ccd234b14889a
+#1 		= 6511203cae7225ae780501834a7ccd234b14889a
 
 [derle]
 betik 	= CFLAGS+=" -g"
