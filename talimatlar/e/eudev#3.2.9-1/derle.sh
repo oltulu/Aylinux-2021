@@ -6,10 +6,12 @@ sed -e 's/GROUP="dialout"/GROUP="uucp"/' \
 		-i rules/*.rules
 
 	./configure --prefix=/usr \
-		--with-rootprefix=/usr \
-		--sysconfdir=/etc \
-		--libdir=/usr/lib \
-		--sbindir=/usr/bin \
+        --sysconfdir=/etc \
+	--libdir=/usr/lib \
+	--sbindir=/usr/bin \
+	--with-rootprefix=      \
+	--with-rootlibdir=/usr/lib  \
+	--enable-manpages       \
 	--disable-static        \
 	--config-cache \
 	--enable-kmod \
