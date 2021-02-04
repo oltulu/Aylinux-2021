@@ -1,8 +1,12 @@
 [paket]
 tanim   = Temel sistem özelliklerini için yardımcı programlar
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://www.gnu.org/software/coreutils
+
+[gerek]
+derleme = 
+calisma = acl gmp libcap openssl
 
 [kaynak]
 xz      = http://ftp.gnu.org/gnu/coreutils
@@ -11,7 +15,7 @@ xz      = http://ftp.gnu.org/gnu/coreutils
 #1 		= ff7a9c918edce6b4f4b2725e3f9b37b0c4d193531cac49a48b56c4d0d3a9e9fd
 
 [derle]
-betik 	= FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/usr  --enable-no-install-program=groups,hostname,kill,uptime
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib --with-openssl --enable-no-install-program=groups,hostname,kill,uptime
 betik 	= make
 	      
 [pakur]
