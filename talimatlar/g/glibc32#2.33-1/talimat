@@ -1,6 +1,6 @@
 [paket]
 tanim   = Ana C kütüphaneleri-32
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = https://www.gnu.org/software/libc
 arsiv   = glibc-$surum
