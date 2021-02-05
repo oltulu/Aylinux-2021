@@ -28,4 +28,9 @@ betik   = sed -e 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
 betik   = make
 	      
 [pakur]
-dosya   = pakur.sh
+betik   = make DESTDIR=$PKG install
+betik   = cd ${SRC}
+betik   = install -Dm644 empty.rules "$PKG/etc/iptables/iptables.rules"
+betik   = install -Dm644 empty.rules "$PKG/etc/iptables/ip6tables.rules"
+betik   = install -Dt "$PKG/usr/share/iptables" -m644 *.rules
+betik   = ln -srt "$PKG/etc/iptables" "$PKG"/usr/share/iptables/{empty,simple_firewall}.rules
