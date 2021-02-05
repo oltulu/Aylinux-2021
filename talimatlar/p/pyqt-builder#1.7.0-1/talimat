@@ -13,7 +13,7 @@ calisma = python
 1       = https://pypi.io/packages/source/P/PyQt-builder/PyQt-builder-$surum.tar.gz
 
 [sha256]
-1       = be7fb8436e6ffb21b7e42266f0fa4776b7d62b0c7e06c63f8a066ff90554fcdc
+#1       = be7fb8436e6ffb21b7e42266f0fa4776b7d62b0c7e06c63f8a066ff90554fcdc
 
 [derle]
 tip     = py3
