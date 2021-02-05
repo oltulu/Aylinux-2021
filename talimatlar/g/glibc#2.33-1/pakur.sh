@@ -9,7 +9,7 @@ install -dm755 "$PKG/etc"
   rm -f "$PKG"/usr/bin/{tzselect,zdump,zic}
   cd glibc
 
-  install -dm755 "$PKG"/usr/lib/{locale,systemd/system,tmpfiles.d}
+  install -dm755 "$PKG"/usr/lib/{locale,tmpfiles.d}
   install -m644 nscd/nscd.conf "$PKG/etc/nscd.conf"
   install -m644 nscd/nscd.tmpfiles "$PKG/usr/lib/tmpfiles.d/nscd.conf"
   install -dm755 "$PKG/var/db/nscd"
