@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/cinnamon-desktop
 
 [gerek]
-derleme = gobject-introspection xkeyboard-config pulseaudio libxkbfile
+derleme = gobject-introspection xkeyboard-config pulseaudio libxkbfile samurai
 calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr pulseaudio
 
 [kaynak]
