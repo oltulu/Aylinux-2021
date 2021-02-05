@@ -1,21 +1,4 @@
-cd $SRC
-local _configure_flags=(
-      --prefix=/usr
-      --with-headers=/usr/include
-      --enable-add-ons
-      --enable-bind-now
-      --enable-cet
-      --enable-lock-elision
-      --enable-multi-arch
-      --enable-stack-protector=strong
-      --enable-stackguard-randomization
-      --enable-static-pie
-      --enable-systemtap
-      --disable-profile
-      --disable-werror
-  )
-
-  cd "$SRC/glibc-build"
+ cd "$SRC/glibc-build"
 
   echo "slibdir=/usr/lib" >> configparms
   echo "rtlddir=/usr/lib" >> configparms
@@ -33,7 +16,7 @@ local _configure_flags=(
   "$SRC/glibc/configure" \
       --libdir=/usr/lib \
       --libexecdir=/usr/lib \
-      ${_configure_flags[@]}
+      --prefix=/usr --with-headers=/usr/include --enable-add-ons --enable-bind-now --enable-cet --enable-lock-elision --enable-multi-arch --enable-stack-protector=strong --enable-stackguard-randomization --enable-static-pie --enable-systemtap --disable-profile --disable-werror
 
   # build libraries with fortify disabled
   echo "build-programs=no" >> configparms
@@ -67,7 +50,7 @@ local _configure_flags=(
       --host=i686-pc-linux-gnu \
       --libdir=/usr/lib32 \
       --libexecdir=/usr/lib32 \
-      ${_configure_flags[@]}
+      --prefix=/usr --with-headers=/usr/include --enable-add-ons --enable-bind-now --enable-cet --enable-lock-elision --enable-multi-arch --enable-stack-protector=strong --enable-stackguard-randomization --enable-static-pie --enable-systemtap --disable-profile --disable-werror
 
   # build libraries with fortify disabled
   echo "build-programs=no" >> configparms
