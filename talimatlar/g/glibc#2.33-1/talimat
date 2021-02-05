@@ -1,0 +1,31 @@
+[paket]
+tanim   = Ana C kütüphaneleri
+paketci = Cihan_Alkan
+grup 	= temel
+url     = https://www.gnu.org/software/libc
+
+
+[gerek]
+derleme    = linux-header python glibc32 libgd
+calisma    =
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/glibc
+1 = https://crux.nu/ports/crux-3.6/core/glibc/glibc-2.32-2.patch
+
+[sha256]
+#1 		= f3eeb8d57e25ca9fc13c2af3dae97754f9f643bc69229546828e3a240e2af04b
+
+[derle]
+betik	= patch -p1 -d $SRC/$isim-${surum:0:4} -i /sources/$isim-$surum-2.patch
+betik	= mkdir -v build
+betik	= cd build
+betik	= export CFLAGS="-O2 -U_FORTIFY_SOURCE"
+betik	= CFLAGS="-O2 -U_FORTIFY_SOURCE -fno-stack-protector"  ../configure --prefix=/usr --libexecdir=/usr/lib --with-headers=/usr/include --enable-kernel=4.9 --enable-add-ons --with-headers=/usr/include --enable-static-nss --enable-stack-protector=strong --disable-profile --disable-werror --without-gd --enable-multi-arch
+
+ make
+	      
+[pakur]
+betik   = cd build
+tip     = gnu
+betik   = rm -rf $PKG/share/info
