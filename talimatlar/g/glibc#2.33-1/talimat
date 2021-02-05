@@ -12,6 +12,11 @@ calisma    =
 [kaynak]
 xz      = http://ftp.gnu.org/gnu/glibc
 1 = https://crux.nu/ports/crux-3.6/core/glibc/glibc-2.32-2.patch
+2 = locale.gen.txt
+3 = locale-gen
+4 = lib32-glibc.conf
+5 = sdt.h 
+6 = sdt-config.h
 
 [sha256]
 #1 		= f3eeb8d57e25ca9fc13c2af3dae97754f9f643bc69229546828e3a240e2af04b
