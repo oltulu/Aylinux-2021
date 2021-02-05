@@ -1,6 +1,6 @@
 [paket]
 tanim   = Python QT5 bağları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://riverbankcomputing.com/software/pyqt/intro
 arsiv   = PyQt5-$surum
@@ -16,13 +16,15 @@ calisma = qt5-declarative python-qt5-sip
 1       = d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1
 
 [derle]
+betik   = cd PyQt5-$surum
 betik   = sip-build --confirm-license --no-make --api-dir /usr/share/qt/qsci/api/python
 betik   = cd build
 betik   = make
 
 
 [pakur]
-betik   = cd build
+
+betik   = cd PyQt5-$surum/build
 betik   = make INSTALL_ROOT="$PKG" install -j1
 betik   = rm -r $PKG/usr/lib/python*/site-packages/PyQt5/uic/port_v2
 betik   = python -m compileall -d / $PKG/usr/lib
