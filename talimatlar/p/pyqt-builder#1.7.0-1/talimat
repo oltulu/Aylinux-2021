@@ -6,7 +6,7 @@ url     = https://pypi.org/project/PyQt-builder
 arsiv   = PyQt-builder-$surum
 
 [gerek]
-derleme = python python-setuptools python-appdirs
+derleme = python python-setuptools python-appdirs python-packaging python-pyparsing python-ordered-set
 calisma = python
 
 [kaynak]
