@@ -44,34 +44,4 @@ install -dm755 "$PKG/etc"
   # Provided by libxcrypt; keep the old shared library for backwards compatibility
   rm -f "$PKG"/usr/include/crypt.h "$PKG"/usr/lib/libcrypt.{a,so}
   
-  cd $SRC/lib32-glibc-build
-
-  make install_root="$PKG" install
-  rm -rf "$PKG"/{etc,sbin,usr/{bin,sbin,share},var}
-
-  # We need to keep 32 bit specific header files
-  find "$PKG/usr/include" -type f -not -name '*-32.h' -delete
-
-  # Dynamic linker
-  install -d "$PKG/usr/lib"
-  ln -s ../lib32/ld-linux.so.2 "$PKG/usr/lib/"
-
-  # Add lib32 paths to the default library search path
-  install -Dm644 "$SRC/lib32-glibc.conf" "$PKG/etc/ld.so.conf.d/lib32-glibc.conf"
-
-  # Symlink /usr/lib32/locale to /usr/lib/locale
-  ln -s ../lib/locale "$PKG/usr/lib32/locale"
-
-  if check_option 'debug' n; then
-    find "$PKG"/usr/lib32 -name '*.a' -type f -exec strip $STRIP_STATIC {} + 2> /dev/null || true
-    find "$PKG"/usr/lib32 \
-      -not -name 'ld-*.so' \
-      -not -name 'libc-*.so' \
-      -not -name 'libpthread-*.so' \
-      -not -name 'libthread_db-*.so' \
-      -name '*-*.so' -type f -exec strip $STRIP_SHARED {} + 2> /dev/null || true
-  fi
-
-  # Provided by lib32-libxcrypt; keep the old shared library for backwards compatibility
-  rm -f "$PKG"/usr/lib32/libcrypt.{a,so}
   
