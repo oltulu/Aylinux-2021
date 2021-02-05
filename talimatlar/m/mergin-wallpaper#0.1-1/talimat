@@ -1,0 +1,29 @@
+[paket]
+tanim   = Duvarkağıdı ayarları
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = git clone https://github.com/osmancoskun/mergin-wallpaper
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+git      = https://github.com/osmancoskun/mergin-wallpaper
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd mergin-wallpaper
+betik 	= mkdir -p $PKG/usr/share/$isim
+betik 	= cp mergin-wallpaper.py $PKG/usr/share/$isim/
+
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= qmake ../E-Zil.pro
+betik 	= make
+        	      
+[pakur]
+betik 	= cd E-Zil/build
+tip = gnu
