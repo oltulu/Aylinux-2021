@@ -5,7 +5,7 @@
   # get kernel version
   #_kernver="$(make kernelrelease)"
   #KERNEL_VERSION="${surum}-milis"
-  _kernver="${surum}-milis"
+  _kernver="${surum}-aylinux"
   mkdir -p ${PKG}/usr/lib/modules
   mkdir -p ${PKG}/usr/lib/firmware
   mkdir -p ${PKG}/boot
