@@ -15,8 +15,7 @@ xz         = ${GNOME_SITE}/${isim}/${surum%.*}
 #1 = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
 
 [derle]
-ekconf     = -Dsystemduserunitdir=no -Dtmpfilesdir=no -Dlogind=false -Dgoa=false -Dgoogle=false
-tip        = meson
+betik     = meson build --prefix=/usr --libexecdir=/usr/lib -Dsystemduserunitdir=no -Dtmpfilesdir=no -Ddnssd=no -Dafc=false -Dbluray=false -Dcdda=false -Ddnssd=false -Ddeprecated_programs=true -Dfuse=false -Dgoa=false -Dgoogle=false -Dgphoto2=false -Dlogind=false -Dman=true -Dmtp=false -Dnfs=false -Dsmb=false
 
 [pakur]
-tip        = meson
+betik     = DESTDIR=$PKG ninja -C build install
