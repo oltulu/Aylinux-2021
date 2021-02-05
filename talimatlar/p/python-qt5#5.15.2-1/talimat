@@ -10,7 +10,7 @@ derleme = python python-dbus python-sip5 pyqt-builder python-packaging qt5-tools
 calisma = qt5-declarative python-qt5-sip
 
 [kaynak]
-1 = https://pypi.python.org/packages/source/P/PyQt5/PyQt5-$surum.tar.gz
+#1 = https://pypi.python.org/packages/source/P/PyQt5/PyQt5-$surum.tar.gz
 
 [sha256]
 1       = d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1
