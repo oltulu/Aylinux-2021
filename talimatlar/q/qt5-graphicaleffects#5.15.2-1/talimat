@@ -7,7 +7,7 @@ arsiv   = qtgraphicaleffects-everywhere-src-$surum
 
 [gerek]
 derleme = qt5-declarative
-calisma = 
+calisma = qt5-declarative
 
 [kaynak]
 1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtgraphicaleffects-everywhere-src-$surum.tar.xz
