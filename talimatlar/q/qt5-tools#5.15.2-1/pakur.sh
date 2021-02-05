@@ -11,9 +11,6 @@ install -D -m644 src/qdbus/qdbusviewer/images/qdbusviewer.png \
 "${PKG}/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png"
 install -D -m644 src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
 "${PKG}/usr/share/icons/hicolor/128x128/apps/qdbusviewer.png"
-install -d "${PKG}/usr/share/applications"
-install -m644 "${SRC}"/{linguist,designer,assistant,qdbusviewer}.desktop \
-"${PKG}/usr/share/applications/"
 
 # Symlinks for backwards compatibility
 for b in "${PKG}"/usr/bin/*; do
