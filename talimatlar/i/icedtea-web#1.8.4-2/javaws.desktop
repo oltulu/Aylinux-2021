@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=IcedTea Web Start
+Name[tr]=IcedTea Web Başlat
+GenericName=Java Web Start
+GenericName[tr]=Java Web Başlatıcısı
+Comment=IcedTea Application Launcher
+Exec=/usr/share/icedtea-web/bin/javaws %u
+Icon=javaws
+Terminal=false
+Type=Application
+NoDisplay=true
+Categories=Network;WebBrowser;
+MimeType=application/x-java-jnlp-file;x-scheme-handler/jnlp;x-scheme-handler/jnlps

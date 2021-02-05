@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=IcedTea-Web Policy Editor
+Name[tr_TR]=Java Policy Düzenleyici
+GenericName=Policy Tool 
+Comment=Edit Java Applet policy and permission settings
+Comment[tr_TR]=Java Uygulaması policy ve izin ayarlarını düzenle
+Exec=/usr/share/icedtea-web/bin/policyeditor
+Icon=javaws
+Terminal=false
+Type=Application
+Categories=Settings;
+Keywords=IcedTea;IcedTea-Web;java;javaws;web;start;webstart;jnlp;
+
