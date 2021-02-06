@@ -299,9 +299,9 @@ CLOCKPARAMS=
 # End /etc/sysconfig/clock
 EOF
 
-# saat ayarları
+# klavye ayarları
 cat > $ROOTDIR/etc/sysconfig/rc.site << "EOF"
-# Begin /etc/sysconfig/clock
+# Begin /etc/sysconfig/rc.site
 LOGLEVEL=3
 # Console parameters
 UNICODE=1
@@ -311,6 +311,21 @@ FONT="drdos8x16 -m 8859-15"
 #LEGACY_CHARSET=
 
 # End /etc/sysconfig/rc.site
+EOF
+
+# ld dosyası ayarları
+cat > $ROOTDIR/etc/ld.so.conf << "EOF"
+# Begin /etc/ld.so.conf
+/lib
+/lib64
+/usr/lib
+/usr/lib64
+/usr/local/lib
+/usr/local/lib64
+
+# Add an include directory
+include /etc/ld.so.conf.d/*.conf
+# End of  /etc/ld.so.conf
 EOF
 
 # mouse ayarları
