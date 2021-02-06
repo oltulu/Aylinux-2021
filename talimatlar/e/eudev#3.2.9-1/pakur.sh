@@ -1,3 +1,4 @@
+cd $SRC/eudev
 mkdir -pv $PKG/usr/lib/{firmware,udev/devices/pts,udev/devices/shm}
 	
 mkdir -pv $PKG/usr/lib/udev/rules.d
