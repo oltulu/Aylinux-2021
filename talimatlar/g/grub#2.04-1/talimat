@@ -20,18 +20,19 @@ dosya   = 0004-add-GRUB_COLOR_variables.patch
 #1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
 
 [derle]
-betik = export CFLAGS="${CFLAGS} -Wno-error"
-betik = export PYTHON=python
-betik = cd grub
-betik = patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
-betik = patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
-betik = ./bootstrap
-betik = ./configure --prefix=/usr --sysconfdir=/etc --enable-device-mapper --disable-efiemu --disable-grub-mount
-betik = make
+dosya = derle.sh
+#betik = export CFLAGS="${CFLAGS} -Wno-error"
+#betik = export PYTHON=python
+#betik = cd grub
+#betik = patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
+#betik = patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
+#betik = ./bootstrap
+#betik = ./configure --prefix=/usr --sysconfdir=/etc --enable-device-mapper --disable-efiemu --disable-grub-mount
+#betik = make
 	      
 [pakur]
-betik = cd grub
+betik = cd $SRC
 #dosya   = pakur.sh
-betik = make DESTDIR=$PKG install
-betik = install -d $PKG/boot/grub
+#betik = make DESTDIR=$PKG install
+#betik = install -d $PKG/boot/grub
 #betik = install -Dm644 ../grub.cfg $PKG/boot/grub/grub.cfg.exemple
