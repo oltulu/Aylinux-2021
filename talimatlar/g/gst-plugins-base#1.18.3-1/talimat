@@ -15,9 +15,11 @@ xz       = https://gstreamer.freedesktop.org/src/$isim
 #1        = b13e73e2fe74a4166552f9577c3dcb24bed077021b9c7fa600d910ec6987816a
 
 [derle]
-ekconf   = -Dtremor=disabled -Dexamples=disabled -Dgtk_doc=disabled -Dpackage-origin=https://www.aylinux.kripto.com.tr
-tip      = meson
+betik  = cd $SRC 
+betik   = meson setup build $isim-$surum --prefix=/usr --libexecdir=/usr/lib --wrap-mode=nodownload -D buildtype=plain -D nls=disabled -Dtremor=disabled -Dexamples=disabled -Dgtk_doc=disabled -D package-name="GStreamer (Aylinux)" -Dpackage-origin=https://www.aylinux.kripto.com.tr
+betik      = meson compile -C build
 
 [pakur]
-tip      = meson
+betik  = cd $SRC 
+betik      = DESTDIR=$PKG meson install -C build
 
