@@ -29,4 +29,4 @@ cd $SRC/gcc-build
     make -C $CHOST/$lib DESTDIR="$PKG" install-info
   done
 
- rm -rf "$pkgdir"/usr/lib32/
+ rm -rf "$PKG"/usr/lib32/
