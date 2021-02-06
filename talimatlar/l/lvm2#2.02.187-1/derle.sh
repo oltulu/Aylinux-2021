@@ -1,8 +1,6 @@
     CONFIG_SHELL=/bin/bash \
     ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --localstatedir=/var \
-                --exec-prefix= \
                 --datarootdir=/usr \
-                --sbindir=/usr/bin \
                 --libdir=/usr/lib \
                 --mandir=/usr/share/man \
                 --with-udev-prefix=/usr \
