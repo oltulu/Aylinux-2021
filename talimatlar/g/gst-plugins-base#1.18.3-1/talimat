@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://gstreamer.freedesktop.org/
 
 [gerek]
-derleme  = cmake meson python gobject-introspection gstreamer libogg cdparanoia libvisual libvorbis libtheora pango opus graphene libpng libjpeg-turbo alsa-lib iso-codes libxv mesa libglvnd orc
+derleme  = meson ninja python gobject-introspection gstreamer libogg cdparanoia libvisual libvorbis libtheora pango opus graphene libpng libjpeg-turbo alsa-lib iso-codes libxv mesa libglvnd orc
 calisma  = 
 
 [kaynak]
