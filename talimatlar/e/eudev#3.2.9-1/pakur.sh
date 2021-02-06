@@ -12,7 +12,7 @@ make CFLAGS="$CFLAGS -D_GNU_SOURCE"
 
     # Devices
     install -d $PKG/usr/lib/{firmware,udev/devices/{pts,shm}}
-    install -d $PKG/usr/{lib,run}
+    install -d $PKG/run
 
     # Add CRUX items
  #   install -m 0755 $SRC/start_udev $PKG/usr/bin
