@@ -11,9 +11,13 @@ git     	= https://sourceware.org/git/lvm2
 #1 		= 070b2e7d34c8069602741c7483be715327f62875f5ce1f5727627fbea2481f4d
 
 [derle]
+betik = export LIBS="-lpthread -luuid -lm"
 betik   = cd lvm2
 dosya   = derle.sh
      
 [pakur]
 betik   = cd lvm2
-tip     = gnu
+betik   = make DESTDIR=$PKG install_lvm2
+betik   = install -d -m 0700 $PKG/etc/lvm/{archive,backup,cache}
+betik   = install -d -m 1777 $PKG/var/lock
+betik   = install -d -m 0700 $PKG/var/lock/lvm
