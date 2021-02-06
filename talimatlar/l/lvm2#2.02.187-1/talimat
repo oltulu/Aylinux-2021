@@ -5,18 +5,18 @@ grup 	= temel
 url     = http://sourceware.org/lvm2
 
 [kaynak]
-git     	= https://sourceware.org/git/lvm2
+1     	= https://mirrors.kernel.org/sourceware/lvm2/LVM2.$version.tgz
 
 [sha256]
 #1 		= 070b2e7d34c8069602741c7483be715327f62875f5ce1f5727627fbea2481f4d
 
 [derle]
+betik   = cd LVM2.$surum
 betik = export LIBS="-lpthread -luuid -lm"
-betik   = cd lvm2
 dosya   = derle.sh
      
 [pakur]
-betik   = cd lvm2
+betik   = cd LVM2.$surum
 betik   = make DESTDIR=$PKG install_lvm2
 betik   = install -d -m 0700 $PKG/etc/lvm/{archive,backup,cache}
 betik   = install -d -m 1777 $PKG/var/lock
