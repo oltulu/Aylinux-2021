@@ -6,11 +6,12 @@ cp -a grub-$surum grub-efi
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
+		--enable-device-mapper \
 		--disable-efiemu \
-		--infodir=/usr/share/info \
-                --with-platform=efi \
-		--disable-werror
-	make
+		--disable-grub-mount  \
+                --with-platform=efi
+
+make
 	mkdir $SRC/dest
 	make DESTDIR=$SRC/dest install
         install -d $PKG/boot/grub
