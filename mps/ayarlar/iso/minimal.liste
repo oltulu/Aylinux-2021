@@ -11,7 +11,7 @@ dracut
 intel-ucode
 b43-fwcutter
 linux-firmware
-kernel5910
+kernel510
 iw
 wpa_supplicant
 networkmanager
