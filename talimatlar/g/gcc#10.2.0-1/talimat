@@ -27,5 +27,8 @@ xz     = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
 dosya 	= derle.sh
 	      
 [pakur]
-dosya   = pakur.sh
+#dosya   = pakur.sh
+betik= make DESTDIR=$PKG install
+betik= install -Dm755 "/sources/c89" "$PKG/usr/bin/c89"
+betik= install -Dm755 "/sources/c99" "$PKG/usr/bin/c99"
 
