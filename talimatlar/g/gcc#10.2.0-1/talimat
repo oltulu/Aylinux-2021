@@ -4,6 +4,10 @@ paketci = milisarge
 grup 	= onsistem
 url     = http://ftp.gnu.org/gnu/
 
+[gerek]
+derleme  = texinfo
+calisma  = 
+
 [kaynak]
 #1      = $url/gmp/gmp-6.1.2.tar.xz
 #2      = https://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz
