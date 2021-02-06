@@ -1,6 +1,6 @@
 [paket]
 tanim   = Dosya sistemlerinin birden çok fiziksel disk ve bölüm arasında yayılmasını sağlayan araçlar
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = http://sourceware.org/lvm2
 
