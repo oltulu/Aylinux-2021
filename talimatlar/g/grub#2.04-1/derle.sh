@@ -1,19 +1,8 @@
 cd $SRC
 cp -a grub-$surum grub-efi
 
-	cd grub-$surum
-	./configure --prefix=/usr \
-		--sysconfdir=/etc       \
-		--sbindir=/usr/bin        \
-		--infodir=/usr/share/info \
-                --with-platform=pc \
-                --disable-efiemu \
-                --disable-werror
-
-	make
-	make DESTDIR=$PKG install
-
-  cd ../grub-efi
+	
+  cd $SRC/grub-efi
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
@@ -29,3 +18,16 @@ cp -a grub-$surum grub-efi
 	$PKG/boot/grub/grub.cfg.exemple
 
 	cp -r $SRC/dest/usr/lib/grub/x86_64-efi $PKG/usr/lib/grub/
+	
+	cd $SRC/grub-$surum
+	./configure --prefix=/usr \
+		--sysconfdir=/etc       \
+		--sbindir=/usr/bin        \
+		--infodir=/usr/share/info \
+                --with-platform=pc \
+                --disable-efiemu \
+                --disable-werror
+
+	make
+	make DESTDIR=$PKG install
+
