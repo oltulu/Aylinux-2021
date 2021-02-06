@@ -30,35 +30,19 @@ ln -s ../isl-0.21 isl
   CFLAGS=${CFLAGS/-pipe/}
   CXXFLAGS=${CXXFLAGS/-pipe/}
 
-  "$SRC/gcc-$surum/configure" --prefix=/usr \
-      --libdir=/usr/lib \
-      --libexecdir=/usr/lib \
-      --mandir=/usr/share/man \
-      --infodir=/usr/share/info \
-      --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d \
-      --with-isl \
-      --with-linker-hash-style=gnu \
-      --with-system-zlib \
-      --enable-__cxa_atexit \
-      --enable-cet=auto \
-      --enable-checking=release \
-      --enable-clocale=gnu \
-      --enable-default-pie \
-      --enable-default-ssp \
-      --enable-gnu-indirect-function \
-      --enable-gnu-unique-object \
-      --enable-install-libiberty \
-      --enable-linker-build-id \
-      --enable-lto \
-      --enable-multilib \
-      --enable-plugin \
-      --enable-shared \
-      --enable-threads=posix \
-      --disable-libssp \
-      --disable-libstdcxx-pch \
-      --disable-libunwind-exceptions \
-      --disable-werror \
-      gdc_include_dir=/usr/include/dlang/gdc
+  "$SRC/gcc-$surum/configure --prefix=/usr \
+                                --libexecdir=/usr/lib \
+                                --enable-languages=c,c++,objc \
+                                --enable-threads=posix \
+                                --enable-__cxa_atexit \
+                                --enable-clocale=gnu \
+                                --enable-shared \
+                                --disable-nls \
+                                --with-x=no \
+                                --with-system-zlib \
+                                --enable-multilib \
+				--enable-default-pie \
+				--enable-default-ssp
 
   make
 
