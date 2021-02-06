@@ -5,7 +5,7 @@ grup 	= temel
 url     = http://www.gentoo.org/proj/en/eudev
 
 [kaynak]
-gz     	= http://dev.gentoo.org/~blueness/eudev
+git     	= https://anongit.gentoo.org/git/proj/eudev
 2  	    = https://ftp.osuosl.org/pub/lfs/lfs-packages/8.2/udev-lfs-20171102.tar.bz2
 
 [sha256]
