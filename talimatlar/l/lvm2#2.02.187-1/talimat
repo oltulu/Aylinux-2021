@@ -5,7 +5,7 @@ grup 	= temel
 url     = http://sourceware.org/lvm2
 
 [kaynak]
-1     	= https://mirrors.kernel.org/sourceware/lvm2/LVM2.$version.tgz
+1     	= https://mirrors.kernel.org/sourceware/lvm2/LVM2.$surum.tgz
 
 [sha256]
 #1 		= 070b2e7d34c8069602741c7483be715327f62875f5ce1f5727627fbea2481f4d
