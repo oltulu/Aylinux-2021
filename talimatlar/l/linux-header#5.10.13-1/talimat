@@ -1,7 +1,7 @@
 [paket]
 tanim   = Linux API başlıkları(headers)
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://www.kernel.org
 
 [kaynak]
