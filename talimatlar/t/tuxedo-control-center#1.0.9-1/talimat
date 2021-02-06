@@ -9,13 +9,13 @@ derleme = libxss nss gtk3
 calisma =
 
 [kaynak]
-1       = https://rpm.tuxedocomputers.com/opensuse/15.2/x86_64/tuxedo-control-center_${surum}.rpm
+1       = https://repo.herecura.be/herecura/x86_64/tuxedo-control-center-1.0.9-1-x86_64.pkg.tar.zst
 
 [sha256]
 #1       = f1b4dbbd60f4b9a91e0ab0954e3e6b8ebe5442d5fbb760a554a733903e44a1de
 
 [derle]
-betik   =  rpm2cpio /sources/tuxedo-control-center_${surum}.rpm | cpio -idmv
+#betik   =  rpm2cpio /sources/tuxedo-control-center_${surum}.rpm | cpio -idmv
 #betik   =  7z x tuxedo-control-center-${surum.x86_64.cpio -o ./
 
 betik   =  cp -av usr "${PKG}"
