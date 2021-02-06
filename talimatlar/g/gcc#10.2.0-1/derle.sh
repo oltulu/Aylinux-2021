@@ -30,19 +30,12 @@ ln -s ../isl-0.21 isl
   CFLAGS=${CFLAGS/-pipe/}
   CXXFLAGS=${CXXFLAGS/-pipe/}
 
-  "$SRC/gcc-$surum/configure --prefix=/usr \
-                                --libexecdir=/usr/lib \
-                                --enable-languages=c,c++,objc \
-                                --enable-threads=posix \
-                                --enable-__cxa_atexit \
-                                --enable-clocale=gnu \
-                                --enable-shared \
-                                --disable-nls \
-                                --with-x=no \
-                                --with-system-zlib \
-                                --enable-multilib \
-				--enable-default-pie \
-				--enable-default-ssp
+  $SRC/gcc-$surum/configure --prefix=/usr \
+    --libdir=/usr/lib \
+    --enable-languages=c,c++,objc,fortran \
+    --disable-multilib \
+    --disable-bootstrap \
+    --with-system-zlib
 
   make
 
