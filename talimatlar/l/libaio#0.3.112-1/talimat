@@ -11,7 +11,6 @@ url     = http://lse.sourceforge.net/io/aio.html
 #1 		= 62cf871ad8fd09eb3418f00aca7a7d449299b8e1de31c65f28bf6a2ef1fa502a
 
 [derle]
-betik   = CFLAGS="-march=${CARCH/_/-} -mtune=generic -O2 -pipe"
 betik   = make
      
 [pakur]
