@@ -18,6 +18,7 @@ dosya   = derle.sh
 [pakur]
 betik   = cd LVM2.$surum
 betik   = make DESTDIR=$PKG install_lvm2
+betik   = make DESTDIR="${PKG}" install_device-mapper
 betik   = install -d -m 0700 $PKG/etc/lvm/{archive,backup,cache}
 betik   = install -d -m 1777 $PKG/var/lock
 betik   = install -d -m 0700 $PKG/var/lock/lvm
