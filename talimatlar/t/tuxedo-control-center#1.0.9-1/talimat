@@ -15,6 +15,7 @@ calisma =
 #1       = f1b4dbbd60f4b9a91e0ab0954e3e6b8ebe5442d5fbb760a554a733903e44a1de
 
 [derle]
+betik   =  rpm2cpio /sources/tuxedo-control-center_${surum}.rpm
 betik   =  cp -av usr "${PKG}"
 betik   =  cp -av opt "${PKG}"
 betik   =  chmod -R 755 "${PKG}"/opt/tuxedo-control-center/
