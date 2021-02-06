@@ -1,7 +1,7 @@
 [paket]
 tanim   = Uluslararası ve yerelleştirme araçları
-paketci = milisarge
-grup 	= onsistem
+paketci = cihan_Alkan
+grup 	= temel
 url     = http://www.gnu.org/software/gettext
 
 [kaynak]
