@@ -1,6 +1,6 @@
 [paket]
 tanim   = Linux asenkron I/O kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = http://lse.sourceforge.net/io/aio.html
 
@@ -11,8 +11,8 @@ url     = http://lse.sourceforge.net/io/aio.html
 #1 		= 62cf871ad8fd09eb3418f00aca7a7d449299b8e1de31c65f28bf6a2ef1fa502a
 
 [derle]
-dosya   = derle.sh
+betik   = CFLAGS="-march=${CARCH/_/-} -mtune=generic -O2 -pipe"
+betik   = make
      
 [pakur]
 betik   = make prefix="$PKG/usr" install
-betik   = rm -f $PKG/usr/lib/*.a
