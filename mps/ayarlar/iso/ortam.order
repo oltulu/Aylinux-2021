@@ -95,3 +95,4 @@ openldap
 cyrus-sasl
 brotli
 busybox
+libssh2
