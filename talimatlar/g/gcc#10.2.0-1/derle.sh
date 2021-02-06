@@ -1,40 +1,64 @@
-cd $SRC
-patch -d $isim-$surum -p1 -i $SRC/$isim-nocheck-fixincludes.patch
-    patch -d $isim-$surum -p1 -i $SRC/$isim-4.7.3-multilib-dirs.patch
-mkdir build
-    cd build
-    ../$isim-$surum/configure --prefix=/usr \
-                                --libexecdir=/usr/lib \
-                                --enable-languages=c,c++,objc \
-                                --enable-threads=posix \
-                                --enable-__cxa_atexit \
-                                --enable-clocale=gnu \
-                                --enable-shared \
-                                --disable-nls \
-                                --with-x=no \
-                                --with-system-zlib \
-                                --enable-multilib \
-				--enable-default-pie \
-				--enable-default-ssp \
-                                --with-pkgversion="aylinux"
-				 make bootstrap
-   
-   make -j1 DESTDIR=$PKG install
+ln -s ../isl-0.21 isl
 
-    install -d $PKG/lib
-    ln -sf ../usr/bin/cpp $PKG/lib/cpp
-    ln -sf gcc $PKG/usr/bin/cc
-    ln -sf g++ $PKG/usr/bin/c++
+  # Do not run fixincludes
+  sed -i 's@\./fixinc\.sh@-c true@' gcc/Makefile.in
 
-    mv $PKG/usr/lib/gcc/*/$surum/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$surum/include/
-    rm -r $PKG/usr/share/{info,$isim-$surum} 
-    rm -r $PKG/usr/bin/*-linux-gnu-*
-    rm -r $PKG/usr/lib/gcc/*/$surum/{install-tools,include-fixed} 
+  # Arch Linux installs x86_64 libraries /lib
+  sed -i '/m64=/s/lib64/lib/' gcc/config/i386/t-linux64
 
-    for D in lib{,32}; do
-        install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/${D}
-        mv $PKG/usr/${D}/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/${D}
-    done
+  # hack! - some configure tests for header files using "$CPP $CPPFLAGS"
+  sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" {libiberty,gcc}/configure
 
-   # sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
-				
+  # D hacks
+  patch -p1 -i "/sources/gdc_phobos_path.patch"
+
+  # Turn off SSP for nostdlib|nodefaultlibs|ffreestanding
+  # https://bugs.archlinux.org/task/64270
+  patch -p1 -i "/sources/fs64270.patch"
+
+  # Fix a crash in mpv when mesa 20.2 is compiled with LTO
+  # https://gitlab.freedesktop.org/mesa/mesa/-/issues/3239
+  # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=96482
+  patch -Np1 -i /sources/ipa-fix-bit-CPP-when-combined-with-IPA-bit-CP.patch
+  patch -Np1 -i /sources/ipa-fix-ICE-in-get_default_value.patch
+
+  mkdir -p "$SRC/gcc-build"
+ cd gcc-build
+
+  # using -pipe causes spurious test-suite failures
+  # http://gcc.gnu.org/bugzilla/show_bug.cgi?id=48565
+  CFLAGS=${CFLAGS/-pipe/}
+  CXXFLAGS=${CXXFLAGS/-pipe/}
+
+  "$SRC/gcc-$surum/configure" --prefix=/usr \
+      --libdir=/usr/lib \
+      --libexecdir=/usr/lib \
+      --mandir=/usr/share/man \
+      --infodir=/usr/share/info \
+      --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d \
+      --with-isl \
+      --with-linker-hash-style=gnu \
+      --with-system-zlib \
+      --enable-__cxa_atexit \
+      --enable-cet=auto \
+      --enable-checking=release \
+      --enable-clocale=gnu \
+      --enable-default-pie \
+      --enable-default-ssp \
+      --enable-gnu-indirect-function \
+      --enable-gnu-unique-object \
+      --enable-install-libiberty \
+      --enable-linker-build-id \
+      --enable-lto \
+      --enable-multilib \
+      --enable-plugin \
+      --enable-shared \
+      --enable-threads=posix \
+      --disable-libssp \
+      --disable-libstdcxx-pch \
+      --disable-libunwind-exceptions \
+      --disable-werror \
+      gdc_include_dir=/usr/include/dlang/gdc
+
+  make
+
