@@ -7,8 +7,11 @@
                 --disable-readline \
                 --disable-selinux \
                 --enable-pkgconfig \
-                --enable-static_link \
                 --enable-udev_sync \
                 --enable-udev_rules \
+                    --with-default-dm-run-dir=/run \
+    --with-default-locking-dir=/run/lock/lvm \
+    --with-default-pid-dir=/run \
+    --with-default-run-dir=/run/lvm \
                 --with-{user,group}=root
 make
