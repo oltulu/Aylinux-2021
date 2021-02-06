@@ -1,7 +1,7 @@
 [paket]
 tanim   = GNU C, C++, fortran and objc derleyicileri içeren araçlar
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://ftp.gnu.org/gnu/
 
 [gerek]
@@ -9,28 +9,23 @@ derleme  = texinfo
 calisma  = 
 
 [kaynak]
-#1      = $url/gmp/gmp-6.1.2.tar.xz
-#2      = https://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz
-#3      = https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+1      = http://isl.gforge.inria.fr/isl-0.21.tar.xz
+2      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c89 
+3      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c99
+4      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/gdc_phobos_path.patch
+5      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/fs64270.patch
+6      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/ipa-fix-bit-CPP-when-combined-with-IPA-bit-CP.patch
+7      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/ipa-fix-ICE-in-get_default_value.patch
 xz     = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
-dosya = $isim-nocheck-fixincludes.patch
-dosya = $isim-4.7.3-multilib-dirs.patch
+
 
 [sha256]
 #1 		= 87b565e89a9a684fe4ebeeddb8399dce2599f9c9049854ca8c0dfbdea0e21912
-#2		= 1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a
-#3 		= 6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e
-#4 		= 79a66834e96a6050d8fe78db2c3b32fb285b230b855d0a66288235bc04b327a0
+
 
 [derle]
-#dosya 	= derle.sh
-betik = sed -e '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64
-betik = mkdir -v build
-betik = cd build
-betik = SED=sed ../configure --prefix=/usr --libdir=/usr/lib --enable-languages=c,c++,objc,fortran --disable-multilib --disable-bootstrap --with-system-zlib
-betik = make V=s
+dosya 	= derle.sh
 	      
 [pakur]
-betik   = cd build
-#tip     = gnu
-betik   = sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
+dosya   = pakur.sh
+
