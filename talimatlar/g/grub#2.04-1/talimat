@@ -9,16 +9,17 @@ derleme = freetype python fuse2 font-unifont-bdf
 calisma = os-prober fuse2 freetype
 
 [kaynak]
-#git = https://git.savannah.gnu.org/git/grub
+1 = http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-2.37.tar.bz2
 xz      = http://ftp.gnu.org/gnu/grub
 dosya   = grub.default
 dosya   = 0004-add-GRUB_COLOR_variables.patch
-1= https://notabug.org/oltulu/Ceviri/raw/master/grub-tema.tar.gz
+2 = https://notabug.org/oltulu/Ceviri/raw/master/grub-tema.tar.gz
 
 [sha256]
 #1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
 
 [derle]
+betik = mv dejavu-fonts-ttf-2.37/ttf/Deja* grub-$surum
 dosya = derle.sh
 
 	      
