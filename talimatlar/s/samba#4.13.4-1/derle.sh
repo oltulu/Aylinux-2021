@@ -1,18 +1,14 @@
-sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' -i nsswitch/nsstest.c
+./configure --enable-fhs \
+                --prefix=/usr \
+                --libexecdir=/usr/lib \
+                --localstatedir=/var \
+                --sysconfdir=/etc \
+                --with-privatedir=/etc/samba/private \
+                --bundled-libraries=!tdb,!talloc,!tevent,!popt,!ldb,!cmocka \
+                --without-{ad-dc,ads,ldap} \
+                --without-json
 
-echo "^samba4.rpc.echo.*on.*ncacn_np.*with.*object.*nt4_dc" >> selftest/knownfail
-
-CFLAGS+=" -I/usr/include/tirpc"         \
-LDFLAGS+=" -ltirpc"                     \
-./configure                             \
-    --prefix=/usr                       \
-    --sysconfdir=/etc                   \
-    --localstatedir=/var                \
-    --with-piddir=/run/samba            \
-    --with-pammodulesdir=/lib/security  \
-    --without-ad-dc                     \
-    --enable-fhs                        \
-    --bundled-libraries=!tdb            \
-    --enable-selftest
+    /usr/bin/python3 ./buildtools/bin/waf build
+    /usr/bin/python3 ./buildtools/bin/waf install --destdir=$PKG
 
 make
