@@ -1,0 +1,26 @@
+[paket]
+tanim   = TUXEDO dizüstü bilgisayarlarda performans, enerji, fan ve konfor ayarlarını kontrol etmenize yardımcı olacak bir araç.
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://github.com/tuxedocomputers/tuxedo-control-center
+
+[gerek]
+derleme = libxss nss gtk3
+calisma =
+
+[kaynak]
+1       = https://rpm.tuxedocomputers.com/opensuse/15.2/x86_64/tuxedo-control-center_${surum}.rpm
+
+[sha256]
+#1       = f1b4dbbd60f4b9a91e0ab0954e3e6b8ebe5442d5fbb760a554a733903e44a1de
+
+[derle]
+betik   =  cp -av usr "${PKG}"
+betik   =  cp -av opt "${PKG}"
+betik   =  chmod -R 755 "${PKG}"/opt/tuxedo-control-center/
+betik   =  mkdir -p "${PKG}/usr/bin"
+betik   =  ln -sfv /opt/tuxedo-control-center/tuxedo-control-center "${PKG}/usr/bin/tuxedo-control-center"
+
+[pakur]
+betik   =   install -Dm644 "${SRC}/opt/tuxedo-control-center/resources/dist/tuxedo-control-center/data/dist-data/tuxedo-control-center.desktop" "${PKG}/usr/share/applications/tuxedo-control-center.desktop"
+betik   =   install -Dm644 "${SRC}/opt/tuxedo-control-center/resources/dist/tuxedo-control-center/data/dist-data/de.tuxedocomputers.tcc.policy" "${PKG}/usr/share/polkit-1/actions/de.tuxedocomputers.tcc.policy"
