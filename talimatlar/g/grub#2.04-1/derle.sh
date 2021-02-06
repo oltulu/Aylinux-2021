@@ -1,7 +1,7 @@
 cd $SRC
-cp -a grub-$surum grub-efi-$surum
+cp -a grub grub-efi
 
-	cd grub-$surum
+	cd grub
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
@@ -13,7 +13,7 @@ cp -a grub-$surum grub-efi-$surum
 	make
 	make DESTDIR=$PKG install
 
-  cd ../grub-efi-$version
+  cd ../grub-efi
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
