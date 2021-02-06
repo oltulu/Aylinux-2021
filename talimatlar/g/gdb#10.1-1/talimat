@@ -17,7 +17,7 @@ xz         = ${GNU_SITE}/${isim}
 [derle]
 #betik      = sed '/^SUBDIRS/s/doc//' -i gdb/Makefile.in
 betik      = mkdir build && cd build
-betik      = ./configure --prefix=/usr --with-system-readline
+betik      = ../configure --prefix=/usr --with-system-readline
 betik      = make
 
 [pakur]
