@@ -1,0 +1,24 @@
+[paket]
+tanim   = Programcılar için dinamik resim oluşturucu kütüphane
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://libgd.github.io
+
+[gerek]
+derleme = fontconfig libxpm libwebp
+calisma = 
+
+[kaynak]
+xz      = https://github.com/libgd/libgd/releases/download/gd-${surum}
+
+
+[sha512]
+#1 		= e4598e17a277a75e02255402182cab139cb3f2cffcd68ec05cc10bbeaf6bc7aa39162c3445cd4a7efc1a26b72b9152bbedb187351e3ed099ea51767319997a6b
+
+[derle]
+betik  = ./bootstrap.sh
+betik  = ./configure --prefix=/usr --disable-rpath
+betik  = make
+      
+[pakur]
+tip     = gnu
