@@ -6,7 +6,7 @@ url     = http://www.pulseaudio.org
 
 [gerek]
 derleme = avahi fftw jack libsm libxtst libasyncns bluez libcap glib libsndfile libsoxr orc sbc speex tdb webrtc-audio-processing xcb-util
-calisma = libsndfile libasyncns libsoxr orc avahi fftw jack speex sbc webrtc-audio-processing
+calisma = libsndfile libasyncns libsoxr orc avahi fftw jack speex sbc webrtc-audio-processing gst-plugins-base
 
 [kaynak]
 xz      = http://freedesktop.org/software/pulseaudio/releases
