@@ -24,5 +24,5 @@ betik      = make
 betik      = cd build
 betik      = make DESTDIR=$PKG install
 #betik      = make -C gdb DESTDIR=$PKG install
-#betik      = install -dm755 $PKG/etc/gdb
+betik      = install -dm755 $PKG/etc/gdb
 betik      = touch $PKG/etc/gdb/gdbinit
