@@ -5,9 +5,7 @@ make DESTDIR=$PKG install
     install -m 755 /sources/pwck $PKG/etc/cron/daily
 
 
-    rm -rf $PKG/usr/bin/gpasswd \
-          $PKG/usr/man/man1/gpasswd.1 \
-          $PKG/usr/sbin/{chpasswd,grpconv,grpunconv,logoutd} \
+    rm -rf $PKG/usr/sbin/{chpasswd,grpconv,grpunconv,logoutd} \
           $PKG/usr/sbin/{newusers,pwconv,pwunconv} \
           $PKG/usr/share/man/man8/{chpasswd.8,grpconv.8,grpunconv.8,logoutd.8} \
           $PKG/usr/share/man/man8/{newusers.8,pwconv.8,pwunconv.8} \
