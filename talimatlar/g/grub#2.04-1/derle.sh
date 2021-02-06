@@ -1,37 +1,31 @@
 cd $SRC
-export CFLAGS="${CFLAGS} -Wno-error"
-export PYTHON=python3
+cp -a grub-$surum grub-efi-$surum
 
-cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
-cd ${SRC}/grub-$surum
-patch -i /sources/grub2-00_header.diff util/grub.d/00_header.in
-patch -i /sources/grub2-10_linux.diff util/grub.d/10_linux.in
-./configure --prefix=/usr \
-		--sysconfdir=/etc \
-		--enable-device-mapper \
-		--disable-efiemu \
-		--disable-grub-mount
+	cd grub-$surum
+	./configure --prefix=/usr \
+		--sysconfdir=/etc       \
+		--sbindir=/usr/bin        \
+		--infodir=/usr/share/info \
+                --with-platform=pc \
+                --disable-efiemu \
+                --disable-werror
+
 	make
 	make DESTDIR=$PKG install
 
-cd ${SRC}/grub-efi
- export CFLAGS="${CFLAGS} -Wno-error"
-    export PYTHON=python3
+  cd ../grub-efi-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc       \
+		--sbindir=/usr/bin        \
+		--disable-efiemu \
+		--infodir=/usr/share/info \
+                --with-platform=efi \
+		--disable-werror
+	make
+	mkdir $SRC/dest
+	make DESTDIR=$SRC/dest install
+        install -d $PKG/boot/grub
+	install -Dm644 ../grub.cfg \
+	$PKG/boot/grub/grub.cfg.exemple
 
-    MODLIST="boot chain configfile fat ext2 linux normal ntfs part_gpt part_msdos"
-
-    for ARCH in i386 x86_64
-    do
-        mkdir $ARCH
-        cd $ARCH
-        ../grub-$version/configure --prefix=/usr \
-            --with-platform=efi --target=$ARCH \
-            --program-prefix=""
-        make
-        make DESTDIR=$PKG install
-        cd grub-core
-        ../grub-mkimage -O $ARCH-efi -d . -o grub2-$ARCH.efi -p "" $MODLIST
-        cp grub2-$ARCH.efi $PKG/usr/lib/grub/
-        cd ../..
-    done
- 
+	cp -r $SRC/dest/usr/lib/grub/x86_64-efi $PKG/usr/lib/grub/
