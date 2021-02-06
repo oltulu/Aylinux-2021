@@ -23,7 +23,7 @@ ln -s ../isl-0.21 isl
   patch -Np1 -i /sources/ipa-fix-ICE-in-get_default_value.patch
 
   mkdir -p "$SRC/gcc-build"
- cd gcc-build
+ cd $SRC/gcc-build
 
   # using -pipe causes spurious test-suite failures
   # http://gcc.gnu.org/bugzilla/show_bug.cgi?id=48565
