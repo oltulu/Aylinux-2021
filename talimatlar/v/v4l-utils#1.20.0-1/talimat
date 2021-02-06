@@ -6,7 +6,7 @@ url      = https://linuxtv.org/
 
 [gerek]
 derleme  = alsa-lib libjpeg-turbo
-calisma  = sysfsutils
+calisma  = sysfsutils qt5-base
 
 [kaynak]
 bz2    =  https://linuxtv.org/downloads/$isim
