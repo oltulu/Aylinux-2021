@@ -1,6 +1,6 @@
 [paket]
 tanim   = GDBM benzeri eş zamanlı değişikliklere izin veren veritabanı erişim kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = sistem
 url     = http://tdb.samba.org/
 
@@ -16,6 +16,7 @@ gz      = http://samba.org/ftp/$isim
 
 [derle]
 betik  = ./configure --prefix=/usr
+betik  = make
 
 [pakur]
 tip     = gnu
