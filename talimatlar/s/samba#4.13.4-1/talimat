@@ -18,10 +18,11 @@ gz     = https://www.samba.org/samba/ftp/stable
 #2   = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
 
 [derle]
-betik  = sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' -i nsswitch/nsstest.c
-betik  = echo "^samba4.rpc.echo.*on.*ncacn_np.*with.*object.*nt4_dc" >> selftest/knownfail
-betik  = CFLAGS+=" -I/usr/include/tirpc" LDFLAGS+=" -ltirpc"  ./configure  --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-piddir=/run/samba --with-pammodulesdir=/lib/security --without-ad-dc --enable-fhs --bundled-libraries=!tdb --enable-selftest
-betik  = make
+dosya = derle.sh
+#betik  = sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' -i nsswitch/nsstest.c
+#betik  = echo "^samba4.rpc.echo.*on.*ncacn_np.*with.*object.*nt4_dc" >> selftest/knownfail
+#betik  = CFLAGS+=" -I/usr/include/tirpc" LDFLAGS+=" -ltirpc"  ./configure  --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-piddir=/run/samba --with-pammodulesdir=/lib/security --without-ad-dc --enable-fhs --bundled-libraries=!tdb --enable-selftest
+#betik  = make
 
 [pakur]
 betik  = make DESTDIR=$PKG install
