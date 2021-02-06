@@ -16,6 +16,8 @@ calisma =
 
 [derle]
 betik   =  7z x /sources/tuxedo-control-center_${surum}.rpm
+betik   =  7z x tuxedo-control-center-${surum.x86_64.cpio -o ./
+
 betik   =  cp -av usr "${PKG}"
 betik   =  cp -av opt "${PKG}"
 betik   =  chmod -R 755 "${PKG}"/opt/tuxedo-control-center/
