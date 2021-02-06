@@ -2,6 +2,8 @@
     ./configure --prefix=/usr \
                 --exec-prefix= \
                 --datarootdir=/usr \
+                --sbindir=/usr/bin \
+                --libdir=/usr/lib \
                 --mandir=/usr/share/man \
                 --with-udev-prefix= \
                 --disable-readline \
