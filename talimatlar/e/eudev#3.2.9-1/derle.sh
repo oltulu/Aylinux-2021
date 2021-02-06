@@ -1,20 +1,18 @@
-sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
+cd eudev
+	sed -e 's/GROUP="dialout"/GROUP="uucp"/' \
+		-e 's/GROUP="tape"/GROUP="storage"/' \
+		-e 's/GROUP="cdrom"/GROUP="optical"/' \
+		-i rules/*.rules
+	./autogen.sh
+	./configure \
+		--prefix=/usr \
+		--with-rootprefix=/usr \
+		--sysconfdir=/etc \
+		--libdir=/usr/lib \
+		--sbindir=/usr/bin \
+		--enable-introspection \
+		--enable-kmod \
+		--disable-manpages \
+		--enable-split-usr
 
-
-	./configure --prefix=/usr \
-        --sysconfdir=/etc \
-	--libdir=/usr/lib \
-	--sbindir=/usr/bin \
-	--with-rootprefix=      \
-	--libexecdir=/usr/lib \
-	--with-rootlibdir=/usr/lib  \
-	--disable-manpages       \
-	--disable-static        \
-	--config-cache \
-	--enable-kmod \
-	--disable-gtk-doc-html \
-	--with-firmware-path=/usr/lib/firmware  \
-        --disable-introspection \
-        --enable-split-usr
- make
-
+	make
