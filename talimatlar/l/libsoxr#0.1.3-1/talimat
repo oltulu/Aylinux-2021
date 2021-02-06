@@ -6,7 +6,7 @@ url     = http://sourceforge.net/p/soxr/wiki/Home
 
 [gerek]
 derleme = cmake
-calisma = 
+calisma = ffmpeg
 
 [kaynak]
 1       = http://downloads.sourceforge.net/project/soxr/soxr-$surum-Source.tar.xz
