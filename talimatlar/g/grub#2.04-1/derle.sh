@@ -3,23 +3,22 @@ cp -a grub-$surum grub-efi
 
 	
   cd $SRC/grub-efi
-	./configure --enable-mm-debug
-	--enable-nls
-	--enable-device-mapper
-	--enable-cache-stats
-	--enable-grub-mkfont
-	--enable-grub-mount
-	--prefix="/usr"
-	--bindir="/usr/bin"
-	--sbindir="/usr/bin"
-	--mandir="/usr/share/man"
-	--infodir="/usr/share/info"
-	--datarootdir="/usr/share"
-	--sysconfdir="/etc"
-	--program-prefix=""
-	--with-bootdir="/boot"
-	--with-grubdir="grub"
-	--disable-silent-rules
+	./configure --enable-mm-debug --enable-nls \
+	--enable-device-mapper \
+	--enable-cache-stats \
+	--enable-grub-mkfont \
+	--enable-grub-mount \
+	--prefix="/usr" \
+	--bindir="/usr/bin" \
+	--sbindir="/usr/bin" \
+	--mandir="/usr/share/man" \
+	--infodir="/usr/share/info" \
+	--datarootdir="/usr/share" \
+	--sysconfdir="/etc" \
+	--program-prefix="" \
+	--with-bootdir="/boot" \
+	--with-grubdir="grub" \
+	--disable-silent-rules \
 	--disable-werror
 
 make
