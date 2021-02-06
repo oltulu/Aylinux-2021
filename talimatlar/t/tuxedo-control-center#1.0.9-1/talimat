@@ -9,7 +9,7 @@ derleme = libxss nss gtk3
 calisma =
 
 [kaynak]
-1       = https://rpm.tuxedocomputers.com/opensuse/15.2/x86_64/tuxedo-control-center_${surum}.rpm  | cpio -idmv
+1       = https://rpm.tuxedocomputers.com/opensuse/15.2/x86_64/tuxedo-control-center_${surum}.rpm
 
 [sha256]
 #1       = f1b4dbbd60f4b9a91e0ab0954e3e6b8ebe5442d5fbb760a554a733903e44a1de
