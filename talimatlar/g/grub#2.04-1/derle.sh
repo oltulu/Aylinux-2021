@@ -1,7 +1,7 @@
 cd $SRC
-cp -a grub grub-efi
+cp -a grub-surum grub-efi
 
-	cd grub
+	cd grub-surum
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
