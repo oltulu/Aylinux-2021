@@ -16,7 +16,7 @@ dosya   = $isim-$surum-$devir.config
 #1 		= 0e4925392fd9f3743cc517e031b68b012b24a63b0cf6c1ff03cce7bb3846cc99
 
 [derle]
-betik   = cp $SRC/$isim-$surum-$devir.config .config
+betik   = make defconfig
 betik   = export KCONFIG_NOTIMESTAMP=1 && make
 	      
 [pakur]
