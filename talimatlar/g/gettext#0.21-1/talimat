@@ -5,21 +5,15 @@ grup 	= onsistem
 url     = http://www.gnu.org/software/gettext
 
 [kaynak]
-xz      = http://ftp.gnu.org/gnu/gettext
+xz      = http://ftpmirror.gnu.org/gnu/$isim
 
 [sha256]
 #1 		= 105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
 
 [derle]
-betik   = cd gettext-tools
-betik   = EMACS="no" ./configure --prefix=/usr --disable-shared
-betik   = make -C gnulib-lib
-betik   = make -C intl pluralx.c
-betik   = make -C src msgfmt
-betik   = make -C src msgmerge
-betik   = make -C src xgettext
-	      
+betik   = ./configure --prefix=/usr --enable-{shared,static} --disable-{csharp,java,nls} --without-{emacs,git} --with-included-{glib,libcroco,libxml}
+betik   = make
+
 [pakur]
-betik   = cd gettext-tools	
-betik   = mkdir -p $PKG/usr/bin
-betik   = cp -v src/{msgfmt,msgmerge,xgettext} $PKG/usr/bin
+betik   =  make DESTDIR=$PKG install
+
