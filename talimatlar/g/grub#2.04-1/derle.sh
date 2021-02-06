@@ -9,7 +9,6 @@ cp -a grub-$surum grub-efi
 	--enable-cache-stats
 	--enable-grub-mkfont
 	--enable-grub-mount
-	--enable-libzfs
 	--prefix="/usr"
 	--bindir="/usr/bin"
 	--sbindir="/usr/bin"
