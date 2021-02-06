@@ -1,5 +1,4 @@
 glibc
-gcc-libs-bin
 zlib
 file
 readline
@@ -13,7 +12,7 @@ libmpc
 shadow
 attr
 acl
-gcc-bin
+gcc
 bzip2
 pkg-config
 ncurses
@@ -95,3 +94,4 @@ krb5
 openldap
 cyrus-sasl
 brotli
+busybox
