@@ -2,7 +2,7 @@ cd $SRC
 cp -a grub-$surum grub-efi
 
 	
-  cd $SRC/grub-efi
+  cd $SRC/grub-$surum
   	sed 's|/usr/share/fonts/dejavu|/usr/share/fonts/dejavu /usr/share/fonts/TTF|g' -i "configure.ac"
 		sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
 		./linguas.sh
@@ -43,7 +43,7 @@ make
 
 	cp -r $SRC/dest/usr/lib/grub/x86_64-efi $PKG/usr/lib/grub/
 	
-	cd $SRC/grub-$surum
+	cd $SRC/grub-efi
 	./configure --prefix=/usr \
 		--sysconfdir=/etc       \
 		--sbindir=/usr/bin        \
