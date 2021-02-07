@@ -18,3 +18,15 @@ betik 	= make
 tip     = gnu
 betik   = ln -sv bash $PKG/usr/bin/sh
 betik   = rm -rf $PKG/usr/share/info
+
+# sistem geneli ayar dosyaları
+betik   = install -Dm644 $SRC/system.bashrc "$PKG/etc/bash.bashrc"
+betik   = install -Dm644 $SRC/system.bash_logout "$PKG/etc/bash.bash_logout"
+
+# kullanıcı skel ayarları
+betik   = install -dm755 "$PKG/etc/skel/"
+betik   = install -m644 $SRC/dot.bashrc "$PKG/etc/skel/.bashrc"
+betik   = install -m644 $SRC/dot.bash_profile "$PKG/etc/skel/.bash_profile"
+betik   = install -m644 $SRC/dot.bash_logout "$PKG/etc/skel/.bash_logout"
+betik   = echo "exec /usr/bin/bash --login +h" > $PKG/usr/bin/bash_refresh
+betik   = chmod +x $PKG/usr/bin/bash_refresh
