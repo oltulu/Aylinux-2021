@@ -15,7 +15,7 @@ common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
 #sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
 
 cp -r "${SRC}/grub" ${SRC}/grub-efi
-
+./bootstrap --gnulib-srcdir="${SRC}/gnulib/" --no-git
 ./configure $CONF_OPT \
 --with-platform="pc" \
 --target="i386" \
