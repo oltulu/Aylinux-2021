@@ -1,3 +1,4 @@
+cd grub
 sed -i -e 's,freetype/ftsynth.h,freetype2/ftsynth.h,' util/grub-mkfont.c
 patch -Np1 -i "/sources/0005-grub-install-fix-inverted-test-for-NLS-enabled-when-.patch"
 
@@ -13,7 +14,7 @@ common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
 # fix unifont.bdf location so grub-mkfont can create *.pf2 files
 sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
 
-cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
+cp -r "${SRC}/grub" ${SRC}/grub-efi
 
 ./configure $CONF_OPT \
 --with-platform="pc" \
