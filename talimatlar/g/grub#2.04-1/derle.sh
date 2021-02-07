@@ -3,6 +3,7 @@ cp -a grub-$surum grub-efi
 
 	
   cd $SRC/grub-efi
+  	sed 's|/usr/share/fonts/dejavu|/usr/share/fonts/dejavu /usr/share/fonts/TTF|g' -i "configure.ac"
 	./configure --enable-mm-debug --enable-nls \
 	--enable-device-mapper \
 	--enable-cache-stats \
