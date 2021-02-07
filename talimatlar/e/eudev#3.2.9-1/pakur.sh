@@ -23,5 +23,6 @@ make -j1 -f udev-lfs-20171102/Makefile.lfs DESTDIR=$PKG install
 cp -r $PKG/lib/* $PKG/usr/lib/
 cp -r $PKG/lib/udev/* $PKG/usr/lib/udev/
 rmdir $PKG/lib/udev/rules.d
+rm $PKG/lib/udev/*
 rmdir $PKG/lib/udev
 rmdir $PKG/lib
