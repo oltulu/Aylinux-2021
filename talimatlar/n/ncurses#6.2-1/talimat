@@ -11,7 +11,7 @@ gz      = https://ftp.gnu.org/pub/gnu/ncurses
 #1 		= aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
 
 [derle]
-betik   = sed -i s/mawk// configure
+betik   = sed -i '/LIBTOOL_INSTALL/d' c++/Makefile.in
 betik   = ./configure --prefix=/usr --with-shared --without-debug --without-ada --enable-widec --enable-overwrite 
 betik   = make
 	      
