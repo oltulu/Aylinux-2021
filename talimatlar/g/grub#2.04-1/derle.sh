@@ -8,7 +8,7 @@ unset CPPFLAGS
 unset CXXFLAGS
 unset LDFLAGS
 unset MAKEFLAGS
-
+CFLAGS+=" -fno-stack-protector"
 common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
 --enable-grub-mkfont --enable-grub-mount --disable-werror --enable-boot-time"
 
