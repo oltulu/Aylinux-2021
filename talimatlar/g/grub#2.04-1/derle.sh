@@ -6,8 +6,7 @@ cp -a grub-$surum grub-efi
   	sed 's|/usr/share/fonts/dejavu|/usr/share/fonts/dejavu /usr/share/fonts/TTF|g' -i "configure.ac"
 		sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
 		./linguas.sh
-		./bootstrap \
-		--gnulib-srcdir="${SRC}/gnulib/" --no-git
+		#./bootstrap --gnulib-srcdir="${SRC}/gnulib/" --no-git
 		unset CFLAGS
 	unset CPPFLAGS
 	unset CXXFLAGS
