@@ -12,7 +12,7 @@ common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
 --enable-grub-mkfont --enable-grub-mount --disable-werror --enable-boot-time"
 
 # fix unifont.bdf location so grub-mkfont can create *.pf2 files
-sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
+#sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
 
 cp -r "${SRC}/grub" ${SRC}/grub-efi
 
