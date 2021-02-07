@@ -12,7 +12,9 @@ cd eudev
 		--sbindir=/usr/bin \
 		--enable-introspection \
 		--enable-kmod \
-		--disable-manpages \
-		--enable-split-usr
+		--enable-manpages \
+		--enable-split-usr \
+                --disable-gtk-doc-html \
+	        --with-firmware-path=/usr/lib/firmware
 
 	make
