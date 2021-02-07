@@ -1,56 +1,33 @@
-cd $SRC
-cp -a grub-$surum grub-efi
+sed -i -e 's,freetype/ftsynth.h,freetype2/ftsynth.h,' util/grub-mkfont.c
 
-	
-  cd $SRC/grub-$surum
-  	sed 's|/usr/share/fonts/dejavu|/usr/share/fonts/dejavu /usr/share/fonts/TTF|g' -i "configure.ac"
-		sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
-		./linguas.sh
-		#./bootstrap --gnulib-srcdir="${SRC}/gnulib/" --no-git
-		unset CFLAGS
-	unset CPPFLAGS
-	unset CXXFLAGS
-	unset LDFLAGS
-	unset MAKEFLAGS
+sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
 
-	echo "Make translations reproducible..."
-	sed -i '1i /^PO-Revision-Date:/ d' po/*.sed
-	./configure --enable-mm-debug --enable-nls \
-	--enable-device-mapper \
-	--enable-cache-stats \
-	--enable-grub-mkfont \
-	--enable-grub-mount \
-	--prefix="/usr" \
-	--bindir="/usr/bin" \
-	--sbindir="/usr/bin" \
-	--mandir="/usr/share/man" \
-	--infodir="/usr/share/info" \
-	--datarootdir="/usr/share" \
-	--sysconfdir="/etc" \
-	--program-prefix="" \
-	--with-bootdir="/boot" \
-	--with-grubdir="grub" \
-	--disable-silent-rules \
-	--disable-werror
+unset CFLAGS
+unset CPPFLAGS
+unset CXXFLAGS
+unset LDFLAGS
+unset MAKEFLAGS
 
+common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
+--enable-grub-mkfont --enable-grub-mount --disable-werror --enable-boot-time"
+
+# fix unifont.bdf location so grub-mkfont can create *.pf2 files
+sed -i 's|/usr/share/fonts/unifont|/usr/share/fonts/misc|' configure
+
+cp -r "${SRC}/grub-$surum/" ${SRC}/grub-efi
+
+./configure $CONF_OPT \
+--with-platform="pc" \
+--target="i386" \
+--enable-efiemu \
+$common_conf
 make
-	mkdir $SRC/dest
-	make DESTDIR=$SRC/dest install
-        install -d $PKG/boot/grub
-	install -Dm644 ../grub.cfg \
-	$PKG/boot/grub/grub.cfg.exemple
 
-	cp -r $SRC/dest/usr/lib/grub/x86_64-efi $PKG/usr/lib/grub/
-	
-	cd $SRC/grub-efi
-	./configure --prefix=/usr \
-		--sysconfdir=/etc       \
-		--sbindir=/usr/bin        \
-		--infodir=/usr/share/info \
-                --with-platform=pc \
-                --disable-efiemu \
-                --disable-werror
-
-	make
-	make DESTDIR=$PKG install
-
+cd ${SRC}/grub-efi
+./autogen.sh
+./configure $CONF_OPT \
+--with-platform="efi" \
+--target="x86_64" \
+--disable-efiemu \
+$common_conf
+make
