@@ -29,5 +29,5 @@ betik = rm $PKG/etc/default/grub
 betik = cp -r $SRC/grub.default $PKG/etc/default/grub
 #dosya   = pakur.sh
 #betik = make DESTDIR=$PKG install
-#betik = install -d $PKG/boot/grub
-#betik = install -Dm644 ../grub.cfg $PKG/boot/grub/grub.cfg.exemple
+betik = install -d $PKG/boot/grub
+betik = install -Dm644 ../grub.cfg $PKG/boot/grub/grub.cfg.exemple
