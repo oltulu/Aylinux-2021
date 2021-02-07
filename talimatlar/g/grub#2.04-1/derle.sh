@@ -1,4 +1,5 @@
 sed -i -e 's,freetype/ftsynth.h,freetype2/ftsynth.h,' util/grub-mkfont.c
+betik = patch -Np1 -i "/sources/0005-grub-install-fix-inverted-test-for-NLS-enabled-when-.patch"
 
 sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
 
