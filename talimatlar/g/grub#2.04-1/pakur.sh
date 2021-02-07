@@ -1,6 +1,6 @@
 make DESTDIR=$PKG install
 
-echo "Bios derlemesi için gdb hata ayıklama ile ilgili dosyaları kaldır..."
+echo "Remove gdb debugging related files for bios build..."
 rm -f "${PKG}/usr/lib/grub/i386-pc"/*.module || true
 rm -f "${PKG}/usr/lib/grub/i386-pc"/*.image || true
 rm -f "${PKG}/usr/lib/grub/i386-pc"/{kernel.exec,gdb_grub,gmodule.pl} || true
