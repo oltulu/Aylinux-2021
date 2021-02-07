@@ -3,10 +3,8 @@ patch -Np1 -i "/sources/0005-grub-install-fix-inverted-test-for-NLS-enabled-when
 
 sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
 
-unset CFLAGS
-unset CPPFLAGS
-unset CXXFLAGS
-unset LDFLAGS
+export CFLAGS="${CFLAGS} -Wno-error"
+export PYTHON=python3
 unset MAKEFLAGS
 CFLAGS+=" -fno-stack-protector"
 common_confs+="--enable-device-mapper --enable-cache-stats --enable-nls
