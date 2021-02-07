@@ -1,11 +1,16 @@
 [paket]
 tanim   = Shell uygulaması, Bourne-Again SHell'i içeriyor.
-paketci = milisarge
-grup 	= onsistem
+paketci = Cihan_Alkan
+grup 	= temel
 url     = http://ftp.gnu.org/gnu/bash
 
 [kaynak]
 gz      = $url
+dosya	= dot.bash_logout
+dosya	= dot.bash_profile
+dosya	= dot.bashrc
+dosya	= system.bash_logout
+dosya	= system.bashrc
 
 [sha256]
 #1 		= b4a80f2ac66170b2913efbfb9f2594f1f76c7b1afd11f799e22035d63077fb4d
