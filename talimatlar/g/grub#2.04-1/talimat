@@ -14,6 +14,7 @@ xz      = http://ftp.gnu.org/gnu/grub
 dosya   = grub.default
 dosya   = 0004-add-GRUB_COLOR_variables.patch
 2 = https://notabug.org/oltulu/Ceviri/raw/master/grub-tema.tar.gz
+3 = https://github.com/archlinux/svntogit-packages/raw/packages/grub/trunk/0005-grub-install-fix-inverted-test-for-NLS-enabled-when-.patch
 
 [sha256]
 #1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
