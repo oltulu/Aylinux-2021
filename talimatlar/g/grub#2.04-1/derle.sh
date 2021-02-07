@@ -4,6 +4,18 @@ cp -a grub-$surum grub-efi
 	
   cd $SRC/grub-efi
   	sed 's|/usr/share/fonts/dejavu|/usr/share/fonts/dejavu /usr/share/fonts/TTF|g' -i "configure.ac"
+		sed 's|GNU/Linux|Linux|' -i "util/grub.d/10_linux.in"
+		./linguas.sh
+		./bootstrap \
+		--gnulib-srcdir="${SRC}/gnulib/" --no-git
+		unset CFLAGS
+	unset CPPFLAGS
+	unset CXXFLAGS
+	unset LDFLAGS
+	unset MAKEFLAGS
+
+	echo "Make translations reproducible..."
+	sed -i '1i /^PO-Revision-Date:/ d' po/*.sed
 	./configure --enable-mm-debug --enable-nls \
 	--enable-device-mapper \
 	--enable-cache-stats \
