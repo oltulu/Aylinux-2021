@@ -18,3 +18,6 @@ make -j1 -f udev-lfs-20171102/Makefile.lfs DESTDIR=$PKG install
     # Devices
     install -d $PKG/usr/lib/{firmware,udev/devices/{pts,shm}}
     install -d $PKG/run
+    
+
+mv -t $PKG/lib $PKG/usr/lib 
