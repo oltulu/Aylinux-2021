@@ -1,4 +1,6 @@
-    CONFIG_SHELL=/bin/bash \
+    export CONFIG_SHELL=/bin/bash
+  
+  CONFIG_SHELL=/bin/bash \
     ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --localstatedir=/var \
                 --datarootdir=/usr \
                 --libdir=/usr/lib \
