@@ -16,7 +16,7 @@ xz       = http://downloads.sourceforge.net/project/$isim/Production
 
 [derle]
 betik   = sed -i 's,ncursesw/ncurses.h,ncurses.h,g' watch.c
-betik 	= ./configure --prefix=/usr --exec-prefix= --sbindir=/usr/lib --libdir=/usr/lib --docdir=/usr/share/doc/procps-ng-$surum --disable-static --enable-watch8bit --without-systemd --disable-modern-top --disable-kill
+betik 	= ./configure --prefix=/usr --exec-prefix= --sbindir=/usr/bin --bindir=/usr/bin --libdir=/usr/lib --docdir=/usr/share/doc/procps-ng-$surum --disable-static --enable-watch8bit --without-systemd --disable-modern-top --disable-kill
 betik 	= make
 	      
 [pakur]
