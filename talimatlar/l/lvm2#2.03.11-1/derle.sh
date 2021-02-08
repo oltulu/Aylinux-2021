@@ -3,6 +3,11 @@
   CONFIG_SHELL=/bin/bash \
     ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --localstatedir=/var \
                 --datarootdir=/usr \
+                --exec-prefix= \
+                --enable-applib \
+                --enable-cmdlib \
+                --enable-pkgconfig \
+                --enable-dmeventd \
                 --libdir=/usr/lib \
                 --mandir=/usr/share/man \
                 --with-udev-prefix=/usr \
