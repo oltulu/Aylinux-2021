@@ -17,7 +17,7 @@ calisma  =
 [derle]
 betik    =  cd LVM2.2.02.187
 betik    =  sed 's/libaio.h//' -i configure
-betik    = CONFIG_SHELL=/bin/bash  ./configure --prefix=/usr --exec-prefix= --datarootdir=/usr --with-udev-prefix= --mandir=/usr/share/man --disable-readline --disable-selinux --enable-pkgconfig --enable-static_link --enable-udev_sync --enable-udev_rules --with-{user,group}=root
+betik    = CONFIG_SHELL=/bin/bash  ./configure --prefix=/usr --sbindir=/usr/bin --libdir=/usr/lib --exec-prefix= --datarootdir=/usr --with-udev-prefix= --mandir=/usr/share/man --disable-readline --disable-selinux --enable-pkgconfig --enable-static_link --enable-udev_sync --enable-udev_rules --with-{user,group}=root
 betik    = make device-mapper
   
 [pakur]
