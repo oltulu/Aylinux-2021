@@ -1,6 +1,6 @@
 [paket]
 tanim   = Device-mapper RAID kütüphane ve aracı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= sistem
 url     = https://people.redhat.com/~heinzm/sw/dmraid
 
@@ -16,8 +16,8 @@ calisma =
 
 [derle]
 betik   = cd "$isim/1.0.0.rc16-3/$isim"
-ekconf  = --enable-led --enable-intel_led --enable-shared_lib
-tip     = gnu
+betik  = ./configure --enable-led --enable-intel_led
+betik  = make -j1
 	      
 [pakur]
 betik   = cd "$isim/1.0.0.rc16-3/$isim"
