@@ -1,0 +1,30 @@
+[paket]
+tanim    = AV1 kod çözücü kütüphanesi
+paketci  = Cihan_Alkan 
+grup     = sistem
+url      = https://code.videolan.org/videolan/dav1d/
+
+[gerek]
+derleme  = meson nasm
+calisma  =  
+
+[kaynak]
+xz =  https://downloads.videolan.org/pub/videolan/dav1d/$surum
+
+[sha512]
+#1  =  8ed44b3d747f01b87b34f86fada824dfb7f86c16168af641fe754c767af5714e9fe212b6eea2bc11b5b041460184c78f755e10d4947e46bc70d95e1bd750f79d
+
+[derle]
+betik    =  sed 's/libaio.h//' -i configure
+betik    = CONFIG_SHELL=/bin/bash  ./configure --prefix=/usr --exec-prefix= --datarootdir=/usr --with-udev-prefix= --mandir=/usr/share/man --disable-readline --disable-selinux --enable-pkgconfig --enable-static_link --enable-udev_sync --enable-udev_rules --with-{user,group}=root
+betik    = make device-mapper
+  
+[pakur]
+betik    = make DESTDIR=$PKG install_device-mapper
+betik    = install -m0644 -D udev/12-dm-permissions.rules $PKG/etc/udev/rules.d/12-dm-permissions.rules.example
+
+    # symlink dmsetup to dmstats and not dmsetup.static
+betik    = ln -sf dmsetup $PKG/sbin/dmstats
+
+    # pkgconfig insists on /lib one or the other way...
+betik    = sed -i '/^libdir=/s|${exec_prefix}|/usr|' $PKG/usr/lib/pkgconfig/devmapper.pc
