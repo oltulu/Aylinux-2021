@@ -1,0 +1,21 @@
+[paket]
+tanim   = Statik derlenmiş Lua uygulaması
+paketci = milisarge
+grup    = sistem
+url     = https://github.com/philanc/slua
+arsiv   = slua
+
+[gerek]
+derleme = musl
+calisma =
+
+[kaynak]
+git     = https://github.com/philanc/slua
+dosya   = slua-native-musl.patch
+
+[derle]
+betik   = patch Makefile ../slua-native-musl.patch
+betik   = make
+
+[pakur]
+betik   = install -Dm 755 slua $PKG/usr/bin/slua

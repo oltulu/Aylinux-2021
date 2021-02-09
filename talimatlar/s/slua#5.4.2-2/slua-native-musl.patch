@@ -1,0 +1,9 @@
+27c27,28
+< CROSS_X64=/opt/cross/bin/x86_64-linux-musl-
+---
+> #CROSS_X64=/opt/cross/bin/x86_64-linux-musl-
+> CROSS_X64=
+47c48
+< CC= $(CROSS)$(GCC)
+---
+> CC= musl-gcc
