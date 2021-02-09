@@ -18,7 +18,7 @@ dosya = init.sh
 [derle]
 betik = rm modules.d/99base/init.sh
 betik = cp $SRC/init.sh modules.d/99base/
-betik   = ./configure --prefix=/usr --sysconfdir=/etc 
+betik   = ./configure --prefix=/usr --sysconfdir=/etc  --loginstalldir=/var/log/dracut
 betik   = make -j1 sysconfdir=/etc prefix=/usr
 	      
 [pakur]
