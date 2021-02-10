@@ -16,9 +16,23 @@ calisma =
 
 [derle]
 betik 	= cd Sweet
-betik 	= install -d $PKG/usr/share/themes
+betik 	= cd Sweet
+betik 	= install -d $PKG/usr/share/themes/Sweet
+betik 	= mv assets cinnamon gnome-shell gtk-2.0 gtk-3.0 metacity-1 xfwm4 index.theme "$PKG/usr/share/themes/Sweet"
+betik 	= find "$PKG/usr/share/themes/Sweet" -name "*.scss" -exec rm -f {} \;
+betik 	= rm $PKG/usr/share/themes/Sweet/{cinnamon/thumbnail.png,gtk-2.0/{assets{.svg,.txt},links.fish,render-assets.sh}}
 
             	      
+           	      
 [pakur]
 betik 	= cd Sweet/kde
+betik 	= install -d $PKG/usr/share/{aurorae/themes,color-schemes,plasma/look-and-feel/com.github.eliverlara.sweet,sddm/themes/sweet}
+betik 	= mv aurorae/* "$PKG/usr/share/aurorae/themes"
+betik 	= mv colorschemes/Sweet.colors "$PKG/usr/share/color-schemes"
+betik 	= mv konsole "$PKG/usr/share"
+betik 	= mv look-and-feel/* "$PKG/usr/share/plasma/look-and-feel/com.github.eliverlara.sweet"
+betik 	= mv sddm/* "$PKG/usr/share/sddm/themes/sweet"
+betik 	= install -d $PKG/usr/share/Kvantum/Sweet
+betik 	= mv kvantum/* "$PKG/usr/share/Kvantum/Sweet"
+betik 	= install -d $PKG/usr/share/themes
 betik 	= mv cursors/Sweet-cursors "$PKG/usr/share/themes"
