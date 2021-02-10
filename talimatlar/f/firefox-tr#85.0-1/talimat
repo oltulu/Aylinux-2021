@@ -6,7 +6,7 @@ url     = https://www.mozilla.org/en-US/firefox/new/
 
 [gerek]
 derleme    = 
-calisma    = gtk2
+calisma    = gtk2 dbus-glib
 
 [kaynak]
 1      = https://download-installer.cdn.mozilla.net/pub/firefox/releases/$surum/linux-x86_64/tr/firefox-$surum.tar.bz2
