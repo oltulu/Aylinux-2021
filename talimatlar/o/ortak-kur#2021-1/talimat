@@ -1,0 +1,24 @@
+[paket]
+tanim   = Tüm masaüstlerinde gerekli ortak  paketleri kurar
+paketci = Cihan_Alkan
+grup 	= 
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = firefox-tr mps-ui mservice
+
+[kaynak]
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+
+[sha512]
+#1 		= 
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = mkdir $PKG/usr/share
