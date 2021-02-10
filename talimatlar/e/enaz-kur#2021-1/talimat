@@ -1,0 +1,24 @@
+[paket]
+tanim   = Sistemin çalışması için gerekli en az   paketleri kurar
+paketci = Cihan_Alkan
+grup 	= temel
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = dialog procps-ng sysklogd sudo dhcpcd lvm2 iproute2 sysvinit grub dracut intel-ucode b43-fwcutter linux-firmware kernel510 iw wpa_supplicant networkmanager openssh dosfstools lsof os-prober usbutils net-tools efibootmgr figlet
+
+[kaynak]
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+
+
+
+[sha512]
+#1 		= 
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = mkdir $PKG/usr/share
