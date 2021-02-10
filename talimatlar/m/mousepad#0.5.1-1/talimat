@@ -6,7 +6,7 @@ url     = https://xfce.org
 
 [gerek]
 derleme = glib intltool gtksourceview xfconf desktop-file-utils
-calisma =
+calisma = gtksourceview
 
 [kaynak]
 bz2     = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
