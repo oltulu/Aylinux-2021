@@ -6,7 +6,7 @@ url     = https://github.com/oltulu
 
 [gerek]
 derleme = 
-calisma = firefox-tr mps-ui mservice
+calisma = firefox-tr mps-ui mservice xed
 
 [kaynak]
 #1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
