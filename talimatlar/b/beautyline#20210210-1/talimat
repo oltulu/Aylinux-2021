@@ -14,10 +14,9 @@ git = https://gitlab.com/garuda-linux/themes-and-settings/artwork/beautyLine
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
-betik 	= cd "${SRC}"
-betik 	= mv beautyLine/apps/scalable/goa-account-msn* beautyLine/apps/scalable/goa-account-msn.svg
-betik 	= install -dm755 "${PKG}/usr/share/icons"
+betik 	= install -dm755 "${PKG}/usr/share/icons/BeautyLine"
             	      
 [pakur]
-betik 	= cd "${SRC}"
-betik 	= cp -rf beautyLine "${PKG}/usr/share/icons/"
+betik 	= cp -r $isim/. ${PKG}/usr/share/icons/BeautyLine
+betik 	= find ${PKG}/usr -type f -exec chmod 644 {} \;
+betik 	= find ${PKG}/usr -type d -exec chmod 755 {} \;
