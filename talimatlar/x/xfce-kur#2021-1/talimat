@@ -22,3 +22,4 @@ betik = mkdir $PKG/usr
     	      
 [pakur]
 betik = cp -r updates/* $PKG/
+
