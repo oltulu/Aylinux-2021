@@ -6,7 +6,7 @@ url     = http://www.gnu.org/software/autoconf
 
 [gerek]
 derleme = 
-calisma = diffutils m4 gawk
+calisma = diffutils gawk
 
 [kaynak]
 xz      = http://ftp.gnu.org/gnu/$isim
