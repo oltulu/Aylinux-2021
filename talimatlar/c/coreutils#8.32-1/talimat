@@ -6,7 +6,7 @@ url     = http://www.gnu.org/software/coreutils
 
 [gerek]
 derleme = 
-calisma = acl gmp libcap openssl
+calisma = 
 
 [kaynak]
 xz      = http://ftp.gnu.org/gnu/coreutils
