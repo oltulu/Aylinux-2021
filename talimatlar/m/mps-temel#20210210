@@ -1,0 +1,27 @@
+[paket]
+tanim   = Milis paket temeller
+paketci = Cihan_Alkan
+grup 	= temel
+url     = https://mls.akdeniz.edu.tr/git/milislinux/mps
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+git      = https://mls.akdeniz.edu.tr/git/milislinux/mps
+dosya    = mps.patch
+
+[sha256]
+#1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
+
+[derle]
+betik 	= patch -p1 $PKG/mps/bin/mps.lua < mps.patch
+betik 	= install $PKG/usr/milis
+betik 	= cp -r mps $PKG/usr/milis/mps
+	      
+[pakur]
+betik  	= cp -r mps $PKG/usr/milis/mps
+betik  	= chmod +x /usr/milis/mps/bin/mps
+betik  	= cp $PKG/usr/milis/mps/bin/mps.lua $PKG/usr/milis/mps/bin/paket
+betik  	= chmod +x /usr/milis/mps/bin/paket 
