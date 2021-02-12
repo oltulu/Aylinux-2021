@@ -1,7 +1,7 @@
 [paket]
 tanim   = Metin dosyaları verileriyle oynamaya yarayan uygulama
 paketci = Cihan_Alkan
-grup 	= onsistem
+grup 	= temel
 url     = http://www.gnu.org/software/gawk
 
 [kaynak]
