@@ -6,7 +6,7 @@ url      = https://ffmpeg.org
 
 [gerek]
 derleme  = nasm alsa-lib aom fontconfig fribidi gmp libssh gnutls gsm ffnvcodec-headers jack lame ladspa libass libbluray dav1d libdrm libomxil-bellagio libavc1394 freetype libmodplug pulseaudio libsoxr libva libvdpau libvidstab libvorbis libvpx libwebp libx11 libtheora x264 x265 libxcb libxext libxml2 libxv xvidcore libiec61883 opencore-amr openjpeg2 opus sdl2 speex v4l-utils  
-calisma  = dav1d libvpx gsm x264 x265 lame libass sdl2 libtheora
+calisma  = dav1d libvpx gsm x264 x265 lame libass sdl2 libtheora jack libvpx libwebp 
 
 [kaynak]
 xz  = ${url}/releases
