@@ -25,4 +25,4 @@ betik	= make
 [pakur]
 betik	= cd libdbusmenu-${surum}
 betik	= make -j1 -C libdbusmenu-glib DESTDIR="${PKG}" install
-betik	= make -j1 -C libdbusmenu-gtk DESTDIR="${PKG}" install
+#betik	= make -j1 -C libdbusmenu-gtk DESTDIR="${PKG}" install
