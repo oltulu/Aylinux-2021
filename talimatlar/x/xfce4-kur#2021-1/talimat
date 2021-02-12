@@ -13,9 +13,6 @@ calisma = exo garcon libwnck libxpresent libxfce4ui libxfce4util xfconf xfwm4 xf
 
 
 
-[sha512]
-#1 		= 
-
 [derle]
 betik = mkdir $PKG/usr
 
