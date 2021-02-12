@@ -1,0 +1,79 @@
+--- mps.lua	2021-01-12 20:34:34.766871000 +0300
++++ 2mps.lua	2021-02-12 20:12:29.746693000 +0300
+@@ -74,12 +74,12 @@
+ -- local talimatname="/usr/milis/talimatname"
+ local kokdizin=""
+ 
+-local paket_arsiv_pattern="([%a%d-_+]+)#([%d%a.]+)-([%d]+)-([%a%d_]+)" -- paket_isim#surum-devir-mimari : abc#1.2.3-1-x86_64
+--- paket arşiv format -paket_isim#surum-devir-mimari.mps.lz
+-local paf="%s#%s-%s-%s.mps.lz"
++local paket_arsiv_pattern="([%a%d-_+]+)#([%d%a.]+)-([%d]+)" -- paket_isim#surum-devir-mimari : abc#1.2.3-1-x86_64
++-- paket arşiv format -paket_isim#surum-devir-mimari.kur
++local paf="%s#%s-%s.kur"
+ -- paket gösterim formatı
+ local pgf="%s#%s-%s"
+--- paket depo link formatı - depo_adres/paket_isim#surum-devir-mimari.mps.lz / paf kullan
++-- paket depo link formatı - depo_adres/paket_isim#surum-devir-mimari.kur / paf kullan
+ local plf="%s/%s"
+ 
+ local rotator_sym={"\\","/"}
+@@ -630,7 +630,7 @@
+ 			-- paket önbellekte varsa
+ 			-- shasum kontrolü yapılıp yerelden kurulma yapılacak.
+ 			-- ağdan indirmeden önce önbellekte kontrol edecek
+-			local _pkt=paf:format(pk,kurulabilir.surum,kurulabilir.devir,kurulabilir.mimari)
++			local _pkt=paf:format(pk,kurulabilir.surum,kurulabilir.devir)
+ 			local kur_onay=false
+ 			local _indir=false
+ 			local _pktyol=kokdizin..islem.paket.cachedir.."/".._pkt
+@@ -672,10 +672,10 @@
+ 		if derlet == true then
+ 			-- aktif oluşan paket arşiv
+ 			local mimari=shell("uname -m")
+-			local pkarsiv=tsd.."-"..mimari..".mps.lz"
++			local pkarsiv=tsd..".kur"
+ 			-- hedef paket isimleri
+ 			local hpksd=get_basename(ret)
+-			local hdarsiv=hpksd.."-"..mimari..".mps.lz"
++			local hdarsiv=hpksd..".kur"
+ 			-- 2.2.1 talimat derle
+ 			print(talimatd,"tl derlenecek")
+ 			local komut="%s/bin/mpsd.lua %s 2>&1 | tee  %s.log"
+@@ -736,13 +736,13 @@
+ function islem.arsiv.kontrol(paket)
+ 	-- kullanıcı hedefli de çıktı verilebilinir.
+ 	assert(path_exists(paket),"islem.arsiv.kontrol : paket is not found")
+-	assert(paket:match("mps.lz"),"islem.arsiv.kontrol : paket suffix is not mps.lz")
++	assert(paket:match("kur"),"islem.arsiv.kontrol : paket suffix is not kur")
+ 	assert(get_size(paket) ~=0,"islem.arsiv.kontrol : paket size equals zero")
+ 
+ 	local isd = get_basename(paket)
+-	local isim,surum,devir,mimari=isd:match(paket_arsiv_pattern)
+-	if not (isim and surum and devir and mimari) then
+-		print(messages.valid_format..paf:format(isim,surum,devir,mimari));
++	local isim,surum,devir=isd:match(paket_arsiv_pattern)
++	if not (isim and surum and devir) then
++		print(messages.valid_format..paf:format(isim,surum,devir));
+ 		(messages.package_name_format_not_valid..isd):yaz(0)
+ 	end
+ 	-- bir kontrol de tar ile içeriden paket bilgi dosyası çekilebilir
+@@ -1417,8 +1417,8 @@
+ 
+ 	-- arşiv formatında # , web için %23 olauyor.
+ 	-- Bu nedenle global arşiv formatını kullanmıyoruz.
+-	local larsiv=("%s%%23%s-%s-%s.mps.lz"):format(pb.isim,pb.surum,pb.devir,pb.mimari)
+-	local arsiv=paf:format(pb.isim,pb.surum,pb.devir,pb.mimari)
++	local larsiv=("%s%%23%s-%s.kur"):format(pb.isim,pb.surum,pb.devir)
++	local arsiv=paf:format(pb.isim,pb.surum,pb.devir)
+ 	local indirilecek=true
+ 	-- link oluşturulur
+ 	local link=plf:format(pb.depo,larsiv)
+@@ -2294,7 +2294,7 @@
+ 	-- paketin yerel/ağ kaynak tespiti ve ilgili listeye eklenmesi
+ 	function pk_analiz(pkt)
+ 		local _paket=""
+-		if pkt:match("mps.lz") then 
++		if pkt:match("kur") then 
+ 			-- yerelden kurulacak listeye eklenir
+ 			--print("yerelden kurulacak",pkt)
+ 			table.insert(jobs.yerelden,get_abspath(pkt))
