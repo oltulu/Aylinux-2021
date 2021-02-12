@@ -6,8 +6,8 @@ url     = https://www.qt.io
 arsiv   = ${isim/5-/}-everywhere-src-${surum}
 
 [gerek]
-derleme = libproxy ccache libjpeg-turbo xcb-util-keysyms xcb-util-renderutil fontconfig shared-mime-info xcb-util-wm libxrender libxi sqlite xcb-util-image mesa libinput libxkbcommon cups mariadb sqlite unixodbc postgresql alsa-lib gst-plugins-base gtk3 pulseaudio cups freetds vulkan-headers
-calisma = 
+derleme = libproxy ccache libjpeg-turbo xcb-util-keysyms xcb-util-renderutil fontconfig shared-mime-info xcb-util-wm libxrender libxi sqlite xcb-util-image mesa libinput libxkbcommon cups mariadb sqlite unixodbc postgresql alsa-lib gst-plugins-base gtk3 pulseaudio freetds vulkan-headers
+calisma = xcb-util-keysyms xcb-util-renderutil xcb-util-image xcb-util-wm mariadb libice libsm cups 
 
 [kaynak]
 1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qtbase-everywhere-src-$surum.tar.xz
