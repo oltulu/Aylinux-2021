@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme = libxfce4ui vte3
-calisma =  
+calisma = vte3
 
 [kaynak]
 bz2     = https://archive.xfce.org/src/apps/$isim/0.8
