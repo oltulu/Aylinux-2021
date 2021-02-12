@@ -6,7 +6,7 @@ url     = http://www.cups.org
 
 [gerek]
 derleme = libpaper dbus libjpeg-turbo libgcrypt gnutls libusb tiff libpng avahi krb5
-calisma = libpaper libusb krb5
+calisma = libpaper libusb krb5 avahi
 
 [kaynak]
 1       = https://github.com/apple/cups/releases/download/v${surum}/cups-${surum}-source.tar.gz
