@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/libwnck
 
 [gerek]
 derleme  = gobject-introspection meson gtk3 startup-notification libxres 
-calisma  =  
+calisma  = startup-notification libxres  
 
 [kaynak]
 xz = https://download.gnome.org/sources/${isim}/${surum%.*}
