@@ -17,6 +17,6 @@ git = https://gitlab.com/garuda-linux/themes-and-settings/artwork/beautyLine
 betik 	= install -dm755 "${PKG}/usr/share/icons/BeautyLine"
             	      
 [pakur]
-betik 	= cp -r beautyLine/beautyline ${PKG}/usr/share/icons/BeautyLine
+betik 	= cp -r beautyLine ${PKG}/usr/share/icons
 betik 	= find ${PKG}/usr -type f -exec chmod 644 {} \;
 betik 	= find ${PKG}/usr -type d -exec chmod 755 {} \;
