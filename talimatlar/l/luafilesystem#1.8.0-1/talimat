@@ -6,7 +6,7 @@ url      = http://keplerproject.github.io/luafilesystem
 
 [gerek]
 derleme  = lua
-calisma  = lua
+calisma  = 
 
 [kaynak]
 1   = https://github.com/keplerproject/luafilesystem/archive/v${surum//./_}.tar.gz::$isim-${surum//./_}.tar.gz
