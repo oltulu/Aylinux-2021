@@ -24,8 +24,8 @@ betik     = make
 [pakur]
 betik     = cd debins/build
 betik     = mv debins pakur
-betik     = cp pakur $PKG/usr/bin/
+betik     = cp -r pakur $PKG/usr/bin/
 betik     = chmod +x $PKG/usr/bin/pakur
-betik     = cp /sources/mps $PKG/usr/bin/
+betik     = cp -r /sources/mps $PKG/usr/bin/
 betik     = mv $PKG/usr/bin/mps $PKG/usr/bin/paketkur
 betik     = chmod +x $PKG/usr/bin/paketkur
