@@ -6,7 +6,7 @@ url      = https://github.com/diegonehab/luasocket
 
 [gerek]
 derleme  = lua
-calisma  = lua
+calisma  = 
 
 [kaynak]
 1   = https://github.com/diegonehab/luasocket/archive/144fa01c2f204e3b1b13c834f2644d100dba701b.tar.gz
