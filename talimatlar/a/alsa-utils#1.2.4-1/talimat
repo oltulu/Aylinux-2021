@@ -12,7 +12,7 @@ calisma = pciutils fftw
 bz2     = ftp://ftp.alsa-project.org/pub/utils
 
 [sha256]
-1       = 5ddf2cbddb4bd1a4a2a6492a09c25898b08c3ad64893c3655be14194cf0a213a
+#1       = 5ddf2cbddb4bd1a4a2a6492a09c25898b08c3ad64893c3655be14194cf0a213a
 
 [derle]
 ekconf  = --with-udev-rules-dir=/usr/lib/udev/rules.d --disable-alsaconf --with-alsactl-lock-dir=/run/lock --sbindir=/usr/bin
