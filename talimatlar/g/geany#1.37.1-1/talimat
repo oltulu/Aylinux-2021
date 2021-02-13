@@ -18,9 +18,9 @@ dosya	 = geany-monokai.conf
 2	= 12ac9c29843ae9d0615548a81098862b2e7d746bed9a4aeb7a1cd4329e280fc4
 
 [derle]
-betik  = autoreconf -fi
-ekconf = --enable-gtk3
-tip    = gnu
+betik  = ./configure --enable-gtk3 --prefix=/usr
+betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik  = make
 
 [pakur]
 tip    = gnu
