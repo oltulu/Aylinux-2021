@@ -7,11 +7,11 @@ url     = http://liba52.sourceforge.net/
 [kaynak]
 gz     = http://liba52.sourceforge.net/files
 dosya  = a52dec-0.7.4-build.patch
-dosya  = a52dec-stderr.patch
+#dosya  = a52dec-stderr.patch
 
 [derle]
 yama   = 2
-yama   = 3
+#yama   = 3
 betik  = install -d m4
 betik  = sed -i 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
 betik  = mv configure.in configure.ac
