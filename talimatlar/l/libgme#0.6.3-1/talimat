@@ -9,7 +9,7 @@ derleme  = cmake
 calisma  =  
 
 [kaynak]
-xz  = https://bitbucket.org/mpyne/game-music-emu/downloads
+1  = https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-0.6.3.tar.xz
 
 [sha256]
 #1  = 5046cb471d422dbe948b5f5dd4e5552aaef52a0899c4b2688e5a68a556af7342
