@@ -85,7 +85,7 @@ export BUILDCC=gcc
 --enable-qt \
 --enable-skins2 \
 --enable-libtar \
---enable-ncurses \
+--disable-ncurses \
 --enable-avahi \
 --enable-mtp \
 --enable-upnp \
