@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://github.com/oltulu/debins
 
 [gerek]
-derleme    = qt5-base qt5-graphicaleffects
+derleme    = qt5-base qt5-graphicaleffects qt5-declarative
 calisma    = qt5-base qt5-graphicaleffects
 
 [kaynak]
@@ -22,8 +22,8 @@ betik     = qmake ../
 betik     = make
 
 [pakur]
-betik     = cd debins
-betik     = mv debins $PKG/usr/bin/pakur
+betik     = cd debins/build
+betik     = cp debins $PKG/usr/bin/pakur
 betik     = chmod +x $PKG/usr/bin/pakur
-betik     = mv /sources/mps $PKG/usr/bin/paketkur
+betik     = cp /sources/mps $PKG/usr/bin/paketkur
 betik     = chmod +x $PKG/usr/bin/paketkur
