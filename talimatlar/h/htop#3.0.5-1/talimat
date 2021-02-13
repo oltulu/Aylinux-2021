@@ -12,7 +12,7 @@ calisma =
 gz		= $url/archive/${surum}
 
 [sha256]
-1 		= b4744a3bea279f2a3725ed8e5e35ffd9cb10d66673bf07c8fe21feb3c4661305
+#1 		= b4744a3bea279f2a3725ed8e5e35ffd9cb10d66673bf07c8fe21feb3c4661305
 
 [derle]
 betik   = autoreconf -fi
