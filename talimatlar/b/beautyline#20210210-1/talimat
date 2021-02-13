@@ -14,7 +14,7 @@ git = https://gitlab.com/garuda-linux/themes-and-settings/artwork/beautyLine
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
-betik 	= install -dm755 "${PKG}/usr/share/icons/BeautyLine"
+betik 	= install -dm755 "${PKG}/usr/share/icons"
             	      
 [pakur]
 betik 	= cp -r beautyLine ${PKG}/usr/share/icons
