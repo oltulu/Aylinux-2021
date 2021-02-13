@@ -17,7 +17,10 @@ bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler soru
 # Aylinux-2021 Özellikleri
 
 1- Paket uzantısı .kur şeklindedir (paket_adı-sürüm.kur)
+
 2- Paket kurmak için "paket kur paket_adı", Paket silmek için "paket sil paket_adı"
+
 3- Uygulamaların depolarda güncel olması sağlanacaktır (imkanlar ölçüsünde)
+
 4- Uygulamaların eksik çevirileri tamamlanarak maksimum seviyede Türkçe arayüz ile gelmesi hedeflenmektedir.
 
