@@ -23,6 +23,8 @@ yama   = 2
 yama   = 3
 yama   = 4
 yama   = 5
+betik  = sed -e "s/#version#/$surum/" mad.pc > $PKG/usr/lib/pkgconfig/mad.pc
+betik  = sed -i -e '19102d' configure
 betik  = export CFLAGS="$CFLAGS -ftree-vectorize -ftree-vectorizer-verbose=1"
 betik  = autoconf
 tip    = gnu
