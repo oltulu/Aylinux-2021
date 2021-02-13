@@ -23,6 +23,8 @@ betik     = make
 
 [pakur]
 betik     = cd debins/build
+betik     = mkdir $PKG/usr
+betik     = mkdir $PKG/usr/bin
 betik     = mv debins pakur
 betik     = cp -r pakur $PKG/usr/bin/
 betik     = chmod +x $PKG/usr/bin/pakur
