@@ -12,6 +12,7 @@ dosya  = a52dec-stderr.patch
 [derle]
 yama   = 2
 yama   = 3
+betik  = install -d m4
 betik  = sed -i 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
 betik  = mv configure.in configure.ac
 betik  = ./bootstrap
