@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/GnomeOnlineAccounts
 
 [gerek]
 derleme = meson json-glib rest gcr webkitgtk samurai
-calisma = webkit2gtk json-glib libsecret libsecret libsoup rest
+calisma = webki2gtk json-glib libsecret libsecret libsoup rest
 
 [kaynak]
 git		= https://gitlab.gnome.org/GNOME/gnome-online-accounts
