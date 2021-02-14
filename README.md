@@ -15,9 +15,9 @@ sudo su
 Bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler sorunsuz tamamlanırsa /opt/Aylinux-isoyap dizini altında oluşacaktır.
 (Xfce masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
 
-Kullanıcı: root
+Kullanıcı Adı: root
 
-Root şifresi: toor
+Root Şifresi: toor
 
 # Aylinux-2021 Özellikleri
 
