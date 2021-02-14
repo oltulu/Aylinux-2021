@@ -12,7 +12,7 @@ calisma =
 gz      = https://launchpad.net/${isim}/${surum%.[0-9]}/${surum}/+download
 
 [sha256]
-1       = 90bf86c07ffbe2c22be46d75c7345fad12d5911653c59750a37d59c63ad5d10e
+#1       = 90bf86c07ffbe2c22be46d75c7345fad12d5911653c59750a37d59c63ad5d10e
 
 [derle]
 dosya   = derle.sh
