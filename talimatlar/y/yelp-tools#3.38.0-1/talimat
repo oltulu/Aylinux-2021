@@ -9,15 +9,15 @@ derleme = yelp-xsl
 calisma = 
 
 [kaynak]
-git      = https://gitlab.gnome.org/GNOME/yelp-tools.git
+git      = https://gitlab.gnome.org/GNOME/yelp-tools
 
 [sha1]
 
 [derle]
-betik =  cd yelp-tools.git
-betik = NOCONFIGURE=1 ./autogen.sh
-tip     = gnu
+betik =  cd yelp-tools
+#betik = NOCONFIGURE=1 ./autogen.sh
+tip     = meson
 	      
 [pakur]
-betik =  cd yelp-tools.git
-tip 	= gnu
+betik =  cd yelp-tools
+tip 	= meson
