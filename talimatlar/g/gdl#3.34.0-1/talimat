@@ -16,6 +16,7 @@ xz      = ${GNOME_SITE}/${isim}/${surum%.*}
 
 [derle]
 betik   = sed 's,-I$(includedir),,g' -i gdl/Makefile
+ekconf = --disable-static --disable-gtk-doc
 tip     = gnu
 
 [pakur]
