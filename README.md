@@ -31,3 +31,5 @@ Root Şifresi: toor
 
 5- Aylinux 2021 sadece kendi depolarını kullanmaktadır ve sürekli güncellenmektedir.
 
+6- Yerli yazılımlar depoya alınacak
+
