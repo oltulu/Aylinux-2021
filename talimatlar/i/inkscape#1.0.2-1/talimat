@@ -20,7 +20,7 @@ calisma = python-numpy python-scour python-lxml
 betik	= rm -r share/extensions || true 
 betik   = cp -r ../extensions-master share/extensions
 betik   = cd $SRC;mkdir -p build
-betik   = cmake -H${ARCHIVE_DIR} -Bbuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DWITH_DBUS=ON
+betik   = cmake -Hinkscape-INKSCAPE_1_0_2 -Bbuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DWITH_DBUS=ON
 betik   = cmake --build build
 
 [pakur]
