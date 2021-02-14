@@ -29,5 +29,5 @@ Root Şifresi: toor
 
 4- Uygulamaların eksik çevirileri tamamlanarak maksimum seviyede Türkçe arayüz ile gelmesi hedeflenmektedir.
 
-5- Aylinux 2021 sadece kendi depolarını kullanmaktadır.
+5- Aylinux 2021 sadece kendi depolarını kullanmaktadır ve sürekli güncellenmektedir.
 
