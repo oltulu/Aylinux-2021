@@ -9,7 +9,7 @@ derleme = yelp-xsl
 calisma = 
 
 [kaynak]
-git      = https://gitlab.gnome.org/GNOME/yelp-tools
+git      = https://gitlab.gnome.org/GNOME/yelp-tools::#isim-$surum
 
 [sha1]
 
