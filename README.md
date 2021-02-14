@@ -16,6 +16,7 @@ Bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler soru
 (Xfce masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
 
 Kullanıcı: root
+
 Root şifresi: toor
 
 # Aylinux-2021 Özellikleri
