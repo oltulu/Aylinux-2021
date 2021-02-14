@@ -9,7 +9,7 @@ derleme  = gtk3 libvorbis gstreamer alsa-lib tdb pulseaudio vala
 calisma  = libvorbis pulseaudio alsa-lib gstreamer tdb
 
 [kaynak]
-git  = http://git.0pointer.net/clone/libcanberra
+git  = git://git.0pointer.de/libcanberra
 
 [sha256]
 #1  = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
