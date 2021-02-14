@@ -12,7 +12,8 @@ sudo su
 
 ./Aylinux-isoyap
 -------------------------------------------------------------------------
-bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler sorunsuz tamamlanırsa /opt/Aylinux-isoyap dizini altında oluşacaktır.
+Bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler sorunsuz tamamlanırsa /opt/Aylinux-isoyap dizini altında oluşacaktır.
+(Xfce masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
 
 # Aylinux-2021 Özellikleri
 
@@ -24,5 +25,5 @@ bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler soru
 
 4- Uygulamaların eksik çevirileri tamamlanarak maksimum seviyede Türkçe arayüz ile gelmesi hedeflenmektedir.
 
-5- Aylinux 2021 sadece kendi depolarını kullanmaktadı
+5- Aylinux 2021 sadece kendi depolarını kullanmaktadır.
 
