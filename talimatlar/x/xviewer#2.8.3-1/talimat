@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/xviewer
 
 [gerek]
-derleme = gobject-introspection gnome-common libpeas libexif
+derleme = gobject-introspection gnome-common libpeas libexif gtk-doc
 calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif
 
 [kaynak]
