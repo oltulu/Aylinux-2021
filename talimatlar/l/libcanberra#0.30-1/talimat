@@ -17,7 +17,7 @@ git  = git://git.0pointer.de/libcanberra
 [derle]
 betik  = cd $isim
 betik  = ./autogen.sh
-ekconf = --enable-alsa --enable-null --disable-lynx --enable-gstreamer --disable-oss --with-builtin=dso --disable-gtk-doc
+ekconf =  --sysconfdir=/etc --enable-alsa --enable-gstreamer --enable-pulse --disable-oss --disable-gtk-doc
 tip    = gnu
 
 [pakur]
