@@ -9,17 +9,19 @@ derleme  = gtk3 libvorbis gstreamer alsa-lib tdb pulseaudio vala
 calisma  = libvorbis pulseaudio alsa-lib gstreamer tdb
 
 [kaynak]
-1  = http://pkgs.fedoraproject.org/repo/pkgs/libcanberra/libcanberra-${surum}.tar.xz/34cb7e4430afaf6f447c4ebdb9b42072/libcanberra-${surum}.tar.xz
+git  = http://git.0pointer.net/clone/libcanberra
 
 [sha256]
-1  = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
+#1  = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
 
 [derle]
-betik  = autoreconf -if
+betik  = cd $isim
+betik  = ./autogen.sh
 ekconf = --enable-alsa --enable-null --disable-lynx --enable-gstreamer --disable-oss --with-builtin=dso --disable-gtk-doc
 tip    = gnu
 
 [pakur]
+betik  = cd $isim
 tip    = gnu
 betik  = rm -rf $PKG/usr/share/gnome
 betik  = rm -rf $PKG/usr/share/gdm
