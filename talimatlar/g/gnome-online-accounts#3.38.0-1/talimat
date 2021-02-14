@@ -5,7 +5,7 @@ grup    = medya
 url     = https://wiki.gnome.org/Projects/GnomeOnlineAccounts
 
 [gerek]
-derleme = meson json-glib rest gcr webkitgtk
+derleme = meson json-glib rest gcr webkitgtk samurai
 calisma = webkit2gtk json-glib libsecret libsecret libsoup rest
 
 [kaynak]
