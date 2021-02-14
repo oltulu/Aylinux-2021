@@ -3,23 +3,22 @@ tanim   = Vektör tabanlı çizim programı
 paketci = milisarge
 grup    = tasarım
 url     = http://inkscape.org
-arsiv   = inkscape-INKSCAPE_1_0_1
 
 [gerek]
 derleme = cmake glib perl-xml-parser popt librsvg cairo libsoup libpng gc gsl pango gdk-pixbuf gtkmm gdl libxslt boost poppler-glib imagemagick libvisio libwpd libwpg libcdr potrace double-conversion
 calisma = python-numpy python-scour python-lxml
 
 [kaynak]
-1       = https://gitlab.com/inkscape/inkscape/-/archive/INKSCAPE_1_0_1/inkscape-INKSCAPE_1_0_1.tar.bz2
-2       = https://gitlab.com/inkscape/extensions/-/archive/abfa22e822d1171614f27e48016ccd7fc1fbaba7/extensions-abfa22e822d1171614f27e48016ccd7fc1fbaba7.tar.bz2
+1       = https://gitlab.com/inkscape/inkscape/-/archive/INKSCAPE_1_0_2/inkscape-INKSCAPE_1_0_2.tar.bz2
+2       = https://gitlab.com/inkscape/extensions/-/archive/master/extensions-master.tar.gz
 
 [sha256]
-1       = 0ccb623b2c7872b9edec405874eab3ff279dd209f496b496dd99969fdc3834d3
-2       = 694faf7491ee1b9543434a9cf3f036d1d05c094d11438be25251aa1246fcee0d
+#1       = 0ccb623b2c7872b9edec405874eab3ff279dd209f496b496dd99969fdc3834d3
+#2       = 694faf7491ee1b9543434a9cf3f036d1d05c094d11438be25251aa1246fcee0d
 
 [derle]
 betik	= rm -r share/extensions || true 
-betik   = cp -r ../extensions-abfa22e822d1171614f27e48016ccd7fc1fbaba7 share/extensions
+betik   = cp -r ../extensions-master share/extensions
 betik   = cd $SRC;mkdir -p build
 betik   = cmake -H${ARCHIVE_DIR} -Bbuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DWITH_DBUS=ON
 betik   = cmake --build build
