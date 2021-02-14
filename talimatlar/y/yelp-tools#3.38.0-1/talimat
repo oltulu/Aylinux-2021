@@ -5,7 +5,7 @@ grup 	= geliştirme
 url     = https://gitlab.gnome.org/GNOME/yelp-tools
 
 [gerek]
-derleme = yelp-xsl
+derleme = yelp-xsl python-lxml ninja meson
 calisma = 
 
 [kaynak]
