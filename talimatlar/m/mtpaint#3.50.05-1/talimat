@@ -1,0 +1,25 @@
+[paket]
+tanim   = Simgeler ve piksel sanatı oluşturmak için boyama programı
+paketci = Cihan_Alkan
+grup    = grafik
+url     = https://github.com/wjaguar/mtpaint
+
+[gerek]
+derleme = acl
+calisma = gtk3 openjpeg2 gifsicle
+
+[kaynak]
+git     = https://github.com/wjaguar/mtpaint
+
+[sha256]
+#1       = 24f4a2da9219f98498eb1b340cd96db7ef9b684c067d1bdeb6e85efdd13b2fb9
+
+[derle]
+betik   = cd mtpaint
+betik   = export CFLAGS="$(pkg-config openjp2 --cflags) -w $CFLAGS"
+betik   = ./configure gtk3 --prefix=/usr --mandir=/usr/share/man \
+betik   = man intl jpeg tiff cflags lcms2 jp2v2
+betik   = make
+
+[pakur]
+betik   = make -C mtpaint DESTDIR="$PKG" install
