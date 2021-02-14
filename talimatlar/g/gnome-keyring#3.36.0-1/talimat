@@ -6,7 +6,7 @@ url     = https://www.gnome.org
 
 [gerek]
 derleme    = gcr libcap-ng pam openssh libxslt
-calisma    =
+calisma    = libcap-ng
 
 [kaynak]
 xz         = ${GNOME_SITE}/$isim/${surum%.*}
