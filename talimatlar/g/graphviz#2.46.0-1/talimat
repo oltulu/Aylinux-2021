@@ -1,6 +1,6 @@
 [paket]
 tanim   = Grafik görselleştirme yazılımı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= geliştirme
 url     = http://www.graphviz.org
 
@@ -16,9 +16,10 @@ gz      = https://www2.graphviz.org/Packages/stable/portable_source
 
 [derle]
 betik   = export LIBPOSTFIX=/
-betik   = export CXXFLAGS+=' -fPIC'
+betik   = export CXXFLAGS+=' -fPIC -fpermissive'
 betik   = ./autogen.sh NOCONFIG
-tip     = gnu
+betik   = ./configure --prefix=/usr --enable-python3=yes --disable-python
+betik   = make
 	      
 [pakur]
 tip     = gnu
