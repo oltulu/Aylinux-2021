@@ -12,7 +12,7 @@ calisma    =
 bz2         = https://download.videolan.org/pub/videolan/libdvdnav/${surum}
 
 [sha256]
-1          = e566a396f1950017088bfd760395b0565db44234195ada5413366c9d23926733	
+#1          = e566a396f1950017088bfd760395b0565db44234195ada5413366c9d23926733	
 
 [derle]
 tip        = gnu
