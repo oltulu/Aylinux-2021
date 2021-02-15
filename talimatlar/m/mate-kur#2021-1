@@ -1,0 +1,21 @@
+[paket]
+tanim   = Xfce4 masaüstü için gerekli  paketleri kurar
+paketci = Cihan_Alkan
+grup 	= xfce
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://notabug.org/oltulu/Ceviri/raw/master/mate-kur.tar.gz
+
+
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = cp -r xfce4-kur/* $PKG/
