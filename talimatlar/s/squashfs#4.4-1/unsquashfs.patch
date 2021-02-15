@@ -1,0 +1,207 @@
+--- unsquashfs.c	2021-02-14 12:27:40.629955994 +0300
++++ tr-unsquashfs.c	2021-02-14 12:48:05.733279510 +0300
+@@ -230,7 +230,7 @@
+ {
+ 	pthread_mutex_lock(&queue->mutex);
+ 
+-	printf("Max size %d, size %d%s\n", queue->size - 1,  
++	printf("Max boyut %d, boyut %d%s\n", queue->size - 1,  
+ 		queue->readp <= queue->writep ? queue->writep - queue->readp :
+ 			queue->size - queue->readp + queue->writep,
+ 		queue->readp == queue->writep ? " (EMPTY)" :
+@@ -492,7 +492,7 @@
+ {
+ 	pthread_mutex_lock(&cache->mutex);
+ 
+-	printf("Max buffers %d, Current size %d, Used %d,  %s\n",
++	printf("Maksimum arabellek %d, Güncel boyut %d, Kullanılan %d,  %s\n",
+ 		cache->max_buffers, cache->count, cache->used,
+ 		cache->free_list ?  "Free buffers" : "No free buffers");
+ 
+@@ -644,11 +644,11 @@
+ 		res = read(fd, buff + count, bytes - count);
+ 		if(res < 1) {
+ 			if(res == 0) {
+-				ERROR("Read on filesystem failed because "
++				ERROR("Dosya sisteminde okuma başarısız oldu çünkü "
+ 					"EOF\n");
+ 				return FALSE;
+ 			} else if(errno != EINTR) {
+-				ERROR("Read on filesystem failed because %s\n",
++				ERROR("Dosya sisteminde okuma başarısız oldu çünkü %s\n",
+ 						strerror(errno));
+ 				return FALSE;
+ 			} else
+@@ -714,7 +714,7 @@
+ 			outlen, &error);
+ 
+ 		if(res == -1) {
+-			ERROR("%s uncompress failed with error code %d\n",
++			ERROR("%s hata koduyla sıkıştırmayı açma başarısız oldu %d\n",
+ 				comp->name, error);
+ 			goto failed;
+ 		}
+@@ -860,7 +860,7 @@
+ 		res = write(fd, buff + count, bytes - count);
+ 		if(res == -1) {
+ 			if(errno != EINTR) {
+-				ERROR("Write on output file failed because "
++				ERROR("Çıkış dosyasına yazılamadı çünkü "
+ 					"%s\n", strerror(errno));
+ 				return -1;
+ 			}
+@@ -1185,8 +1185,8 @@
+ 				dev_count ++;
+ 			} else {
+ 				EXIT_UNSQUASH_STRICT("create_inode: could not"
+-					" create %s device %s, because you're"
+-					" not superuser!\n", chrdev ?
++					" create %s device %s, çünkü siz yetkili"
++					" kullanıcı değilsiniz!\n", chrdev ?
+ 					"character" : "block", pathname);
+ 				goto failed;
+ 			}
+@@ -1399,9 +1399,9 @@
+ 
+ 	if(target == NULL) {
+ 		if(type == PATH_TYPE_EXTRACT)
+-			EXIT_UNSQUASH("Invalid extract file %s\n", alltarget);
++			EXIT_UNSQUASH("Geçersiz ayıklama dosyası %s\n", alltarget);
+ 		else
+-			EXIT_UNSQUASH("Invalid exclude file %s\n", alltarget);
++			EXIT_UNSQUASH("Geçersiz dışlama dosyası %s\n", alltarget);
+ 	}
+ 
+ 	if(paths == NULL) {
+@@ -1872,8 +1872,8 @@
+ 
+ 				/* Detect circular symlinks */
+ 				if(symlinks >= MAX_FOLLOW_SYMLINKS) {
+-					ERROR("Too many levels of symbolic "
+-								"links\n");
++					ERROR("Çok fazla seviyede sembolik "
++								"link\n");
+ 					traversed = FALSE;
+ 					free(symlink);
+ 					break;
+@@ -2067,9 +2067,9 @@
+ 			 */
+ 			res = chmod(parent_name, S_IRUSR|S_IWUSR|S_IXUSR);
+ 			if (res == -1) {
+-				EXIT_UNSQUASH_IGNORE("dir_scan: failed to "
+-					"change permissions for directory %s,"
+-					" because %s\n", parent_name,
++				EXIT_UNSQUASH_IGNORE("dir_scan: dizin "
++					"izinleri değiştirilemedi %s,"
++					" çünkü %s\n", parent_name,
+ 					strerror(errno));
+ 				squashfs_closedir(dir);
+ 				return FALSE;
+@@ -2146,9 +2146,9 @@
+ 	char buffer[SQUASHFS_METADATA_SIZE] __attribute__ ((aligned));
+ 
+ 	if(!comp->supported) {
+-		ERROR("Filesystem uses %s compression, this is "
+-			"unsupported by this version\n", comp->name);
+-		ERROR("Decompressors available:\n");
++		ERROR("Dosya sistemi %s sıkıştırıcı kullanıyor, bu "
++			"desteklenmeyen bir sürüm\n", comp->name);
++		ERROR("Mevcut açıcı:\n");
+ 		display_compressors("", "");
+ 		return FALSE;
+ 	}
+@@ -2165,7 +2165,7 @@
+ 	if(SQUASHFS_COMP_OPTS(sBlk.s.flags)) {
+ 		bytes = read_block(fd, sizeof(sBlk.s), NULL, 0, buffer);
+ 		if(bytes == 0) {
+-			ERROR("Failed to read compressor options\n");
++			ERROR("Sıkıştırıcı ayarları okunamadı\n");
+ 			return FALSE;
+ 		}
+ 	}
+@@ -2219,7 +2219,7 @@
+ 
+ 	fd = fopen(filename, "r");
+ 	if(fd == NULL)
+-		EXIT_UNSQUASH("Failed to open extract file \"%s\" because %s\n",
++		EXIT_UNSQUASH("FDosya açılamadı \"%s\" çünkü %s\n",
+ 			filename, strerror(errno));
+ 
+ 	while(fgets(name = buffer, MAX_LINE + 1, fd) != NULL) {
+@@ -2260,7 +2260,7 @@
+ 	}
+ 
+ 	if(ferror(fd))
+-		EXIT_UNSQUASH("Reading extract file \"%s\" failed because %s\n",
++		EXIT_UNSQUASH("Dosya okunamadı  \"%s\" çünkü %s\n",
+ 			filename, strerror(errno));
+ 
+ 	fclose(fd);
+@@ -2595,7 +2595,7 @@
+ 
+ 	if(add_overflow(processors, 3) ||
+ 			multiply_overflow(processors + 3, sizeof(pthread_t)))
+-		EXIT_UNSQUASH("Processors too large\n");
++		EXIT_UNSQUASH("İşlemciler çok büyük\n");
+ 
+ 	thread = malloc((3 + processors) * sizeof(pthread_t));
+ 	if(thread == NULL)
+@@ -3072,7 +3072,7 @@
+ 
+ void print_version()
+ {
+-	printf("unsquashfs version " VERSION " (" DATE ")\n");
++	printf("unsquashfs sürümü " VERSION " (" DATE ")\n");
+ 	printf("copyright (C) 2021 Phillip Lougher ");
+ 	printf("<phillip@squashfs.org.uk>\n\n");
+ 	printf("This program is free software; you can redistribute it and/or\n");
+@@ -3326,7 +3326,7 @@
+ 	}
+ 
+ 	if((fd = open(argv[i], O_RDONLY)) == -1) {
+-		ERROR("Could not open %s, because %s\n", argv[i],
++		ERROR(" %s açılamadı, çünkü %s\n", argv[i],
+ 			strerror(errno));
+ 		exit(1);
+ 	}
+@@ -3394,7 +3394,7 @@
+ 
+ 	res = s_ops->read_filesystem_tables();
+ 	if(res == FALSE)
+-		EXIT_UNSQUASH("File system corruption detected\n");
++		EXIT_UNSQUASH("Dosya sistemi bozulması tespit edildi\n");
+ 
+ 	if(treat_as_excludes)
+ 		for(n = i + 1; n < argc; n++)
+@@ -3426,10 +3426,10 @@
+ 		inode_number = 1;
+ 
+ 		if(!quiet)  {
+-			printf("Parallel unsquashfs: Using %d processor%s\n",
++			printf("Paralel unsquashfs: %d işlemci kullanılıyor %s\n",
+ 				processors, processors == 1 ? "" : "s");
+ 
+-			printf("%d inodes (%d blocks) to write\n\n",
++			printf("%d düğüm (%d blok) yazıldı\n\n",
+ 				total_inodes,
+ 				total_inodes - total_files + total_blocks);
+ 		}
+@@ -3451,12 +3451,12 @@
+ 
+ 	if(!quiet && !lsonly) {
+ 		printf("\n");
+-		printf("created %d files\n", file_count);
+-		printf("created %d directories\n", dir_count);
+-		printf("created %d symlinks\n", sym_count);
+-		printf("created %d devices\n", dev_count);
+-		printf("created %d fifos\n", fifo_count);
+-		printf("created %d sockets\n", socket_count);
++		printf("%d dosya oluşturuldu\n", file_count);
++		printf("%d dizin oluşturuldu\n", dir_count);
++		printf("%d symlink oluşturuldu\n", sym_count);
++		printf("%d aygıt oluşturuldu\n", dev_count);
++		printf("%d fifo oluşturuldu\n", fifo_count);
++		printf("%d soket oluşturuldu\n", socket_count);
+ 	}
+ 
+ 	return exit_code;
