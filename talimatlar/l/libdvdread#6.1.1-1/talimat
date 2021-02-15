@@ -6,7 +6,7 @@ url     = https://www.videolan.org/developers/libdvdnav.html
 
 [gerek]
 derleme  = libdvdcss
-calisma  =  
+calisma  = libdvdcss
 
 [kaynak]
 bz2  = https://get.videolan.org/libdvdread/${surum}
