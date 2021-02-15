@@ -1,24 +1,21 @@
 [paket]
-tanim   = Cinnamon masaüstünü kurar
+tanim   = Cinnamon masaüstü için gerekli  paketleri kurar
 paketci = Cihan_Alkan
 grup 	= cinnamon
-url     = https://github.com/linuxmint/cinnamon
+url     = https://github.com/oltulu
 
 [gerek]
 derleme = 
-calisma = cinnamon cinnamon-session cinnamon-control-center nemo-fileroller cinnamon-translations cinnamon-sounds-effect nemo-image-converter xviewer xreader
+calisma = cinnamon
 
 [kaynak]
-#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+1      = https://notabug.org/oltulu/Ceviri/raw/master/cinnamon-kur.tar.gz
 
 
-
-[sha512]
-#1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
 
 [derle]
 betik = mkdir $PKG/usr
 
     	      
 [pakur]
-betik = mkdir $PKG/usr/share
+betik = cp -r xfce4-kur/* $PKG/
