@@ -18,4 +18,4 @@ betik = mkdir $PKG/usr
 
     	      
 [pakur]
-betik = cp -r xfce4-kur/* $PKG/
+betik = cp -r cinnamon-kur/* $PKG/
