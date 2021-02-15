@@ -1,0 +1,28 @@
+[paket]
+tanim   = Nitelikli ses sunucusu
+paketci = milisarge
+grup    = medya
+url     = http://www.pulseaudio.org
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+bz2    = https://prdownloads.sourceforge.net/${isim}
+
+[sha256]
+#1       = 961b23ca1acfd28f2bc87414c27bb40e12436efcf2158d29721b1e89f3f28057
+
+[derle]
+betik   = autoreconf -fi
+betik   = automake -ac
+betik   = HAVE_UINPUT=1 ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --localstatedir=/var
+betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
+
+[pakur]
+betik   = make DESTDIR="${PKG}" -j1 install
+betik   = install -Dm644 "${SRC}"/lirc.tmpfiles "${PKG}"/usr/lib/tmpfiles.d/lirc.conf
+betik   = install -Dm644 "${SRC}"/lirc.logrotate "${PKG}"/etc/logrotate.d/lirc
+betik   = rmdir "${PKG}"/var/{run/lirc/,run/}
