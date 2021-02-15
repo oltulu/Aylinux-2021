@@ -26,15 +26,15 @@ betik      =cp  /sources/ConsoleKit2.pot po/tr.po
 betik      = echo "tr" >> po/LINGUAS
 betik      = ./autogen.sh
 betik      = NOCONFIGURE=1 ./autogen.sh
-betik      = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --libdir=/usr/lib  --localstatedir=/var --libexecdir=/usr/lib/ConsoleKit --with-xinitrc-dir=/etc/X11/xinit/xinitrc.d --enable-udev-acl --enable-pam-module --disable-nls
+betik      = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --libdir=/usr/lib  --localstatedir=/var --libexecdir=/usr/lib/ConsoleKit --with-xinitrc-dir=/etc/X11/xinit/xinitrc.d --enable-udev-acl --enable-pam-module  --with-pam-module-dir=/usr/lib/security --disable-nls
 betik      = make
 
 [pakur]
 betik = cd ConsoleKit2-$surum
 tip = gnu
 betik = rm -rf "${PKG}"/run
-betik = mv "${PKG}"/lib/* "${PKG}"/usr/lib/
-betik = rmdir "${PKG}"/lib
+#betik = mv "${PKG}"/lib/* "${PKG}"/usr/lib/
+#betik = rmdir "${PKG}"/lib
 betik = mv -v $PKG/etc/X11/xinit/xinitrc.d/90-consolekit{,.sh}
 betik = install -D -m 0644 /sources/system-session $PKG/etc/pam.d/system-session
 betik = install -m 0755 /sources/pam-foreground-compat.ck $PKG/etc/ConsoleKit/run-session.d/
