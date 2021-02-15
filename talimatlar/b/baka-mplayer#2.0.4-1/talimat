@@ -4,7 +4,7 @@ paketci = Cihan_Alkan
 url     = http://bakamplayer.u8sand.net/
 
 [gerek]
-derleme    = 
+derleme    = qt5-base mpv
 calisma    =
 
 [kaynak]
