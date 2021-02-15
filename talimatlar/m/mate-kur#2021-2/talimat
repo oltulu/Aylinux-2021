@@ -1,5 +1,5 @@
 [paket]
-tanim   = Xfce4 masaüstü için gerekli  paketleri kurar
+tanim   = Mate masaüstü için gerekli  ayarları kurar
 paketci = Cihan_Alkan
 grup 	= xfce
 url     = https://github.com/oltulu
@@ -18,4 +18,4 @@ betik = mkdir $PKG/usr
 
     	      
 [pakur]
-betik = cp -r xfce4-kur/* $PKG/
+betik = cp -r mate-kur/* $PKG/
