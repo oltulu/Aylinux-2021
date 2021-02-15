@@ -19,7 +19,7 @@ calisma = xorriso
 
 [derle]
 betik   = cd $isim$surum/squashfs-tools
-betik = patch unsquashfs.c unsquashfs.patch
+betik = patch unsquashfs.c $SRC/unsquashfs.patch
 betik   = sed -i '1,1i#include <sys/sysmacros.h>' mksquashfs.c unsquashfs.c
 betik   = make GZIP_SUPPORT=1 XZ_SUPPORT=1 LZO_SUPPORT=1 LZMA_XZ_SUPPORT=1 LZ4_SUPPORT=1 XATTR_SUPPORT=1
      
