@@ -16,7 +16,7 @@ xz     = https://freedesktop.org/software/pulseaudio/releases
 
 [derle]
 betik   = cd $SRC
-betik   = milis-meson pulseaudio-$surum build -D gcov=false  -D pulsedsp-location='/usr/lib/pulseaudio' -D elogind=disabled -D systemd=disabled -D tests=false -D stream-restore-clear-old-devices=true -D udevrulesdir=/usr/lib/udev/rules.d
+betik   = milis-meson pulseaudio-$surum build -D gcov=false  -D pulsedsp-location='/usr/lib/pulseaudio' -D lirc=disabled -D elogind=disabled -D systemd=disabled -D tests=false -D stream-restore-clear-old-devices=true -D udevrulesdir=/usr/lib/udev/rules.d
 betik   = meson compile -C build
 
 [pakur]
