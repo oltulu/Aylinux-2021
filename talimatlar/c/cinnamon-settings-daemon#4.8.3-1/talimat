@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/cinnamon-settings-daemon
 
 [gerek]
-derleme = autoconf-archive intltool python xf86-input-wacom libcanberra upower dbus-glib
+derleme = autoconf-archive intltool python xf86-input-wacom libcanberra upower dbus-glib meson samurai
 calisma = cinnamon-desktop colord dbus-glib cups libgnomekbd libgudev libnotify librsvg libwacom nss polkit pulseaudio upower libcanberra lcms2 libwacom cinnamon-desktop
 
 [kaynak]
