@@ -7,6 +7,7 @@ url     = http://squashfs.sourceforge.net
 
 [kaynak]
 1    	= http://downloads.sourceforge.net/sourceforge/$isim/$isim$surum.tar.gz
+dosya = unsquashfs.patch
 
 [sha256]
 #1 		= 0d605512437b1eb800b4736791559295ee5f60177e102e4d4ccd0ee241a5f3f6
@@ -18,6 +19,7 @@ calisma = xorriso
 
 [derle]
 betik   = cd $isim$surum/squashfs-tools
+betik = patch unsquashfs.c unsquashfs.patch
 betik   = sed -i '1,1i#include <sys/sysmacros.h>' mksquashfs.c unsquashfs.c
 betik   = make GZIP_SUPPORT=1 XZ_SUPPORT=1 LZO_SUPPORT=1 LZMA_XZ_SUPPORT=1 LZ4_SUPPORT=1 XATTR_SUPPORT=1
      
