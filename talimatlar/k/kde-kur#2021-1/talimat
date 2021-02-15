@@ -1,7 +1,7 @@
 [paket]
-tanim   = Xfce4 masaüstü için gerekli  paketleri kurar
+tanim   = Kde masaüstü için gerekli  paketleri kurar
 paketci = Cihan_Alkan
-grup 	= xfce
+grup 	= kde
 url     = https://github.com/oltulu
 
 [gerek]
@@ -18,4 +18,4 @@ betik = mkdir $PKG/usr
 
     	      
 [pakur]
-betik = cp -r xfce4-kur/* $PKG/
+betik = cp -r kde-kur/* $PKG/
