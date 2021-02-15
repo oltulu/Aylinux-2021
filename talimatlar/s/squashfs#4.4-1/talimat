@@ -6,7 +6,8 @@ url     = http://squashfs.sourceforge.net
 
 
 [kaynak]
-1    	= http://downloads.sourceforge.net/sourceforge/$isim/$isim$surum.tar.gz
+git = https://github.com/plougher/squashfs-tools
+#1    	= http://downloads.sourceforge.net/sourceforge/$isim/$isim$surum.tar.gz
 dosya = unsquashfs.patch
 
 [sha256]
