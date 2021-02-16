@@ -1,0 +1,35 @@
+[paket]
+tanim   = EFI boot yöneticisi
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://www.rodsbooks.com/refind/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1        = https://sourceforge.net/projects/refind/files/${surum}/${isim}-src-${isim}.tar.gz
+
+[sha256]
+#1          = de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
+
+[derle]
+betik     = sed -e 's|../Styles/||g' -i "docs/${isim}/"*.html
+betik     = sed -e 's|RefindDir=\"\$ThisDir/refind\"|RefindDir="/usr/share/refind/"|g' -i refind-install
+betik     = make
+betik     = make gptsync
+betik     = make fs
+
+[pakur]
+betik     = install -vDm 644 refind/*.efi -t "${PKG}/usr/share/${isim}"
+betik     = install -vDm 644 drivers_*/*.efi -t "${PKG}/usr/share/refind/drivers_x64"
+betik     = install -vDm 644 gptsync/*.efi -t "${PKG}/usr/share/${isim}/tools_x64"
+betik     = install -vDm 644 "${isim}.conf-sample" -t "${PKG}/usr/share/${isim}"
+betik     = install -vDm 644 keys/*{cer,crt} -t "${PKG}/usr/share/${isim}/keys"
+betik     = install -vdm 700 "${PKG}/etc/refind.d/keys"
+betik     = install -vDm 644 fonts/*.png -t "${PKG}/usr/share/${isim}/fonts"
+betik     = install -vDm 644 icons/*.png -t "${PKG}/usr/share/${isim}/icons"
+betik     = install -vDm 644 icons/svg/*.svg -t "${PKG}/usr/share/${isim}/icons/svg"
+betik     = install -vDm 755 {refind-{install,mkdefault},mkrlconf,mvrefind} -t "${PKG}/usr/bin"
+betik     = install -vDm 755 fonts/mkfont.sh "${PKG}/usr/bin/${isim}-mkfont"
