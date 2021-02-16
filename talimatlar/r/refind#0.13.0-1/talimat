@@ -9,7 +9,7 @@ derleme    =
 calisma    =
 
 [kaynak]
-1        = https://sourceforge.net/projects/refind/files/${surum}/${isim}-src-${isim}.tar.gz
+1        = https://sourceforge.net/projects/refind/files/${surum}/${isim}-src-${surum}.tar.gz
 
 [sha256]
 #1          = de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
