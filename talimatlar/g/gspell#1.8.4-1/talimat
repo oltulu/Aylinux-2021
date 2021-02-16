@@ -6,7 +6,7 @@ url     = http://www.gnome.org
 
 [gerek]
 derleme    = glib vala iso-codes
-calisma    =
+calisma    = enchant
 
 [kaynak]
 xz         = https://download.gnome.org/sources/$isim/${surum%.*}
