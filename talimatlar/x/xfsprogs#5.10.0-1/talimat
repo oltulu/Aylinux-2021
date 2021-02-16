@@ -6,7 +6,7 @@ url     = http://xfs.org/index.php/Main_Page
 
 [gerek]
 derleme    = icu
-calisma    =
+calisma    = libinih
 
 [kaynak]
 xz         = ${KERNEL_SITE}/utils/fs/xfs/$isim
