@@ -8,7 +8,7 @@ url     = https://www.mathjax.org
 1       = https://github.com/mathjax/MathJax/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1       = 71ea2429b1b5b5d796d3f89303a33d61ce8459897b48973d768261e33d6268c0
+#1       = 71ea2429b1b5b5d796d3f89303a33d61ce8459897b48973d768261e33d6268c0
 
 [derle]
 betik   = cd $SRC/MathJax-$surum
