@@ -19,6 +19,7 @@ dosya = plymouth.initcpio_install
 dosya = plymouth-quit.service.in.patch
 dosya = plymouth-update-initrd.patch
 dosya = plymouthd.defaults
+dosya = logo.png
 
 [sha256]
 #          = 55a461003ece0a4daeffb8b7ac2178977c5ce024a7e688d24f6d2230465b50ba
@@ -42,3 +43,5 @@ betik      = install -Dm644 "$SRC/plymouth.initcpio_install" "$PKG/usr/lib/initc
 betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/usr/share/plymouth/plymouthd.defaults"
 betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/etc/plymouth/plymouthd.conf"
 betik      = cp -r $SRC/plymouth-theme-garuda-purple/usr/* $PKG/usr/
+betik      = rm $PKG/usr/share/plymouth/themes/garuda-purple/logo.png
+betik      = cp $SRC/logo.png $PKG/usr/share/plymouth/themes/garuda-purple/
