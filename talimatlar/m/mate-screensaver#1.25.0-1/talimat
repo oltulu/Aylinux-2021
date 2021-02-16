@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://mate-desktop.org
 
 [gerek]
-derleme = libwnck libmateweather itstool
+derleme = libwnck libmateweather itstool mate-menus mate-desktop
 calisma = dbus-glib libwnck3 libcanberra libmateweather libsm mate-menus mate-desktop
 
 [kaynak]
