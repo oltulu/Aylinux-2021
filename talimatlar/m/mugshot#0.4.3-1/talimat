@@ -6,7 +6,7 @@ url     = https://github.com/bluesabre/mugshot
 
 [gerek]
 derleme = 
-calisma = libpeas gtksourceview gspell
+calisma = libpeas gtksourceview gspell python-pexpect
 
 [kaynak]
 gz    = ${url}/archive
