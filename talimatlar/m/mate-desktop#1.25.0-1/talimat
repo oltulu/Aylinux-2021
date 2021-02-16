@@ -6,7 +6,7 @@ url     = https://bitmath.org/code/mtdev
 
 [gerek]
 derleme = dconf iso-codes
-calisma = gtk3 startup-notification iso-codes
+calisma = gtk3 startup-notification iso-codes dconf
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
