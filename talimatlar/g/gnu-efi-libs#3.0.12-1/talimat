@@ -12,7 +12,7 @@ calisma =
 1       = ${SOURCEFORGE_SITE}/gnu-efi/gnu-efi-${surum}.tar.bz2
 
 [sha256]
-1       = f28da792a2532e91e18e0101468811739a22cde9eee5eacfd0efb9bf3a61d6b9
+#1       = f28da792a2532e91e18e0101468811739a22cde9eee5eacfd0efb9bf3a61d6b9
 
 [derle]
 betik   = unset LDFLAGS;unset CFLAGS
