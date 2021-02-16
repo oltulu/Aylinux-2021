@@ -15,7 +15,8 @@ calisma =
 #1       = f28da792a2532e91e18e0101468811739a22cde9eee5eacfd0efb9bf3a61d6b9
 
 [derle]
-betik   = bzip2 -d gnu-efi-${surum}.tar.bz2
+betik   = 7z x gnu-efi-${surum}.tar.bz2
+betik   = 7z x gnu-efi-${surum}.tar
 betik   = unset LDFLAGS;unset CFLAGS
 betik   = cd gnu-efi-${surum}
 betik   = make lib gnuefi inc apps
