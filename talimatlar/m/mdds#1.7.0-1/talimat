@@ -8,7 +8,7 @@ url     = https://gitlab.com/mdds/mdds
 bz2        = http://kohei.us/files/mdds/src
 
 [sha256]
-1          = 25ce3d5af9f6609e1de05bb22b2316e57b74a72a5b686fbb2da199da72349c81
+#1          = 25ce3d5af9f6609e1de05bb22b2316e57b74a72a5b686fbb2da199da72349c81
 
 [derle]
 betik      = autoreconf -fi
