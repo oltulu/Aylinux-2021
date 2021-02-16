@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://www.rodsbooks.com/refind/
 
 [gerek]
-derleme    = 
+derleme    = gnu-efi-libs
 calisma    =
 
 [kaynak]
