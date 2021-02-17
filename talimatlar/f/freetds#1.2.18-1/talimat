@@ -6,7 +6,7 @@ url      = http://www.freetds.org
 
 [gerek]
 derleme  = openssl unixodbc 
-calisma  =  
+calisma  = unixodbc  
 
 [kaynak]
 bz2      = ftp://ftp.freetds.org/pub/freetds/stable
