@@ -12,7 +12,7 @@ calisma = kmod util-linux cpio squashfs tar
 xz      = http://kernel.org/pub/linux/utils/boot/dracut
 
 [sha256]
-1 		= 6ce2f8c16b393606b504c7722fd6845d2e0ed0f543f3cc83784c31171498b89a
+#1 		= 6ce2f8c16b393606b504c7722fd6845d2e0ed0f543f3cc83784c31171498b89a
 
 [derle]
 betik   = ./configure $confopt --loginstalldir=/var/log/dracut
