@@ -9,15 +9,17 @@ derleme =
 calisma = kmod util-linux cpio squashfs tar 
 
 [kaynak]
-xz      = http://kernel.org/pub/linux/utils/boot/dracut
+1    = http://kernel.org/pub/linux/utils/boot/dracut/dracut-$surum.tar.xz
 
 [sha256]
 #1 		= 6ce2f8c16b393606b504c7722fd6845d2e0ed0f543f3cc83784c31171498b89a
 
 [derle]
+betik   = cd dracut-$surum
 betik   = ./configure $confopt --loginstalldir=/var/log/dracut
 betik   = make -j1 sysconfdir=/etc prefix=/usr
 	      
 [pakur]
+betik   = cd dracut-$surum
 betik   = make sysconfdir=/etc prefix=/usr DESTDIR=$PKG install
 betik   = rm -rf $PKG/usr/share/bash-completion
