@@ -1,7 +1,7 @@
 [paket]
 tanim   = Xfce pencere yöneticisi
-paketci = milisarge
-grup    = sistem 
+paketci = Cihan_Alkan
+grup    = xfce 
 url     = https://www.xfce.org/
 
 [gerek]
@@ -12,7 +12,7 @@ calisma  = libxres
 bz2  = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
 
 [sha256]
-1  = b4182bf8dc63d092f120a51fcae0eb54b9bd4aa4f8486f47e5a65a108322b615
+#1  = b4182bf8dc63d092f120a51fcae0eb54b9bd4aa4f8486f47e5a65a108322b615
 
 [derle]
 ekconf = --enable-startup-notification --enable-randr --enable-compositor --enable-xsync --disable-debug
