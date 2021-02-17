@@ -5,14 +5,14 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-settings-daemon
 
 [gerek]
-derleme = qt5-tools
+derleme = qt5-tools gsettings-qt
 calisma = gsettings-qt
 
 [kaynak]
 1      = https://github.com/ukui/ukui-settings-daemon/archive/v$surum/$isim-$surum.tar.gz
 
 [sha512]
-1 		= e136aca22e389218d97843ea839fec3fc83b3d3952b229c5dfd189a30d2c71e253a15022e9a20cfaad55ef7275cf0cf09977631112fd124667a8e73700e47db0
+#1 		= e136aca22e389218d97843ea839fec3fc83b3d3952b229c5dfd189a30d2c71e253a15022e9a20cfaad55ef7275cf0cf09977631112fd124667a8e73700e47db0
 
 [derle]
 betik 	= sed -i 's|udev.path = /lib/udev/rules.d/|udev.path = /usr/lib/udev/rules.d/|' plugins/mouse/mouse.pro
