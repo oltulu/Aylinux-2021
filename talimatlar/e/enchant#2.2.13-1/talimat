@@ -6,7 +6,7 @@ url     = http://www.abisource.com/projects/enchant/
 
 [gerek]
 derleme    = glib hunspell
-calisma    = hunspell
+calisma    = hunspell libvoikko aspell hspell
 
 [kaynak]
 1          = https://github.com/AbiWord/enchant/archive/v${surum}.tar.gz::enchant-${surum}.tar.gz
