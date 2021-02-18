@@ -19,3 +19,4 @@ tip     = gnu
 
 [pakur]
 tip     = gnu
+betik = sed -i 's/^Name\[tr\]=Ristretto Resim Gösterici/Name\[tr\]=Resim Görüntüleyici/' $PKG/usr/share/applications/$isim.desktop
