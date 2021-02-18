@@ -23,3 +23,4 @@ tip    = gnu
 
 [pakur]
 tip    = gnu
+betik = sed -i 's/^Name\[tr\]=Thunar Dosya Yöneticisi/Name\[tr\]=Dosya Yöneticisi/' $PKG/usr/share/applications/$isim.desktop
