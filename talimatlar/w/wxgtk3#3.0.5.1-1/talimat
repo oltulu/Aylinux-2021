@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://wxwidgets.org
 
 [gerek]
-derleme = gst-plugins-base glu libsm libxxf86vm webkit2gtk libnotify gtk3
+derleme = gst-plugins-base glu libsm libxxf86vm webkitgtk libnotify gtk3
 calisma =
 
 [kaynak]
