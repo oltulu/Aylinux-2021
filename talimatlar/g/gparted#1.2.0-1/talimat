@@ -21,3 +21,4 @@ betik  = make
 [pakur]
 tip    = gnu
 betik  = install -D -m0644 org.gnome.gparted.policy $PKG/usr/share/polkit-1/actions/org.gnome.gparted.policy
+betik = sed -i 's/^Name\[tr\]=GParted/Name\[tr\]=Harddisk Bölümleme/' $PKG/usr/share/applications/$isim.desktop
