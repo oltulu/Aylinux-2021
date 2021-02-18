@@ -17,7 +17,8 @@ gz  	= $url/archive
 
 [derle]
 tip     = py3
-betik = sed -i 's/^Name\[tr\]=Milis Servis Arayüzü/Name\[tr\]=Servis Yönetimi/' $PKG/usr/share/applications/$isim.desktop
 
 [pakur]
 tip     = py3
+betik = sed -i 's/^Name\[tr\]=Milis Servis Arayüzü/Name\[tr\]=Servis Yönetimi/' $PKG/usr/share/applications/$isim.desktop
+
