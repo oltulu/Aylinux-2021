@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-settings-daemon
 
 [gerek]
-derleme = qt5-tools gsettings-qt mate-desktop geoclue gnome-desktop libmatekbd libmatemixer qt5-svg qt5-sensors
+derleme = qt5-tools gsettings-qt mate-desktop geoclue gnome-desktop libmatekbd libmatemixer qt5-svg qt5-sensors kconfig
 calisma = gsettings-qt libmatekbd libmatemixer mate-desktop geoclue gnome-desktop
 
 [kaynak]
