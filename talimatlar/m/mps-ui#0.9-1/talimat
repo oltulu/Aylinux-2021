@@ -20,3 +20,4 @@ tip     = py3
 
 [pakur]
 tip     = py3
+betik = sed -i 's/^Name\[tr\]=MPS arayüzü/Name\[tr\]=Yazılım Ekle Kaldır/' $PKG/usr/share/applications/$isim.desktop
