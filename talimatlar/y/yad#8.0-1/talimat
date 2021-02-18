@@ -12,7 +12,7 @@ calisma = gtkspell3
 xz		= https://github.com/v1cont/yad/releases/download/v${surum}
 
 [sha256]
-1		= bcbf0a298a0b6c069b1f7ac6c7914af09fea9932914787faad7e7fe4eebe9051
+#1		= bcbf0a298a0b6c069b1f7ac6c7914af09fea9932914787faad7e7fe4eebe9051
 
 [derle]
 betik	= autoreconf -ivf ; intltoolize
