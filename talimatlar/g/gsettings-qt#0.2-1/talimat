@@ -5,8 +5,8 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/${isim}
 
 [gerek]
-derleme = meson gobject-introspection intltool
-calisma = cinnamon-control-center cinnamon-menus cinnamon-screensaver cinnamon-desktop dbus-glib libsm libcanberra xapps
+derleme = qt5-base
+calisma = 
 
 [kaynak]
 1      = https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gsettings-qt/0.2-4/gsettings-qt_0.2.orig.tar.gz
