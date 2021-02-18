@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://github.com/v1cont/yad
 
 [gerek]
-derleme = gtk3 webkit2gtk gtksourceview gspell
+derleme = gtk3 webkitgtk gtksourceview gspell
 calisma = gtkspell3
 
 [kaynak]
