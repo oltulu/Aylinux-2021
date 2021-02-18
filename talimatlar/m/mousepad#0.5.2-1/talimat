@@ -19,6 +19,6 @@ tip     = gnu
 
 [pakur]
 tip     = gnu
-betik = sed -i 's/Name[tr]=Mousepad/Name[tr]=Metin Düzenleyici/' $PKG/usr/share/applications/$isim.desktop
+betik = sed -i 's/^Name[tr]=/Metin Düzenleyici/' $PKG/usr/share/applications/$isim.desktop
 
 #sudo sed -i '/^Name[tr_TR]/s/WoeUSB/Audio Control/' /usr/share/applications/woeusbgui.desktop
