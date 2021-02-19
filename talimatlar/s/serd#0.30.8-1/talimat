@@ -12,7 +12,7 @@ calisma    =
 bz2         = http://download.drobilla.net
 
 [sha256]
-1          = 6efb0efa5c2155e6bbac941cddeeabb7ed26d70a57d24178894ff169d8f6cefb
+#1          = 6efb0efa5c2155e6bbac941cddeeabb7ed26d70a57d24178894ff169d8f6cefb
 
 [derle]
 tip        = waf 
