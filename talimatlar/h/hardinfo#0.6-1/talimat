@@ -1,11 +1,11 @@
 [paket]
 tanim   = Bir sistem bilgisi ve kıyaslama aracı.
 paketci = Cihan_Alkan
-grup 	= mate
+grup 	= sistem
 url     = https://github.com/lpereira/hardinfo
 
 [gerek]
-derleme = 
+derleme = cmake
 calisma = 
 
 [kaynak]
