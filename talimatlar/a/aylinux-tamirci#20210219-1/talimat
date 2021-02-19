@@ -1,0 +1,15 @@
+[paket]
+tanim   = Aylinux tamir araçları
+paketci = Cihan_Alkan  
+grup    = sistem  
+url     = https://notabug.org/oltulu/Aylinux-Tamirci
+
+[kaynak]
+git     = https://notabug.org/oltulu/Aylinux-Tamirci
+
+[derle]
+betik  = cd Aylinux-Tamirci
+
+[pakur]
+#betik  = cd Aylinux-Tamirci
+betik  = cp -r $SRC/Aylinux-Tamirci/Aylinux-Tamirci-Xfce/* $PKG/
