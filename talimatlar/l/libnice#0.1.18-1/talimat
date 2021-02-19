@@ -12,7 +12,7 @@ calisma    =
 gz         = https://nice.freedesktop.org/releases
 
 [sha256]
-1          = 06b678066f94dde595a4291588ed27acd085ee73775b8c4e8399e28c01eeefdf
+#1          = 06b678066f94dde595a4291588ed27acd085ee73775b8c4e8399e28c01eeefdf
 
 [derle]
 ekconf     = -Dcrypto-library=openssl -Dgtk_doc=disabled -Dtests=disabled -Dexamples=disabled -Dintrospection=enabled -Dgupnp=disabled
