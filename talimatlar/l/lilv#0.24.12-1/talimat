@@ -12,7 +12,7 @@ calisma    =
 bz2        = http://download.drobilla.net
 
 [sha256]
-1          = c33b84b7a6e8e8fffb412fbcd6f69e59ca297ef3e29d829249b4ccc94f634438
+#1          = c33b84b7a6e8e8fffb412fbcd6f69e59ca297ef3e29d829249b4ccc94f634438
 
 [derle]
 ekconf     = --dyn-manifest --bindings --no-bash-completion
