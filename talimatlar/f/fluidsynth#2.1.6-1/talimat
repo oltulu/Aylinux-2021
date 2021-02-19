@@ -12,7 +12,7 @@ calisma    =
 gz         = https://github.com/FluidSynth/fluidsynth/archive/v${surum}
 
 [sha256]
-1          = b68876d24c7fb34575ffa389bcfe8e61a24f1cf1da8ec6c3b2053efde98d0320
+#1          = b68876d24c7fb34575ffa389bcfe8e61a24f1cf1da8ec6c3b2053efde98d0320
 
 [derle]
 ekconf     = -Denable-ladspa=ON -Denable-portaudio=ON -DLIB_SUFFIX=""
