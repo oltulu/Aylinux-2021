@@ -14,7 +14,7 @@ calisma  =
 3    = https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-$surum.tar.xz
 4    = https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-$surum.tar.xz
 5    = https://gstreamer.freedesktop.org/src/gst-python/gst-python-$surum.tar.xz
-6    = https://gstreamer.freedesktop.org/src/gstreamer-editing-services/gstreamer-editing-services-$surum.tar.xz
+6    = https://gstreamer.freedesktop.org/src/gstreamer-editing-services/gst-editing-services-$surum.tar.xz
 
 [sha256]
 1  = 40bb3bafda25c0b739c8fc36e48380fccf61c4d3f83747e97ac3f9b0171b1319
