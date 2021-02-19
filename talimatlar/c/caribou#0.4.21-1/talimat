@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/caribou
 
 [gerek]
-derleme = gobject-introspection gnome-common at-spi2-atk clutter gtk3 gtk2 python-gobject libxklavier libxslt
+derleme = gobject-introspection gnome-common at-spi2-atk clutter gtk3 gtk2 python-gobject libxklavier libxslt libgee
 calisma = glib libgee
 
 [kaynak]
