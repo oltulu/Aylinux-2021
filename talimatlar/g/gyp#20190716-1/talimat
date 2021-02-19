@@ -1,0 +1,24 @@
+[paket]
+tanim   = ICEWM pencere yöneticisi
+paketci = milisarge
+grup    = sistem
+url     = http://www.ice-wm.org
+
+[gerek]
+derleme = alsa-lib imlib2 librsvg libsndfile libxcomposite libxdamage libxinerama libxpm libxrandr
+calisma =
+
+[kaynak]
+git      = https://chromium.googlesource.com/external/gyp
+
+[sha256]
+1       = 4478172b936f7f7dcfc2120be8d8f153fd755933bf98b8e98e3eae50c414939c
+
+[derle]
+betik = cd $isim
+betik = echo $(TZ=UTC git show -s --pretty=%cd --date=format-local:%Y%m%d HEAD).$(git rev-parse --short HEAD)
+betik = python setup.py build
+
+[pakur]
+betik = cd $isim
+betik = python setup.py install --root="$PKG" --optimize=1 --skip-build
