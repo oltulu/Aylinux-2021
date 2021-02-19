@@ -6,7 +6,7 @@ url     = https://docs.xfce.org/apps/parole/start
 
 [gerek]
 derleme = intltool dbus-glib gst-plugins-base gst-plugins-others libnotify taglib libxfce4ui 
-calisma = gst-plugins-others
+calisma = gst-plugins-good
 
 [kaynak]
 bz2     = https://archive.xfce.org/src/apps/${isim}/${surum%.*}
