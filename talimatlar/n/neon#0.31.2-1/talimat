@@ -9,10 +9,10 @@ derleme    =
 calisma    = krb5
 
 [kaynak]
-gz         = http://download.openpkg.org/components/cache/${isim}
+gz         = https://notroj.github.io/neon
 
 [sha256]
-1          = db0bd8cdec329b48f53a6f00199c92d5ba40b0f015b153718d1b15d3d967fbca
+#1          = db0bd8cdec329b48f53a6f00199c92d5ba40b0f015b153718d1b15d3d967fbca
 
 [derle]
 ekconf     = --with-expat --with-ssl=openssl --enable-shared --with-ca-bundle=/etc/ssl/certs/ca-certificates.crt --disable-static
