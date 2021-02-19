@@ -6,13 +6,13 @@ url     = https://notabug.org/oltulu/Aylinux-Tamirci
 
 [gerek]
 derleme = 
-calisma = gtkdialog zenity
+calisma = gtkdialog zenity  alsa-utils hardinfo mousepad
 
 [kaynak]
 git     = https://notabug.org/oltulu/Aylinux-Tamirci
 
 [derle]
-betik  = cd Aylinux-Tamirci alsa-utils hardinfo
+betik  = cd Aylinux-Tamirci
 
 [pakur]
 #betik  = cd Aylinux-Tamirci
