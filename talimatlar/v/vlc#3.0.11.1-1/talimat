@@ -21,6 +21,7 @@ dosya = vlc-lua53_compat.patch
 #4     = d1cb88a1037120ea83ef75b2a13039a16825516b776d71597d0e2eae5df2d8fa
 
 [derle]
+betik = export CFLAGS="-march=native -O3 -no-prec-div -fno-alias -pipe"
 dosya = derle.sh
 
 [pakur]
