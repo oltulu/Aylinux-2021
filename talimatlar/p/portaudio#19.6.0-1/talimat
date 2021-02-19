@@ -16,8 +16,8 @@ calisma    =
 
 [derle]
 betik      = cd $isim
-ekconf     = --enable-cxx --with-jack
-tip        = gnu
+betik      = ./configure --prefix=/usr --enable-cxx --with-jack
+betik      = make -j1
 
 [pakur]
 betik      = cd $isim
