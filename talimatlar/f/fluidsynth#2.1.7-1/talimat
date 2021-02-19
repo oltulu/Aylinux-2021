@@ -15,7 +15,7 @@ gz         = https://github.com/FluidSynth/fluidsynth/archive/v${surum}
 #1          = b68876d24c7fb34575ffa389bcfe8e61a24f1cf1da8ec6c3b2053efde98d0320
 
 [derle]
-betik     = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE='None' -DFLUID_DAEMON_ENV_FILE=/etc/conf.d/fluidsynth -Denable-ladspa=ON -Denable-portaudio=ON -DLIB_SUFFIX="" -Wno-dev -B build -S .
+betik     = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE='Release' -DFLUID_DAEMON_ENV_FILE=/etc/conf.d/fluidsynth -Denable-ladspa=ON -Denable-portaudio=ON -DLIB_SUFFIX="" -Wno-dev -B build -S .
 betik     = make -C build VERBOSE=1
 
 [pakur]
