@@ -6,7 +6,7 @@ url     = https://pypi.org/project/setuptools/
 
 [gerek]
 derleme = python-six python-appdirs python-pyparsing
-calisma = python
+calisma = python python-appdirs python-ordered-set python-packaging python-pyparsing
 
 [kaynak]
 1       = https://github.com/pypa/setuptools/archive/v51.1.2.tar.gz::$isim-$surum.tar.gz
