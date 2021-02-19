@@ -23,7 +23,8 @@ betik = mkdir -p "$PKG"/opt
 [pakur]
 betik = cp -r firefox/ "$PKG"/opt/firefox
 betik = install -m755 firefox.sh "$PKG"/usr/bin/firefox-tr
-betik = install -m644 firefox-tr.desktop "$PKG"/usr/share/applications/
+betik = install -m755 firefox.sh "$PKG"/usr/bin/firefox
+betik = install -m644 firefox.desktop "$PKG"/usr/share/applications/
 betik = ln -Ts /usr/share/hunspell "$PKG"/opt/firefox/dictionaries
 betik = ln -Ts /usr/share/hyphen "$PKG"/opt/firefox/hyphenation
 betik = ln -sf /usr/lib/libnssckbi.so "$PKG"/opt/firefox/libnssckbi.so
