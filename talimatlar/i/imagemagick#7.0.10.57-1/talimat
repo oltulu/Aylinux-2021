@@ -12,7 +12,7 @@ calisma =
 1       = https://www.imagemagick.org/download/releases/ImageMagick-${surum%.*}-${surum##*.}.tar.xz
 
 [sha256]
-1 		= 6b4ec4ebc1a164493150dfffda258f0c4fdc092fdb354f9b3a8a13c2dae2c91f
+#1 		= 6b4ec4ebc1a164493150dfffda258f0c4fdc092fdb354f9b3a8a13c2dae2c91f
 
 [derle]
 dosya   = derle.sh
