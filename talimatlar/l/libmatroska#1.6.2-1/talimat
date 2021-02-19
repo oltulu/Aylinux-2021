@@ -6,7 +6,7 @@ url     = https://dl.matroska.org/downloads/libmatroska/
 
 [gerek]
 derleme  = cmake libebml
-calisma  =  
+calisma  = libebml 
 
 [kaynak]
 xz     = https://dl.matroska.org/downloads/$isim
