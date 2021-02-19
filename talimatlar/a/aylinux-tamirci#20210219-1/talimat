@@ -13,3 +13,17 @@ betik  = cd Aylinux-Tamirci
 [pakur]
 #betik  = cd Aylinux-Tamirci
 betik  = cp -r $SRC/Aylinux-Tamirci/Aylinux-Tamirci-Xfce/* $PKG/
+betik  = chmod +x $PKG/usr/bin/Bellek-Durumu
+betik  = chmod +x $PKG/usr/bin/aylinux-onar
+betik  = chmod +x $PKG/usr/bin/aysbit
+betik  = chmod +x $PKG/usr/bin/debkur
+betik  = chmod +x $PKG/usr/bin/dmidecode
+betik  = chmod +x $PKG/usr/bin/gdm-arkaplan
+betik  = chmod +x $PKG/usr/bin/ksudo
+betik  = chmod +x $PKG/usr/bin/inxi-gui
+betik  = chmod +x $PKG/usr/bin/klavye-ayar
+betik  = chmod +x $PKG/usr/bin/	libmebbitdialog
+betik  = chmod +x $PKG/usr/bin/mpskur
+betik  = chmod +x $PKG/usr/bin/saat-onar
+betik  = chmod +x $PKG/usr/bin/	tamirci
+
