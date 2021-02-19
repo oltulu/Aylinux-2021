@@ -12,7 +12,7 @@ calisma = gtkdialog zenity
 git     = https://notabug.org/oltulu/Aylinux-Tamirci
 
 [derle]
-betik  = cd Aylinux-Tamirci
+betik  = cd Aylinux-Tamirci alsa-utils hardinfo
 
 [pakur]
 #betik  = cd Aylinux-Tamirci
