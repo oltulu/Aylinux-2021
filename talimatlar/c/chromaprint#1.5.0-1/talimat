@@ -12,7 +12,7 @@ calisma    =
 gz         = https://github.com/acoustid/chromaprint/releases/download/v${surum}
 
 [sha256]
-1          = ea18608b76fb88e0203b7d3e1833fb125ce9bb61efe22c6e169a50c52c457f82
+#1          = ea18608b76fb88e0203b7d3e1833fb125ce9bb61efe22c6e169a50c52c457f82
 
 [derle]
 betik	   = cd $isim-v$surum
