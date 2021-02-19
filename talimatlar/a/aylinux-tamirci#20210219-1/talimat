@@ -25,5 +25,5 @@ betik  = chmod +x $PKG/usr/bin/klavye-ayar
 betik  = chmod +x $PKG/usr/bin/	libmebbitdialog
 betik  = chmod +x $PKG/usr/bin/mpskur
 betik  = chmod +x $PKG/usr/bin/saat-onar
-betik  = chmod +x $PKG/usr/bin/	tamirci
+betik  = chmod +x $PKG/usr/bin/tamirci
 
