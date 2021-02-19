@@ -1,0 +1,26 @@
+[paket]
+tanim   = Eski katot ekranını taklit eden iyi görünümlü bir terminal emülatörü
+paketci = Cihan_Alkan
+grup  	= sistem
+url     = https://github.com/Swordfish90/cool-retro-term
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1 = https://github.com/Swordfish90/cool-retro-term/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+
+[sha256]
+#1 		= e5292496995ad42dabe843a0192cf2a2c502e7ffcc7479398232b10a472df77d
+
+[derle]
+betik = sed -i '/qmltermwidget/d' cool-retro-term.pro
+betik = qmake
+betik = make
+
+
+	      
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install
