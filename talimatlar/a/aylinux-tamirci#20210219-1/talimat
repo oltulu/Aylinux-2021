@@ -4,6 +4,10 @@ paketci = Cihan_Alkan
 grup    = sistem  
 url     = https://notabug.org/oltulu/Aylinux-Tamirci
 
+[gerek]
+derleme = 
+calisma = gtkdialog
+
 [kaynak]
 git     = https://notabug.org/oltulu/Aylinux-Tamirci
 
