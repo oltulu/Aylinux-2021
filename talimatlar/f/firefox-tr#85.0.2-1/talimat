@@ -11,7 +11,7 @@ calisma    = gtk2 dbus-glib
 [kaynak]
 1      = https://download-installer.cdn.mozilla.net/pub/firefox/releases/$surum/linux-x86_64/tr/firefox-$surum.tar.bz2
 dosya      = firefox.sh
-dosya      = firefox-tr.desktop
+dosya      = firefox.desktop
 [sha1]
 #1 		= SKIP
 
