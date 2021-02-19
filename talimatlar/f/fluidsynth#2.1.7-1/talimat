@@ -1,6 +1,6 @@
 [paket]
 tanim   = SoundFont2 tabanlı gerçek zamanlı yazılım sentezleyicisi
-paketci = Ciha_Alkan
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://www.fluidsynth.org
 
