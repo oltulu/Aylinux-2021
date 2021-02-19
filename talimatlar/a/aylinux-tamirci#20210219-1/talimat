@@ -6,7 +6,7 @@ url     = https://notabug.org/oltulu/Aylinux-Tamirci
 
 [gerek]
 derleme = 
-calisma = gtkdialog
+calisma = gtkdialog zenity
 
 [kaynak]
 git     = https://notabug.org/oltulu/Aylinux-Tamirci
