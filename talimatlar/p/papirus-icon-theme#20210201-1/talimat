@@ -12,7 +12,7 @@ calisma    =
 1          = $url/archive/$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1          = ab888d15a005f217f809b9393376d67acb0c7635464af84b28eb0fed27664e3c
+#1          = ab888d15a005f217f809b9393376d67acb0c7635464af84b28eb0fed27664e3c
 
 [derle]
 betik        = echo "derleme yok"
