@@ -13,7 +13,7 @@ cd $SRC/nss-$surum
   ln -s nss.pc "$PKG/usr/lib/pkgconfig/mozilla-nss.pc"
 
   install -Dt "$PKG/usr/lib" dist/Release/lib/*.so
-  
+  mkdir "$PKG/usr/bin
 install -m 0755 $SRC/nss-config.in $PKG/usr/bin/nss-config
 
 
