@@ -14,8 +14,8 @@ dosya   = nss.pc.in
 dosya   = nss-config.in
 
 [sha256]
-1	    = 112f05223d1fde902c170966bfc6f011b24a838be16969b110ecf2bb7bc24e8b
-2	    = f2208c4f70373ff9b60f53d733f8071d4e390c384b776dfc04bf26c306882faf
+#1	    = 112f05223d1fde902c170966bfc6f011b24a838be16969b110ecf2bb7bc24e8b
+#2	    = f2208c4f70373ff9b60f53d733f8071d4e390c384b776dfc04bf26c306882faf
 
 [derle]
 dosya   = derle.sh
