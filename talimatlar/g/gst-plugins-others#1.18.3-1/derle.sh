@@ -2,11 +2,12 @@ cd $SRC/gst-plugins-bad-$surum
  
 milis-meson build \
 -D directfb=disabled \
-    -D doc=disabled \
-    -D magicleap=disabled \
+-D doc=disabled \
+-D magicleap=disabled \
 -D flite=disabled \
 -D gsm=disabled \
 -D iqa=disabled \
+-D svthevcenc=disabled \
 -D msdk=disabled \
 -D nvdec=disabled \
 -D nvenc=disabled \
