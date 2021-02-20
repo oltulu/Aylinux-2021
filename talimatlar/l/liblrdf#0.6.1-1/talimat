@@ -6,7 +6,7 @@ url     = https://github.com/swh/LRDF
 
 [gerek]
 derleme    = ladspa raptor
-calisma    =
+calisma    = raptor
 
 [kaynak]
 1          = https://github.com/swh/LRDF/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
