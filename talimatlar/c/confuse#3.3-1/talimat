@@ -1,6 +1,6 @@
 [paket]
 tanim   = C için küçük yapılandırma dosyası ayrıştırıcı kitaplığı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://github.com/martinh/libconfuse/
 
@@ -9,7 +9,7 @@ derleme = glibc
 calisma =
 
 [kaynak]
-github  = martinh/libconfuse
+gz  = https://github.com/libconfuse/libconfuse/releases/download/v${surum}
 
 [sha256]
 #1       = 2cf7e032980aff8f488efba61510dc3fb95e9a4b9183f985dea457a5651b0e2c
