@@ -18,7 +18,15 @@ dosya   = nss-config.in
 #2	    = f2208c4f70373ff9b60f53d733f8071d4e390c384b776dfc04bf26c306882faf
 
 [derle]
-dosya   = derle.sh
+betik = cd $SRC/nss-$surum/nss
+betik = mkdir "$SRC/certs"
+betik = ln -srt "$SRC/certs" lib/ckfw/builtins/{certdata.txt,nssckbi.h}
+betik = cd $SRC/certs
+betik = ../certdata2pem.py
+betik = cd ..
+betik = ./bundle.sh
+betik = cd nss-$surum/nss
+betik = ./build.sh --target x64 --opt --system-sqlite --system-nspr --enable-libpkix --disable-tests
 
 [pakur]
 dosya   = pakur.sh
