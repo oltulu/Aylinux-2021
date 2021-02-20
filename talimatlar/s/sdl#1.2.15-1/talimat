@@ -19,8 +19,8 @@ calisma  =
 
 [derle]
 betik  = cd SDL-${surum}
-betik = patch -p1 -i $SRC/libsdl-1.2.x-libx11.patch
-betik = patch -p1 -i $SRC/libsdl-$surum-bs.patch
+betik = patch -p1 -i /sources/libsdl-1.2.x-libx11.patch
+betik = patch -p1 -i /sources/libsdl-$surum-bs.patch
 ekconf = --disable-nasm --enable-alsa --with-x --disable-rpath 
 tip    = gnu
 
