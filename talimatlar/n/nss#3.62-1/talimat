@@ -11,7 +11,7 @@ calisma = sqlite nspr
 [kaynak]
 gz		= https://ftp.mozilla.org/pub/security/nss/releases/NSS_${surum//./_}_RTM/src
 #dosya   = nss.pc.in
-#dosya   = nss-config.in
+dosya   = certdata2pem.py
 
 [sha256]
 #1	    = 112f05223d1fde902c170966bfc6f011b24a838be16969b110ecf2bb7bc24e8b
