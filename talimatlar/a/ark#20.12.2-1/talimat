@@ -1,7 +1,7 @@
 [paket]
 tanim   = KDE Arşivleme Aracı
 paketci = Cihan_Alkan
-grup    = kütüphane
+grup    = kde
 url     = https://kde.org/applications/utilities/ark
 
 [gerek]
