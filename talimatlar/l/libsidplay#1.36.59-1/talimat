@@ -1,0 +1,23 @@
+[paket]
+tanim   = SID muzik dosyalarını çalmak için kütüphane.
+paketci = Cihan_Alkan 
+grup    = kütüphane
+url     = https://gstreamer.freedesktop.org
+
+[gerek]
+derleme  = 
+calisma  = 
+ 
+[kaynak]
+1    = https://critical.ch/distfiles/${isim}-${surum}.tgz
+
+
+[sha256]
+#1  = 40bb3bafda25c0b739c8fc36e48380fccf61c4d3f83747e97ac3f9b0171b1319
+
+
+[derle]
+tip = gnu
+
+[pakur]
+tip = gnu
