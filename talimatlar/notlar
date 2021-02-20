@@ -7,3 +7,7 @@ betik = sed -i 's/^Name\[tr\]=Mousepad/Name\[tr\]=Metin Düzenleyici/' $PKG/usr/
 #limits.h hatasında kullanılacak
 betik      =  sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" libiberty/configure
 
+#docbook.xsl hatası olunca
+betik     = ./configure --prefix=/usr  --enable-man=no
+
+
