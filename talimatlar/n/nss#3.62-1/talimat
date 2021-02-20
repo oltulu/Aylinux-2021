@@ -22,12 +22,13 @@ betik = cd $SRC/nss-$surum/nss
 betik = mkdir "$SRC/certs"
 betik = ln -srt "$SRC/certs" lib/ckfw/builtins/{certdata.txt,nssckbi.h}
 betik = cd $SRC/certs
+betik = chmod +x ../certdata2pem.py
 betik = ../certdata2pem.py
 betik = cd ..
+betik = chmod +x ./bundle.sh
 betik = ./bundle.sh
 betik = cd nss-$surum/nss
 betik = ./build.sh --target x64 --opt --system-sqlite --system-nspr --enable-libpkix --disable-tests
 
 [pakur]
 dosya   = pakur.sh
-dosya   = derle.sh
