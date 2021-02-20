@@ -1,0 +1,9 @@
+#Grep ile klasör içindeki tüm dosyalarda metin arama
+grep -rnw dizin_adı/ -e 'aranan_kelime'
+
+#Talimat ile menüde görünen adı değiştirme
+betik = sed -i 's/^Name\[tr\]=Mousepad/Name\[tr\]=Metin Düzenleyici/' $PKG/usr/share/applications/$isim.desktop
+
+#limits.h hatasında kullanılacak
+betik      =  sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" libiberty/configure
+
