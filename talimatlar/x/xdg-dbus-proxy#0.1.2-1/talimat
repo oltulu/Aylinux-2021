@@ -15,7 +15,7 @@ xz         = ${url}/releases/download/${surum}
 1          = 1749d6f9f46dcc9edc87725641cf56cf91dcad1b01707891ea0850c1000c520f
 
 [derle]
-betik     = ./configure --prefix=/usr
+betik     = ./configure --prefix=/usr  --enable_man=no
 betik     = make
 
 [pakur]
