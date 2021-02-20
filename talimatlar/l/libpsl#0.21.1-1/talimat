@@ -20,7 +20,7 @@ calisma =
 
 [derle]
 betik   = cd $SRC
-betik   = meson setup build $name-$version --prefix=/usr -D runtime=libidn2 -D builtin=libidn2 -D psl_file=/usr/share/publicsuffix/effective_tld_names.dat -D psl_testfile=/usr/share/publicsuffix/test_psl.txt
+betik   = meson setup build $isim-$surum --prefix=/usr -D runtime=libidn2 -D builtin=libidn2 -D psl_file=/usr/share/publicsuffix/effective_tld_names.dat -D psl_testfile=/usr/share/publicsuffix/test_psl.txt
 #ama    = libpsl-0.21.0-build-fix.patch
 #betik   = export LC_CTYPE=C
 #betik   = rm -frv list;autoreconf -fiv
