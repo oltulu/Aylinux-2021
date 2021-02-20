@@ -1,0 +1,25 @@
+[paket]
+tanim   = Multimedya grafik çerçevesi - iyi eklentiler
+paketci = Cihan_Alkan
+grup 	= mate
+url     = https://gstreamer.freedesktop.org/
+
+[gerek]
+derleme = qt5-tools
+calisma = 
+
+[kaynak]
+xz     = https://gstreamer.freedesktop.org/src/$isim
+
+[sha256]
+    #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = cd $SRC
+betik     = milis-meson $isim-$surum build -D doc=disabled -D rpicamsrc=disabled -D gobject-cast-checks=disabled -D package-name="GStreamer Good Plugins (Aylinux)" -D package-origin="https://www.aylinux.org/"
+betik     = meson compile -C build
+
+    	      
+[pakur]
+betik     = cd $SRC
+betik     = DESTDIR="$PKG" meson install -C build
