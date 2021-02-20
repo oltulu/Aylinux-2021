@@ -1,0 +1,25 @@
+[paket]
+tanim   = Sesli Video Aktarım Protokolünün açık kaynaklı uygulaması
+paketci = Cihan_Alkan 
+grup    = kütüphane
+url     = https://gstreamer.freedesktop.org
+
+[gerek]
+derleme  = 
+calisma  = 
+ 
+[kaynak]
+1    = https://github.com/Avnu/${pkgname}/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
+
+
+[sha256]
+#1  = 40bb3bafda25c0b739c8fc36e48380fccf61c4d3f83747e97ac3f9b0171b1319
+
+
+[derle]
+betik = arch-meson --prefix=/usr build
+betik = ninja -C build
+
+
+[pakur]
+betik = DESTDIR="${PKG}" meson install -C build
