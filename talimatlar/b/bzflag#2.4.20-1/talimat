@@ -12,7 +12,7 @@ calisma    =
 bz2        = https://download.bzflag.org/bzflag/source/${surum}
 
 [sha256]
-1          = 9d0d512f3a09a207ab399a8dc4807224564cdc7a9346b702fec80d5b7918bfbe
+#1          = 9d0d512f3a09a207ab399a8dc4807224564cdc7a9346b702fec80d5b7918bfbe
 
 [derle]
 tip        = gnu
