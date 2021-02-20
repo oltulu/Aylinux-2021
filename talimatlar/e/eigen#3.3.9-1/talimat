@@ -1,6 +1,6 @@
 [paket]
 tanim   = Lineer cebir için C++ şablon kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://eigen.tuxfamily.org/
 
@@ -9,10 +9,10 @@ derleme = cmake
 calisma =
 
 [kaynak]
-1       = https://bitbucket.org/eigen/eigen/get/${surum}.tar.bz2::$isim-$surum.tar.gz
+gz       = https://gitlab.com/libeigen/eigen/-/archive/$surum
 
 [sha256]
-1       = 9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce
+#1       = 9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce
 
 [derle]
 betik   = cd eigen-eigen-*
