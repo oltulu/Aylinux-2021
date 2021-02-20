@@ -1,18 +1,18 @@
 [paket]
 tanim   = Kolay ekran görüntüsü alma yazılımı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = sistem
 url     = https://github.com/flameshot-org/flameshot
 
 [gerek]
 derleme = cmake qt5-tools qt5-svg desktop-file-utils
-calisma =
+calisma = qt5-svg
 
 [kaynak]
 github  = flameshot-org/flameshot
 
 [sha256]
-1       = f820c1f8cd464988cfcfc1af1fbcea2a3d0e5c4fb32accc3f54d93a8b5e1e890
+#1       = f820c1f8cd464988cfcfc1af1fbcea2a3d0e5c4fb32accc3f54d93a8b5e1e890
 
 [derle]
 tip     = cmake
