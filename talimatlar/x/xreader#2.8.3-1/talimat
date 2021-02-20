@@ -6,13 +6,13 @@ url     = https://github.com/linuxmint/xreader
 
 [gerek]
 derleme    = meson cmake mate-common xapps poppler-glib gobject-introspection mathjax2 djvulibre libsm libgnomekbd libgxps libsecret libspectre libxkbfile poppler-glib webkitgtk desktop-file-utils
-calisma    =
+calisma    = libgnomekbd djvulibre
 
 [kaynak]
 1          = https://github.com/linuxmint/xreader/archive/$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+#1          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
 
 [derle]
 ekconf     = --buildtype=plain -Dintrospection=true -Dthumbnailer=true -Dtests=false -Dmathjax-directory=/usr/share/mathjax2
