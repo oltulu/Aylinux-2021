@@ -15,8 +15,8 @@ github  = martinh/libconfuse
 #1       = 2cf7e032980aff8f488efba61510dc3fb95e9a4b9183f985dea457a5651b0e2c
 
 [derle]
-ekconf  = --enable-shared --enable-static
-tip     = gnu
+betik  = ./configure --prefix=/usr --enable-shared
+betik  = make
 
 [pakur]
 tip     = gnu
