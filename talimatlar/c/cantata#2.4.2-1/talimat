@@ -5,8 +5,8 @@ grup 	= medya
 url     = https://github.com/CDrummond/cantata
 
 [gerek]
-derleme = glib
-calisma = libpng pixman fontconfig xorg-xcb-util xorg-libxrender xorg-mesa xorg-glu xorg-libxxf86vm
+derleme = glib qt5-multimedia
+calisma = libpng pixman fontconfig xorg-xcb-util xorg-libxrender xorg-mesa xorg-glu xorg-libxxf86vm qt5-multimedia
 
 [kaynak]
 bz2      = https://github.com/CDrummond/cantata/releases/download/v$surum
