@@ -6,7 +6,7 @@ url     = https://github.com/linuxmint/cinnamon-control-center
 
 [gerek]
 derleme = polkit iso-codes networkmanager libnma colord libwacom cinnamon-settings-daemon gnome-online-accounts
-calisma = libnma gnome-online-accounts python-pam python-psutil
+calisma = libnma gnome-online-accounts python-pam python-psutil libxklavier networkmanager cinnamon-settings-daemon
 
 [kaynak]
 git     = https://github.com/linuxmint/cinnamon-control-center
