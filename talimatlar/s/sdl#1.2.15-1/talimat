@@ -9,43 +9,18 @@ derleme  = alsa-lib mesa pulseaudio glu libxext libxrender libx11 libxrandr
 calisma  =  
 
 [kaynak]
-1     = https://www.libsdl.org/release/SDL-$surum.tar.gz
-dosya = SDL-1.2.10-GrabNotViewable.patch
-dosya = SDL-1.2.15-SDL_EnableUNICODE_drops_keyboard_events.patch
-dosya = SDL-1.2.15-const_XData32.patch
-dosya = SDL-1.2.15-ignore_insane_joystick_axis.patch
-dosya = SDL-1.2.15-no-default-backing-store.patch
-dosya = SDL-1.2.15-x11-Bypass-SetGammaRamp-when-changing-gamma.patch
-dosya = sdl-1.2.14-fix-mouse-clicking.patch
-dosya = sdl-1.2.14-disable-mmx.patch
-dosya = libsdl-1.2.15-resizing.patch
-dosya = X11_KeyToUnicode.patch
+1 = https://www.libsdl.org/release/SDL-$surum.tar.gz
+2 = https://crux.nu/ports/crux-3.6/opt/libsdl/libsdl-1.2.15-bs.patch
+3= https://crux.nu/ports/crux-3.6/opt/libsdl/libsdl-1.2.x-libx11.patch
+
 
 [sha256]
-1  =  d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00
-2  =  ea2042b8a45a083b1447d5c56e52b23b79f2ddb0d717ec7b287b34ef71bd2d1a
-3  =  292046466d52a2ebe995a0121404864e4ee0de2b6024203acb95bbd600844da0
-4  =  bab60b515a74b71650ee71d5a0075c77046a7bad48b061673c3798dbdd35446d
-5  =  7586d6124d5452ad721ca6aa10eae09946d94854748e22f9c9c6fdca3d0aeb12
-6  =  3941c44a5580df95c6868936cfc57ba3e7b6952fb8a3eb14f963d54d9d8ca8a4
-7  =  d296af5bb0d9856d049b4e5adb9dd995d2a1e51d76a6adf63457e65101a50620
-8  =  8d178f13eb707e81f5f9d86bf7b609ae8f0bac937fb4a37ebcbf4bbc9b89e21b
-9  =  17bb880dd2cb4922d4e3771d146660b9da8be8f1629a5cdaae7523d4a9d2bd7c
-10  = 5160fb1c07b04480d98d45b89a0aa6e577f2ac4c3bace0c80b251e6aca1fb4a1
-11  = b1ad9c60829b166e6b647006d6549ea657155e755cf574fcfc4b91b658654769
+31  =  
 
 [derle]
 betik  = cd SDL-${surum}
-yama   = 2
-yama   = 3
-yama   = 4
-yama   = 5
-yama   = 6
-yama   = 7
-yama   = 8
-yama   = 9
-yama   = 10
-yama   = 11
+betik = patch -p1 -i $SRC/libsdl-1.2.x-libx11.patch
+betik = patch -p1 -i $SRC/libsdl-$surum-bs.patch
 ekconf = --disable-nasm --enable-alsa --with-x --disable-rpath 
 tip    = gnu
 
