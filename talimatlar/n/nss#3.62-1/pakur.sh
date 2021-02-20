@@ -25,6 +25,6 @@ install -m 0755 $SRC/nss-config.in $PKG/usr/bin/nss-config
   # Replace built-in trust with p11-kit connection
   ln -s pkcs11/p11-kit-trust.so "$PKG/usr/lib/p11-kit-trust.so"
   ln -sf p11-kit-trust.so "$PKG/usr/lib/libnssckbi.so"
-  
+  cd $SRC
   install -Dm644 ca-bundle.trust.p11-kit \
     "$PKG/usr/share/ca-certificates/trust-source/mozilla.trust.p11-kit"
