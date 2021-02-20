@@ -9,9 +9,9 @@ derleme  = yasm cmake meson gstreamer speex flac libraw1394 python libsoup twola
 calisma  = 
  
 [kaynak]
-1    = https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$surum.tar.xz
+#1    = https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$surum.tar.xz
 2    = https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-$surum.tar.xz
-3    = https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-$surum.tar.xz
+#3    = https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-$surum.tar.xz
 4    = https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-$surum.tar.xz
 5    = https://gstreamer.freedesktop.org/src/gst-python/gst-python-$surum.tar.xz
 6    = https://gstreamer.freedesktop.org/src/gstreamer-editing-services/gst-editing-services-$surum.tar.xz
