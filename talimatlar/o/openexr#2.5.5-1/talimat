@@ -1,6 +1,6 @@
 [paket]
 tanim   = Openexr dinamik resim formatlama kütüphanesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://www.openexr.com
 
