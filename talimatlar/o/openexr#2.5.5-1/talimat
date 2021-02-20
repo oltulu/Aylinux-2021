@@ -16,7 +16,7 @@ calisma =
 
 [derle]
 betik  = cd $SRC
-betik  = cmake -B build -S $isim-$surum -DCMAKE_INSTALL_PREFIX=/usr
+betik  = cmake -B build -S $isim-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib
 betik  = cmake --build build
 
 	      
