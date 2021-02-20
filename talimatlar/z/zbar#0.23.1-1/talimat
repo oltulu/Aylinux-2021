@@ -1,6 +1,6 @@
 [paket]
 tanim   = Çeşitli kaynaklardan barkod okumak için uygulama ve kütüphane
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://zbar.sourceforge.net
 
@@ -10,11 +10,13 @@ calisma    =
 
 [kaynak]
 1		   = https://github.com/mchehab/zbar/archive/$surum.tar.gz::$isim-$surum.tar.gz
+2 = https://github.com/mchehab/zbar/commit/89e7900d.patch::zbar-autoconf-2.70.patch
 
 [sha512]
-1		   = bc2667a2a5a5f2e9fd3f39e57bf1d7f860b20a0b5faffc38791d222a6ff0414aff880295ce5ccb92acce7250503f2a7f48ac12651cf82cfb1933b302da26e393
+#1		   = bc2667a2a5a5f2e9fd3f39e57bf1d7f860b20a0b5faffc38791d222a6ff0414aff880295ce5ccb92acce7250503f2a7f48ac12651cf82cfb1933b302da26e393
 
 [derle]
+betik		= patch -p1 -i /sources/zbar-autoconf-2.70.patch
 betik		= autoreconf -vfi
 ekconf	   = --without-gtk --without-qt --with-python=no --without-dbus --disable-doc
 tip        = gnu
