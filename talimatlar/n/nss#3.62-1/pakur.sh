@@ -14,20 +14,8 @@ cd $SRC/nss-$surum
 
   install -Dt "$PKG/usr/lib" dist/Release/lib/*.so
   
-  cd $SRC/nss-$surum
-local vmajor vminor vpatch
-  { read vmajor; read vminor; read vpatch; } \
-    < <(awk '/#define.*NSS_V(MAJOR|MINOR|PATCH)/ {print $3}' nss/lib/nss/nss.h)
+install -m 0755 $SRC/nss-config.in $PKG/usr/bin/nss-config
 
-  sed nss/pkg/pkg-config/nss-config.in \
-    -e "s,@libdir@,/usr/lib,g" \
-    -e "s,@prefix@,/usr/bin,g" \
-    -e "s,@exec_prefix@,/usr/bin,g" \
-    -e "s,@includedir@,/usr/include/nss,g" \
-    -e "s,@MOD_MAJOR_VERSION@,$vmajor,g" \
-    -e "s,@MOD_MINOR_VERSION@,$vminor,g" \
-    -e "s,@MOD_PATCH_VERSION@,$vpatch,g" |
-    install -D /dev/stdin "$PKG/usr/bin/nss-config"
 
   install -Dt "$PKG/usr/bin" \
     dist/Release/bin/{*util,shlibsign,signtool,signver,ssltap}
