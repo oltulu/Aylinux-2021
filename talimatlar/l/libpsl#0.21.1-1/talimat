@@ -9,7 +9,7 @@ derleme = libidn2 python libunistring
 calisma = 
 
 [kaynak]
-1= https://github.com/rockdaboot/$name/releases/download/$surum/$isim-$surum.tar.lz
+1= https://github.com/rockdaboot/$isim/releases/download/$surum/$isim-$surum.tar.lz
 #gz      = https://github.com/rockdaboot/libpsl/releases/download/${surum}
 #2       = https://github.com/rockdaboot/libpsl/commit/9347024221f4a9d63f9dcafcda13362a7c8d92fe.patch::libpsl-0.21.0-build-fix.patch
 #3       = https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat::$isim-$surum-$devir-public_suffix_list.dat
