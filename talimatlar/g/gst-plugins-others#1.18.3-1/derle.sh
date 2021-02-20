@@ -33,7 +33,8 @@ milis-meson build \
 ninja -C build
 
 cd $SRC/gst-libav-$surum
-milis-meson build
+milis-meson build \
+-D doc=disabled
 ninja -C build
 
 cd $SRC/gst-python-$surum
