@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://nuspell.github.io/
 
 [gerek]
-derleme = 
+derleme = cmake
 calisma = 
 
 [kaynak]
