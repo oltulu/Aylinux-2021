@@ -20,4 +20,6 @@ git   = https://github.com/google/shaderc
 dosya = derle.sh
 
 [pakur]
-tip = gnu
+betik = cd "$SRC"/build
+betik = install -d "$PKG"/usr/bin
+betik = install -m755 glslc/glslc "$PKG"/usr/bin/
