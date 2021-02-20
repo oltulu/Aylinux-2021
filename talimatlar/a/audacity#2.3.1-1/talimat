@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/${isim}/${isim}/archive/Audacity-${surum}.tar.gz
 
 [sha256]
-1       = 404e6c49693dedc94212fc5525974058d848536025e19da31359ae02babe8bd7
+#1       = 404e6c49693dedc94212fc5525974058d848536025e19da31359ae02babe8bd7
 
 [derle]
 dosya   = derle.sh
