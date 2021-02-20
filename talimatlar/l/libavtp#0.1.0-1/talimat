@@ -17,7 +17,7 @@ calisma  =
 
 
 [derle]
-betik = arch-meson --prefix=/usr build
+betik = milis-meson --prefix=/usr build
 betik = ninja -C build
 
 
