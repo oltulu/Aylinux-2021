@@ -9,7 +9,7 @@ derleme  =
 calisma  = 
  
 [kaynak]
-1    = https://github.com/Avnu/${pkgname}/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
+1    = https://github.com/Avnu/${isim}/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
 
 
 [sha256]
