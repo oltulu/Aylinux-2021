@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://gstreamer.freedesktop.org
 
 [gerek]
-derleme  = cmake ninja python
+derleme  = cmake ninja python glslang
 calisma  = 
  
 [kaynak]
