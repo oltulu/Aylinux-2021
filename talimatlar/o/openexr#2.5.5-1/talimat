@@ -15,11 +15,11 @@ calisma =
 #1 		= fd6cb3a87f8c1a233be17b94c74799e6241d50fc5efd4df75c7a4b9cf4e25ea6
 
 [derle]
-betik  = $SRC
+betik  = cd $SRC
 betik  = cmake -B build -S $isim-$surum -DCMAKE_INSTALL_PREFIX=/usr
 betik  = cmake --build build
 
 	      
 [pakur]
-betik  = $SRC
+betik  = cd $SRC
 betik  = DESTDIR="${PKG}" cmake --install build
