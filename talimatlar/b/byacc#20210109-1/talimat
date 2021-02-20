@@ -8,7 +8,7 @@ url     = http://invisible-island.net/byacc/
 1          = ftp://ftp.invisible-island.net/${isim}/${isim}-${surum}.tgz
 
 [sha256]
-1          = f87868167b920bf2cb30fc32b62f63ae15671181ef329226d1063100be02518d
+#1          = f87868167b920bf2cb30fc32b62f63ae15671181ef329226d1063100be02518d
 
 [derle]
 ekconf     = --program-transform=s,^,b,
