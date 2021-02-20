@@ -6,7 +6,7 @@ url     = http://gnome.org
 
 [gerek]
 derleme = intltool glib libxml2 gtk3 libxklavier desktop-file-utils
-calisma =
+calisma = libxklavier
 
 [kaynak]
 xz      = ${GNOME_SITE}/${isim}/${surum%.*}
