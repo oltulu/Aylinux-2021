@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/caribou
 
 [gerek]
 derleme = gobject-introspection gnome-common at-spi2-atk clutter gtk3 gtk2 python-gobject libxklavier libxslt libgee
-calisma = glib libgee
+calisma = glib libgee libxklavier
 
 [kaynak]
 xz     = https://download.gnome.org/sources/caribou/0.4
