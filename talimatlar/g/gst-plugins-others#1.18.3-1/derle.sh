@@ -15,7 +15,9 @@ milis-meson build \
 -D openmpt=disabled \
 -D openni2=disabled \
 -D opensles=disabled \
+-D microdns=disabled \
 -D sctp=disabled \
+-D zxing=disabled \
 -D tinyalsa=disabled \
 -D voaacenc=disabled \
 -D voamrwbenc=disabled \
