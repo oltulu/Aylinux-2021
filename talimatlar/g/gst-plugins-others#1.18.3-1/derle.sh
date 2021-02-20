@@ -1,16 +1,3 @@
-cd $SRC/gst-plugins-good-$surum
-milis-meson build \
--Dptp-helper-permissions=capabilities \
--Dpackage-origin=https://www.milislinux.org \
--Ddbghelp=disabled \
--Dgobject-cast-checks=disabled \
--Dglib-asserts=disabled \
--Dglib-checks=disabled \
--Dgtk_doc=disabled \
--Dqt5=disabled \
--Dexamples=disabled
-ninja -C build
-
 cd $SRC/gst-plugins-bad-$surum
 milis-meson build \
 -D directfb=disabled \
@@ -38,13 +25,6 @@ milis-meson build \
 -D gtk_doc=disabled \
 -D musepack=disabled \
 -D package-origin="https://www.milislinux.org"
-ninja -C build
-
-cd $SRC/gst-plugins-ugly-$surum
-milis-meson build \
--Damrnb=disabled \
--Damrwbdec=disabled \
--Dsidplay=disabled
 ninja -C build
 
 cd $SRC/gst-libav-$surum
