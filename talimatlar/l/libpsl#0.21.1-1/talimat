@@ -21,8 +21,8 @@ gz      = https://github.com/rockdaboot/libpsl/releases/download/${surum}
 yama    = libpsl-0.21.0-build-fix.patch
 betik   = rm -frv list;autoreconf -fiv
 betik   = export LC_CTYPE=en_US.UTF-8
-ekconf  = --disable-static --disable-dependency-tracking --enable-builtin=libidn2 --enable-runtime=libidn2 --with-psl-file=$SRC/$isim-$surum-$devir-public_suffix_list.dat
-tip     = gnu
+betik  = ./configure --prefix=/usr --disable-static --disable-dependency-tracking --enable-{builtin,runtime}=libidn2 --with-psl-file=/usr/share/publicsuffix/effective_tld_names.dat --with-psl-testfile=/usr/share/publicsuffix/test_psl.txt
+betik  = LC_CTYPE=en_US.UTF-8 make
 	      
 [pakur]
 tip     = gnu
