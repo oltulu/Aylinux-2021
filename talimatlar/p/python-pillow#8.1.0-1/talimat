@@ -6,7 +6,7 @@ url     = https://python-pillow.org
 
 [gerek]
 derleme    = python libjpeg-turbo openjpeg2 zlib tiff freetype lcms2 libwebp tcl libimagequant libraqm
-calisma    =
+calisma    = openjpeg2 libimagequant
 
 [kaynak]
 1          = https://github.com/python-pillow/Pillow/archive/$surum.tar.gz::$isim-$surum.tar.gz
