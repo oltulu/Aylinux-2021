@@ -10,7 +10,7 @@ calisma  =
  
 [kaynak]
 1    = https://critical.ch/distfiles/${isim}-${surum}.tgz
-2= https://github.com/archlinux/svntogit-packages/raw/packages/libsidplay/trunk/g%2B%2B-6_build.patch
+2= https://github.com/archlinux/svntogit-packages/raw/packages/libsidplay/trunk/g++-6_build.patch
 3= https://github.com/archlinux/svntogit-packages/raw/packages/libsidplay/trunk/libsidplay-1.36.59-gcc43.patch
 
 
