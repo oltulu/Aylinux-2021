@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://gstreamer.freedesktop.org/
 
 [gerek]
-derleme = qt5-tools
+derleme = qt5-tools opencore-amr libsidplay
 calisma = 
 
 [kaynak]
