@@ -1,6 +1,9 @@
 cd $SRC/gst-plugins-bad-$surum
+ 
 milis-meson build \
 -D directfb=disabled \
+    -D doc=disabled \
+    -D magicleap=disabled \
 -D flite=disabled \
 -D gsm=disabled \
 -D iqa=disabled \
@@ -16,6 +19,7 @@ milis-meson build \
 -D tinyalsa=disabled \
 -D voaacenc=disabled \
 -D voamrwbenc=disabled \
+-D wasapi2=disabled \
 -D wasapi=disabled \
 -D wpe=disabled \
 -D gobject-cast-checks=disabled \
