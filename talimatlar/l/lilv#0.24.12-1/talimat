@@ -6,7 +6,7 @@ url     = http://drobilla.net/software/lilv
 
 [gerek]
 derleme    = python jack libsndfile serd sord lv2 sratom
-calisma    = 
+calisma    = serd sord sratom
 
 [kaynak]
 bz2        = http://download.drobilla.net
