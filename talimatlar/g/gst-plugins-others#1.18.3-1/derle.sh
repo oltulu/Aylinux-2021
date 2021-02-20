@@ -24,7 +24,7 @@ milis-meson build \
 -D kate=disabled \
 -D gtk_doc=disabled \
 -D musepack=disabled \
--D package-origin="https://www.milislinux.org"
+-D package-origin="https://www.aylinux.org"
 ninja -C build
 
 cd $SRC/gst-libav-$surum
