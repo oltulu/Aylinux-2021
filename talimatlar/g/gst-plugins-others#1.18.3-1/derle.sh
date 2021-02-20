@@ -21,6 +21,7 @@ milis-meson build \
 -D voamrwbenc=disabled \
 -D wasapi2=disabled \
 -D wasapi=disabled \
+-D vulkan=disabled \
 -D wpe=disabled \
 -D gobject-cast-checks=disabled \
 -D glib-asserts=disabled \
