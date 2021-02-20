@@ -30,3 +30,4 @@ betik = ./build.sh --target x64 --opt --system-sqlite --system-nspr --enable-lib
 
 [pakur]
 dosya   = pakur.sh
+dosya   = derle.sh
