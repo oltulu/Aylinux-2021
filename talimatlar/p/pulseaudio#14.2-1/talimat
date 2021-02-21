@@ -33,5 +33,12 @@ betik     =  cd "$PKG"
 betik     =  sed -e '/autospawn/iautospawn = no' -i etc/pulse/client.conf
 betik     =  sed -e 's|/usr/bin/pactl load-module module-x11-cork-request|#&|' -i usr/bin/start-pulseaudio-x11
 betik     =  sed -e '/Load several protocols/aload-module module-dbus-protocol' -i etc/pulse/default.pa
+betik     =  rm -fv $PKG/etc/dbus-1/system.d/pulseaudio-system.conf
 #betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
 #betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
+betik     =  rm $PKG/usr/lib/libpulse-mainloop-glib.la
+betik     =  rm $PKG/usr/lib/libpulse-simple.la
+betik     =  rm $PKG/usr/lib/libpulse.la
+betik     =  rm $PKG/usr/lib/pulseaudio/libpulsecommon-$surum.la
+betik     =  rm $PKG/usr/lib/pulseaudio/libpulsecore-$surum.la
+betik     =  rm $PKG/usr/lib/pulseaudio/libpulsedsp.la
