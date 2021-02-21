@@ -6,7 +6,7 @@ url     = https://github.com/linuxmint/xapp
 
 [gerek]
 derleme = meson xtrans python-gobject libdbusmenu-glib libgnomekbd vala
-calisma = libgnomekbd
+calisma = libgnomekbd libdbusmenu-gtk3 libdbusmenu-glib
 
 [kaynak]
 1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
