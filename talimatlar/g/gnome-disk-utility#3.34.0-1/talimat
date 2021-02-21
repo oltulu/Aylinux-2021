@@ -18,8 +18,8 @@ xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-disk-utility/${surum%.*}
 
 [derle]
 betik = cd $SRC
-betik = meson $isim-$surum --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=false -D logind=none -D gsd_plugin=false build
-betik = meson compile -C build
+betik = meson $isim-$surum --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=false -D logind=none -D gsd_plugin=false
+#betik = meson compile -C build
 
         	      
 [pakur]
