@@ -4,7 +4,6 @@
 cd $SRC/gst-plugins-bad-$surum
 DESTDIR=$PKG meson install -C build
 
-cd $SRC
 mkdir -p ext/lib/gstreamer-1.0
   for _x in aom assrender bs2b bz2 chromaprint closedcaption colormanagement \
             curl dc1394 de265 dtls dtsdec faac faad fdkaac fluidsynthmidi gme \
