@@ -6,7 +6,7 @@ url     = https://xcb.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros xorg-xcb-proto
-calisma = xorg-xproto xorg-libxext xorg-xcb-proto xorg-libxau
+calisma = xorg-proto xorg-libxext xorg-xcb-proto xorg-libxau
 
 [kaynak]
 1      = $url/dist/libxcb-$surum.tar.bz2
