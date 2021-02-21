@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/libhandy
 
 [gerek]
-derleme = glade meson vapigen gobject-introspection vala
+derleme = glade meson gobject-introspection vala
 calisma = 
 
 [kaynak]
