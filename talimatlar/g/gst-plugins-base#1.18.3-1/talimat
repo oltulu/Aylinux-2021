@@ -22,5 +22,5 @@ betik      = meson compile -C build
 [pakur]
 betik  = cd $SRC 
 betik      = DESTDIR=$PKG meson install -C build
-betik = pakur.sh
+dosya = pakur.sh
 
