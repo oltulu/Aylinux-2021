@@ -9,14 +9,16 @@ derleme = cmake qt5-tools qt5-svg desktop-file-utils
 calisma = qt5-svg
 
 [kaynak]
-github  = flameshot-org/flameshot
+git  = https://github.com/flameshot-org/flameshot
 
 [sha256]
 #1       = f820c1f8cd464988cfcfc1af1fbcea2a3d0e5c4fb32accc3f54d93a8b5e1e890
 
 [derle]
+betik   = cd $isim
 tip     = cmake
 
 [pakur]
+betik   = cd $isim
 tip     = cmake
 betik   = rm -rf ${pkgdir}/usr/share/zsh
