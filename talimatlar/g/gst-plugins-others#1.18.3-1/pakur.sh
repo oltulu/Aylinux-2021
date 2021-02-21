@@ -16,16 +16,6 @@ mkdir -p ext/lib/gstreamer-1.0
     mv "$PKG/usr/$_x" "ext/$_x"
   done
 
-  mkdir -p opencv/{lib,include/gstreamer-1.0/gst}
-  mv -t opencv/lib "$pkgdir"/usr/lib/*opencv*
-  mv -t opencv/include/gstreamer-1.0/gst \
-    "$PKG"/usr/include/gstreamer-1.0/gst/opencv
-
-  for _x in opencv wpe; do
-    mkdir -p "$_x/lib/gstreamer-1.0"
-    _f="lib/gstreamer-1.0/libgst${_x}.so"
-    mv "$PKG/usr/$_f" "$_x/$_f"
-  done
 
 #cd $SRC/gst-plugins-ugly-$surum
 #DESTDIR=$PKG meson install -C build
