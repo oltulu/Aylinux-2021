@@ -9,7 +9,7 @@ derleme = cmake
 calisma = 
 
 [kaynak]
-gz        = https://github.com/Reference-LAPACK/lapack/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+1    = https://github.com/Reference-LAPACK/lapack/archive/v$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 #1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
