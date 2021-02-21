@@ -5,8 +5,8 @@ grup 	= kütüphane
 url     = http://xorg.freedesktop.org
 
 [gerek]
-derleme = xorg-xproto xorg-util-macros xorg-libxext
-calisma = xorg-xproto xorg-libxext
+derleme = xorg-proto xorg-util-macros xorg-libxext
+calisma = xorg-proto xorg-libxext
 
 [kaynak]
 1      = $url/releases/individual/lib/libXScrnSaver-$surum.tar.bz2
