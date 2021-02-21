@@ -6,7 +6,7 @@ url     = https://github.com/CanonicalLtd/lightdm
 
 [gerek]
 derleme    = itstool libgcrypt gobject-introspection dbus-glib libxklavier libxml2 gtk3 libxcb libxdmcp vala dbus
-calisma    = libxklavier qt5-base
+calisma    = libxklavier qt5-base libgcrypt
 
 [kaynak]
 1          = https://github.com/CanonicalLtd/lightdm/releases/download/${surum}/lightdm-${surum}.tar.xz
