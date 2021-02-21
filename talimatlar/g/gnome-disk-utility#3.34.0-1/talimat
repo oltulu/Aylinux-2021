@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/gnome-disk-utility
 
 [gerek]
 derleme = libpwquality libhandy libdvdread libnotify libsecret udisks libxslt meson
-calisma = libdvdread udisks
+calisma = libdvdread udisks libpwquality libnotify libsecret libxslt
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-disk-utility/${surum%.*}
