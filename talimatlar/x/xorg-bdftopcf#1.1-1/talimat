@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://xorg.freedesktop.org
 
 [gerek]
-derleme = xorg-util-macros xorg-xproto
+derleme = xorg-util-macros xorg-proto
 calisma = 
 
 [kaynak]
