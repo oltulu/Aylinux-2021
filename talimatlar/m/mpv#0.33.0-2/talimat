@@ -11,13 +11,14 @@ calisma =
 [kaynak]
 git = https://github.com/mpv-player/mpv
 #1      = https://github.com/mpv-player/mpv/archive/v${surum}.tar.gz
-#2      = https://waf.io/waf-2.0.9
+#2      = git cherry-pick -n 7c4465cefb27d4e0d07535d368febdf77b579566
 
 [sha256]
 
 
 [derle]
 betik = cd mpv
+git cherry-pick -n 7c4465cefb27d4e0d07535d368febdf77b579566
 #betik 	= install -m755 /sources/waf-2.0.9 waf
 betik 	= waf configure --prefix=/usr --confdir=/etc/mpv --enable-cdda --enable-libarchive --enable-dvb --enable-dvdnav --enable-libmpv-shared --disable-build-date
 betik 	= waf build
