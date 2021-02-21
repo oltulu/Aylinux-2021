@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros xorg-libxrender
-calisma = xorg-libx11 xorg-xproto
+calisma = xorg-libx11 xorg-proto
 
 [kaynak]
 1      = $url/releases/individual/lib/libXcursor-$surum.tar.bz2
