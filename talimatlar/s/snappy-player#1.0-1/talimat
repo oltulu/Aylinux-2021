@@ -5,7 +5,7 @@ grup    = medya
 url     = https://google.github.io/snappy
 
 [gerek]
-derleme    = cmake clang
+derleme    = clutter
 calisma    =
 
 [kaynak]
