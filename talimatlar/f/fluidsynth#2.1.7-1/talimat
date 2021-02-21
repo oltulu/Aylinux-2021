@@ -6,7 +6,7 @@ url     = http://www.fluidsynth.org
 
 [gerek]
 derleme    = cmake glib jack libsndfile pulseaudio portaudio
-calisma    =
+calisma    = portaudio
 
 [kaynak]
 gz         = https://github.com/FluidSynth/fluidsynth/archive/v${surum}
