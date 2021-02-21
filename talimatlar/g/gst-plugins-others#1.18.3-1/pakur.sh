@@ -10,7 +10,7 @@ mkdir -p ext/lib/gstreamer-1.0
             hls ladspa lv2 mms modplug mpeg2enc mplex \
             neonhttpsrc ofa openal openexr openjpeg opusparse resindvd rsvg \
             rtmp sbc smoothstreaming sndfile soundtouch spandsp srt srtp \
-            teletext ttmlsubs vulkan waylandsink webp webrtc webrtcdsp \
+            teletext ttmlsubs waylandsink webp webrtc webrtcdsp \
             wildmidi x265 zbar va svthevcenc avtp zxing microdns; do
     _x="lib/gstreamer-1.0/libgst${_x}.so"
     mv "$PKG/usr/$_x" "ext/$_x"
