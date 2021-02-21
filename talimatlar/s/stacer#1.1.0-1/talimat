@@ -5,8 +5,8 @@ grup 	= sistem
 url     = https://github.com/oguzhaninan/Stacer
 
 [gerek]
-derleme = 
-calisma = 
+derleme = ccache qt5-tools
+calisma = qt5-charts qt5-svg hicolor-icon-theme
 
 [kaynak]
 1      = https://github.com/oguzhaninan/Stacer/archive/v${surum}.tar.gz::$isim-${surum}.tar.gz
