@@ -6,7 +6,7 @@ url     = https://www.gnutls.org/
 
 [gerek]
 derleme = libtasn1 nettle p11-kit libidn2 libunistring 
-calisma = 
+calisma = nettle
 
 [kaynak]
 xz      = https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7
