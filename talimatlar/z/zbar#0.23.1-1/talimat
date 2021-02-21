@@ -6,7 +6,7 @@ url     = http://zbar.sourceforge.net
 
 [gerek]
 derleme    = imagemagick v4l-utils xmlto libxv libsm
-calisma    =
+calisma    = imagemagick
 
 [kaynak]
 1		   = https://github.com/mchehab/zbar/archive/$surum.tar.gz::$isim-$surum.tar.gz
