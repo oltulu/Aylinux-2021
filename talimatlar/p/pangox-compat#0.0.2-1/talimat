@@ -1,6 +1,6 @@
 [paket]
 tanim   = Metnin düzenlenmesi ve oluşturulması için kütüphane
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://www.pango.org/
 
@@ -10,11 +10,14 @@ calisma    =
 
 [kaynak]
 xz         = ${GNOME_SITE}/${isim}/0.0
+1 = https://aur.archlinux.org/cgit/aur.git/plain/0002-disable-shaper.patch?h=pangox-compat
 
 [sha256]
 1          = 552092b3b6c23f47f4beee05495d0f9a153781f62a1c4b7ec53857a37dfce046
 
 [derle]
+betik = 
+betik = patch -Nup1 -i '/sources/0002-disable-shaper.patch?h=pangox-compat'
 tip        = gnu
 
 [pakur]
