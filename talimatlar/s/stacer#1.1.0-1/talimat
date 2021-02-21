@@ -28,7 +28,6 @@ betik = mkdir -p "${PKG}"/usr/lib/stacer
 betik = install -Dm755 stacer/stacer "${PKG}"/usr/lib/stacer/stacer
 betik = mkdir -p "${PKG}"/usr/bin
 betik = ln -s /usr/lib/stacer/stacer "${PKG}"/usr/bin/stacer
-betik = install -Dm644 ../LICENSE "{$PKG}"/usr/share/licenses/stacer/LICENSE
 betik = install -Dm755 stacer-core/libstacer-core.so.1.0.0 "${PKG}"/usr/lib/
 betik = ln -s './libstacer-core.so.1.0.0' "${PKG}"/usr/lib/libstacer-core.so.1.0
 betik = ln -s './libstacer-core.so.1.0.0' "${PKG}"/usr/lib/libstacer-core.so.1
