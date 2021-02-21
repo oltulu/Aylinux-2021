@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = http://xorg.freedesktop.org
 
 [gerek]
-derleme = freetype2 xorg-libfontenc xorg-xproto fontsproto xorg-util-macros xorg-xtrans
+derleme = freetype2 xorg-libfontenc xorg-proto fontsproto xorg-util-macros xorg-xtrans
 calisma = 
 
 [kaynak]
