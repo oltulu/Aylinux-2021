@@ -1,0 +1,34 @@
+[paket]
+tanim   = Minimalist bir arayüze sahip güçlü medya oynatıcı
+paketci = Cihan_Alkan
+grup    = medya
+url     = https://google.github.io/snappy
+
+[gerek]
+derleme    = cmake clang
+calisma    =
+
+[kaynak]
+1          = https://download.gnome.org/sources/snappy/$surum/snappy-$surum.tar.xz
+2 = https://github.com/archlinux/svntogit-community/raw/packages/snappy-player/trunk/0001-Set-windowing-backend-to-X11.patch
+3 = https://github.com/archlinux/svntogit-community/raw/packages/snappy-player/trunk/clutter-gst3.patch
+4 = https://github.com/archlinux/svntogit-community/raw/packages/snappy-player/trunk/snappy.appdata.xml
+
+[sha256]
+#1          = 3dfa02e873ff51a11ee02b9ca391807f0c8ea0529a4924afa645fbf97163f9d4
+
+[derle]
+betik      = cd snappy-$surum
+  # Fix compatibility with Clutter 1.22
+betik      = patch -Np1 -i /sources/0001-Set-windowing-backend-to-X11.patch
+
+  # Port to clutter-gst 3.0
+betik    = patch -Np1 -i /sources/clutter-gst3.patch
+betik    = autoreconf -fi
+tip      = gnu
+
+
+[pakur]
+betik      = cd snappy-$surum
+betik      = install -Dm644 ../snappy.appdata.xml "$PKG/usr/share/metainfo/snappy.appdata.xml"
+tip      = gnu
