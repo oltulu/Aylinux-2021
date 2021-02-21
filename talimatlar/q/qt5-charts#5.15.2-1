@@ -1,0 +1,23 @@
+[paket]
+tanim   = Kullanımı kolay bir dizi grafik bileşeni sağlar
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://www.qt.io
+
+[gerek]
+derleme = qt5-base qt5-declarative
+calisma = qt5-declarative
+
+[kaynak]
+1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qtdeclarative-everywhere-src-$surum.tar.xz
+
+[sha256]
+#1 		= 7e30f0ccba61f9d71720b91d7f7523c23677f23cd96065cb71df1b0df329d768
+
+[derle]
+betik   = mkdir -p build;cd build;qmake ../qtdeclarative-everywhere-src-$surum && make
+
+[pakur]
+betik   = cd build
+betik   = make INSTALL_ROOT=$PKG install
+betik   = find $PKG/usr/lib -type f -name '*.prl' -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;
