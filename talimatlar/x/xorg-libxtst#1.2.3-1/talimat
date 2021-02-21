@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros
-calisma = xorg-xproto xorg-libxext xorg-libfixes xorg-libxi
+calisma = xorg-proto xorg-libxext xorg-libfixes xorg-libxi
 
 [kaynak]
 1      = $url/releases/individual/lib/libXtst-$surum.tar.bz2
