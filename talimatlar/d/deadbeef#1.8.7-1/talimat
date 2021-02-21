@@ -5,8 +5,8 @@ grup 	= deepin
 url     = http://deadbeef.sourceforge.net
 
 [gerek]
-derleme  = 
-calisma  = alsa-lib hicolor-icon-theme desktop-file-utils jansson libvorbis faad2
+derleme  = ffmpeg
+calisma  = alsa-lib hicolor-icon-theme desktop-file-utils jansson libvorbis faad2 ffmpeg
 
 
 [kaynak]
