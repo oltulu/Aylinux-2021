@@ -9,7 +9,7 @@ mkdir -p ext/lib/gstreamer-1.0
             curl dc1394 de265 dtls dtsdec faac faad fdkaac fluidsynthmidi gme \
             hls ladspa lv2 mms modplug mpeg2enc mplex \
             neonhttpsrc ofa openal openexr openjpeg opusparse resindvd rsvg \
-            rtmp sbc sctp smoothstreaming sndfile soundtouch spandsp srt srtp \
+            rtmp sbc smoothstreaming sndfile soundtouch spandsp srt srtp \
             teletext ttmlsubs vulkan waylandsink webp webrtc webrtcdsp \
             wildmidi x265 zbar va svthevcenc avtp zxing microdns; do
     _x="lib/gstreamer-1.0/libgst${_x}.so"
