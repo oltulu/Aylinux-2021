@@ -9,10 +9,10 @@ derleme = cmake
 calisma = 
 
 [kaynak]
-gz        = http://www.netlib.org/lapack
+gz        = https://github.com/Reference-LAPACK/lapack/archive/v$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
+#1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
 
 [derle]
 ekconf     = -DBUILD_SHARED_LIBS=ON -DCMAKE_SKIP_RPATH=ON -DBUILD_TESTING=OFF -DCMAKE_VERBOSE_MAKEFILE=ON -DCBLAS=ON -DLAPACKE=ON -DBUILD_DEPRECATED=ON
