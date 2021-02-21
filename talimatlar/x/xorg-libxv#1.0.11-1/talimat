@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = 
-calisma = xorg-libxext xorg-xproto
+calisma = xorg-libxext xorg-proto
 
 [kaynak]
 1      = $url/releases/individual/lib/libXv-$surum.tar.bz2
