@@ -33,3 +33,14 @@ Root Şifresi: toor
 
 6- Yerli yazılımlar depoya alınacak
 
+# Başlıca Komutlar
+
+paket kur paket_adı  (depodaki paketi kurar)
+
+paket sil paket_adı  (kurulu paketi siler)
+
+paket kur paket_adı-sürüm.kur  (yereldeki paketi kurar)
+
+
+
+
