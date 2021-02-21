@@ -6,7 +6,7 @@ url     = https://gstreamer.freedesktop.org
 
 [gerek]
 derleme  = yasm cmake meson gstreamer speex flac libraw1394 python libsoup twolame pulseaudio jack gst-plugins-base libavtp wavpack aalib taglib libdv libshout libvpx gdk-pixbuf libcaca libavc1394 libiec61883 libxdamage v4l-utils libgudev gtk3 gobject-introspection librsvg fluidsynth lilv lv2 mjpegtools chromaprint libssh2 libmms faad2 celt libdca libmodplug libgme wayland openjpeg2 libwebp gnutls sbc libexif libdvdread libvdpau libmpeg2 ladspa libusb fdk-aac faac   neon webrtc-audio-processing libdc1394 libmpcdec openexr libbs2b libnice lcms2 bluez glu aom x265 liblrdf libde265 libofa openal libdvdnav soundtouch spandsp zvbi srt zbar libsrtp wildmidi rtmpdump vulkan-loader vulkan-headers python-gobject a52dec libcdio libmad x264 mpg123 orc
-calisma  = 
+calisma  = a52dec libcdio libmad x264 mpg123 flac libraw1394 libavtp wavpack aalib libvpx libdv libcaca libavc1394 libiec61883
  
 [kaynak]
 #1    = https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$surum.tar.xz
