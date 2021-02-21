@@ -20,7 +20,7 @@ xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-disk-utility/${surum%.*}
 #betik = cd gnome-disk-utility
 betik = mkdir build
 betik = cd build
-betik = meson --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=none -D logind=none -D gsd_plugin=false
+betik = meson --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=false -D logind=none -D gsd_plugin=false
 betik = ninja
 
         	      
