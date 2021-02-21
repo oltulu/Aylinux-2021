@@ -9,7 +9,7 @@ derleme  =
 calisma  =  
 
 [kaynak]
-xz = https://ftp.acc.umu.se/pub/GNOME/sources/clutter-gst/3.0
+xz = https://gitlab.gnome.org/GNOME/clutter-gst
 
 [sha256]
 #1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
