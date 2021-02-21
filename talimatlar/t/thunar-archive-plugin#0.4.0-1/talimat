@@ -6,7 +6,7 @@ url     = https://goodies.xfce.org/projects/thunar-plugins/thunar-archive-plugin
 
 [gerek]
 derleme = thunar exo intltool xfce4-dev-tools
-calisma = xarchiver
+calisma = 
 
 [kaynak]
 bz2     = https://archive.xfce.org/src/thunar-plugins/${isim}/${surum%.*}
