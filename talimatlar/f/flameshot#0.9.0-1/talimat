@@ -6,7 +6,7 @@ url     = https://github.com/flameshot-org/flameshot
 
 [gerek]
 derleme = cmake qt5-tools qt5-svg desktop-file-utils
-calisma = qt5-svg
+calisma = qt5-svg desktop-file-utils
 
 [kaynak]
 git  = https://github.com/flameshot-org/flameshot
