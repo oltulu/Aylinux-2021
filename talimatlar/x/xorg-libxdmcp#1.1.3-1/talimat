@@ -6,7 +6,7 @@ url     = http://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros
-calisma = xorg-xproto
+calisma = xorg-proto
 
 [kaynak]
 1      = $url/releases/individual/lib/libXdmcp-$surum.tar.bz2
