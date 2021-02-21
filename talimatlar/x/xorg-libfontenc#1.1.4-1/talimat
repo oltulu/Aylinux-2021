@@ -1,11 +1,11 @@
 [paket]
 tanim   = X11 yazı tipi kodlama kütüphanesi
-paketci = Ciihan_Alkan
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = http://xorg.freedesktop.org
 
 [gerek]
-derleme = freetype2 xorg-xproto xorg-util-macros xorg-xtrans
+derleme = freetype2 xorg-proto xorg-util-macros xorg-xtrans
 calisma = 
 
 [kaynak]
