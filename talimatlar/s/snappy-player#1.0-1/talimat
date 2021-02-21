@@ -5,8 +5,8 @@ grup    = medya
 url     = https://google.github.io/snappy
 
 [gerek]
-derleme    = clutter
-calisma    =
+derleme    = clutter clutter-gst gst-plugins-base clutter-gtk
+calisma    = clutter-gst gst-plugins-base clutter-gtk
 
 [kaynak]
 1          = https://download.gnome.org/sources/snappy/$surum/snappy-$surum.tar.xz
