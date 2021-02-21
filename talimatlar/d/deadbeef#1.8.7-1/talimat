@@ -4,6 +4,11 @@ paketci = Cihan_Alkan
 grup 	= deepin
 url     = http://deadbeef.sourceforge.net
 
+[gerek]
+derleme  = 
+calisma  = alsa-lib hicolor-icon-theme desktop-file-utils jansson libvorbis faad2
+
+
 [kaynak]
 1      = https://github.com/DeaDBeeF-Player/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz 
 
