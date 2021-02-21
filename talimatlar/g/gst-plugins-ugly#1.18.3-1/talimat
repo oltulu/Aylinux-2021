@@ -1,12 +1,12 @@
 [paket]
 tanim   = Multimedya grafik çerçevesi - çirkin eklentiler
 paketci = Cihan_Alkan
-grup 	= mate
+grup 	= medya
 url     = https://gstreamer.freedesktop.org/
 
 [gerek]
 derleme = qt5-tools opencore-amr libsidplay
-calisma = opencore-amr libsidplay libdvdread libmpeg2 a52dec
+calisma = opencore-amr libsidplay libdvdread libmpeg2 a52dec libcdio
 
 [kaynak]
 xz     = https://gstreamer.freedesktop.org/src/$isim
