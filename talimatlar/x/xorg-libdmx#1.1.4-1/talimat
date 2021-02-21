@@ -6,7 +6,7 @@ url     = https://xorg.freedesktop.org
 
 [gerek]
 derleme = xorg-util-macros
-calisma = xorg-xproto xorg-libxext
+calisma = xorg-proto xorg-libxext
 
 [kaynak]
 1      = $url/releases/individual/lib/libdmx-$surum.tar.bz2
