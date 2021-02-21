@@ -1,12 +1,12 @@
 [paket]
 tanim   = X11 Oturum Yönetimi kütüphanesi
-paketci = oltulu
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = http://xorg.freedesktop.org
 
 [gerek]
-derleme = xorg-util-macros xorg-libice xorg-xtrans xorg-xproto
-calisma = xorg-libice xorg-xtrans xorg-xproto
+derleme = xorg-util-macros xorg-libice xorg-xtrans xorg-proto
+calisma = xorg-libice xorg-xtrans xorg-proto
 
 [kaynak]
 1      = $url/releases/individual/lib/libSM-$surum.tar.bz2
