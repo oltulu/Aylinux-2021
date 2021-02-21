@@ -11,12 +11,14 @@ calisma	=
 [kaynak]
 1		= http://ftp.gnome.org/pub/gnome/sources/glib/${surum%.*}/$isim-$surum.tar.xz
 2   = https://github.com/archlinux/svntogit-packages/raw/packages/glib2/trunk/noisy-glib-compile-schemas.diff
+dosya = schema-compile-without-schemas.patch
 
 [sha256]
 #1	    = 9a2f21ed8f13b9303399de13a0252b7cbcede593d26971378ec6cb90e87f2277
 
 [derle]
 betik	= patch -Np1 -i  /sources/noisy-glib-compile-schemas.diff
+betik	= patch -Np1 -i  $SRC/schema-compile-without-schemas.patch
 ekconf  = --prefix=/usr -D nls=disabled -D selinux=disabled -D gtk_doc=false
 tip     = meson 
 #tip     = ninja 
