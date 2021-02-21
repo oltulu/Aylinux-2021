@@ -1,6 +1,6 @@
 [paket]
 tanim   = LAPACK C arayüzü - geliştirme dosyaları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://www.netlib.org/lapack
 
