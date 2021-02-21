@@ -7,7 +7,7 @@ DESTDIR=$PKG meson install -C build
 mkdir -p ext/lib/gstreamer-1.0
   for _x in aom assrender bs2b bz2 chromaprint closedcaption colormanagement \
             curl dc1394 de265 dtls dtsdec faac faad fdkaac fluidsynthmidi gme \
-            hls kate ladspa lv2 mms modplug mpeg2enc mplex musepack \
+            hls ladspa lv2 mms modplug mpeg2enc mplex musepack \
             neonhttpsrc ofa openal openexr openjpeg opusparse resindvd rsvg \
             rtmp sbc sctp smoothstreaming sndfile soundtouch spandsp srt srtp \
             teletext ttmlsubs vulkan waylandsink webp webrtc webrtcdsp \
