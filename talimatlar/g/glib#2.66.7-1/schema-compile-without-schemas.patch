@@ -1,0 +1,16 @@
+Index: glib2.0/gio/glib-compile-schemas.c
+===================================================================
+--- glib2.0.orig/gio/glib-compile-schemas.c	2013-08-19 16:32:06.489320000 -0600
++++ glib2.0/gio/glib-compile-schemas.c	2013-08-19 16:32:13.952081236 -0600
+@@ -2083,9 +2083,9 @@
+                              g_build_filename (srcdir, file, NULL));
+         }
+ 
+-      if (files->len == 0)
++      if ((files->len == 0) && (overrides->len == 0))
+         {
+-          fprintf (stdout, _("No schema files found: "));
++          fprintf (stdout, _("No schema or override files found: "));
+ 
+           if (g_unlink (target))
+             fprintf (stdout, _("doing nothing.\n"));
