@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/gnome-disk-utility
 
 [gerek]
-derleme = libpwquality libhandy libdvdread libnotify libsecret udisks libxslt
+derleme = libpwquality libhandy libdvdread libnotify libsecret udisks libxslt meson
 calisma = 
 
 [kaynak]
@@ -17,11 +17,9 @@ xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-disk-utility/${surum%.*}
     #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
 
 [derle]
-betik = cd $SRC
-betik = meson $isim-$surum --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=false -D logind=none -D gsd_plugin=false
-#betik = meson compile -C build
+ekconf = --prefix=/usr --libexecdir=lib --sysconfdir=/etc -D man=false -D logind=none -D gsd_plugin=false
+tip = meson
 
         	      
 [pakur]
-betik = cd $SRC
-betik = DESTDIR="$PKG" meson install -C build
+tip = meson
