@@ -23,7 +23,7 @@ betik     = make
 
 [pakur]
 #betik	= cd $SRC/libfm-$surum
-#tip     = gnu
+betik     = make DESTDIR="$SRC/libfm-extra" install
 betik   = cd "$SRC"/libfm-extra
 betik   = mkdir -p "$PKG"/usr/{include/libfm,lib/pkgconfig}
 betik   = mv *.h "$PKG/usr/include/libfm"
