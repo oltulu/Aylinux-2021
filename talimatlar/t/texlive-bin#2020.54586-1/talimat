@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://tug.org/texlive/
 
 [gerek]
-derleme = zziplib poppler potrace clips t1lib pixman mpfr cairo graphite2 libpaper libsigsegv libpng libjpeg-turbo freetype texinfo gmp ffcall
+derleme = zziplib poppler potrace t1lib pixman mpfr cairo graphite2 libpaper libsigsegv libpng libjpeg-turbo freetype texinfo gmp ffcall
 calisma = zziplib ffcall libsigsegv
 
 [kaynak]
