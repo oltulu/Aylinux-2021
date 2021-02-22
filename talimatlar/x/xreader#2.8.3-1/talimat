@@ -5,7 +5,7 @@ grup    = ofis
 url     = https://github.com/linuxmint/xreader
 
 [gerek]
-derleme    = meson cmake mate-common xapps poppler-glib gobject-introspection mathjax2 xapp djvulibre libsm libgnomekbd libgxps libsecret libspectre libxkbfile poppler-glib webkitgtk desktop-file-utils
+derleme    = meson cmake mate-common poppler-glib gobject-introspection mathjax2 xapp djvulibre libsm libgnomekbd libgxps libsecret libspectre libxkbfile poppler-glib webkitgtk desktop-file-utils
 calisma    = libgnomekbd djvulibre libgnomekbd libsecret libspectre libgxps webkitgtk xapp
 
 [kaynak]
