@@ -17,7 +17,7 @@ calisma =
 [derle]
 betik	= cd $SRC/libfm-$surum
 betik	= cd autoreconf -fi
-ekconf  = ---with-gnu-ld --with-gtk=3
+ekconf  = --with-gnu-ld --with-gtk=3
 tip     = gnu
 
 [pakur]
