@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/FileRoller
 
 [gerek]
 derleme    = meson glib itstool gtk3 json-glib libarchive libnotify desktop-file-utils
-calisma    = json-glib
+calisma    = json-glib libnotify
 
 [kaynak]
 xz         = ${GNOME_SITE}/${isim}/${surum%.*}
