@@ -16,10 +16,15 @@ calisma =
 
 [derle]
 betik	= cd $SRC/libfm-$surum
-ekconf  = --with-extra-only --with-gtk=no --disable-static
+betik	= cd autoreconf -fi
+ekconf  = ---with-gnu-ld --with-gtk=3
 tip     = gnu
 
 [pakur]
 betik	= cd $SRC/libfm-$surum
 tip     = gnu
-betik   = rm ${PKG}/usr/include/libfm
+betik   = cd "$SRC"/libfm-extra
+betik   = mkdir -p "$PKG"/usr/{include/libfm,lib/pkgconfig}
+betik   = mv *.h "$PKG/usr/include/libfm"
+betik   = mv libfm-extra.so* "$PKG/usr/lib"
+betik   = mv libfm-extra.pc "$PKG/usr/lib/pkgconfig"
