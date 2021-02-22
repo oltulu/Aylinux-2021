@@ -17,7 +17,7 @@ calisma  = alsa-lib hicolor-icon-theme desktop-file-utils jansson libvorbis faad
 
 [derle]
 betik = ./autogen.sh 
-betik = ./configure --prefix=/usr
+betik = CXX="g++ -std=c++98" ./configure --prefix=/usr --enable-gtk3
 betik = make
 
 [pakur]
