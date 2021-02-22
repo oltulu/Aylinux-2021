@@ -18,7 +18,7 @@ xz      = http://pub.mate-desktop.org/releases/${surum%.*}
 betik     = sed -i 's/python/python2/' plugins/externaltools/data/switch-c.tool.in
 betik     = sed -i 's/, enchant/, enchant-2/' configure.ac
 betik     = ./autogen.sh
-betik     = PYTHON=/usr/bin/python ./configure --prefix=/usr --libexecdir=/usr/lib/${isim} --disable-gtk-doc --enable-python
+betik     = PYTHON=/usr/bin/python ./configure --prefix=/usr --libexecdir=/usr/lib/${isim} --disable-gtkdoc --enable-python
 betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik     = make
 	      
