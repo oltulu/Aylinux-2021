@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/gdraheim/zziplib
 
 [gerek]
-derleme    = zip python2
+derleme    = python xmlto zip cmake ninja
 calisma    =
 
 [kaynak]
@@ -15,8 +15,8 @@ calisma    =
 1          = 846246d7cdeee405d8d21e2922c6e97f55f24ecbe3b6dcf5778073a88f120544
 
 [derle]
-betik      = export PYTHON=/usr/bin/python2
-tip        = gnu
+betik      = cmake -Bbuild -GNinja -DZZIPDOCS=OFF -DCMAKE_INSTALL_PREFIX=/usr
+betik      = ninja -C build
 
 [pakur]
-tip        = gnu
+betik      = DESTDIR="${PKG}" ninja -C build install
