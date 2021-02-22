@@ -1,0 +1,21 @@
+[paket]
+tanim   = Openbox masaüstü için gerekli  paketleri kurar
+paketci = Cihan_Alkan
+grup 	= xfce
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://notabug.org/oltulu/Ceviri/raw/master/openbox-kur.tar.gz
+
+
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = cp -r openbox-kur/* $PKG/
