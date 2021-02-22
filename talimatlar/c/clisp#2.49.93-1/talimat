@@ -5,7 +5,7 @@ grup    = sistem
 url     = http://sourceforge.net/projects/acpiclient/
 
 [kaynak]
-1     = https://gitlab.com/gnu-clisp/clisp/-/archive/c26de78733578fc38952d2485313065eba4f5caa/clisp-c26de78733578fc38952d2485313065eba4f5caa.tar.bz2
+#1     = https://gitlab.com/gnu-clisp/clisp/-/archive/c26de78733578fc38952d2485313065eba4f5caa/clisp-c26de78733578fc38952d2485313065eba4f5caa.tar.bz2
 
 [sha256]
 1       = d7a504b61c716ae5b7e81a0c67a50a51f06c7326f197b66a4b823de076a35005
