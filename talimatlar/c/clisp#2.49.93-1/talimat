@@ -4,6 +4,12 @@ paketci = milisarge
 grup    = sistem
 url     = http://sourceforge.net/projects/acpiclient/
 
+
+[gerek]
+derleme    = libsigsegv readline ffcall
+calisma    = 
+
+
 [kaynak]
 #1     = https://gitlab.com/gnu-clisp/clisp/-/archive/c26de78733578fc38952d2485313065eba4f5caa/clisp-c26de78733578fc38952d2485313065eba4f5caa.tar.bz2
 
