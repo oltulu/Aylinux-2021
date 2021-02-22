@@ -17,7 +17,7 @@ calisma =
 [derle]
 betik	= cd $SRC/libfm-$surum
 betik	= autoreconf -fi
-betik  = ./configure --prefix=/usr --sysconfdir=/etc --disable-gtk-doc
+betik  = ./configure --prefix=/usr --sysconfdir=/etc --with-extra-only --disable-gtk-doc
 betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik     = make
 
