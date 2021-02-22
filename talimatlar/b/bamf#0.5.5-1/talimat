@@ -20,8 +20,8 @@ xz = https://launchpad.net/bamf/0.5/$surum/+download
 #betik 	= cd bamf-$surum
 betik 	= patch -Np1 -i /sources/bamf-no-gtester2xunit.patch
 betik 	= patch -Np1 -i /sources/bamf-no-werror.patch
-betik 	= NOCONFIGURE=1 ./autogen.sh
-betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib --localstatedir=/var --sysconfdir=/etc --disable-gtk-doc
+#betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./autogen.sh --prefix=/usr --libexecdir=/usr/lib --localstatedir=/var --sysconfdir=/etc --disable-gtk-doc
 betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik 	= make
 
