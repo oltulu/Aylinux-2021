@@ -6,7 +6,7 @@ url     = https://gparted.sourceforge.io
 
 [gerek]
 derleme = intltool itstool glib gtkmm parted desktop-file-utils polkit
-calisma = dosfstools ntfs-3g btrfs-progs reiserfsprogs xfsprogs gpart jfsutils udftools polkit-gnome 
+calisma = dosfstools ntfs-3g btrfs-progs reiserfsprogs xfsprogs gpart jfsutils udftools polkit-gnome parted
 
 [kaynak]
 gz     = https://sourceforge.net/projects/$isim/files/$isim/$isim-$surum
