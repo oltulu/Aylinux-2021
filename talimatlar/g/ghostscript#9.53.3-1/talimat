@@ -7,7 +7,7 @@ url     = https://www.ghostscript.com
 
 [gerek]
 derleme = cups dbus fontconfig jasper jbig2dec lcms2 libxext libxt openjpeg2 libpaper
-calisma = 
+calisma = jbig2dec openjpeg2
 
 [kaynak]
 1  = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${surum//./}/ghostpdl-${surum}.tar.gz
