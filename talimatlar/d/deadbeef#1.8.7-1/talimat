@@ -5,7 +5,7 @@ grup 	= deepin
 url     = http://deadbeef.sourceforge.net
 
 [gerek]
-derleme  = ffmpeg
+derleme  = ffmpeg libvorbis libmad flac curl imlib2 wavpack libsndfile libcdio libcddb libx11 faad2 zlib intltool pkgconfig libzip libsamplerate yasm gtk2 gtk3
 calisma  = alsa-lib hicolor-icon-theme desktop-file-utils jansson libvorbis faad2 ffmpeg
 
 
