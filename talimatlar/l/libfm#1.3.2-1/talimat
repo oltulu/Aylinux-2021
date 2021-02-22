@@ -1,10 +1,10 @@
 [paket]
 tanim   = Dosya yönetimi için kitaplık
-paketci = Cihan_Alkan
+paketci = Cihan_Alkan Rise
 url     = https://lxde.org
 
 [gerek]
-derleme    = 
+derleme    = menu-cache
 calisma    =
 
 [kaynak]
