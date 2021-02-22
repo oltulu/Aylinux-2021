@@ -1,6 +1,6 @@
 [paket]
 tanim   = Nitelikli ses sunucusu
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = medya
 url     = http://www.pulseaudio.org
 
