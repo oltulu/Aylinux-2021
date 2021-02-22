@@ -5,8 +5,8 @@ grup 	= kütüphane
 url     = http://sourceforge.net/projects/slingscold/
 
 [gerek]
-derleme = 
-calisma = libpeas gtksourceview gspell
+derleme = cmake gnome-menus libgee libwnck
+calisma = gnome-menus libgee libwnck
 
 [kaynak]
 1  = http://ppa.launchpad.net/noobslab/apps/ubuntu/pool/main/s/slingscold/slingscold_1.2.1.7t~NoobsLab.com.tar.gz
