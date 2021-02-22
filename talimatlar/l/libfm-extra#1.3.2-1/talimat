@@ -1,6 +1,6 @@
 [paket]
 tanim   = LXDE GLib/GIO tabanlı kütüphane (ilave kütüphane)
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://pcmanfm.sourceforge.net/
 
@@ -12,7 +12,7 @@ calisma =
 1       = ${SOURCEFORGE_SITE}/pcmanfm/libfm-${surum}.tar.xz
 
 [sha256]
-1       = 96b1244bde41ca0eef0332cfb5c67bb16725dfd102128f3e6f74fadc13a1cfe4
+#1       = 96b1244bde41ca0eef0332cfb5c67bb16725dfd102128f3e6f74fadc13a1cfe4
 
 [derle]
 betik	= cd $SRC/libfm-$surum
