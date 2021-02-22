@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = intltool itstool gobject-introspection
-calisma = djvulibre libspectre libgxps mathjax poppler-glib webkit2gtk caja texlive-bin
+calisma = djvulibre libspectre libgxps mathjax poppler-glib webkitgtk caja texlive-bin
 
 [kaynak]
 1      = ftp://tug.org/texlive/historic/2019/texlive-$surum-source.tar.xz
