@@ -6,7 +6,8 @@ url     = https://gstreamer.freedesktop.org/
 
 [gerek]
 derleme = qt5-tools
-calisma = libcaca libsoup pulseaudio wavpack aalib taglib libdv libshout libvpx libxdamage v4l-utils cairo libgudev speex flac libraw1394 lame mpg123 twolame
+calisma = gst-plugins-base libcaca libsoup pulseaudio wavpack aalib taglib libdv libshout libvpx libxdamage v4l-utils cairo libgudev speex flac libraw1394 lame mpg123 twolame libiec61883
+
 
 [kaynak]
 xz     = https://gstreamer.freedesktop.org/src/$isim
