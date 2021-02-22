@@ -6,7 +6,7 @@ url     = https://www.freedesktop.org/wiki/Software/libspectre/
 
 [gerek]
 derleme    = ghostscript
-calisma    =
+calisma    = ghostscript
 
 [kaynak]
 gz         = http://libspectre.freedesktop.org/releases
