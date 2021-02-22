@@ -1,6 +1,6 @@
 [paket]
 tanim   = Taşınabilir Belge Formatı (PDF) dosyaları için görüntüleyici
-paketci = yasarciv67
+paketci = Cihan_Alkan
 grup    = ofis
 url     = http://www.xpdfreader.com
 
@@ -9,17 +9,17 @@ derleme    = cmake qt5-tools qt5-base freetype libpaper zlib libpng cups desktop
 calisma    = gsfonts poppler
 
 [kaynak]
-1          = https://xpdfreader-dl.s3.amazonaws.com/xpdf-$surum.tar.gz
+gz         = https://dl.xpdfreader.com
 dosya	   = xpdf.desktop
 dosya	   = xpdf-4.00-permissions.patch
 dosya	   = xpdf-4.00-xpdfrc.patch
 dosya	   = xpdf-fontconfig.patch
 
 [sha256]
-1          = 52d51dc943b9614b8da66e8662b3031a3c82dc25bfc792eac6b438aa36d549a4
-2		   = 6c25d2aee8824e3bc94589bd26b909dd559a09cf95d8614a15ac895a799cecb2
-3		   = 22e0afda66f036cea8643252762e1391ed078102dd5f76f8cf862976b4b37089
-4		   = d888d04fe9bffb2708f67e3b52da0b296c9c1b18a1ac7627a4dac31ef9b7e1f8
+#1          = 52d51dc943b9614b8da66e8662b3031a3c82dc25bfc792eac6b438aa36d549a4
+#2		   = 6c25d2aee8824e3bc94589bd26b909dd559a09cf95d8614a15ac895a799cecb2
+#3		   = 22e0afda66f036cea8643252762e1391ed078102dd5f76f8cf862976b4b37089
+#4		   = d888d04fe9bffb2708f67e3b52da0b296c9c1b18a1ac7627a4dac31ef9b7e1f8
 
 [derle]
 betik	   = cp doc/sample-xpdfrc xpdfrc
