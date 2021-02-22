@@ -6,7 +6,7 @@ url     = https://gstreamer.freedesktop.org/
 
 [gerek]
 derleme = qt5-tools opencore-amr libsidplay
-calisma = opencore-amr libsidplay libdvdread libmpeg2 a52dec libcdio
+calisma = opencore-amr libsidplay libdvdread libmpeg2 a52dec libcdio gstreamer iso-codes libgudev libxv orc
 
 [kaynak]
 xz     = https://gstreamer.freedesktop.org/src/$isim
