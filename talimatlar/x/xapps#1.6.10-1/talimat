@@ -9,7 +9,7 @@ derleme = glib vala python python2 gobject-introspection libgnomekbd python-gobj
 calisma =
 
 [kaynak]
-1       = https://github.com/linuxmint/xapps/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+#1       = https://github.com/linuxmint/xapps/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 1       = 4dd228a2165f1077f18d6fb3152bb77d365ffbb8ad883ed4dd9137886dd21377
