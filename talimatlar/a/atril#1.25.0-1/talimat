@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = intltool itstool gobject-introspection caja
-calisma = djvulibre libspectre libgxps poppler-glib webkitgtk
+calisma = djvulibre libspectre libgxps poppler-glib webkitgtk t1lib texlive-bin caja-extensions
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
