@@ -6,7 +6,7 @@ url     = https://github.com/dcantrell/pyparted
 
 [gerek]
 derleme = python parted
-calisma =
+calisma = python parted
 
 [kaynak]
 github  = dcantrell/pyparted
