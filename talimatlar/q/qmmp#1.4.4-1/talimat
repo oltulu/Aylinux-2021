@@ -11,8 +11,8 @@ calisma = alsa-lib
 [kaynak]
 bz2      = http://qmmp.ylsoftware.com/files
 
-[sha256]
-1       = 144ebed8f2482a1adb894ae201e23f431d65b01dbb65c1567276c4e34673f694
+[sha512]
+1       = 8500743918489f6dd98b42aaba4d8f5ab41ac5a78cb487d0d52574c9c43a395ab1d724b4c5e82b6821166016144d77f3e0a059e67c0a49638a3b301f7a52d8b0
 
 [derle]
 betik   = cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DUSE_HAL:BOOL=FALSE
