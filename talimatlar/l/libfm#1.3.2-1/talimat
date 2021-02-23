@@ -22,6 +22,7 @@ betik  = make
 
 
 [pakur]
+betik	= cd $SRC/libfm-$surum
 betik      = make DESTDIR=$PKG install
 betik      = make DESTDIR="$SRC"/libfm-gtk3 install
 betik      = rm -r $PKG/usr/include/libfm
