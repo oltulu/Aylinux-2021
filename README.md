@@ -21,17 +21,16 @@ Root Şifresi: toor
 
 # Aylinux-2021 Özellikleri
 
-1- Paket uzantısı .kur şeklindedir (paket_adı-sürüm.kur)
 
-2- Paket kurmak için "paket kur paket_adı", Paket silmek için "paket sil paket_adı"
+1- Uygulamaların depolarda güncel olması sağlanacaktır (imkanlar ölçüsünde)
 
-3- Uygulamaların depolarda güncel olması sağlanacaktır (imkanlar ölçüsünde)
+2- Uygulamaların eksik çevirileri tamamlanarak maksimum seviyede Türkçe arayüz ile gelmesi hedeflenmektedir.
 
-4- Uygulamaların eksik çevirileri tamamlanarak maksimum seviyede Türkçe arayüz ile gelmesi hedeflenmektedir.
+3- Aylinux 2021 sadece kendi depolarını kullanmaktadır ve sürekli güncellenmektedir.
 
-5- Aylinux 2021 sadece kendi depolarını kullanmaktadır ve sürekli güncellenmektedir.
+4- Yerli yazılımlar depoya alınacak
 
-6- Yerli yazılımlar depoya alınacak
+5- Türkçe, güncel ve estetik...
 
 # Başlıca Komutlar
 
