@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-1 = https://github.com/telegramdesktop/tdesktop/releases/download/v2.5.4/tsetup.2.5.4.beta.tar.xz
+1 = https://github.com/telegramdesktop/tdesktop/releases/download/v$surum/tsetup.$surum.beta.tar.xz
 2 = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon32.png
 3 = https://aur.archlinux.org/cgit/aur.git/plain/telegram-desktop-bin.desktop?h=telegram-desktop-bin
 4 = https://aur.archlinux.org/cgit/aur.git/plain/tg.protocol?h=telegram-desktop-bin
