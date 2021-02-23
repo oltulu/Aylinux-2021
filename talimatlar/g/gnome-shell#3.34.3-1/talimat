@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = 
+derleme = evolution-data-server meson
 calisma = 
 
 [kaynak]
