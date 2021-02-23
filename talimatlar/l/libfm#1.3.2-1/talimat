@@ -5,7 +5,7 @@ url     = https://lxde.org
 
 [gerek]
 derleme    = libfm-extra menu-cache
-calisma    =
+calisma    = libfm-extra menu-cache
 
 [kaynak]
 1          = https://downloads.sourceforge.net/pcmanfm/$isim-$surum.tar.xz
