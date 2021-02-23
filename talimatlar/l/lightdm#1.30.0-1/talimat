@@ -13,6 +13,7 @@ calisma    = libxklavier qt5-base libgcrypt
 dosya      = lightdm.rules
 dosya      = lightdm-Xsession
 dosya      = lightdm-default-config.patch
+dosya      = lightdm.conf
 
 [sha256]
 1          = a118779650a3a5b20f05d53c4f9e377b484fbc1810a6b0914a60840d9a581f95
