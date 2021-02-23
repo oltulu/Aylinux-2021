@@ -15,17 +15,15 @@ calisma    =
 
 [derle]
 betik     = sed -i 's/create=xarchiver --add-to %F/create=xarchiver --compress %F/' data/archivers.list
-betik     = autoreconf -fi
-betik     = cd -
-betik     = cp -r $isim-$surum gtk3
-betik      = cd $SRC/gtk3
-betik      = ./configure --prefix=/usr --sysconfdir=/etc --with-gnu-ld --disable-nls --disable-gtk-doc-html --with-gtk=3
-betik      = make
+betik	= cd $SRC/libfm-$surum
+betik	= ./configure --prefix=/usr --sysconfdir=/etc --with-gtk=3 --disable-gtk-doc-html
+betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik  = make
 
 
 [pakur]
-
 betik      = make DESTDIR=$PKG install
+betik      = make DESTDIR="$SRC"/libfm-gtk3 install
 betik      = rm -r $PKG/usr/include/libfm
 betik      = mv $PKG/usr/include/libfm-1.0/ $PKG/usr/include/libfm
 	# In libfm-extra
