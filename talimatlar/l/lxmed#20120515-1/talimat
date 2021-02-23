@@ -20,6 +20,7 @@ betik	= install -D -m755 ${isim} "${PKG}"/usr/bin/${isim}
 
 
 [pakur]
+betik     = cd "${SRC}"/${isim}/content 
 betik  = install -D -m644 ${isim}.desktop "${PKG}"/usr/share/applications/${isim}.desktop
 betik  = install -D -m644 ${isim}.png "${PKG}"/opt/${isim}/${isim}.png
 
