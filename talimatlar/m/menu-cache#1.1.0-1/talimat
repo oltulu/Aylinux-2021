@@ -10,11 +10,13 @@ calisma = libfm-extra
 
 [kaynak]
 xz      = https://downloads.sourceforge.net/lxde
+1= https://crux.nu/ports/crux-3.6/contrib/menu-cache/menu-cache-1.1.0-0001-Support-gcc10-compilation.patch
 
 [sha256]
-1 		= ed02eb459dcb398f69b9fa5bf4dd813020405afc84331115469cdf7be9273ec7
+#1 		= ed02eb459dcb398f69b9fa5bf4dd813020405afc84331115469cdf7be9273ec7
 
 [derle]
+betik 	= patch -p1 -i /sources/menu-cache-1.1.0-0001-Support-gcc10-compilation.patch
 betik 	= ./configure --sysconfdir=/etc --prefix=/usr --libexecdir=/usr/lib
 betik 	= make
 	      
