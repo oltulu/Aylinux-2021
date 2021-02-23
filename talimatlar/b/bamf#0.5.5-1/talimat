@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://launchpad.net/bamf
 
 [gerek]
-derleme = 
+derleme = gnome-common
 calisma = 
 
 [kaynak]
