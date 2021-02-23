@@ -10,6 +10,7 @@ calisma    = libxklavier
 
 [kaynak]
 git         = https://github.com/Xubuntu/lightdm-gtk-greeter
+dosya = lightdm-gtk-greeter.conf
 
 [sha256]
 #1          = 255cf4039ab2536020ca8714bdc98300c8f71719183bbb5b18ef96f43c2e3ade
@@ -23,3 +24,5 @@ tip        = gnu
 [pakur]
 betik = cd $isim
 tip        = gnu
+betik      = rm $PKG/etc/lightdm/lightdm-gtk-greeter.conf
+betik      = cp ${SRC}/lightdm-gtk-greeter.conf $PKG/etc/lightdm/lightdm-gtk-greeter.conf
