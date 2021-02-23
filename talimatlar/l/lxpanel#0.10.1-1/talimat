@@ -4,8 +4,8 @@ paketci = Cihan_Alkan
 url     = https://lxde.org
 
 [gerek]
-derleme    = 
-calisma    =
+derleme    = wireless-tools libfm
+calisma    = wireless-tools
 
 [kaynak]
 1          = https://downloads.sourceforge.net/lxde/$isim-$surum.tar.xz
