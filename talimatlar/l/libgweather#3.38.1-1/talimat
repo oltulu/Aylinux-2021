@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = geocode-glib
+derleme = geocode-glib meson ninja
 calisma = 
 
 [kaynak]
