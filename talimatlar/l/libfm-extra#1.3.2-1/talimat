@@ -16,17 +16,17 @@ calisma =
 
 [derle]
 betik	= cd $SRC/libfm-$surum
-betik	= autoreconf -fi
-betik  = ./configure --prefix=/usr --sysconfdir=/etc --with-extra-only --disable-gtk-doc --with-gtk=no
+betik	= ./configure --prefix=/usr --sysconfdir=/etc --with-extra-only --with-gtk=no
 betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-betik     = make
-betik     = make DESTDIR="$SRC/libfm-extra" install
+betik  = make
 
 
 [pakur]
-#betik	= cd $SRC/libfm-$surum
-betik   = cd "$SRC"/libfm-extra
-betik   = mkdir -p "$PKG"/usr/{include/libfm,lib/pkgconfig}
-betik   = mv *.h "$PKG/usr/include/libfm"
-betik   = mv libfm-extra.so* "$PKG/usr/lib"
-betik   = mv libfm-extra.pc "$PKG/usr/lib/pkgconfig"
+betik	= cd $SRC/libfm-$surum
+betik     = make DESTDIR="$SRC/libfm-extra" install
+betik   = install -d $PKG/usr/include/libfm $PKG/usr/lib/pkgconfig
+betik   = install -m 644 -t $PKG/usr/include/libfm $SRC/libfm-extra/usr/include/libfm/fm-{extra,version,xml-file}.h
+betik   = install -m 644 -t $PKG/usr/lib $SRC/libfm-extra/usr/lib/libfm-extra.*
+betik   = install -m 644 -t $PKG/usr/lib/pkgconfig $SRC/libfm-extra/usr/lib/pkgconfig/libfm-extra.pc
+betik   = rm $PKG/usr/lib/libfm-extra.so.4
+betik   = ln -s libfm-extra.so.4.1.3 $PKG/usr/lib/libfm-extra.so.4
