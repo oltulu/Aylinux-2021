@@ -5,7 +5,7 @@ grup    = gnome
 url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
-derleme  = cmake
+derleme  = cmake webkitgtk
 calisma  = libphonenumber 
 
 [kaynak]
