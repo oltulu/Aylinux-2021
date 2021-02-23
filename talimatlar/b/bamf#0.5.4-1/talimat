@@ -9,7 +9,7 @@ derleme = gnome-common
 calisma = 
 
 [kaynak]
-xz = https://launchpad.net/bamf/0.5/$surum/+download
+gz = https://launchpad.net/bamf/0.5/$surum/+download
 #https://launchpad.net/bamf/0.5/0.5.5/+download/bamf-0.5.5.tar.xz
 2 = https://github.com/archlinux/svntogit-community/raw/packages/bamf/trunk/bamf-no-gtester2xunit.patch
 3 = https://github.com/archlinux/svntogit-community/raw/packages/bamf/trunk/bamf-no-werror.patch
