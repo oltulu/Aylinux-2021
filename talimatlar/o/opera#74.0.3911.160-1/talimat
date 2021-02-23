@@ -9,15 +9,15 @@ derleme =
 calisma =  
 
 [kaynak]
-1    = https://get.geo.opera.com/pub/opera/desktop/73.0.3856.284/linux/Opera_73.0.3856.284_amd64.deb
+1    = https://get.geo.opera.com/pub/opera/desktop/$surum/linux/Opera_$surum_amd64.deb
 dosya = opera
 
 [sha1]
         #1 		= SKIP
 
 [derle]
-betik = cp /sources/Opera_73.0.3856.284_amd64.deb $SRC
-betik = bsdtar -xf Opera_73.0.3856.284_amd64.deb 
+betik = cp /sources/Opera_$surum_amd64.deb $SRC
+betik = bsdtar -xf Opera_$surum_amd64.deb 
 
 [pakur]
 betik = tar -xf data.tar.xz --exclude=usr/share/{lintian,menu} -C $PKG
