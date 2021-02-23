@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://launchpad.net/plank
 
 [gerek]
-derleme = vala gnome-menus bamf libgee
+derleme = vala gnome-menus bamf libgee gnome-common
 calisma =
 
 [kaynak]
