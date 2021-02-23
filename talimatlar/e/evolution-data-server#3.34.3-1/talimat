@@ -5,7 +5,7 @@ grup    = gnome
 url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
-derleme  = cmake webkitgtk gnome-online-accounts
+derleme  = cmake webkitgtk gnome-online-accounts libgweather
 calisma  = libphonenumber 
 
 [kaynak]
