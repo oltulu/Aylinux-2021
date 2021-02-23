@@ -5,7 +5,7 @@ url     = https://lxde.org
 
 [gerek]
 derleme    = libfm gvfs
-calisma    =
+calisma    = libfm gvfs
 
 [kaynak]
 1          = https://downloads.sourceforge.net/pcmanfm/$isim-$surum.tar.xz
