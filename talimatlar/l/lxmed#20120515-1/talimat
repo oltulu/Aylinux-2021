@@ -1,0 +1,26 @@
+[paket]
+tanim   = LXDE için menü düzenleyici
+paketci = Cihan_Alkan
+url     = http://sourceforge.net/projects/lxmed/
+
+[gerek]
+derleme    =  
+calisma    =  
+
+[kaynak]
+1          = http://sourceforge.net/projects/${isim}/files/${isim}-${surum}.tar.gz/downloa::$isim-$surum.tar.gz
+
+[sha256]
+    #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik     = cd "${SRC}"/${isim}/content 
+betik	= install -D -m644 LXMenuEditor.jar "${PKG}"/opt/${isim}/LXMenuEditor.jar
+betik	= install -D -m755 ${isim} "${PKG}"/usr/bin/${isim}
+
+
+[pakur]
+betik  = install -D -m644 ${isim}.desktop "${PKG}"/usr/share/applications/${isim}.desktop
+betik  = install -D -m644 ${isim}.png "${PKG}"/opt/${isim}/${isim}.png
+
+
