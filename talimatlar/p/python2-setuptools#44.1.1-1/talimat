@@ -12,7 +12,7 @@ calisma    =
 1          = ${PYPI_SITE}/s/setuptools/setuptools-${surum}.zip
 
 [sha256]
-1          = 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+#1          = 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
 
 [derle]
 betik      = cd setuptools-$surum
