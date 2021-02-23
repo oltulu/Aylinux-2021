@@ -18,4 +18,4 @@ betik  = cmake -S ../$isim-$surum -B build -G Ninja -D CMAKE_INSTALL_PREFIX=/usr
 betik  = cmake --build build
 	      
 [pakur]
-betik  = DESTDIR=$PKG cmake --install build
+betik  = DESTDIR="${PKG}" cmake --build build --target install
