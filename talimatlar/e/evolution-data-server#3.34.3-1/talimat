@@ -1,11 +1,11 @@
 [paket]
 tanim   = Randevulara ve kişilere merkezi erişim
 paketci = Cihan_Alkan 
-grup    = cinnamon  
+grup    = gnome  
 url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
-derleme  = 
+derleme  = cmake
 calisma  = libphonenumber 
 
 [kaynak]
