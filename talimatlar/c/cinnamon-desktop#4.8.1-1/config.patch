@@ -18,7 +18,7 @@ diff -Naur cinnamon-desktop-2.8.0.orig/schemas/org.cinnamon.desktop.interface.gs
      </key>
      <key name="icon-theme" type="s">
 -      <default>'gnome'</default>
-+      <default>'Aylinux'</default>
++      <default>'beautyline'</default>
        <_summary>Icon Theme</_summary>
        <_description>
          Icon theme to use for the panel, nautilus etc.
