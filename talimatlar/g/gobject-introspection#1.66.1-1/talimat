@@ -9,7 +9,7 @@ derleme	= glib meson
 calisma	= python glib
 
 [kaynak]
-git	    = https://gitlab.gnome.org/GNOME/gobject-introspection
+xz	    = https://ftp.gnome.org/pub/GNOME/sources/$name/${version::4}
 #git	    = https://gitlab.gnome.org/GNOME/glib
 
 [sha256]
