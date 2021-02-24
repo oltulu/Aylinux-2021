@@ -1,0 +1,21 @@
+[paket]
+tanim   = Hafif temalı animasyonlu yuva
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://c-ares.haxx.se/
+
+[kaynak]
+1      = https://github.com/Cairo-Dock/cairo-dock-core/archive/${surum}.tar.gz::cairo-dock-${surum}.tar.gz
+
+[sha256]
+#1          = 6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852
+
+[derle]
+betik = cd cairo-dock-core-${surum}
+betik = mkdir build && cd build
+betik = cmake .. -DCMAKE_BUILD_TYPE='Release' -DCMAKE_INSTALL_PREFIX='/usr'
+betik = make
+
+[pakur]
+betik = cd cairo-dock-core-${surum}/build
+betik = make DESTDIR="${PKG}" install
