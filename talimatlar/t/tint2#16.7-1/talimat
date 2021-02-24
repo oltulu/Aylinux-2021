@@ -7,7 +7,7 @@ arsiv   = tint2-v${surum}
 
 [gerek]
 derleme = cmake gtk2 imlib2 librsvg libxcomposite libxdamage libxinerama libxrandr startup-notification desktop-file-utils
-calisma =
+calisma = gtk2
 
 [kaynak]
 1       = https://gitlab.com/o9000/tint2/-/archive/v${surum}/tint2-v${surum}.tar.bz2
