@@ -5,7 +5,7 @@ grup  	= kütüphane
 url     = https://github.com/brndnmtthws/conky
 
 [gerek]
-derleme = cmake
+derleme = cmake wireless_tools
 calisma = wireless_tool
 
 [kaynak]
