@@ -14,11 +14,11 @@ dosya  = libmp4v2-c++11.patch
 2  = 946a1c9c8a927d2739248aa1164591de08507152c856f88e8c5d759c213871ee
 
 [derle]
-betik  = cd Release-ThirdParty-MP4v2-${surum}
+betik  = cd mp4v2-Release-ThirdParty-MP4v2-${surum}
 betik  = patch -p0 -i $SRC/libmp4v2-c++11.patch
 tip    = gnu
 
 [pakur]
-betik  = cd Release-ThirdParty-MP4v2-${surum}
+betik  = cd mp4v2-Release-ThirdParty-MP4v2-${surum}
 tip    = gnu
 
