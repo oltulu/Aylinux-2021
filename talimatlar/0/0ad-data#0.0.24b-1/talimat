@@ -9,7 +9,7 @@ arsiv   = 0ad-${surum}-alpha
 1       = https://releases.wildfiregames.com/0ad-${surum}-alpha-unix-data.tar.xz
 
 [sha256]
-1       = e11b4ade7ede954cbbdc1fe6e2e4b25ac6b8d5a644133b640ffc9b099338a713
+#1       = e11b4ade7ede954cbbdc1fe6e2e4b25ac6b8d5a644133b640ffc9b099338a713
 
 [derle]
 betik   = echo "derleme yok" 
