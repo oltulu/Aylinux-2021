@@ -11,10 +11,10 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 #GRUB_HIDDEN_TIMEOUT=5
 #GRUB_HIDDEN_TIMEOUT_QUIET=true
 
-# Uncomment to use basic console
-GRUB_TERMINAL_INPUT=console
+# Temel konsolu kullanma # işaretini kaldırın
+#GRUB_TERMINAL_INPUT=console
 
-# Uncomment to disable graphical terminal
+# Grafik terminali devre dışı bırakmak için # işaretini kaldırın
 #GRUB_TERMINAL_OUTPUT=console
 
 # The resolution used on graphical terminal
@@ -29,7 +29,7 @@ GRUB_GFXPAYLOAD_LINUX=keep
 # format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx" 
 #GRUB_DISABLE_LINUX_UUID=true
 
-# Uncomment to disable generation of recovery mode menu entries
+# Kurtarma modu menü girişlerinin oluşturulmasını devre dışı bırakma
 GRUB_DISABLE_RECOVERY=true
 
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper 
