@@ -1,0 +1,23 @@
+[paket]
+tanim   = X için hafif sistem monitörü
+paketci = Cihan_Alkan
+grup  	= kütüphane
+url     = https://github.com/brndnmtthws/conky
+
+[gerek]
+derleme = cmake
+calisma = wireless_tool
+
+[kaynak]
+1    = https://github.com/brndnmtthws/conky/archive/v${surum}.tar.gz
+
+[sha256]
+
+[derle]
+betik 	= cmake -D CMAKE_BUILD_TYPE=Release -D MAINTAINER_MODE=ON -D BUILD_DOCS=ON -D BUILD_WLAN=ON -D BUILD_XDBE=ON -D BUILD_XSHAPE=ON -D BUILD_IMLIB2=ON -D BUILD_CURL=ON -D BUILD_RSS=ON -D BUILD_NVIDIA=ON -D BUILD_WEATHER_METAR=ON -D BUILD_PULSEAUDIO=ON -D BUILD_JOURNAL=ON -D CMAKE_INSTALL_PREFIX=/usr .
+betik 	= make
+	      
+[pakur]
+betik 	= make DESTDIR="${PKG}" install
+betik 	= install -Dm644 extras/vim/syntax/conkyrc.vim "${PKG}"/usr/share/vim/vimfiles/syntax/conkyrc.vim
+betik 	= install -Dm644 extras/vim/ftdetect/conkyrc.vim "${PKG}"/usr/share/vim/vimfiles/ftdetect/conkyrc.vim
