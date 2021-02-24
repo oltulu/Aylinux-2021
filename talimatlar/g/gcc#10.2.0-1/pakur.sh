@@ -28,5 +28,7 @@ cd $SRC/gcc-build
              libquadmath; do
     make -C $CHOST/$lib DESTDIR="$PKG" install-info
   done
-
- rm -rf "$PKG"/usr/lib32/
+mkdir -p $PKG/usr/lib
+ln -sv /usr/bin/cpp $PKG/usr/lib/cpp
+ln -sv gcc $PKG/usr/bin/cc
+ #rm -rf "$PKG"/usr/lib32/
