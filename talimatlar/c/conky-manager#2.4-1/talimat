@@ -1,0 +1,24 @@
+[paket]
+tanim   = Temalara göz atma ve düzenleme seçenekleriyle Conky yapılandırma dosyalarını yönetmek için arayüz
+paketci = Cihan_Alkan
+grup  	= sistem
+url     = https://github.com/brndnmtthws/conky
+
+[gerek]
+derleme = vala
+calisma = cairo conky desktop-file-utils gtk3 imagemagick json-glib libgee p7zip rsync
+
+[kaynak]
+1    = https://launchpad.net/~teejee2008/+archive/ubuntu/ppa/+files/${isim}_${surum}${_ubuntu}.tar.xz::${isim}-${surum}-${_ubuntu}.tar.xz
+2 = https://github.com/archlinux/svntogit-community/raw/packages/conky-manager/trunk/makefile-roundup.patch
+
+[sha256]
+
+[derle]
+betik 	= cd ${isim}-${surum}-${_ubuntu}
+betik 	= patch -Np0 < "/sources/makefile-roundup.patch"
+betik 	= make
+	      
+[pakur]
+betik 	= cd ${isim}-${surum}-${_ubuntu}
+betik 	= make DESTDIR="${PKG}" install
