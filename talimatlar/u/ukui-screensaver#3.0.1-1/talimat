@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-panel
 
 [gerek]
 derleme = qt5-tools gsettings-qt qt5-declarative
-calisma = gsettings-qt
+calisma = gsettings-qt qt5-x11extras
 
 [kaynak]
 1      = https://github.com/ukui/ukui-screensaver/archive/v$surum/$isim-$surum.tar.gz
