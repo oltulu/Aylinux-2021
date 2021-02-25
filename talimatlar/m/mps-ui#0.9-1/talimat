@@ -16,10 +16,10 @@ calisma = python python-gobject
 #1       = be40357bb3b02caa374b805b06d2cdcad84cb2af8106f3ced6a483b23ee70571
 
 [derle]
-betik = cd mps-ui
+#betik = cd mps-ui
 tip     = py3
 
 [pakur]
-betik = cd mps-ui
+#betik = cd mps-ui
 tip     = py3
 #betik = sed -i 's/^Name\[tr\]=MPS arayüzü/Name\[tr\]=Yazılım Ekle Kaldır/' $PKG/usr/share/applications/mps_ui.desktop
