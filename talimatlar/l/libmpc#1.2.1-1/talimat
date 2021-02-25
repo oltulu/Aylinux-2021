@@ -18,3 +18,5 @@ betik    = make
 [pakur]
 betik    = cd "${SRC}/mpc-$surum"
 tip    = gnu
+betik    = mv $PKG/usr/local/* $PKG/usr/
+betik    = rmdir $PKG/usr/local
