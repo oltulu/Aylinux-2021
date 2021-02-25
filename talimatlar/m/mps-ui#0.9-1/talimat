@@ -10,16 +10,16 @@ derleme = python
 calisma = python python-gobject
 
 [kaynak]
-git      = https://github.com/oltulu/MPS_UI
+1     = https://notabug.org/oltulu/Ceviri/raw/master/mps-ui.tar.gz
 
 [sha256]
 #1       = be40357bb3b02caa374b805b06d2cdcad84cb2af8106f3ced6a483b23ee70571
 
 [derle]
-betik = cd MPS_UI
+betik = cd mps-ui
 tip     = py3
 
 [pakur]
-betik = cd MPS_UI
+betik = cd mps-ui
 tip     = py3
 #betik = sed -i 's/^Name\[tr\]=MPS arayüzü/Name\[tr\]=Yazılım Ekle Kaldır/' $PKG/usr/share/applications/mps_ui.desktop
