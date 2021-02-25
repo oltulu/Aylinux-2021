@@ -11,7 +11,8 @@ xz      = http://ftpmirror.gnu.org/gnu/$isim
 #1 		= 105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
 
 [derle]
-betik   = ./configure --prefix=/usr --enable-{shared,static} --disable-{csharp,java,nls} --without-{emacs,git} --with-included-{glib,libcroco,libxml}
+betik   = ./configure --prefix=/usr --enable-csharp --enable-nls --with-xz --without-included-gettext
+betik   = sed -e 's/ -shared / -Wl,-O1,--as-needed\0/g' -i gettext-{tools,runtime,runtime/libasprintf}/libtool
 betik   = make
 
 [pakur]
