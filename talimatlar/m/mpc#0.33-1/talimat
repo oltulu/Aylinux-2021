@@ -15,7 +15,7 @@ xz      = https://www.musicpd.org/download/${isim}/${surum%.*}
 #1 		= f2c1e86ca0a404ff281631bdc8377638992744b175afb806e25871a24a934e07
 
 [derle]
-betik 	= meson --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -Ddocumentation=disabled -D b_lto=true -D b_pie=true build
+betik 	= meson --prefix=/usr --libexecdir=/usr/lib --sbindir=/usr/bin --buildtype plain --auto-features enabled --wrap-mode nodownload -Ddocumentation=disabled -D b_lto=true -D b_pie=true build
 betik 	= ninja -C build
 	      
 [pakur]
