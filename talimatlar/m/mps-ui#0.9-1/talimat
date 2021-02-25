@@ -6,7 +6,7 @@ url     = https://mls.akdeniz.edu.tr/git/milislinux/mps-ui
 arsiv   = $isim
 
 [gerek]
-derleme = python
+derleme = python python-setuptools
 calisma = python python-gobject
 
 [kaynak]
