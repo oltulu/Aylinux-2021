@@ -23,5 +23,5 @@ betik 	= make
         	      
 [pakur]
 betik 	= make DESTDIR="$PKG" install
-betik 	= mkdir -p "$PKG"/usr/lib/python3.7/site-packages
-betik 	= cp python/libvoikko.py "$PKG"/usr/lib/python3.7/site-packages/libvoikko.py
+betik 	= mkdir -p "$PKG"/usr/lib/python3.9/site-packages
+betik 	= cp python/libvoikko.py "$PKG"/usr/lib/python3.9/site-packages/libvoikko.py
