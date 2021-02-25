@@ -1,3 +1,3 @@
 cd gettext-tools	
-mkdir -p $PKG/tools/bin
-cp -v src/{msgfmt,msgmerge,xgettext} $PKG/tools/bin
+mkdir -p $PKG/usr/bin
+cp -v src/{msgfmt,msgmerge,xgettext} $PKG/usr/bin
