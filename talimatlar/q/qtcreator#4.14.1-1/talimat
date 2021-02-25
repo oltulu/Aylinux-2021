@@ -14,8 +14,8 @@ calisma = qt5-quickcontrols qt5-quickcontrols2
 dosya   = qtcreator-clang-libs.patch
 
 [sha256]
-1       = 7b0317ca9354284e98967e94a30a1b813db379017d28d9847847498c113df9e5
-2       = 0f6d0dc41a87aae9ef371b1950f5b9d823db8b5685c6ac04a7a7ac133eb19a3f
+#1       = 7b0317ca9354284e98967e94a30a1b813db379017d28d9847847498c113df9e5
+#2       = 0f6d0dc41a87aae9ef371b1950f5b9d823db8b5685c6ac04a7a7ac133eb19a3f
 
 [derle]
 betik   = sed -e 's|libexec\/qtcreator|lib\/qtcreator|g' -i qtcreator.pri
