@@ -1,17 +1,17 @@
 [paket]
-tanim   = Web Tarayıcı
+tanim   = E-posta oku ve yaz
 paketci = Cihan_Alkan
 grup 	= İnternet
-url     = https://www.mozilla.org/en-US/firefox/new/
+url     = https://ftp.mozilla.org/pub/thunderbird
 
 [gerek]
 derleme    = 
-calisma    = gtk2 dbus-glib
+calisma    = 
 
 [kaynak]
 1      = https://ftp.mozilla.org/pub/thunderbird/releases/78.8.0/linux-x86_64/tr/thunderbird-78.8.0.tar.bz2
-dosya      = firefox.sh
-dosya      = firefox.desktop
+dosya      = thunderbird78.sh
+dosya      = thunderbird78.desktop
 [sha1]
 #1 		= SKIP
 
