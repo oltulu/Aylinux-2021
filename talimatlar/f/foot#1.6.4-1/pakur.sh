@@ -18,7 +18,7 @@
   ninja -C build
 
   DESTDIR="${PKG}/" ninja -C build install
- # rm -rf "${pkgdir}/usr/share/terminfo"
+ # rm -rf "${PKG}/usr/share/terminfo"
 
-  install -dm 755 "${pkgdir}/usr/share/terminfo/f/"
-  cp build/f/* "${pkgdir}/usr/share/terminfo/f/"
+  install -dm 755 "${PKG}/usr/share/terminfo/f/"
+  cp build/f/* "${PKG}/usr/share/terminfo/f/"
