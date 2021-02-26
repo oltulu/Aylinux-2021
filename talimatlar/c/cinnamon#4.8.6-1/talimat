@@ -6,7 +6,7 @@ url     = https://github.com/linuxmint/cinnamon
 
 [gerek]
 derleme = meson gobject-introspection intltool cjs startup-notification muffin cinnamon-menus polkit gstreamer cmake libsoup networkmanager
-calisma = cinnamon-control-center cinnamon-menus cinnamon-screensaver cinnamon-desktop dbus-glib libsm libcanberra  polkit-gnome python-cairo python-dbus python-gobject python-pam python-pexpect python-pillow python-pyinotify python-pytz python-tinycss2 python-xapp timezonemap caribou nemo cinnamon-session cinnamon-screensaver muffin cjs
+calisma = cinnamon-control-center cinnamon-menus cinnamon-screensaver cinnamon-translations nemo cinnamon-desktop dbus-glib libsm libcanberra  polkit-gnome python-cairo python-dbus python-gobject python-pam python-pexpect python-pillow python-pyinotify python-pytz python-tinycss2 python-xapp timezonemap caribou nemo cinnamon-session cinnamon-screensaver muffin cjs
 
 [kaynak]
 git = https://github.com/linuxmint/cinnamon
