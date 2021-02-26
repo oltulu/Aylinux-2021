@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/xapp
 
 [gerek]
-derleme = meson xtrans python-gobject libdbusmenu-glib libgnomekbd vala
+derleme = meson xtrans python-gobject libdbusmenu-glib libgnomekbd vala ninja samurai
 calisma = libgnomekbd libdbusmenu-gtk3 libdbusmenu-glib
 
 [kaynak]
