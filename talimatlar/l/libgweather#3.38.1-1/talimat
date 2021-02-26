@@ -6,11 +6,10 @@ grup   = gnome
 
 [gerek]
 derleme = geocode-glib meson ninja
-calisma = 
+calisma = geocode-glib
 
 [kaynak]
 git = https://gitlab.gnome.org/GNOME/libgweather
-#git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
