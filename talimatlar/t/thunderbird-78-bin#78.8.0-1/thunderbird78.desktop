@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Thunderbird (60.x)
+Name=Thunderbird (78.x)
 Comment=Send and receive mail with Thunderbird
 Comment[ast]=Lleer y escribir corréu electrónicu
 Comment[ca]=Llegiu i escriviu correu
@@ -23,6 +23,7 @@ Comment[pt_BR]=Leia e escreva suas mensagens
 Comment[ru]=Читайте и пишите письма
 Comment[sk]=Čítajte a píšte poštu pomocou programu Thunderbird
 Comment[sv]=Läs och skriv e-post
+Comment[tr]=E-Posta Gönder/Al
 Comment[ug]=ئېلخەت ۋە خەۋەرلەرنى Mozilla Thunderbird دا كۆرۈش ۋە يېزىش
 Comment[uk]=Читання та написання листів
 Comment[vi]=Đọc và soạn thư điện tử
@@ -49,13 +50,14 @@ GenericName[nl]=E-mailprogramma
 GenericName[pl]=Klient poczty
 GenericName[pt_BR]=Cliente de E-mail
 GenericName[ru]=Почтовый клиент
+GenericName[tr]=E-Posta Gönder/Al
 GenericName[sk]=Poštový klient
 GenericName[ug]=ئېلخەت دېتالى
 GenericName[uk]=Поштова програма
 GenericName[vi]=Phần mềm khách quản lý thư điện tử
 GenericName[zh_CN]=邮件新闻客户端
 GenericName[zh_TW]=郵件用戶端
-Exec=/usr/bin/thunderbird60 %u
+Exec=/usr/bin/thunderbird78 %u
 Terminal=false
 Type=Application
 Icon=thunderbird60
@@ -116,7 +118,7 @@ Name[uk]=Написати нового листа
 Name[vi]=Viết thư mới
 Name[zh_CN]=编写新消息
 Name[zh_TW]=寫一封新訊息
-Exec=/usr/bin/thunderbird60 -compose
+Exec=/usr/bin/thunderbird78 -compose
 
 [Desktop Action OpenAddressBook]
 Name=Open address book
@@ -170,4 +172,4 @@ Name[uk]=Відкрити адресну книгу
 Name[vi]=Mở sổ địa chỉ
 Name[zh_CN]=打开通讯录
 Name[zh_TW]=開啟通訊錄
-Exec=/usr/bin/thunderbird60 -addressbook
+Exec=/usr/bin/thunderbird78 -addressbook
