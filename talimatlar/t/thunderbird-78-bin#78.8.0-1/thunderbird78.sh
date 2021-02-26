@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 if
-	[ ! -d $HOME/.thunderbird60 ]
+	[ ! -d $HOME/.thunderbird78 ]
 then
-	install -d -m 0700 $HOME/.thunderbird60
+	install -d -m 0700 $HOME/.thunderbird78
 fi
 
-exec /opt/thunderbird60/thunderbird --profile $HOME/.thunderbird60 "$@"
+exec /opt/thunderbird78/thunderbird --profile $HOME/.thunderbird78 "$@"
