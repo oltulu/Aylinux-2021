@@ -20,6 +20,6 @@ tip     = py3
 
 [pakur]
 tip     = py3
-betik = sed -i 's/milis/aylinux/g' /usr/bin/mservice.py
+betik = sed -i 's/milis/aylinux/g' $PKG/usr/bin/mservice.py
 betik = sed -i 's/^Name\[tr\]=Milis Servis Arayüzü/Name\[tr\]=Servis Yönetimi/' $PKG/usr/share/applications/$isim.desktop
 
