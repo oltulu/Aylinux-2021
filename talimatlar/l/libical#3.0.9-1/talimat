@@ -16,7 +16,7 @@ github  = $isim/$isim
 [derle]
 betik  = cd $SRC
 #betik  = mkdir $isim-$surum/build
-betik  = cmake -H"$isim-$surum" -Bbuild -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBEXECDIR=lib -DGOBJECT_INTROSPECTION=true -DICAL_GLIB_VAPI=true -DSHARED_ONLY=true -D ICAL_BUILD_DOCS=false
+betik  = cmake -H"$isim-$surum" -Bbuild -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -D CMAKE_INSTALL_LIBDIR=lib -DCMAKE_INSTALL_LIBEXECDIR=lib -DGOBJECT_INTROSPECTION=true -DICAL_GLIB_VAPI=true -DSHARED_ONLY=true -D ICAL_BUILD_DOCS=false
 #betik  = cmake -S ../$isim-$surum -B build -G Ninja -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_INSTALL_LIBDIR=lib -D CMAKE_INSTALL_LIBEXECDIR=lib/$isim -D CMAKE_BUILD_TYPE=Release -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" -D SHARED_ONLY=true -D ICAL_BUILD_DOCS=false -Wno-dev
 betik  = cmake --build build
 	      
