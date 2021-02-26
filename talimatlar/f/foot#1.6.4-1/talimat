@@ -1,0 +1,26 @@
+[paket]
+tanim   =Wayland terminal emülatörü - hızlı, hafif ve minimalist
+paketci = Cihan_Alkan
+grup 	= İnternet
+url     = https://codeberg.org/dnkl/foot
+
+[gerek]
+derleme    = meson ninja scdoc python ncurses wayland-protocols tllist
+calisma    = 
+
+[kaynak]
+1      = ${url}/archive/${surum}.tar.gz::${isim}-${surum}.tar.gz
+
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = cd foot
+betik = export CFLAGS+=" -O3 -Wno-missing-profile"
+betik = meson --prefix=/usr --buildtype=release -Db_lto=true . build
+betik = find -name "*.gcda" -delete
+betik = meson configure -Db_pgo=generate build
+betik = ninja -C build
+
+[pakur]
+dosya = pakur.sh
