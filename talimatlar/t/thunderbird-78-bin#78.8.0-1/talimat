@@ -1,0 +1,34 @@
+[paket]
+tanim   = Web Tarayıcı
+paketci = Cihan_Alkan
+grup 	= İnternet
+url     = https://www.mozilla.org/en-US/firefox/new/
+
+[gerek]
+derleme    = 
+calisma    = gtk2 dbus-glib
+
+[kaynak]
+1      = https://ftp.mozilla.org/pub/thunderbird/releases/78.8.0/linux-x86_64/tr/thunderbird-78.8.0.tar.bz2
+dosya      = firefox.sh
+dosya      = firefox.desktop
+[sha1]
+#1 		= SKIP
+
+[derle]
+betik = mkdir -p "$PKG"/usr/bin
+betik = mkdir -p "$PKG"/usr/share/applications
+betik = mkdir -p "$PKG"/opt
+betik = cp -R --preserve=timestamps thunderbird "$PKG"/opt/thunderbird78
+
+
+[pakur]
+betik = install thunderbird78.sh "$PKG"/usr/bin/thunderbird78
+betik = install -m 644 thunderbird78.desktop "$PKG"/usr/share/applications/
+#betik = cp -r firefox/ "$PKG"/opt/firefox
+#betik = install -m755 firefox.sh "$PKG"/usr/bin/firefox-tr
+#betik = install -m755 firefox.sh "$PKG"/usr/bin/firefox
+#betik = install -m644 firefox.desktop "$PKG"/usr/share/applications/
+#betik = ln -Ts /usr/share/hunspell "$PKG"/opt/firefox/dictionaries
+#betik = ln -Ts /usr/share/hyphen "$PKG"/opt/firefox/hyphenation
+#betik = ln -sf /usr/lib/libnssckbi.so "$PKG"/opt/firefox/libnssckbi.so
