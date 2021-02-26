@@ -1,6 +1,6 @@
 [paket]
-tanim   = Milis Linux servis yönetim arayüzü
-paketci = yasarciv
+tanim   = Aylinux servis yönetimi
+paketci = Cihan_Alkan
 grup    = sistem
 url     = https://mls.akdeniz.edu.tr/git/milislinux/mservice
 arsiv   = $isim
