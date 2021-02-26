@@ -6,7 +6,7 @@ url     = https://codeberg.org/dnkl/foot
 
 [gerek]
 derleme    = meson ninja scdoc python ncurses wayland-protocols tllist
-calisma    = 
+calisma    = wayland fcft
 
 [kaynak]
 1      = ${url}/archive/${surum}.tar.gz::${isim}-${surum}.tar.gz
