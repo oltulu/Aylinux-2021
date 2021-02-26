@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/adwaita-icon-theme
 
 [gerek]
 derleme = gtk3 librsvg
-calisma = 
+calisma = hicolor-icon-theme librsvg
 
 [kaynak]
 xz      = https://download.gnome.org/sources/adwaita-icon-theme/${surum%.*}
@@ -19,6 +19,6 @@ betik   = autoreconf -fvi
 tip     = gnu
 	      
 [pakur]
-betik   = gdk-pixbuf-register
-betik   = update-mime-database /usr/share/mime
+#betik   = gdk-pixbuf-register
+#betik   = update-mime-database /usr/share/mime
 tip     = gnu
