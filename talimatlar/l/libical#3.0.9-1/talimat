@@ -1,6 +1,6 @@
 [paket]
 tanim   = iCalendar veri tipi ve format gerçeklemesi
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = http://libical.github.io/libical
 
