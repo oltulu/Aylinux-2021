@@ -6,7 +6,7 @@ url     = http://www.cairographics.org
 
 [gerek]
 derleme  = libsigc++ fontconfig libpng libxrender cairo
-calisma  = 
+calisma  = libsigc++
 
 [kaynak]
 gz      = http://cairographics.org/releases
