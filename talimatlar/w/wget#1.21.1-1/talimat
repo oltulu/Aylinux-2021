@@ -4,6 +4,11 @@ paketci = milisarge
 grup 	= onsistem
 url     = http://www.gnu.org/software/wget
 
+[gerek]
+derleme    = texinfo
+calisma    = 
+
+
 [kaynak]
 gz     	= http://ftp.gnu.org/gnu/$isim
 1 = https://notabug.org/oltulu/Ceviri/raw/master/wget.po
