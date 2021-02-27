@@ -2,7 +2,7 @@
 tanim   = Ekran Yöneticisi
 paketci = Cihan_Alkan
 grup    = sistem
-url     = http://github.com/sddm/sddm
+url     = https://sourceforge.net/projects/slim.berlios/
 
 [gerek]
 derleme = freeglut cmake
@@ -12,6 +12,7 @@ calisma = libjpeg-turbo
 gz      = http://downloads.sourceforge.net/project/slim.berlios
 1       = http://crux.nu/~tek/slim-crux-smooth.tar.gz
 2 = https://crux.nu/ports/crux-3.6/opt/slim/libpng.patch
+3 = https://github.com/archlinux/svntogit-packages/raw/packages/slim/trunk/slim-1.3.6-default-path.patch
 dosya	= slim.rc
 
 [sha256]
@@ -20,6 +21,7 @@ dosya	= slim.rc
 
 [derle]
 betik = patch -Np1 -i /sources/libpng.patch
+betik = patch -Np1 -i /sources/slim-1.3.6-default-path.patch
 betik = sed -i  -e '224d' CMakeLists.txt
 betik = cmake -DCMAKE_INSTALL_PREFIX=/usr
 betik = make
