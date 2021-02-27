@@ -6,7 +6,7 @@ url     = https://feh.finalrewind.org/
 
 [gerek]
 derleme    = imlib2 libxinerama libxt libexif libjpeg-turbo
-calisma    =
+calisma    = libexif
 
 [kaynak]
 bz2        = ${url}
