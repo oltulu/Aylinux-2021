@@ -13,6 +13,7 @@ gz      = http://downloads.sourceforge.net/project/slim.berlios
 1       = http://crux.nu/~tek/slim-crux-smooth.tar.gz
 2 = https://crux.nu/ports/crux-3.6/opt/slim/libpng.patch
 3 = https://github.com/archlinux/svntogit-packages/raw/packages/slim/trunk/slim-1.3.6-default-path.patch
+4 = https://github.com/archlinux/svntogit-packages/raw/packages/slim/trunk/slim-1.3.6-fix-libslim-libraries.patch
 dosya	= slim.rc
 
 [sha256]
@@ -22,6 +23,7 @@ dosya	= slim.rc
 [derle]
 betik = sed -i 's|set(LIBDIR "/lib")|set(LIBDIR "/usr/lib")|' CMakeLists.txt
 betik = patch -Np1 -i /sources/libpng.patch
+betik = patch -Np1 -i /sources/slim-1.3.6-fix-libslim-libraries.patch
 betik = patch -Np1 -i /sources/slim-1.3.6-default-path.patch
 betik = sed -i  -e '224d' CMakeLists.txt
 betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DCMAKE_SKIP_RPATH=ON -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes
