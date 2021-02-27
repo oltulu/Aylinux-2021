@@ -11,6 +11,7 @@ calisma = libjpeg-turbo
 [kaynak]
 gz      = http://downloads.sourceforge.net/project/slim.berlios
 1       = http://crux.nu/~tek/slim-crux-smooth.tar.gz
+2 = https://crux.nu/ports/crux-3.6/opt/slim/libpng.patch
 dosya	= slim.rc
 
 [sha256]
