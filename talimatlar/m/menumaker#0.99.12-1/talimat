@@ -5,8 +5,8 @@ grup    = openbox
 url     = http://menumaker.sourceforge.net/
 
 [gerek]
-derleme = glib itstool gtk3
-calisma =
+derleme = python
+calisma = python
 
 [kaynak]
 gz      = https://downloads.sourceforge.net/$isim
