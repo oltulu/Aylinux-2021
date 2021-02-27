@@ -10,12 +10,15 @@ calisma = qt5-svg desktop-file-utils
 
 [kaynak]
 git  = https://github.com/flameshot-org/flameshot
+1 = https://notabug.org/oltulu/Ceviri/raw/master/flameshot-Internationalization_tr.ts
 
 [sha256]
 #1       = f820c1f8cd464988cfcfc1af1fbcea2a3d0e5c4fb32accc3f54d93a8b5e1e890
 
 [derle]
 betik   = cd $isim
+betik   = rm /data/translations/Internationalization_tr.ts
+betik   = cp /sources/flameshot-Internationalization_tr.ts /data/translations/Internationalization_tr.ts
 tip     = cmake
 
 [pakur]
