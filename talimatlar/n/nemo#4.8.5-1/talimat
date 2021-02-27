@@ -17,6 +17,7 @@ dosya  = nemo-desktop-application.c
 
 [derle]
 betik 	= sed -i '/^\[Desktop Entry/,/^\[Desktop Action/ s/^Name\(.*\)=.*/Name\1=Nemo/' data/nemo.desktop.in
+# alttaki 2 kod nemo desktop root olarak çalışsın diye
 betik       = rm src/nemo-desktop-application.c
 betik       = cp  $SRC/nemo-desktop-application.c src/
 betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
