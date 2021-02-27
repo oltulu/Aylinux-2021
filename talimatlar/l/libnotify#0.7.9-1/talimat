@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://developer.gnome.org/notification-spec
 
 [gerek]
-derleme = glib libpng gdk-pixbuf gtk3 gobject-introspection
+derleme = glib libpng gdk-pixbuf gtk3 gobject-introspection ninja meson
 
 [kaynak]
 xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
@@ -15,7 +15,7 @@ xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
 
 [derle]
 betik   = truncate -s 0 docs/meson.build
-betik   = $SRC
+betik   = cd $SRC
 betik   = meson $isim-$surum build --prefix /usr -Dtests=false -Dintrospection=auto -Dman=false -Dgtk_doc=false -Ddocbook_docs=disabled
 betik   = ninja -C build
 
