@@ -18,10 +18,14 @@ dosya   = fix-75-yes-terminus.patch
 
 [derle]
 yama    = 2
-betik   = make prefix=/usr x11dir=/usr/share/fonts/misc psfdir=/usr/share/kbd/consolefonts
+betik   = ./configure --prefix=/usr --x11dir=/usr/share/fonts/misc --otbdir=/usr/share/fonts/misc --psfdir=/usr/share/kbd/consolefonts
+betik   = make all otb
 
 [pakur]
-betik   = make prefix=/usr x11dir=/usr/share/fonts/misc psfdir=/usr/share/kbd/consolefonts DESTDIR="$PKG" install
+betik   = cd $SRC
+betik   = make -C "terminus-font-$surum" DESTDIR="$PKG" install install-otb
 betik   = install -Dm644 "$SRC/terminus-font-$surum/75-yes-terminus.conf" "$PKG/etc/fonts/conf.avail/75-yes-terminus.conf"
 betik   = install -d "$PKG/etc/fonts/conf.d"
-betik   = cd "$PKG/etc/fonts/conf.d" && ln -s ../conf.avail/75-yes-terminus.conf .
+betik   = cd "$PKG/etc/fonts/conf.d"
+betik   = ln -s ../conf.avail/75-yes-terminus.conf .
+
