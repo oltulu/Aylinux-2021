@@ -18,7 +18,7 @@ dosya = lightdm-gtk-greeter.conf
 [derle]
 betik = cd $isim
 betik = NOCONFIGURE=1 ./autogen.sh
-betik = ./configure --prefix=/usr --libexecdir=/usr/lib/lightdm --sbindir=/usr/bin --sysconfdir=/etc --with-gtk3--with-libxklavier --enable-nls --enable-kill-on-sigterm --disable-libido --disable-libindicator --disable-static
+betik = ./configure --prefix=/usr --libexecdir=/usr/lib/lightdm --sbindir=/usr/bin --sysconfdir=/etc --with-gtk3 --with-libxklavier --enable-nls --enable-kill-on-sigterm --disable-libido --disable-libindicator --disable-static
 betik = make
 
 [pakur]
