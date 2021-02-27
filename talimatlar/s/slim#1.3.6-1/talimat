@@ -33,7 +33,8 @@ betik = make
 [pakur]
 betik = make DESTDIR=$PKG install
 betik = mkdir $PKG/etc/rc.d
-betik = install -m 755 $SRC/$slim.rc $PKG/etc/rc.d/$isim
+betik = mkdir $PKG/etc/rc.d/init.d
+betik = install -m 755 $SRC/slim.rc $PKG/etc/rc.d/init.d/slim
 betik = cd ../
 betik = rm -f slim-crux-smooth/README
 betik = cp -r slim-crux-smooth $PKG/usr/share/slim/themes/crux-smooth
