@@ -1,6 +1,6 @@
 [paket]
-tanim   = QML tabanlı X11 ekran yöneticisi
-paketci = yasarciv
+tanim   = Ekran Yöneticisi
+paketci = Cihan_Alkan
 grup    = sistem
 url     = http://github.com/sddm/sddm
 
@@ -19,6 +19,7 @@ dosya	= slim.rc
 #2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
 
 [derle]
+betik = patch -Np1 -i /sources/libpng.patch
 betik = sed -i  -e '224d' CMakeLists.txt
 betik = cmake -DCMAKE_INSTALL_PREFIX=/usr
 betik = make
