@@ -5,7 +5,7 @@ grup    = sistem
 url     = http://github.com/sddm/sddm
 
 [gerek]
-derleme = libjpeg-turbo
+derleme = freeglut cmake
 calisma = libjpeg-turbo
 
 [kaynak]
