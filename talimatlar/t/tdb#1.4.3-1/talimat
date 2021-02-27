@@ -15,7 +15,7 @@ gz      = http://samba.org/ftp/$isim
 #1       = dd4ecd9678e8d3ea772623bd81fe49b43363a2f970a76fb5468322753787aa4b
 
 [derle]
-betik  = ./configure --prefix=/usr
+betik  = ./configure --prefix=/usr --localstatedir=/var --sysconfdir=/etc/samba
 betik  = make
 
 [pakur]
