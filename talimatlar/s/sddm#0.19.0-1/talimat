@@ -6,7 +6,7 @@ url     = http://github.com/sddm/sddm
 
 [gerek]
 derleme = cmake extra-cmake-modules qt5-declarative qt5-tools pam dbus
-calisma =
+calisma = qt5-declarative
 
 [kaynak]
 1       = https://github.com/${isim}/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
