@@ -40,5 +40,5 @@ betik = rm -f slim-crux-smooth/README
 betik = cp -r slim-crux-smooth $PKG/usr/share/slim/themes/crux-smooth
 betik = chmod 0644 $PKG/usr/share/slim/themes/crux-smooth/*
  # no systemd support
-betik = rm -r $PKG/lib $PKG/usr/share/man/man1/slimlock.1
+betik = rm -r $PKG/usr/share/man/man1/slimlock.1
 servis	= slim
