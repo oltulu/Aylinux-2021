@@ -6,7 +6,7 @@ url     = https://github.com/linuxmint/nemo
 
 [gerek]
 derleme = meson gobject-introspection intltool exempi libnotify xapp libexif 
-calisma = cinnamon-desktop dconf gvfs exempi libexif libnotify libxml2 python xapp cinnamon-translations libassuan
+calisma = cinnamon-desktop dconf gvfs exempi libexif libnotify libxml2 python xapp cinnamon-translations libassuan ffmpegthumbnailer
 
 [kaynak]
 1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
