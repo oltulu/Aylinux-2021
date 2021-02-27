@@ -28,6 +28,8 @@ tip        = gnu
 
 [pakur]
 tip        = gnu
+betik      = rm $PKG/etc/lightdm/lightdm.conf
+betik      = cp ${SRC}/lightdm.conf $PKG/etc/lightdm/lightdm.conf
 betik      = install -Dm644 ${SRC}/lightdm.rules $PKG/usr/share/polkit-1/rules.d/lightdm.rules
 betik      = install -Dm755 ${SRC}/lightdm-Xsession $PKG/etc/lightdm/Xsession
 betik      = sed 's|\#session-wrapper=.*|session-wrapper=/etc/lightdm/Xsession|' -i ${PKG}/etc/lightdm/lightdm.conf
@@ -35,6 +37,4 @@ betik      = cp tests/src/lightdm-session $PKG/usr/bin
 betik      = sed -i '1 s/sh/bash --login/' $PKG/usr/bin/lightdm-session
 betik      = sed "s|pam_systemd\.so|pam_elogind.so|" -i ${PKG}/etc/pam.d/*
 betik      = rm -rf $PKG/etc/init;rm -rf $PKG/usr/share/help   
-betik      = rm $PKG/etc/lightdm/lightdm.conf
-betik      = cp ${SRC}/lightdm.conf $PKG/etc/lightdm/lightdm.conf
 servis     = lightdm
