@@ -1,0 +1,36 @@
+[paket]
+tanim   = QML tabanlı X11 ekran yöneticisi
+paketci = yasarciv
+grup    = sistem
+url     = http://github.com/sddm/sddm
+
+[gerek]
+derleme = libjpeg-turbo
+calisma = libjpeg-turbo
+
+[kaynak]
+gz      = http://downloads.sourceforge.net/project/slim.berlios
+1       = http://crux.nu/~tek/slim-crux-smooth.tar.gz
+dosya	= slim.rc
+
+[sha256]
+1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
+2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
+
+[derle]
+betik = sed -i  -e '224d' CMakeLists.txt
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr
+betik = make
+
+
+[pakur]
+betik = make DESTDIR=$PKG install
+betik = mkdir $PKG/etc/rc.d
+betik = install -m 755 $SRC/$slim.rc $PKG/etc/rc.d/$isim
+betik = cd ../
+betik = rm -f slim-crux-smooth/README
+betik = cp -r slim-crux-smooth $PKG/usr/share/slim/themes/crux-smooth
+betik = chmod 0644 $PKG/usr/share/slim/themes/crux-smooth/*
+ # no systemd support
+betik = rm -r $PKG/lib $PKG/usr/share/man/man1/slimlock.1
+servis	= slim
