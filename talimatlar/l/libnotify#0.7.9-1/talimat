@@ -15,8 +15,9 @@ xz      = http://ftp.gnome.org/pub/gnome/sources/${isim}/${surum%.*}
 
 [derle]
 betik   = truncate -s 0 docs/meson.build
-ekconf = -Dman=false -Dgtk_doc=false -Ddocbook_docs=disabled
-tip     = meson
+betik   = $SRC
+betik   = meson $isim-$surum build --prefix /usr -Dtests=false -Dintrospection=auto -Dman=false -Dgtk_doc=false -Ddocbook_docs=disabled
+betik   = ninja -C build
 
 [pakur]
 tip     = meson
