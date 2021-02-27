@@ -16,6 +16,7 @@ calisma = cinnamon-desktop dconf gvfs exempi libexif libnotify libxml2 python xa
 
 [derle]
 betik 	= sed -i '/^\[Desktop Entry/,/^\[Desktop Action/ s/^Name\(.*\)=.*/Name\1=Nemo/' data/nemo.desktop.in
+betik       = sed -i 's/if \(geteuid \(\) \=\= 0\) \{/if \(geteuid \(\) \=\= 5\) \{/' src/nemo-desktop-application.c
 betik 	= mkdir -p "${SRC}"/${isim}-${surum}/build
 betik 	= cd "${SRC}"/${isim}-${surum}/build
 betik 	= meson --prefix=/usr --libexecdir=lib/nemo --buildtype=plain ..   
