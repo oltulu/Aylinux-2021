@@ -12,7 +12,7 @@ calisma = python
 github  = johanmalm/jgmenu
 
 [sha256]
-1       = 8ce3250b6a726f068126a0b75e02a6caafcf651b8c6ef59b328ff70a81473fc5
+#1       = 8ce3250b6a726f068126a0b75e02a6caafcf651b8c6ef59b328ff70a81473fc5
 
 [derle]
 ekconf  = --with-pmenu
