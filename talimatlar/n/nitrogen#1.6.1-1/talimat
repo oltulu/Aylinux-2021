@@ -6,7 +6,7 @@ url     = https://github.com/l3ib/nitrogen
 
 [gerek]
 derleme =  gtkmm2 librsvg libxinerama desktop-file-utils
-calisma =
+calisma = gtkmm2
 
 [kaynak]
 gz      = $url/releases/download/${surum}
