@@ -17,8 +17,8 @@ git  = https://github.com/flameshot-org/flameshot
 
 [derle]
 betik   = cd $isim
-betik   = rm /data/translations/Internationalization_tr.ts
-betik   = cp /sources/flameshot-Internationalization_tr.ts /data/translations/Internationalization_tr.ts
+betik   = rm data/translations/Internationalization_tr.ts
+betik   = cp /sources/flameshot-Internationalization_tr.ts data/translations/Internationalization_tr.ts
 tip     = cmake
 
 [pakur]
