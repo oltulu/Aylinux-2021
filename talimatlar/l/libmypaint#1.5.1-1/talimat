@@ -12,7 +12,7 @@ calisma =
 xz      = https://github.com/mypaint/libmypaint/releases/download/v${surum}
 
 [sha256]
-1       = 6a07d9d57fea60f68d218a953ce91b168975a003db24de6ac01ad69dcc94a671
+#1       = 6a07d9d57fea60f68d218a953ce91b168975a003db24de6ac01ad69dcc94a671
 
 [derle]
 ekconf  = --disable-gegl
