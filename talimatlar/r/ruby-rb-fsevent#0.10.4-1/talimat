@@ -18,7 +18,8 @@ calisma = ruby
 betik 	= cd rb-fsevent-${surum}
 betik 	= sed -r 's|~>|>=|g' -i rb-fsevent.gemspec Rakefile
 betik 	= sed 's|git ls-files -z|find -type f -print0\|sed "s,\\\\./,,g"|' -i rb-fsevent.gemspec
-betik 	= rake build
+#betik 	= rake build
+betik 	= gem build rb-fsevent.gemspec
 betik 	= gem install --ignore-dependencies --no-user-install -i "${PKG}/$(gem env gemdir)" -n "${PKG}/usr/bin" rb-fsevent-${surum}.gem
 
 [pakur]
