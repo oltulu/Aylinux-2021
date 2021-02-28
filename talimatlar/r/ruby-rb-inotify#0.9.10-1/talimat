@@ -19,7 +19,7 @@ betik 	= cd rb-inotify-${surum}
 betik 	= sed -r 's|~>|>=|g' -i rb-inotify.gemspec 
 betik 	= sed 's|git ls-files|find -type f|' -i rb-inotify.gemspec
 betik 	= gem build rb-inotify.gemspec
-betik 	= gem install --ignore-dependencies --no-user-install -i "${PKG}/$(gem env gemdir)" -n "${PKG}/usr/bin" /sources/rb-inotify-${surum}.gem
+betik 	= gem install --ignore-dependencies --no-user-install -i "${PKG}/$(gem env gemdir)" -n "${PKG}/usr/bin" rb-inotify-${surum}.gem
 
 [pakur]
 betik 	= cd rb-inotify-${surum}
