@@ -6,7 +6,7 @@ url     = https://bitmath.org/code/mtdev
 
 [gerek]
 derleme = gobject-introspection intltool
-calisma = autoconf automake gettext gtk-doc intltool libtool pkg-config
+calisma = autoconf automake gettext intltool libtool pkg-config # gtk-doc 
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
