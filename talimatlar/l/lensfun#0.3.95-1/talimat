@@ -13,7 +13,7 @@ calisma    =
 dosya      = lensfun-fix-python-install-dir.patch
 
 [sha256]
-1          = ae8bcad46614ca47f5bda65b00af4a257a9564a61725df9c74cb260da544d331
+#1          = ae8bcad46614ca47f5bda65b00af4a257a9564a61725df9c74cb260da544d331
 
 [derle]
 yama       = 2
