@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE netbook uzantısı
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = glib libxtst libwnck libfakekey mate-panel 
+calisma =
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+1       = 48a1d4b88be09da420d10905dd07934a23781d86211e75afdb13b357f04bb3ae
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
