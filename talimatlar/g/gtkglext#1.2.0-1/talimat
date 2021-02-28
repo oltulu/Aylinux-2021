@@ -6,7 +6,7 @@ url     = https://projects.gnome.org/gtkglext
 
 [gerek]
 derleme    = glib pangox-compat libxt gtk2 glu mesa
-calisma    =
+calisma    = pangox-compat
 
 [kaynak]
 gz         = ${SOURCEFORGE_SITE}/gtkglext/gtkglext/${surum}
