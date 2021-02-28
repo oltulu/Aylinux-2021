@@ -12,7 +12,7 @@ calisma =
 xz      = https://download.gimp.org/pub/$isim/${surum%.*}
 
 [sha256]
-1       = 7765499f27341b0d16032e665319cbc12876483ff6a944fcdf24a9c58e3e254a
+#1       = 7765499f27341b0d16032e665319cbc12876483ff6a944fcdf24a9c58e3e254a
 
 [derle]
 ekconf  = -Ddocs=false -Dlua=disabled  -Dworkshop=true -Dmrg=disabled -Dumfpack=disabled
