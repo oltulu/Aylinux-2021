@@ -9,7 +9,7 @@ derleme =
 calisma = ruby
 
 [kaynak]
-1      = https://github.com/guard/rb-inotify/archive/v${surum}.tar.gz::(${isim}-${surum}.tar.gz
+1      = https://github.com/guard/rb-inotify/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
 
 [sha512]
 #1 		= 09a76bd99c0463bf48843f5e138a9fb215fd160a9b1d1b0cafacdf2ddc0958c991edf25bdf65850783c90732be22f034213b4ec9ce1d17e5f6432778bb70185b
