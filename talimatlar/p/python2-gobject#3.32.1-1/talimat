@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/PyGObject
 
 [gerek]
 derleme = python-cairo gobject-introspection meson
-calisma = gobject-introspection-runtime
+calisma = gobject-introspection
 
 [kaynak]
 1       = https://download.gnome.org/sources/pygobject/${surum%.*}/pygobject-$surum.tar.xz
