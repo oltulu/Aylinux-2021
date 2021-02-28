@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-panel
 
 [gerek]
-derleme = qt5-tools cmake ninja
+derleme = qt5-tools cmake ninja libqtxdg
 calisma = gsettings-qt
 
 [kaynak]
