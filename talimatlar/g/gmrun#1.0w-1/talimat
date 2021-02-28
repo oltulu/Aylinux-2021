@@ -1,0 +1,27 @@
+[paket]
+tanim   = Bir çalıştırma programı penceresi sağlayan basit bir program
+paketci = Cihan_Alkan
+grup 	= araç
+url     = https://github.com/wdlkmpx/gmrun
+
+[gerek]
+derleme =
+calisma = 
+
+[kaynak]
+git      = https://github.com/wdlkmpx/gmrun
+1 = https://notabug.org/oltulu/Ceviri/raw/master/gmrun-main.c
+
+[sha512]
+#1 		= 339c81a079958aceb8c05cf0186e03246e2898faaecb493a7f28e1f5e2cfe81d920579904d2a8e3b6a75a5b44100e73a5b279d317f6bd29ddaab8f5f917062bd
+
+[derle]
+betik 	= cd $isim
+betik = cp /sources/gmrun-main.c src/main.c
+betik 	= ./autogen.sh
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc
+betik 	= make
+    	      
+[pakur]
+betik 	= cd $isim
+betik 	= make DESTDIR="$PKG" install
