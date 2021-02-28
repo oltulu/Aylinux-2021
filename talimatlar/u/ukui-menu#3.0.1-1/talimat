@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-menu
 
 [gerek]
-derleme = qt5-tools gsettings-qt bamf qt5-x11extras
+derleme = qt5-tools gsettings-qt bamf qt5-x11extras kwindowsystem
 calisma = gsettings-qt
 
 [kaynak]
