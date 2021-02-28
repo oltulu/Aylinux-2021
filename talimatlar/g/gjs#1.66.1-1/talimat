@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://wiki.gnome.org/Projects/Gjs
 
 [gerek]
-derleme = mozjs78 cairo gobject-introspection-runtime sysprof
+derleme = mozjs78 cairo gobject-introspection sysprof
 calisma = 
 
 [kaynak]
