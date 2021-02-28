@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://wiki.gnome.org/Projects/gexiv2
 
 [gerek]
-derleme    = meson python-gobject vala glib exiv2 gobject-introspection
+derleme    = meson python-gobject vala glib exiv2 gobject-introspection ninja
 calisma    =
 
 [kaynak]
