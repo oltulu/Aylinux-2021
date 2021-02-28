@@ -4,7 +4,7 @@ paketci = Cihan_Alkan
 url     = https://github.com/ukui/ukui-session-manager
 
 [gerek]
-derleme    = 
+derleme    = kidletime
 calisma    =
 
 [kaynak]
