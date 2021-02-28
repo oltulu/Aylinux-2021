@@ -16,6 +16,7 @@ git      = https://github.com/ukui/ukwm
 
 [derle]
 betik 	= cd $isim
+betik = sed -i 's/include\ \<drm\/drm\_fourcc\.h/include\ \<libdrm\/drm\_fourcc\.h/' wayland/meta-wayland-buffer.c
 betik 	= NOCONFIGURE=1 ./autogen.sh
 betik 	= sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
 #betik 	= sed -i 's|drm_fourcc.h|meta/util.h|' src/wayland/meta-wayland-dma-buf.c
