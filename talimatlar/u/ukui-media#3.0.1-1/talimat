@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-media
 
 [gerek]
-derleme = qt5-tools qt5-multimedia 
+derleme = qt5-tools qt5-multimedia libmatemixer libcanberra
 calisma = gsettings-qt
 
 [kaynak]
