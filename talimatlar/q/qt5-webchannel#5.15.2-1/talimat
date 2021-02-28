@@ -13,7 +13,7 @@ calisma =
 
 
 [sha256]
-1 		= 7f3ef8e626d932bbc121810661a62ece3955ab982340676a19001417e2faf9fc
+#1 		= 7f3ef8e626d932bbc121810661a62ece3955ab982340676a19001417e2faf9fc
 
 [derle]
 betik   = mkdir -p build;cd build;qmake ../${isim/5-/}-everywhere-src-${surum} && make
