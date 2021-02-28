@@ -13,7 +13,7 @@ bz2     = https://download.gimp.org/pub/gimp/v${surum%.*}
 dosya   = gimp-0001-no-check-update.patch
 
 [sha256]
-1       = e12f9f874b1a007c4277b60aa81e0b67330be7e6153e5749ead839b902fc7b3c
+#1       = e12f9f874b1a007c4277b60aa81e0b67330be7e6153e5749ead839b902fc7b3c
 
 [derle]
 yama    = gimp-0001-no-check-update.patch
