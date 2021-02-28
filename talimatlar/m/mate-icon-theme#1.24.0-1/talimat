@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE simgesi teması
+paketci = yasarciv67
+grup    = sistem
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = itstool icon-naming-utils gtk2
+calisma =
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+1       = ca9e5387439fcf7eed53eb33f10a6d3ae51b4d96af525eed6f8cf31d83f95428
+
+[derle]
+tip     = gnu
+
+[pakur]
+tip     = gnu
+betik   = rm -f ${PKG}/usr/share/icons/mate/icon-theme.cache
