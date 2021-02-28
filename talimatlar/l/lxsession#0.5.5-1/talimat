@@ -5,7 +5,7 @@ url     = https://lxde.org
 
 [gerek]
 derleme    = 
-calisma    =
+calisma    = gtk2
 
 [kaynak]
 1          = https://downloads.sourceforge.net/lxde/$isim-$surum.tar.xz
