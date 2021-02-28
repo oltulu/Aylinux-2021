@@ -15,7 +15,7 @@ xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 1 		= 
 
 [derle]
-betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static --libexecdir=/usr/lib/gnome-keyring --enable-gtkdoc=no --enable-vala=no
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static --libexecdir=/usr/lib/gnome-keyring --disable-gtk-doc --enable-vala=no
 sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik = make
       
