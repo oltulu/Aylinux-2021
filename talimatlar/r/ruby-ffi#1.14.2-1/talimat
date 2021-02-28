@@ -1,0 +1,21 @@
+[paket]
+tanim   = Sass, CSS'yi yeniden eğlenceli hale getiriyor
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://sass-lang.com/
+
+[gerek]
+derleme =  
+calisma = ruby
+
+[kaynak]
+1      = https://rubygems.org/downloads/ffi-$surum.gem
+
+[sha512]
+#1 		= 09a76bd99c0463bf48843f5e138a9fb215fd160a9b1d1b0cafacdf2ddc0958c991edf25bdf65850783c90732be22f034213b4ec9ce1d17e5f6432778bb70185b
+
+[derle]
+betik 	= gem install --ignore-dependencies --no-user-install -i "${PKG}$(gem env gemdir)" -n "${PKG}/usr/bin" ffi-${surum}.gem
+ 
+[pakur]
+betik 	=  rm "${PKG}/$(gem env gemdir)/cache/ffi-${surum}.gem"
