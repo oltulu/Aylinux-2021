@@ -9,7 +9,7 @@ derleme = mariadb sqlite unixodbc postgresql alsa-lib gtk3 pulseaudio cups freet
 calisma = libjpeg-turbo xcb-util-keysyms xcb-util-renderutil libgl fontconfig xdg-utils shared-mime-info xcb-util-wm libxrender libxi sqlite xcb-util-image mesa tslib libinput libxkbcommon-x11 libproxy double-conversion
 
 [kaynak]
-1      = https://download.qt.io/official_releases/qt/6.0/$surum/submodules//submodules/qtbase-everywhere-src-${surum}.tar.xz
+1      = https://download.qt.io/official_releases/qt/6.0/$surum/submodules/qtbase-everywhere-src-${surum}.tar.xz
 
 [sha256]
 #1 		= fddfd8852ef7503febeed67b876d1425160869ae2b1ae8e10b3fb0fedc5fe701
