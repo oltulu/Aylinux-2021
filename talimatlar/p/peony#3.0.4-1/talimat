@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/peony
 
 [gerek]
-derleme = poppler-qt5
+derleme = poppler-qt5 gsettings-qt
 calisma = poppler-qt5
 
 [kaynak]
