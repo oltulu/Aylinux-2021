@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://mate-desktop.org
 
 [gerek]
-derleme = intltool itstool gobject-introspection
+derleme = intltool itstool gobject-introspection libpeas
 calisma = dbus-glib gobject-introspection-runtime exempi lcms2 libexif libjpeg-turbo mate-desktop libpeas
 
 [kaynak]
