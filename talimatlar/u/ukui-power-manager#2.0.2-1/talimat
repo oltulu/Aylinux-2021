@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-power-manager
 
 [gerek]
-derleme =  
+derleme =  yelp-tools
 calisma =  
 
 [kaynak]
