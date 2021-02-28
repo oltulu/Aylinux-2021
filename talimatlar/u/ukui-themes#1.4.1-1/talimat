@@ -13,7 +13,7 @@ calisma = gsettings-qt
 2      = https://github.com/ukui/ukui-themes/pull/19.patch::ukui-themes-fix-icon-theme.patch
 
 [sha512]
-1 		= 9fbf8bc6b865f4050d0e4e3e7131751e8d292b4708f07c521d7777545dc0dd78ca6c6d07920078b9e989456fe1e9ffbf7633e2cf8e03c3eae438b7c19a2753ad
+#1 		= 9fbf8bc6b865f4050d0e4e3e7131751e8d292b4708f07c521d7777545dc0dd78ca6c6d07920078b9e989456fe1e9ffbf7633e2cf8e03c3eae438b7c19a2753ad
 
 [derle]
 #betik 	= patch -p1 -i ../ukui-themes-fix-icon-theme.patch
