@@ -6,7 +6,7 @@ url     = https://launchpad.net/bamf
 
 [gerek]
 derleme = gnome-common
-calisma = 
+calisma = libgtop
 
 [kaynak]
 gz = https://launchpad.net/bamf/0.5/$surum/+download
