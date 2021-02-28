@@ -1,0 +1,27 @@
+[paket]
+tanim   = Sass, CSS'yi yeniden eğlenceli hale getiriyor
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://sass-lang.com/
+
+[gerek]
+derleme =  
+calisma = ruby
+
+[kaynak]
+1      = https://github.com/guard/rb-inotify/archive/v${surum}.tar.gz::(${isim}-${surum}.tar.gz
+
+[sha512]
+#1 		= 09a76bd99c0463bf48843f5e138a9fb215fd160a9b1d1b0cafacdf2ddc0958c991edf25bdf65850783c90732be22f034213b4ec9ce1d17e5f6432778bb70185b
+
+[derle]
+betik 	= cd rb-inotify-${surum}
+betik 	= sed -r 's|~>|>=|g' -i /sources/rb-inotify.gemspec 
+betik 	= sed 's|git ls-files|find -type f|' -i /sources/rb-inotify.gemspec
+betik 	= gem build /sources/rb-inotify.gemspec
+betik 	= gem install --ignore-dependencies --no-user-install -i "${PKG}/$(gem env gemdir)" -n "${PKG}/usr/bin" /sources/rb-inotify-${surum}.gem
+
+[pakur]
+betik 	= cd rb-inotify-${surum}
+betik 	=  rm "${PKG}/$(gem env gemdir)/cache/rb-inotify-${surum}.gem"
+
