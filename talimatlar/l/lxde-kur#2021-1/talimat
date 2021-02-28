@@ -1,0 +1,21 @@
+[paket]
+tanim   = Lxde masaüstü için gerekli  paketleri kurar
+paketci = Cihan_Alkan
+grup 	= lxde
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      = https://notabug.org/oltulu/Ceviri/raw/master/lxde-kur.tar.gz
+
+
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = cp -r lxde-kur/* $PKG/
