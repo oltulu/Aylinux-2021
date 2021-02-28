@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://mate-desktop.org
 
 [gerek]
-derleme = mate-desktop
+derleme = mate-desktop mate-menus
 calisma = libmatekbd libsm mate-menus mate-desktop libmateweather
 
 [kaynak]
