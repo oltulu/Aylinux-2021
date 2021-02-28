@@ -6,7 +6,7 @@ url     = http://qmmp.ylsoftware.com/
 
 [gerek]
 derleme = cmake qt5-tools
-calisma = alsa-lib
+calisma = alsa-lib wavpack mpg123 libshout taglib
 
 [kaynak]
 bz2      = http://qmmp.ylsoftware.com/files
