@@ -18,11 +18,12 @@ dosya   = qtcreator-clang-libs.patch
 #2       = 0f6d0dc41a87aae9ef371b1950f5b9d823db8b5685c6ac04a7a7ac133eb19a3f
 
 [derle]
-betik   = sed -e 's|libexec\/qtcreator|lib\/qtcreator|g' -i qtcreator.pri
-betik   = sed -e 's|libexec|lib|g' -i src/tools/tools.pro
-betik   = rm -r src/shared/qbs
+betik   = cd qt-creator-opensource-src-$surum
 yama    = qtcreator-clang-libs.patch
-tip     = qmake
+betik   = cd $SRC
+betik   = cmake -B build -S qt-creator-opensource-src-$surum -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBEXECDIR=lib
+betik   = cmake --build build
 
 [pakur]
-betik   = make INSTALL_ROOT="$PKG/usr/" install
+betik   = DESTDIR="$PKG" cmake --install build
+  
