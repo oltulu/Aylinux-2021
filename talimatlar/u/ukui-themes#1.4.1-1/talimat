@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-themes
 
 [gerek]
-derleme = qt5-tools
+derleme = qt5-tools ruby-sass
 calisma = gsettings-qt
 
 [kaynak]
