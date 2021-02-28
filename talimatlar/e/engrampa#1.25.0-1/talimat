@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = caja intltool itstool python
-calisma = gtk3 gzip libarchive tar unzip zip
+calisma = gtk3 gzip libarchive tar unzip zip json-glib
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
