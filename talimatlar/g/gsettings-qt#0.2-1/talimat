@@ -6,7 +6,7 @@ url     = https://github.com/linuxmint/${isim}
 
 [gerek]
 derleme = qt5-base
-calisma = 
+calisma = qt5-declarative
 
 [kaynak]
 1      = https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/gsettings-qt/0.2-4/gsettings-qt_0.2.orig.tar.gz
