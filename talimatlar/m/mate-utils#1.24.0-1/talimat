@@ -1,0 +1,22 @@
+[paket]
+tanim   = MATE masaüstü için PolicyKit entegrasyonu
+paketci = Cihan_Alkan
+grup   	= mate
+url     = https://pub.mate-desktop.org
+
+[gerek]
+derleme =  
+calisma = gettext
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+
+[derle]
+betik     = ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --sysconfdir=/etc --disable-maintainer-flags
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu
