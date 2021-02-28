@@ -6,7 +6,7 @@ url     = https://pub.mate-desktop.org
 
 [gerek]
 derleme =  
-calisma = gettext
+calisma = gettext gtkmm libgtop libwnck
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
