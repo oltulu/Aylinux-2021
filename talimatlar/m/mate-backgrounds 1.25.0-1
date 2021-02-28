@@ -1,0 +1,21 @@
+[paket]
+tanim   = MATE masaüstü için PolicyKit entegrasyonu
+paketci = Cihan_Alkan
+grup   	= mate
+url     = https://pub.mate-desktop.org
+
+[gerek]
+derleme =  
+calisma = gettext
+
+[kaynak]
+xz      = https://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+
+[derle]
+betik     = ./configure --prefix=/usr
+betik     = make
+	      
+[pakur]
+tip 	= gnu
