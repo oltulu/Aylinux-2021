@@ -5,8 +5,8 @@ grup 	= geliştirme
 url     = https://www.qt.io
 
 [gerek]
-derleme = qt5-declarative clang qt5-webkit
-calisma = qt5-base hicolor-icon-theme
+derleme = 
+calisma = 
 
 [kaynak]
 1      = https://download.qt.io/official_releases/qt/${surum%.*}/${surum}/submodules/qttools-everywhere-src-${surum}.tar.xz
