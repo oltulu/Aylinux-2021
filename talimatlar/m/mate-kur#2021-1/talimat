@@ -1,7 +1,7 @@
 [paket]
 tanim   = Mate masaüstü için gerekli  ayarları kurar
 paketci = Cihan_Alkan
-grup 	= xfce
+grup 	= mate
 url     = https://github.com/oltulu
 
 [gerek]
