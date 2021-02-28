@@ -6,7 +6,7 @@ url     = https://www.qt.io
 
 [gerek]
 derleme = qt5-base vulkan-headers python
-calisma = 
+calisma = qt5-base
 
 [kaynak]
 1       = https://download.qt.io/official_releases/qt/5.15/$surum/submodules/qtdeclarative-everywhere-src-$surum.tar.xz
