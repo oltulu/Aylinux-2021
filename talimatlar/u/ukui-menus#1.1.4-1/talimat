@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukui-menus
 
 [gerek]
-derleme = mate-common
+derleme = mate-common autoconf-archive
 calisma = 
 
 [kaynak]
