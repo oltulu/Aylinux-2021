@@ -21,3 +21,6 @@ tip = gnu
 [pakur]
 betik =cd $SRC/libwnck-$surum
 tip = gnu
+betik = rm $PKG/usr/bin/wnck-urgency-monitor
+betik = rm $PKG/usr/bin/wnckprop
+
