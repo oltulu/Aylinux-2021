@@ -12,6 +12,7 @@ calisma =
 bz2     = ${GNOME_SITE}/${isim}/${surum%.*}
 dosya	= python27.patch
 dosya	= fix-leaks-of-pango-objects.patch
+1 = https://aur.archlinux.org/cgit/aur.git/plain/drop-pangofont.patch?h=pygtk
 
 [sha256]
 1       = cd1c1ea265bd63ff669e92a2d3c2a88eb26bcd9e5363e0f82c896e649f206912
@@ -21,9 +22,10 @@ dosya	= fix-leaks-of-pango-objects.patch
 [derle]
 yama	= python27.patch
 yama	= fix-leaks-of-pango-objects.patch
+betik	= patch -p1 -i /sources/drop-pangofont.patch?h=pygtk
 betik	= sed -i -e 's#env python$#env python2#' examples/pygtk-demo/{,demos/}*.py
 betik	= sed -i '/^SUBDIRS =/s/docs//' Makefile.in
-betik	= PYTHON=/usr/bin/python2 ./configure --prefix=/usr --disable-docs 
+betik	= PYTHON=/usr/bin/python2 ./configure --prefix=/usr --build=unknown-unknown-linux --disable-docs 
 betik   = make
 
 [pakur]
