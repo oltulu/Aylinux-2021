@@ -18,9 +18,13 @@ calisma =
 [derle]
 betik = cd cinnamox_themes-20200801
 betik 	= mkdir -p $PKG/usr/share/themes
-betik 	= cp -r ./Ci* /usr/share/themes/
-
+betik 	= cp -r Cinnamox-Aubergine $PKG/usr/share/themes/
+betik 	= cp -r Cinnamox-Gold-Spice $PKG/usr/share/themes/
+betik 	= cp -r Cinnamox-Heather $PKG/usr/share/themes/
+betik 	= cp -r Cinnamox-Kashmir-Blue $PKG/usr/share/themes/
     	      
 [pakur]
-betik = cd cinnamox_themes-20200801
+betik 	= cp -r Cinnamox-Rhino $PKG/usr/share/themes/
+betik 	= cp -r Cinnamox-Rosso-Cursa $PKG/usr/share/themes/
+betik 	= cp -r Cinnamox-Willow-Grove $PKG/usr/share/themes/
 
