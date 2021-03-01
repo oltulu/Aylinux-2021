@@ -14,16 +14,22 @@ dosya = mirage-0.9.5.2-glib241-init-workaround.patch
 dosya = tr.po
 dosya = mirage.py
 dosya = setup.py
+2 = https://aur.archlinux.org/cgit/aur.git/plain/exif.patch?h=mirage
+3 = https://aur.archlinux.org/cgit/aur.git/plain/exif.c?h=mirage
         
 [sha256]
 #1       = c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 
 [derle]
-betik	= rm mirage.py
-betik	= cp $SRC/mirage.py ./
+betik	= cd mirage-1.0_pre2
+betik	= patch --forward --strip=1 --input="/sources/exif.patch?h=mirage"
+betik	= cp "/sources/exif.c?h=mirage" .
+#betik	= rm mirage.py
+#betik	= cp $SRC/mirage.py ./
 betik	= cp $SRC/tr.po po/
 betik	= patch -Np1 -i $SRC/mirage-0.9.5.2-glib241-init-workaround.patch
 betik   = python2 setup.py build
 
 [pakur]
+betik	= cd mirage-1.0_pre2
 betik	=   python2 setup.py install --root="${PKG}" --optimize=1 --skip-build
