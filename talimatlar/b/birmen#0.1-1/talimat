@@ -21,4 +21,6 @@ betik 	= make
         	      
 [pakur]
 betik 	= cd BirMen
-betik 	= make INSTALL_ROOT="$PKG" install
+betik 	= mkdir $PKG/usr
+betik 	= mkdir $PKG/usr/bin
+betik 	= cp Birmen $PKG/usr/bin/birmen
