@@ -9,7 +9,7 @@ derleme = zlib
 calisma =
 
 [kaynak]
-bz2    =http://downloads.sourceforge.net/project/mirageiv.berlios/mirage-1.0_pre2.tar.bz2
+1    =http://downloads.sourceforge.net/project/mirageiv.berlios/mirage-1.0_pre2.tar.bz2
 dosya = mirage-0.9.5.2-glib241-init-workaround.patch
 dosya = tr.po
 dosya = mirage.py
@@ -22,7 +22,7 @@ betik	= rm mirage.py
 betik	= cp $SRC/mirage.py ./
 betik	= cp $SRC/tr.po po/
 betik	= patch -Np1 -i $SRC/mirage-0.9.5.2-glib241-init-workaround.patch
-betik   =  python2 setup.py build
+betik   = python2 setup.py build
 
 [pakur]
 betik	=   python2 setup.py install --root="${PKG}" --optimize=1 --skip-build
