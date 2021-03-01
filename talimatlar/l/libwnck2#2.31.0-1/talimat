@@ -15,10 +15,10 @@ calisma = gtk3 startup-notification libxres
 1 		= 
 
 [derle]
-betik =cd $SRC
+betik =cd $SRC/libwnck-$surum
 betik 	= milis-meson libwnck-$surum build -D gtk_doc=false 
-betik = ninja -C build
+tip = meson
       
 [pakur]
-betik   = cd $SRC
-betik 	= DESTDIR="$PKG" meson install -C build
+betik =cd $SRC/libwnck-$surum
+tip = meson
