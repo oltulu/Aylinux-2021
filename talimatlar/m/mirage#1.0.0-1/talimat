@@ -27,9 +27,11 @@ betik	= patch --forward --strip=1 --input="/sources/exif.patch?h=mirage"
 betik	= cp "/sources/exif.c?h=mirage" .
 betik	= rm mirage.py
 betik	= cp $SRC/mirage.py ./
+betik	= rm setup.py
+betik	= cp $SRC/setup.py ./
 betik	= patch -Np1 -i $SRC/mirage-0.9.5.2-glib241-init-workaround.patch
 betik   = python2 setup.py build
 
 [pakur]
 betik	= cd mirage-1.0_pre2
-betik	=   python2 setup.py install --root="${PKG}" --optimize=1 --skip-build
+betik	= python2 setup.py install --root="${PKG}" --optimize=1 --skip-build
