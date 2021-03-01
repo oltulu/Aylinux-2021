@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://gitlab.gnome.org/GNOME/libwnck
 
 [gerek]
-derleme = gobject-introspection gtk-doc git meson
+derleme = gobject-introspection meson ninja
 calisma = gtk3 startup-notification libxres
 
 [kaynak]
