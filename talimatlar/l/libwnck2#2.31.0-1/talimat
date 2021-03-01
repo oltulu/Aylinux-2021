@@ -16,9 +16,8 @@ calisma = gtk3 startup-notification libxres
 
 [derle]
 betik =cd $SRC/libwnck-$surum
-betik 	= milis-meson libwnck-$surum build -D gtk_doc=false 
-tip = meson
+tip = gnu
       
 [pakur]
 betik =cd $SRC/libwnck-$surum
-tip = meson
+tip = gnu
