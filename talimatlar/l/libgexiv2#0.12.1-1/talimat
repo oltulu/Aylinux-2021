@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/gexiv2
 
 [gerek]
 derleme    = meson python-gobject vala glib exiv2 gobject-introspection ninja
-calisma    =
+calisma    = exiv2
 
 [kaynak]
 1          = ${GNOME_SITE}/gexiv2/${surum%.*}/${isim/lib/}-${surum}.tar.xz
