@@ -5,7 +5,7 @@ grup 	= mate
 url     = https://mate-desktop.org
 
 [gerek]
-derleme = intltool itstool gobject-introspection python mate-common yelp-tools
+derleme = intltool itstool gobject-introspection python mate-common yelp-tools enchant gtksourceview
 calisma = iso-codes mate-desktop zenity gtksourceview libpeas python2
 
 [kaynak]
