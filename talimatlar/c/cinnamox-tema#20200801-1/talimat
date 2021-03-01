@@ -1,8 +1,8 @@
 [paket]
-tanim   = 
+tanim   = Cinnamox-tema
 paketci = Cihan_Alkan
 grup 	= cinnamon
-url     = https://github.com/linuxmint/cinnamon
+url     = https://github.com/smurphos/cinnamox_themes
 
 [gerek]
 derleme = 
