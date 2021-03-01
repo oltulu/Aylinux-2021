@@ -1,7 +1,7 @@
 [paket]
 tanim   = GNU görüntü işleme programı
-paketci = milisarge
-grup    = tasarım
+paketci = Cihan_Alkan
+grup    = Grafik
 url     = https://www.gimp.org
 
 [gerek]
