@@ -1,4 +1,4 @@
-cd $SRC/jre1.8.0_271
+cd $SRC/jre1.8.0_281
 install -d $PKG/usr/{bin,share,lib/$isim}
 mv bin lib plugin  $PKG/usr/lib/$isim
 install -d "$PKG"/usr/lib/mozilla/plugins
