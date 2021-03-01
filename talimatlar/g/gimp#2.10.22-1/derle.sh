@@ -1,11 +1,12 @@
-  ./configure --prefix=/usr \
+  PYTHON=/usr/bin/python2 ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
     --libexecdir=/usr/bin \
-    --with-bug-report-url=https://crux.nu/bugs \
     --enable-mp \
-    --disable-static \
-    --disable-python \
-    --disable-nls \
+    --enable-gimp-console \
+    --disable-gtk-doc \
     --disable-check-update \
-    --without-webkit
-
-  make
+    --disable-python \
+    --with-bug-report-url='https://bugs.archlinux.org/?string=gimp' \
+    --with-openexr \
+    --without-aa
