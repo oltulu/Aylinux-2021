@@ -1,0 +1,26 @@
+[paket]
+tanim   = 
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://github.com/linuxmint/cinnamon
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1 = https://github.com/smurphos/cinnamox_themes/archive/20200801.tar.gz::cinnamox-tema-20200801.tar.gz
+
+
+[sha512]
+#1 		= 
+
+[derle]
+betik = cd cinnamox_themes-20200801
+betik 	= mkdir -p $PKG/usr/share/themes
+betik 	= cp -r ./* /usr/share/themes/
+
+    	      
+[pakur]
+betik = cd cinnamox_themes-20200801
+betik 	= cd $isim/build
