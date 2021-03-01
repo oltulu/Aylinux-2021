@@ -5,7 +5,7 @@ grup    = Grafik
 url     = https://www.gimp.org
 
 [gerek]
-derleme = gegl glib-networking glib libgexiv2 gtk2 gtk3 intltool libtool perl-xml-parser aalib alsa-lib babl dbus-glib ghostscript jasper lcms2 libxcursor libxpm desktop-file-utils iso-codes mypaint-brushes1 libmypaint poppler-glib poppler-data openexr librsvg libgudev libunwind libwmf
+derleme = gegl glib-networking glib libgexiv2 gtk2 gtk3 libxslt intltool libtool perl-xml-parser aalib alsa-lib babl dbus-glib ghostscript jasper lcms2 libxcursor libxpm desktop-file-utils iso-codes mypaint-brushes1 libmypaint poppler-glib poppler-data openexr librsvg libgudev libunwind libwmf
 calisma =
 
 [kaynak]
