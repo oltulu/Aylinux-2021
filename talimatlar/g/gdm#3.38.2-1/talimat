@@ -17,11 +17,9 @@ xz   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}
 
 [derle]
 #betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
-betik = cd $SRC
-betik = milis-meson gdm-$surum build -D default-path="/usr/local/bin:/usr/local/sbin:/usr/bin" -Ddefault-pam-config=arch -Dat-spi-registryd-dir=/usr/libexec -Dtcp-wrappers=false -Dscreenshot-dir=/var/lib/gdm/greeter -Dplymouth=enabled -Dxauth-dir=/run/gdm -Dpid-file=/run/gdm/gdm.pid -Dsystemd-journal=false -Dinitial-vt=7 -Dwayland-support=true -Dselinux=disabled -Dlibaudit=disabled -Dsystemdsystemunitdir=/tmp -Dsystemduserunitdir=/tmp
-betik = meson compile -C build
+ekconf = -D default-path="/usr/local/bin:/usr/local/sbin:/usr/bin" -Ddefault-pam-config=arch -Dat-spi-registryd-dir=/usr/libexec -Dtcp-wrappers=false -Dscreenshot-dir=/var/lib/gdm/greeter -Dplymouth=enabled -Dxauth-dir=/run/gdm -Dpid-file=/run/gdm/gdm.pid -Dsystemd-journal=false -Dinitial-vt=7 -Dwayland-support=true -Dselinux=disabled -Dlibaudit=disabled -Dsystemdsystemunitdir=/tmp -Dsystemduserunitdir=/tmp
+tip = meson
 	
 
 [pakur]
-betik = cd $SRC
 tip = meson
