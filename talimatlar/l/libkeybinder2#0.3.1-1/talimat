@@ -1,0 +1,20 @@
+[paket]
+tanim   = Genel klavye kısayolları kayıt etme kütüphanesi
+paketci = milisarge1  
+grup    = kütüphane
+url     = https://github.com/engla/keybinder/tree/keybinder-3.0
+
+[gerek]
+derleme  =  gobject-introspection gtk3 
+calisma  =  
+
+[kaynak]
+1  = https://github.com/kupferlauncher/keybinder/releases/download/v$surum/keybinder-$surum.tar.gz
+
+[derle]
+betik  =  cd keybinder-${surum}
+tip    = gnu
+
+[pakur]
+betik  =  cd keybinder-${surum}
+tip    = gnu
