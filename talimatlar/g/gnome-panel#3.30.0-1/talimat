@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = gnome-desktop gnome-menus libgdm
+derleme = gnome-desktop gnome-menus gdm
 calisma =  
 
 [kaynak]
