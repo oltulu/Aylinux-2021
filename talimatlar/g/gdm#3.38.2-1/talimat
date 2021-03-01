@@ -1,0 +1,25 @@
+[paket]
+tanim  = Grafiksel oturum açma bilgilerinin sağlanmasından ve yerel ve uzak ekranların yönetilmesinden sorumlu sistem hizmeti
+url    = http://ftp.gnome.org
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+xz   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}
+1 = https://github.com/venomlinux/ports/raw/master/testing/gdm/0001-restore-consolekit-support.patch
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+#betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
+betik = milis-meson gdm build -D default-path="/usr/local/bin:/usr/local/sbin:/usr/bin" -Ddefault-pam-config=arch -Dat-spi-registryd-dir=/usr/libexec -Dtcp-wrappers=false -Dscreenshot-dir=/var/lib/gdm/greeter -Dplymouth=enabled -Dxauth-dir=/run/gdm -Dpid-file=/run/gdm/gdm.pid -Dsystemd-journal=false -Dinitial-vt=7 -Dwayland-support=true -Dselinux=disabled -Dlibaudit=disabled -Dsystemdsystemunitdir=/tmp -Dsystemduserunitdir=/tmp"
+betik = meson compile -C build
+	
+
+[pakur]
+tip = meson
