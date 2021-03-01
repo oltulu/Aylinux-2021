@@ -11,15 +11,19 @@ calisma =
 [kaynak]
 bz2     = https://download.gimp.org/pub/gimp/v${surum%.*}
 dosya   = gimp-0001-no-check-update.patch
+1 = https://gitlab.gnome.org/GNOME/gimp/-/commit/cebeb90a.patch
 
 [sha256]
 #1       = e12f9f874b1a007c4277b60aa81e0b67330be7e6153e5749ead839b902fc7b3c
 
 [derle]
 yama    = gimp-0001-no-check-update.patch
+betik   = patch -Np1 < /sources/cebeb90a.patch
 betik   = autoreconf -vi
-ekconf	= --enable-mp --with-openexr --enable-gimp-console --disable-python --without-aa --disable-check-update
-tip     = gnu
+betik   = pkg-config --exists --print-errors "OpenEXR >= 1.6.1"
+betik   = PYTHON=/usr/bin/python2 ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/bin --enable-mp --enable-gimp-console --disable-gtk-doc --disable-check-update --disable-python --with-openexr --without-aa
+betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
 
 [pakur]
 tip     = gnu
