@@ -22,11 +22,11 @@ dosya = setup.py
 
 [derle]
 betik	= cd mirage-1.0_pre2
+betik	= cp $SRC/tr.po po/
 betik	= patch --forward --strip=1 --input="/sources/exif.patch?h=mirage"
 betik	= cp "/sources/exif.c?h=mirage" .
-#betik	= rm mirage.py
-#betik	= cp $SRC/mirage.py ./
-betik	= cp $SRC/tr.po po/
+betik	= rm mirage.py
+betik	= cp $SRC/mirage.py ./
 betik	= patch -Np1 -i $SRC/mirage-0.9.5.2-glib241-init-workaround.patch
 betik   = python2 setup.py build
 
