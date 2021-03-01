@@ -23,4 +23,4 @@ betik 	= cp -r ./* /usr/share/themes/
     	      
 [pakur]
 betik = cd cinnamox_themes-20200801
-betik 	= cd $isim/build
+
