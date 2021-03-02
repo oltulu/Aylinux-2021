@@ -5,7 +5,7 @@ url     = http://sourceforge.net/projects/lxmed/
 
 [gerek]
 derleme    =  
-calisma    =  
+calisma    = jre
 
 [kaynak]
 1          = http://sourceforge.net/projects/${isim}/files/${isim}-${surum}.tar.gz/download::$isim-$surum.tar.gz
