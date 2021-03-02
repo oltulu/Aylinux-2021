@@ -6,7 +6,7 @@ url     = https://www.videolan.org/index.tr.html
 
 [gerek]
 derleme = 
-calisma = libmad a52dec libdvbpsi libxpm libdca libproxy libidn libmatroska taglib libmpcdec ffmpeg faad2 libmpeg2 xcb-util-keysyms libtar libxinerama libsecret libupnp qt5-base qt5-x11extras qt5-svg freetype2 fribidi harfbuzz fontconfig libxml2 gnutls libplacebo wayland-protocols
+calisma = libmad a52dec libdvbpsi libxpm libdca libproxy libidn2 libmatroska taglib libmpcdec ffmpeg faad2 libmpeg2 xcb-util-keysyms libtar libxinerama libsecret libupnp qt5-base qt5-x11extras qt5-svg freetype2 fribidi harfbuzz fontconfig libxml2 gnutls libplacebo wayland-protocols
 
 [kaynak]
 dosya     = vlc-3.0.12-1.tar.gz
