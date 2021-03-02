@@ -13,8 +13,7 @@ git      = https://github.com/l3ib/nitrogen
 dosya	= nitrogen_tr.po
 
 [sha256]
-1       = f40213707b7a3be87e556f65521cef8795bd91afda13dfac8f00c3550375837d
-2		= 25c40025772436a79fe613a956b6dba3cddb803a6d4ba321911dab7aad4328b4
+#1       = 
 
 [derle]
 betik	= cd $isim
