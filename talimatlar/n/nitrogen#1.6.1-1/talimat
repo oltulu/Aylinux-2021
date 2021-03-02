@@ -9,7 +9,7 @@ derleme =  gtkmm2 librsvg libxinerama desktop-file-utils
 calisma = gtkmm2
 
 [kaynak]
-gz      = $url/releases/download/${surum}
+git      = https://github.com/l3ib/nitrogen
 dosya	= nitrogen_tr.po
 
 [sha256]
@@ -17,12 +17,14 @@ dosya	= nitrogen_tr.po
 2		= 25c40025772436a79fe613a956b6dba3cddb803a6d4ba321911dab7aad4328b4
 
 [derle]
+betik	= cd $isim
 betik	= cp ../nitrogen_tr.po po/tr.po
 betik	= sed -i 's/bs fi hr pl ru sr/bs fi hr pl ru sr tr/g' po/LINGUAS
 tip     = gnu
 betik	= make dist
 
 [pakur]
+betik	= cd $isim
 tip     = gnu
 betik	= cd $PKG/usr/share/applications
 betik	= sed -i '/^Comment=Browse and set desktop backgrounds/a Comment[tr]=Masaüstü arka planlarına göz atın ve ayarlayın' nitrogen.desktop
