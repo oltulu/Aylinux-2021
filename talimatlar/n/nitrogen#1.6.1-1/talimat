@@ -10,15 +10,16 @@ calisma = gtkmm2
 
 [kaynak]
 git      = https://github.com/l3ib/nitrogen
-dosya	= nitrogen_tr.po
+#dosya	= nitrogen_tr.po
 
 [sha256]
 #1       = 
 
 [derle]
 betik	= cd $isim
-betik	= cp ../nitrogen_tr.po po/tr.po
-betik	= sed -i 's/bs fi hr pl ru sr/bs fi hr pl ru sr tr/g' po/LINGUAS
+betik	= autoreconf -fi
+#betik	= cp ../nitrogen_tr.po po/tr.po
+#betik	= sed -i 's/bs fi hr pl ru sr/bs fi hr pl ru sr tr/g' po/LINGUAS
 tip     = gnu
 betik	= make dist
 
