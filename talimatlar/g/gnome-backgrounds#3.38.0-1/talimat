@@ -1,7 +1,7 @@
 [paket]
 tanim   = GNOME için arka plan resimleri ve verileri
 paketci = Cihan_Alkan
-grup 	= mate
+grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gnome-backgrounds
 
 [gerek]
@@ -16,7 +16,7 @@ xz    = https://download.gnome.org/sources/$isim/${surum:0:4}
 
 [derle]
 betik     = cd ../
-betik     = arch-meson $isim-$surum build
+betik     = milis-meson $isim-$surum build
 betik     = meson compile -C build
 betik     = make
     	      
