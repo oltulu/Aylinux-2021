@@ -18,7 +18,6 @@ xz    = https://download.gnome.org/sources/$isim/${surum:0:4}
 betik     = cd $SRC
 betik     = milis-meson $isim-$surum build
 betik     = meson compile -C build
-betik     = make
     	      
 [pakur]
 betik     = cd $SRC
