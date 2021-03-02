@@ -6,7 +6,7 @@ url     = https://github.com/libpwquality/libpwquality
 
 [gerek]
 derleme = cracklib
-calisma = 
+calisma = cracklib
 
 [kaynak]
 git     = https://github.com/libpwquality/libpwquality
