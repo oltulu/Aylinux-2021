@@ -1,0 +1,22 @@
+[paket]
+tanim   = Medya Oynatıcısı
+paketci = Cihan_Alkan
+grup 	= medya
+url     = https://www.videolan.org/index.tr.html
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+dosya     = vlc-3.0.12-1.tar.gz
+
+[SKIP]
+#1 		= SKIP
+
+[derle]
+betik = cd ../
+
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+#betik 	= cp -r $SRC/opt $PKG/
