@@ -5,8 +5,7 @@ grup 	= gnome
 url     = http://ftp.gnome.org/pub/gnome/sources/$isim
 
 [kaynak]
-#xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
-git = https://gitlab.gnome.org/GNOME/$isim
+xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [gerek]
 derleme = meson vala libsoup libgee gtksourceview4 colord
@@ -16,11 +15,9 @@ calisma =
 #1 		= SKIP
 
 [derle]
-betik = milis-meson $isim build
-betik = meson compile -C build
-
+tip = meson
 
 
 [pakur]
+tip = meson
 
-betik = DESTDIR="$PKG" meson install -C build
