@@ -9,7 +9,7 @@ url     = http://ftp.gnome.org/pub/gnome/sources/$isim
 git = https://gitlab.gnome.org/GNOME/$isim
 
 [gerek]
-derleme = meson vala libsoup libgee gtksourceview4
+derleme = meson vala libsoup libgee gtksourceview4 colord
 calisma = 
 
     [sha1]
