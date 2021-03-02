@@ -17,7 +17,7 @@ xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [derle]
 betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
-betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile --disable-libsystemd --enable-compile-warnings=minimum
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile --ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik = make
 
