@@ -1,0 +1,24 @@
+[paket]
+tanim   = Yazılım oluşturmada yardımcı olan Java kütüphanesi ve komut satırı aracı
+paketci = milisarge
+grup    = kütüphane
+url     = http://ant.apache.org
+
+[gerek]
+derleme    = openjdk8 junit
+calisma    = openjdk8
+
+[kaynak]
+1          = https://www.apache.org/dist/ant/source/apache-ant-${surum}-src.tar.bz2
+dosya      = ant.conf
+dosya      = apache-ant.sh
+
+[sha256]
+1          = 39882eff327f4a056d77605f0a973d4f30d003083e54fa0885ddab6055b6c8de
+2          = d66f7bdc8e79ccb3a3b3d103453abf91ff38b6ec76ec7d1ae049314cc0c6e5a6
+
+[derle]
+dosya     = derle.sh
+
+[pakur]
+dosya     = pakur.sh
