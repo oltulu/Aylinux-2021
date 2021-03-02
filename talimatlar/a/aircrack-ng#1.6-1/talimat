@@ -6,8 +6,8 @@ url     = https://www.aircrack-ng.org
 
 [kaynak]
 gz      = https://download.aircrack-ng.org 
-dosya  = https://github.com/aircrack-ng/aircrack-ng/commit/5815bfe2ede99c094709a3289172335c3ba5b255.patch::$isim-$surum-airgraphviz-py.patch
-dosya  = https://github.com/aircrack-ng/aircrack-ng/commit/b9ee19bcf868d4f4f0197cb0d886d0ebe91a6636.patch::$isim-$surum-airgraphviz-make.patch
+1  = https://github.com/aircrack-ng/aircrack-ng/commit/5815bfe2ede99c094709a3289172335c3ba5b255.patch::$isim-$surum-airgraphviz-py.patch
+2  = https://github.com/aircrack-ng/aircrack-ng/commit/b9ee19bcf868d4f4f0197cb0d886d0ebe91a6636.patch::$isim-$surum-airgraphviz-make.patch
 
 [derle]
 betik  =  patch -Np1 < /sources/$isim-$surum-airgraphviz-py.patch
