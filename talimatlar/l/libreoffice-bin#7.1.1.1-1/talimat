@@ -9,7 +9,7 @@ derleme = lcms2 jasper
 calisma = jasper
 
 [kaynak]
-1 = libreoffice.tar.gz
+dosya = libreoffice.tar.gz
 #1       = https://dev-builds.libreoffice.org/pre-releases/rpm/x86_64/LibreOffice_$surum_Linux_x86-64_rpm.tar.gz
 #2       = https://dev-builds.libreoffice.org/pre-releases/rpm/x86_64/LibreOffice_$surum_Linux_x86-64_rpm_langpack_tr.tar.gz
 
