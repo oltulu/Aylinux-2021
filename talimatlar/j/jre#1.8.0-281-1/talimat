@@ -6,7 +6,7 @@ url     = http://www.oracle.com/technetwork/java/javase/overview/index.html
 
 [gerek]
 derleme = 
-calisma = libx11
+calisma = alsa-lib
 
 [kaynak]
 1      = https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244058_89d678f2be164786b292527658ca1605::jre-8u281-linux-x64.tar.gz
