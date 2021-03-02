@@ -11,11 +11,14 @@ calisma =
 [kaynak]
 xz      = http://joewing.net/projects/jwm/releases
 dosya   = jwm.desktop
+1 = https://notabug.org/oltulu/Ceviri/raw/master/jwm-tr.po
 
 [sha256]
 1 		= 745d2f5df3a4ce9ecc8e75445edb3fbe31dd46c0c26d129cc14de7ad8b665326
 
 [derle]
+betik   = cp /sources/jwm-tr.po po/tr.po
+betik	= echo tr >> po/LINGUAS
 betik   = sed -i 's|/usr/local/share/|/usr/share/|' contrib/Makefile po/Makefile* example.jwmrc
 betik   = export CFLAGS="$CFLAGS $(pkg-config --cflags freetype2)"
 ekconf  = --disable-fribidi 
