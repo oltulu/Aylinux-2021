@@ -6,7 +6,7 @@ url     = http://ftp.gnome.org/pub/gnome/sources/gnome-calculator
 
 [kaynak]
 xz  = http://ftp.gnome.org/pub/gnome/sources/gnome-calculator/${surum%.*}
-#git = https://gitlab.gnome.org/GNOME/gnome-calculator
+
 
 [gerek]
 derleme = meson vala libsoup libgee gtksourceview4
@@ -16,15 +16,9 @@ calisma =
             #1 		= SKIP
 
 [derle]
-#betik = milis-meson $isim build
-#betik = meson compile -C build
-betik = mkdir build
-betik = cd build
-betik = meson --prefix=/usr  --libexecdir=lib ..
-betik = ninja
+tip = meson
+
 
 
 [pakur]
-#betik = cd build
-betik = DESTDIR=$PKG ninja install
-#DESTDIR="$PKG" meson install -C build
+tip = meson
