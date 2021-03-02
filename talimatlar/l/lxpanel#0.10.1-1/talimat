@@ -5,7 +5,7 @@ url     = https://lxde.org
 
 [gerek]
 derleme    = wireless-tools libfm
-calisma    = wireless-tools menu-cache libfm libkeybinder3 desktop-file-utils
+calisma    = wireless-tools menu-cache libfm libkeybinder3 desktop-file-utils alsa-lib
 
 [kaynak]
 1          = https://downloads.sourceforge.net/lxde/$isim-$surum.tar.xz
