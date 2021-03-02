@@ -1,0 +1,23 @@
+[paket]
+tanim   = Dijital kamera resim tipleri için kullanılan kütüphane
+paketci = milisarge
+grup 	= kütüphane
+url     = http://www.libraw.org
+
+[gerek]
+derleme = lcms2 jasper
+calisma = jasper
+
+[kaynak]
+1       = https://dev-builds.libreoffice.org/pre-releases/rpm/x86_64/LibreOffice_$surum_Linux_x86-64_rpm.tar.gz
+2       = https://dev-builds.libreoffice.org/pre-releases/rpm/x86_64/LibreOffice_$surum_Linux_x86-64_rpm_langpack_tr.tar.gz
+
+[sha256]
+#1 		= 78c195fc66bee1b93fdaf5169a390f8d800b67d6d5b65dd1bdbf08c8dec72525
+
+[derle]
+betik   = cp -R opt "$PKG"
+betik   = chown root:root -R "$PKG"
+	      
+[pakur]
+betik   = cd $SRC
