@@ -9,7 +9,7 @@ derleme = qt5-tools libchardet
 calisma = 
 
 [kaynak]
-4     = https://github.com/xylosper/${isim}/archive/v${surum}.tar.gz
+git    = https://github.com/xylosper/${isim}
 1 = https://aur.archlinux.org/cgit/aur.git/tree/ffmpeg2.8.patch?h=bomi
 2 = https://aur.archlinux.org/cgit/aur.git/tree/qml_internal_types.patch?h=bomi
 3 = https://aur.archlinux.org/cgit/aur.git/tree/upgrade_waf.patch?h=bomi
