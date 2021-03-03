@@ -1,0 +1,33 @@
+[paket]
+tanim   = Oyuncular için hepsi bir arada ücretsiz ve güvenli sesli ve yazılı sohbet.
+paketci = Cihan_Alkan
+grup 	= medya
+url     = https://dl.discordapp.net/apps/linux/
+
+[gerek]
+derleme =
+calisma = libnotify libxss nspr nss gtk3
+
+[kaynak]
+gz      = https://dl.discordapp.net/apps/linux/$surum
+
+[sha256]
+    #1 		= 8dced74012bed3f33c3c51874aa9c3a57093573c1c0e263b758cefa96c26f7b7
+
+[derle]
+betik 	= cd Discord
+betik 	= sed -i "s|Exec=.*|Exec=/usr/bin/$isim|" $isim.desktop
+betik 	= echo 'Path=/usr/bin' >> $isim.desktop
+    	      
+[pakur]
+betik = install -d "$PKG"/opt/$isim
+betik = cp -a Discord/. "$PKG"/opt/$isim
+betik = chmod 755 "$PKG"/opt/$isim/Discord
+betik = rm "$PKG"/opt/$isim/postinst.sh
+betik = install -d "$PKG"/usr/{bin,share/{pixmaps,applications}}
+betik = ln -s /opt/$isim/Discord "$PKG"/usr/bin/$isim
+betik = ln -s /opt/$isim/discord.png "$PKG"/usr/share/pixmaps/$isim.png
+betik = ln -s /opt/$isim/$isim.desktop "$PKG"/usr/share/applications/$isim.desktop
+
+  # setuid on chrome-sandbox
+betik = chmod u+s "$PKG"/opt/$isim/chrome-sandbox
