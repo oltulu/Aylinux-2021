@@ -1,0 +1,21 @@
+[paket]
+tanim   = Mozilla'nın Evrensel Karakter Seti Dedektörü C / C ++ API'si
+paketci = Cihan_Alkan
+grup 	= kütüphane
+url     = https://github.com/Joungkyun/libchardet
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1     = https://github.com/Joungkyun/libchardet/archive/${surum}.tar.gz::$isim-${surum}.tar.gz
+
+
+[sha256]
+#1 = f941cf1535cd5d1819be5ccae5babef01f6db611f9b5a777bae9c7604b8a92ad
+
+[derle]
+tip 	= gnu
+
+[derle]
+tip 	= gnu
