@@ -82,7 +82,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-libtar \
     --disable-ncurses \
     --enable-lirc \
-    --enable-goom \
+    --disable-goom \
     --enable-projectm \
     --enable-avahi \
     --enable-mtp \
