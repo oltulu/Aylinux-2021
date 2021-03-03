@@ -1,27 +1,22 @@
-sed -i '/vlc_demux.h/a #define LUA_COMPAT_APIINTCASTS' modules/lua/vlc.h
-sed -i '/LIBSSH2_VERSION_NUM/s/10801/10900/' modules/access/sftp.c
-sed -i '/#include <QWidget>/a\#include <QPainterPath>/' \
- modules/gui/qt/util/timetooltip.hpp
-sed -i '/#include <QPainter>/a\#include <QPainterPath>/' \
- modules/gui/qt/components/playlist/views.cpp \
- modules/gui/qt/dialogs/plugins.cpp
+[[ -z $(pkg-config --libs --static libavutil | grep -- '-lvdpau') ]] && \
+    PKGMK_VLC+=' --disable-vdpau'
 
-BUILDCC=gcc ./configure --prefix=/usr \
-            --disable-rpath \
-            --sysconfdir=/etc \
-            --disable-ncurses \
-            --enable-aa \
-            --enable-upnp \
-            --enable-opus \
-            --enable-dvbpsi \
-            --enable-x264 \
-            --enable-x265 \
-            --enable-vdpau \
-            --enable-sdl-image \
-            --enable-fribidi \
-            --enable-gnutls \
-            --enable-bluray \
-            --disable-vpx \
-            --disable-opencv
+  autoreconf -fi
 
-make
+#  export LUAC=/usr/bin/luac5.2
+#  export LUA_LIBS="$(pkg-config --libs lua5.2)"
+  export RCC=/usr/bin/rcc-qt5
+  eval PKGMK_VLC="($PKGMK_VLC)"
+
+  sed -e 's|-Werror-implicit-function-declaration||g' -i configure
+
+  BUILDCC="gcc -std=gnu11"          \
+  ./configure "${PKGMK_VLC[@]}"     \
+              --prefix=/usr         \
+              --disable-nls         \
+              --enable-alsa         \
+              --disable-dbus        \
+              --disable-fribidi     \
+              --disable-update-check 
+
+  V=1 ./compile
