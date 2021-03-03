@@ -13,7 +13,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --disable-rpath \
     --enable-nls \
     --enable-archive \
-    --enable-live555 \
+    --disable-live555 \
     --enable-dc1394 \
     --enable-dv1394 \
     --enable-dvdread \
