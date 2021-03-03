@@ -80,7 +80,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-qt \
     --enable-skins2 \
     --enable-libtar \
-    --enable-ncurses \
+    --disable-ncurses \
     --enable-lirc \
     --enable-goom \
     --enable-projectm \
