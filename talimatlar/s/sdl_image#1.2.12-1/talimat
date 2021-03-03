@@ -6,7 +6,7 @@ url     = http://www.libsdl.org/projects/SDL_image/
 
 [gerek]
 derleme = sdl libwebp libpng tiff libjpeg-turbo libwebp
-calisma =
+calisma = sdl
 
 [kaynak]
 1       = https://www.libsdl.org/projects/SDL_image/release/SDL_image-$surum.tar.gz
