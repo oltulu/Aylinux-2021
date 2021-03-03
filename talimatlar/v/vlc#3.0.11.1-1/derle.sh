@@ -27,6 +27,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-dvbpsi \
     --enable-gme \
     --enable-ogg \
+    --disable-kate \
     --enable-shout \
     --enable-matroska \
     --enable-mod \
