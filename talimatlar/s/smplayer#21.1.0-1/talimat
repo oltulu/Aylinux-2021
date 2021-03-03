@@ -11,7 +11,7 @@ calisma = qt5-script qt5-base hicolor-icon-theme mpv
 [kaynak]
 bz2      = http://prdownloads.sf.net/${isim}
 1 = https://downloads.sourceforge.net/smplayer/smplayer-skins-20.11.0.tar.bz2
-1 = https://downloads.sourceforge.net/smplayer/smplayer-themes.tar.bz2
+2 = https://downloads.sourceforge.net/smplayer/smplayer-themes.tar.bz2
 
 [SKIP]
 1 		= SKIP
