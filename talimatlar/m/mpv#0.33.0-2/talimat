@@ -11,7 +11,7 @@ calisma =
 [kaynak]
 git = https://github.com/mpv-player/mpv
 #1      = https://github.com/mpv-player/mpv/archive/v${surum}.tar.gz
-1      = https://waf.io/waf-${_waf_version}
+1      = https://waf.io/waf-2.0.9
 
 [sha256]
 
