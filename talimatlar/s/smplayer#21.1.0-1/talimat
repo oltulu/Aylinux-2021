@@ -17,7 +17,6 @@ bz2      = http://prdownloads.sf.net/${isim}
 1 		= SKIP
 
 [derle]
-betik = cd "$SRC/${isim}-${surum}
 betik =  make DESTDIR="${PKG}" PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE install
 
 [pakur]
