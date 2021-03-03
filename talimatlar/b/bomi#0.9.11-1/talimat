@@ -10,6 +10,9 @@ calisma =
 
 [kaynak]
 gz      = https://github.com/xylosper/${isim}/archive/v${surum}.tar.gz
+1 = https://aur.archlinux.org/cgit/aur.git/tree/ffmpeg2.8.patch?h=bomi
+2 = https://aur.archlinux.org/cgit/aur.git/tree/qml_internal_types.patch?h=bomi
+3 = https://aur.archlinux.org/cgit/aur.git/tree/upgrade_waf.patch?h=bomi
 
 [sha256]
 #1 = f941cf1535cd5d1819be5ccae5babef01f6db611f9b5a777bae9c7604b8a92ad
