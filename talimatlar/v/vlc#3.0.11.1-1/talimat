@@ -23,6 +23,8 @@ dosya = vlc-lua53_compat.patch
 [derle]
 #betik = export CFLAGS="-march=native"
 betik = patch -Np1 < $SRC/vlc-3.0.11.1-srt_1.4.2.patch
+betik = patch -Np1 < $SRC/vlc_qt_5_15.patch
+betik = patch -Np1 < $SRC/vlc-lua53_compat.patch
 dosya = derle.sh
 
 [pakur]
