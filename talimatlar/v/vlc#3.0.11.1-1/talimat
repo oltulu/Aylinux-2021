@@ -21,10 +21,8 @@ dosya = vlc-lua53_compat.patch
 #4     = d1cb88a1037120ea83ef75b2a13039a16825516b776d71597d0e2eae5df2d8fa
 
 [derle]
-betik = export CFLAGS="-march=native"
+#betik = export CFLAGS="-march=native"
 dosya = derle.sh
 
 [pakur]
-tip   = gnu
-betik = for res in 16 32 48 128 256; do install -Dm 644 "share/icons/${res}x${res}/vlc.png" "${PKG}/usr/share/icons/hicolor/${res}x${res}/apps/vlc.png"; done
-betik = rm -rf $PKG/usr/share/kde4
+dosya   = pakur.sh
