@@ -18,9 +18,11 @@ git    = https://github.com/xylosper/${isim}
 #1 = f941cf1535cd5d1819be5ccae5babef01f6db611f9b5a777bae9c7604b8a92ad
 
 [derle]
+betik = cd $isim
 betik = patch -p1 < /sources/qml_internal_types.patch
 ekconf= --disable-systemd
 tip=gnu
     	      
 [pakur]
+betik = cd $isim
 tip=gnu
