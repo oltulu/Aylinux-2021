@@ -87,7 +87,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-avahi \
     --enable-mtp \
     --enable-upnp \
-    --enable-microdns \
+    --disable-microdns \
     --enable-libxml2 \
     --disable-libgcrypt \
     --enable-gnutls \
