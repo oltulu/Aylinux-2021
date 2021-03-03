@@ -98,8 +98,8 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-notify \
     --enable-libplacebo \
     --enable-vlc \
-    --enable-aribsub \
-    --enable-aribcam \
+    --disable-aribsub \
+    --disable-aribcam \
     --enable-aom \
     --enable-srt \
     --enable-dav1d
