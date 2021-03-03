@@ -10,13 +10,21 @@ calisma = qt5-script qt5-base hicolor-icon-theme mpv
 
 [kaynak]
 bz2      = http://prdownloads.sf.net/${isim}
+1 = https://downloads.sourceforge.net/smplayer/smplayer-skins-20.11.0.tar.bz2
+1 = https://downloads.sourceforge.net/smplayer/smplayer-themes.tar.bz2
 
 [SKIP]
 1 		= SKIP
 
 [derle]
 betik = cd "$SRC/${isim}-${surum}
-    	      
-[pakur]
-betik = cd "$SRC/${isim}-${surum}
 betik =  make DESTDIR="${PKG}" PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE install
+
+[pakur]
+betik = cd "$SRC/smplayer-skins-20.11.0
+betik = make DESTDIR="${PKG}/" PREFIX=/usr install
+betik = cd "$SRC/smplayer-themes
+betik = find -name '*.png' -exec optipng -quiet -force -fix {} +
+betik = make PREFIX=/usr
+betik = make DESTDIR="${PKG}" PREFIX=/usr install
+
