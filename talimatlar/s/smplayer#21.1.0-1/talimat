@@ -1,0 +1,22 @@
+[paket]
+tanim   = Mplayer arayüzü
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://github.com/oguzhaninan/Stacer
+
+[gerek]
+derleme = qt5-tools
+calisma = qt5-script qt5-base hicolor-icon-theme mpv
+
+[kaynak]
+bz2      = http://prdownloads.sf.net/${isim}
+
+[SKIP]
+1 		= SKIP
+
+[derle]
+betik = cd "$SRC/${isim}-${surum}
+    	      
+[pakur]
+betik = cd "$SRC/${isim}-${surum}
+betik =  make DESTDIR="${PKG}" PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE install
