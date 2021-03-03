@@ -6,7 +6,7 @@ url     = https://www.libreoffice.org/
 
 [gerek]
 derleme    = hunspell python libwpd libwps neon pango nspr libjpeg-turbo libxrandr dbus-glib libxslt redland hyphen lpsolve graphite2 icu lcms2 libvisio libetonyek libodfgen libcdr libmspub harfbuzz nss desktop-file-utils shared-mime-info gtk2 gst-plugins-base sane perl-archive-zip zip unzip unixodbc apache-ant gtk3 qt5-base qt5-x11extras cppunit clucene libmythes libwpg postgresql mariadb libglvnd bluez libatomic_ops mdds apr serf libxinerama libpagemaker glm libabw libmwaw libe-book coinmp liblangtag liborcus libexttextcat libcmis gobject-introspection libtommath gpgme xmlsec libepubgen libfreehand libqxp boost libnumbertext openjdk8 apache-ant
-calisma    = openjdk8
+calisma    = 
 
 [kaynak]
 link= https://download.documentfoundation.org/libreoffice/src/6.3.1/libreoffice-${surum}.tar.xz
