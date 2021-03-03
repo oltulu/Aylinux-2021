@@ -5,8 +5,8 @@ grup 	= Ofis
 url     = https://dev-builds.libreoffice.org
 
 [gerek]
-derleme = lcms2 jasper
-calisma = jasper
+derleme =  
+calisma = kcoreaddons ki18n kconfig kwindowsystem kio
 
 [kaynak]
 dosya = libreoffice.tar.gz
