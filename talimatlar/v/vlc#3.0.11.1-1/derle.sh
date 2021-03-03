@@ -58,7 +58,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-x265 \
     --enable-zvbi \
     --enable-libass \
-    --enable-tiger \
+    --disable-tiger \
     --enable-vdpau \
     --enable-wayland \
     --enable-sdl-image \
