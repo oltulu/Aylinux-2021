@@ -6,7 +6,7 @@ url     = https://www.xfce.org/
 
 [gerek]
 derleme  = exo libexif libgudev libnotify xfce4-panel
-calisma  = desktop-file-utils libexif libnotify
+calisma  = desktop-file-utils libexif libnotify exo
 
 [kaynak]
 bz2   = https://archive.xfce.org/src/xfce/thunar/${surum%.*}
