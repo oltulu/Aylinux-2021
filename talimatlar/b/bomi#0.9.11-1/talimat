@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = http://bomi-player.github.io
 
 [gerek]
-derleme = qt5-tools
+derleme = qt5-tools libchardet
 calisma = 
 
 [kaynak]
