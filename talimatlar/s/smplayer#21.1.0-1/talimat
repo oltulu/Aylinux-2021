@@ -23,7 +23,7 @@ betik =  make DESTDIR="${PKG}" PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSO
 [pakur]
 betik = cd "$SRC/smplayer-skins-20.11.0
 betik = make DESTDIR="${PKG}/" PREFIX=/usr install
-betik = cd "$SRC/smplayer-themes
+betik = cd "$SRC/smplayer-themes-20.11.0
 betik = find -name '*.png' -exec optipng -quiet -force -fix {} +
 betik = make PREFIX=/usr
 betik = make DESTDIR="${PKG}" PREFIX=/usr install
