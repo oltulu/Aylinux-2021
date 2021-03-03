@@ -96,7 +96,7 @@ export CFLAGS+=" -I/usr/include/samba-4.0"
     --enable-kwallet \
     --disable-update-check \
     --enable-notify \
-    --enable-libplacebo \
+    --disable-libplacebo \
     --enable-vlc \
     --disable-aribsub \
     --disable-aribcam \
