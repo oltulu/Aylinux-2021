@@ -12,7 +12,7 @@ calisma =
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
 
 [sha256]
-1       = 85114fb458e66ca7ce02e06fb1b6541989c3516d68873d2ca3fc2438d7258dcd
+#1       = 85114fb458e66ca7ce02e06fb1b6541989c3516d68873d2ca3fc2438d7258dcd
 
 [derle]
 ekconf  = -DBUILD_TESTING=OFF
