@@ -21,4 +21,11 @@ betik   = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --dis
 [pakur]
 tip     = gnu
 betik   = rm -rf ${PKG}/etc/{dbus-1,sysconfig}
+betik   = mv libpulse/* "$PKG"
+betik   = mv zeroconf/* "$PKG"
+betik   = mv lirc/* "$PKG"
+betik   = mv jack/* "$PKG"
+betik   = mv bluetooth/* "$PKG"
+betik   = mv equalizer/* "$PKG"
+betik   = mv rtp/* "$PKG"
 betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
