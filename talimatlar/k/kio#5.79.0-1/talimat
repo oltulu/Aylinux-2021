@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules kcrash kdbusaddons kservice solid kbookmarks kcompletion kjobwidgets
+derleme = extra-cmake-modules kcrash kdbusaddons kservice solid kbookmarks kcompletion kjobwidgets ktextwidgets
 calisma =  
 
 [kaynak]
