@@ -1,0 +1,20 @@
+[paket]
+tanim   = Bir dizüstü bilgisayarı tespit etme girişimleri
+paketci = Cihan_Alkan 
+grup    = sistem 
+url     = https://packages.qa.debian.org/l/laptop-detect.html
+
+[gerek]
+derleme  = 
+calisma  = dmidecode
+
+[kaynak]
+1   = https://gitlab.com/debiants/laptop-detect/-/archive/debian/$surum/laptop-detect-debian-$surum.tar.bz2
+[derle]
+betik  = cd $isim-debian-$surum
+betik  = sed -e "s/@VERSION@/$surum/g" < laptop-detect.in > laptop-detect
+
+
+[pakur]
+betik  = cd $isim-debian-$surum
+betik  = install -Dm755 laptop-detect -t "$PKG"/usr/bin/
