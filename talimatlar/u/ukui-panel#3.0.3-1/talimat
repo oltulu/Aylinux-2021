@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-panel
 
 [gerek]
 derleme = qt5-tools cmake ninja libqtxdg qt5-webkit
-calisma = gsettings-qt
+calisma = gsettings-qt qt5-webkit libqtxdg dconf kwindowsystem
 
 [kaynak]
 1      = https://github.com/ukui/ukui-panel/archive/v$surum/$isim-$surum.tar.gz
