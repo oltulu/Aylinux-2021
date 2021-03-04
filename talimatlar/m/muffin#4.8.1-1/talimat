@@ -15,7 +15,7 @@ dosya = gtk-doc.make
 dosya = gtkdocize
 
 [sha256]
-1 		= a4f1cb9ed80b7ea1e51d30b97ea3ae2f196b06fc9fd56c0283e64c9ee1322c18
+#1 		= a4f1cb9ed80b7ea1e51d30b97ea3ae2f196b06fc9fd56c0283e64c9ee1322c18
 
 [derle]
 betik = cp $SRC/gtkdocize /usr/bin/
