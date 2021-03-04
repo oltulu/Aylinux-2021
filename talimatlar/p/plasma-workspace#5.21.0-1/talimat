@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/plasma-desktop/
 
 [gerek]
-derleme = extra-cmake-modules
+derleme = extra-cmake-modules qt5-quickcontrols2
 calisma =  
 
 [kaynak]
