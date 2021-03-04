@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules kcoreaddons
+derleme = extra-cmake-modules kcoreaddons doxygen
 calisma =  
 
 [kaynak]
