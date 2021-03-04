@@ -1,0 +1,27 @@
+[paket]
+tanim   = xdg dosyalarından otomatik olarak WM menüsü oluştur
+paketci = Cihan_Alkan 
+grup    = openbox 
+url     = https://wiki.archlinux.org/index.php/XdgMenu
+
+[gerek]
+derleme  = 
+calisma  = perl perl-xml-parser 
+
+[kaynak]
+gz     = https://arch.p5n.pp.ru/~sergej/dl/2018
+
+[derle]
+betik  = cd "$SRC"
+betik  = install -D -m 0755 xdg_menu "$PKG"/usr/bin/xdg_menu
+betik  = install -D -m 0755 xdg_menu_su "$PKG"/usr/bin/xdg_menu_su
+betik  = install -D -m 0755 update-menus "$PKG"/usr/bin/update-menus
+betik  = install -D -m 0644 update-menus.conf "$PKG"/etc/update-menus.conf
+betik  = mkdir -p "$PKG"/usr/share/desktop-directories/
+betik  = cp arch-desktop-directories/* "$PKG"/usr/share/desktop-directories/
+betik  = mkdir -p "$PKG"/etc/xdg/menus/
+betik  = cp arch-xdg-menu/* "$PKG"/etc/xdg/menus/
+
+
+[pakur]
+betik  = mkdir -p "$PKG"//var/cache/xdg-menu
