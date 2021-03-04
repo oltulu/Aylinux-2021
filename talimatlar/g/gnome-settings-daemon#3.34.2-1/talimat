@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 
 [gerek]
-derleme =  meson ninja
+derleme =  meson ninja geocode-glib libgweather
 calisma = 
 
 [kaynak]
