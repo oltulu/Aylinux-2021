@@ -22,6 +22,6 @@ betik  =  make
 [pakur]
 betik = cd Gtk3-$surum
 betik  = unset PERL5LIB PERL_MM_OPT PERL_MB_OPT PERL_LOCAL_LIB_ROOT
-betik  = make pure_install INSTALLDIRS=vendor DESTDIR="${pkgdir}"
+betik  = make pure_install INSTALLDIRS=vendor DESTDIR="${PKG}"
   # Delete unuseful files
-betik  = find "${pkgdir}" -name '.packlist' -delete
+betik  = find "${PKG}" -name '.packlist' -delete
