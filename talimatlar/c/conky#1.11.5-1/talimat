@@ -9,7 +9,7 @@ derleme = cmake wireless_tools
 calisma = wireless_tool
 
 [kaynak]
-1    = https://github.com/brndnmtthws/conky/archive/v${surum}.tar.gz
+1    = https://github.com/brndnmtthws/conky/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
 
 [sha256]
 
