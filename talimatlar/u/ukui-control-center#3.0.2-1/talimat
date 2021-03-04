@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-control-center
 
 [gerek]
 derleme = qt5-tools kconfig kconfigwidgets ki18n kscreen kwidgetsaddons polkit-qt5 qt5-multimedia qt5-quickcontrols dconf mate-desktop libmatemixer libmatekbd
-calisma = gsettings-qt kconfig kconfigwidgets ki18n kscreen kwidgetsaddons
+calisma = gsettings-qt ukui-settings-daemon
 
 [kaynak]
 git      = https://github.com/ukui/ukui-control-center
