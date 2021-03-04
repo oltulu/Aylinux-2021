@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://www.ladspa.org/
 
 [kaynak]
-1     = https://downloads.sourceforge.net/sourceforge/gtk2-perl/Gtk2-${surum}.tar.gz
+1     = https://cpan.metacpan.org/authors/id/X/XA/XAOC/Gtk-${surum}.tar.gz
 
 [sha512]
 #1  =  a521622e23d988284244003e4ccfc3b42f6ddc7944cb00e7949b87e09d7f39a0cbb64b6d8b5a5af0a5ccf7179f88815416a88f02d3912957167e54b74accfc65
