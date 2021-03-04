@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
-derleme = extra-cmake-modules qt5-tools cmake qt5-sensors
+derleme = extra-cmake-modules qt5-tools cmake qt5-sensors kcmutils plasma-framework
 calisma =  
 
 [kaynak]
