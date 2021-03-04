@@ -25,8 +25,8 @@ betik = cp $SRC/gtk-doc.make /usr/share/gtk-doc/data/
 betik = mkdir /usr/share/aclocal
 betik = cp $SRC/gtk-doc.m4 /usr/share/aclocal/
 betik 	= sed -i 's/--warn-error//g' src/Makefile.am
-betik 	= NOCONFIGURE=1 ./autogen.sh
-betik 	= ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/muffin --localstatedir=/var --disable-gtk-doc --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
+#betik 	= NOCONFIGURE=1 ./autogen.sh
+betik 	= ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/muffin --localstatedir=/var --disable-gtk-doc --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
 betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool clutter/libtool cogl/libtool
 betik 	= make
     	      
