@@ -16,12 +16,13 @@ git      = https://github.com/ukui/ukwm
 
 [derle]
 betik 	= cd $isim
+betik 	= export CFLAGS="$CFLAGS -I/usr/include/libdrm" 
 #betik = sed -i 's/include\ \<drm\/drm\_fourcc\.h/include\ \<libdrm\/drm\_fourcc\.h/' src/wayland/meta-wayland-buffer.c
 betik 	= NOCONFIGURE=1 ./autogen.sh
 betik 	= sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
 #betik 	= sed -i 's|drm_fourcc.h|meta/util.h|' src/wayland/meta-wayland-dma-buf.c
 betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --disable-libsystemd --sysconfdir=/etc --enable-introspection --enable-compile-warnings=yes
-betik 	= make EXTRA_FLAGS="-I/usr/include/libdrm"
+betik 	= make
     	      
 [pakur]
 betik 	= cd $isim
