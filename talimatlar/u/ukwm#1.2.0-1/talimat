@@ -5,7 +5,7 @@ grup 	= ukui
 url     = https://github.com/ukui/ukwm
 
 [gerek]
-derleme = gnome-desktop
+derleme = gnome-desktop json-glib upower
 calisma = 
 
 [kaynak]
