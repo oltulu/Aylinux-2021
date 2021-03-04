@@ -6,7 +6,7 @@ url     = http://www.pygtk.org
 
 [gerek]
 derleme = python2 python2-gobject2 python2-cairo gtk2 libxml2 glade 
-calisma =
+calisma = gtk2 python2
 
 [kaynak]
 bz2     = ${GNOME_SITE}/${isim}/${surum%.*}
