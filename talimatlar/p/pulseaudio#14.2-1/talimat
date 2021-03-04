@@ -28,4 +28,5 @@ betik   = mv jack/* "$PKG"
 betik   = mv bluetooth/* "$PKG"
 betik   = mv equalizer/* "$PKG"
 betik   = mv rtp/* "$PKG"
+betik   = cp $PKG/usr/lib/pulseaudio/* $PKG/usr/lib/
 betik   = sed -i "s/start-pulseaudio-x11/pulseaudio -D/g" $PKG/etc/xdg/autostart/pulseaudio.desktop
