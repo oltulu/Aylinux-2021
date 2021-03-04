@@ -5,7 +5,7 @@ grup 	= sistem
 url     = https://docbook.org
 
 [gerek]
-derleme = 
+derleme = unzip
 calisma = libxml2
 
 [kaynak]
