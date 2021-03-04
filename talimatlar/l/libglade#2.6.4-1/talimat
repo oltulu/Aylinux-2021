@@ -1,0 +1,22 @@
+[paket]
+tanim   = Linux Audio Developer's Simple Plugin API (LADSPA)
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://www.ladspa.org/
+
+[kaynak]
+1     = https://download.gnome.org/sources/${isim}/2.6/${isim}-${surum}.tar.bz2
+2 = https://github.com/archlinux/svntogit-packages/raw/packages/libglade/trunk/libglade-2.0.1-nowarning.patch
+
+[sha512]
+#1  =  a521622e23d988284244003e4ccfc3b42f6ddc7944cb00e7949b87e09d7f39a0cbb64b6d8b5a5af0a5ccf7179f88815416a88f02d3912957167e54b74accfc65
+#2  =  e80a575e6afe42f9d0ac1234a7832a29fb9362c7ab7b2d6b14cc3e6da6a9ba67af886cf09f1c0b78c161205084f705049fb4dc22fe2795efaeb7d94da90dc93e
+
+[derle]
+betik  = patch -Np1 -i /sources/libglade-2.0.1-nowarning.patch
+betik  = PYTHON=/usr/bin/python2 ./configure --sysconfdir=/etc --prefix=/usr --localstatedir=/var
+betik  = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik  = make
+
+[pakur]
+tip  =  gnu
