@@ -7,7 +7,7 @@ cd $SRC
 
    meson setup $isim-$surum build $PKGMK_PULSEAUDIO \
     --prefix=/usr \
-    --libexecdir=/usr/lib/$name \
+    --libexecdir=/usr/lib/$isim \
     -D buildtype=plain \
     -D udevrulesdir=/etc/udev/rules.d \
     -D database=gdbm \
