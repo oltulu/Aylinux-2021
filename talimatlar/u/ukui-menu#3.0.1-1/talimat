@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-menu
 
 [gerek]
 derleme = qt5-tools gsettings-qt bamf qt5-x11extras kwindowsystem
-calisma = gsettings-qt
+calisma = gsettings-qt bamf kwindowsystem
 
 [kaynak]
 1      = https://github.com/ukui/ukui-menu/archive/v$surum/$isim-$surum.tar.gz
