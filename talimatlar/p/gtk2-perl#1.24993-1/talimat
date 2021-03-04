@@ -1,0 +1,23 @@
+[paket]
+tanim   = Linux Audio Developer's Simple Plugin API (LADSPA)
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://www.ladspa.org/
+
+[kaynak]
+1     = https://downloads.sourceforge.net/sourceforge/gtk2-perl/Gtk2-${surum}.tar.gz
+
+[sha512]
+#1  =  a521622e23d988284244003e4ccfc3b42f6ddc7944cb00e7949b87e09d7f39a0cbb64b6d8b5a5af0a5ccf7179f88815416a88f02d3912957167e54b74accfc65
+#2  =  e80a575e6afe42f9d0ac1234a7832a29fb9362c7ab7b2d6b14cc3e6da6a9ba67af886cf09f1c0b78c161205084f705049fb4dc22fe2795efaeb7d94da90dc93e
+
+[derle]
+betik  =  cd Gtk2-$surum
+betik  =  export PERL_USE_UNSAFE_INC=1
+betik  =  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+betik  =  make
+
+
+[pakur]
+betik = cd Gtk2-$surum
+betik  = make install DESTDIR="${PKG}"
