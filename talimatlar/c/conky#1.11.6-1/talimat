@@ -19,5 +19,6 @@ betik 	=  cmake -S $isim-$surum -B build -D CMAKE_BUILD_TYPE=Release -D CMAKE_CX
 betik 	=  cmake --build build
 	      
 [pakur]
+betik 	=  cd $SRC
 betik 	= DESTDIR=$PKG cmake --install build
 
