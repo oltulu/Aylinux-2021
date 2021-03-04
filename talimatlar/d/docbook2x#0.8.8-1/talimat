@@ -5,8 +5,8 @@ grup  	= kütüphane
 url     = https://github.com/brndnmtthws/conky
 
 [gerek]
-derleme = cmake wireless_tools
-calisma = wireless_tool
+derleme = texinfo
+calisma =  
 
 [kaynak]
 1    = https://downloads.sourceforge.net/$isim/docbook2X-$surum.tar.gz
