@@ -5,7 +5,7 @@ grup 	= openbox
 url     = http://fabrice.thiroux.free.fr/openbox-menu_en.html
 
 [gerek]
-derleme = 
+derleme = menu-cache
 calisma = gtk2 menu-cache openbox lxmenu-data gnome-menus
 
 [kaynak]
