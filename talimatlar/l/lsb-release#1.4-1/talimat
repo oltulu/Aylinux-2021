@@ -1,0 +1,23 @@
+[paket]
+tanim   = LSB sürümü sorgu programı
+paketci = Cihan_Alkan  
+grup    = kütüphane  
+url     = http://www.linuxbase.org/
+
+[kaynak]
+gz     =  https://downloads.sourceforge.net/lsb
+#dosya =  fix-memleak-in-plugin-scanning.patch
+
+[sha512]
+#1  =  a521622e23d988284244003e4ccfc3b42f6ddc7944cb00e7949b87e09d7f39a0cbb64b6d8b5a5af0a5ccf7179f88815416a88f02d3912957167e54b74accfc65
+
+[derle]
+betik  =  install -dm755 "$PKG/etc"
+betik  =  make
+betik  =  echo "LSB_VERSION=$surum" > "$PKG/etc/lsb-release"
+betik  =  echo "DISTRIB_ID=Aylinux" >> "$PKG/etc/lsb-release"
+betik  =  echo "DISTRIB_RELEASE=Aylinux-2021" >> "$PKG/etc/lsb-release"
+betik  =  echo "DISTRIB_DESCRIPTION=\"Aylinux Evde, işte, okulda\"" >> "$PKG/etc/lsb-release"
+
+[pakur]
+betik  =  install -Dm 755 lsb_release "$PKG/usr/bin/lsb_release"
