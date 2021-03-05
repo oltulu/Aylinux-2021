@@ -14,6 +14,8 @@ LDFLAGS+=" -ltirpc"                     \
     --without-ad-dc                     \
     --enable-fhs                        \
     --bundled-libraries=!tdb            \
+                    --without-{ad-dc,ads,ldap} \
+                --without-json  \
     --enable-selftest
 
 make
