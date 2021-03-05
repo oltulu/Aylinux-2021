@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-settings-daemon
 
 [gerek]
 derleme = qt5-tools gsettings-qt mate-desktop geoclue gnome-desktop libmatekbd libmatemixer colord qt5-svg qt5-sensors kconfig
-calisma = gsettings-qt libmatekbd libmatemixer mate-desktop geoclue gnome-desktop
+calisma = gsettings-qt libmatekbd libmatemixer mate-desktop geoclue gnome-desktop qt5-sensors kconfig
 
 [kaynak]
 1      = https://github.com/ukui/ukui-settings-daemon/archive/v$surum/$isim-$surum.tar.gz
