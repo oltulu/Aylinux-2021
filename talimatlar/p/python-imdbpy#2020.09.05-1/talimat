@@ -17,8 +17,8 @@ calisma = python-sqlalchemy
 
 [derle]
 betik = cd imdbpy-${surum}
-betik = patch -Np1 -d ../imdbpy-${surum}} </sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
-betik = python setup.py build
+betik = patch -Np1 -d ../imdbpy-${surum} </sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
+tip = python3
 	      
 [pakur]
 betik = cd imdbpy-${surum}
