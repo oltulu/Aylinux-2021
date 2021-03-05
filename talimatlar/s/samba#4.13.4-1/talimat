@@ -5,7 +5,7 @@ grup     = kütüphane
 url      = https://samba.org/
 
 [gerek]
-derleme  = libcap popt e2fsprogs krb5 openldap pam acl avahi tdb talloc tevent cups ldb gpgme jansson rpcsvc-proto perl-parse-yapp cmocka
+derleme  = libcap popt e2fsprogs krb5 openldap pam acl avahi tdb talloc tevent cups ldb gpgme jansson rpcsvc-proto perl-parse-yapp cmocka libtirpc
 calisma  = talloc ldb jansson tevent gpgme tdb
 
 [kaynak]
