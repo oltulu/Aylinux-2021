@@ -4,7 +4,7 @@ paketci = Cihan_Alkan
 url     = https://github.com/linuxdeepin/deepin-movie-reborn
 
 [gerek]
-derleme    = 
+derleme    = dtkwidget
 calisma    =
 
 [kaynak]
