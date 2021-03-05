@@ -9,17 +9,17 @@ derleme =
 calisma = python-sqlalchemy
 
 [kaynak]
-1 = https://github.com/alberanid/imdbpy/archive/2020.09.05.tar.gz::$isim-${surum}.tar.gz
+1 = https://github.com/alberanid/imdbpy/archive/2020.9.25.tar.gz::$isim-${surum}.tar.gz
 2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 
 [sha1]
 #1 		= 
 
 [derle]
-betik = cd imdbpy-${surum}
+betik = cd imdbpy-2020.9.25
 betik = patch -Np1 -d ../imdbpy-${surum} </sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 tip = python3
 	      
 [pakur]
-betik = cd imdbpy-${surum}
+betik = cd imdbpy-2020.9.25
 betik =  python setup.py install --skip-build --optimize=1 --root="${pkgdir}/"
