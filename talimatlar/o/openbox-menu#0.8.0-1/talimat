@@ -1,0 +1,23 @@
+[paket]
+tanim   = Openbox için dinamik XDG menüsü
+paketci = Cihan_Alkan
+grup 	= openbox
+url     = http://fabrice.thiroux.free.fr/openbox-menu_en.html
+
+[gerek]
+derleme = 
+calisma = gtk2 menu-cache openbox lxmenu-data gnome-menus
+
+[kaynak]
+xz    = https://sourceforge.net/projects/archbangretro/files//
+1 = https://aur.archlinux.org/cgit/aur.git/plain/with-svg.patch?h=openbox-menu
+
+[md5]
+1 		= 710036a5edc9886d6d563ce46c747432
+
+[derle]
+ betik 	= patch -i /sources/with-svg.patch?h=openbox-menu
+betik 	= make
+	      
+[pakur]
+betik 	= make install DESTDIR="${PKG}/usr/"
