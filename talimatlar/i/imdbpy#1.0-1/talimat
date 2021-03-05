@@ -21,4 +21,4 @@ tip = python3
 	      
 [pakur]
 betik = cd imdbpy
-betik =  python setup.py install --skip-build --optimize=1 --root="${PKG}/"
+tip = python3
