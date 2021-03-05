@@ -17,7 +17,6 @@ _samba4_auth_modules=auth_unix,auth_wbc,auth_server,auth_netlogond,auth_script,a
 --with-ldap \
 --with-winbind \
 --with-acl-support \
---enable-gnutls \
 --enable-cups \
 --with-pam \
 --with-pammodulesdir=/usr/lib/security \
