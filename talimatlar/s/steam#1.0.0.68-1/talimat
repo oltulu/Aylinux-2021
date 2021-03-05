@@ -10,6 +10,7 @@ calisma = desktop-file-utils hicolor-icon-theme curl freetype gdk-pixbuf ttf-fon
 
 [kaynak]
 1     = https://repo.steampowered.com/${isim}/pool/${isim}/s/${isim}/${isim}_$surum.tar.gz
+dosya = steam-runtime.sh
 
 [sha256]
 #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
