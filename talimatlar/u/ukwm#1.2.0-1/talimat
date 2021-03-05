@@ -10,6 +10,7 @@ calisma =
 
 [kaynak]
 git      = https://github.com/ukui/ukwm
+#1= https://github.com/archlinux/svntogit-community/raw/packages/ukwm/trunk/0001-Fix-building-with-libglvnd-1.2.0.patch
 
 [sha512]
 #1 		= 339c81a079958aceb8c05cf0186e03246e2898faaecb493a7f28e1f5e2cfe81d920579904d2a8e3b6a75a5b44100e73a5b279d317f6bd29ddaab8f5f917062bd
