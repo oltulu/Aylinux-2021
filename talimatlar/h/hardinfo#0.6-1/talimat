@@ -6,7 +6,7 @@ url     = https://github.com/lpereira/hardinfo
 
 [gerek]
 derleme = cmake
-calisma = 
+calisma = lsb-release
 
 [kaynak]
 git      = https://github.com/lpereira/hardinfo
