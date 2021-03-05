@@ -9,7 +9,8 @@ derleme =
 calisma = python-sqlalchemy
 
 [kaynak]
-1 = https://github.com/alberanid/imdbpy/archive/2020.9.25.tar.gz::$isim-${surum}.tar.gz
+1 = https://files.pythonhosted.org/packages/source/IMDbPY/IMDbPY/IMDbPY-2020.9.25.tar.gz
+#1 = https://github.com/alberanid/imdbpy/archive/2020.9.25.tar.gz::$isim-${surum}.tar.gz
 2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 
 [sha1]
