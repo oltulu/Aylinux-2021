@@ -6,7 +6,7 @@ url     = https://steampowered.com/
 
 [gerek]
 derleme = 
-calisma = desktop-file-utils hicolor-icon-theme curl freetype gdk-pixbuf ttf-font zenity nss python
+calisma = desktop-file-utils hicolor-icon-theme curl freetype gdk-pixbuf zenity nss python
 
 [kaynak]
 1     = https://repo.steampowered.com/${isim}/pool/${isim}/s/${isim}/${isim}_$surum.tar.gz
