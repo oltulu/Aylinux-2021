@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules kdoctools
+derleme = extra-cmake-modules kdoctools docbook-xsl
 calisma =  
 
 [kaynak]
