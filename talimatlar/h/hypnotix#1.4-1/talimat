@@ -1,12 +1,13 @@
 [paket]
 tanim   = Online TV izle
-paketci = oltulu 
+paketci = Cihan_Alkan 
 grup    = cinnamon  
 url     = https://github.com/linuxmint/hypnotix
 
 [gerek]
 derleme  = 
 calisma  = dconf hicolor-icon-theme python-cairo python-imdbpy python-requests python-setproctitle mpv xapp
+
 [kaynak]
 1 = https://github.com/linuxmint/hypnotix/archive/$surum.tar.gz::$isim-$surum.tar.gz
 
