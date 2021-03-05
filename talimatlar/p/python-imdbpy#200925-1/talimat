@@ -1,5 +1,5 @@
 [paket]
-tanim   = İnternet Videoları Veritabanı (IMDb) için Python bağlamaları
+tanim   = Internet Videoları Veritabanı (IMDb) için Python bağlamaları
 paketci = Cihan_Alkan
 grup 	= kütüphane
 url     = https://imdbpy.sourceforge.io/
@@ -13,8 +13,6 @@ git = https://github.com/alberanid/imdbpy
 #1 = https://github.com/alberanid/imdbpy/archive/2020.9.25.tar.gz::$isim-${surum}.tar.gz
 2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 
-[sha1]
-#1 		= 
 
 [derle]
 betik = cd imdbpy
