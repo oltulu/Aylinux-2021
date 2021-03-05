@@ -1,0 +1,23 @@
+[paket]
+tanim   = Keyutils için python bağları
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://github.com/sassoftware/python-keyutils
+
+[gerek]
+derleme = python 
+calisma =
+
+[kaynak]
+1       = https://pypi.io/packages/source/S/SQLAlchemy/SQLAlchemy-$surum.tar.gz
+
+[sha256]
+1       = f69e6cadc50525dcb117714e440ee6579b0e5b7f12910b2bb2e910b236a2b18b
+
+[derle]
+betik = cd "$SRC"/SQLAlchemy-$surum
+tip     = py3
+
+[pakur]
+betik = cd "$SRC"/SQLAlchemy-$surum
+tip     = py3
