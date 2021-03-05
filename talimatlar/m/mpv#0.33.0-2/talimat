@@ -5,8 +5,8 @@ grup 	= kütüphane
 url     = https://mpv.io/
 
 [gerek]
-derleme = python libass waf libdvdnav libbluray libcdio-paranoia ffmpeg libarchive
-calisma = 
+derleme = python libass waf libdvdnav libbluray libcdio-paranoia ffmpeg
+calisma = libdvdnav libcaca
 
 [kaynak]
 git = https://github.com/mpv-player/mpv
