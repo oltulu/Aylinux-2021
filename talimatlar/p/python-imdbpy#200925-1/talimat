@@ -18,7 +18,7 @@ git = https://github.com/alberanid/imdbpy
 
 [derle]
 betik = cd imdbpy
-betik = patch -Np1 -d ../imdbpy-${surum} </sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
+betik = patch -Np1 -d  /sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 tip = python3
 	      
 [pakur]
