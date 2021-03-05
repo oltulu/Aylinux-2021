@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/xplayer
 
 [gerek]
-derleme = gobject-introspection gmime gnome-common
+derleme = gobject-introspection gmime2 gnome-common
 calisma = 
 
 [kaynak]
