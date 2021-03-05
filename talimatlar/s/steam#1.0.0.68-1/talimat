@@ -1,0 +1,39 @@
+[paket]
+tanim   = Valve'ın dijital yazılım dağıtım sistemi
+paketci = Cihan_Alkan
+grup   	= oyun
+url     = https://steampowered.com/
+
+[gerek]
+derleme = 
+calisma = desktop-file-utils hicolor-icon-theme curl freetype gdk-pixbuf ttf-font zenity nss python
+
+[kaynak]
+1     = https://repo.steampowered.com/${isim}/pool/${isim}/s/${isim}/${isim}_$surum.tar.gz
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = cd ${isim}-launcher
+  # udev kuralları için toparlama uygula
+betik = sed -r 's|("0666")|"0660", TAG+="uaccess"|g' -i subprojects/steam-devices/60-steam-input.rules
+betik = sed -r 's|("misc")|\1, OPTIONS+="static_node=uinput"|g' -i subprojects/steam-devices/60-steam-input.rules
+betik = sed -r 's|(, TAG\+="uaccess")|, MODE="0660"\1|g' -i subprojects/steam-devices/60-steam-vr.rules
+
+  # separated runtime/native desktop files
+betik = sed -r 's|(Name=Steam)|\1 (Runtime)|' -i steam.desktop
+betik = sed -r 's|(/usr/bin/steam)|\1-runtime|' -i steam.desktop
+        	      
+[pakur]
+betik =  cd ${isim}-launcher
+betik =  make DESTDIR="${PKG}" install
+betik =  install -Dm 755 "${SRC}/steam-runtime.sh" "${PKG}/usr/bin/steam-runtime"
+betik =  install -d "${pkgdir}/usr/lib/steam"
+betik =  mv "${PKG}/usr/bin/steam" "${PKG}/usr/lib/steam/steam"
+betik =  ln -sf /usr/bin/steam-runtime "${PKG}/usr/bin/steam"
+
+  # blank steamdeps because apt-get
+betik =  ln -sf /usr/bin/true "${PKG}/usr/bin/steamdeps"
+betik =  install -Dm 644 subprojects/steam-devices/60-steam-input.rules "${PKG}/usr/lib/udev/rules.d/70-steam-input.rules"
+betik =  install -Dm 644 subprojects/steam-devices/60-steam-vr.rules "${PKG}/usr/lib/udev/rules.d/70-steam-vr.rules"
