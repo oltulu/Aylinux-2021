@@ -9,22 +9,23 @@ derleme = gobject-introspection gmime
 calisma = 
 
 [kaynak]
-git      = https://github.com/linuxmint/xplayer-plparser
+1      = https://github.com/linuxmint/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
 
 [derle]
-betik = cd $isim
+#betik = cd $isim
 #tip = meson
-betik 	= mkdir -p "${SRC}/${isim}/build"
-betik 	= cd "${SRC}/${isim}/build"
-betik 	= meson --prefix=/usr --libexecdir=lib/${isim} --buildtype=plain ..
-betik 	= ninja
-#betik 	= make
+#betik 	= mkdir -p "${SRC}/${isim}/build"
+#betik 	= cd "${SRC}/${isim}/build"
+#betik 	= meson --prefix=/usr --libexecdir=lib/${isim} --buildtype=plain ..
+betik 	= ./autogen.sh --prefix="/usr" --localstatedir="/var" --libexecdir="/usr/lib/${isim}"
+#betik 	= ninja
+betik 	= make
     	      
 [pakur]
-betik = cd $isim
-betik = cd ${SRC}/${isim}/build
-betik = DESTDIR="$PKG/" ninja install
-#betik 	= make DESTDIR="$PKG/" install
+#betik = cd $isim
+#betik = cd ${SRC}/${isim}/build
+#betik = DESTDIR="$PKG/" ninja install
+betik 	= make DESTDIR="$PKG/" install
