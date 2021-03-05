@@ -20,3 +20,4 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
+#betik = sed -i 's/^Name\[tr\]=Parole Ortam Oynatıcısı/Name\[tr\]=Medya Oynatıcısı/' $PKG/usr/share/applications/org.xfce.Parole.desktop
