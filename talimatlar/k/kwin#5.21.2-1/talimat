@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
-derleme = extra-cmake-modules plasma-framework kwayland kcmutils kdecoration
+derleme = extra-cmake-modules plasma-framework kwayland kcmutils kdecoration kscreenlocker
 calisma =  
 
 [kaynak]
