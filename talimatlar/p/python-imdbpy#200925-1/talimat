@@ -10,15 +10,12 @@ calisma = python-sqlalchemy
 
 [kaynak]
 git = https://github.com/alberanid/imdbpy
-#1 = https://github.com/alberanid/imdbpy/archive/2020.9.25.tar.gz::$isim-${surum}.tar.gz
-2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 
 
 [derle]
 betik = cd imdbpy
-betik = patch -Np1 -d  /sources/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
-tip = python3
+tip     = py3
 	      
 [pakur]
 betik = cd imdbpy
-betik =  python setup.py install --skip-build --optimize=1 --root="${PKG}/"
+tip     = py3
