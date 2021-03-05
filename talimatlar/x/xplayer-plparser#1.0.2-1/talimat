@@ -16,9 +16,11 @@ git      = https://github.com/linuxmint/xplayer-plparser
 
 [derle]
 betik = cd $isim
-betik 	= ./autogen.sh --prefix="/usr" --localstatedir="/var" --libexecdir="/usr/lib/${isim}"
-betik 	= make
+tip = meson
+#betik 	= ./autogen.sh --prefix="/usr" --localstatedir="/var" --libexecdir="/usr/lib/${isim}"
+#betik 	= make
     	      
 [pakur]
 betik = cd $isim
-betik 	= make DESTDIR="$PKG/" install
+tip = meson
+#betik 	= make DESTDIR="$PKG/" install
