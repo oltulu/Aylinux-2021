@@ -17,7 +17,7 @@ betik  =  make
 betik  =  echo "LSB_VERSION=$surum" > "$PKG/etc/lsb-release"
 betik  =  echo "DISTRIB_ID=Aylinux" >> "$PKG/etc/lsb-release"
 betik  =  echo "DISTRIB_RELEASE=Aylinux-2021" >> "$PKG/etc/lsb-release"
-betik  =  echo "DISTRIB_DESCRIPTION=\"Aylinux Evde, işte, okulda\"" >> "$PKG/etc/lsb-release"
+betik  =  echo "DISTRIB_DESCRIPTION=\"Aylinux-2021\"" >> "$PKG/etc/lsb-release"
 
 [pakur]
 betik  =  install -Dm 755 lsb_release "$PKG/usr/bin/lsb_release"
