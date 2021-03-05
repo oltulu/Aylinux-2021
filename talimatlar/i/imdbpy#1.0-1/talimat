@@ -1,12 +1,12 @@
 [paket]
-tanim   = Internet Videoları Veritabanı (IMDb) için Python bağlamaları
-paketci = Cihan_Alkan
-grup 	= kütüphane
-url     = https://imdbpy.sourceforge.io/
+tanim   = 7zip sıkıştırılmış dosya arşivinin komut satırı versiyonu
+paketci = milisarge
+grup    = kütüphane
+url     = http://p7zip.sourceforge.net/
 
 [gerek]
-derleme =
-calisma = python-sqlalchemy
+derleme    = yasm
+calisma    =
 
 [kaynak]
 git = https://github.com/alberanid/imdbpy
