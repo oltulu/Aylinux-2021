@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/xplayer
 
 [gerek]
-derleme = gobject-introspection clutter clutter-gst clutter-gtk
+derleme = gobject-introspection clutter clutter-gst clutter-gtk gst-plugins-good
 calisma = mesa libdrm libxext libxdamage libxcomposite gdk-pixbuf pango libxrandr
 
 [kaynak]
