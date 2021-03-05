@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules qt5-quickcontrols2 kirigami2 kdoctools kwayland kactivities
-calisma =  
+calisma = kactivities kdeclarative kquickaddons
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
