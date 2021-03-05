@@ -1,0 +1,22 @@
+[paket]
+tanim   = Google'ın popüler ve güvenilir web tarayıcısı (Stable Channel)
+paketci = Cihan_Alkan
+grup    = internet
+url     = https://www.google.com/chrome
+
+[gerek]
+derleme = gtk3
+calisma = alsa-lib gtk3 cups libxss libxtst nss
+
+[kaynak]
+1   = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${surum}-1_amd64.deb
+
+[sha256]
+1       = 01cfafe6606e7ec45facb708ef85efd6c1e8bb41001a999d28212a825ef778ae
+
+[derle]
+betik    = bsdtar -xf data.tar.xz -C "$PKG/"
+betik    = install -m755 google-chrome-stable.sh "$PKG"/usr/bin/google-chrome-stable
+
+[pakur]
+dosya     = pakur.sh
