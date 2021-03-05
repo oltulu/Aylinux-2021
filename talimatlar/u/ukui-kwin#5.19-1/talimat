@@ -5,7 +5,7 @@ grup 	= ukui
 url     =  https://github.com/ukui/ukui-kwin
 
 [gerek]
-derleme = extra-cmake-modules qt5-script krunner kdoctools kcoreaddons
+derleme = extra-cmake-modules qt5-script krunner kdoctools kcoreaddons ki18n
 calisma = 
 
 [kaynak]
