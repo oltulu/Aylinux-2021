@@ -5,8 +5,8 @@ grup 	= ukui
 url     =  https://github.com/ukui/ukui-kwin
 
 [gerek]
-derleme = extra-cmake-modules
-calisma = kdecoration kscreenlocker
+derleme = extra-cmake-modules qt5-script krunner
+calisma = 
 
 [kaynak]
 git      = https://github.com/ukui/ukui-kwin
