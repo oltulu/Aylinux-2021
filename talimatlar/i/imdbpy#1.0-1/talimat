@@ -11,8 +11,8 @@ git = https://github.com/alberanid/imdbpy
 
 [derle]
 betik = cd imdbpy
-tip = python3
+tip     = py3
 	      
 [pakur]
 betik = cd imdbpy
-tip = python3
+tip     = py3
