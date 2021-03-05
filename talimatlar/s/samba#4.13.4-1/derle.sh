@@ -3,7 +3,8 @@ sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' \
 
 echo "^samba4.rpc.echo.*on.*ncacn_np.*with.*object.*nt4_dc" >> selftest/knownfail
 
-
+CFLAGS+=" -I/usr/include/tirpc"         \
+LDFLAGS+=" -ltirpc"                     \
 ./configure                             \
     --prefix=/usr                       \
     --sysconfdir=/etc                   \
