@@ -12,7 +12,7 @@ calisma = openbox perl perl-data-dump perl-linux-desktopfiles
 1     = https://github.com/trizen/${isim}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1 		= 084ebf6787face853b9b1559d3d4bd5fe787d2ce33b51a5c3304a705b2ab1333
+31 		= 084ebf6787face853b9b1559d3d4bd5fe787d2ce33b51a5c3304a705b2ab1333
 
 [derle]
 	      
