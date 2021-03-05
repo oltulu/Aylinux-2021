@@ -7,6 +7,10 @@ url     = https://github.com/linuxdeepin/dtkgui
 [kaynak]
 1      = https://github.com/linuxdeepin/dtkgui/archive/$surum.tar.gz::$isim-$surum.tar.gz 
 
+[gerek]
+derleme = qt5-tools
+calisma = dtkcore librsvg qt5-x11extras
+
 [sha1]
 #1 		= SKIP
 
