@@ -14,7 +14,7 @@ calisma = openbox perl perl-data-dump perl-linux-desktopfiles
 dosya = schema.pl
 
 [sha256]
-31 		= 084ebf6787face853b9b1559d3d4bd5fe787d2ce33b51a5c3304a705b2ab1333
+#1 		= 084ebf6787face853b9b1559d3d4bd5fe787d2ce33b51a5c3304a705b2ab1333
 
 [derle]
 	      
