@@ -13,7 +13,7 @@ calisma = python-sqlalchemy
 2 = https://github.com/archlinux/svntogit-community/raw/packages/python-imdbpy/trunk/msgfmt.py-use-array.tobytes-on-Python-3.2.patch
 
 [sha1]
-1 		= 
+#1 		= 
 
 [derle]
 betik = cd imdbpy-${surum}
