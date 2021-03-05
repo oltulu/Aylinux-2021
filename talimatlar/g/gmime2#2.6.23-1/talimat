@@ -9,18 +9,18 @@ derleme = gobject-introspection
 calisma = 
 
 [kaynak]
-git      = https://github.com/jstedfast/gmime
+1      = https://github.com/jstedfast/gmime/archive/$surum.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 #1 		= 7343a06a987f178b5273078c9922e51afd582235c5969807346974724478cbcd
 
 [derle]
-betik = cd $isim
+#betik = cd $isim
 betik = NOCONFIGURE=1 ./autogen.sh
 betik 	= ./configure --prefix=/usr --program-prefix=$isim --disable-gtk-doc --enable-mono --enable-smime --disable-static
 betik 	= sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik 	= make
     	      
 [pakur]
-betik = cd $isim
+#betik = cd $isim
 betik 	= make DESTDIR="$PKG/" install
