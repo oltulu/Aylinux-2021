@@ -5,8 +5,8 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules
-calisma =  
+derleme = extra-cmake-modules qt5-quickcontrols2
+calisma = qt5-quickcontrols2
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
