@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/totem-pl-parser
 
 [gerek]
-derleme =  meson ninja totem-plparser
+derleme =  meson ninja
 calisma = 
 
 [kaynak]
