@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://gitlab.com/accounts-sso/libaccounts-glib
 
 [gerek]
-derleme = check
+derleme = check meson
 calisma =  
 
 [kaynak]
