@@ -6,7 +6,7 @@ url     = https://www.methods.co.nz/asciidoc/
 
 [gerek]
 derleme = xmlto libxslt polkit gobject-introspection vala
-calisma = python2 libxslt docbook-xsl
+calisma = python libxslt docbook-xsl
 
 [kaynak]
 1      = https://github.com/asciidoc/asciidoc/archive/${surum}.tar.gz::$isim-${surum}.tar.gz
