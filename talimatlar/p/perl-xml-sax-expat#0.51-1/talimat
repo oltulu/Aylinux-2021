@@ -17,8 +17,8 @@ calisma =
 
 [derle]
 betik = cd "$SRC"/XML-SAX-Expat-$surum
-betik = cd PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor 
-betik = cd make
+betik = PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor 
+betik = make
 
 
 [pakur]
