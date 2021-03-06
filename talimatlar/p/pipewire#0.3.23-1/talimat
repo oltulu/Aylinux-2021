@@ -1,0 +1,24 @@
+[paket]
+tanim   = Masaüstü için paylaşılan GSettings şemaları
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
+
+[gerek]
+derleme = gnome-settings-daemon
+calisma =  
+
+[kaynak]
+git      = https://github.com/PipeWire/pipewire
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd $isim
+ekconf = -D docs=false -D jack=false -D udevrulesdir=/usr/lib/udev/rules.d
+tip = meson
+
+    	      
+[pakur]
+tip = meson
