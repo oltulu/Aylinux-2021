@@ -5,7 +5,7 @@ grup 	= lxqt
 url     = https://github.com/googlei18n/libphonenumber
 
 [gerek]
-derleme = protobuf boost gtest
+derleme = protobuf boost gtest jre
 calisma =  
 
 [kaynak]
