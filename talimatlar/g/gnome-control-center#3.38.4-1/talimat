@@ -9,7 +9,7 @@ derleme =  meson ninja
 calisma = 
 
 [kaynak]
-xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-settings-daemon/${surum%.*}
+xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-control-center/${surum%.*}
 #git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
 
 
