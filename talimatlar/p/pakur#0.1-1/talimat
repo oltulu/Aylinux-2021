@@ -22,12 +22,4 @@ betik     = qmake ../
 betik     = make
 
 [pakur]
-betik     = cd debins/build
-betik     = mkdir $PKG/usr
-betik     = mkdir $PKG/usr/bin
-betik     = mv debins uygur
-betik     = cp -r paketkur $PKG/usr/bin/
-betik     = chmod +x $PKG/usr/bin/uygur
-#betik     = cp -r /sources/mps $PKG/usr/bin/
-#betik     = mv $PKG/usr/bin/mps $PKG/usr/bin/paket
-#betik     = chmod +x $PKG/usr/bin/paket
+dosya = pakur.sh
