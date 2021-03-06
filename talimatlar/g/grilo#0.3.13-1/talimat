@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 
 [gerek]
-derleme =  meson ninja totem-plparser
+derleme =  meson ninja totem-pl-parser
 calisma = 
 
 [kaynak]
