@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gnome-autoar
 
 [gerek]
-derleme =  
+derleme =  autoconf-archive
 calisma =  
 
 [kaynak]
