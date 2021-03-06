@@ -23,6 +23,5 @@ betik = make
 	      
 [pakur]
 betik = cd ${isim}-py-${surum}
-betik = make install DESTDIR=${PKG}
-betik = make docs DESTDIR=${PKG}
+betik = make DESTDIR=$PKG install
 #betik = install -Dm644 asciidocapi.py ${PKG}/usr/lib/python2.7/site-packages/asciidocapi.py
