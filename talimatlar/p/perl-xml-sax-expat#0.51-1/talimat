@@ -23,4 +23,4 @@ betik = make
 
 [pakur]
 betik = cd "$SRC"/XML-SAX-Expat-$surum
-tip     = gnu
+betik = make pure_install doc_install DESTDIR="$PKG"
