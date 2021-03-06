@@ -9,10 +9,11 @@ derleme = evolution-data-server meson gjs mutter ibus sassc gnome-autoar bash-co
 calisma = 
 
 [kaynak]
+1 = https://gitlab.gnome.org/GNOME/gnome-shell/-/archive/7a57528bd7940e68c404d15d398f88730821cec9/gnome-shell-7a57528bd7940e68c404d15d398f88730821cec9.tar.gz
 #xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
-git = https://gitlab.gnome.org/GNOME/gnome-shell
+#git = https://gitlab.gnome.org/GNOME/gnome-shell
 git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
-1 = https://github.com/venomlinux/ports/raw/master/testing/gnome-shell/0001-restore-consolekit-support.patch
+#1 = https://github.com/venomlinux/ports/raw/master/testing/gnome-shell/0001-restore-consolekit-support.patch
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
