@@ -15,9 +15,9 @@ git      = https://github.com/hughsie/colord-gtk
 #1 		= e2ff47b874f283a952efd6a8aaf5e8cdc462b5216dda1051b60fc6e80ac657b6
 
 [derle]
-betik = cd $isim
+betik = cp $isim $isim-$surum
 tip     = meson
 
 [pakur]
-betik = cd $isim
+#betik = cd $isim
 tip     = meson
