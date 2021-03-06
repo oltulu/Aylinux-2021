@@ -1,0 +1,24 @@
+[paket]
+tanim   = Alt seviye şifreleme kütüphanesi
+paketci = milisarge
+grup 	= kütüphane
+url     = https://www.lysator.liu.se/~nisse/nettle
+
+[kaynak]
+gz      = https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2
+dosya = ntp.conf
+dosya = ntpd
+dosya = ntpdate
+
+[sha256]
+#1 		= 75cca1998761b02e16f2db56da52992aef622bf55a3b45ec538bc2eedadc9419
+
+[derle]
+ekconf  = --enable-linuxcaps --enable-ntp-signd
+tip     = gnu
+	      
+[pakur]
+tip 	= gnu
+betik = install -m 644 $SRC/ntp.conf $PKG/etc/ntp
+betik = install -m 755 $SRC/ntpd $PKG/etc/rc.d
+betik = install -m 755 $SRC/ntpdate $PKG/etc/rc.d
