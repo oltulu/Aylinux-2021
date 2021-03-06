@@ -15,11 +15,9 @@ git      = https://gitlab.com/accounts-sso/libaccounts-glib
     #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
-betik 	= mkdir -p build
-betik 	= cd build
-betik 	= milis-meson ../$isim -Dtests=false
-betik 	= ninja
+betik 	= mv $isim $isim-$surum
+ekconf 	= -Dtests=false
+tip 	= meson
             	      
 [pakur]
-betik 	= cd build
-betik = DESTDIR="$PKG" ninja install
+tip 	= meson
