@@ -15,7 +15,7 @@ calisma = python2 libxslt docbook-xsl
 1 		= 
 
 [derle]
-betik = sed -i -e 's#python a2x.py#python2 a2x.py#' Makefile.in
+betik = cd ${isim}-py3-${surum}
 betik = autoconf
 tip= gnu
 	      
