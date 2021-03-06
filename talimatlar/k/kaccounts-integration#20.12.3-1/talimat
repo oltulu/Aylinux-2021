@@ -6,7 +6,7 @@ grup 	= kde
 url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
-derleme = extra-cmake-modules kdoctools
+derleme = extra-cmake-modules kdoctools kwallet
 calisma =  
 
 [kaynak]
