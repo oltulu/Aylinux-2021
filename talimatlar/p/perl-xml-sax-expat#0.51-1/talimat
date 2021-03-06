@@ -6,7 +6,7 @@ url     = https://metacpan.org/release/XML-SAX-Base
 arsiv   = XML-SAX-Base-${surum}
 
 [gerek]
-derleme = perl
+derleme = perl perl-xml-sax perl-xml-parser
 calisma =
 
 [kaynak]
