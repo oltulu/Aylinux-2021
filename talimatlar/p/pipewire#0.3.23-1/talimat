@@ -15,7 +15,7 @@ git      = https://github.com/PipeWire/pipewire
 1 		= 
 
 [derle]
-betik = cd $isim
+betik = mv $isim $isim-$surum
 ekconf = -D docs=false -D jack=false -D udevrulesdir=/usr/lib/udev/rules.d
 tip = meson
 
