@@ -6,7 +6,7 @@ url     = https://zoom.us/
 
 [gerek]
 derleme = 
-calisma = qt5-remoteobjects
+calisma = qt5-remoteobjects qt5-3d
 
 [kaynak]
 1      = https://zoom.us/client/current/zoom_x86_64.pkg.tar.xz
