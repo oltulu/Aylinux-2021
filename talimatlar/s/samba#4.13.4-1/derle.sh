@@ -14,6 +14,8 @@ _samba4_auth_modules=auth_unix,auth_wbc,auth_server,auth_netlogond,auth_script,a
 --with-sockets-dir=/run/samba \
 --with-piddir=/run \
 --with-ads \
+--disable-rpath  \
+--without-systemd  --without-ad-dc \
 --with-ldap \
 --with-winbind \
 --with-acl-support \
