@@ -5,7 +5,7 @@ grup 	= gnome
 url     = http://www.gnome.org
 
 [gerek]
-derleme = vte3 dconf 
+derleme = vte3 dconf itstool
 calisma =  
 
 [kaynak]
