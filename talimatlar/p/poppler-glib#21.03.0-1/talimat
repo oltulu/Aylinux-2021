@@ -21,3 +21,5 @@ tip     = cmake
 
 [pakur]
 tip     = cmake
+rm $PKG/usr/lib/libpoppler.so.108
+rm $PKG/usr/lib/libpoppler.so.108.0.0
