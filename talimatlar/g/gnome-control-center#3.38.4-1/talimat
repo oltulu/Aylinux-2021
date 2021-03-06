@@ -2,10 +2,10 @@
 tanim   = Bir GNOME Oturumunun ve uygulamaların çeşitli parametrelerini ayarlama
 paketci = Cihan_Alkan
 grup 	= cinnamon
-url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
+url     = https://gitlab.gnome.org/GNOME/gnome-control-center
 
 [gerek]
-derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality
+derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality gnome-settings-daemon
 calisma = 
 
 [kaynak]
