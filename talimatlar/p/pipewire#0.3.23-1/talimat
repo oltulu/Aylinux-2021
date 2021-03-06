@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 
 [gerek]
-derleme = gnome-settings-daemon
+derleme = bluez
 calisma =  
 
 [kaynak]
