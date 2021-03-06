@@ -10,7 +10,7 @@ calisma    = qt5-base qt5-graphicaleffects
 
 [kaynak]
 git         = https://github.com/oltulu/debins
-1 = https://github.com/oltulu/mps/raw/main/bin/mps
+#1 = https://github.com/oltulu/mps/raw/main/bin/mps
 [sha256]
 #1 = bdefe8fec6a1097f0c126fa2a4533667c98a86e237ac640518000e16b363971e
 
@@ -25,9 +25,9 @@ betik     = make
 betik     = cd debins/build
 betik     = mkdir $PKG/usr
 betik     = mkdir $PKG/usr/bin
-betik     = mv debins paketkur
+betik     = mv debins uygur
 betik     = cp -r paketkur $PKG/usr/bin/
-betik     = chmod +x $PKG/usr/bin/paketkur
-betik     = cp -r /sources/mps $PKG/usr/bin/
-betik     = mv $PKG/usr/bin/mps $PKG/usr/bin/paket
-betik     = chmod +x $PKG/usr/bin/paket
+betik     = chmod +x $PKG/usr/bin/uygur
+#betik     = cp -r /sources/mps $PKG/usr/bin/
+#betik     = mv $PKG/usr/bin/mps $PKG/usr/bin/paket
+#betik     = chmod +x $PKG/usr/bin/paket
