@@ -9,7 +9,8 @@ derleme = gobject-introspection gnome-common libpeas libexif yelp-tools
 calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif
 
 [kaynak]
-1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+git      = ${url}
 
 [sha256]
 
