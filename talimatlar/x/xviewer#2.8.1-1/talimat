@@ -17,7 +17,7 @@ calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif lcms2
 [derle]
 #betik 	= cd $isim
 #betik 	= NOCONFIGURE=1 gnome-autogen.sh
-betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-gtk-doc --libexecdir="/usr/lib/${isim}"
+betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-iso-c --libexecdir="/usr/lib/${isim}"
 betik 	= make
     	      
 [pakur]
