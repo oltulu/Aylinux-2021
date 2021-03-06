@@ -14,16 +14,14 @@ _samba4_auth_modules=auth_unix,auth_wbc,auth_server,auth_netlogond,auth_script,a
 --with-sockets-dir=/run/samba \
 --with-piddir=/run \
 --with-ads \
---disable-rpath  \
---without-systemd --without-regedit --without-ad-dc \
+--without-systemd --without-regedit \
 --with-ldap \
 --with-winbind \
 --with-acl-support \
 --enable-cups \
 --with-pam \
 --with-pammodulesdir=/usr/lib/security \
---bundled-libraries=NONE \
---with-shared-modules=${_samba4_idmap_modules},${_samba4_pdb_modules},${_samba4_auth_modules} \
---disable-rpath-install 
+--bundled-libraries=!tdb,!talloc,!tevent,!popt,!ldb,!cmocka \
+--with-shared-modules=${_samba4_idmap_modules},${_samba4_pdb_modules},${_samba4_auth_modules}
 
 make
