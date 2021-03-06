@@ -17,7 +17,7 @@ xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
 
 [derle]
 betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
-ekconf = -Dsystemd=false --enable-man=no
+ekconf = -Dsystemd=false -D gtk_doc=true 
 tip = meson
 
 [pakur]
