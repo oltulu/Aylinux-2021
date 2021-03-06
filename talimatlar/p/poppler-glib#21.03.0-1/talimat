@@ -7,7 +7,7 @@ arsiv   = poppler-$surum
 
 [gerek]
 derleme = cmake glib poppler lcms2
-calisma =
+calisma = poppler
 
 [kaynak]
 1       = $url/poppler-$surum.tar.xz
