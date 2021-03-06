@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = evolution-data-server meson
+derleme = evolution-data-server meson gjs
 calisma = 
 
 [kaynak]
@@ -17,10 +17,8 @@ xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
 
 [derle]
 betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
-betik = mkdir build
-betik = cd build
-betik = meson --prefix=/usr --libexecdir=lib -Dsystemd=false ..
-betik = ninja
+ekconf = -Dsystemd=false
+tip = meson
 
 [pakur]
-betik =  DESTDIR="$PKG" ninja install
+tip = meson
