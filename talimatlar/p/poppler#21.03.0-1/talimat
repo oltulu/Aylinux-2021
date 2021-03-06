@@ -1,6 +1,6 @@
 [paket]
 tanim   = PDF oluşturma kitaplığı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://poppler.freedesktop.org
 
