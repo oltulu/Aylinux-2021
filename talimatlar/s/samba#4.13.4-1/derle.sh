@@ -22,7 +22,7 @@ _samba4_auth_modules=auth_unix,auth_wbc,auth_server,auth_netlogond,auth_script,a
 --enable-cups \
 --with-pam \
 --with-pammodulesdir=/usr/lib/security \
---bundled-libraries=!tdb,!talloc,!pytalloc-util,!tevent,!popt,!ldb,!pyldb-util \
+--bundled-libraries=NONE \
 --with-shared-modules=${_samba4_idmap_modules},${_samba4_pdb_modules},${_samba4_auth_modules} \
 --disable-rpath-install 
 
