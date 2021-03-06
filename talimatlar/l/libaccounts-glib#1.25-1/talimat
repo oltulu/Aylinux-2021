@@ -16,7 +16,7 @@ git      = https://gitlab.com/accounts-sso/libaccounts-glib
 
 [derle]
 betik 	= mv $isim $isim-$surum
-ekconf 	= -Dtests=false
+ekconf 	= -Dtests=false -Dgtk-doc=false
 tip 	= meson
             	      
 [pakur]
