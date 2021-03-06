@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = evolution-data-server meson gjs mutter
+derleme = evolution-data-server meson gjs mutter ibus
 calisma = 
 
 [kaynak]
