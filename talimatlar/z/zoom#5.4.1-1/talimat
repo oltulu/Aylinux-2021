@@ -6,10 +6,10 @@ url     = https://zoom.us/
 
 [gerek]
 derleme = 
-calisma = 
+calisma = qt5-remoteobjects
 
 [kaynak]
-1      = https://zoom.us/client/${surum}/zoom_x86_64.pkg.tar.xz
+1      = https://zoom.us/client/current/zoom_x86_64.pkg.tar.xz
 2     = https://notabug.org/oltulu/Ceviri/raw/master/zoom-tr.qm
 
 [sha1]
