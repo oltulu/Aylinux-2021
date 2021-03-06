@@ -15,7 +15,7 @@ calisma =
     #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
-betik 	= betik 	= install -d "$PKG/usr/share/kwin/scripts/forceblur"
+betik 	= install -d "$PKG/usr/share/kwin/scripts/forceblur"
                 	      
 [pakur]
 
