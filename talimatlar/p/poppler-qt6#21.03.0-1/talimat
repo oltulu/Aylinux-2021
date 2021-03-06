@@ -1,0 +1,30 @@
+[paket]
+tanim   = PDF işleme kitaplığı-Qt6 bağlamları
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://poppler.freedesktop.org
+arsiv   = "poppler-${surum}"
+
+[gerek]
+derleme = cmake qt6-base libpng tiff lcms2 fontconfig cairo openjpeg2 poppler
+calisma =
+
+[kaynak]
+1       = ${url}/poppler-${surum}.tar.xz
+
+[sha256]
+#1       = 434ecbbb539c1a75955030a1c9b24c7b58200b7f68d2e4269e29acf2f8f13336
+
+[derle]
+betik   = cd $SRC
+betik   = mkdir $SRC/build
+betik   = cd $SRC/build
+betik   = cmake ../poppler-${surum} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DENABLE_UNSTABLE_API_ABI_HEADERS=ON -DENABLE_GTK_DOC=OFF
+betik   = make
+
+
+[pakur]
+betik   = cd $SRC/build
+betik   = make -C qt6 DESTDIR="${PKG}" install
+betik   = install -m755 -d "${PKG}/usr/lib/pkgconfig"
+betik   = install -m644 $SRC/build/poppler-qt6.pc "${PKG}/usr/lib/pkgconfig/"
