@@ -14,8 +14,11 @@ calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif
 [sha256]
 
 [derle]
+betik 	= cd $SRC
+betik 	= NOCONFIGURE=1 gnome-autogen.sh
 betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-gtk-doc --libexecdir="/usr/lib/${isim}"
 betik 	= make
     	      
 [pakur]
+betik 	= cd $SRC
 betik 	= make DESTDIR="${PKG}/" install
