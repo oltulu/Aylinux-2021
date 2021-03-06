@@ -6,7 +6,7 @@ url     = https://ldb.samba.org/
 
 [gerek]
 derleme  = python talloc tevent tdb popt lmdb cmocka
-calisma  = lmdb tevent
+calisma  = lmdb tevent tdb
 
 [kaynak]
 gz       = https://samba.org/ftp/$isim
