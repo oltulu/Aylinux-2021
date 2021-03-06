@@ -15,11 +15,12 @@ calisma = python2 libxslt docbook-xsl
 1 		= 
 
 [derle]
-betik = cd ${isim}-py3-${surum}
+betik = cd ${isim}-py-${surum}
 betik = autoconf
 tip= gnu
 	      
 [pakur]
+betik = cd ${isim}-py-${surum}
 betik = make install DESTDIR=${PKG}
 betik = make docs DESTDIR=${PKG}
 betik = install -Dm644 asciidocapi.py ${PKG}/usr/lib/python2.7/site-packages/asciidocapi.py
