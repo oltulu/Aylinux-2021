@@ -1,6 +1,6 @@
 [paket]
 tanim   = Poppler için Glib bağları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://poppler.freedesktop.org
 arsiv   = poppler-$surum
