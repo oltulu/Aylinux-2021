@@ -1,8 +1,8 @@
 [paket]
-tanim   = Masaüstü için paylaşılan GSettings şemaları
+tanim   = Düşük gecikmeli ses / video yönlendirici ve işlemci
 paketci = Cihan_Alkan
 grup 	= gnome
-url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
+url     = https://github.com/PipeWire/pipewire
 
 [gerek]
 derleme = bluez
