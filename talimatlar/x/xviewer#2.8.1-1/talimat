@@ -9,17 +9,17 @@ derleme = gobject-introspection gnome-common libpeas libexif yelp-tools
 calisma = xapp gtk3 glib cinnamon-desktop libpeas libexif lcms2
 
 [kaynak]
-#1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
-git      = ${url}
+1      = ${url}/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+#git      = ${url}
 
 [sha256]
 
 [derle]
-betik 	= cd $isim
-betik 	= NOCONFIGURE=1 gnome-autogen.sh
+#betik 	= cd $isim
+#betik 	= NOCONFIGURE=1 gnome-autogen.sh
 betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-gtk-doc --libexecdir="/usr/lib/${isim}"
 betik 	= make
     	      
 [pakur]
-betik 	= cd $isim
+#betik 	= cd $isim
 betik 	= make DESTDIR="${PKG}/" install
