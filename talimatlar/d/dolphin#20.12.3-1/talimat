@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/applications/system/dolphin/
 
 [gerek]
-derleme = extra-cmake-modules kparts
+derleme = extra-cmake-modules kparts kdoctools
 calisma =  
 
 [kaynak]
