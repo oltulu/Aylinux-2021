@@ -16,6 +16,7 @@ git      = https://github.com/hughsie/colord-gtk
 
 [derle]
 betik = mv $isim $isim-$surum
+ekconf = -D docs=false -D man=false -D vapi=true
 tip     = meson
 
 [pakur]
