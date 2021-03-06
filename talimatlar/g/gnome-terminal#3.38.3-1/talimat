@@ -15,7 +15,7 @@ xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-betik     = ./configure --prefix=/usr --disable-static --without-nautilus-extension --disable-search-provider --disable-man
+betik     = ./configure --prefix=/usr --disable-static --without-nautilus-extension --disable-search-provider --enable-man=no
 betik     = make
     	      
 [pakur]
