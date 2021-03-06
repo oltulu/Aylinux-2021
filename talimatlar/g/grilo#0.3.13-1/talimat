@@ -1,0 +1,22 @@
+[paket]
+tanim   = Bir GNOME Oturumunun ve uygulamaların çeşitli parametrelerini ayarlama
+paketci = Cihan_Alkan
+grup 	= cinnamon
+url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
+
+[gerek]
+derleme =  meson ninja
+calisma = 
+
+[kaynak]
+xz     = http://ftp.gnome.org/pub/gnome/sources/grilo/${surum%.*}
+
+
+[sha512]
+    #1 		= 90a59f6fa2979e0a83852e01cbacd8330baf630c57aa55615dfba9b0119a1f6e6bb00b27a52d13b3fda7049a9f5e8b7d4edbb94b28f2f1615f7ffdbbd12672d4
+    
+[derle]
+tip = meson
+
+[pakur]
+tip = meson
