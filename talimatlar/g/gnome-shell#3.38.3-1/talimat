@@ -9,16 +9,24 @@ derleme = evolution-data-server meson gjs mutter ibus sassc gnome-autoar bash-co
 calisma = 
 
 [kaynak]
-xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
+#xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
+git = https://gitlab.gnome.org/GNOME/gnome-shell
 1 = https://github.com/venomlinux/ports/raw/master/testing/gnome-shell/0001-restore-consolekit-support.patch
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
-betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
-ekconf = -Dsystemd=false -D gtk_doc=false -D man=false 
-tip = meson
+betik = cd $isim
+betik = git submodule init
+betik = git submodule set-url subprojects/gvc "$SRC/libgnome-volume-control"
+betik = git submodule update
+betik = cd $SRC
+betik = milis-meson $isim build -Dsystemd=false -D gtk_doc=false -D man=false 
+betik = meson compile -C build
+#betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
+#ekconf = -Dsystemd=false -D gtk_doc=false -D man=false 
+#tip = meson
 
 [pakur]
-tip = meson
+betik = DESTDIR="$PKG" meson install -C build
