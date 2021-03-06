@@ -15,11 +15,11 @@ git      = ${url}
 [sha256]
 
 [derle]
-betik 	= cd $SRC
+betik 	= cd $isim
 betik 	= NOCONFIGURE=1 gnome-autogen.sh
 betik 	= gnome-autogen.sh --prefix="/usr" --localstatedir="/var" --disable-gtk-doc --libexecdir="/usr/lib/${isim}"
 betik 	= make
     	      
 [pakur]
-betik 	= cd $SRC
+betik 	= cd $isim
 betik 	= make DESTDIR="${PKG}/" install
