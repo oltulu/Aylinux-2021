@@ -16,7 +16,11 @@ calisma =
 #1       = 66cb355ba4ef47c10ca738bd35999723644386ac853abbeb5132841f5e8a2ad0
 
 [derle]
-tip     = perl
+betik = cd "$SRC"/XML-SAX-Expat-$surum
+betik = cd PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor 
+betik = cd make
+
 
 [pakur]
+betik = cd "$SRC"/XML-SAX-Expat-$surum
 tip     = gnu
