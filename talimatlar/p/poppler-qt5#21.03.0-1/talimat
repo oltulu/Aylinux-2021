@@ -1,6 +1,6 @@
 [paket]
 tanim   = PDF işleme kitaplığı-Qt5 bağlamları
-paketci = milisarge
+paketci = Cihan_Alkan 
 grup    = kütüphane
 url     = https://poppler.freedesktop.org
 arsiv   = "poppler-${surum}"
@@ -24,6 +24,6 @@ betik   = cmake --build build
 
 [pakur]
 betik   = cd $SRC
-betik   =DESTDIR=$PKG cmake --install build
+betik   = DESTDIR=$PKG cmake --install build
 betik   = rm $PKG/usr/lib/libpoppler.so*
 betik   = rm $PKG/usr/lib/pkgconfig/poppler.pc
