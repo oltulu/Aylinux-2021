@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kdoctools docbook-xsl
-calisma = karchive
+calisma = karchive kfilemetadata kio
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
