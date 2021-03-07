@@ -12,7 +12,7 @@ calisma = vpnc
 gz      = ftp://ftp.infradead.org/pub/${isim}
 
 [sha256]
-1       = d3089c651dffacb75a6531ebe40ec1d044ed51eeff77ef989ba08322d933ae1c
+#1       = d3089c651dffacb75a6531ebe40ec1d044ed51eeff77ef989ba08322d933ae1c
 
 [derle]
 ekconf  = --with-vpnc-script=/etc/vpnc/vpnc-script
