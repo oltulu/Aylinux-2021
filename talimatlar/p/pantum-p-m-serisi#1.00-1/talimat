@@ -17,7 +17,7 @@ calisma =
 [derle]
 betik 	= cd $SRC
 betik 	= mkdir -p ${isim}-${durum}
-betik 	= bsdtar -xf " Pantum 2000 Series Linux Driver (Ubutun12.04) V1.00/Pantum-0.3-1.${arch}.rpm" -C ${isim}-${surum}
+betik 	= bsdtar -xf " Pantum 2000 Series Linux Driver (Ubutun12.04) V1.00/Pantum-0.3-1.x86_64.rpm" -C ${isim}-${surum}
 	      
 [pakur]
 betik 	= cd $SRC
