@@ -5,7 +5,7 @@ grup  	= eğitim
 url     = http://openboard.ch/index.en.html
 
 [gerek]
-derleme =  
+derleme =  quazip
 calisma =  
 
 [kaynak]
