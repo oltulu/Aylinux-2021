@@ -1,0 +1,22 @@
+[paket]
+tanim    = Çok amaçlı masaüstü hesap makinesi
+paketci  = Cihan_Alkan 
+grup     = kütüphane
+url      = https://qalculate.github.io/
+
+[gerek]
+derleme  = nasm ncurses 
+calisma  =  
+
+[kaynak]
+gz       = https://github.com/Qalculate/libqalculate/releases/download/v$surum
+
+[sha256]
+1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+
+[derle]
+betik   = ./configure --prefix=/usr
+betik   = make
+
+[pakur]
+tip      = gnu
