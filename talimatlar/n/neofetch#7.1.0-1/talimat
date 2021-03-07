@@ -6,7 +6,7 @@ url     = https://github.com/dylanaraps/neofetch
 
 [gerek]
 derleme = 
-calisma = xorg-xdpyinfo xorg-xprop
+calisma = 
 
 [kaynak]
 git    = https://github.com/dylanaraps/neofetch
