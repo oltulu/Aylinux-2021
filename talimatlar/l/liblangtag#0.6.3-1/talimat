@@ -9,7 +9,7 @@ derleme    = libxml2 gobject-introspection
 calisma    =
 
 [kaynak]
-1 = https://bitbucket.org/tagoh/liblangtag/downloads/liblangtag-0.6.3.tar.bz2
+bz2 = https://sources.voidlinux.org/${isim}-${surum}
 #1          = https://bitbucket.org/tagoh/${isim}/downloads/${isim}-${surum}.tar.bz2
 
 [sha256]
