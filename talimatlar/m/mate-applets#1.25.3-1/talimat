@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = glib itstool libxslt dbus dbus-glib polkit networkmanager gtksourceview libsm libgtop mate-panel libmateweather libnotify libwnck upower
-calisma = mate-icon-theme
+calisma = mate-icon-theme libnotify libwnck upower
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
