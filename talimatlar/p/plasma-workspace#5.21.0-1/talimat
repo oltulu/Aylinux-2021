@@ -6,7 +6,7 @@ url     = https://kde.org/plasma-desktop/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma =  
+calisma = phonon-qt5 
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
