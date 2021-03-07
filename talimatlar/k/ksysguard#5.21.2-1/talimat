@@ -5,8 +5,8 @@ grup 	= kde
 url     = https://userbase.kde.org/KSysGuard
 
 [gerek]
-derleme = extra-cmake-modules
-calisma =  
+derleme = extra-cmake-modules libksysguard
+calisma = libksysguard
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
