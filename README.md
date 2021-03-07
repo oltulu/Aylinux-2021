@@ -13,7 +13,7 @@ sudo su
 ./Aylinux-isoyap
 -------------------------------------------------------------------------
 Bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler sorunsuz tamamlanırsa /opt/Aylinux-isoyap dizini altında oluşacaktır.
-(Xfce masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
+(Xfce,cinnamon, openbox ve mate masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
 
 Kullanıcı Adı: root
 
