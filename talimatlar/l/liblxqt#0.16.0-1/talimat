@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/lxqt/liblxqt
 
 [gerek]
-derleme = cmake lxqt-build-tools libqtxdg polkit-qt-1 qt5-x11extras qt5-base qt5-tools qt5-svg kwindowsystem libxss
+derleme = cmake lxqt-build-tools libqtxdg qt5-x11extras qt5-base qt5-tools qt5-svg kwindowsystem libxss
 calisma = 
 
 [kaynak]
