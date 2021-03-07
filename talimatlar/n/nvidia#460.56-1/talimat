@@ -18,7 +18,7 @@ dosya  = 10-nvidia-drm-outputclass.conf
 #1       = 38a3e3968f00cc58fe1d9448e972cfac7d1efa30c48699f09032f264101a55ac
 
 [derle]
-betik  = sh NVIDIA-Linux-x86_64-$surum.run --extract-only
+betik  = sh /sources/NVIDIA-Linux-x86_64-$surum.run --extract-only
 
 
 [pakur]
