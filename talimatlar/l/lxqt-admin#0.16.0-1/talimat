@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://github.com/lxqt/lxqt-admin
 
 [gerek]
-derleme = cmake lxqt-build-tools polkit-qt-1 liblxqt qt5-tools qt5-svg
+derleme = cmake lxqt-build-tools polkit-qt5 liblxqt qt5-tools qt5-svg
 calisma =
 
 [kaynak]
