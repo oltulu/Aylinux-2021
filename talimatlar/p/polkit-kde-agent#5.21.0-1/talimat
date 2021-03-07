@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma =  
+calisma = kcrash kdbusaddons kiconthemes 
 
 [kaynak]
 1      = https://download.kde.org/stable/plasma/$surum/$isim-1-$surum.tar.xz
