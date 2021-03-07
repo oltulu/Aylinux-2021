@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules qt5-tools kauth kcodecs kguiaddons ki18n kwidgetsaddons
-calisma = kauth kcodecs kguiaddons ki18n kwidgetsaddons
+calisma = kauth kcodecs kguiaddons ki18n kwidgetsaddons kauth kconfig
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
