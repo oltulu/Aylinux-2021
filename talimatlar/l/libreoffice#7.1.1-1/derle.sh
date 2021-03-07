@@ -33,7 +33,7 @@ for file in ${source[@]}; do
   
   cd $/SRC/$isim-$surum
 
-  patch -Np1 -i $SRC/makefile.in.patch
+ # patch -Np1 -i $SRC/makefile.in.patch
 
   find -L . \
      \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
