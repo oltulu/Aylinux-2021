@@ -1,17 +1,17 @@
-	cd NVIDIA-Linux-x86_64-$surum
+cd NVIDIA-Linux-x86_64-$surum
 
-	# X driver and GLX extension
-	install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
-	install -m 0755 nvidia_drv.so $PKG/usr/lib/xorg/modules/drivers/
-	install -d -m 0755 $PKG/usr/lib/nvidia/xorg
-	install -m 0755 libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/
-	ln -s libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so
-	ln -s libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so.1
+# X driver and GLX extension
+install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
+install -m 0755 nvidia_drv.so $PKG/usr/lib/xorg/modules/drivers/
+install -d -m 0755 $PKG/usr/lib/nvidia/xorg
+install -m 0755 libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/
+ln -s libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so
+ln -s libglxserver_nvidia.so.$surum $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so.1
 
 	# EGL and OpenGL ES libraries and config
-	install -d $PKG/usr/lib
-	install -m 0755 libGLESv1_CM_nvidia.so.$version $PKG/usr/lib/
-	ln -s libGLESv1_CM_nvidia.so.$surum $PKG/usr/lib/libGLESv1_CM_nvidia.so.1
+install -d $PKG/usr/lib
+install -m 0755 libGLESv1_CM_nvidia.so.$surum $PKG/usr/lib/
+ln -s libGLESv1_CM_nvidia.so.$surum $PKG/usr/lib/libGLESv1_CM_nvidia.so.1
 	install -m 0755 libGLESv2_nvidia.so.$surum $PKG/usr/lib/
 	ln -s libGLESv2_nvidia.so.$surum $PKG/usr/lib/libGLESv2_nvidia.so.2
 	install -D -m 0644 10_nvidia.json $PKG/usr/share/glvnd/egl_vendor.d/10_nvidia.json
