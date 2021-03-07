@@ -12,7 +12,7 @@ calisma    =
 xz         = ${SOURCEFORGE_SITE}/$isim
 
 [sha256]
-1          = 1421e034286a9f96d3168a1c54ea570ee7aa008ca07b89de005ad5ce49fb29ca
+#1          = 1421e034286a9f96d3168a1c54ea570ee7aa008ca07b89de005ad5ce49fb29ca
 
 [derle]
 ekconf     = --disable-werror
