@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = intltool itstool
-calisma = libcanberra libgtop mate-desktop zenity libxpresent
+calisma = libcanberra libgtop mate-desktop zenity libxpresent gvfs
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
