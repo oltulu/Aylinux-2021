@@ -7,7 +7,7 @@ url     = https://filezilla-project.org/
 
 [gerek]
 derleme = libfilezilla wxgtk3
-calisma = wxgtk3
+calisma = wxgtk3 libfilezilla
 
 [kaynak]
 1 = https://download.filezilla-project.org/client/FileZilla_${surum}_src.tar.bz2
