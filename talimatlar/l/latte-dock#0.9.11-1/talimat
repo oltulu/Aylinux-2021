@@ -6,7 +6,7 @@ url     = https://store.kde.org/p/1169519/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma = hicolor-icon-theme knewstuff plasma-framework
+calisma = hicolor-icon-theme knewstuff plasma-framework kwayland
 
 [kaynak]
 xz      = https://download.kde.org/stable/$isim
