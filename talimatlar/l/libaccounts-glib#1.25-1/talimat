@@ -15,6 +15,7 @@ git      = https://gitlab.com/accounts-sso/libaccounts-glib
     #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
+betik 	= sed -e '/docs/d' -i $isim/meson.build
 betik 	= mv $isim $isim-$surum
 ekconf 	= -Dtests=false -Dgtk-doc=false
 tip 	= meson
