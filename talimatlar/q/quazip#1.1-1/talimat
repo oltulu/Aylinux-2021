@@ -1,0 +1,21 @@
+[paket]
+tanim   = ZIP/UNZIP C paketi için C ++ sarıcı
+paketci = Cihan_Alkan
+grup 	= sistem
+url     = https://kde.org/applications/utilities/kcalc/
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =  
+
+[kaynak]
+xz      = https://download.kde.org/stable/$isim/$surum
+
+[sha256]
+        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+tip 	= cmake
+                    	      
+[pakur]
+tip 	= cmake
