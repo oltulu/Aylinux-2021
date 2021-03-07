@@ -15,10 +15,9 @@ xz      = http://pub.mate-desktop.org/releases/${surum%.*}
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-betik     = ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --enable-introspection --disable-update-mimedb
+betik     = ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --enable-introspection --disable-update-mimedb --with-gtk=3.0 --enable-unique --disable-static
 betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik     = make
 	      
 [pakur]
-tip 	= gnu
-betik     = rm -r "$PKG/usr/share/dbus-1/"
+betik     = make DESTDIR=$PKG install
