@@ -8,7 +8,7 @@ url     = http://cppunit.sourceforge.net
 gz         = http://dev-www.libreoffice.org/src
 
 [sha256]
-1          = 3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
+#1          = 3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
 
 [derle]
 betik      = autoreconf -fi
