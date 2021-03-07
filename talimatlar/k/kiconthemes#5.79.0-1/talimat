@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules karchive kitemviews
-calisma = karchive 
+calisma = karchive kconfigwidgets kitemviews qt5-svg
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
