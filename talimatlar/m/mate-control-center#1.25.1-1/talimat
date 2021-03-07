@@ -6,7 +6,7 @@ url     = https://bitmath.org/code/mtdev
 
 [gerek]
 derleme = dbus-glib desktop-file-utils glib itstool libxss libxt libcanberra libgtop marco mate-settings-daemon mate-menus accountsservice librsvg
-calisma = mate-menus mate-settings-daemon marco libxss mate-desktop
+calisma = mate-menus mate-settings-daemon marco libxss mate-desktop accountsservice
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
