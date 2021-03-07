@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules ktexteditor
-calisma =  
+calisma =  hicolor-icon-theme kactivities knewstuff ktexteditor kuserfeedback
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
