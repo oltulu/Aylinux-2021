@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = gobject-introspection intltool zenity
-calisma = exempi gvfs libexif mate-desktop libnotify libgtop libxpresent gettext
+calisma = exempi gvfs libexif mate-desktop libnotify libgtop libxpresent
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
