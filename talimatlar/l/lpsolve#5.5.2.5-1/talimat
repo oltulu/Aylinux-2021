@@ -16,11 +16,13 @@ dosya      = lpsolve-5.5.2.0.defines.patch
 betik      = cd lp_solve_5.5
 yama       = 2 
 yama       = 3 
+betik      = sed -e "s|^\(opts=\).*|\1'$CFLAGS'|" -i lpsolve55/ccc lp_solve/ccc
 betik      = cd lpsolve55   ; sh -x ccc
 betik      = cd ../lp_solve ; sh -x ccc
 
 [pakur]
 betik      = cd lp_solve_5.5
+
 betik      = install -dm755 "${PKG}"/usr/{bin,lib,include/lpsolve}
 betik      = install -m755 lp_solve/bin/ux*/lp_solve "${PKG}"/usr/bin/
 betik      = install -m755 lpsolve55/bin/ux*/liblpsolve55.so "${PKG}"/usr/lib/
