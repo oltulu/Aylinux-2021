@@ -1,4 +1,4 @@
-cd $/SRC
+cd $SRC
 source=(/sources/$isim-$surum.tar.xz
   /sources/$isim-dictionaries-$surum.tar.xz
   /sources/185d60944ea767075d27247c3162b3bc-unowinreg.dll
@@ -31,7 +31,7 @@ for file in ${source[@]}; do
     esac
   done
   
-  cd $/SRC/$isim-$surum
+  cd $SRC/$isim-$surum
 
  # patch -Np1 -i $SRC/makefile.in.patch
 
