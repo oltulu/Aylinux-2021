@@ -1,0 +1,33 @@
+[paket]
+tanim   = Okullar ve üniversiteler için interaktif beyaz tahta yazılımı
+paketci = Cihan_Alkan
+grup  	= eğitim
+url     = http://openboard.ch/index.en.html
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz      = https://github.com/OpenBoard-org/OpenBoard/archive/v$surum.tar.gz
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= cd "$SRC/OpenBoard-$surum"
+betik 	= qmake OpenBoard.pro -spec linux-g++
+betik 	= make
+        	      
+[pakur]
+betik 	= cd "$SRC/OpenBoard-$surum"
+betik 	= mkdir -p $PKG/opt/openboard
+betik 	= cp -rp $SRC/OpenBoard-$pkgver/resources/customizations $PKG/opt/openboard
+betik 	= cp -rp $SRC/OpenBoard-$pkgver/resources/etc $PKG/opt/openboard
+betik 	= cp -rp $SRC/OpenBoard-$pkgver/resources/i18n $PKG/opt/openboard
+betik 	= cp -rp $SRC/OpenBoard-$pkgver/resources/library $PKG/opt/openboard
+betik 	= cp -rp $SRC/OpenBoard-$pkgver/resources/images/OpenBoard.png $PKG/opt/openboard/
+betik 	= cp -rp build/linux/release/product/OpenBoard $PKG/opt/openboard/
+betik 	= install -D -m 644 $SRC/openboard.desktop $PKG/usr/share/applications/openboard.desktop
+betik 	= install -d -m 755 $PKG/usr/bin
+betik 	= ln -s /opt/openboard/OpenBoard $PKG/usr/bin/openboard
