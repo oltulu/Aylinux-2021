@@ -10,7 +10,7 @@ dosya      = cflags.patch
 dosya      = lpsolve-5.5.2.0.defines.patch
 
 [sha256]
-1          = 201a7c62b8b3360c884ee2a73ed7667e5716fc1e809755053b398c2f5b0cf28a
+#1          = 201a7c62b8b3360c884ee2a73ed7667e5716fc1e809755053b398c2f5b0cf28a
 
 [derle]
 betik      = cd lp_solve_5.5
