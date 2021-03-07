@@ -6,7 +6,7 @@ url     = https://kde.org/applications/system/dolphin/
 
 [gerek]
 derleme = extra-cmake-modules kparts kdoctools docbook-xsl
-calisma =  
+calisma =  baloo-widgets kactivities kcmutils kinit kio-extras knewstuff kparts kuserfeedback
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
