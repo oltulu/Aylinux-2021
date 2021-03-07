@@ -6,7 +6,8 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kwindowsystem
-calisma = kwindowsystem
+calisma = kwindowsystem kcoreaddons
+
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
