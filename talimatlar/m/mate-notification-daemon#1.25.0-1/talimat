@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = glib dbus-glib libxml2 libnotify libwnck libcanberra desktop-file-utils dconf startup-notification 
-calisma =
+calisma = libnotify libwnck libcanberra
 
 [kaynak]
 xz      = https://pub.mate-desktop.org/releases/${surum%.*}
