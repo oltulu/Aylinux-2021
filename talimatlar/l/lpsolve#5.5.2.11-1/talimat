@@ -14,8 +14,8 @@ dosya      = lpsolve-5.5.2.0.defines.patch
 
 [derle]
 betik      = cd lp_solve_5.5
-yama       = 2 
-yama       = 3 
+#yama       = 2 
+#yama       = 3 
 betik      = sed -e "s|^\(opts=\).*|\1'$CFLAGS'|" -i lpsolve55/ccc lp_solve/ccc
 betik      = cd lpsolve55   ; sh -x ccc
 betik      = cd ../lp_solve ; sh -x ccc
