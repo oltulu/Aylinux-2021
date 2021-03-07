@@ -6,7 +6,7 @@ url     = https://community.kde.org/Baloo
 
 [gerek]
 derleme = extra-cmake-modules kdoctools
-calisma =  
+calisma = baloo
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
