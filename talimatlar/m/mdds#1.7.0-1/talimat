@@ -11,8 +11,8 @@ bz2        = http://kohei.us/files/mdds/src
 #1          = 25ce3d5af9f6609e1de05bb22b2316e57b74a72a5b686fbb2da199da72349c81
 
 [derle]
-betik      = autoreconf -fi
-tip        = gnu
+betik      = ./autogen.sh --prefix=/usr
+#tip        = gnu
 
 [pakur]
 tip        = gnu
