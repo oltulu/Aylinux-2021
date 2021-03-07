@@ -6,7 +6,7 @@ url     = http://global.pantum.com/global/
 
 [gerek]
 derleme = 
-calisma = xorg-xdpyinfo xorg-xprop
+calisma = 
 
 [kaynak]
 1   = http://global.pantum.com/global/wp-content/uploads/2016/01/Pantum-P2000-Series-Linux-DriverUbutun12.04V1.00-1.zip
