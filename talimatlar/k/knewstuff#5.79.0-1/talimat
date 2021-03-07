@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kpackage attica
-calisma = attica
+calisma = attica kio kpackage krigami2
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
