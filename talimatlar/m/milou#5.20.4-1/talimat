@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma =  
+calisma = kitemmodels krunner
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
