@@ -5,8 +5,9 @@ grup    = sistem
 url     = https://www.hjdskes.nl/projects/cage
 
 [gerek]
-derleme = meson wayland wayland-protocols wlroots
-calisma =
+derleme = 
+calisma = gtk3 libglvnd
+
 
 [kaynak]
 1  = https://us.download.nvidia.com/XFree86/Linux-x86_64/$surum/NVIDIA-Linux-x86_64-$surum.run
@@ -17,8 +18,8 @@ dosya  = 10-nvidia-drm-outputclass.conf
 #1       = 38a3e3968f00cc58fe1d9448e972cfac7d1efa30c48699f09032f264101a55ac
 
 [derle]
-ekconf  = -Dman-pages=disabled
-tip     = meson
+betik  = sh NVIDIA-Linux-x86_64-$surum.run --extract-only
+
 
 [pakur]
 dosya    = pakur.sh
