@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
-derleme = extra-cmake-modules qt5-graphicaleffects
+derleme = cmake extra-cmake-modules qt5-graphicaleffects
 calisma = accountsservice baloo gawk kmenuedit ksysguard libxkbfile polkit-kde-agent systemsettings 
 
 [kaynak]
