@@ -6,7 +6,8 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kcrash kdbusaddons kservice solid kbookmarks kcompletion kjobwidgets ktextwidgets
-calisma = kdbusaddons solid kservice kbookmarks kcompletion kjobwidgets ktextwidgets karchive
+calisma = kdbusaddons solid kservice kbookmarks kcompletion kjobwidgets ktextwidgets karchive libxslt kded kwallet solid
+
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
