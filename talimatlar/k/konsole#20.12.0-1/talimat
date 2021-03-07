@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kdoctools
-calisma =  
+calisma = kinit knewstuff knotifyconfig kparts kpty
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
