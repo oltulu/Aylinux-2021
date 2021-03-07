@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
-derleme = extra-cmake-modules qca
+derleme = extra-cmake-modules qca qt5-multimedia
 calisma =  
 
 [kaynak]
