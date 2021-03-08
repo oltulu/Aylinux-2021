@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-powermanagement
 
 [gerek]
 derleme = cmake lxqt-build-tools liblxqt lxqt-globalkeys qt5-tools qt5-svg kidletime solid upower 
-calisma = upower
+calisma = upower kidletime solid
 
 [kaynak]
 xz      = $url/releases/download/${surum}
