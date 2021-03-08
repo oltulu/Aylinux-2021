@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-config
 
 [gerek]
 derleme = cmake lxqt-build-tools liblxqt libxcursor libkscreen xf86-input-libinput libqtxdg qt5-svg qt5-tools
-calisma = lxqt-themes
+calisma = lxqt-themes libkscreen
 
 [kaynak]
 xz      = $url/releases/download/${surum}
