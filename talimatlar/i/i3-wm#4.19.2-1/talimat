@@ -13,7 +13,7 @@ calisma = xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm xorg-xcb-u
 dosya      = 0001-Use-OVER-operator-for-drawing-text.patch
 
 [sha256]
-1 		= ab65c25c06acbdc67cba3ff23e2a82ea17911def65f4fd0200bb6f9382378576
+#1 		= ab65c25c06acbdc67cba3ff23e2a82ea17911def65f4fd0200bb6f9382378576
 
 [derle]
 betik = cd i3-$pkgver
