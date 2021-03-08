@@ -6,11 +6,14 @@ url     = http://freshmeat.net/projects/util-linux
 
 [kaynak]
 xz     	= http://www.kernel.org/pub/linux/utils/util-linux/v${surum:0:4}
+1 = https://notabug.org/oltulu/Ceviri/raw/master/util-linux-tr.po
 
 [sha256]
 #1 		= 631be8eac6cf6230ba478de211941d526808dba3cd436380793334496013ce97
 
 [derle]
+betik   = rm po/tr.po
+betik   = cp /sources/util-linux.mo po/tr.po
 dosya   = derle.sh
      
 [pakur]
