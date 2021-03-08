@@ -19,7 +19,7 @@ dosya	= index.theme
 betik	= mkdir $PKG/usr
 
 [pakur]
-betik	= cp -r cinnamon-kur/* $PKG/
+betik	= cp -r lxqt-kur/* $PKG/
 betik	= mkdir $PKG/usr/share
 betik	= mkdir $PKG/usr/share/icons
 betik	= mkdir $PKG/usr/share/icons/default
