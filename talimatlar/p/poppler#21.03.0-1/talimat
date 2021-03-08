@@ -7,7 +7,7 @@ arsiv   = "poppler-${surum}"
 
 [gerek]
 derleme = cmake qt5-base libpng tiff lcms2 fontconfig cairo openjpeg2 poppler
-calisma =
+calisma = lcms2
 
 [kaynak]
 1       = ${url}/poppler-${surum}.tar.xz
