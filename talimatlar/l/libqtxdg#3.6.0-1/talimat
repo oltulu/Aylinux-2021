@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/libqtxdg
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-svg
-calisma =
+calisma = qt5-svg qt5-base
 
 [kaynak]
 xz     = $url/releases/download/${surum}
