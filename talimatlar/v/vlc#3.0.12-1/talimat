@@ -28,4 +28,12 @@ betik = patch -Np1 < $SRC/vlc-lua53_compat.patch
 dosya = derle.sh
 
 [pakur]
-dosya   = pakur.sh
+betik   = make DESTDIR=$PKG docdir=/usr/share/doc/$isim-$surum-release install
+betik   = install -D -m644 "$SRC/vlc-$surum/share/icons/${16}x${16}/vlc.png" "$PKG/usr/share/icons/hicolor/${16}x${16}/apps/vlc.png"
+betik   = install -D -m644 "$SRC/vlc-$surum/share/icons/${32}x${32}/vlc.png" "$PKG/usr/share/icons/hicolor/${32}x${32}/apps/vlc.png"
+betik   = install -D -m644 "$SRC/vlc-$surum/share/icons/${48}x${48}/vlc.png" "$PKG/usr/share/icons/hicolor/${48}x${48}/apps/vlc.png"
+betik   = install -D -m644 "$SRC/vlc-$surum/share/icons/${128}x${128}/vlc.png" "$PKG/usr/share/icons/hicolor/${128}x${128}/apps/vlc.png"
+# Obsolets libs
+betik   = rm $PKG/usr/lib/libvlc{,core}.la
+betik   = rm $PKG/usr/lib/vlc/libcompat.la
+betik   = rm $PKG/usr/lib/vlc/libvlc{_pulse,_vdpau,_xcb_events}.la
