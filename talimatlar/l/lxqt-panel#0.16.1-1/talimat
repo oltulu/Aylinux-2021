@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-panel
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-tools qt5-svg libxkbcommon liblxqt lxqt-globalkeys alsa-lib pulseaudio solid lm_sensors libxcomposite libdbusmenu-qt5 kwindowsystem menu-cache libsysstat kguiaddons libstatgrab 
-calisma = lxmenu-data
+calisma = lxmenu-data libsysstat kguiaddons libstatgrab libdbusmenu-qt5 solid
 
 [kaynak]
 xz      = $url/releases/download/${surum}
