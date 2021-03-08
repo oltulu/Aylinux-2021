@@ -6,7 +6,9 @@ url     = https://github.com/lxqt/pcmanfm-qt
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-tools qt5-x11extras libfm-qt lxmenu-data gvfs 
-calisma = lxmenu-data gvfs qt5-translations lxqt-archiver
+calisma = lxmenu-data gvfs lxqt-archiver
+
+#qt5-translations
 
 [kaynak]
 xz      = $url/releases/download/${surum}
