@@ -13,7 +13,7 @@ xz     	= http://www.kernel.org/pub/linux/utils/util-linux/v${surum:0:4}
 
 [derle]
 betik   = rm po/tr.po
-betik   = cp /sources/util-linux.mo po/tr.po
+betik   = cp /sources/util-linux-tr.po po/tr.po
 dosya   = derle.sh
      
 [pakur]
