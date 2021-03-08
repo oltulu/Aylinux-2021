@@ -16,11 +16,11 @@ dosya      = 0001-Use-OVER-operator-for-drawing-text.patch
 #1 		= ab65c25c06acbdc67cba3ff23e2a82ea17911def65f4fd0200bb6f9382378576
 
 [derle]
-betik = cd i3-$pkgver
+betik = cd i3-$surum
 betik = patch -Np1 -i $SRC//0001-Use-OVER-operator-for-drawing-text.patch
 betik = milis-meson build
 betik = ninja -C build
 	      
 [pakur]
-betik = cd build
+betik = cd i3-$surum/build
 tip = gnu
