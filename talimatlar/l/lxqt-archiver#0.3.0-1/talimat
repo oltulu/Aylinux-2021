@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-archiver
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-tools qt5-x11extras libfm-qt glib json-glib
-calisma = libarchive
+calisma = libarchive json-glib
 
 [kaynak]
 xz		= $url/releases/download/${surum}
