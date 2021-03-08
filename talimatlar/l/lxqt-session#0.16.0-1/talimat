@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-session
 
 [gerek]
 derleme = cmake lxqt-build-tools xdg-user-dirs liblxqt pm-utils consolekit2 libxdg-basedir qt5-tools qt5-svg
-calisma = breeze-icons oxygen-icons5 milis-gtk-theme milis-icon-theme pm-utils consolekit2 libxdg-basedir
+calisma = pm-utils consolekit2 libxdg-basedir
 
 [kaynak]
 xz      = $url/releases/download/${surum}
