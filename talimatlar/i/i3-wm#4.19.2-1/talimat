@@ -5,7 +5,7 @@ grup 	= sistem
 url     = https://i3wm.org
 
 [gerek]
-derleme = bison flex xmlto
+derleme = meson flex xmlto ninja
 calisma = xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm xorg-xcb-util-xrm xorg-libev yajl startup-notification pango libxkbcommon-x11
 
 [kaynak]
