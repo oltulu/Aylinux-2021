@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://launchpad.net/libdbusmenu-qt
 
 [gerek]
-derleme = qt5-base
+derleme = qt5-base doxygen
 calisma = 
 
 [kaynak]
