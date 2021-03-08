@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-qtplugin
 
 [gerek]
 derleme = cmake qt5-tools lxqt-build-tools libdbusmenu-qt5 libfm-qt libqtxdg qt5-svg
-calisma = 
+calisma = libdbusmenu-qt5
 
 [kaynak]
 xz      = $url/releases/download/${surum}
