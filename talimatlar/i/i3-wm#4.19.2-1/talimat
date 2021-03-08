@@ -5,7 +5,7 @@ grup 	= sistem
 url     = http://www.icu-project.org/
 
 [gerek]
-derleme = bison flex asciidoc xmlto
+derleme = bison flex xmlto
 calisma = xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm xorg-xcb-util-xrm xorg-libev yajl startup-notification pango libxkbcommon-x11
 
 [kaynak]
