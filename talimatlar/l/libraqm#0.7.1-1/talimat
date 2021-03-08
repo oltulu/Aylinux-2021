@@ -12,7 +12,7 @@ calisma =
 github  = HOST-Oman/libraqm
 
 [sha256]
-1 		= 21ed67b8d0d2217f3801878f2ceef9b2da24495eeff830552051cef21f95938e
+#1 		= 21ed67b8d0d2217f3801878f2ceef9b2da24495eeff830552051cef21f95938e
 
 [derle]
 betik   = sed -i '/docs/ d' configure.ac
