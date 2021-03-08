@@ -22,5 +22,5 @@ betik = milis-meson build
 betik = ninja -C build
 	      
 [pakur]
-betik = cd i3-$surum/build
-tip = gnu
+betik = cd i3-$surum
+betik = DESTDIR="$surum" ninja -C build install
