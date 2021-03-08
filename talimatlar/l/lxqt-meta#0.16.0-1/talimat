@@ -18,6 +18,10 @@ dosya	= index.theme
 betik	= echo "derleme yok"
 
 [pakur]
+betik	= mkdir $PKG/usr
+betik	= mkdir $PKG/usr/share
+betik	= mkdir $PKG/usr/share/icons
+betik	= mkdir $PKG/usr/share/icons/default
 betik	= cp $SRC/index.theme $PKG/usr/share/icons/default/index.theme
 
 
