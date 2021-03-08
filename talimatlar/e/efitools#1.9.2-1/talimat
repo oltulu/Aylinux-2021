@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git
 
 [gerek]
-derleme = gnu-efi-libs openssl perl-file-slurp
+derleme = gnu-efi-libs openssl perl-file-slurp sbsigntools
 calisma = sbsigntools
 
 [kaynak]
