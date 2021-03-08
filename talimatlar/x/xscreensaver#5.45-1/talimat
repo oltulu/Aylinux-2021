@@ -16,9 +16,9 @@ dosya  = xscreensaver-pam
 1       = 7016df6736ba0126a68c1f35abcf411a695fe93bc01a18ebd9df46c9a9f4d50d
 
 [derle]
-betik   = sed 's|-std=c89||' -i configure.in
-betik   = autoreconf -fiv
-ekconf  = --with-login-manager --with-x-app-defaults=/usr/share/X11/app-defaults --with-pam --without-pixbuf --with-jpeg
+#betik   = sed 's|-std=c89||' -i configure.in
+#betik   = autoreconf -fiv
+ekconf  = --with-x-app-defaults='/etc/X11/app-defaults' --enable-locking --enable-root-passwd --disable-nls --with-dpms-ext --with-xinerama-ext --with-xshm-ext --with-proc-interrupts --with-shadow --with-pixbuf --with-jpeg --without-motif --without-gle --without-setuid-hacks
 tip     = gnu
 
 [pakur]
