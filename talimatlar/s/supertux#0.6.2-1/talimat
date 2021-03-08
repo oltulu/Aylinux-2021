@@ -5,7 +5,7 @@ grup    = Oyun
 url     = https://github.com/supertux/supertux
 
 [gerek]
-derleme = cmake boost mesa optipng
+derleme = cmake boost mesa optipng glew
 calisma = sdl2_image curl openal libvorbis glew physfs freetype hicolor-icon-theme
 
 [kaynak]
