@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-runner
 
 [gerek]
 derleme = cmake lxqt-build-tools liblxqt lxqt-globalkeys muparser qt5-tools qt5-svg kwindowsystem menu-cache
-calisma =
+calisma = muparser
 
 [kaynak]
 xz      = $url/releases/download/${surum}
