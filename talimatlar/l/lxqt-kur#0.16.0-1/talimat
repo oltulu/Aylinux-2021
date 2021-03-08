@@ -10,19 +10,16 @@ calisma	= libqtxdg liblxqt libfm-qt pcmanfm-qt lxqt-qtplugin lximage-qt lxqt-arc
 
 [kaynak]
 1= https://notabug.org/oltulu/Ceviri/raw/master/lxqt-kur.tar.gz
-dosya	= index.theme
+#dosya	= index.theme
 
 [sha256]
-;1	= 
+#1	= 
 
 [derle]
 betik	= mkdir $PKG/usr
 
 [pakur]
 betik	= cp -r lxqt-kur/* $PKG/
-betik	= mkdir $PKG/usr/share
-betik	= mkdir $PKG/usr/share/icons
-betik	= mkdir $PKG/usr/share/icons/default
-betik	= cp $SRC/index.theme $PKG/usr/share/icons/default/index.theme
+#betik	= cp $SRC/index.theme $PKG/usr/share/icons/default/index.theme
 
 
