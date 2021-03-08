@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://github.com/yshui/picom
 
 [gerek]
-derleme =  meson cmake python mesa dbus libconfig libev pcre pixman xcb-util-image xcb-util-renderutil desktop-file-utils xprop xwininfo uthash
+derleme =  meson cmake python mesa dbus libconfig libev pcre pixman xcb-util-image xcb-util-renderutil desktop-file-utils xprop xwininfo uthash ninja
 calisma =
 
 [kaynak]
