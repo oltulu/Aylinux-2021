@@ -12,7 +12,7 @@ calisma    =
 gz         = ${FREEDESKTOP_SITE}/farstream/releases/$isim
 
 [sha256]
-1          = 2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908
+#1          = 2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908
 
 [derle]
 ekconf     = --disable-valgrind
