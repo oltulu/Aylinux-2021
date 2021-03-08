@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/Airblader/i3/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1       = 4fbe0d80f8ef8814f266705318885e15e316774e98fb26f40199e51ed2eea2ed
+#1       = 4fbe0d80f8ef8814f266705318885e15e316774e98fb26f40199e51ed2eea2ed
 
 [derle]
 betik   = cd $SRC && mkdir build
