@@ -9,16 +9,17 @@ derleme	=
 calisma	= libqtxdg liblxqt libfm-qt pcmanfm-qt lxqt-qtplugin lximage-qt lxqt-archiver libsysstat lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-policykit lxqt-powermanagement lxqt-session lxqt-sudo lxqt-panel lxqt-runner lxqt-themes qtermwidget qterminal lxqt-openssh-askpass lxqt-admin pavucontrol-qt qps obconf-qt xscreensaver featherpad picom
 
 [kaynak]
+1= https://notabug.org/oltulu/Ceviri/raw/master/lxqt-kur.tar.gz
 dosya	= index.theme
 
 [sha256]
 ;1	= 
 
 [derle]
-betik	= echo "derleme yok"
+betik	= mkdir $PKG/usr
 
 [pakur]
-betik	= mkdir $PKG/usr
+betik	= cp -r cinnamon-kur/* $PKG/
 betik	= mkdir $PKG/usr/share
 betik	= mkdir $PKG/usr/share/icons
 betik	= mkdir $PKG/usr/share/icons/default
