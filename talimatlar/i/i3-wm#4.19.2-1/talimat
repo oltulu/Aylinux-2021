@@ -2,14 +2,14 @@
 tanim   = Gelişmiş bir dinamik döşeme penceresi yöneticisi
 paketci = Cihan_Alkan
 grup 	= sistem
-url     = http://www.icu-project.org/
+url     = https://i3wm.org
 
 [gerek]
 derleme = bison flex xmlto
 calisma = xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm xorg-xcb-util-xrm xorg-libev yajl startup-notification pango libxkbcommon-x11
 
 [kaynak]
-1      = https://i3wm.org/downloads/i3-$surum.tar.bz2
+1      = https://i3wm.org/downloads/i3-$surum.tar.xz
 dosya      = 0001-Use-OVER-operator-for-drawing-text.patch
 
 [sha256]
