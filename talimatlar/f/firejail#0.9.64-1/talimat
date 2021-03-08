@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/netblue30/firejail/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1       = e165b61d80957846cf18c0ae169e626a1056bafee3214972534a33c97ea492ae
+#1       = e165b61d80957846cf18c0ae169e626a1056bafee3214972534a33c97ea492ae
 
 [derle]
 ekconf  = --enable-apparmor
