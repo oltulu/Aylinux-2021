@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/liblxqt
 
 [gerek]
 derleme = cmake lxqt-build-tools libqtxdg qt5-x11extras qt5-base qt5-tools qt5-svg kwindowsystem libxss polkit-qt5
-calisma = libqtxdg qt5-x11extras qt5-base libxss qt5-svg
+calisma = libqtxdg qt5-x11extras qt5-base libxss qt5-svg kwindowsystem
 
 [kaynak]
 xz      = $url/releases/download/${surum}
