@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/libfm-qt
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-tools qt5-x11extras libexif menu-cache
-calisma =
+calisma = qt5-x11extras libexif menu-cache qt5-base
 
 [kaynak]
 xz      = $url/releases/download/${surum}
