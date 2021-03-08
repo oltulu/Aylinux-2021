@@ -1,0 +1,23 @@
+[paket]
+tanim   = Orijinal SuperMario oyunlarına benzer bir tarzda klasik bir 2D atlama ve çalıştır yan kaydırma oyunu
+paketci = Cihan_Alkan
+grup    = Oyun
+url     = https://github.com/supertux/supertux
+
+[gerek]
+derleme = cmake boost mesa optipng
+calisma = sdl2_image curl openal libvorbis glew physfs freetype hicolor-icon-theme
+
+[kaynak]
+1    = https://www.libsdl.org/projects/SDL_image/release/SDL2_image-${surum}.tar.gz
+
+[sha256]
+
+[derle]
+betik   = cd "SuperTux-v${surum}-Source"
+betik   = cmake . -DCMAKE_INSTALL_PREFIX=/us -DINSTALL_SUBDIR_BIN=bin -DCMAKE_BUILD_TYPE=Release
+betik   = make
+
+[pakur]
+betik   = cd "SuperTux-v${surum}-Source"
+betik   = make DESTDIR="${PKG}" install
