@@ -9,7 +9,8 @@ derleme = cmake lxqt-build-tools qt5-base
 calisma =
 
 [kaynak]
-xz      = $url/releases/download/${surum}
+#xz      = $url/releases/download/${surum}
+1= https://github.com/lxqt/libsysstat/releases/download/0.4.4/libsysstat-0.4.4.tar.xz
 
 [sha256]
 1       = 3997d17692d2ea467d384517aedb8fcc4050f2f66114a1405d42cef0adaafa6b
