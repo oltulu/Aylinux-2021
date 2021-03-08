@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/obconf-qt
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-x11extras qt5-tools openbox desktop-file-utils
-calisma =
+calisma = openbox
 
 [kaynak]
 xz      = $url/releases/download/${surum}
