@@ -1,0 +1,23 @@
+[paket]
+tanim   = E-imza kartları için yönetim aracı
+paketci = Cihan_Alkan
+grup  	= sistem
+url     = https://anydesk.com/tr
+
+[gerek]
+derleme = 
+calisma = jre
+
+[kaynak]
+1      = http://aylinux.kripto.com.tr/dosyalar/akiskart-2.0-1-x86_64.pkg.tar.xz
+
+[SKIP]
+#1 		= SKIP
+
+[derle]
+betik = cd ../
+
+[pakur]
+betik 	= cp -r $SRC/usr $PKG/
+betik 	= cp -r $SRC/etc $PKG/
+betik 	= cp -r $SRC/opt $PKG/
