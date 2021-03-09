@@ -1,6 +1,6 @@
 [paket]
 tanim   = Önyükleme için gereken her şeyi içeren özel bir initramfs görüntüsü oluşturma aracı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup 	= temel
 url     = https://dracut.wiki.kernel.org
 
@@ -10,6 +10,7 @@ calisma = kmod util-linux cpio squashfs tar
 
 [kaynak]
 1    = http://kernel.org/pub/linux/utils/boot/dracut/dracut-$surum.tar.xz
+2    = https://notabug.org/oltulu/Ceviri/raw/master/dracut-init.sh
 
 [sha256]
 #1 		= 6ce2f8c16b393606b504c7722fd6845d2e0ed0f543f3cc83784c31171498b89a
@@ -23,3 +24,5 @@ betik   = make -j1 sysconfdir=/etc prefix=/usr
 betik   = cd dracut-$surum
 betik   = make sysconfdir=/etc prefix=/usr DESTDIR=$PKG install
 betik   = rm -rf $PKG/usr/share/bash-completion
+betik   = rm -rf $PKG/usr/lib/dracut/dracut-init.sh
+betik   = cp /sources/dracut-init.sh $PKG/usr/lib/dracut/
