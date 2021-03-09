@@ -1,0 +1,25 @@
+[paket]
+tanim   = Belge çevirisine yardımcı araçlar
+paketci = oltulu
+grup 	= kütüphane
+url     = https://po4a.org/
+
+[gerek]
+derleme = perl-module-build  docbook-xsl
+calisma = 
+
+[kaynak]
+gz     = https://github.com/mquinson/$isim/releases/download/v$surum
+
+[sha256]
+#1 		= cfc54594c171f29f2a8e19595e706f13d805ca7b67bdb774f3da0ed70a265ae3
+
+[derle]
+betik = perl Build.PL installdirs=vendor create_packlist=0
+  # The script expects a UTF-8 locale
+betik = LC_ALL=en_US.UTF-8 perl Build
+	      
+[pakur]
+betik = perl Build destdir="${pkgdir}" install
+  # remove perllocal.pod and .packlist
+betik = find "${pkgdir}" -name .packlist -o -name perllocal.pod -delete
