@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://po4a.org/
 
 [gerek]
-derleme = perl-module-build  docbook-xsl perl-pod-parser
+derleme = perl-module-build  docbook-xsl perl-pod-parser perl-locale-gettext
 calisma = 
 
 [kaynak]
