@@ -10,7 +10,7 @@ calisma = lsb-release
 
 [kaynak]
 git      = https://github.com/lpereira/hardinfo
-#1 = https://notabug.org/oltulu/Ceviri/raw/master/hardinfo
+1 = https://notabug.org/oltulu/Ceviri/raw/master/hardinfo
 
 [sha256]
 #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
@@ -21,8 +21,10 @@ betik     = mkdir -p build
 betik     = cd build
 betik     = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DHARDINFO_GTK3=1 ..
 betik     = make
-#betik     = rm /usr/bin/hardinfo
+
         	      
 [pakur]
 betik = cd $isim/build
 tip = gnu
+betik     = rm $PKG/usr/bin/hardinfo
+betik     = cp /sources/hardinfo $PKG/usr/bin/
