@@ -25,7 +25,7 @@ betik = make
 betik   = cd ModemManager-$surum
 tip     = gnu
 betik   = cd $SRC
-install -d "$PKG/usr/lib"
+betik   = install -d "$PKG/usr/lib"
 betik   = mv include "$PKG/usr"
 betik   = mv pkgconfig "$PKG/usr/lib"
 betik   = cd ModemManager-$surum
