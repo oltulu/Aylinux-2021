@@ -14,14 +14,14 @@ calisma    =
 #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
 
 [derle]
-betik     = cd $SRC
+betik     = cd $isim
 betik     = sed -i 's|etc/bash_completion.d|share/bash-completion/completions|' setup.py
 betik     = sed -i 's|etc/fish/completions|share/fish/vendor_completions.d|' setup.py
 betik     = python setup.py build
 
 [pakur]
 [derle]
-betik     = cd $SRC
+betik     = cd $isim
 betik     = export PYTHONHASHSEED=0
 betik      = python setup.py install --root="${PKG}/" --optimize=1 --skip-build
 betik      = mv "${PKG}/usr/share/bash-completion/completions/${isim}.bash-completion" "${PKG}/usr/share/bash-completion/completions/${isim}"
