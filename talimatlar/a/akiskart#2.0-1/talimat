@@ -6,7 +6,7 @@ url     = https://anydesk.com/tr
 
 [gerek]
 derleme = 
-calisma = jre
+calisma = jre pcsc-lite
 
 [kaynak]
 1      = http://aylinux.kripto.com.tr/dosyalar/akiskart-2.0-1-x86_64.pkg.tar.xz
