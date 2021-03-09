@@ -20,4 +20,3 @@ betik = cd ../
 [pakur]
 betik 	= cp -r $SRC/usr $PKG/
 betik 	= cp -r $SRC/etc $PKG/
-betik 	= cp -r $SRC/opt $PKG/
