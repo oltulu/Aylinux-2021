@@ -1,0 +1,22 @@
+[paket]
+tanim   = Okul Zili Programı
+paketci = Cihan_Alkan
+grup 	  = eğitim
+url     = https://www.dijitalders.com/
+
+[gerek]
+derleme = 
+calisma = jre
+
+[kaynak]
+dosya      = JavaZil.tar.xz
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = mkdir -p $PKG/usr
+
+	      
+[pakur]
+betik 	= cp -r $SRC/JavaZil/usr/* /$PKG/usr/
