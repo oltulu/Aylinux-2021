@@ -20,7 +20,6 @@ betik     = sed -i 's|etc/fish/completions|share/fish/vendor_completions.d|' set
 betik     = python setup.py build
 
 [pakur]
-[derle]
 betik     = cd $isim
 betik     = export PYTHONHASHSEED=0
 betik      = python setup.py install --root="${PKG}/" --optimize=1 --skip-build
