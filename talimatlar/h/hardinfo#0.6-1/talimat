@@ -27,4 +27,5 @@ betik     = make
 betik = cd $isim/build
 tip = gnu
 betik     = rm $PKG/usr/bin/hardinfo
-betik     = cp /sources/hardinfo $PKG/usr/bin/
+betik     = cp /sources/hardinfo-tr $PKG/usr/bin/hardinfo
+betik     = chmod +x $PKG/usr/bin/hardinfo
