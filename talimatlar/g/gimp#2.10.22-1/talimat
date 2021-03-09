@@ -13,6 +13,7 @@ bz2     = https://download.gimp.org/pub/gimp/v${surum%.*}
 dosya   = gimp-0001-no-check-update.patch
 1 = https://gitlab.gnome.org/GNOME/gimp/-/commit/cebeb90a.patch
 2 = https://notabug.org/oltulu/Ceviri/raw/master/gimp.png
+3 = https://github.com/archlinux/svntogit-packages/raw/packages/gimp/trunk/linux.gpl
 
 [sha256]
 #1       = e12f9f874b1a007c4277b60aa81e0b67330be7e6153e5749ead839b902fc7b3c
@@ -29,6 +30,7 @@ dosya = derle.sh
 
 [pakur]
 tip     = gnu
+betik   =install -D -m644 "${SRC}/linux.gpl" "${PKG}/usr/share/gimp/2.0/palettes/Linux.gpl"
 betik   = ln -s gimptool-2.0 "${PKG}/usr/bin/gimptool"
 betik   = rm $PKG/usr/share/gimp/2.0/images/gimp-splash.png
 betik   = cp  /sources/gimp.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
