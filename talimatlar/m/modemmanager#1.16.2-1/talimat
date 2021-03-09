@@ -31,3 +31,4 @@ betik   = mv pkgconfig "$PKG/usr/lib"
 betik   = cd ModemManager-$surum
 betik   = make DESTDIR="$PKG" -C libmm-glib install
 betik   = make DESTDIR="$PKG" -C vapi install
+
