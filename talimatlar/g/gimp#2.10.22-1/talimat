@@ -21,16 +21,16 @@ dosya   = gimp-0001-no-check-update.patch
 [derle]
 yama    = gimp-0001-no-check-update.patch
 betik   = patch -Np1 < /sources/cebeb90a.patch
-dosya = derle.sh
-#betik   = autoreconf -vi
-#betik   = pkg-config --exists --print-errors "OpenEXR >= 1.6.1"
-#betik   = PYTHON=/usr/bin/python2 ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/bin --enable-mp --enable-gimp-console --disable-gtk-doc --disable-check-update --disable-python --with-openexr --without-aa
-#betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-#betik   = make
+#dosya = derle.sh
+betik   = autoreconf -vi
+betik   = pkg-config --exists --print-errors "OpenEXR >= 1.6.1"
+betik   = PYTHON=/usr/bin/python2 ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/bin --enable-mp --enable-gimp-console --disable-gtk-doc --disable-check-update --disable-python --with-openexr --without-aa
+betik   = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik   = make
 
 [pakur]
 tip     = gnu
-betik   =install -D -m644 "${SRC}/linux.gpl" "${PKG}/usr/share/gimp/2.0/palettes/Linux.gpl"
+betik   =install -D -m644 "/sources/linux.gpl" "${PKG}/usr/share/gimp/2.0/palettes/Linux.gpl"
 betik   = ln -s gimptool-2.0 "${PKG}/usr/bin/gimptool"
 betik   = rm $PKG/usr/share/gimp/2.0/images/gimp-splash.png
 betik   = cp  /sources/gimp.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
