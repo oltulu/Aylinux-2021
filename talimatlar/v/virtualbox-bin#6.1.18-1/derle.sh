@@ -76,8 +76,8 @@
   ln -s /usr/lib/libpython2.7.so.1.0 "${PKG}"/opt/lib/libpython2.6.so.1.0
 
   # Remove junk
-  find nls -type f ! -name '*en*' -exec rm -f {} \; 
-  rm -rf "${PKG}"/"${VBOX_INSTALL}"/sdk
+#  find nls -type f ! -name '*en*' -exec rm -f {} \; 
+ # rm -rf "${PKG}"/"${VBOX_INSTALL}"/sdk
 
   # Install udev rules
   install -m644 "${SRC}"/60-vboxdrv.rules "${PKG}"/etc/udev/rules.d/60-vboxdrv.rules
