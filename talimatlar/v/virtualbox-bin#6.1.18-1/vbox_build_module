@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "$(uname -rv) çekirdeği için Virtualbox çekirdek modülleri oluşturuluyor "
+cd /opt/VirtualBox/src/vboxhost
+make clean && make && make install
