@@ -6,7 +6,7 @@ url     = http://aa-project.sourceforge.net/aalib/
 
 [gerek]
 derleme  = libxt gpm libx11 
-calisma  =  
+calisma  = slang
 
 [kaynak]
 gz     = https://downloads.sourceforge.net/sourceforge/aa-project
