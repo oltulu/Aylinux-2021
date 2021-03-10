@@ -22,8 +22,8 @@ dosya      = vde-connection.sample
 [derle]
 bayrak     = yok
 betik       = patch -p1 -i /sources/vde2-openssl.patch
-ekconf     = --libexecdir=/usr/lib/vde2 --enable-experimental
-tip        = gnu
+betik     = ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --libexecdir=/usr/lib/vde2 --enable-experimental
+betik        = make
 
 [pakur]
 betik      = make prefix=$PKG/usr sysconfdir=$PKG/etc sbindir=$PKG/usr/bin libexecdir=$PKG/usr/lib/vde2 install
