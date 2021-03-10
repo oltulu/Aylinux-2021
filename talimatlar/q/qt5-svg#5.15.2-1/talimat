@@ -6,7 +6,7 @@ url     = https://www.qt.io
 
 [gerek]
 derleme = qt5-base
-calisma = 
+calisma = qt5-base
 
 [kaynak]
 1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtsvg-everywhere-src-$surum.tar.xz
