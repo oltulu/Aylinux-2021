@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/pavucontrol-qt
 
 [gerek]
 derleme = cmake lxqt-build-tools qt5-tools pulseaudio
-calisma =
+calisma = pulseaudio
 
 [kaynak]
 xz      = $url/releases/download/${surum}
