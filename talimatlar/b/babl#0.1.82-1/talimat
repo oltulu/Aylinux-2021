@@ -6,7 +6,7 @@ url     = http://gegl.org/babl/
 
 [gerek]
 derleme = meson lcms2 gobject-introspection vala
-calisma =
+calisma = lcms2
 
 [kaynak]
 xz      = https://download.gimp.org/pub/$isim/${surum%.*}
