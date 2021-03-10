@@ -9,10 +9,10 @@ derleme    = libepoxy mesa
 calisma    =
 
 [kaynak]
-1          = ${FREEDESKTOP_SITE}/virgl/${isim}-${surum}.tar.bz2
+1          = https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/virglrenderer-$surum/virglrenderer-virglrenderer-$surum.tar.bz2
 
 [sha256]
-1          = 15ec0290ca0a2d175d6e5dc695938640c53d2c020e0c0f8a781045d3c27b2a10
+#1          = 15ec0290ca0a2d175d6e5dc695938640c53d2c020e0c0f8a781045d3c27b2a10
 
 [derle]
 tip        = gnu
