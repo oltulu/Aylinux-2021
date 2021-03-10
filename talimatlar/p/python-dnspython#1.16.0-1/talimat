@@ -1,0 +1,23 @@
+[paket]
+tanim   = John Gruber Markdown'ın Python uygulaması.
+paketci = Cihan_Alkan
+url     = https://pinta-project.com/
+
+[gerek]
+derleme    = python-setuptools
+calisma    = 
+
+[kaynak]
+1       = https://github.com/rthalley/dnspython/archive/v2.1.0.tar.gz::$isim-$surum.tar.gz
+2      = https://github.com/archlinux/svntogit-community/raw/packages/python-dnspython/trunk/py39.patch
+
+[sha256]
+
+[derle]
+betik     = cd dnspython-$surum
+betik     = patch -Np1 -i /sources/py39.patch
+betik     = python setup.py build
+
+[pakur]
+betik     = cd dnspython-$surum
+betik      = python3 setup.py install --root="$PKG" --optimize=0
