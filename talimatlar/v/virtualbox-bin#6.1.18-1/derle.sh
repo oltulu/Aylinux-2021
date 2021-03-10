@@ -6,7 +6,7 @@
 
   sh "${VBOX_RUN}" --keep --noexec --target "${SRC}"
 
-  mkdir -p "${PKG}"/sbin                                           \
+  mkdir -p "${PKG}"/usr/bin                                           \
            "${PKG}"/opt/bin                                        \
            "${PKG}"/opt/src/                                       \
            "${PKG}"/etc/vbox                                       \
@@ -77,7 +77,7 @@
 
   # Remove junk
 #  find nls -type f ! -name '*en*' -exec rm -f {} \; 
- # rm -rf "${PKG}"/"${VBOX_INSTALL}"/sdk
+  rm -rf "${PKG}"/"${VBOX_INSTALL}"/sdk
 
   # Install udev rules
   install -m644 "${SRC}"/60-vboxdrv.rules "${PKG}"/etc/udev/rules.d/60-vboxdrv.rules
