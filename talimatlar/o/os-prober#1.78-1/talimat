@@ -1,6 +1,6 @@
 [paket]
 tanim 	= Farklı sürücülerdeki işletim sistemlerini tespit etme aracı
-paketci	= milisarge
+paketci	= Cihan_Alkan
 grup 	= sistem
 url 	= https://joeyh.name/code/os-prober
 
@@ -8,7 +8,7 @@ url 	= https://joeyh.name/code/os-prober
 1    	= http://http.debian.net/debian/pool/main/o/${isim}/${isim}_${surum}.tar.xz
 
 [sha256]
-1 		= 8d8ea4afbe1aeef3c8b73f74a0fb37b06185e21a6abc78f80fc2160009cf705f
+#1 		= 8d8ea4afbe1aeef3c8b73f74a0fb37b06185e21a6abc78f80fc2160009cf705f
 
 [derle]
 betik   = sed -i -e "s:/lib/ld\*\.so\*:/lib*/ld*.so*:g" os-probes/mounted/common/90linux-distro
