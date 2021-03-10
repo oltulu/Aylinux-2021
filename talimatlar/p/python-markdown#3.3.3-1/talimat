@@ -15,9 +15,6 @@ calisma    =
 [derle]
 betik     = cd Markdown-$surum
 betik     = python setup.py build
-betik     = [[ $(python -c "import markdown; print(markdown.version)") == "$surum" ]]
-betik     = [[ $(python -c "import markdown; print(markdown.markdown('*test*'))") == "<p><em>test</em></p>" ]]
-betik     = python -m unittest discover tests
 
 [pakur]
 betik     = cd Markdown-$surum
