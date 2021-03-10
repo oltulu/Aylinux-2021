@@ -28,3 +28,4 @@ betik 	= samu
 [pakur]
 betik 	= cd "${SRC}"/${isim}-${surum}/build
 betik 	= DESTDIR="${PKG}" samu install
+betik = sed -i 's/^Name\[tr\]=Nemo/Name\[tr\]=Dosya Yöneticisi/' $PKG/usr/share/applications/$isim.desktop
