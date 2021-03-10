@@ -21,28 +21,28 @@ print_status() {
 }
 
 case $1 in
-start)
+baslat)
 	$SSD --start --pidfile $NMB_PID --exec $NMB -- -D
 	$SSD --start --pidfile $SMB_PID --exec $SMB -- -D
 	;;
-stop)
+durdur)
 	$SSD --stop --retry 10 --pidfile $SMB_PID 
 	$SSD --stop --retry 10 --pidfile $NMB_PID 
 	;;
-restart)
+ybaslat)
 	$0 stop
 	$0 start
 	;;
-reload)
+yyukle)
 	/usr/bin/smbcontrol smbd reload-config
 	/usr/bin/smbcontrol nmbd reload-config
 	;;
-status)
+durum)
 	print_status $SMB $SMB_PID
 	print_status $NMB $NMB_PID
 	;;
 *)
-	echo "usage: $0 [start|stop|restart|status]"
+	echo "Kullanımı: $0 [baslat|durdur|ybaslat|yyukle|durum]"
 	;;
 esac
 
