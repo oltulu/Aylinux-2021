@@ -6,7 +6,7 @@ url     = http://www.libraw.org
 
 [gerek]
 derleme = lcms2 jasper
-calisma = jasper
+calisma = jasper lcms2
 
 [kaynak]
 1       = https://github.com/LibRaw/LibRaw/archive/$surum.tar.gz::$isim-$surum.tar.gz
