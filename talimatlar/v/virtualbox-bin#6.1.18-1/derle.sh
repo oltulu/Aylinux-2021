@@ -41,7 +41,7 @@
   if [ -f "${PKG}"/"${VBOX_INSTALL}"/VBoxDTrace ]; then
     ln -sf "${VBOX_INSTALL}"/VBox.sh "${VBOX_BIN}"/VBoxDTrace
   fi
-  ln -sf "${VBOX_INSTALL}"/vboxdrv.sh "${PKG}"/sbin/rcvboxdrv
+  ln -sf "${VBOX_INSTALL}"/vboxdrv.sh "${PKG}"/usr/bin/rcvboxdrv
 
   for n in VBoxVMM.so VBoxRT.so; do
     ln -sf "${VBOX_INSTALL}"/"${n}" components
