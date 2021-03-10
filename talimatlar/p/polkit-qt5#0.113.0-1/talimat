@@ -5,8 +5,8 @@ grup 	= ukui
 url     = https://download.kde.org/stable/polkit-qt-1
 
 [gerek]
-derleme = 
-calisma = qt5-base
+derleme = cmake
+calisma = qt5-base polkit
 
 [kaynak]
 1      = https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-$surum.tar.xz
