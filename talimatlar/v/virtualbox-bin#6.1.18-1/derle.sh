@@ -1,5 +1,5 @@
  VBOX_NAME=VirtualBox
-  VBOX_RUN="${VBOX_NAME}-${surum}-142142-Linux_amd64.run"
+  VBOX_RUN="/sources/${VBOX_NAME}-${surum}-142142-Linux_amd64.run"
   VBOX_INSTALL="/opt/${VBOX_NAME}"
   VBOX_BIN="${PKG}/opt/bin"
   VBOX_ICONS="${PKG}/opt/share/icons/hicolor"
