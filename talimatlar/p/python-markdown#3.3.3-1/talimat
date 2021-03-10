@@ -1,0 +1,24 @@
+[paket]
+tanim   = John Gruber Markdown'ın Python uygulaması.
+paketci = Cihan_Alkan
+url     = https://pinta-project.com/
+
+[gerek]
+derleme    = python-setuptools
+calisma    = 
+
+[kaynak]
+gz         = https://files.pythonhosted.org/packages/source/M/Markdown/Markdown-$surum.tar.gz
+
+[sha256]
+
+[derle]
+betik     = cd Markdown-$surum
+betik     = python setup.py build
+betik     = [[ $(python -c "import markdown; print(markdown.version)") == "$surum" ]]
+betik     = [[ $(python -c "import markdown; print(markdown.markdown('*test*'))") == "<p><em>test</em></p>" ]]
+betik     = python -m unittest discover tests
+
+[pakur]
+betik     = cd Markdown-$surum
+betik      = python3 setup.py install --root="$PKG" --optimize=0
