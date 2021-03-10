@@ -9,8 +9,8 @@ derleme    = openssl python
 calisma    =
 
 [kaynak]
-1          = ${SOURCEFORGE_SITE}/vde/vde2-$surum.tar.bz2
-dosya      = vde_cryptcab-compile-against-openssl-1.1.0.patch
+gz         = http://downloads.sourceforge.net/project/vde/$isim/$surum
+1      = http://crux.wyatt.fastmail.fm/ports/vde2/vde2-openssl.patch
 dosya      = dhcpd.conf.sample
 dosya      = iptables.rules.sample
 dosya      = vde-config.sample
@@ -21,7 +21,7 @@ dosya      = vde-connection.sample
 
 [derle]
 bayrak     = yok
-yama       = vde_cryptcab-compile-against-openssl-1.1.0.patch
+betik       = patch -p1 -i /sources/vde2-openssl.patch
 ekconf     = --libexecdir=/usr/lib/vde2 --enable-experimental
 tip        = gnu
 
