@@ -9,9 +9,9 @@ derleme = glib graphviz libxslt
 calisma = graphviz
 
 [kaynak]
-xz      = https://download.virtualbox.org/${isim::-4}/$surum/VirtualBox-${surum}-142142-Linux_amd64.run
-1 = vbox_build_module 
-2 = 60-vboxdrv.rules
+1      = https://download.virtualbox.org/${isim::-4}/$surum/VirtualBox-${surum}-142142-Linux_amd64.run
+dosya = vbox_build_module 
+dosya = 60-vboxdrv.rules
 
 [sha512]
 #1 = 898ed675e0bdfac1ca2367363f6a5b930f021b3b6bc848314b8c1d43f37a312abfc54492eaa5e35f0d83b5b688fe27e5555ea46f1aba89a92cde7e6e8173d4fe
