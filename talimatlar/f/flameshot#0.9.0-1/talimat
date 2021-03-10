@@ -25,3 +25,4 @@ tip     = cmake
 betik   = cd $isim
 tip     = cmake
 betik   = rm -rf ${pkgdir}/usr/share/zsh
+betik = sed -i 's/^Name\[tr\]=Flameshot/Name\[tr\]=Ekran Resmi Yakala/' $PKG/usr/share/applications/$isim.desktop
