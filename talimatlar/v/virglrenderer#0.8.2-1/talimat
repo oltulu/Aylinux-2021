@@ -1,6 +1,6 @@
 [paket]
 tanim   = Virgl GL görüntüleyici kitaplığı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://virgil3d.github.io/
 
@@ -16,8 +16,8 @@ calisma    =
 
 [derle]
 betik = cd virglrenderer-virglrenderer-$surum
-tip        = gnu
+tip        = meson
 
 [pakur]
 betik = cd virglrenderer-virglrenderer-$surum
-tip        = gnu
+tip        = meson
