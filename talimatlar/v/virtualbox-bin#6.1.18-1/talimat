@@ -20,4 +20,4 @@ xz      = https://download.virtualbox.org/${isim::-4}/$surum/VirtualBox-${surum}
 dosya   = derle.sh
 	      
 [pakur]
-tip 	= gnu
+betik 	= $SRC
