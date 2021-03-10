@@ -15,9 +15,8 @@ calisma    =
 #1          = 15ec0290ca0a2d175d6e5dc695938640c53d2c020e0c0f8a781045d3c27b2a10
 
 [derle]
-betik = cd virglrenderer-virglrenderer-$surum
+betik = mv virglrenderer-virglrenderer-$surum virglrenderer-$surum
 tip        = meson
 
 [pakur]
-betik = cd virglrenderer-virglrenderer-$surum
 tip        = meson
