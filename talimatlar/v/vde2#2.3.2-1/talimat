@@ -21,7 +21,7 @@ dosya      = vde-connection.sample
 
 [derle]
 bayrak     = yok
-yama       = 2
+yama       = vde_cryptcab-compile-against-openssl-1.1.0.patch
 ekconf     = --libexecdir=/usr/lib/vde2 --enable-experimental
 tip        = gnu
 
