@@ -1,0 +1,25 @@
+[paket]
+tanim   = Genişletilebilir uygulamalar oluşturmak için genel çerçeve
+paketci = Cihan_Alkan
+grup 	= programlama
+url     = https://www.mono-project.com/Mono.Addins
+
+[gerek]
+derleme = cmake python
+calisma = 
+
+[kaynak]
+xz      = https://download.mono-project.com/sources/$isim
+
+[sha256]
+    #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik     = [[ -e /usr/lib/ccache ]] && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+betik     = ./configure --prefix=/usr --mandir=/usr/share/man --with-mcs-docs=no --bindir=/usr/bin --sbindir=/usr/bin --disable-crash-reporting
+betik     = sed -e 's/python/python3/g' -i mono/mini/Makefile*
+betik     = PYTHON=/usr/bin/python3 make
+
+    	      
+[pakur]
+betik     = make DESTDIR="${PKG}" install
