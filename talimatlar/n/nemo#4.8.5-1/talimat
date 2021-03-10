@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://github.com/linuxmint/nemo
 
 [gerek]
-derleme = meson gobject-introspection intltool exempi libnotify xapp libexif cinnamon-desktop
+derleme = meson gobject-introspection intltool exempi libnotify xapp libexif cinnamon-desktop samurai
 calisma = cinnamon-desktop dconf gvfs exempi libexif libnotify libxml2 python xapp cinnamon-translations libassuan ffmpegthumbnailer
 
 [kaynak]
