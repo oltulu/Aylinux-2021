@@ -8,7 +8,7 @@ url     = https://github.com/numactl/numactl
 1          = https://github.com/numactl/numactl/releases/download/v${surum}/${isim}-${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha512]
-1          = f7b747eb8f3ded9f3661cb0fc7b65b5ed490677f881f8fe6a000baf714747515853b4e5c8781b014241180bf16e9f0bfdf2c6f758725e34b4938696ba496b72a
+#1          = f7b747eb8f3ded9f3661cb0fc7b65b5ed490677f881f8fe6a000baf714747515853b4e5c8781b014241180bf16e9f0bfdf2c6f758725e34b4938696ba496b72a
 
 [derle]
 betik      = autoreconf -fi
