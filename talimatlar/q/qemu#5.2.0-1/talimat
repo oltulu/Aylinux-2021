@@ -12,7 +12,7 @@ calisma    =
 bz2        = https://wiki.qemu.org/download
 
 [sha256]
-1          = 49f0de77410d4d0f7d0321ff2c2888b281381f06e1e2dac9ec4d061e3934f4ae
+#1          = 49f0de77410d4d0f7d0321ff2c2888b281381f06e1e2dac9ec4d061e3934f4ae
 
 [derle]
 betik      = sed -i 's/__u64/unsigned long/' linux-user/host/aarch64/hostdep.h
