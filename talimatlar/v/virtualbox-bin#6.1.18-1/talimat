@@ -20,4 +20,4 @@ dosya = 60-vboxdrv.rules
 dosya   = derle.sh
 	      
 [pakur]
-betik 	= $SRC
+betik 	= cd $SRC
