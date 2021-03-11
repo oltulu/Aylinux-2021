@@ -17,7 +17,7 @@ xz = https://download.gnome.org/sources/$isim/${surum:0:4}
 
 [derle]
 betik   = cd $SRC
-betik   =  cmake -S $isim-surum -B build -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DLIBEXEC_INSTALL_DIR=/usr/lib -DSYSCONF_INSTALL_DIR=/etc -DENABLE_INTROSPECTION=ON -DENABLE_VALA_BINDINGS=ON -DENABLE_GTK_DOC=OFF -DWITH_PHONENUMBER=ON
+betik   =  cmake -S $isim-$surum -B build -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DLIBEXEC_INSTALL_DIR=/usr/lib -DSYSCONF_INSTALL_DIR=/etc -DENABLE_INTROSPECTION=ON -DENABLE_VALA_BINDINGS=ON -DENABLE_GTK_DOC=OFF -DWITH_PHONENUMBER=ON
 #betik   =  sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" libiberty/configure
 #betik   = mkdir build
 #betik   = cd build
