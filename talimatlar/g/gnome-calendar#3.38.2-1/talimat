@@ -16,7 +16,7 @@ git = https://gitlab.gnome.org/GNOME/gnome-calendar
 
 [derle]
 betik = mv gnome-calendar gnome-calendar-$surum
-ekconf = --print-errorlogs
+#ekconf = --print-errorlogs
 #-Dsystemd=false -D gtk_doc=false -D man=false 
 tip = meson
 
