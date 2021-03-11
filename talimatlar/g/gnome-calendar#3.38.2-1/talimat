@@ -1,0 +1,24 @@
+[paket]
+tanim  = GNOME masaüstüne mükemmel uyum sağlamak için tasarlanmış basit ve güzel bir takvim uygulaması
+url    = https://wiki.gnome.org/Apps/Calendar
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = 
+calisma = evolution-data-server gsettings-desktop-schemas gnome-control-center libdazzle libhandy0
+
+[kaynak]
+git = https://gitlab.gnome.org/GNOME/gnome-calendar
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = mv gnome-calendar gnome-calendar-$surum
+ekconf = --print-errorlogs
+#-Dsystemd=false -D gtk_doc=false -D man=false 
+tip = meson
+
+[pakur]
+tip = meson
