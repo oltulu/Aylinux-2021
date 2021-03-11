@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 
 [gerek]
 derleme = gnome-settings-daemon
-calisma =  
+calisma =  gnome-desktop pipewire 
 
 [kaynak]
 xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
