@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 
 [gerek]
 derleme =  meson ninja totem-pl-parser
-calisma = 
+calisma = totem-pl-parser
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/grilo/${surum%.*}
