@@ -24,7 +24,7 @@ betik = git submodule init
 betik = git submodule set-url subprojects/gvc "$SRC/libgnome-volume-control"
 betik = git submodule update
 betik = cd $SRC
-betik = milis-meson gnome-shell-$surum build -Dsystemd=false -D gtk_doc=false -D man=false 
+betik = milis-meson gnome-shell-$surum build -Dsystemd=false -D gtk_doc=false -D man=false -D tests=false
 betik = meson compile -C build
 #betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
 #ekconf = -Dsystemd=false -D gtk_doc=false -D man=false 
