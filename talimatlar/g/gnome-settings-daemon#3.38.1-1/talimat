@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 
 [gerek]
 derleme =  meson ninja geocode-glib libgweather geoclue
-calisma = 
+calisma = libgweather geoclue
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-settings-daemon/${surum%.*}
