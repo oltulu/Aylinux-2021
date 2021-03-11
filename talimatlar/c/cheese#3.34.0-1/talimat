@@ -7,6 +7,10 @@ url     = https://wiki.gnome.org/Apps/Cheese
 [kaynak]
 xz    = http://ftp.gnome.org/pub/gnome/sources/cheese/${surum%.*}
 
+[gerek]
+derleme = 
+calisma =  clutter-gst clutter-gtk 
+
 [sha1]
             #1 		= SKIP
 
