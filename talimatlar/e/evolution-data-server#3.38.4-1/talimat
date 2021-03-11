@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
 derleme  = cmake webkitgtk gnome-online-accounts libgweather libical vala
-calisma  = libphonenumber gnome-online-accounts libgweather
+calisma  = libphonenumber gnome-online-accounts libgweather libical
 
 [kaynak]
 xz = https://download.gnome.org/sources/$isim/${surum:0:4}
