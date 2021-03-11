@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = 
+derleme = libdazzle libhandy
 calisma = evolution-data-server gsettings-desktop-schemas gnome-control-center libdazzle libhandy0
 
 [kaynak]
