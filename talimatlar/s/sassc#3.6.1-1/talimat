@@ -6,7 +6,7 @@ url     = http://libsass.org
 
 [gerek]
 derleme = libsass
-calisma = 
+calisma = libsass
 
 [kaynak]
 1       = https://github.com/sass/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
