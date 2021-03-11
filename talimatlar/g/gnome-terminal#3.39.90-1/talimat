@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME Terminal Emülatörü
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://www.gnome.org
+
+[gerek]
+derleme = vte3 dconf itstool meson ninja
+calisma =  
+
+[kaynak]
+1     =https://download.gnome.org/sources/gnome-terminal/3.39/gnome-terminal-3.39.90.tar.xz
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik = mv gnome-terminal-master $isim-$surum
+ekconf = -D nautilus_extension=false  -D search_provider=false -D docs=false
+tip     = meson 
+    	      
+[pakur]
+#betik = cd gnome-terminal-master
+tip     = meson
