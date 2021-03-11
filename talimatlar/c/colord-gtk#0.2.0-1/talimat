@@ -6,7 +6,7 @@ url     = https://github.com/hughsie/colord-gtk
 
 [gerek]
 derleme = 
-calisma = 
+calisma = colord
 
 [kaynak]
 git      = https://github.com/hughsie/colord-gtk 
