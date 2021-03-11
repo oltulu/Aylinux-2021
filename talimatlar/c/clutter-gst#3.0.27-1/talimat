@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/clutter-gst
 
 [gerek]
 derleme  = 
-calisma  =  
+calisma  = clutter 
 
 [kaynak]
 xz = https://download.gnome.org/sources/$isim/${surum%.*}
