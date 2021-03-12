@@ -32,3 +32,5 @@ betik 	= make
 [pakur]
 tip = gnu
 betik 	= chmod 644 "$PKG/etc/lxdm/lxdm.conf"
+
+servis = lxdm
