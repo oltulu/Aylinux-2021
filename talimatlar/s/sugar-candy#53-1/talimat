@@ -1,0 +1,29 @@
+[paket]
+tanim   = Sddm teması
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://framagit.org/MarianArlt/sddm-sugar-candy
+
+[gerek]
+derleme = 
+calisma = sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
+
+[kaynak]
+git      = https://framagit.org/MarianArlt/sddm-sugar-candy
+
+[sha256]
+#1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
+
+[derle]
+betik		= cd "$SRC/sddm-sugar-candy"
+betik		=  install -Dm644 "Main.qml" "$PKG/usr/share/sddm/themes/sugar-candy/Main.qml"
+betik		=  install -Dm644 "theme.conf" "$PKG/usr/share/sddm/themes/sugar-candy/theme.conf"
+betik		=  install -Dm644 "metadata.desktop" "$PKG/usr/share/sddm/themes/sugar-candy/metadata.desktop"
+ 
+[pakur]
+
+betik		= cd "$SRC/sddm-sugar-candy"
+betik		=  find ./Assets -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+betik		=  find ./Backgrounds -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+betik		=  find ./Components -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+
