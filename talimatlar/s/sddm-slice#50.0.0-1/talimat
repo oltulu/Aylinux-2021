@@ -1,8 +1,8 @@
 [paket]
-tanim   = QML tabanlı X11 ekran yöneticisi
+tanim   = Sddm teması
 paketci = Cihan_Alkan
 grup    = sistem
-url     = http://github.com/sddm/sddm
+url     = https://github.com/RadRussianRus/sddm-slice
 
 [gerek]
 derleme = 
