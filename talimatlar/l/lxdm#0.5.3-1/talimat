@@ -26,7 +26,7 @@ betik 	= patch -Np1 -i ../default-config.patch
 betik 	= cp ../lxdm.pam pam/lxdm
 betik 	= cp ../Xsession data/Xsession
 betik 	= autoreconf -fi
-betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --libexecdir=/usr/lib/lxdm --sysconfdir=/etc --localstatedir=/var --enable-gtk3
+betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --libexecdir=/usr/lib/lxdm --sysconfdir=/etc --localstatedir=/var --without-pam --enable-gtk3
 betik 	= make
 	      
 [pakur]
