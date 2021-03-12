@@ -20,5 +20,5 @@ betik		= cp -r ${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/sddm/
 
 [pakur]
 
-betik		= find "${PKG}"/usr/share/sddm/themes/slice -type d -exec chmod 555 {}
-betik		= find "${PKG}"/usr/share/sddm/themes/slice -type f -exec chmod 444 {}
+betik		= find "${PKG}"/usr/share/sddm/themes/slice -type d -exec chmod 555 {} \;
+betik		= find "${PKG}"/usr/share/sddm/themes/slice -type f -exec chmod 444 {} \;
