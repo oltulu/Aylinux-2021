@@ -9,14 +9,14 @@ derleme =
 calisma = sddm qt5-graphicaleffects
 
 [kaynak]
-1       = https://github.com/RadRussianRus/sddm-slice
+git      = https://github.com/RadRussianRus/sddm-slice
 
 [sha256]
 #1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
 
 [derle]
 betik		= install -d "${PKG}"/usr/share/sddm/themes/slice
-betik		= cp -r "${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/sddm/
+betik		= cp -r ${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/sddm/
 
 [pakur]
 
