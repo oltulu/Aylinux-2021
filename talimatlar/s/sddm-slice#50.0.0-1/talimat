@@ -1,0 +1,24 @@
+[paket]
+tanim   = QML tabanlı X11 ekran yöneticisi
+paketci = Cihan_Alkan
+grup    = sistem
+url     = http://github.com/sddm/sddm
+
+[gerek]
+derleme = 
+calisma = sddm qt5-graphicaleffects
+
+[kaynak]
+1       = https://github.com/RadRussianRus/sddm-slice
+
+[sha256]
+#1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
+
+[derle]
+betik		= install -d "${PKG}"/usr/share/sddm/themes/slice
+betik		= cp -r "${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/sddm/
+
+[pakur]
+
+betik		= find "${PKG}"/usr/share/sddm/themes/slice -type d -exec chmod 555 {} \;
+betik		= find "${PKG}"/usr/share/sddm/themes/slice -type f -exec chmod 444 {} \;
