@@ -23,10 +23,10 @@ dosya	= slim.rc
 [derle]
 #betik = sed -i 's|set(LIBDIR "/lib")|set(LIBDIR "/usr/lib")|' CMakeLists.txt
 betik = patch -Np1 -i /sources/libpng.patch
-#betik = patch -Np1 -i /sources/slim-1.3.6-fix-libslim-libraries.patch
-#betik = patch -Np1 -i /sources/slim-1.3.6-default-path.patch
+betik = patch -Np1 -i /sources/slim-1.3.6-fix-libslim-libraries.patch
+betik = patch -Np1 -i /sources/slim-1.3.6-default-path.patch
 betik = sed -i  -e '224d' CMakeLists.txt
-betik = cmake -DCMAKE_INSTALL_PREFIX=/usr  -DUSE_CONSOLEKIT=yes
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr 
 betik = make
 
 
