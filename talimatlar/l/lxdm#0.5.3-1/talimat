@@ -22,13 +22,18 @@ dosya   = Xsession
 
 [derle]
 betik 	= cd lxdm-20170805_e3e7517
+betik 	= cp ../Xsession data/Xsession
 betik 	= ./autogen.sh 
-betik 	=  ./configure --prefix=/usr sbindir=/usr/bin --sysconfdir=/etc --without-pam --enable-gtk3
+betik 	=  ./configure --prefix=/usr sbindir=/usr/bin --libexecdir=/usr/lib/lxdm --sysconfdir=/etc --localstatedir=/var --without-pam --enable-gtk3
 betik 	= make
 	      
 [pakur]
 betik 	= cd lxdm-20170805_e3e7517
 betik 	= make DESTDIR="$PKG" prefix=/usr install
 betik 	= chmod 644 "$PKG/etc/lxdm/lxdm.conf"
+
+betik 	= install -dm755 "$PKG"/usr/lib/{sysusers,tmpfiles}.d
+betik 	= echo 'u lxdm - "Lightweight X11 Display Manager" /var/lib/lxdm' > "$PKG/usr/lib/sysusers.d/$pkgbase.conf"
+betik 	= echo 'd /var/lib/lxdm 0700 lxdm lxdm - -' > "$PKG/usr/lib/tmpfiles.d/$pkgbase.conf"
 
 servis = lxdm
