@@ -16,4 +16,4 @@ if [ -f /etc/init.d/slim ];then
 	service remove slim
 	echo "slim servisi kaldırıldı"
 fi
-echo "slim kurulum için hazır"
+echo "Lxdm kurulum için hazır"
