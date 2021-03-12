@@ -16,7 +16,7 @@ git      = https://github.com/RadRussianRus/sddm-slice
 
 [derle]
 betik		= install -d "${PKG}"/usr/share/sddm/themes/slice
-betik		= cp -r ${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/sddm/
+betik		= cp -r ${SRC}/slice-slice/* "${PKG}"/usr/share/sddm/themes/slice/
 
 [pakur]
 
