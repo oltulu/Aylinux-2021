@@ -4,6 +4,19 @@ if [ -f /etc/init.d/lightdm ];then
 	service remove lightdm
 	echo "lightdm servisi kaldırıldı"
 fi
+if [ -f /etc/init.d/slim ];then
+	service stop slim
+	echo "slim servisinin kurulu olduğu algılandığı, çakışmayı önlemek için durduruldu"
+	service remove slim
+	echo "slim servisi kaldırıldı"
+fi
+if [ -f /etc/init.d/lxdm ];then
+	service stop lxdm
+	echo "lxdm servisinin kurulu olduğu algılandığı, çakışmayı önlemek için durduruldu"
+	service remove lxdm
+	echo "lxdm servisi kaldırıldı"
+fi
+
 if ! getent group sddm > /dev/null; then
    groupadd -g 64 sddm
    echo "sddm grubu eklendi"
