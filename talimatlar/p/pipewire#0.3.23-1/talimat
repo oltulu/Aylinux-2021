@@ -6,7 +6,7 @@ url     = https://github.com/PipeWire/pipewire
 
 [gerek]
 derleme = bluez
-calisma =  
+calisma =  bluez
 
 [kaynak]
 git      = https://github.com/PipeWire/pipewire
