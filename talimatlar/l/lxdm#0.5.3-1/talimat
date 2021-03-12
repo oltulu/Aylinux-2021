@@ -9,7 +9,8 @@ derleme =
 calisma = alsa-lib curl menu-cache lxmenu-data libfm
 
 [kaynak]
-xz      = https://downloads.sourceforge.net/lxde
+#xz      = https://downloads.sourceforge.net/lxde
+1= http://ponce.cc/slackware/sources/repo/lxde/lxdm-20170805_e3e7517.tar.xz
 dosya   = set-path.patch
 dosya   = git-fixes.patch
 dosya   = default-config.patch
@@ -17,20 +18,15 @@ dosya   = lxdm.pam
 dosya   = Xsession
 
 [sha256]
-1 		= 4891efee81c72a400cc6703e40aa76f3f3853833d048b72ec805da0f93567f2f
+#1 		= 4891efee81c72a400cc6703e40aa76f3f3853833d048b72ec805da0f93567f2f
 
 [derle]
-betik 	= patch -Np0 -i ../set-path.patch 
-betik 	= patch -Np1 -i ../git-fixes.patch
-betik 	= patch -Np1 -i ../default-config.patch
-betik 	= cp ../lxdm.pam pam/lxdm
-betik 	= cp ../Xsession data/Xsession
-betik 	= autoreconf -fi
-betik 	= ./configure --prefix=/usr --sbindir=/usr/bin --libexecdir=/usr/lib/lxdm --sysconfdir=/etc --localstatedir=/var --without-pam --enable-gtk3
+betik 	= ./autogen.sh 
+betik 	=  ./configure --prefix=/usr --sysconfdir=/etc --without-pam --enable-gtk3
 betik 	= make
 	      
 [pakur]
-tip = gnu
+betik 	= make DESTDIR="$PKG" prefix=/usr install
 betik 	= chmod 644 "$PKG/etc/lxdm/lxdm.conf"
 
 servis = lxdm
