@@ -2,7 +2,7 @@
 #
 # LXDM wrapper to run around X sessions.
 
-echo "Running X session wrapper"
+echo "X oturum sarmalayıcısı çalıştırılıyor"
 
 if [ $# -eq 1 -a -n "$1" ]; then
 	LXSESSION=$1
