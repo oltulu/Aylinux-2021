@@ -21,11 +21,13 @@ dosya   = Xsession
 #1 		= 4891efee81c72a400cc6703e40aa76f3f3853833d048b72ec805da0f93567f2f
 
 [derle]
+betik 	= cd lxdm-20170805_e3e7517
 betik 	= ./autogen.sh 
 betik 	=  ./configure --prefix=/usr --sysconfdir=/etc --without-pam --enable-gtk3
 betik 	= make
 	      
 [pakur]
+betik 	= cd lxdm-20170805_e3e7517
 betik 	= make DESTDIR="$PKG" prefix=/usr install
 betik 	= chmod 644 "$PKG/etc/lxdm/lxdm.conf"
 
