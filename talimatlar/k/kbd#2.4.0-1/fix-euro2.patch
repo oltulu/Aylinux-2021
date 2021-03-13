@@ -1,0 +1,20 @@
+--- data/keymaps/i386/include/euro2.map.old	2013-05-08 15:00:25.917752313 +0200
++++ data/keymaps/i386/include/euro2.map	2013-05-08 15:00:54.943957367 +0200
+@@ -2,5 +2,5 @@
+ # [Say: "loadkeys euro2" to get Euro and cent with AltGr (right alt)
+ #  on the positions where many keyboards have E and C.
+ #  To get it displayed, use a latin0 (i.e., latin9) font.]
+-altgr keycode  18 = currency
++altgr keycode  18 = euro
+ altgr keycode  46 = cent
+
+--- data/keymaps/i386/qwerty/es.map.orig	2011-10-13 21:46:53.119563897 +0200
++++ data/keymaps/i386/qwerty/es.map	2011-10-13 21:47:10.406129770 +0200
+@@ -10,6 +10,7 @@
+ keymaps 0-2,4,6,8-9,12
+ include "qwerty-layout"
+ include "linux-with-alt-and-altgr"
++include "euro2.map"
+ strings as usual
+ 
+ keycode   1 = Escape
