@@ -17,5 +17,4 @@ dosya   = fix-euro2.patch
 dosya   = derle.sh
 	      
 [pakur]
-betik   = cd kbd
 betik   = make KEYCODES_PROGS=yes RESIZECONS_PROGS=yes DESTDIR=${PKG} install
