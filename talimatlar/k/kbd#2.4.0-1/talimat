@@ -5,7 +5,7 @@ grup 	= temel
 url     = ftp://devel.altlinux.org/legion/kbd
 
 [kaynak]
-git      = https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd
+xz      = https://www.kernel.org/pub/linux/utils/$isim/
 dosya   = fix-euro2.patch
 1 = http://www.linuxfromscratch.org/patches/downloads/$isim/$isim-$surum-backspace-1.patch1
 
