@@ -1,47 +1,74 @@
-cd $SRC
-install -dm755 "$PKG/etc"
-  touch "$PKG/etc/ld.so.conf"
+cd ${SRC}/glibc-${surum}/build
 
-  make -C glibc-build install_root="$PKG" install
-  rm -f "$PKG"/etc/ld.so.{cache,conf}
+make install_root=$PKG install
+	
+	mkdir -p $PKG/etc
+	cp -v ../nscd/nscd.conf $PKG/etc/nscd.conf
+	mkdir -pv $PKG/var/cache/nscd
 
-  # Shipped in tzdata
-  rm -f "$PKG"/usr/bin/{tzselect,zdump,zic}
-  cd glibc
+	touch $PKG/etc/ld.so.conf
 
-  install -dm755 "$PKG"/usr/lib/{locale,tmpfiles.d}
-  install -m644 nscd/nscd.conf "$PKG/etc/nscd.conf"
-  install -m644 nscd/nscd.tmpfiles "$PKG/usr/lib/tmpfiles.d/nscd.conf"
-  install -dm755 "$PKG/var/db/nscd"
+	mkdir -pv $PKG/usr/lib/locale
 
-  install -m644 posix/gai.conf "$PKG"/etc/gai.conf
+	cp $SRC/glibc.locales.destek \
+	../localedata/SUPPORTED
 
-  install -m755 "$SRC/locale-gen" "$PKG/usr/bin"
+	make install_root=$PKG localedata/install-locales
 
-  # Create /etc/locale.gen
-  install -m644 "$SRC/locale.gen.txt" "$PKG/etc/locale.gen"
-  sed -e '1,3d' -e 's|/| |g' -e 's|\\| |g' -e 's|^|#|g' \
-    "$SRC/glibc/localedata/SUPPORTED" >> "$PKG/etc/locale.gen"
+cat > $PKG/etc/nsswitch.conf << "EOF"
+# Begin /etc/nsswitch.conf
 
-  if check_option 'debug' n; then
-    find "$PKG"/usr/bin -type f -executable -exec strip $STRIP_BINARIES {} + 2> /dev/null || true
-    find "$PKG"/usr/lib -name '*.a' -type f -exec strip $STRIP_STATIC {} + 2> /dev/null || true
+passwd: files
+group: files
+shadow: files
 
-    # Do not strip these for gdb and valgrind functionality, but strip the rest
-    find "$PKG"/usr/lib \
-      -not -name 'ld-*.so' \
-      -not -name 'libc-*.so' \
-      -not -name 'libpthread-*.so' \
-      -not -name 'libthread_db-*.so' \
-      -name '*-*.so' -type f -exec strip $STRIP_SHARED {} + 2> /dev/null || true
-  fi
+hosts: files dns
+networks: files
 
-  # Provide tracing probes to libstdc++ for exceptions, possibly for other
-  # libraries too. Useful for gdb's catch command.
-  install -Dm644 "$SRC/sdt.h" "$PKG/usr/include/sys/sdt.h"
-  install -Dm644 "$SRC/sdt-config.h" "$PKG/usr/include/sys/sdt-config.h"
+protocols: files
+services: files
+ethers: files
+rpc: files
 
-  # Provided by libxcrypt; keep the old shared library for backwards compatibility
-  rm -f "$PKG"/usr/include/crypt.h "$PKG"/usr/lib/libcrypt.{a,so}
-  
-  
+# End /etc/nsswitch.conf
+EOF
+
+
+cat > $PKG/etc/ld.so.conf << "EOF"
+# Begin /etc/ld.so.conf
+/lib
+/lib64
+/usr/lib
+/usr/lib64
+/usr/local/lib
+/usr/local/lib64
+
+# Add an include directory
+include /etc/ld.so.conf.d/*.conf
+# End of  /etc/ld.so.conf
+EOF
+
+	mkdir $PKG/etc/ld.so.conf.d
+	rm -rf $PKG/usr/share/info
+
+# GLIBC STRIPPING
+
+save_lib="ld-$surum.so libc-$surum.so libpthread-$surum.so libthread_db-1.0.so"
+
+cd $PKG/usr/lib
+
+for LIB in $save_lib; do
+    objcopy --only-keep-debug $LIB $LIB.dbg 
+    strip --strip-unneeded $LIB
+    objcopy --add-gnu-debuglink=$LIB.dbg $LIB 
+done    
+
+unset LIB save_lib
+
+find $PKG/usr/lib -type f -name \*.a -exec strip --strip-debug {} ';'
+
+find $PKG/usr/lib -type f \( -name \*.so* -a ! -name \*dbg \) -exec strip --strip-unneeded {} ';'
+
+find $PKG/usr/bin -type f -exec strip --strip-all {} ';'
+
+cd -
