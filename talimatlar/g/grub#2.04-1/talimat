@@ -6,8 +6,8 @@ url     = http://www.gnu.org/software/grub
 arsiv   = grub-8fcfd1e0fc72d58766ce3dc09cf883c032f063f6
 
 [gerek]
-derleme = python fuse2 font-unifont-bdf
-calisma = os-prober
+derleme = python fuse2 font-unifont-bdf 
+calisma = os-prober freetype fuse2
 
 [kaynak]
 1       = https://git.savannah.nongnu.org/cgit/grub.git/snapshot/grub-8fcfd1e0fc72d58766ce3dc09cf883c032f063f6.tar.gz
