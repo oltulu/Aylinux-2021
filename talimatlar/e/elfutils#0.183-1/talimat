@@ -10,11 +10,14 @@ calisma =
 
 [kaynak]
 bz2      = https://sourceware.org/elfutils/ftp/${surum}
+1 = https://notabug.org/oltulu/Ceviri/raw/master/elfutils.po
 
 [sha1]
 #1 		= 6511203cae7225ae780501834a7ccd234b14889a
 
 [derle]
+betik = cp /sources/elfutils.po /po/tr.po
+betik	= sed -i 's/de es ja pl uk/de es ja pl uk tr/g' po/LINGUAS
 ekconf  = --disable-debuginfod --disable-libdebuginfod --program-prefix="eu-" --enable-deterministic-archives
 tip     = gnu
 
