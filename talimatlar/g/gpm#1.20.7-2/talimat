@@ -1,28 +1,27 @@
 [paket]
 tanim   = Konsol tabanlı fare sürücüsü
 paketci = milisarge
-grup 	= kütüphane
+grup 	= sistem
 url     = https://www.nico.schottelius.org/software/gpm
+arsiv   = gpm-e82d1a653ca94aa4ed12441424da6ce780b1e530
+
+[gerek]
+derleme = automake ncurses
+calisma =
 
 [kaynak]
-bz2     = https://nico.schottelius.org/software/gpm/archives
-2       = https://crux.nu/ports/crux-3.6/contrib/gpm/gpm-1.20.7-glibc_2.26-1.patch
+1       = https://github.com/telmich/gpm/archive/e82d1a653ca94aa4ed12441424da6ce780b1e530.tar.gz::$isim-e82d1a653ca94aa4ed12441424da6ce780b1e530.tar.gz
 dosya   = gpm.sh
 
-[sha512]
-#1 = 51c1141ed502f8b6bc846485a8e315bafe3cf2b7c9d1ea8a710d9748ff2058f29c7ab5715fc1730a8437c613181d2050f37b134e9288c69ba8ff7fb0be7ec0d1
+[sha256]
+1       = 570e6fcf0d9312f76aad7edfa8fc8bf90ae714ebe5ee444faece7ed7bf270939
 
 [derle]
-
-betik   = sed -i -e 's:<gpm.h>:"headers/gpm.h":' src/prog/{display-buttons,display-coords,get-versions}.c
-yama    = gpm-1.20.7-glibc_2.26-1.patch
 betik   = ./autogen.sh
-betik   = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin --disable-static
-betik   = sed -i '/^SUBDIRS =/c\SUBDIRS = src contrib' Makefile
-betik   = make
+betik   = export M4=m4
+tip     = gnu
 	      
 [pakur]
 tip     = gnu
 betik   = install -D -m0755 ../gpm.sh "${PKG}/etc/profile.d/gpm.sh"
 betik   = cd "${PKG}/usr/lib/" && ln -s libgpm.so.2.* libgpm.so && chmod 0755 "${PKG}"/usr/lib/libgpm.so.*
-servis  = gpm
