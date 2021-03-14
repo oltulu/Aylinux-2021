@@ -15,10 +15,10 @@ bz2      = https://sourceware.org/elfutils/ftp/${surum}
 #1 		= 6511203cae7225ae780501834a7ccd234b14889a
 
 [derle]
-betik 	= CFLAGS+=" -g"
-betik 	= ./configure --prefix=/usr --program-prefix="eu-" --enable-deterministic-archives --disable-debuginfod --disable-libdebuginfod --disable-nls
-betik 	= make
+ekconf  = --disable-debuginfod --disable-libdebuginfod --program-prefix="eu-" --enable-deterministic-archives
+tip     = gnu
+
 	      
 [pakur]
-tip 	= gnu
-betik 	= mv libelf "${PKG}/usr"
+tip     = gnu
+betik   = rm -r $PKG/usr/lib/*.a
