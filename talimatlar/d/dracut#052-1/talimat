@@ -1,6 +1,6 @@
 [paket]
-tanim   = Önyükleme için gereken her şeyi içeren özel bir initramfs görüntüsü oluşturma aracı
-paketci = Cihan_Alkan
+tanim   = Önyükleme için initramfs oluşturma aracı
+paketci = milisarge
 grup 	= temel
 url     = https://dracut.wiki.kernel.org
 
@@ -10,15 +10,12 @@ calisma = kmod util-linux cpio squashfs tar
 
 [kaynak]
 xz      = http://kernel.org/pub/linux/utils/boot/dracut
-#dosya = init.sh
 
 [sha256]
-#1 		= 6ce2f8c16b393606b504c7722fd6845d2e0ed0f543f3cc83784c31171498b89a
+1 		= 52cf699ea82b72e6fe82213a4c25991b7fc366749b21a086347eec5b77668b48
 
 [derle]
-#betik = rm modules.d/99base/init.sh
-#betik = cp $SRC/init.sh modules.d/99base/
-betik   = ./configure --prefix=/usr --sysconfdir=/etc  --loginstalldir=/var/log/dracut
+betik   = ./configure $confopt --loginstalldir=/var/log/dracut
 betik   = make -j1 sysconfdir=/etc prefix=/usr
 	      
 [pakur]
