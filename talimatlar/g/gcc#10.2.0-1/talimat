@@ -9,14 +9,9 @@ derleme  = texinfo
 calisma  = 
 
 [kaynak]
-1      = http://isl.gforge.inria.fr/isl-0.21.tar.xz
-2      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c89 
-3      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c99
-4      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/gdc_phobos_path.patch
-5      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/fs64270.patch
-6      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/ipa-fix-bit-CPP-when-combined-with-IPA-bit-CP.patch
-7      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/ipa-fix-ICE-in-get_default_value.patch
-xz     = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
+1      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c89 
+2      = https://github.com/archlinux/svntogit-packages/raw/packages/gcc/trunk/c99
+xz      = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
 
 
 [sha256]
@@ -24,12 +19,12 @@ xz     = ftp://gcc.gnu.org/pub/gcc/releases/gcc-$surum
 
 
 [derle]
+bayrak  = 0
 dosya 	= derle.sh
+
 	      
 [pakur]
-betik= cd $SRC/gcc-build
-#dosya   = pakur.sh
-betik= make DESTDIR=$PKG install
+dosya 	= pakur.sh
 betik= install -Dm755 "/sources/c89" "$PKG/usr/bin/c89"
 betik= install -Dm755 "/sources/c99" "$PKG/usr/bin/c99"
 
