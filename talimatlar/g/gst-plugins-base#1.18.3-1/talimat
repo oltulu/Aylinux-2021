@@ -6,7 +6,7 @@ url     = https://gstreamer.freedesktop.org/
 
 [gerek]
 derleme  = meson ninja python gobject-introspection gstreamer libogg cdparanoia libvisual libvorbis libtheora pango opus graphene libpng libjpeg-turbo alsa-lib iso-codes libxv mesa libglvnd orc
-calisma  = graphene libvisual cdparanoia gstreamer libogg libvisual alsa-lib iso-codes libxv mesa libglvnd orc libtheora cdparanoia
+calisma  = graphene libvisual cdparanoia gstreamer libogg libvisual alsa-lib iso-codes libxv mesa libglvnd orc libtheora cdparanoia libvorbis opus
 
 [kaynak]
 xz       = https://gstreamer.freedesktop.org/src/$isim
