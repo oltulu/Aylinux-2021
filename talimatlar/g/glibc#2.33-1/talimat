@@ -27,5 +27,6 @@ dosya = sdt-config.h
 dosya = derle.sh
 	      
 [pakur]
-dosya = pakur.sh
+dosya   = pakur.sh
+strip   = yok
 
