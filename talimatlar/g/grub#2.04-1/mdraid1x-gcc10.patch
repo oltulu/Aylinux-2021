@@ -1,0 +1,16 @@
+ grub-core/disk/mdraid1x_linux.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/grub-core/disk/mdraid1x_linux.c b/grub-core/disk/mdraid1x_linux.c
+index 7cc80d3df..c980feba4 100644
+--- a/grub-core/disk/mdraid1x_linux.c
++++ b/grub-core/disk/mdraid1x_linux.c
+@@ -178,7 +178,7 @@ grub_mdraid_detect (grub_disk_t disk,
+        return NULL;
+
+       if (grub_disk_read (disk, sector,
+-                         (char *) &sb.dev_roles[grub_le_to_cpu32 (sb.dev_number)]
++                         (char *) (sb.dev_roles + grub_le_to_cpu32 (sb.dev_number))
+                          - (char *) &sb,
+                          sizeof (role), &role))
+        return NULL;

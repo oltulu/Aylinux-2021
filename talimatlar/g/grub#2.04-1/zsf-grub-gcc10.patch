@@ -1,0 +1,33 @@
+ grub-core/fs/zfs/zfs.c      | 5 ++++-
+ include/grub/zfs/zap_leaf.h | 1 -
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/grub-core/fs/zfs/zfs.c b/grub-core/fs/zfs/zfs.c
+index 2f72e42bf..b5e10fd0b 100644
+--- a/grub-core/fs/zfs/zfs.c
++++ b/grub-core/fs/zfs/zfs.c
+@@ -141,7 +141,10 @@ ZAP_LEAF_NUMCHUNKS (int bs)
+ static inline zap_leaf_chunk_t *
+ ZAP_LEAF_CHUNK (zap_leaf_phys_t *l, int bs, int idx)
+ {
+-  return &((zap_leaf_chunk_t *) (l->l_entries 
++  grub_properly_aligned_t *l_entries;
++
++  l_entries = (grub_properly_aligned_t *) ALIGN_UP((grub_addr_t)l->l_hash, 
+sizeof (grub_properly_aligned_t));
++  return &((zap_leaf_chunk_t *) (l_entries
+                                 + (ZAP_LEAF_HASH_NUMENTRIES(bs) * 2)
+                                 / sizeof (grub_properly_aligned_t)))[idx];
+ }
+diff --git a/include/grub/zfs/zap_leaf.h b/include/grub/zfs/zap_leaf.h
+index 95c67dcba..11447c166 100644
+--- a/include/grub/zfs/zap_leaf.h
++++ b/include/grub/zfs/zap_leaf.h
+@@ -70,7 +70,6 @@ typedef struct zap_leaf_phys {
+         */
+ 
+        grub_uint16_t l_hash[0];
+-        grub_properly_aligned_t l_entries[0];
+ } zap_leaf_phys_t;
+ 
+ typedef union zap_leaf_chunk {
