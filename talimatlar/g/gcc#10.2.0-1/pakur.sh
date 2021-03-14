@@ -1,34 +1,19 @@
-_libdir=usr/lib/gcc/$CHOST/${surum%%+*}
-_majorver=${surum%%.*}
-cd $SRC/gcc-build
-  make -C $CHOST/libgcc DESTDIR="$PKG" install-shared
-  rm -f "$PKG/$_libdir/libgcc_eh.a"
+cd $SRC/gcc-$surum/build
+make DESTDIR=$PKG install
 
-  for lib in libatomic \
-             libgfortran \
-             libgo \
-             libgomp \
-             libitm \
-             libquadmath \
-             libsanitizer/{a,l,ub,t}san \
-             libstdc++-v3/src \
-             libvtv; do
-    make -C $CHOST/$lib DESTDIR="$PKG" install-toolexeclibLTLIBRARIES
-  done
-
-  make -C $CHOST/libobjc DESTDIR="$PKG" install-libs
-  make -C $CHOST/libstdc++-v3/po DESTDIR="$PKG" install
-
-  make -C $CHOST/libphobos DESTDIR="$PKG" install
-  rm -rf "$PKG"/$_libdir/include/d/
-  rm -f "$PKG"/usr/lib/libgphobos.spec
-
-  for lib in libgomp \
-             libitm \
-             libquadmath; do
-    make -C $CHOST/$lib DESTDIR="$PKG" install-info
-  done
 mkdir -p $PKG/usr/lib
 ln -sv /usr/bin/cpp $PKG/usr/lib/cpp
 ln -sv gcc $PKG/usr/bin/cc
- #rm -rf "$PKG"/usr/lib32/
+
+install -dm755 $PKG/usr/share/gdb/auto-load/usr/lib
+install -dm755 $PKG/usr/lib/bfd-plugins
+
+cd $PKG/usr/lib/bfd-plugins
+sed -i "s|-L$SRC[^ ]* ||g" \
+$PKG/usr/lib/{libstdc++.la,libsupc++.la}
+mv -v $PKG/usr/lib/*gdb.py \
+$PKG/usr/share/gdb/auto-load/usr/lib
+ln -sfv ../../lib/gcc/$(gcc -dumpmachine)/$surum/liblto_plugin.so
+rm -rf $PKG/usr/share/info
+rm -f $PKG/usr/lib/gcc/x86_64-pc-linux-gnu/$surum/*.la
+rm -f $PKG/usr/lib/gcc/x86_64-pc-linux-gnu/$surum/plugin/*.la
