@@ -6,7 +6,7 @@ url     = http://xorg-fontconfig.org
 
 [gerek]
 derleme = freetype
-calisma = 
+calisma = freetype
 
 [kaynak]
 gz      = https://www.freedesktop.org/software/$isim/release
