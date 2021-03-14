@@ -5,8 +5,9 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = evolution-data-server meson gjs mutter ibus sassc gnome-autoar bash-completion asciidoc
+derleme = evolution-data-server meson gjs mutter ibus sassc gnome-autoar bash-completion 
 calisma = 
+#asciidoc
 
 [kaynak]
 #1 = https://gitlab.gnome.org/GNOME/gnome-shell/-/archive/7a57528bd7940e68c404d15d398f88730821cec9/gnome-shell-7a57528bd7940e68c404d15d398f88730821cec9.tar.gz
