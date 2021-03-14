@@ -11,7 +11,7 @@ cd $SRC/glibc-$surum
 patch -Np1 -i $SRC/glibc-$surum-fhs-1.patch || exit 1
 
 # glibc'in son halinde tools a link olmaması için
-ln -sfv /tools/lib/gcc /usr/lib
+#ln -sfv /tools/lib/gcc /usr/lib
 
 #[ -f /usr/include/limits.h ] && rm -f /usr/include/limits.h
 
