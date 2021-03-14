@@ -27,4 +27,5 @@ dosya   = derle.sh
 dosya   = pakur.sh
 betik = rm $PKG/etc/grub.d/*
 betik = cp $SRC/grub-tema/etc/grub.d/* $PKG/etc/grub.d/
-betik = cp -r $SRC//grub-tema/usr/share/grub/themes $PKG//usr/share/grub/themes
+betik = cp -r $SRC//grub-tema/usr/share/grub/themes $PKG/usr/share/grub/themes
+betik = cp -r $SRC//grub-tema/usr/share/locale $PKG/usr/share/locale
