@@ -6,7 +6,7 @@ url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
 derleme = extra-cmake-modules kcmutils
-calisma = 
+calisma = kcmutils kdecoration
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
