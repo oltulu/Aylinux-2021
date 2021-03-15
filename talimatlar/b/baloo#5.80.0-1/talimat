@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules kidletime kfilemetadata kdbusaddons ksolid kcrash kio
+derleme = extra-cmake-modules kidletime kfilemetadata kdbusaddons solid kcrash kio
 calisma = kfilemetadata kidletime kio
 
 [kaynak]
