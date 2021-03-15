@@ -33,3 +33,4 @@ fi
 
 mkdir -p /var/lib/sddm
 chown -R sddm:sddm /var/lib/sddm > /dev/null
+
