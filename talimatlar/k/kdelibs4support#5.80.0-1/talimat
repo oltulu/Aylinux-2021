@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kdesignerplugin
-calisma =  
+calisma =  kdesignerplugin
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}/portingAids
