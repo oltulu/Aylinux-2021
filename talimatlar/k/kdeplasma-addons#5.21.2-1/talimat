@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
-derleme = kross
+derleme = kross plasma-workspace
 calisma =  
 
 [kaynak]
