@@ -22,7 +22,7 @@ dosya	= slim.rc
 
 [derle]
 betik = sed -i  -e '224d' CMakeLists.txt
-betik = cmake -DCMAKE_INSTALL_PREFIX=/usr 
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DUSE_CONSOLEKIT=yes -DUSE_PAM=no
 betik = make
 
 
