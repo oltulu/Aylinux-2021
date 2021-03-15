@@ -6,7 +6,7 @@ url     = http://www.python.org
 
 [gerek]
 derleme = sqlite
-calisma = 
+calisma = sqlite
 
 [kaynak]
 1       = https://www.python.org/ftp/python/$surum/Python-$surum.tar.xz
