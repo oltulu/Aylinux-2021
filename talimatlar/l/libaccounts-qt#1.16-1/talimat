@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = libaccounts-glib
-calisma =  
+calisma = libaccounts-glib
 
 [kaynak]
 git      = https://gitlab.com/accounts-sso/libaccounts-qt
