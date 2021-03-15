@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kitemviews kconfig kconfigwidgets kcodecs kglobalaccel kiconthemes
-calisma = kitemviews kconfig kconfigwidgets kcodecs kglobalaccel kiconthemes
+calisma = kitemviews kconfig kconfigwidgets kcodecs kglobalaccel kiconthemes attica
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
