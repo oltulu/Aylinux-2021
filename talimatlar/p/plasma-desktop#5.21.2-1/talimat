@@ -6,7 +6,7 @@ url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
 derleme = cmake extra-cmake-modules qt5-graphicaleffects
-calisma = accountsservice baloo gawk kmenuedit libxkbfile polkit-kde-agent systemsettings 
+calisma = accountsservice baloo gawk kmenuedit libxkbfile polkit-kde-agent systemsettings libaccounts-qt kaccounts-integration
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
