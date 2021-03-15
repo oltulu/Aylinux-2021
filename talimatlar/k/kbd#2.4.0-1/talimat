@@ -4,10 +4,15 @@ paketci = milisarge
 grup 	= temel
 url     = ftp://devel.altlinux.org/legion/kbd
 
+[gerek]
+derleme = autoconf automake
+calisma = 
+
 [kaynak]
-xz      = https://www.kernel.org/pub/linux/utils/$isim/
+xz      = https://www.kernel.org/pub/linux/utils/kbd
 dosya   = fix-euro2.patch
-1 = http://www.linuxfromscratch.org/patches/downloads/$isim/$isim-$surum-backspace-1.patch
+dosya   = vlock.pam
+
 
 [sha256]
 #1 		= f3ba359a56627dd0346dfc0f4711da3f45da60ba03e90fca2592992e439c5c29
@@ -17,6 +22,6 @@ dosya   = fix-euro2.patch
 dosya   = derle.sh
 	      
 [pakur]
-betik   = make DESTDIR=$PKG install
-betik   = ln -sf default8x16.psfu.gz $PKG/usr/share/kbd/consolefonts/default.gz
+betik   = make KEYCODES_PROGS=yes RESIZECONS_PROGS=yes DESTDIR=${PKG} install
+betik   = install -Dm644 $SRC/vlock.pam "${PKG}"/etc/pam.d/vlock
 
