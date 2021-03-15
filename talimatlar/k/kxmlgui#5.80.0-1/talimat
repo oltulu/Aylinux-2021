@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules kitemviews kconfig kconfigwidgets kcodecs kglobalaccel
+derleme = extra-cmake-modules kitemviews kconfig kconfigwidgets kcodecs kglobalaccel kiconthemes
 calisma = kitemviews kconfig kconfigwidgets kcodecs kglobalaccel kiconthemes
 
 [kaynak]
