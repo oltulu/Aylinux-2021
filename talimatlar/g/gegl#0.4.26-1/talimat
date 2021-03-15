@@ -6,7 +6,7 @@ url     = https://www.gimp.org
 
 [gerek]
 derleme = meson babl libgexiv2 exiv2 gtk3 jasper json-glib v4l-utils librsvg libraw libwebp libspiro openexr ffmpeg mesa vala glu gobject-introspection lensfun python-gobject poppler-glib
-calisma = babl libraw lensfun libspiro openexr poppler-glib lcms2
+calisma = babl libraw lensfun libspiro openexr poppler-glib lcms2 json-glib
 
 [kaynak]
 xz      = https://download.gimp.org/pub/$isim/${surum%.*}
