@@ -14,11 +14,7 @@ xz      = http://ftp.gnu.org/gnu/glibc
 1		= http://www.kernel.org/pub/linux/kernel/v5.x/linux-5.9.8.tar.xz
 dosya	= glibc-$surum-fhs-1.patch
 dosya	= glibc.locales.destek
-dosya = locale.gen.txt
-dosya = locale-gen
-dosya = lib32-glibc.conf
-dosya = sdt.h 
-dosya = sdt-config.h
+
 
 [sha256]
 #1 		= f3eeb8d57e25ca9fc13c2af3dae97754f9f643bc69229546828e3a240e2af04b
