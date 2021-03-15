@@ -7,7 +7,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules kdoctools kwallet signond  libaccounts-qt
-calisma =  
+calisma = signond
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
