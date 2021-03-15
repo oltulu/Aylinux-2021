@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules qt5-quickcontrols2 kirigami2 kdoctools kwayland kactivities
+derleme = extra-cmake-modules qt5-quickcontrols2 kirigami2 kdoctools kwayland kactivities kdeclarative kpackage
 calisma = kactivities kdeclarative kiconthemes knotifications kpackage karchive kirigami2 kwayland
 
 [kaynak]
