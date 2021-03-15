@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules threadweaver
-calisma =  
+calisma = threadweaver 
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
