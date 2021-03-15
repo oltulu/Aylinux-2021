@@ -1,0 +1,46 @@
+[paket]
+tanim   = Python programlama dili
+paketci = milisarge
+grup 	= geliştirme
+url     = http://www.python.org
+
+[gerek]
+derleme = sqlite
+calisma = 
+
+[kaynak]
+1       = https://www.python.org/ftp/python/$surum/Python-$surum.tar.xz
+
+[sha256]
+#1 		= da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
+
+[derle]
+betik 	= cd Python-$surum
+betik 	= CXX="/usr/bin/g++" ./configure --prefix=/usr --enable-shared --with-computed-gotos --enable-optimizations --with-lto --enable-ipv6 --with-system-expat --with-dbmliborder=gdbm:ndbm --with-system-ffi --with-system-libmpdec --enable-loadable-sqlite-extensions --without-ensurepip --with-tzpath=/usr/share/zoneinfo
+betik 	= make
+	      
+[pakur]
+betik 	= cd Python-${surum}
+
+  # Hack to avoid building again
+betik 	= sed -i 's/^all:.*$/all: build_all/' Makefile
+
+  # PGO should be done with -O3
+betik 	= CFLAGS="${CFLAGS/-O2/-O3}"
+
+betik 	= make DESTDIR="${PKG}" EXTRA_CFLAGS="$CFLAGS" install
+
+  # Split tests
+betik 	= rm -r "$PKG"/usr/lib/python*/{test,ctypes/test,distutils/tests,idlelib/idle_test,lib2to3/tests,sqlite3/test,tkinter/test,unittest/test}
+
+  # Why are these not done by default...
+betik 	= ln -s python3               "${PKG}"/usr/bin/python
+betik 	= ln -s python3-config        "${PKG}"/usr/bin/python-config
+betik 	= ln -s idle3                 "${PKG}"/usr/bin/idle
+betik 	= ln -s pydoc3                "${PKG}"/usr/bin/pydoc
+betik 	= ln -s python{surum%.*}.1 "${PKG}"/usr/share/man/man1/python.1
+
+  # some useful "stuff" FS#46146
+betik 	= install -dm755 "${PKG}"/usr/lib/python3.9/Tools/{i18n,scripts}
+betik 	= install -m755 Tools/i18n/{msgfmt,pygettext}.py "${PKG}"/usr/lib/python3.9/Tools/i18n/
+betik 	= install -m755 Tools/scripts/{README,*py} "${PKG}"/usr/lib/python3.9/Tools/scripts/
