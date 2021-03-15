@@ -6,7 +6,7 @@ url     = https://projects.kde.org/projects/kdesupport/extra-cmake-modules
 
 [gerek]
 derleme = qt5-tools cmake
-calisma =
+calisma = cmake
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
