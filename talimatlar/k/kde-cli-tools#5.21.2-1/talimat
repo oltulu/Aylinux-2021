@@ -5,7 +5,7 @@ grup 	= kde
 url     =https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
-derleme = extra-cmake-modules kdoctools plasma-workspace
+derleme = extra-cmake-modules kdoctools plasma-workspace docbook-xml
 calisma =  
 
 [kaynak]
