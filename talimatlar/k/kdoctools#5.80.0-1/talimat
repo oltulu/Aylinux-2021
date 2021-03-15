@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://community.kde.org/Frameworks
 
 [gerek]
-derleme = extra-cmake-modules karchive perl-uri docbook-xml
+derleme = extra-cmake-modules karchive perl-uri docbook-xml docbook-xsl
 calisma = docbook-xsl karchive
 
 [kaynak]
