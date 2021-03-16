@@ -6,7 +6,7 @@ url     = https://community.kde.org/Phonon
 
 [gerek]
 derleme = extra-cmake-modules
-calisma =  
+calisma = qt5-tools
 
 [kaynak]
 1      = https://download.kde.org/stable/phonon/$surum/phonon-$surum.tar.xz
