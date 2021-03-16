@@ -1,0 +1,47 @@
+[paket]
+tanim   = Sistem dışı kurulumlar için consolekit desteğine sahip MDM Display Manager
+paketci = Cihan_Alkan
+grup  	= cinnamon
+url     = http://www.linuxmint.com
+
+[gerek]
+derleme = gnome-common intltool perl pango zenity popt autoconf libtool
+calisma = libdmx libgnomecanvas dbus-glib
+
+[kaynak]
+1    = https://github.com/linuxmint/${isim}/archive/${surum}.tar.gz
+1    = mdm.pam
+1    = mdm-autologin.pam
+1    = defaults.conf
+1    = org.cinnamon.pkexec.mdmsetup.policy
+
+[sha256]
+
+[derle]
+betik     = aclocal --install
+betik     = gnome-doc-prepare --force
+betik     = chmod +x ./autogen.sh
+betik     = export AUTOMAKE=automake
+betik     = ./autogen.sh --enable-ipv6=yes --with-prefetch --prefix=/usr --with-console-kit=yes --sysconfdir=/etc --with-systemd=no --libexecdir=/usr/lib/mdm --localstatedir=/var/lib --disable-static --with-xevie=yes --disable-scrollkeeper --enable-secureremote=yes --enable-ipv6=yes --enable-compile-warnings=no --sbindir=/usr/bin LDFLAGS="-lXau -lm"
+betik     = sed -i -e 's|${prefix}|/usr|' config.h
+betik     = make DESTDIR=${surum}
+	      
+[pakur]
+betik     = make DESTDIR=${PKG} install
+betik     = install -m755 -d "${PKG}/etc/pam.d"
+betik     = install -m644    "${SRC}/mdm-autologin.pam" "${PKG}/etc/pam.d/mdm-autologin"
+betik     = install -m644    "${SRC}/mdm.pam"           "${PKG}/etc/pam.d/mdm"
+betik     = install -m444 "${SRC}/defaults.conf" "${PKG}/usr/share/mdm/"
+betik     = install -m444 "${SRC}/defaults.conf" "${PKG}/usr/share/mdm/distro.conf"
+betik     = rm -f "${PKG}/usr/share/xsessions/gnome.desktop" || true
+betik     = install -m755 -d "${PKG}/usr/share/polkit-1/actions/"
+betik     = install -m644    "${SRC}/org.cinnamon.pkexec.mdmsetup.policy" "${PKG}/usr/share/polkit-1/actions/"
+betik     = rmdir "${PKG}/etc/dm"
+betik     = install -m755 -d "${PKG}/usr/share/pixmaps/faces/"
+betik     = make DESTDIR=${PKG} install -C gui/faces
+betik     = sed -i -e 's|^Exec=gksu|Exec=pkexec|' "${PKG}/usr/share/mdm/applications/mdmsetup.desktop"
+betik     = sed -i -e 's|^Categories=|Categories=GNOME;GTK;System;Settings;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;|' "${PKG}/usr/share/mdm/applications/mdmsetup.desktop"
+betik     = install -m755 -d "${PKG}/usr/share/applications"
+betik     = mv -f ${PKG}/usr/share/mdm/applications/*.* "${PKG}/usr/share/applications"
+betik     = chmod 755 ${PKG}/usr/share/applications/*.*
+betik     = rmdir "${PKG}/usr/share/mdm/applications"
