@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules plasma-framework bluez-qt
-calisma = bluez-qt
+calisma = bluez-qt kdeclarative
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
