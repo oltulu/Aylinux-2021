@@ -31,9 +31,7 @@ betik 	= make
 betik 	= cd lxdm-20170805_e3e7517
 betik 	= make DESTDIR="$PKG" prefix=/usr install
 betik 	= chmod 644 "$PKG/etc/lxdm/lxdm.conf"
-
 betik 	= install -dm755 "$PKG"/usr/lib/{sysusers,tmpfiles}.d
-betik 	= echo 'u lxdm - "Lightweight X11 Display Manager" /var/lib/lxdm' > "$PKG/usr/lib/sysusers.d/$pkgbase.conf"
-betik 	= echo 'd /var/lib/lxdm 0700 lxdm lxdm - -' > "$PKG/usr/lib/tmpfiles.d/$pkgbase.conf"
-
+betik 	= echo 'u lxdm - "Lightweight X11 Display Manager" /var/lib/lxdm' > "$PKG/usr/lib/sysusers.d/$isim.conf"
+betik 	= echo 'd /var/lib/lxdm 0700 lxdm lxdm - -' > "$PKG/usr/lib/tmpfiles.d/$isim.conf"
 servis = lxdm
