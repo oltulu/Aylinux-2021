@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules ki18n karchive kconfig kcoreaddons
-calisma = karchive kconfig kcoreaddons ki18n ffmpeg taglib 
+calisma = karchive kconfig kcoreaddons ki18n ffmpeg taglib exiv2
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
