@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = kross plasma-workspace kunitconversion
-calisma =  
+calisma = kross plasma-workspace kunitconversion
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
