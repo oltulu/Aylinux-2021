@@ -10,10 +10,10 @@ calisma = libdmx libgnomecanvas dbus-glib
 
 [kaynak]
 1    = https://github.com/linuxmint/${isim}/archive/${surum}.tar.gz
-1    = mdm.pam
-1    = mdm-autologin.pam
-1    = defaults.conf
-1    = org.cinnamon.pkexec.mdmsetup.policy
+1    = https://aur.archlinux.org/cgit/aur.git/tree/defaults.conf?h=mdm-nosystemd
+1    = https://aur.archlinux.org/cgit/aur.git/plain/mdm-autologin.pam?h=mdm-nosystemd
+1    = https://aur.archlinux.org/cgit/aur.git/plain/mdm.pam?h=mdm-nosystemd
+1    = https://aur.archlinux.org/cgit/aur.git/plain/org.cinnamon.pkexec.mdmsetup.policy?h=mdm-nosystemd
 
 [sha256]
 
@@ -29,13 +29,13 @@ betik     = make DESTDIR=${surum}
 [pakur]
 betik     = make DESTDIR=${PKG} install
 betik     = install -m755 -d "${PKG}/etc/pam.d"
-betik     = install -m644    "${SRC}/mdm-autologin.pam" "${PKG}/etc/pam.d/mdm-autologin"
-betik     = install -m644    "${SRC}/mdm.pam"           "${PKG}/etc/pam.d/mdm"
-betik     = install -m444 "${SRC}/defaults.conf" "${PKG}/usr/share/mdm/"
-betik     = install -m444 "${SRC}/defaults.conf" "${PKG}/usr/share/mdm/distro.conf"
+betik     = install -m644 "/sources/mdm-autologin.pam?h=mdm-nosystemd" "${PKG}/etc/pam.d/mdm-autologin"
+betik     = install -m644 "/sources/mdm.pam?h=mdm-nosystemd" "${PKG}/etc/pam.d/mdm"
+betik     = install -m444 "/sources/defaults.conf?h=mdm-nosystemd" "${PKG}/usr/share/mdm/defaults.conf"
+betik     = install -m444 "/sources/defaults.conf?h=mdm-nosystemd" "${PKG}/usr/share/mdm/distro.conf"
 betik     = rm -f "${PKG}/usr/share/xsessions/gnome.desktop" || true
 betik     = install -m755 -d "${PKG}/usr/share/polkit-1/actions/"
-betik     = install -m644    "${SRC}/org.cinnamon.pkexec.mdmsetup.policy" "${PKG}/usr/share/polkit-1/actions/"
+betik     = install -m644    "/sources/org.cinnamon.pkexec.mdmsetup.policy?h=mdm-nosystemd" "${PKG}/usr/share/polkit-1/actions/org.cinnamon.pkexec.mdmsetup.policy"
 betik     = rmdir "${PKG}/etc/dm"
 betik     = install -m755 -d "${PKG}/usr/share/pixmaps/faces/"
 betik     = make DESTDIR=${PKG} install -C gui/faces
