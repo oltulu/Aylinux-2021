@@ -12,7 +12,7 @@ calisma    =
 xz         = https://download.enlightenment.org/rel/apps/$isim
 
 [sha256]
-1          = e7bb0d6b2a9661bd0b2ca15c6bca20ec654a01aff8865f9f594efada3a1c0504
+#1          = e7bb0d6b2a9661bd0b2ca15c6bca20ec654a01aff8865f9f594efada3a1c0504
 
 [derle]
 ekconf     =  -Dsystemd=false -Dconnman=true
