@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = 
-calisma =  
+calisma = kwayland
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
