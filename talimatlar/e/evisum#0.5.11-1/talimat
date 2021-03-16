@@ -1,0 +1,21 @@
+[paket]
+tanim   = EFL Süreç Görüntüleyicisi
+paketci = Cihan_Alkan
+grup  	= sistem
+url     = https://www.enlightenment.org
+
+[gerek]
+derleme = meson ninja
+calisma = efl
+
+[kaynak]
+xz      = https://download.enlightenment.org/rel/apps/${isim}
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+tip 	= meson
+        	      
+[pakur]
+tip 	= meson
