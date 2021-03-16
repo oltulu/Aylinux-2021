@@ -6,7 +6,7 @@ url     = https://www.theora.org/
 
 [gerek]
 derleme  = libvorbis libogg 
-calisma  =  
+calisma  = libvorbis libogg 
 
 [kaynak]
 bz2   =  https://downloads.xiph.org/releases/theora
