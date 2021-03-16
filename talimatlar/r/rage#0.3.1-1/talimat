@@ -1,0 +1,21 @@
+[paket]
+tanim   = EFL'ye dayalı Video Oynatıcı
+paketci = Cihan_Alkan
+grup    = medya
+url     = https://www.enlightenment.org
+
+[gerek]
+derleme = meson efl ninja
+calisma = v
+
+[kaynak]
+xz      = https://download.enlightenment.org/rel/apps/${isim}
+
+[sha256]
+#1       = 88f5bc6e5d10cce1e38447a4984be88943b3d7ecbe24a83d7d8c246ea6b00a87
+
+[derle]
+tip     = meson
+
+[pakur]
+tip     = meson
