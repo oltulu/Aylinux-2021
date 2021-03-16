@@ -1,0 +1,25 @@
+[paket]
+tanim   = Sddm düzenleyici
+paketci = Cihan_Alkan
+grup    = cinnamon
+url     = https://github.com/hagabaka/sddm-config-editor
+
+[gerek]
+derleme    =  
+calisma    = qt5-quickcontrols sddm polkit
+
+[kaynak]
+git      = https://github.com/hagabaka/sddm-config-editor
+
+[sha256]
+#1 = d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
+
+[derle]
+betik = mkdir --parents "$SRC/build"
+betik = cd "$SRC/build"
+betik = cmake "$SRC/$isim"
+betik = make
+
+[pakur]
+betik = cd "$SRC/$isim"
+betik = DESTDIR="$PKG" make -C "$SRC/build" install
