@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma =  
+calisma = systemsettings libraw1394
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
