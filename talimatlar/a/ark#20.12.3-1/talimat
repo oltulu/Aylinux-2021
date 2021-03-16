@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/ark
 
 [gerek]
 derleme = extra-cmake-modules kitemmodels kpty
-calisma = kitemmodels kpty
+calisma = kitemmodels kpty kparts
 
 [kaynak]
 xz      = ${KDE_SITE}/release-service/${surum}/src
