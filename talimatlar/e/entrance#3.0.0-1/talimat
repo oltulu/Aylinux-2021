@@ -1,0 +1,29 @@
+[paket]
+tanim   = Enlightenment Görüntü Yöneticisi
+paketci = Cihan_Alkan
+grup    = grafik
+url     = https://www.enlightenment.org
+
+[gerek]
+derleme = meson efl ninja
+calisma = 
+
+[kaynak]
+git      = https://github.com/Obsidian-StudiosInc/entrance
+
+[sha256]
+#1       = 88f5bc6e5d10cce1e38447a4984be88943b3d7ecbe24a83d7d8c246ea6b00a87
+
+[derle]
+#     =  sed -e '/"session_path"/ s|:.*|: "/usr/local/sbin:/usr/local/bin:/usr/bin";|' \
+#      -e '/"shutdown"/ s|:.*|: "/usr/bin/systemctl poweroff";|' \
+ #     -e '/"reboot"/ s|:.*|: "/usr/bin/systemctl reboot";|' \
+ #     -e '/"suspend"/ s|:.*|: "/usr/bin/systemctl suspend";|' \
+ #     -i "$srcdir/$_pkgname/data/entrance.conf.in"
+betik = cd "$isim"
+betik = milis-meson build -Dconsolekit=true -Dlogind=false
+betik = ninja -C build
+
+[pakur]
+betik = cd "$isim"
+betik = DESTDIR="$PKG" ninja -C build install
