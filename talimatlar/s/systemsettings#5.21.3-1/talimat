@@ -16,6 +16,8 @@ dosya = systemsettings.po
         #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
+betik 	= rm po/tr.po
+betik 	= $SRC/systemsettings.po po/tr.po
 betik 	= mkdir -p build
 betik 	= cd build
 betik 	= cmake "$SRC/$isim-$surum" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
