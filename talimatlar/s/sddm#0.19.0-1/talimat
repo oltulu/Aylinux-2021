@@ -15,8 +15,8 @@ dosya	= sddm.conf
 dosya = theme.conf
 
 [sha256]
-1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
-2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
+#1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
+#2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
 
 [derle]
 ekconf	= -DNO_SYSTEMD=On -DUSE_ELOGIND=ON -DBUILD_MAN_PAGES=Off -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf -DLOG_FILE=/var/run/sddm/sddm.log
