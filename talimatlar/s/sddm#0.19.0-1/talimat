@@ -6,11 +6,13 @@ url     = http://github.com/sddm/sddm
 
 [gerek]
 derleme = cmake extra-cmake-modules qt5-declarative qt5-tools pam dbus cmake
-calisma = qt5-declarative
+calisma = qt5-declarative qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
 
 [kaynak]
 1       = https://github.com/${isim}/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+git      = https://framagit.org/MarianArlt/sddm-sugar-candy
 dosya	= sddm.conf
+dosya = theme.conf
 
 [sha256]
 1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
@@ -19,8 +21,16 @@ dosya	= sddm.conf
 [derle]
 ekconf	= -DNO_SYSTEMD=On -DBUILD_MAN_PAGES=Off -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf -DLOG_FILE=/var/run/sddm/sddm.log
 tip     = cmake
+betik		= cd "$SRC/sddm-sugar-candy"
+betik		=  install -Dm644 "Main.qml" "$PKG/usr/share/sddm/themes/sugar-candy/Main.qml"
+betik		=  install -Dm644 "$SRC/theme.conf" "$PKG/usr/share/sddm/themes/sugar-candy/theme.conf"
+betik		=  install -Dm644 "metadata.desktop" "$PKG/usr/share/sddm/themes/sugar-candy/metadata.desktop"
 
 [pakur]
 tip		= cmake
 dosya	= pakur.sh
+betik		= cd "$SRC/sddm-sugar-candy"
+betik		=  find ./Assets -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+betik		=  find ./Backgrounds -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+betik		=  find ./Components -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 servis	= sddm
