@@ -12,7 +12,7 @@ calisma = kcrash kdbusaddons kiconthemes polkit-qt5
 1      = https://download.kde.org/stable/plasma/$surum/$isim-1-$surum.tar.xz
 
 [sha256]
-        #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+        #1 = f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
 betik 	= mkdir -p build
