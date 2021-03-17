@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
-derleme = extra-cmake-modules kcmutils
+derleme = extra-cmake-modules sassc breeze
 calisma = 
 
 [kaynak]
