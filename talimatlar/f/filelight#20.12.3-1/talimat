@@ -1,0 +1,24 @@
+[paket]
+tanim   = Disk kullanım bilgilerini görüntüleyin
+paketci = Cihan_Alkan
+grup    = kde
+url     = https://kde.org/applications/utilities/filelight
+
+[gerek]
+derleme    = extra-cmake-modules kdoctools
+calisma    = kio hicolor-icon-theme
+
+[kaynak]
+xz       = https://download.kde.org/stable/release-service/$pkgver/src
+
+[sha256]
+#1 = d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
+
+[derle]
+betik = cd $SRC
+betik = cmake -B build -S $isim-$surum -DBUILD_TESTING=OFF
+betik = cmake --build build
+
+[pakur]
+betik = cd $SRC
+betik = DESTDIR="$PKG" cmake --install build
