@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
-derleme = extra-cmake-modules sassc breeze
+derleme = extra-cmake-modules sassc breeze python-cairo
 calisma = 
 
 [kaynak]
@@ -17,7 +17,7 @@ xz      = https://download.kde.org/stable/plasma/$surum
 [derle]
 betik 	= cd ../
 betik 	= cmake -B build -S $isim-$surum
-    betik 	= cmake --build build
+betik 	= cmake --build build
     	      
 [pakur]
 betik 	= cd ../
