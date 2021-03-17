@@ -1,5 +1,5 @@
 [paket]
-tanim   = İnternette tv / radyo çalma listelerini izlemek için WebTV vlc oynatıcı
+tanim   = İnternette tv/radyo çalma listelerini izlemek için WebTV vlc oynatıcı
 paketci = Cihan_Alkan
 grup    = medya
 url     = https://github.com/freetuxtv/freetuxtv
@@ -9,7 +9,7 @@ derleme    = intltool
 calisma    = vlc gtk3 sqlite curl libnotify dbus-glib
 
 [kaynak]
-gz       = "https://github.com/freetuxtv/freetuxtv/releases/download/$isim-$surum
+gz       = https://github.com/freetuxtv/freetuxtv/releases/download/$isim-$surum
 
 [sha256]
 #1 = d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
