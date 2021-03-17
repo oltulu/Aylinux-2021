@@ -1,1 +1,1 @@
-service start lxdm
+service enable lxdm
