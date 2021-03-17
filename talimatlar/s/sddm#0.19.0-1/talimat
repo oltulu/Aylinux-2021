@@ -35,5 +35,5 @@ betik		=  find ./Assets -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/the
 betik		=  find ./Backgrounds -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 betik		=  find ./Components -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 betik = sed -i 's/sugar-candy/sugar-candy/' $PKG/etc/$isim.conf
-betik = cp /sources/arkaplan.png /usr/share/sddm/themes/sugar-candy/Backgrounds/
+betik = install -Dm644 /sources/arkaplan.png $PKG/usr/share/sddm/themes/sugar-candy/Backgrounds/arkaplan.png
 servis	= sddm
