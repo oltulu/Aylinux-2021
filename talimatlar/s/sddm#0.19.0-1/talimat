@@ -5,7 +5,7 @@ grup    = sistem
 url     = http://github.com/sddm/sddm
 
 [gerek]
-derleme = cmake extra-cmake-modules qt5-declarative qt5-tools pam dbus
+derleme = cmake extra-cmake-modules qt5-declarative qt5-tools pam dbus cmake
 calisma = qt5-declarative
 
 [kaynak]
