@@ -19,7 +19,7 @@ dosya = theme.conf
 2		= df118812c7f0295963cccae47e7a443fe9a4303108f681a58af8bc96aa0da6bb
 
 [derle]
-ekconf	= -DNO_SYSTEMD=On -DBUILD_MAN_PAGES=Off -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf -DLOG_FILE=/var/run/sddm/sddm.log
+ekconf	= -DNO_SYSTEMD=On -DUSE_ELOGIND=ON -DBUILD_MAN_PAGES=Off -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf -DLOG_FILE=/var/run/sddm/sddm.log
 tip     = cmake
 betik		= cd "$SRC/sddm-sugar-candy"
 betik		=  install -Dm644 "Main.qml" "$PKG/usr/share/sddm/themes/sugar-candy/Main.qml"
@@ -33,4 +33,5 @@ betik		= cd "$SRC/sddm-sugar-candy"
 betik		=  find ./Assets -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 betik		=  find ./Backgrounds -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 betik		=  find ./Components -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
+betik = sed -i 's/sugar-candy/sugar-candy/' $PKG/etc/$isim.conf
 servis	= sddm
