@@ -2,7 +2,7 @@
 tanim   = Bölümleri yönetmek için kitaplık
 paketci = Cihan_Alkan
 grup 	= kde
-url     = https://kde.org/applications/utilities/kcalc/
+url     = https://www.kde.org/applications/system/kdepartitionmanager/
 
 [gerek]
 derleme = extra-cmake-modules kdoctools polkit-qt5
