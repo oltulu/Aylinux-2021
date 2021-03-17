@@ -6,7 +6,7 @@ url     =https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
 derleme = extra-cmake-modules kdoctools plasma-workspace docbook-xml
-calisma = kdoctools plasma-workspace
+calisma = kdoctools plasma-workspace  kactivities kcmutils kdesu 
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
