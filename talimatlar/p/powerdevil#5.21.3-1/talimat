@@ -10,11 +10,20 @@ calisma = networkmanager-qt plasma-workspace
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
+dosya = powerdevilactivitiesconfig.po
+dosya = powerdevilglobalconfig.po
+dosya = powerdevilprofilesconfig.po
 
 [sha256]
         #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
+betik 	= rm po/powerdevilactivitiesconfig.po
+betik 	= rm po/powerdevilglobalconfig.po
+betik 	= rm po/powerdevilprofilesconfig.po
+betik 	= cp $SRC/powerdevilactivitiesconfig.po po/powerdevilactivitiesconfig.po
+betik 	= cp $SRC/powerdevilglobalconfig.po po/powerdevilglobalconfig.po
+betik 	= cp $SRC/powerdevilprofilesconfig.po po/powerdevilprofilesconfig.po
 betik 	= mkdir -p build
 betik 	= cd build
 betik 	= cmake "$SRC/$isim-$surum" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
