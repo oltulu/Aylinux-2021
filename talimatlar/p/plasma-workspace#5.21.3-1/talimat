@@ -10,6 +10,7 @@ calisma = phonon-qt5 kactivities-stats kactivitymanagerd kdelibs4support kholida
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
+dosya = kde.pam
 
 [sha256]
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
