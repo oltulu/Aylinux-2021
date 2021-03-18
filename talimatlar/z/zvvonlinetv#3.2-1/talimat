@@ -16,7 +16,7 @@ calisma    = mpv qt5-multimedia ffmpeg youtube-dl
 
 [derle]
 betik		= ar x /sources/3.2.deb
-betik		= bsdtar -xf /sources/data.tar.xz -C "$PKG"
+betik		= bsdtar -xf data.tar.xz -C "$PKG"
 
 
 [pakur]
