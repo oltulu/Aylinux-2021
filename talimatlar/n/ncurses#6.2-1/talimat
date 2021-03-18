@@ -16,5 +16,4 @@ betik   = ./configure ${CONF_OPT} --with-pkg-config=/usr/lib/pkgconfig --with-pk
 betik   = make
 	      
 [pakur]
-tip     = gnu
-betik   = ln -s libncursesw.so $PKG/usr/lib/libncurses.so
+dosya   = pakur.sh
