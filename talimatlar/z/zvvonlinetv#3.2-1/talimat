@@ -15,7 +15,8 @@ calisma    = mpv qt5-multimedia ffmpeg youtube-dl
 #1		   = bc2667a2a5a5a26e393
 
 [derle]
-betik		= bsdtar -xf data.tar.xz -C "$PKG"
+betik		= bsdtar -xf /sources/3.2.deb
+betik		= bsdtar -xf /sources/data.tar.xz -C "$PKG"
 
 
 [pakur]
