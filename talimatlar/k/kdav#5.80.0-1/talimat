@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules qt5-xmlpatterns
-calisma =  
+calisma = qt5-xmlpatterns 
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
