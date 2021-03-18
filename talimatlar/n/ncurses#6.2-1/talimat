@@ -12,7 +12,7 @@ gz      = https://ftp.gnu.org/pub/gnu/ncurses
 
 [derle]
 betik   = sed -i '/LIBTOOL_INSTALL/d' c++/Makefile.in
-betik   = ./configure --prefix=/usr --with-shared --without-debug --without-ada --enable-widec --enable-overwrite 
+betik   = ./configure ${CONF_OPT} --with-pkg-config=/usr/lib/pkgconfig --with-pkg-config-libdir=/usr/lib/pkgconfig --with-shared --without-normal --enable-pc-files --without-debug --enable-widec --with-cxx-binding --with-cxx-shared --enable-ext-colors --enable-ext-mouse
 betik   = make
 	      
 [pakur]
