@@ -1,0 +1,18 @@
+[paket]
+tanim   = Dağıtımlarda uygulama mağazaları oluşturmak için bir standart sağlar
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://distributions.freedesktop.org/wiki/AppStream
+
+[kaynak]
+1     = https://www.freedesktop.org/software/appstream/releases/AppStream-$surum.tar.xz
+
+[sha256]
+#1       = d7a504b61c716ae5b7e81a0c67a50a51f06c7326f197b66a4b823de076a35005
+
+[derle]
+betik     =  meson build AppStream-$surum --prefix=/usr -Dqt=true -Dvapi=true -Dcompose=true
+betik     =  ninja -C build
+
+[pakur]
+betik     =  DESTDIR="$PKG" ninja install -C build
