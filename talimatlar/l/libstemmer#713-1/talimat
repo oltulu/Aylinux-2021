@@ -15,11 +15,13 @@ calisma  =
 #1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
 
 [derle]
+betik   = cd snowball-2.1.0
 betik   = make
 betik   = install -d "$PKG/usr/bin"
 betik   = install -t "$PKG/usr/bin" snowball stemwords
 
 [pakur]
+betik   = cd snowball-2.1.0
 betik   = install -Dm644 {.,"$PKG"/usr}/include/libstemmer.h
 betik   = install -D {.,"$PKG"/usr/lib}/libstemmer.so.0.0.0
 betik   = ln -s libstemmer.so.0.0.0 "$PKG/usr/lib/libstemmer.so.0"
