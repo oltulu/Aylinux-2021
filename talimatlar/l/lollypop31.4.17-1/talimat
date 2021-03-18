@@ -1,0 +1,22 @@
+[paket]
+tanim   = Gnome için müzik oynatıcısı
+paketci = Cihan_Alkan
+grup    = Medya
+url     = https://gitlab.gnome.org/World/lollypop
+
+[gerek]
+derleme = gobject-introspection intltool itstool meson
+calisma =
+
+[kaynak]
+git     = https://gitlab.gnome.org/World/lollypop
+
+[sha256]
+1       = 649f0db7750ca121e4de7b60208703661052356df35f4cfad490b1ba14dd1455
+
+[derle]
+betik     = milis-meson lollypop build --libexecdir=lib/lollypop
+betik     = ninja -C build
+
+[pakur]
+betik     = DESTDIR="${PKG}" ninja -C build install
