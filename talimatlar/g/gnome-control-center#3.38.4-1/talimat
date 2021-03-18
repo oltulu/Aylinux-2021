@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/gnome-control-center
 
 [gerek]
-derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality gnome-settings-daemon gnome-online-accounts libibus
+derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality gnome-settings-daemon gnome-online-accounts ibus
 calisma =  gnome-bluetooth gnome-color-manager gnome-desktop gnome-online-accounts gnome-settings-daemon ibus
 
 [kaynak]
