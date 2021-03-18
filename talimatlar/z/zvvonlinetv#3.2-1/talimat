@@ -9,7 +9,7 @@ derleme    =
 calisma    = mpv qt5-multimedia ffmpeg youtube-dl
 
 [kaynak]
-1		   = https://docs.google.com/uc?id=1_FGSxInNkx2KmxVxNFf-ADAF7hANiYUB::$isim_$surum..deb
+1		   = https://docs.google.com/uc?id=1_FGSxInNkx2KmxVxNFf-ADAF7hANiYUB::$isim_$surum.deb
 
 [sha512]
 #1		   = bc2667a2a5a5a26e393
