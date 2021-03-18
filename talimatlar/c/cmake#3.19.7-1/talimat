@@ -1,25 +1,25 @@
-    [paket]
-    tanim   = Çapraz platform açık kaynaklı derleme sistemi
-    paketci = milisarge
-    grup 	= geliştirme
-    url     = http://www.cmake.org
+[paket]
+tanim   = Çapraz platform açık kaynaklı derleme sistemi
+paketci = milisarge
+grup 	= geliştirme
+url     = http://www.cmake.org
 
-    [gerek]
-    derleme = libuv rhash jsoncpp
-    calisma = libuv rhash jsoncpp
+[gerek]
+derleme = libuv rhash jsoncpp
+calisma = libuv rhash jsoncpp
 
-    [kaynak]
-    gz      = https://github.com/Kitware/CMake/releases/download/v$surum
-    dosya   = cmake-cppflags.patch
+[kaynak]
+gz      = https://github.com/Kitware/CMake/releases/download/v$surum
+dosya   = cmake-cppflags.patch
 
-    [sha256]
-    1 		= 58a15f0d56a0afccc3cc5371234fce73fcc6c8f9dbd775d898e510b83175588e
+[sha256]
+1 		= 58a15f0d56a0afccc3cc5371234fce73fcc6c8f9dbd775d898e510b83175588e
 
-    [derle]
-    yama    = cmake-cppflags.patch
-    betik   = export CXXFLAGS+=" ${CPPFLAGS}"
-    betik   = ./bootstrap --prefix=/usr --mandir=/share/man --datadir=/share/$isim --docdir=/share/doc/$isim --system-libs --parallel=$(/usr/bin/getconf _NPROCESSORS_ONLN)
-    betik   = make 
+[derle]
+yama    = cmake-cppflags.patch
+betik   = export CXXFLAGS+=" ${CPPFLAGS}"
+betik   = ./bootstrap --prefix=/usr --mandir=/share/man --datadir=/share/$isim --docdir=/share/doc/$isim --system-libs --parallel=$(/usr/bin/getconf _NPROCESSORS_ONLN)
+betik   = make 
 
-    [pakur]
-    tip     = gnu
+[pakur]
+tip     = gnu
