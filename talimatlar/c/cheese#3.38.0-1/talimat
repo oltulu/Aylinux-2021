@@ -9,7 +9,7 @@ xz    = http://ftp.gnome.org/pub/gnome/sources/cheese/${surum%.*}
 
 [gerek]
 derleme = vala meson clutter clutter-gst clutter-gtk gnome-desktop gst-plugins-others libcanberra itstool
-calisma =  clutter-gst clutter-gtk gnome-desktop gst-plugins-other gst-plugins-base gst-plugins-good gstreamer 
+calisma =  clutter-gst clutter-gtk gnome-desktop gst-plugins-others gst-plugins-base gst-plugins-good gstreamer 
 
 [sha1]
             #1 		= SKIP
