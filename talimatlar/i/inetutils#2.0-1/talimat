@@ -1,0 +1,19 @@
+[paket]
+tanim   = Temel ağ araçları
+paketci = milisarge
+grup 	= temel
+url     = http://www.gnu.org/software/inetutils
+
+[kaynak]
+xz      = http://ftp.gnu.org/gnu/$isim
+
+[sha256]
+#1 		= 849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37
+
+[derle]
+betik   = ./configure --prefix=/usr --libexec=/usr/bin --localstatedir=/var --disable-logger --disable-whois --disable-rcp --disable-rexec --disable-rlogin --disable-rsh --disable-servers
+betik   = make
+betik   = make check || true
+      
+[pakur]
+tip	    = gnu
