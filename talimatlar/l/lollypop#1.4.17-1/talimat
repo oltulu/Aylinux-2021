@@ -15,10 +15,10 @@ gz     = https://gitlab.gnome.org/World/lollypop/-/archive/$surum
 31       = 649f0db7750ca121e4de7b60208703661052356df35f4cfad490b1ba14dd1455
 
 [derle]
-betik     = $SRC
+betik     = cd $SRC
 betik     = milis-meson lollypop-$surum build --libexecdir=lib/lollypop
 betik     = ninja -C build
 
 [pakur]
-betik     = $SRC
+betik     = cd $SRC
 betik     = DESTDIR="${PKG}" ninja -C build install
