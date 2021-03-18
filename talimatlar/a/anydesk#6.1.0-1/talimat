@@ -1,0 +1,25 @@
+[paket]
+tanim   = Uzaktan bağlantı programı
+paketci = Cihan_Alkan
+grup 	  = ofis
+url     = https://anydesk.com/tr
+
+[gerek]
+derleme = 
+calisma = gtkglext pangox-compat
+
+[kaynak]
+1      =https://download.anydesk.com/linux/anydesk-${surum}-amd64.tar.gz
+
+[SKIP]
+#1 		= SKIP
+
+[derle]
+betik		= install -Dm 755 "${SRC}/anydesk-${surum}/anydesk" "${PKG}/usr/bin/anydesk"
+betik		= patchelf --replace-needed 'libpangox-1.0.so.0' 'libpangoxft-1.0.so' "${PKG}/usr/bin/anydesk"
+betik		= install -Dm 644 "${SRC}/anydesk-${surum}/anydesk.desktop" "${PKG}/usr/share/applications/anydesk.desktop"
+betik		= sed -i -e "s:Exec=/usr/bin/anydesk:Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /usr/bin/anydesk:g" "${PKG}/usr/share/applications/anydesk.desktop"
+
+[pakur]
+betik 	=  install -Dm 644 "${SRC}/anydesk-${surum}/polkit-1/com.philandro.anydesk.policy" "${PKG}/usr/share/polkit-1/actions/com.philandro.anydesk.policy"
+#betik 	= install -Dm 644 "${SRC}/anydesk-${surum}/icons/hicolor/scalable/apps/anydesk.svg" "${PKG}/usr/share/pixmaps/anydesk.svg"
