@@ -6,7 +6,7 @@ url     =https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
 derleme = extra-cmake-modules kpmcore
-calisma =  
+calisma =  hicolor-icon-theme kio kpmcore 
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
