@@ -1,0 +1,24 @@
+[paket]
+tanim   = Çeşitli kaynaklardan barkod okumak için uygulama ve kütüphane
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://zbar.sourceforge.net
+
+[gerek]
+derleme    = imagemagick v4l-utils xmlto libxv libsm
+calisma    = imagemagick
+
+[kaynak]
+1		   = https://docs.google.com/uc?id=1_FGSxInNkx2KmxVxNFf-ADAF7hANiYUB::$isim_$surum..deb
+
+[sha512]
+#1		   = bc2667a2a5a5a26e393
+
+[derle]
+betik		= bsdtar -xf data.tar.xz -C "$PKG"
+
+
+[pakur]
+betik		= chmod -R 755 "${PKG}"/usr
+betik		= chmod -R 775 "${PKG}"/usr/share/ZVVOnlineTV
+betik		= chmod -R 775 "${PKG}"/usr/share/ZVVOnlineTV/modules/
