@@ -1,12 +1,12 @@
 [paket]
-tanim   = Çeşitli kaynaklardan barkod okumak için uygulama ve kütüphane
+tanim   = TV | IPTV | youtube oynatıcı
 paketci = Cihan_Alkan
 grup    = kütüphane
 url     = http://zbar.sourceforge.net
 
 [gerek]
-derleme    = imagemagick v4l-utils xmlto libxv libsm
-calisma    = imagemagick
+derleme    = 
+calisma    = mpv qt5-multimedia ffmpeg youtube-dl
 
 [kaynak]
 1		   = https://docs.google.com/uc?id=1_FGSxInNkx2KmxVxNFf-ADAF7hANiYUB::$isim_$surum..deb
