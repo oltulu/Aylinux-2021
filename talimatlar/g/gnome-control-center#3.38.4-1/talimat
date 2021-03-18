@@ -5,8 +5,8 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/gnome-control-center
 
 [gerek]
-derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality gnome-settings-daemon
-calisma = 
+derleme =  meson ninja cheese gnome-bluetooth grilo colord-gtk libgtop gsound libpwquality gnome-settings-daemon gnome-online-accounts
+calisma =  gnome-bluetooth gnome-color-manager gnome-desktop gnome-online-accounts gnome-settings-daemon 
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-control-center/${surum%.*}
