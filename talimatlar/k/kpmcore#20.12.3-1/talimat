@@ -6,7 +6,7 @@ url     = https://www.kde.org/applications/system/kdepartitionmanager/
 
 [gerek]
 derleme = extra-cmake-modules kdoctools polkit-qt5
-calisma =  
+calisma = kdoctools polkit-qt5
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
