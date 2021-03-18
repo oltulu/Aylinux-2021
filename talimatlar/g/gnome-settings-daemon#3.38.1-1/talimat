@@ -5,8 +5,8 @@ grup 	= cinnamon
 url     = https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 
 [gerek]
-derleme =  meson ninja geocode-glib libgweather geoclue
-calisma = libgweather geoclue colord
+derleme = meson ninja geocode-glib libgweather geoclue
+calisma = libgweather geoclue colord gnome-desktop
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-settings-daemon/${surum%.*}
