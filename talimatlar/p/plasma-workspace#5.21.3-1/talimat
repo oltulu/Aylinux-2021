@@ -6,7 +6,7 @@ url     = https://kde.org/plasma-desktop/
 
 [gerek]
 derleme = extra-cmake-modules
-calisma = phonon-qt5 kactivities-stats kactivitymanagerd kdelibs4support kholidays knotifyconfig kpeople kquickcharts ktexteditor kuserfeedback kwin kjs networkmanager-qt libkscreen libksysguard libqalculate milou plasma-integration prison
+calisma = phonon-qt5 kactivities-stats kactivitymanagerd kdelibs4support kholidays knotifyconfig kpeople kquickcharts ktexteditor kuserfeedback kwin kjs networkmanager-qt libkscreen libksysguard libqalculate milou plasma-integration prison pipewire
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
