@@ -23,4 +23,3 @@ index dbb4366757..8a0ee288c6 100644
 +set(CMAKE_CXX_FLAGS_INIT "$ENV{CPPFLAGS} $ENV{CXXFLAGS} ${CMAKE_CXX_FLAGS_INIT}")
  
  cmake_initialize_per_config_variable(CMAKE_CXX_FLAGS "Flags used by the CXX compiler")
- 
