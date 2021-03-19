@@ -15,7 +15,7 @@ xz    = http://ftp.gnome.org/pub/gnome/sources/nautilus/${surum%.*}
 1 		= 
 
 [derle]
-ekconf = -Dselinux=false -Dpackagekit=false
+ekconf = -Dselinux=false -Dpackagekit=false -Dlibportal=false
 tip = meson
     	      
 [pakur]
