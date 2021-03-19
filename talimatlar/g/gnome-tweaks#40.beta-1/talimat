@@ -1,0 +1,21 @@
+[paket]
+tanim   = GNOME oturum yöneticisi
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://ftp.gnome.org/pub/gnome/sources/gnome-session
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/40
+
+[sha1]
+1 		= 
+
+[derle]
+tip =meson
+    	      
+[pakur]
+tip =meson
