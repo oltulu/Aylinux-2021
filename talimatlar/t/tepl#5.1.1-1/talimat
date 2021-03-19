@@ -5,7 +5,7 @@ grup 	= gnome
 url     = http://www.gnome.org
 
 [gerek]
-derleme = vala gobject-introspection meson gtksourceview4
+derleme = vala gobject-introspection meson gtksourceview4 amtk
 calisma = 
 
 [kaynak]
