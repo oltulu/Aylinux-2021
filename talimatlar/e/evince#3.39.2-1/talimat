@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
 derleme  = gspell djvulibre texlive-bin libgxps
-calisma  = gspell djvulibre libgxps
+calisma  = gspell djvulibre libgxps libhandy
 
 [kaynak]
 xz = https://download.gnome.org/sources/$isim/${surum:0:4}
