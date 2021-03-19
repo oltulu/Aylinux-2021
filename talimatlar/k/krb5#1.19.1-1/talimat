@@ -19,3 +19,4 @@ dosya   = derle.sh
 	      
 [pakur]
 dosya   = pakur.sh
+servis = krb5
