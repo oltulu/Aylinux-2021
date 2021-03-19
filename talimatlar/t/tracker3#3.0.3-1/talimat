@@ -16,7 +16,7 @@ calisma =
 
 [derle]
 betik =$SRC
-betik = mv  tracker $isim-$surum
+betik = mv  tracker-$surum $isim-$surum
 tip = meson
 
 [pakur]
