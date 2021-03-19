@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules kconfig kconfigwidgets kiconthemes knotifications knewstuff
-calisma =  
+calisma = knewstuff
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
