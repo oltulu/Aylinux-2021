@@ -9,7 +9,7 @@ derleme = gobject-introspection meson yelp-tools
 calisma = gnome-desktop libexif lcms2 exempi libpeas librsvg dconf
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum:0:4}
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/40
 
 [sha1]
 1 		= 
