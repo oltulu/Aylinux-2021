@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/libhandy
 
 [gerek]
 derleme = glade meson gobject-introspection vala
-calisma = 
+calisma = glade
 
 [kaynak]
 git     =https://gitlab.gnome.org/GNOME/libhandy
