@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+xz      = https://download.gnome.org/sources/$isim/40
 
 [sha1]
 1 		= 
