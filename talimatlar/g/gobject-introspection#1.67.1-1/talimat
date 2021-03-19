@@ -9,7 +9,7 @@ derleme	= glib meson
 calisma	= python glib
 
 [kaynak]
-xz	    = https://ftp.gnome.org/pub/GNOME/sources/$isim/1.66
+xz	    = https://ftp.gnome.org/pub/GNOME/sources/$isim/1.67
 #git	    = https://gitlab.gnome.org/GNOME/glib
 
 [sha256]
