@@ -9,7 +9,7 @@ derleme = glib meson gobject-introspection
 calisma = cantarell-fonts
 
 [kaynak]
-xz = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+xz = http://ftp.gnome.org/pub/gnome/sources/$isim/40
 
 [sha256]
 #1 = 2d59b4b3a548859dfae46314ee4666787a00d5c82db382e97df7aa9d0e310a35
