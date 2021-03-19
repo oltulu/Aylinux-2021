@@ -10,11 +10,14 @@ calisma = keyutils openldap lmdb
 
 [kaynak]
 gz      = https://web.mit.edu/kerberos/dist/krb5/1.19
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/krb5/trunk/krb5-config_LDFLAGS.patch
 
 [sha256]
 #1 		= 5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
 
 [derle]
+betik = patch -Np1 < /sources/krb5-config_LDFLAGS.patch
+betik = sed -i "/KRB5ROOT=/s/\/local//" src/util/ac_check_krb5.m4
 dosya   = derle.sh
 	      
 [pakur]
