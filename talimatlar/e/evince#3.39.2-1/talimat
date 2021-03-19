@@ -1,0 +1,23 @@
+[paket]
+tanim   = PDF Okuyucu
+paketci = Cihan_Alkan 
+grup    = gnome  
+url     = https://wiki.gnome.org/Apps/Evolution
+
+[gerek]
+derleme  =  
+calisma  =  
+
+[kaynak]
+xz = https://download.gnome.org/sources/$isim/${surum:0:4}
+
+[sha256]
+#1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
+
+[derle]
+ekconf = -D ps=enabled
+tip   = meson
+
+[pakur]
+betik   = cd $SRC
+tip   = meson
