@@ -9,7 +9,7 @@ derleme = gnome-settings-daemon
 calisma =  gnome-desktop pipewire 
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+xz      = https://download.gnome.org/sources/$isim/40
 1= https://github.com/venomlinux/ports/raw/master/testing/mutter/0001-fix-libglvnd-support.patch
 2= https://github.com/venomlinux/ports/raw/master/testing/mutter/drm.patch
 
