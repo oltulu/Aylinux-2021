@@ -17,7 +17,7 @@ xz	    = https://ftp.gnome.org/pub/GNOME/sources/$isim/1.67
 
 [derle]
 betik = cd $SRC
-betik = milis-meson $isim-$surum build -D gtk_doc=false -D doctool=disabled -D build_introspection_data=false
+betik = milis-meson $isim-$surum build -D build_introspection_data=false
 betik = meson compile -C build
 
 [pakur]
