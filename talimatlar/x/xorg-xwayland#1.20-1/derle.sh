@@ -88,4 +88,4 @@ _install() {
   _install fakeinstall/usr/share/man/man1/Xserver.1
   _install fakeinstall/usr/bin/Xwayland
   
-  _install fakeinstall/usr/include/xorg/*
+#  _install fakeinstall/usr/include/xorg/*
