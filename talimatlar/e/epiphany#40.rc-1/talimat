@@ -15,7 +15,7 @@ xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/40
 1 		= 
 
 [derle]
-betik = milis-meson ../$isim-$surum build -D distributor_name="Aylinux®" -Dlibportal=false
+betik = milis-meson ../$isim-$surum build -D distributor_name="Aylinux®" -Dlibportal=disabled
 betik = ninja -C build
 	      
 [pakur]
