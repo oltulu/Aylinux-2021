@@ -5,7 +5,7 @@ grup    = gnome
 url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
-derleme  = gspell djvulibre texview-bin
+derleme  = gspell djvulibre texlive-bin
 calisma  = gspell djvulibre
 
 [kaynak]
