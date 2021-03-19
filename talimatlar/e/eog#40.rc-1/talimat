@@ -5,7 +5,7 @@ grup 	= grafik
 url     = https://wiki.gnome.org/Apps/EyeOfGnome
 
 [gerek]
-derleme = gobject-introspection meson yelp-tools gnome-desktop libpeas exempi
+derleme = gobject-introspection meson yelp-tools gnome-desktop libpeas exempi ninja
 calisma = gnome-desktop libexif lcms2 exempi libpeas librsvg dconf
 
 [kaynak]
