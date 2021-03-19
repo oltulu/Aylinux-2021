@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/nautilus
 
 [gerek]
 derleme = libgexiv2 gnome-autoar
-calisma = 
+calisma = tracker3
 
 [kaynak]
 xz    = http://ftp.gnome.org/pub/gnome/sources/nautilus/${surum%.*}
