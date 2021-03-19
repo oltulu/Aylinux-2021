@@ -9,7 +9,7 @@ derleme = libdazzle libhandy
 calisma = evolution-data-server gsettings-desktop-schemas gnome-control-center libdazzle libhandy0
 
 [kaynak]
-xz  = http://ftp.gnome.org/pub/gnome/sources/gnome-calculator/${surum%.*}
+xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
