@@ -25,4 +25,4 @@ betik 	= make
 betik 	= cd build
 tip = gnu
 betik 	= install -Dm644 "$SRC"/kde.pam "$PKG"/etc/pam.d/kde
-#betik 	= install -Dm644 login-sessions/plasmawayland.desktop "$PKG"/usr/share/wayland-sessions/plasmawayland.desktop
+betik 	= install -Dm644 login-sessions/plasmawayland.desktop "$PKG"/usr/share/wayland-sessions/plasmawayland.desktop
