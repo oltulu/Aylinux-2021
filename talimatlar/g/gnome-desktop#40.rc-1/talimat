@@ -9,7 +9,7 @@ derleme = gobject-introspection meson yelp-tools xkeyboard-config iso-codes libs
 calisma = gsettings-desktop-schemas gtk3 libxkbfile xkeyboard-config iso-codes libseccomp bubblewrap
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
+xz      = https://download.gnome.org/sources/$isim/40
 
 [sha1]
 1 		= 
