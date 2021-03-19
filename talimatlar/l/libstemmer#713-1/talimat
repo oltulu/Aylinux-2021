@@ -26,6 +26,6 @@ betik   = install -t "$PKG/usr/bin" snowball stemwords
 [pakur]
 betik   = cd snowball
 betik   = install -Dm644 {.,"$PKG"/usr}/include/libstemmer.h
-betik   = install -D {.,"$PKG"/usr/lib}/libstemmer.so.0.0.0
+betik   = install -D  libstemmer.o "$PKG"/usr/lib/libstemmer.so.0.0.0
 betik   = ln -s libstemmer.so.0.0.0 "$PKG/usr/lib/libstemmer.so.0"
 betik   = ln -s libstemmer.so.0 "$PKG/usr/lib/libstemmer.so"
