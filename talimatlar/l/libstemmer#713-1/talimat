@@ -11,12 +11,14 @@ calisma  =
 [kaynak]
 #1       = https://github.com/snowballstem/snowball/archive/v2.1.0.tar.gz::$isim-$surum.tar.gz
 git = https://github.com/snowballstem/snowball
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/snowball/trunk/dynamiclib.patch
 
 [sha256]
 #1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
 
 [derle]
 betik   = cd snowball
+betik   = patch -Np1 -i /sources/dynamiclib.patch
 betik   = make
 betik   = install -d "$PKG/usr/bin"
 betik   = install -t "$PKG/usr/bin" snowball stemwords
