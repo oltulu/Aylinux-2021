@@ -9,13 +9,16 @@ derleme =
 calisma =  
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/40
+git     = https://gitlab.gnome.org/GNOME/gnome-tweaks
 
 [sha1]
 1 		= 
 
 [derle]
-tip =meson
+betik = mv $isim $isim-$surum
+betik = cd $SRC
+tip = meson
     	      
 [pakur]
-tip =meson
+betik = cd $SRC
+tip = meson
