@@ -9,11 +9,15 @@ derleme = vala gobject-introspection meson gtksourceview4 amtk
 calisma = 
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+#xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+git = https://gitlab.gnome.org/GNOME/tepl
+
 [sha1]
 1 		= 
 
 [derle]
+betik = mv tepl tepl-$surum
+betik = $SRC
 ekconf = -D gtk_doc=false
 tip 	= meson 
 	      
