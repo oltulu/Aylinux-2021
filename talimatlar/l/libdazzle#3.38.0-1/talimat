@@ -12,7 +12,7 @@ calisma =
 xz      = ${GNOME_SITE}/libdazzle/${surum%.*}
 
 [sha256]
-1       = 82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958
+#1       = 82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958
 
 [derle]
 ekconf     = -Denable_gtk_doc=false -Dwith_vapi=true -Dwith_introspection=true
