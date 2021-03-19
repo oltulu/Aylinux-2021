@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-1     = https://download.gnome.org/sources/tracker/${surum%.*}/tracker-$surum
+1     = https://download.gnome.org/sources/tracker/${surum%.*}/tracker-$surum.tar.xz
 
 [sha1]
 1 		= 
