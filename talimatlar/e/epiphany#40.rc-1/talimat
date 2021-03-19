@@ -5,7 +5,7 @@ grup 	= grafik
 url     = https://wiki.gnome.org/Apps/Web
 
 [gerek]
-derleme = docbook-xml startup-notification lsb-release gobject-introspection yelp-tools meson libdazzle
+derleme = docbook-xml startup-notification lsb-release gobject-introspection yelp-tools meson libdazzle libhandy
 calisma = webkitgtk gcr icu libdazzle libhandy
 
 [kaynak]
