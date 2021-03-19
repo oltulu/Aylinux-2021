@@ -5,8 +5,8 @@ grup    = gnome
 url     = https://wiki.gnome.org/Apps/Evolution
 
 [gerek]
-derleme  = gspell
-calisma  = gspell 
+derleme  = gspell djvulibre
+calisma  = gspell djvulibre
 
 [kaynak]
 xz = https://download.gnome.org/sources/$isim/${surum:0:4}
