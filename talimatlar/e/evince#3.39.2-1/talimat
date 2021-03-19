@@ -15,7 +15,7 @@ xz = https://download.gnome.org/sources/$isim/${surum:0:4}
 #1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
 
 [derle]
-ekconf = -D ps=enabled
+ekconf = -D ps=enabled -D gtk_doc=false -D nautilus=false 
 tip   = meson
 
 [pakur]
