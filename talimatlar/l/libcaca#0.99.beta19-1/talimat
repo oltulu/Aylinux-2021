@@ -6,7 +6,7 @@ url     = http://caca.zoy.org/wiki/libcaca
 
 [gerek]
 derleme  = imlib2 ncurses 
-calisma  = slang
+calisma  = slang imlib2
 
 [kaynak]
 gz       = http://libcaca.zoy.org/files/$isim
