@@ -5,7 +5,7 @@ grup 	= gnome
 url     = http://www.gnome.org
 
 [gerek]
-derleme = yelp-tools vala gobject-introspection meson
+derleme = yelp-tools vala gobject-introspection meson tepl
 calisma = gtksourceview4 gsettings-desktop-schemas libpeas gspell python-gobject dconf
 
 [kaynak]
