@@ -1,0 +1,21 @@
+[paket]
+tanim   = GNOME Metin Düzenleyici
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://www.gnome.org
+
+[gerek]
+derleme = vala gobject-introspection meson
+calisma = 
+
+[kaynak]
+xz      = http://ftp.gnome.org/pub/gnome/sources/gedit/${surum%.*}
+[sha1]
+1 		= 
+
+[derle]
+ekconf = -D gtk_doc=false
+tip 	= meson 
+	      
+[pakur]
+tip 	= meson 
