@@ -6,7 +6,7 @@ url     = https://gitlab.com/accounts-sso/signond/
 
 [gerek]
 derleme = doxygen
-calisma =  
+calisma = libproxy
 
 [kaynak]
 git      = https://gitlab.com/accounts-sso/signond
