@@ -5,7 +5,7 @@ grup 	= gnome
 url     = http://www.gnome.org
 
 [gerek]
-derleme = yelp-tools vala gobject-introspection gtk-doc meson
+derleme = yelp-tools vala gobject-introspection meson
 calisma = gtksourceview4 gsettings-desktop-schemas libpeas gspell python-gobject dconf
 
 [kaynak]
@@ -14,11 +14,7 @@ xz      = http://ftp.gnome.org/pub/gnome/sources/gedit/${surum%.*}
 1 		= 
 
 [derle]
-betik = mkdir build
-betik = cd build
-betik = meson --prefix=/usr --libexecdir=lib -Dbuildtype=release ..
-betik 	= ninja 
+tip 	= meson 
 	      
 [pakur]
-betik = cd build
-betik = DESTDIR=$PKG ninja install
+tip 	= meson 
