@@ -6,10 +6,10 @@ url     = https://wiki.gnome.org/Apps/Web
 
 [gerek]
 derleme = docbook-xml startup-notification lsb-release gobject-introspection yelp-tools appstream-glib meson
-calisma = webkit2gtk gcr icu libdazzle libhandy
+calisma = webkitgtk gcr icu libdazzle libhandy
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum:0:4}
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/40
 
 [sha1]
 1 		= 
