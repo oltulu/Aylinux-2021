@@ -9,7 +9,7 @@ derleme = vala gobject-introspection meson
 calisma = 
 
 [kaynak]
-xz      = http://ftp.gnome.org/pub/gnome/sources/gedit/${surum%.*}
+xz      = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 [sha1]
 1 		= 
 
