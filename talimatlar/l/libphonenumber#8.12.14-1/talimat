@@ -6,7 +6,7 @@ url     = https://github.com/googlei18n/libphonenumber
 
 [gerek]
 derleme = protobuf boost gtest jre
-calisma = boost 
+calisma = boost protobuf
 
 [kaynak]
 git      = https://github.com/googlei18n/libphonenumber
