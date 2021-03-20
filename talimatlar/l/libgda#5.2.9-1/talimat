@@ -5,7 +5,7 @@ grup    = sistem
 url     = http://www.gnome-db.org
 
 [gerek]
-derleme = glib itstool libgee iso-codes glade gobject-introspection gtk3 libxml2 libxslt openssl libgcrypt sqlite db libsoup libsecret gnome-keyring gtksourceview graphviz json-glib readline recode mariadb vala postgresql openjdk8
+derleme = glib itstool libgee iso-codes glade gobject-introspection gtk3 libxml2 libxslt openssl libgcrypt sqlite db libsoup libsecret gnome-keyring gtksourceview graphviz json-glib readline recode mariadb vala postgresql
 calisma =
 
 [kaynak]
