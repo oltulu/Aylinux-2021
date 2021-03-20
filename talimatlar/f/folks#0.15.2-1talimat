@@ -9,7 +9,7 @@ derleme = meson
 calisma = 
 
 [kaynak]
-xz      = ${GNOME_SITE}/$isim/${surum%.*}
+xz      = ${GNOME_SITE}/$isim/0.15
 
 [sha256]
 #1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
