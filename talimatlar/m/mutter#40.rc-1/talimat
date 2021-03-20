@@ -6,7 +6,7 @@ url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 
 [gerek]
 derleme = gnome-settings-daemon gsettings-desktop-schemas graphene
-calisma =  gnome-desktop pipewire libcanberra
+calisma =  gnome-desktop pipewire libcanberra pipewire
 
 [kaynak]
 #xz      = https://download.gnome.org/sources/$isim/40
