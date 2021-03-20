@@ -5,8 +5,8 @@ grup    = kütüphane
 url     = https://github.com/hughsie/libgusb
 
 [gerek]
-derleme    = meson glib libusb libgudev usbutils gobject-introspection
-calisma    =
+derleme    = meson glib libusb libgudev usbutils gobject-introspection python-setuptools
+calisma    = libusb
 
 [kaynak]
 xz         = http://people.freedesktop.org/~hughsient/releases
