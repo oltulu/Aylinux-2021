@@ -6,7 +6,7 @@ url     = https://github.com/PipeWire/pipewire
 
 [gerek]
 derleme = bluez
-calisma =  bluez
+calisma =  bluez sbc libsndfile
 
 [kaynak]
 git      = https://github.com/PipeWire/pipewire
