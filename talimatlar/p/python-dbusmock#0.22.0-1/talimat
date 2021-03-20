@@ -15,7 +15,7 @@ gz      = https://github.com/martinpitt/python-dbusmock/releases/download/$surum
 #1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
 
 [derle]
-tip     = pyt3
+tip     = py3
 
 [pakur]
-tip     = pyt3
+tip     = py3
