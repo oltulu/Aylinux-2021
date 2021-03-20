@@ -23,4 +23,10 @@ betik   = cmake --build build
 [pakur]
 betik   = cd $SRC
 betik   = DESTDIR="$PKG" cmake --install build
-betik = cp $PKG/usr/lib/$isim/* $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/libedbus-private.so $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/libedbus-private.so $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/addressbook-backends/* $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/calendar-backends/* $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/camel-providers/* $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/credential-modules/* $PKG/usr/lib/
+betik = cp $PKG/usr/lib/$isim/registry-modules/* $PKG/usr/lib/
