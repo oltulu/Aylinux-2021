@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/GnomeBluetooth
 
 [gerek]
 derleme = meson  bluez eudev libcanberra bluez gvfs gobject-introspection glib libxi gtk3 libnotify dconf
-calisma =
+calisma = libcanberra libnotify
 
 [kaynak]
 xz      = ${GNOME_SITE}/${isim}/${surum%.*}
