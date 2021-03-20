@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 
 [gerek]
-derleme = gnome-settings-daemon gsettings-desktop-schemas graphene
+derleme = gnome-settings-daemon gsettings-desktop-schemas graphene egl-wayland sysprof
 calisma =  gnome-desktop pipewire libcanberra pipewire
 
 [kaynak]
