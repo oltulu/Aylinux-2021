@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://github.com/dosfstools/dosfstools
 
 [kaynak]
-1       = https://github.com/$isim/$isim/releases/download/v$surum/${isim}-${surum}.tar.xz
+1       = https://github.com/$isim/$isim/releases/download/v$surum/${isim}-${surum}.tar.gz
 
 [sha256]
 #1       = e6b2aca70ccc3fe3687365009dd94a2e18e82b688ed4e260e04b7412471cc173
