@@ -16,6 +16,7 @@ xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
     #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
+betik = sed -i '/gdm/d' configure
 betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
 ekconf = --disable-schemas-compile ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
 tip = gnu
