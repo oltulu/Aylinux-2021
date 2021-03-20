@@ -5,7 +5,7 @@ grup    = medya
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson libmediaart grilo
+derleme = meson libmediaart grilo grilo-plugins
 calisma = 
 
 [kaynak]
