@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/libgxps
 
 [gerek]
 derleme = meson cairo glib libjpeg-turbo libpng tiff lcms2 libarchive freetype gobject-introspection
-calisma =
+calisma = lcms2
 
 [kaynak]
 xz      = ${GNOME_SITE}/${isim}/${surum%.*}
