@@ -19,12 +19,9 @@ gz     = https://www.samba.org/samba/ftp/stable
 
 [derle]
 dosya = derle.sh
-#betik  = sed -r 's/nss_(setpw|endpw|setgr|endgr)ent/my_&/' -i nsswitch/nsstest.c
-#betik  = echo "^samba4.rpc.echo.*on.*ncacn_np.*with.*object.*nt4_dc" >> selftest/knownfail
-#betik  = CFLAGS+=" -I/usr/include/tirpc" LDFLAGS+=" -ltirpc"  ./configure  --prefix=/usr --sysconfdir=/etc --localstatedir=/var --with-piddir=/run/samba --with-pammodulesdir=/lib/security --without-ad-dc --enable-fhs --bundled-libraries=!tdb --enable-selftest
-#betik  = make
+
 
 [pakur]
 betik  = make DESTDIR=$PKG install
 betik  = install -v -m644 examples/smb.conf.default $PKG/etc/samba/smb.conf.default
-
+servis = samba
