@@ -15,7 +15,7 @@ git      = https://github.com/PipeWire/pipewire
 1 		= 
 
 [derle]
-betik = mv pipewire pipewire-#surum
+betik = mv pipewire pipewire-$surum
 dosya = derle.sh
 
     	      
