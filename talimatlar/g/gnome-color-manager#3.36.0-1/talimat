@@ -9,7 +9,7 @@ xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [gerek]
 derleme = meson vala libsoup libgee gtksourceview4 colord
-calisma = 
+calisma = colord lcms2
 
     [sha1]
 #1 		= SKIP
