@@ -6,7 +6,7 @@ url     = https://tug.org/texlive/
 
 [gerek]
 derleme = zziplib poppler potrace t1lib pixman mpfr clisp cairo graphite2 libpaper libsigsegv libpng libjpeg-turbo freetype texinfo gmp ffcall
-calisma = zziplib ffcall libsigsegv
+calisma = zziplib ffcall libsigsegv libpaper
 
 [kaynak]
 git      = https://github.com/Tex-Live/texlive-source
