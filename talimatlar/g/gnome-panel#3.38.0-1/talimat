@@ -9,13 +9,15 @@ derleme = gnome-desktop gnome-menus gdm
 calisma = gnome-menus libwnck 
 
 [kaynak]
-xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+#xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+git = https://gitlab.gnome.org/GNOME/gnome-panel
 1= https://github.com/void-linux/void-packages/raw/master/srcpkgs/gnome-panel/patches/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch
 
 [sha256]
     #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
+betik = cd $isim
 betik = sed -i '/gdm/d' configure
 betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
 ekconf = --disable-schemas-compile ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
@@ -23,4 +25,5 @@ tip = gnu
 #betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
 [pakur]
+betik = cd $isim
 tip = gnu
