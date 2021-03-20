@@ -18,6 +18,7 @@ git = https://gitlab.gnome.org/GNOME/gnome-panel
 
 [derle]
 betik = cd $isim
+betik = NOCONFIGURE=1 ./autogen.sh
 betik = sed -i '/gdm/d' configure
 betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
 ekconf = --disable-schemas-compile ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
