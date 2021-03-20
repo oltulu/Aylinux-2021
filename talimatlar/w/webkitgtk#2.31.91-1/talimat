@@ -5,7 +5,7 @@ grup    = ağ
 url     = https://webkitgtk.org
 
 [gerek]
-derleme    = ninja gperf gobject-introspection ruby cmake python geoclue enchant gst-plugins-base libxslt libsecret libwebp libmanette vala openjpeg2 harfbuzz gtk3 libnotify hyphen woff2 libwpe wpebackend-fdo bubblewrap gst-plugins-others libseccomp xdg-dbus-proxy
+derleme    = ninja gperf gobject-introspection ruby cmake python geoclue enchant gst-plugins-base libxslt libsecret libwebp libmanette openjpeg2 harfbuzz gtk3 libnotify hyphen woff2 libwpe wpebackend-fdo bubblewrap gst-plugins-others libseccomp xdg-dbus-proxy
 calisma    = libxslt libsecret woff2 libwpe wpebackend-fdo hyphen libsoup gst-plugins-base
 
 
