@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson 
+derleme = meson python-dbusmock
 calisma = 
 
 [kaynak]
