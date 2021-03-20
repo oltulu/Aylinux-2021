@@ -6,7 +6,7 @@ url     = http://www.gnome.org
 
 [gerek]
 derleme = yelp-tools vala gobject-introspection meson tepl
-calisma = gtksourceview4 gsettings-desktop-schemas libpeas gspell python-gobject dconf
+calisma = gtksourceview4 gsettings-desktop-schemas libpeas gspell python-gobject dconf tepl amtk
 
 [kaynak]
 xz      = http://ftp.gnome.org/pub/gnome/sources/gedit/${surum%.*}
