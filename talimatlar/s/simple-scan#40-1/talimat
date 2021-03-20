@@ -4,8 +4,9 @@ paketci = Cihan_Alkan
 grup    = gnome
 url     = https://gitlab.gnome.org/GNOME/simple-scan
 
-derleme = itstool meson
-calisma = 
+[gerek]
+derleme = itstool meson libgusb vala
+calisma = libgusb
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
