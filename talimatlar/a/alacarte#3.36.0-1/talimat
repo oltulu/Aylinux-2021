@@ -19,3 +19,5 @@ tip     = gnu
 
 [pakur]
 tip     = gnu
+betik = python -m compileall -d /usr "$PKG/usr"
+betik = python -O -m compileall -d /usr "$PKG/usr"
