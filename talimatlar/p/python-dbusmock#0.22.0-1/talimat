@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = python-setuptools
-calisma = 
+calisma = python-dbus python-gobject
 
 [kaynak]
 gz      = https://github.com/martinpitt/python-dbusmock/releases/download/$surum
