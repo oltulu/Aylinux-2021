@@ -9,7 +9,8 @@ derleme = gnome-settings-daemon gsettings-desktop-schemas graphene
 calisma =  gnome-desktop pipewire 
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/40
+#xz      = https://download.gnome.org/sources/$isim/40
+git = https://gitlab.gnome.org/GNOME/mutter
 1= https://github.com/venomlinux/ports/raw/master/testing/mutter/0001-fix-libglvnd-support.patch
 2= https://github.com/venomlinux/ports/raw/master/testing/mutter/drm.patch
 
@@ -17,6 +18,7 @@ xz      = https://download.gnome.org/sources/$isim/40
 1 		= 
 
 [derle]
+betik = mutter mutter-$surum
 #betik = patch -Np1 -i /sources/0001-fix-libglvnd-support.patch
 #betik = patch -Np1 -i /sources/drm.patch
 ekconf = -Dnative_backend=false -Dtests=false  -D wayland_eglstream=true -D egl_device=true -Dxwayland_initfd=disabled
@@ -25,4 +27,5 @@ tip = meson
 
     	      
 [pakur]
+betik = cd $SRC
 tip = meson
