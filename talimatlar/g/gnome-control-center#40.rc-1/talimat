@@ -20,7 +20,7 @@ xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-control-center/${surum%.*}
 #betik = patch -Np1 -i /sources/0001-restore-consolekit-support.patch
 #betik = mkdir build
 #betik = cd build
-ekconf = -Dsystemd=false -Ddocumentation=false
+ekconf = -Ddocumentation=false -Dtests=false
 tip = meson
 
         	      
