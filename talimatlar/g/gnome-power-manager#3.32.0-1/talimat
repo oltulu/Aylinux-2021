@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme = 
-calisma =  
+calisma = upower
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
