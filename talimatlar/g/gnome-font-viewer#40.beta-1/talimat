@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson folks
+derleme = meson
 calisma = 
 
 [kaynak]
@@ -15,7 +15,6 @@ xz      = ${GNOME_SITE}/$isim/${surum%.*}
 #1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
 
 [derle]
-#40.beta-1/talimatekconf = -Dmanpage=false
 tip     = meson
 
 [pakur]
