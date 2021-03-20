@@ -15,10 +15,10 @@ git      = https://github.com/PipeWire/pipewire
 1 		= 
 
 [derle]
-betik = mv $isim $isim-$surum
-ekconf = -D docs=false -D jack=false -D udevrulesdir=/usr/lib/udev/rules.d
-tip = meson
+betik = mv pipewire pipewire-#surum
+dosya = derle.sh
 
     	      
 [pakur]
+betik = cd $SRC
 tip = meson
