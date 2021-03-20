@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = meson gtk3 faac gst-plugins-others pulseaudio python-gobject x264 gst-rtsp-server networkmanager 
-calisma = gst-rtsp-server
+calisma = gst-rtsp-server gst-plugins-good
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
