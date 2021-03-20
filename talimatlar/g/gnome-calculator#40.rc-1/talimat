@@ -10,7 +10,7 @@ xz  = http://ftp.gnome.org/pub/gnome/sources/gnome-calculator/${surum%.*}
 
 [gerek]
 derleme = meson vala libsoup libgee gtksourceview4 libhandy
-calisma = 
+calisma = libsoup libgee 
 
 [sha1]
             #1 		= SKIP
