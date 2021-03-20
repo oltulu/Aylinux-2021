@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/Gtranslator
 
 [gerek]
 derleme = meson cmake glib itstool glib libsoup gsettings-desktop-schemas gtk3 gspell libxml2 json-glib gtksourceview4 libdazzle libgda
-calisma =
+calisma = libgda
 
 [kaynak]
 xz      = ${GNOME_SITE}/gtranslator/${surum%.*}
