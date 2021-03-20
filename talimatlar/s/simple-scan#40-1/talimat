@@ -5,7 +5,7 @@ grup    = gnome
 url     = https://gitlab.gnome.org/GNOME/simple-scan
 
 [kaynak]
-xz   = http://ftp.gnome.org/pub/gnome/sources/gnome-screenshot/${surum%.*}
+xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
 
 [sha1]
             #1 		= SKIP
