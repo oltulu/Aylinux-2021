@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme = gnome-desktop gnome-menus gdm
-calisma = gnome-menus gdm 
+calisma = gnome-menus libwnck 
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
