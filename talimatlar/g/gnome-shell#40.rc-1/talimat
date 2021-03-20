@@ -10,15 +10,16 @@ calisma =
 #asciidoc
 
 [kaynak]
-xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
+#xz = http://ftp.gnome.org/pub/gnome/sources/gnome-shell/${surum%.*}
 #git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
+git = https://gitlab.gnome.org/GNOME/gnome-shell
 #1 = https://github.com/venomlinux/ports/raw/master/testing/gnome-shell/0001-restore-consolekit-support.patch
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
-#betik = cd gnome-shell-$surum
+betik = cd gnome-shell gnome-shell-$surum
 #betik = git submodule init
 #betik = git submodule set-url subprojects/gvc "$SRC/libgnome-volume-control"
 #betik = git submodule update
