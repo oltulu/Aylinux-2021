@@ -1,0 +1,29 @@
+[paket]
+tanim    = Kök belirleme algoritmaları oluşturmak için dize işleme dili
+paketci  = Cihan_Alkan 
+grup     = geliştirme
+url      = https://snowballstem.org/
+
+[gerek]
+derleme  = 
+calisma  =  
+
+[kaynak]
+1       = https://ftp5.gwdg.de/pub/linux/archlinux/extra/os/x86_64/libstemmer-0+713-2-x86_64.pkg.tar.zst
+
+[sha256]
+#1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+
+[derle]
+betik = cd snowball
+betik   = patch -Np1 -i /sources/dynamiclib.patch
+betik   = make
+betik   = install -d "$PKG/usr/bin"
+betik   = install -t "$PKG/usr/bin" snowball stemwords
+
+[pakur]
+betik = cd snowball
+betik   = install -Dm644 {.,"$PKG"/usr}/include/libstemmer.h
+betik   = install -D {.,"$PKG"/usr/lib}/libstemmer.so.0.0.0
+betik   = ln -s libstemmer.so.0.0.0 "$PKG/usr/lib/libstemmer.so.0"
+betik   = ln -s libstemmer.so.0 "$PKG/usr/lib/libstemmer.so"
