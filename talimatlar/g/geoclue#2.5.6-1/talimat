@@ -6,7 +6,7 @@ url     = https://gitlab.freedesktop.org/geoclue/geoclue/wikis/home
 
 [gerek]
 derleme    = meson cmake libsoup glib modemmanager avahi json-glib libnotify gobject-introspection
-calisma    =
+calisma    = json-glib 
 
 [kaynak]
 bz2        = https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/${surum}
