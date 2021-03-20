@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson folks
+derleme = meson
 calisma = 
 
 [kaynak]
