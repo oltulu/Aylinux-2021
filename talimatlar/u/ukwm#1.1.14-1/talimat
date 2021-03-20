@@ -10,7 +10,7 @@ calisma =
 
 [kaynak]
 #git      = https://github.com/ukui/ukwm
-1 = https://github.com/ukui/ukwm/archive/v1.1.14.tar.gz
+1 = https://github.com/ukui/ukwm/archive/v1.1.14.tar.gz::$isim-$surum.tar.gz
 1= https://github.com/archlinux/svntogit-community/raw/packages/ukwm/trunk/0001-Fix-building-with-libglvnd-1.2.0.patch
 
 [sha512]
