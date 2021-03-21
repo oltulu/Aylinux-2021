@@ -23,3 +23,8 @@ tip = meson
     	      
 [pakur]
 tip = meson
+betik = mkdir -p $PKG/usr/lib/udev/rules.d
+betik = mv $PKG/lib/udev/rules.d/90-pipewire-alsa.rules $PKG/usr/lib/udev/rules.d/90-pipewire-alsa.rules
+betik = rmdir $PKG/lib/udev/rules.d
+betik = rmdir $PKG/lib/udev
+betik = rmdir $PKG/lib
