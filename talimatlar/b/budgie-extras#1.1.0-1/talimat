@@ -1,0 +1,35 @@
+[paket]
+tanim  = Kullanıcı deneyimi için ek Budgie Desktop geliştirmeleri
+url    = https://github.com/solus-project/budgie-desktop
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = autoconf-archive gobject-introspection intltool meson sassc vala
+calisma = budgie-desktop
+
+[kaynak]
+git   = https://github.com/UbuntuBudgie/budgie-extra
+git   = https://github.com/UbuntuBudgie/QuickChar
+git   = https://github.com/UbuntuBudgie/applications-menu 
+git   = https://github.com/UbuntuBudgie/budgie-network-applet 
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik = mv $isim $isim-$surum
+betik = cd $isim-$surum
+betik = patch -Np1 -i /sources/desktop-override.patch
+betik = sed -i 's/exec gnome-session/exec gnome-session --builtin/' src/session/budgie-desktop.in
+betik = git submodule init
+betik = git config submodule.budgie-quickchar/quickchar.url "$srcdir"/QuickChar
+betik = git config submodule.budgie-applications-menu/applications-menu.url "$srcdir"/applications-menu
+betik = git config submodule.budgie-network-manager/budgie-network-applet.url "$srcdir"/budgie-network-applet
+betik = git submodule update
+ekconf = -D b_pie=false -D with-gtk-doc=false
+tip = meson
+	
+
+[pakur]
+tip = meson
