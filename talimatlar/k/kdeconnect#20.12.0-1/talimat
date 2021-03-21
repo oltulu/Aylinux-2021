@@ -6,7 +6,7 @@ url     = https://kde.org/applications/utilities/kcalc/
 
 [gerek]
 derleme = extra-cmake-modules qca qt5-multimedia kirigami2 kpeople
-calisma =  
+calisma = qca
 
 [kaynak]
 1      = https://download.kde.org/stable/release-service/$surum/src/$isim-kde-$surum.tar.xz
