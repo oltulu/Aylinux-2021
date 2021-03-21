@@ -17,7 +17,7 @@ git      = https://github.com/PipeWire/pipewire
 [derle]
 betik = mv pipewire pipewire-$surum
 betik = cd pipewire-$surum
-ekconf =  -D docs=disabled  -D tests=disabled -D systemd=disabled -D bluez5-codec-ldac=disabled -D bluez5-codec-aptx=disabled  -D bluez5-codec-aac=disabled
+ekconf =  -D docs=disabled  -D tests=disabled -D systemd=disabled -D bluez5-codec-ldac=disabled -D libcamera=disabled -D bluez5-codec-aptx=disabled  -D bluez5-codec-aac=disabled
 tip = meson
 
     	      
