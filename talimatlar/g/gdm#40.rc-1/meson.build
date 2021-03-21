@@ -21,6 +21,7 @@ udev_dir = get_option('udev-dir')
 at_spi_registryd_dir = (get_option('at-spi-registryd-dir') != '')? get_option('at-spi-registryd-dir') : gdm_prefix / get_option('libexecdir')
 lang_config_file = (get_option('lang-file') != '')? get_option('lang-file') : gdm_prefix / get_option('sysconfdir') / 'locale.conf'
 pam_mod_dir = (get_option('pam-mod-dir') != '')? get_option('pam-mod-dir') : gdm_prefix / get_option('libdir') / 'security'
+dbus_sys_dir = (get_option('dbus-sys') != '')? get_option('dbus-sys') : get_option('sysconfdir') / 'dbus-1' / 'system.d'
 gdm_defaults_conf = (get_option('defaults-conf') != '')? get_option('defaults-conf') : gdm_prefix / get_option('datadir') / 'gdm' / 'defaults.conf'
 gdm_custom_conf = (get_option('custom-conf') != '')? get_option('custom-conf') : gdmconfdir / 'custom.conf'
 gnome_settings_daemon_dir = (get_option('gnome-settings-daemon-dir') != '')? get_option('gnome-settings-daemon-dir') : gdm_prefix / get_option('libexecdir')
@@ -264,7 +265,7 @@ summary({
     'libdir': gdm_prefix / get_option('libdir'),
     'libexecdir': gdm_prefix / get_option('libexecdir'),
     'logdir': get_option('log-dir'),
-#    'System DBus': dbus_sys_dir,
+    'System DBus': dbus_sys_dir,
     'DM conf': dmconfdir,
     'GDM conf': gdmconfdir,
     'GDM Screenshot ': gdm_screenshot_dir,
