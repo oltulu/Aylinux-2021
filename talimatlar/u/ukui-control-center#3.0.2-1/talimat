@@ -23,3 +23,4 @@ betik 	= make
 betik 	= cd ukui-control-center
 betik 	= make INSTALL_ROOT="$PKG" install
 betik = mv $PKG/lib/* $PKG/usr/lib/
+betik = rmdir $PKG/lib
