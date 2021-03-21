@@ -9,9 +9,6 @@ index a83e7f0cb..a88337ffd 100644
  
 #include "gpab-screensaver-gen.h"
 
-@@ -253,32 +252,6 @@ get_label_if_file (GFile *file)
-   return get_file_display_name (file, TRUE);
- }
  
 -  stdout_fd = sd_journal_stream_fd (id, LOG_INFO, FALSE);
 -  if (stdout_fd >= 0)
