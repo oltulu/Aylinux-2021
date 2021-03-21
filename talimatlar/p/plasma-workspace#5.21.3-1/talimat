@@ -5,7 +5,7 @@ grup 	= kde
 url     = https://kde.org/plasma-desktop/
 
 [gerek]
-derleme = extra-cmake-modules
+derleme = extra-cmake-modules plasma-wayland-protocols
 calisma = phonon-qt5 kactivities-stats kactivitymanagerd kdelibs4support kholidays knotifyconfig kpeople kquickcharts ktexteditor kuserfeedback kwin kjs networkmanager-qt libkscreen libksysguard libqalculate milou plasma-integration prison pipewire
 
 [kaynak]
