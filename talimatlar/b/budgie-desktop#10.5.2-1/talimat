@@ -7,12 +7,12 @@ grup   = gnome
 [gerek]
 derleme = autoconf-archive gobject-introspection intltool meson sassc vala
 calisma = libcanberra accountsservice
-desktop-override.patch
+
 
 [kaynak]
 git   = https://github.com/budgie-desktop/budgie-desktop
 git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
-
+1=https://github.com/archlinux/svntogit-community/raw/packages/budgie-desktop/trunk/desktop-override.patch
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
