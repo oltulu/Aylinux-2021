@@ -21,7 +21,6 @@ udev_dir = get_option('udev-dir')
 at_spi_registryd_dir = (get_option('at-spi-registryd-dir') != '')? get_option('at-spi-registryd-dir') : gdm_prefix / get_option('libexecdir')
 lang_config_file = (get_option('lang-file') != '')? get_option('lang-file') : gdm_prefix / get_option('sysconfdir') / 'locale.conf'
 pam_mod_dir = (get_option('pam-mod-dir') != '')? get_option('pam-mod-dir') : gdm_prefix / get_option('libdir') / 'security'
-dbus_sys_dir = (get_option('dbus-sys') != '')? get_option('dbus-sys') : get_option('sysconfdir') / 'dbus-1' / 'system.d'
 gdm_defaults_conf = (get_option('defaults-conf') != '')? get_option('defaults-conf') : gdm_prefix / get_option('datadir') / 'gdm' / 'defaults.conf'
 gdm_custom_conf = (get_option('custom-conf') != '')? get_option('custom-conf') : gdmconfdir / 'custom.conf'
 gnome_settings_daemon_dir = (get_option('gnome-settings-daemon-dir') != '')? get_option('gnome-settings-daemon-dir') : gdm_prefix / get_option('libexecdir')
@@ -210,7 +209,6 @@ conf.set('HAVE_KEYUTILS', keyutils_dep.found())
 conf.set('SUPPORTS_PAM_EXTENSIONS', pam_extensions_supported)
 conf.set('HAVE_SELINUX', libselinux_dep.found())
 conf.set('ENABLE_USER_DISPLAY_SERVER', get_option('user-display-server'))
-conf.set('ENABLE_SYSTEMD_JOURNAL', get_option('systemd-journal'))
 conf.set('ENABLE_WAYLAND_SUPPORT', get_option('wayland-support'))
 conf.set('ENABLE_PROFILING', get_option('profiling'))
 conf.set('GDM_INITIAL_VT', get_option('initial-vt'))
@@ -298,7 +296,6 @@ summary({
     'SeLinux': libselinux_dep.found(),
     'Use GDM Xsession': get_option('gdm-xsession'),
     'Use UserDisplayServer': get_option('user-display-server'),
-    'Use SystemdJournal': get_option('systemd-journal'),
     'Use WaylandSupport': get_option('wayland-support'),
     'Use Profiling': get_option('profiling'),
     'Initial VT': get_option('initial-vt'),
