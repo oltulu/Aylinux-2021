@@ -12,11 +12,14 @@ calisma = libcanberra accountsservice
 xz   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}
 1 = https://github.com/void-linux/void-packages/blob/master/srcpkgs/gdm/patches/take-out-the-trash.patch
 #2 = https://gitea.artixlinux.org/artixlinux/packages-gnome/src/branch/master/gdm/x86_64/extra/0003-enable-elogind-build.patch
+dosya = meson.build
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
+betik = rm meson.build
+betik = cp $SRC/meson.build ./
 #betik = sed -i 's@systemd@elogind@' data/pam-lfs/gdm-launch-environment.pam
 #betik = sed -i 's@-session@session @' data/pam-lfs/gdm-launch-environment.pam
 betik = patch -Np1 -i /sources/take-out-the-trash.patch
