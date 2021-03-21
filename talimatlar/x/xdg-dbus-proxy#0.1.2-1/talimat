@@ -6,7 +6,7 @@ url     = https://github.com/flatpak/xdg-dbus-proxy
 
 [gerek]
 derleme    = glib
-calisma    =
+calisma    = libsoup
 
 [kaynak]
 xz         = ${url}/releases/download/${surum}
