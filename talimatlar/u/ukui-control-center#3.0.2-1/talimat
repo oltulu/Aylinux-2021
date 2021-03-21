@@ -16,9 +16,10 @@ git      = https://github.com/ukui/ukui-control-center
 
 [derle]
 betik 	= cd ukui-control-center
-betik 	= qmake-qt5 PREFIX=/usr --libdir=/usr/lib
+betik 	= qmake-qt5 PREFIX=/usr 
 betik 	= make
     	      
 [pakur]
 betik 	= cd ukui-control-center
 betik 	= make INSTALL_ROOT="$PKG" install
+betik = mv $PKG/lib/* $PKG/usr/lib/
