@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://gitlab.gnome.org/GNOME/gnome-desktop
 
 [gerek]
-derleme = meson
+derleme = meson retro-gtk
 calisma =  
 
 [kaynak]
