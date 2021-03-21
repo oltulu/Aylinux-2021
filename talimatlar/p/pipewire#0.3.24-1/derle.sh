@@ -6,11 +6,3 @@ cd $SRC
   [[ -e /usr/include/pulse/glib-mainloop.h ]] || PKGMK_PW+=' -Dpipewire-pulseaudio=disabled'
   [[ -e /usr/lib/pkgconfig/gstreamer-1.0.pc ]] || PKGMK_PW+=' -Dgstreamer=disabled'
 
-  milis-meson setup $isim-$surum build $PKGMK_PW \
-    -D prefix=/usr \
-    --buildtype=plain \
-    -D docs=disabled \
-    -D tests=disabled
- 
-
-  meson compile -C build
