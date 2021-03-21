@@ -16,9 +16,10 @@ git      = https://github.com/PipeWire/pipewire
 
 [derle]
 betik = mv pipewire pipewire-$surum
-dosya = derle.sh
+betik = cd pipewire-$surum
+ekconf =  -D docs=disabled  -D tests=disabled
+tip = meson
 
     	      
 [pakur]
-betik = cd $SRC
 tip = meson
