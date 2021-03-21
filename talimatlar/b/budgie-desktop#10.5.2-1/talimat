@@ -25,7 +25,7 @@ betik = sed -i 's/exec gnome-session/exec gnome-session --builtin/' src/session/
 betik = git submodule init
 betik = git submodule set-url subprojects/gvc "$SRC/libgnome-volume-control"
 betik = git submodule update
-ekconf = -D with-desktop-icons=none
+ekconf = -D with-desktop-icons=none -D with-gtk-doc=false
 tip = meson
 	
 
