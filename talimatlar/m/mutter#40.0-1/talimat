@@ -19,7 +19,7 @@ git = https://gitlab.gnome.org/GNOME/mutter
 
 [derle]
 betik = mv mutter mutter-$surum
-ekconf = -Dnative_backend=false -Dtests=false  -D wayland_eglstream=true -D egl_device=true -Dxwayland_initfd=disabled -Dintrospection=false -Dnative_backend=false
+ekconf = -Dnative_backend=false -Dtests=false -D wayland=false -D wayland_eglstream=true -D egl_device=true -Dxwayland_initfd=disabled -Dintrospection=false -Dnative_backend=false
 tip = meson
 
     	      
