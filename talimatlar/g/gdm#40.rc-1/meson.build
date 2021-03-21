@@ -264,7 +264,7 @@ summary({
     'libdir': gdm_prefix / get_option('libdir'),
     'libexecdir': gdm_prefix / get_option('libexecdir'),
     'logdir': get_option('log-dir'),
-    'System DBus': dbus_sys_dir,
+#    'System DBus': dbus_sys_dir,
     'DM conf': dmconfdir,
     'GDM conf': gdmconfdir,
     'GDM Screenshot ': gdm_screenshot_dir,
