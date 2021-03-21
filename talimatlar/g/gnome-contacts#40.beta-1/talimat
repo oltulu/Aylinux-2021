@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = meson folks
-calisma = folks evolution-data-server
+calisma = folks evolution-data-server  cheese dconf gnome-desktop gnome-online-accounts gtk3 libgee libhandy 
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
