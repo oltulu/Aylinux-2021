@@ -1,0 +1,29 @@
+index a83e7f0cb..a88337ffd 100644
+--- a/modules/action-button/gp-lock-screen-applet.c
++++ b/modules/action-button/gp-lock-screen-applet.c
+@@ -19,7 +19,6 @@
+ 
+#include <gio/gdesktopappinfo.h>
+#include <glib/gi18n-lib.h>
+-#include <systemd/sd-journal.h>
+ 
+#include "gpab-screensaver-gen.h"
+
+@@ -253,32 +252,6 @@ get_label_if_file (GFile *file)
+   return get_file_display_name (file, TRUE);
+ }
+ 
+-  stdout_fd = sd_journal_stream_fd (id, LOG_INFO, FALSE);
+-  if (stdout_fd >= 0)
+-    {
+-      dup2 (stdout_fd, STDOUT_FILENO);
+-      close (stdout_fd);
+-    }
+
+-  stderr_fd = sd_journal_stream_fd (id, LOG_WARNING, FALSE);
+-  if (stderr_fd >= 0)
+-    {
+-     dup2 (stderr_fd, STDERR_FILENO);
+-      close (stderr_fd);
+-    }
+ 
