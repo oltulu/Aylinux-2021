@@ -26,7 +26,6 @@ betik = rm  modules/action-button/gp-lock-screen-applet.c
 betik = cp "$SRC/gp-lock-screen-applet.c" modules/action-button/
 betik = rm  modules/launcher/gp-launcher-applet.c
 betik = cp "$SRC/gp-launcher-applet.c" modules/launcher/
-
 betik = sed -i '/gdm/d' configure
 betik = sed -i '/libsystemd/d' configure
 betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
