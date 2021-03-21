@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME Masaüstü için yazılım yöneticisi
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://ftp.gnome.org/pub/gnome/sources/gnome-calculator
+
+[kaynak]
+xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+
+
+[gerek]
+derleme = meson  
+calisma =  
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+tip = meson
+
+
+
+[pakur]
+tip = meson
