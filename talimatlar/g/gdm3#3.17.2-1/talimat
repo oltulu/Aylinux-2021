@@ -1,0 +1,24 @@
+[paket]
+tanim  = Grafiksel oturum açma bilgilerinin sağlanmasından ve yerel ve uzak ekranların yönetilmesinden sorumlu sistem hizmeti
+url    = http://ftp.gnome.org
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = 
+calisma = libcanberra accountsservice
+
+[kaynak]
+1   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}/gdm-$surum.tar.xz
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+
+betik = mv gdm-$surum gdm3-$surum
+tip = gnu
+	
+
+[pakur]
+tip = gnu
