@@ -16,7 +16,7 @@ git      = https://github.com/ukui/ukui-control-center
 
 [derle]
 betik 	= cd ukui-control-center
-betik 	= qmake-qt5 PREFIX=/usr
+betik 	= qmake-qt5 PREFIX=/usr -libdir /usr/lib
 betik 	= make
     	      
 [pakur]
