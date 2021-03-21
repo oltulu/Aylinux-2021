@@ -17,6 +17,7 @@ calisma = libcanberra accountsservice
 [derle]
 
 betik = mv gdm-$surum gdm3-$surum
+betik = cd gdm3-$surum
 tip = gnu
 	
 
