@@ -25,6 +25,5 @@ betik 	= make
 betik 	= cd build
 tip = gnu
 betik 	= install -Dm644 "$SRC"/kde.pam "$PKG"/etc/pam.d/kde
-Name[sk]=Plasma (X11)
 betik = sed -i 's/^Name\[sk\]=Plasma \(X11\)/Name\[tr\]=KDE-Plasma/' $PKG/usr/share/xsessions/plasma.desktop
 #betik 	= install -Dm644 login-sessions/plasmawayland.desktop "$PKG"/usr/share/wayland-sessions/plasmawayland.desktop
