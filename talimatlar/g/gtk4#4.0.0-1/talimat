@@ -5,7 +5,7 @@ grup 	= sistem
 url     = http://www.gtk.org/
 
 [gerek]
-derleme =  
+derleme = vulkan-headers meson ninja
 calisma =  
 
 [kaynak]
