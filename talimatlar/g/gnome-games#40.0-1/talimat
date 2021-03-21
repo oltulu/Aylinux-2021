@@ -1,0 +1,21 @@
+[paket]
+tanim   = Çeşitli GNOME modülleri için ortak API içeren kütüphane
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/gnome-desktop
+
+[gerek]
+derleme = meson
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/40
+
+[sha1]
+1 		= 
+
+[derle]
+tip 	= meson
+	      
+[pakur]
+tip 	= meson
