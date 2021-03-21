@@ -5,8 +5,8 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = gnome-desktop gnome-menus gdm gettext
-calisma = gnome-menus libwnck 
+derleme = gnome-desktop gnome-menus gdm3 gettext
+calisma = gnome-menus libwnck gdm3
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
