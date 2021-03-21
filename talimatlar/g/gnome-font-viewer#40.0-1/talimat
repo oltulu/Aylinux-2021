@@ -2,7 +2,7 @@
 tanim   = GNOME kişiler programı
 paketci = Cihan_Alkan
 grup    = geliştirme
-url     = https://wiki.gnome.org/Apps/contacts
+url     = https://wiki.gnome.org/Apps/gnome-font-viewer
 
 [gerek]
 derleme = meson
