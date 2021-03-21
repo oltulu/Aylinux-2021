@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = meson python-dbusmock
-calisma = 
+calisma = evolution-data-server
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/0.15
