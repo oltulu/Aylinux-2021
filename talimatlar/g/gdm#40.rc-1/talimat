@@ -21,7 +21,7 @@ xz   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}
 #betik = sed -i 's@-session@session @' data/pam-lfs/gdm-launch-environment.pam
 betik = patch -Np1 -i /sources/take-out-the-trash.patch
 #betik = patch -Np1 -i /sources/0003-enable-elogind-build.patch
-ekconf = -Ddefault-pam-config=arch -Dat-spi-registryd-dir=/usr/libexec -Dscreenshot-dir=/var/lib/gdm/greeter -Dplymouth=enabled -Dxauth-dir=/run/gdm -Dpid-file=/run/gdm/gdm.pid -Dsystemd-journal=false -Dinitial-vt=7 -Dwayland-support=false -Dselinux=disabled
+ekconf = -Ddefault-pam-config=arch -Dat-spi-registryd-dir=/usr/libexec -Dscreenshot-dir=/var/lib/gdm/greeter -Ddbus-sys=no -Dplymouth=enabled -Dxauth-dir=/run/gdm -Dpid-file=/run/gdm/gdm.pid -Dsystemd-journal=false -Dinitial-vt=7 -Dwayland-support=false -Dselinux=disabled
 tip = meson
 	
 
