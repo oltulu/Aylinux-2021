@@ -15,11 +15,7 @@ xz   = http://ftp.gnome.org/pub/gnome/sources/gnome-screenshot/${surum%.*}
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
-betik = mkdir build
-betik = cd build
-betik = meson --prefix=/usr ..
-betik = ninja
+tip = meson
 
 [pakur]
-betik = cd build
-betik = DESTDIR=$PKG ninja install
+tip = meson
