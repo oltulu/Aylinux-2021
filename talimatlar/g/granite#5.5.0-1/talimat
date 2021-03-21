@@ -1,0 +1,23 @@
+[paket]
+tanim   = Gtk + 'yı genişleten kitaplık
+paketci = Cihan_Alkan
+grup  	= kütüphane
+url     = https://kde.org/plasma-desktop/
+
+[gerek]
+derleme = meson ninja gobject-introspection vala
+calisma = cairo glib2 gtk3 libgee pango
+
+[kaynak]
+git      = https://github.com/elementary/granite
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mv $isim $isim-$surum
+ekconf 	=  -D b_pie=false
+tip 	= meson
+        	      
+[pakur]
+tip 	= meson
