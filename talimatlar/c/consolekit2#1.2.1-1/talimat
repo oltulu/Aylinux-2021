@@ -6,7 +6,7 @@ url     = http://consolekit2.github.io/ConsoleKit2
 
 [gerek]
 derleme    = glib polkit libx11 dbus
-calisma    =
+calisma    = polkit
 
 [kaynak]
 1          = https://github.com/ConsoleKit2/ConsoleKit2/releases/download/${surum}/ConsoleKit2-${surum}.tar.bz2::${isim}-${surum}.tar.bz2
