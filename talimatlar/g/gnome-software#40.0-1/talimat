@@ -16,7 +16,7 @@ calisma =
             #1 		= SKIP
 
 [derle]
-ekconf = -Dman=false -Dexternal_appstream=false -Dapt=false
+ekconf = -Dman=false -Dexternal_appstream=false -Dapt=false -Dgtk_doc=false
 tip = meson
 
 [pakur]
