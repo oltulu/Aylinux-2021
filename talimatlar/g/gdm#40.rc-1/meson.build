@@ -287,7 +287,6 @@ summary({
     'Udev rules': udev_dir,
     'XServer': x_bin,
     'XPath': x_path,
-    'Systemd XServer': systemd_x_server,
   },
   section: 'Paths',
 )
