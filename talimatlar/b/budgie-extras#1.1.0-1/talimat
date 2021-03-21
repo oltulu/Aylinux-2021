@@ -9,7 +9,7 @@ derleme = autoconf-archive gobject-introspection intltool meson sassc vala
 calisma = budgie-desktop
 
 [kaynak]
-git   = https://github.com/UbuntuBudgie/budgie-extra
+git   = https://github.com/UbuntuBudgie/budgie-extras
 git   = https://github.com/UbuntuBudgie/QuickChar
 git   = https://github.com/UbuntuBudgie/applications-menu 
 git   = https://github.com/UbuntuBudgie/budgie-network-applet 
@@ -20,8 +20,6 @@ git   = https://github.com/UbuntuBudgie/budgie-network-applet
 [derle]
 betik = mv $isim $isim-$surum
 betik = cd $isim-$surum
-betik = patch -Np1 -i /sources/desktop-override.patch
-betik = sed -i 's/exec gnome-session/exec gnome-session --builtin/' src/session/budgie-desktop.in
 betik = git submodule init
 betik = git config submodule.budgie-quickchar/quickchar.url "$srcdir"/QuickChar
 betik = git config submodule.budgie-applications-menu/applications-menu.url "$srcdir"/applications-menu
