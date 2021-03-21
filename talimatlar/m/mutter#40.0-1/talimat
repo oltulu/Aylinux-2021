@@ -9,8 +9,8 @@ derleme = gnome-settings-daemon gsettings-desktop-schemas graphene egl-wayland s
 calisma =  gnome-desktop pipewire libcanberra pipewire
 
 [kaynak]
-#xz      = https://download.gnome.org/sources/$isim/40
-git = https://gitlab.gnome.org/GNOME/mutter
+xz      = https://download.gnome.org/sources/$isim/40
+#git = https://gitlab.gnome.org/GNOME/mutter
 1= https://github.com/venomlinux/ports/raw/master/testing/mutter/0001-fix-libglvnd-support.patch
 2= https://github.com/venomlinux/ports/raw/master/testing/mutter/drm.patch
 
@@ -18,12 +18,12 @@ git = https://gitlab.gnome.org/GNOME/mutter
 1 		= 
 
 [derle]
-betik = mv mutter mutter-$surum
-ekconf = -Dnative_backend=false -Dtests=false -D wayland=false -D wayland_eglstream=true -D egl_device=true -Dxwayland_initfd=disabled -Dintrospection=false -Dnative_backend=false
+#betik = patch -Np1 -i /sources/0001-fix-libglvnd-support.patch
+#betik = patch -Np1 -i /sources/drm.patch
+ekconf = -Dnative_backend=false -Dtests=false -D wayland=false -D wayland_eglstream=true -D egl_device=false -Dxwayland_initfd=disabled -Dintrospection=false -Dnative_backend=false
 tip = meson
 
     	      
 [pakur]
-betik = cd $SRC
 tip = meson
 betik = cp $PKG/usr/lib/mutter-8/*.* $PKG/usr/lib/
