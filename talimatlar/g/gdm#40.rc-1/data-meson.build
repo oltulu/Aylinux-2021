@@ -188,7 +188,6 @@ configure_file(
     'requires_component': gdm_gnome_shell_component,
     'wants_required_components': '\n'.join(gdm_gnome_session_wanted_targets),
   },
-  install_dir: systemd_userunitdir / 'gnome-session@gnome-login.target.d',
 )
 
 # XSession
