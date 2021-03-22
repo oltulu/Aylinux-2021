@@ -9,16 +9,14 @@ derleme = vte3 dconf itstool meson ninja
 calisma =  
 
 [kaynak]
-git    =https://gitlab.gnome.org/GNOME/gnome-terminal
+xz      = ${GNOME_SITE}/$isim/${surum%.*}
 
 [sha256]
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-betik = mv gnome-terminal $isim-$surum
 ekconf = -D nautilus_extension=false  -D search_provider=false -D docs=false
 tip     = meson 
     	      
 [pakur]
-#betik = cd gnome-terminal-master
 tip     = meson
