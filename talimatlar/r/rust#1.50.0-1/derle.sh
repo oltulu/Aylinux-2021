@@ -1,5 +1,3 @@
- #cd "rustc-$surum-src"
-
   cat >config.toml <<END
 [llvm]
 link-shared = true
@@ -29,9 +27,8 @@ llvm-config = "/usr/bin/llvm-config"
 [target.x86_64-unknown-linux-musl]
 musl-root = "/usr/lib/musl"
 END
-
-export RUST_BACKTRACE=1
-  export RUST_COMPILER_RT_ROOT="$SRC/compiler-rt-11.0.0.src"
+ export RUST_BACKTRACE=1
+  export RUST_COMPILER_RT_ROOT="$srcdir/compiler-rt-$_llvm_ver.src"
 
   python ./x.py dist -j "$(nproc)"
   DESTDIR="$PWD"/dest-rust python ./x.py install -j "$(nproc)"
@@ -52,4 +49,3 @@ export RUST_BACKTRACE=1
   mv dest-rust/usr/lib/rustlib/i686-unknown-linux-gnu dest-i686
   mv dest-rust/usr/lib/rustlib/x86_64-unknown-linux-musl dest-musl
   mv dest-rust/usr/share/doc dest-doc
-  
