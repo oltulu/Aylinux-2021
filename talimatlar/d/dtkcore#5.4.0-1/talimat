@@ -4,6 +4,11 @@ paketci = Cihan_Alkan
 grup 	= deepin
 url     = https://github.com/linuxdeepin/dtkcore
 
+[gerek]
+derleme = 
+calisma = gsettings-qt
+
+
 [kaynak]
 1      = https://github.com/linuxdeepin/dtkcore/archive/$surum.tar.gz::$isim-$surum.tar.gz 
 
