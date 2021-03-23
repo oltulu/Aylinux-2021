@@ -6,7 +6,7 @@ url     = https://github.com/linuxdeepin/deepin-compressor
 
 [gerek]
 derleme = libzip  karchive kcodecs minizip
-calisma =  
+calisma = libzip minizip
 
 [kaynak]
 1    = https://github.com/linuxdeepin/deepin-compressor/archive/$surum.tar.gz::$isim-$surum.tar.gz
