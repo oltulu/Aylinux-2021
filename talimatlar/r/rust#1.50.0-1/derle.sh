@@ -1,4 +1,12 @@
-  cat >config.toml <<END
+cd "rustc-$surum-src"
+
+  # Use our *-pc-linux-gnu targets, making LTO with clang simpler
+  patch -Np1 -i ../0001-Change-LLVM-targets.patch
+
+  # Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
+  patch -Np1 -i ../libexec.diff
+
+cat >config.toml <<END
 [llvm]
 link-shared = true
 [build]
@@ -28,7 +36,7 @@ llvm-config = "/usr/bin/llvm-config"
 musl-root = "/usr/lib/musl"
 END
  export RUST_BACKTRACE=1
-  export RUST_COMPILER_RT_ROOT="$srcdir/compiler-rt-$_llvm_ver.src"
+  export RUST_COMPILER_RT_ROOT="$SRC/compiler-rt-$_llvm_ver.src"
 
   python ./x.py dist -j "$(nproc)"
   DESTDIR="$PWD"/dest-rust python ./x.py install -j "$(nproc)"
