@@ -1,0 +1,23 @@
+[paket]
+tanim   = Kamera görüntüleme, fotoğraf ve video çekme aracı
+paketci = Cihan_Alkan
+grup  	= deepin
+url     = https://github.com/linuxdeepin/deepin-camera
+
+[gerek]
+derleme = qt5-tools deepin-gettext-tools
+calisma =  
+
+[kaynak]
+1      = https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik = sed -i '/^CONFIG/a LIBS = -lpulse' libcam/libcam.pro
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install
