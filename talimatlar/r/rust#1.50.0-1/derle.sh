@@ -36,7 +36,7 @@ llvm-config = "/usr/bin/llvm-config"
 musl-root = "/usr/lib/musl"
 END
  export RUST_BACKTRACE=1
-  export RUST_COMPILER_RT_ROOT="$SRC/compiler-rt-$_llvm_ver.src"
+  export RUST_COMPILER_RT_ROOT="$SRC/compiler-rt-11.1.0.src"
 
   python ./x.py dist -j "$(nproc)"
   DESTDIR="$PWD"/dest-rust python ./x.py install -j "$(nproc)"
