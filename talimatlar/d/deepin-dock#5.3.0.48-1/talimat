@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/dde-dock
 
 [gerek]
-derleme =  
+derleme = deepin-network-utils
 calisma =  
 
 [kaynak]
