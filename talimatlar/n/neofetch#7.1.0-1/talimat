@@ -10,7 +10,7 @@ calisma =
 
 [kaynak]
 git    = https://github.com/dylanaraps/neofetch
-1 = https://notabug.org/oltulu/Ceviri/raw/master/neofetch
+1 = https://notabug.org/oltulu/Ceviri/raw/master/neofetch-tr
 
 [sha256]
 #1 		= 8cee391c49a102b4464f86fc40c4ceac3a2ada52a89c4c933d8348e3e4542a60
@@ -18,7 +18,7 @@ git    = https://github.com/dylanaraps/neofetch
 [derle]
 betik 	= cd "${isim}"
 betik = rm neofetch
-betik = cp /sources/neofetch ./
+betik = cp /sources/neofetch-tr ./neofetch
 	      
 [pakur]
 betik 	= cd "${isim}"
