@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/Tracker
 
 [gerek]
 derleme =  
-calisma = libstemmer
+calisma = libstemmer libcue
 
 [kaynak]
 git    = https://gitlab.gnome.org/GNOME/tracker-miners
