@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/dde-network-utils
 
 derleme = gtest
-calisma =  
+calisma =  deepin-qt-dbus-factory
 
 [kaynak]
 git      = https://github.com/linuxdeepin/dde-network-utils
