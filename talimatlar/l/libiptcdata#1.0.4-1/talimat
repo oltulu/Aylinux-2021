@@ -1,0 +1,21 @@
+[paket]
+tanim   = masaüstünden bağımsız kullanıcı bilgi deposu, arama aracı ve indeksleyici
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Projects/Tracker
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+gz   = https://downloads.sourceforge.net/sourceforge/libiptcdata
+
+[sha1]
+1 		= 
+
+[derle]
+tip = gnu
+
+[pakur]
+tip = gnu
