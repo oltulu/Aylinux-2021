@@ -4,6 +4,10 @@ paketci = Cihan_Alkan
 grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-terminal
 
+[gerek]
+derleme = lxqt-build-tools
+calisma =  
+
 [kaynak]
 1      = https://github.com/linuxdeepin/deepin-terminal/archive/$surum.tar.gz::$isim-$surum.tar.gz 
 #2     = https://github.com/archlinux/svntogit-community/raw/packages/deepin-terminal/trunk/remove-vendor.patch
