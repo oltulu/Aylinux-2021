@@ -4,7 +4,7 @@
   patch -Np1 -i /sources/0001-Change-LLVM-targets.patch
 
   # Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
-  patch -Np1 -i sources/libexec.diff
+  patch -Np1 -i /sources/libexec.diff
 
 cat >config.toml <<END
 [llvm]
