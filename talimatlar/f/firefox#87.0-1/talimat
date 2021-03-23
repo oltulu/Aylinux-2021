@@ -1,6 +1,6 @@
 [paket]
 tanim   = Mozilla Firefox web tarayıcısı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = ağ
 url     = https://www.mozilla.org/firefox/
 
@@ -15,8 +15,8 @@ dosya   = 0001-Use-remoting-name-for-GDK-application-names.patch
 dosya   = firefox.desktop
 
 [sha256]
-1       = 3b7b97b0b0625fc6ec23ee28d425988c679d3a56f362d62fd3b225a5d50afdc8
-3       = 5f7ac724a5c5afd9322b1e59006f4170ea5354ca1e0e60dab08b7784c2d8463c
+#1       = 3b7b97b0b0625fc6ec23ee28d425988c679d3a56f362d62fd3b225a5d50afdc8
+#3       = 5f7ac724a5c5afd9322b1e59006f4170ea5354ca1e0e60dab08b7784c2d8463c
 
 [derle]
 dosya   = derle.sh
