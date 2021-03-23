@@ -6,7 +6,7 @@ url     = https://community.kde.org/Frameworks
 
 [gerek]
 derleme = extra-cmake-modules libcanberra
-calisma = libcanberra
+calisma = libcanberra kcoreaddons kconfig kwindowsystem
 
 [kaynak]
 xz      = https://download.kde.org/stable/frameworks/${surum%.*}
