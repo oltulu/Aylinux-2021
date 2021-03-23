@@ -9,7 +9,7 @@ url     = https://github.com/linuxdeepin/dtkwidget
 
 [gerek]
 derleme = dtkcore dtkgui
-calisma = 
+calisma = dtkcore dtkgui
 
 [sha1]
 #1 		= SKIP
