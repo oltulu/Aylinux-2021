@@ -1,0 +1,24 @@
+[paket]
+tanim   = masaüstünden bağımsız kullanıcı bilgi deposu, arama aracı ve indeksleyici
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Projects/Tracker
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git    = https://git.gnome.org/browse/libgrss
+
+[sha1]
+1 		= 
+
+[derle]
+betik = mv libgrss $isim-$surum
+betik = cd $isim-$surum
+betik = NOCONFIGURE=1 ./autogen.sh
+tip = gnu
+
+[pakur]
+tip = gnu
