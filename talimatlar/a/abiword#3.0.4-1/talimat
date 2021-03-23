@@ -1,0 +1,23 @@
+[paket]
+tanim   = Tam özellikli kelime işlemci
+paketci = Cihan_Alkan
+grup    = ofis
+url     = https://wiki.gnome.org/Apps/contacts
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz      = https://www.abisource.com/downloads/$pkgname/$pkgver/source
+
+[sha256]
+#1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
+
+[derle]
+betik = ./configure --prefix=/usr --enable-shared --disable-static --enable-clipart --enable-templates --enable-plugins --enable-introspection
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+
+[pakur]
+betik = make DESTDIR="$PKG" install
