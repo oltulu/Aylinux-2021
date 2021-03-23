@@ -1,4 +1,4 @@
-cd "rustc-$surum-src"
+#cd "rustc-$surum-src"
 
   cp -a dest-rust/* "$PKG"
   # delete unnecesary files, e.g. components and manifest files only used for the uninstall script
