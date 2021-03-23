@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-album
 
 [gerek]
-derleme = extra-cmake-modules gio-qt udisks2-qt5
+derleme = extra-cmake-modules gio-qt udisks2-qt5 qt5-tools
 calisma = udisks2-qt5 gio-qt
 
 [kaynak]
