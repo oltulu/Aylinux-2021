@@ -5,7 +5,7 @@ grup    = ofis
 url     = https://sourceforge.net/projects/wvware
 
 [gerek]
-derleme = 
+derleme = libgfs
 calisma =  
 
 [kaynak]
