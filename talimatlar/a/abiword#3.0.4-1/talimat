@@ -5,8 +5,8 @@ grup    = ofis
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = 
-calisma = 
+derleme = wv
+calisma = wv
 
 [kaynak]
 gz      = https://www.abisource.com/downloads/$isim/$surum/source
