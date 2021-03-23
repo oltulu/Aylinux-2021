@@ -5,8 +5,8 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-album
 
 [gerek]
-derleme = extra-cmake-modules gio-qt udisks2-qt5 qt5-tools dtkwidget dtkgui
-calisma = udisks2-qt5 gio-qt
+derleme = extra-cmake-modules gio-qt udisks2-qt5 qt5-tools dtkwidget dtkgui freeimage
+calisma = udisks2-qt5 gio-qt freeimage
 
 [kaynak]
 1      = https://github.com/linuxdeepin/deepin-album/archive/$surum.tar.gz::$isim-$surum.tar.gz 
