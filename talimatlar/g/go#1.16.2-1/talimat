@@ -12,7 +12,7 @@ calisma  =
 1     = https://golang.org/dl/go${surum}.src.tar.gz
 
 [sha256]
-1     = aae5be954bdc40bcf8006eb77e8d8a5dde412722bc8effcdaf9772620d06420c
+#1     = aae5be954bdc40bcf8006eb77e8d8a5dde412722bc8effcdaf9772620d06420c
 
 [derle]
 betik = unset GCC CC CXX LD CFLAGS
