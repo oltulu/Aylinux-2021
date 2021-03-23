@@ -8,7 +8,7 @@ url     = https://github.com/kkos/oniguruma
 1       = https://github.com/kkos/oniguruma/releases/download/v${surum}/onig-${surum}.tar.gz
 
 [sha256]
-1       = ab5992a76b7ab2185b55f3aacc1b0df81132c947b3d594f82eb0b41cf219725f
+#1       = ab5992a76b7ab2185b55f3aacc1b0df81132c947b3d594f82eb0b41cf219725f
 
 [derle]
 betik   = cd onig-$surum
