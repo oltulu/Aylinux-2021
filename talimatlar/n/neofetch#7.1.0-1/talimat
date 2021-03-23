@@ -19,4 +19,4 @@ betik 	= cd "${isim}"
 	      
 [pakur]
 betik 	= cd "${isim}"
-betik 	= make DESTDIR="$pkgdir" install
+betik 	= make DESTDIR="$PKG" install
