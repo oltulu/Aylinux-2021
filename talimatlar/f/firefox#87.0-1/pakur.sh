@@ -19,14 +19,14 @@ install -Dm644 /tmp/zzz "$_vendorjs"
 
 cat > /tmp/zzz << "EOF"
 [Global]
-id=milislinux
+id=aylinux
 version=2.0
-about=Mozilla Firefox for Milis Linux
+about=Aylinux için Mozilla Firefox 
 
 [Preferences]
 app.distributor=milislinux
 app.distributor.channel=firefox
-app.partner.milislinux=milislinux
+app.partner.aylinux=aylinux
 EOF
 _distini="$PKG/usr/lib/$isim/distribution/distribution.ini"
 install -Dm644 /tmp/zzz "$_distini"
@@ -58,3 +58,5 @@ ln -srf "$PKG/usr/bin/firefox" "$PKG/usr/lib/$isim/firefox-bin"
 
 install -Dm644 $KAYNAK_DIZIN/firefox-tr-${surum}.xpi $PKG/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org.xpi
 
+	install -d $PKG/etc/revdep.d
+	echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
