@@ -5,7 +5,7 @@ grup  	= deepin
 url     = https://github.com/linuxdeepin/deepin-camera
 
 [gerek]
-derleme = qt5-tools deepin-gettext-tools
+derleme = qt5-tools deepin-gettext-tools portaudio
 calisma =  
 
 [kaynak]
