@@ -5,8 +5,8 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-anything
 
 [gerek]
-derleme = deepin-desktop-base
-calisma = deepin-desktop-base 
+derleme = deepin-desktop-base dtkcore
+calisma = deepin-desktop-base dtkcore
 
 [kaynak]
 1      = https://github.com/linuxdeepin/deepin-anything/archive/$surum.tar.gz::$isim-$surum.tar.gz 
