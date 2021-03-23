@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-compressor
 
 [gerek]
-derleme = libzip
+derleme = libzip  karchive kcodecs 
 calisma =  
 
 [kaynak]
