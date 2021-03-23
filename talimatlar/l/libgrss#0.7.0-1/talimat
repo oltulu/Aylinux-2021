@@ -9,15 +9,12 @@ derleme =
 calisma =  
 
 [kaynak]
-git    = https://git.gnome.org/browse/libgrss
+xz    =https://download.gnome.org/sources/$isim/${surum:0:3}
 
 [sha1]
 1 		= 
 
 [derle]
-betik = mv libgrss $isim-$surum
-betik = cd $isim-$surum
-betik = NOCONFIGURE=1 ./autogen.sh
 tip = gnu
 
 [pakur]
