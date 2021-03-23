@@ -5,7 +5,7 @@ grup 	= gnome
 url     = https://wiki.gnome.org/Projects/Tracker
 
 [gerek]
-derleme =  libcue libgsf libiptcdata
+derleme =  libcue libgsf libiptcdata libosinfo
 calisma = libstemmer libcue
 
 [kaynak]
