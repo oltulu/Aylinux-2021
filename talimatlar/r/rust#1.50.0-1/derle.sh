@@ -1,10 +1,10 @@
 cd "rustc-$surum-src"
 
   # Use our *-pc-linux-gnu targets, making LTO with clang simpler
-  patch -Np1 -i ../0001-Change-LLVM-targets.patch
+  patch -Np1 -i /sources/0001-Change-LLVM-targets.patch
 
   # Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
-  patch -Np1 -i ../libexec.diff
+  patch -Np1 -i sources/libexec.diff
 
 cat >config.toml <<END
 [llvm]
