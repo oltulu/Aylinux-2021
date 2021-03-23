@@ -10,12 +10,13 @@ calisma =
 
 [kaynak]
 1      = https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+2= https://github.com/archlinux/svntogit-community/blob/packages/deepin-clone/trunk/dtk5.patch
 
 [sha1]
         #1 		= SKIP
 
 [derle]
-betik =  patch -p1 -i ../dtk5.patch
+betik =  patch -p1 -i /sources/dtk5.patch
 betik = sed -i 's|/usr/sbin|/usr/bin|' app/{deepin-clone-app.pro,deepin-clone-ionice,deepin-clone-pkexec,com.deepin.pkexec.deepin-clone.policy.tmp}
 betik = qmake-qt5 PREFIX=/usr
 betik = make
