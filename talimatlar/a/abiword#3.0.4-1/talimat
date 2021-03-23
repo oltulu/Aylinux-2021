@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-gz      = https://www.abisource.com/downloads/$pkgname/$pkgver/source
+gz      = https://www.abisource.com/downloads/$isim/$surum/source
 
 [sha256]
 #1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
