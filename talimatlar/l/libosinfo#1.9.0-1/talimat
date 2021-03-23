@@ -1,0 +1,22 @@
+[paket]
+tanim   = masaüstünden bağımsız kullanıcı bilgi deposu, arama aracı ve indeksleyici
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Projects/Tracker
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz    = https://releases.pagure.org/libosinfo
+
+[sha1]
+1 		= 
+
+[derle]
+#ekconf =  -D with-usb-ids-path=/usr/share/hwdata/usb.ids -D with-pci-ids-path=/usr/share/hwdata/pci.ids
+tip = meson
+
+[pakur]
+tip = meson
