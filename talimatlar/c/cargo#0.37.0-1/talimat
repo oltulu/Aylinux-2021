@@ -5,7 +5,7 @@ grup 	= geliştirme
 url     = https://crates.io/
 
 [gerek]
-derleme = rust
+derleme = 
 calisma = rust
 
 [kaynak]
