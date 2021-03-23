@@ -17,7 +17,7 @@ git    = https://gitlab.gnome.org/GNOME/tracker-miners
 [derle]
 betik =$SRC
 betik = mv  tracker-miners $isim-$surum
-#ekconf = -D docs=false -D man=false 
+ekconf = -D docs=false -D systemd_user_services=false 
 tip = meson
 
 [pakur]
