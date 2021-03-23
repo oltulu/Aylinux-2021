@@ -1,0 +1,24 @@
+[paket]
+tanim   = Disk ve bölüm yedekleme / geri yükleme aracı
+paketci = Cihan_Alkan
+grup  	= deepin
+url     = https://github.com/linuxdeepin/deepin-clone
+
+[gerek]
+derleme = qt5-tools deepin-gettext-tools
+calisma =  
+
+[kaynak]
+1      = https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+
+[sha1]
+        #1 		= SKIP
+
+[derle]
+betik =  patch -p1 -i ../dtk5.patch
+betik = sed -i 's|/usr/sbin|/usr/bin|' app/{deepin-clone-app.pro,deepin-clone-ionice,deepin-clone-pkexec,com.deepin.pkexec.deepin-clone.policy.tmp}
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = make INSTALL_ROOT="$PKG" install
