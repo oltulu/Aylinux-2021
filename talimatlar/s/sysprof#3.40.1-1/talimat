@@ -5,7 +5,7 @@ grup 	= cinnamon
 url     = https://wiki.gnome.org/Apps/Sysprof
 
 [gerek]
-derleme = polkit gtk3 libdazzle
+derleme = polkit gtk3 libdazzle itstool
 calisma =  libdazzle
 
 [kaynak]
