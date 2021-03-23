@@ -4,7 +4,7 @@ paketci = Cihan_Alkan
 grup 	= deepin
 url     = https://github.com/linuxdeepin/dde-control-center
 
-derleme = deepin-network-utils networkmanager-qt
+derleme = deepin-network-utils networkmanager-qt deepin-dock
 calisma =  
 
 [kaynak]
