@@ -1,0 +1,25 @@
+[paket]
+tanim   = masaüstünden bağımsız kullanıcı bilgi deposu, arama aracı ve indeksleyici
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://wiki.gnome.org/Projects/Tracker
+
+[gerek]
+derleme =  
+calisma = libstemmer
+
+[kaynak]
+git    = https://gitlab.gnome.org/GNOME/tracker-miners
+
+[sha1]
+1 		= 
+
+[derle]
+betik =$SRC
+betik = mv  tracker-miners $isim-$surum
+#ekconf = -D docs=false -D man=false 
+tip = meson
+
+[pakur]
+betik =$SRC
+tip = meson
