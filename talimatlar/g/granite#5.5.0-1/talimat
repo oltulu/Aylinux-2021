@@ -6,7 +6,7 @@ url     = https://kde.org/plasma-desktop/
 
 [gerek]
 derleme = meson ninja gobject-introspection vala
-calisma = cairo glib2 gtk3 libgee pango
+calisma = cairo glib gtk3 libgee pango
 
 [kaynak]
 git      = https://github.com/elementary/granite
