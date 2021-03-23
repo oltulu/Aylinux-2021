@@ -16,7 +16,7 @@ calisma =
 
 [derle]
 betik = sed -i '/SCANNERFLAGS/s/ --warn-error//' src/Makefile.am
-betik = ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/deepin-mutter --localstatedir=/var --disable-gtk-doc --enable-wayland  --enable-native-backend --disable-systemd-integration --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
+betik = ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/deepin-mutter --localstatedir=/var --disable-systemd --disable-libsystemd --disable-gtk-doc --enable-wayland  --enable-native-backend --disable-systemd-integration --disable-static --disable-schemas-compile --enable-compile-warnings=minimum
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 betik = make
 
