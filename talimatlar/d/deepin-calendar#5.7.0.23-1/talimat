@@ -6,7 +6,7 @@ url     = https://github.com/linuxdeepin/dde-calendar
 
 [gerek]
 derleme =  
-calisma = 
+calisma = deepin-qt-dbus-factory
 
 [kaynak]
 1  = https://github.com/linuxdeepin/dde-calendar/archive/$surum.tar.gz::$isim-$surum.tar.gz
