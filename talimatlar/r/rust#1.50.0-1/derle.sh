@@ -1,4 +1,4 @@
-cd "rustc-$surum-src"
+#cd "rustc-$surum-src"
 
   # Use our *-pc-linux-gnu targets, making LTO with clang simpler
   patch -Np1 -i /sources/0001-Change-LLVM-targets.patch
