@@ -1,0 +1,24 @@
+[paket]
+tanim   = MSWord kütüphanesi Word 2000, 97, 95 ve 6 dosya formatlarını yükleyebilir ve ayrıştırabilir
+paketci = Cihan_Alkan
+grup    = ofis
+url     = https://sourceforge.net/projects/wvware
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz      = ttps://www.abisource.com/downloads/${isim}/${surum}
+
+[sha256]
+#1       = 2daa1d3b59b4a35ef54df087345b03e1703e725081f9dac543539228a715add3
+
+[derle]
+betik = ./configure --prefix=/usr --mandir=/usr/share/man --disable-static
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+
+
+[pakur]
+betik = make DESTDIR="${PKG}" install
