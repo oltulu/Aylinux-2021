@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme = libdazzle libhandy
-calisma = evolution-data-server gsettings-desktop-schemas gnome-control-center libdazzle libhandy0
+calisma = evolution-data-server gsettings-desktop-schemas gnome-control-center libdazzle libhandy
 
 [kaynak]
 xz  = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
