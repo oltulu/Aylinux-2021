@@ -26,4 +26,4 @@ tip = meson
     	      
 [pakur]
 tip = meson
-betik = cp $PKG/usr/lib/mutter-8/*.* $PKG/usr/lib/
+betik = cp -r $PKG/usr/lib/mutter-8/* $PKG/usr/lib/
