@@ -17,18 +17,16 @@ calisma =
 [derle]
 betik     = cd $SRC
 betik     = install -dm755 "${PKG}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
-betik     = meson --prefix="${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano" --localedir=locale "${SRC}/desktop-icons-20.10.0/builddir" "${SRC}/desktop-icons-20.10.0"
-betik     = ninja -C "${SRC}/desktop-icons-20.10.0/builddir" install
+betik     = meson --prefix="${SRC}/desktop-icons-$surum/desktop-icons@csoriano" --localedir=locale "${SRC}/desktop-icons-$surum/builddir" "${SRC}/desktop-icons-$surum"
+betik     = ninja -C "${SRC}/desktop-icons-$surum/builddir" install
 
-	
- 
-	      
+		      
 [pakur]
 betik     = cd $SRC
-betik     = cd "${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano"
+betik     = cd "${SRC}/desktop-icons-$surum/desktop-icons@csoriano"
 betik     = mkdir schemas
-betik     = cp "${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano/share/glib-2.0/schemas"/*.xml schemas/
+betik     = cp "${SRC}/desktop-icons-$surum/desktop-icons@csoriano/share/glib-2.0/schemas"/*.xml schemas/
 betik     = glib-compile-schemas schemas/
 betik     = cp -r "${SRC}/desktop-icons-20.10.0/desktop-icons@csorian/share/gnome-shell/extensions/desktop-icons@csoriano"/* .
-betik     = cd desktop-icons-20.10.0
+betik     = cd ${SRC}/desktop-icons-$surum
 betik     = cp -dpr --no-preserve=ownership {*.js,*.css,*.json,locale,schemas} "${PKG}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
