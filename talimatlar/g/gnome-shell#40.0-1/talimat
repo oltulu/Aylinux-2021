@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme = evolution-data-server meson gjs mutter ibus sassc gnome-autoar bash-completion ninja
-calisma = gjs mutter pulseaudio libical pulseaudio gnome-autoar evolution-data-server
+calisma = gjs mutter pulseaudio libical pulseaudio gnome-autoar evolution-data-server gtk4
 #asciidoc
 
 [kaynak]
