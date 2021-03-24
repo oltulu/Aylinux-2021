@@ -18,7 +18,7 @@ git      = https://kod.pardus.org.tr/karahan/e-tahta
 betik 	= cd e-tahta
 betik 	= mkdir -p build
 betik 	= cd build
-betik 	= qmake ../E-Tahta.pro
+betik 	= qmake ../e-tahta.pro
 betik 	= make
         	      
 [pakur]
