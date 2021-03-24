@@ -5,8 +5,8 @@ grup   	= medya
 url     = https://github.com/clementine-player
 
 [gerek]
-derleme =  
-calisma =  
+derleme =  projectm
+calisma =  projectm
 
 [kaynak]
 1      = https://github.com/clementine-player/Clementine/archive/refs/tags/1.4.0rc1-520-gc394d7d2d.tar.gz
