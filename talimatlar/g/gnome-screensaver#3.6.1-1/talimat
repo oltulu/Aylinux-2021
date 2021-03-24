@@ -12,12 +12,41 @@ calisma =
 xz     = https://download.gnome.org/sources/$isim/${surum%.*}
 1= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/gnome-screensaver.pam
 2= https://github.com/void-linux/void-packages/raw/master/srcpkgs/gnome-screensaver/patches/build.patch
+3= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/move-desktop-file.patch
+4= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/fix-autoconf.patch
+5= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/lock_screen_on_suspend.patch
+6= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/lightdm_switch_user.patch
+7= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/use-screensaver-background.patch
+8= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/recenter.patch
+9= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/gnome-desktop-3.36.patch
 
 [sha256]
 #1       = 01cfafe6606e7ec45facb708ef85efd6c1e8bb41001a999d28212a825ef778ae
 
 [derle]
-betik     = sed -i -e 's/DATADIRNAME=lib/DATADIRNAME=share/' configure
+betik     = patch -Np1 -i /sources/move-desktop-file.patch
+
+  # Fix build
+betik     = patch -Np1 -i ./sources/fix-autoconf.patch
+
+  # Fix systemd support
+betik     = patch -Np1 -i /sources/fix-systemd-support.patch
+
+  # Lock screen on suspend with systemd
+betik     = patch -Np1 -i /sources/lock_screen_on_suspend.patch
+
+  # Add support for user switch with LightDM
+betik     = patch -Np1 -i ./sources/lightdm_switch_user.patch
+
+  # Honour background setting of the lock screen
+betik     = patch -Np1 -i /sources/use-screensaver-background.patch
+
+  # Restore the original position after shake
+betik     = patch -Np1 -i /sources/recenter.patch
+
+  # Fix built with gnome-desktop 3.36
+betik     = patch -Np1 -i /sources/gnome-desktop-3.36.patch
+#betik     = sed -i -e 's/DATADIRNAME=lib/DATADIRNAME=share/' configure
 betik     = CFLAGS+=" -Wno-error=return-type"
 ekconf     =  --with-mit-ext --with-console-kit --without-systemd --enable-compile-warnings=minimum
 tip     = gnu
