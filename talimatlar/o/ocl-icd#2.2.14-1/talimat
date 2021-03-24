@@ -12,7 +12,7 @@ calisma =
 github  = OCL-dev/${isim}
 
 [sha256]
-1       = 17500e5788304eef5b52dbe784cec197bdae64e05eecf38317840d2d05484272
+$1       = 17500e5788304eef5b52dbe784cec197bdae64e05eecf38317840d2d05484272
 
 [derle]
 betik   = autoreconf -fiv
