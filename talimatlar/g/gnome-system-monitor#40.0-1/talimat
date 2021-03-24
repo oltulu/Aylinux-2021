@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = meson 
-calisma = gtkmm3 
+calisma = gtkmm
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
