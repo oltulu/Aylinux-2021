@@ -1,0 +1,33 @@
+[paket]
+tanim   = Gösterge paneli ve ana paneli birleştirmek için GNOME kabuğu için uzantı
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://mate-desktop.org
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://gitlab.gnome.org/World/ShellExtensions/desktop-icons/-/archive/20.10.0/desktop-icons-20.10.0.tar.gz
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = cd $SRC
+betik     = install -dm755 "${PKG}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
+betik     = meson --prefix="${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano" --localedir=locale "${SRC}/desktop-icons-20.10.0/builddir" "${SRC}/desktop-icons-20.10.0"
+betik     = ninja -C "${SRC}/desktop-icons-20.10.0/builddir" install
+
+	
+ 
+	      
+[pakur]
+betik     = cd $SRC
+betik     = cd "${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano"
+betik     = mkdir schemas
+betik     = cp "${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano/share/glib-2.0/schemas"/*.xml schemas/
+betik     = glib-compile-schemas schemas/
+betik     = cp -r "${SRC}/desktop-icons-20.10.0/desktop-icons@csorian/share/gnome-shell/extensions/desktop-icons@csoriano"/* .
+betik     = cp -dpr --no-preserve=ownership {*.js,*.css,*.json,locale,schemas} "${pkgdir}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
