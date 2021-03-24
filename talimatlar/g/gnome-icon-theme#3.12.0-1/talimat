@@ -6,7 +6,7 @@ url     = http://www.gnome.org
 
 [gerek]
 derleme = intltool icon-naming-utils
-calisma = hicolor-icon-theme gnome-icon-theme-symbolic
+calisma = hicolor-icon-theme
 
 [kaynak]
 xz      = https://download.gnome.org/sources/$isim/${surum:0:4}
