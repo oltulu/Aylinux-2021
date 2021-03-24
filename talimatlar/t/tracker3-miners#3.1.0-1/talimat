@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/Tracker
 
 [gerek]
 derleme =  libcue libgsf libiptcdata libosinfo libgxps libgrss
-calisma = libstemmer libcue
+calisma = libstemmer libcue tracker3 exempi totem-pl-parser libgsf libgexiv2 libosinfo libiptcdata libgrss
 
 [kaynak]
 git    = https://gitlab.gnome.org/GNOME/tracker-miners
