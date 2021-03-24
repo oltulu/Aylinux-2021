@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-1      = https://github.com/clementine-player/Clementine/archive/refs/tags/1.4.0rc1-520-gc394d7d2d.tar.gz
+1      = https://github.com/projectM-visualizer/$isim/releases/download/v$surum/projectM-$surum.tar.gz
 
 
 [sha256]
