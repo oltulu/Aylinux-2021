@@ -17,8 +17,10 @@ calisma =
 
 [derle]
 betik = cp -r Clementine-1.4.0rc1-520-gc394d7d2d $isim-$surum
+betik = cd $isim-$surum
 ekconf     = -DUSE_SYSTEM_PROJECTM=ON -DUSE_SYSTEM_TAGLIB=ON
 tip     = cmake
 	      
 [pakur]
+betik = cd $isim-$surum
 tip     = cmake
