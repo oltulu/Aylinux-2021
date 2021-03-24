@@ -19,9 +19,9 @@ xz     = https://download.gnome.org/sources/$isim/${surum%.*}
 [derle]
 betik     = sed -i -e 's/DATADIRNAME=lib/DATADIRNAME=share/' configure
 betik     = CFLAGS+=" -Wno-error=return-type"
-betik     = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --with-mit-ext --with-console-kit --without-systemd --enable-compile-warnings=minimum
-betik     = make
+ekconf     =  --with-mit-ext --with-console-kit --without-systemd --enable-compile-warnings=minimum
+tip     = gnu
 
 [pakur]
-betik     = make DESTDIR="$PKG" install
+tip     = gnu
 betik     = install -Dm644 /sources/gnome-screensaver.pam "$PKG/etc/pam.d/gnome-screensaver"
