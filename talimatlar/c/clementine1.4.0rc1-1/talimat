@@ -1,0 +1,24 @@
+[paket]
+tanim   = Modern bir müzik çalar ve kütüphane düzenleyici
+paketci = Cihan_Alkan
+grup   	= medya
+url     = https://github.com/clementine-player
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = https://github.com/clementine-player/Clementine/archive/refs/tags/1.4.0rc1-520-gc394d7d2d.tar.gz
+
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik = cp 1.4.0rc1-520-gc394d7d2d $isim-$surum
+ekconf     = -DUSE_SYSTEM_PROJECTM=ON -DUSE_SYSTEM_TAGLIB=ON
+tip     = meson
+	      
+[pakur]
+tip     = meson
