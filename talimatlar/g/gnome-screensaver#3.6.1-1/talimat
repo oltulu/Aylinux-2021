@@ -11,13 +11,15 @@ calisma =
 [kaynak]
 xz     = https://download.gnome.org/sources/$isim/${surum%.*}
 1= https://github.com/archlinux/svntogit-community/raw/packages/gnome-screensaver/trunk/gnome-screensaver.pam
+2= https://github.com/void-linux/void-packages/raw/master/srcpkgs/gnome-screensaver/patches/build.patch
 
 [sha256]
 #1       = 01cfafe6606e7ec45facb708ef85efd6c1e8bb41001a999d28212a825ef778ae
 
 [derle]
+betik     = sed -i -e 's/DATADIRNAME=lib/DATADIRNAME=share/' configure
 betik     = CFLAGS+=" -Wno-error=return-type"
-betik     = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$pkgname --with-mit-ext --with-console-kit --without-systemd
+betik     = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --with-mit-ext --with-console-kit --without-systemd --enable-compile-warnings=minimum
 betik     = make
 
 [pakur]
