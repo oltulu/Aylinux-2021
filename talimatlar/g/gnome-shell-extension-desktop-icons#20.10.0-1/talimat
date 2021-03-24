@@ -30,4 +30,4 @@ betik     = mkdir schemas
 betik     = cp "${SRC}/desktop-icons-20.10.0/desktop-icons@csoriano/share/glib-2.0/schemas"/*.xml schemas/
 betik     = glib-compile-schemas schemas/
 betik     = cp -r "${SRC}/desktop-icons-20.10.0/desktop-icons@csorian/share/gnome-shell/extensions/desktop-icons@csoriano"/* .
-betik     = cp -dpr --no-preserve=ownership {*.js,*.css,*.json,locale,schemas} "${pkgdir}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
+betik     = cp -dpr --no-preserve=ownership {*.js,*.css,*.json,locale,schemas} "${PKG}/usr/share/gnome-shell/extensions/desktop-icons@csoriano"
