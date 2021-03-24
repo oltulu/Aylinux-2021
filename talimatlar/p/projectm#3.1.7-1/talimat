@@ -1,0 +1,37 @@
+[paket]
+tanim   = 3D hızlandırılmış yinelemeli görüntü tabanlı işleme kullanan müzik görselleştirici
+paketci = Cihan_Alkan
+grup   	= medya
+url     = https://github.com/clementine-player
+
+[gerek]
+derleme =   
+calisma =  
+
+[kaynak]
+1      = https://github.com/clementine-player/Clementine/archive/refs/tags/1.4.0rc1-520-gc394d7d2d.tar.gz
+
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik =  cd "projectM-$surum"
+betik = ./configure --prefix=/usr --enable-gles --enable-sdl --enable-threading --enable-qt
+betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik = make
+	      
+[pakur]
+betik =  cd "$SRC/projectM-$surum"
+betik =  make DESTDIR="$PKG" install-data-am
+betik =  cd "$SRC/projectM-$surum/src"
+betik =  make DESTDIR="$PKG" install-am
+betik =  cd "$SRC/projectM-$surum/src/libprojectM"
+betik =  make DESTDIR="$PKG" install
+betik =  cd "$SRC/projectM-$surum/src/NativePresets"
+betik =  make DESTDIR="$PKG" install
+betik =  find "$pkgdir" -iname "\.*" -delete
+betik =  cd "$SRC/projectM-$surum/src/projectM-sdl"
+betik =  make DESTDIR="$PKG" install
+betik =  cd "$SRC/projectM-$surum/src/projectM-pulseaudio"
+betik =  make DESTDIR="$PKG" install
