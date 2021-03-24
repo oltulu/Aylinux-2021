@@ -24,4 +24,5 @@ dosya = derle.sh
 [pakur]
 betik  = make DESTDIR=$PKG install
 betik  = install -v -m644 examples/smb.conf.default $PKG/etc/samba/smb.conf.default
+betik = cp -r $PKG/usr/lib/samba/*.so $PKG/usr/lib/
 servis = samba
