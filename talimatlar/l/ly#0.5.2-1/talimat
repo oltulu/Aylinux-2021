@@ -1,0 +1,36 @@
+[paket]
+tanim    = TUI görüntü yöneticisi
+paketci  = Cihan_Alkan 
+grup     = medya
+url      = https://github.com/nullgemm/ly
+
+[gerek]
+derleme  = pam ncurses 
+calisma  =  
+
+[kaynak]
+git  = https://github.com/nullgemm/${isim}
+git  = https://github.com/nullgemm/argoat
+git  = https://github.com/nullgemm/configator
+git  = https://github.com/nullgemm/ctypes
+git  = https://github.com/nullgemm/dragonfail
+git  = https://github.com/nullgemm/termbox_next
+
+[sha256]
+#1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+
+[derle]
+betik   = cd "$SRC/$isim"
+betik   = cp .github .gitmodules
+betik   = git submodule init
+betik   = git config submodule.sub/argoat.url $SRC/argoat
+betik   = git config submodule.sub/configator.url $SRC/configator
+betik   = git config submodule.sub/ctypes.url $SRC/ctypes
+betik   = git config submodule.sub/dragonfail.url $SRC/dragonfail
+betik   = git config submodule.sub/termbox_next.url $SRC/termbox_next
+betik   = git submodule update
+betik   = make
+
+[pakur]
+betik   = cd "$SRC/$isim"
+betik   = make DESTDIR="$PKG" install
