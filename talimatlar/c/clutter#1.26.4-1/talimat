@@ -10,7 +10,7 @@ calisma = gtk3 cogl libinput json-glib
 
 [kaynak]
 #xz      = https://download.gnome.org/sources/$isim/${surum%.*}
-1 = https://gitlab.gnome.org/GNOME/clutter/-/tree/master/clutter
+git = https://gitlab.gnome.org/GNOME/clutter/-/tree/master/clutter
 
 
 [md5]
