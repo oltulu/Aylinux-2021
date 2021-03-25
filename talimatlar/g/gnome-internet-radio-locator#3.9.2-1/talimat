@@ -1,0 +1,22 @@
+[paket]
+tanim  = Konum ve saat dilimi veritabanı ve hava durumu arama kitaplığı
+url    = https://wiki.gnome.org/Projects/LibGWeather
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme = meson ninja
+calisma = geoclue gst-plugins-base gst-plugins-others
+
+
+[kaynak]
+xz      = ${GNOME_SITE}/$isim/${surum%.*}
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+tip = meson
+
+[pakur]
+tip = meson
