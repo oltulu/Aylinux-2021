@@ -18,6 +18,7 @@ git = https://gitlab.gnome.org/GNOME/clutter
 
 [derle]
 betik	= cp -r $isim $isim-$surum
+ekconf = -Ddocumentation=false
 tip	= meson
 
 	      
