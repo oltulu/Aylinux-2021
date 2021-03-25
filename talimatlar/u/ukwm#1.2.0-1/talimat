@@ -22,10 +22,9 @@ betik 	= export CFLAGS="$CFLAGS -I/usr/include/libdrm"
 #betik = sed -i 's/include\ \<drm\/drm\_fourcc\.h/include\ \<libdrm\/drm\_fourcc\.h/' src/wayland/meta-wayland-buffer.c
 betik 	= NOCONFIGURE=1 ./autogen.sh
 betik 	= sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
-#betik 	= sed -i 's|drm_fourcc.h|meta/util.h|' src/wayland/meta-wayland-dma-buf.c
-betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --disable-libsystemd --sysconfdir=/etc --enable-introspection --disable-wayland --enable-compile-warnings=yes --enable-have-native-backend=no
+betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --disable-libsystemd --disable-native-backend --sysconfdir=/etc --enable-introspection --enable-compile-warnings=yes --enable-have-native-backend=no
 betik 	= make
-    	      
+#  --disable-wayland    	      
 [pakur]
 #betik 	= cd $isim
 betik 	= make DESTDIR="$PKG" install
