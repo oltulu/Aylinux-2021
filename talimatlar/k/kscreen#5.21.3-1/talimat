@@ -6,7 +6,7 @@ url     = https://www.kde.org/workspaces/plasmadesktop/
 
 [gerek]
 derleme = extra-cmake-modules qt5-tools cmake qt5-sensors kcmutils plasma-framework libkscreen
-calisma = qt5-sensors  kdeclarative libkscreen qt5-graphicaleffects 
+calisma = qt5-sensors  kdeclarative libkscreen qt5-graphicaleffects  plasma-framework
 
 [kaynak]
 xz      = https://download.kde.org/stable/plasma/$surum
