@@ -5,12 +5,12 @@ Milis linux tabanlı olarak hazırlanan Aylinux 2021 isosunu hazırlamak için a
 ------------------------------------------------------------------------
 wget https://github.com/oltulu/mps/raw/main/bin/Aylinux-isoyap
 
-chmod +x ./Aylinux-isoyap
+chmod +x ./aylinux-isoyap
 
 sudo su
 (root şifrenizi yazınız)
 
-./Aylinux-isoyap
+./aylinux-isoyap
 -------------------------------------------------------------------------
 Bu komutlardan sonra ekranı takip ediniz. Aylinux.iso dosyanız (işlemler sorunsuz tamamlanırsa /opt/Aylinux-isoyap dizini altında oluşacaktır.
 (Xfce, cinnamon, lxde, openbox ve mate masaüstü hazırdır diğer masaüstleri üzerinde çalışılmaktadır.)
