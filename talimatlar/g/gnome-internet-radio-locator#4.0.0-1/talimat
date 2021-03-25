@@ -16,7 +16,7 @@ xz      = ${GNOME_SITE}/$isim/4.0
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
-tip = meson
+tip = gnu
 
 [pakur]
-tip = meson
+tip = gnu
