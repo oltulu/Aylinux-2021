@@ -12,7 +12,7 @@ calisma = python-gobject python-dbus desktop-file-utils foomatic-db foomatic-db-
 gz      = ${SOURCEFORGE_SITE}/hplip/hplip/${surum}
 
 [sha256]
-1       = c64b2d334348010a9911f4feb075b2aa669047e7adb86c72d4a6ee7d392a7c20
+#1       = c64b2d334348010a9911f4feb075b2aa669047e7adb86c72d4a6ee7d392a7c20
 
 [derle]
 betik   = export AUTOMAKE='automake --foreign'
