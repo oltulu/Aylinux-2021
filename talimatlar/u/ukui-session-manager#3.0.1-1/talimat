@@ -5,7 +5,7 @@ url     = https://github.com/ukui/ukui-session-manager
 
 [gerek]
 derleme    = kidletime
-calisma    =
+calisma    = kidletime
 
 [kaynak]
 1          = https://github.com/ukui/ukui-session-manager/archive/v$surum.tar.gz::$isim-$surum.tar.gz
