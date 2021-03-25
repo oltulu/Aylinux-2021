@@ -6,7 +6,7 @@ url     = https://github.com/ukui/ukui-power-manager
 
 [gerek]
 derleme =  yelp-tools upower libgnome-keyring
-calisma =  
+calisma =  libgnome-keyring
 
 [kaynak]
 1      = https://github.com/ukui/ukui-power-manager/archive/v$surum/$isim-$surum.tar.gz
