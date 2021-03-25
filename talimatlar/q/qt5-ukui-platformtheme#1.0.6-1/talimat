@@ -12,7 +12,7 @@ calisma = gsettings-qt
 1      = https://github.com/ukui/qt5-ukui-platformtheme/archive/v$surum/$isim-$surum.tar.gz
 
 [sha512]
-1 		= 767731889c8caff25ee00f9a5e3acd97d888326cee0d906629f5f73524f9fc022d8c157e59a9af4d69f9d151ca71e626821bdfdb2e51318e9133ca0d6dec4d2f
+#1 		= 767731889c8caff25ee00f9a5e3acd97d888326cee0d906629f5f73524f9fc022d8c157e59a9af4d69f9d151ca71e626821bdfdb2e51318e9133ca0d6dec4d2f
 
 [derle]
 betik 	= qmake-qt5 PREFIX=/usr
