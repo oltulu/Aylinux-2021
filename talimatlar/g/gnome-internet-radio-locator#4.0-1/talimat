@@ -10,7 +10,7 @@ calisma = geoclue gst-plugins-base gst-plugins-others
 
 
 [kaynak]
-xz      = ${GNOME_SITE}/$isim/${surum%.*}
+xz      = ${GNOME_SITE}/$isim/4.0
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
