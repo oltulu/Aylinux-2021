@@ -5,7 +5,7 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = meson ninja
+derleme = meson ninja libchamplain gtk4
 calisma = geoclue gst-plugins-base gst-plugins-others
 
 
