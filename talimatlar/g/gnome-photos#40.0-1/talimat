@@ -5,7 +5,7 @@ grup    = medya
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson  
+derleme = meson gfbgraph
 calisma =  
 
 [kaynak]
