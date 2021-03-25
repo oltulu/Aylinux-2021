@@ -19,4 +19,4 @@ betik 	= cd pantum-2000-serisi
 betik 	= 
 	      
 [pakur]
-betik 	= cp -a ${SRC}/pantum-2000-serisi/* .
+betik 	= cp -r ${SRC}/pantum-2000-serisi/* ${PKG}
