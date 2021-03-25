@@ -24,7 +24,7 @@ betik 	= NOCONFIGURE=1 ./autogen.sh
 betik 	= sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
 betik 	= ./configure --prefix=/usr --libexecdir=/usr/lib/$isim --disable-libsystemd --disable-native-backend --sysconfdir=/etc --enable-introspection --enable-compile-warnings=yes --enable-have-native-backend=no
 betik 	= make
-#  --disable-wayland    	      
+
 [pakur]
 #betik 	= cd $isim
 betik 	= make DESTDIR="$PKG" install
