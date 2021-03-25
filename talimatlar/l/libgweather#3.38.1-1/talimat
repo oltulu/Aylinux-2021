@@ -9,15 +9,15 @@ derleme = geocode-glib meson ninja
 calisma = geocode-glib
 
 [kaynak]
-git = https://gitlab.gnome.org/GNOME/libgweather
+xz      = ${GNOME_SITE}/$isim/${surum%.*}
 
 [sha256]
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
 betik = sed -i -e '/setlocale.*tr_TR/i return;' $isim/libgweather/test_libgweather.c
-betik = milis-meson $isim build  -D enable-gtk-doc=false
-betik = ninja -C build 
+ekconf = -D enable-gtk-doc=false
+tip = meson
 
 [pakur]
-betik =  DESTDIR="$PKG" meson install -C build
+tip = meson
