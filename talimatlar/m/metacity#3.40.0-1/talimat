@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme =  libxpresent
-calisma = 
+calisma = libxpresent
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
