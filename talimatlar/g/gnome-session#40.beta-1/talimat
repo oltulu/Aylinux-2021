@@ -16,11 +16,9 @@ xz      = https://download.gnome.org/sources/$isim/40
 
 [derle]
 betik = sed 's@/bin/sh@/bin/sh -l@' -i gnome-session/gnome-session.in
-betik = mkdir build
-betik = cd build
-betik = meson --prefix=/usr --libexecdir=lib -Dman=false -Ddocbook=false -Dconsolekit=true -Dsystemd_journal=false -Dsystemd=false -Dsystemd_session=disable -Dsystemd_journal=false ..	
-betik = ninja
+ekconf = -Dman=false -Ddocbook=false -Dconsolekit=true -Dsystemd_journal=false -Dsystemd=false -Dsystemd_session=disable -Dsystemd_journal=false
+tip = meson
     	      
 [pakur]
-betik = cd build
-betik = DESTDIR=$PKG ninja install
+tip = meson
+betik = rm $PKG/usr/share/wayland-sessions/gnome.desktop
