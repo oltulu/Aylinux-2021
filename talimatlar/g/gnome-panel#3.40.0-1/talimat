@@ -21,13 +21,13 @@ dosya = gp-launcher-applet.c
 [derle]
 #betik = cd $isim
 #betik = NOCONFIGURE=1 ./autogen.sh
-betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
-betik = rm  modules/action-button/gp-lock-screen-applet.c
-betik = cp "$SRC/gp-lock-screen-applet.c" modules/action-button/
-betik = rm  modules/launcher/gp-launcher-applet.c
-betik = cp "$SRC/gp-launcher-applet.c" modules/launcher/
-betik = sed -i '/gdm/d' configure
-betik = sed -i '/libsystemd/d' configure
+#betik = patch -Np1 -i "/sources/revert-5ce96e7a5608a7a4b96e2de1c6f8be7037f2c391.patch"
+#betik = rm  modules/action-button/gp-lock-screen-applet.c
+#betik = cp "$SRC/gp-lock-screen-applet.c" modules/action-button/
+#betik = rm  modules/launcher/gp-launcher-applet.c
+#betik = cp "$SRC/gp-launcher-applet.c" modules/launcher/
+#betik = sed -i '/gdm/d' configure
+#betik = sed -i '/libsystemd/d' configure
 betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile ax_cv_zoneinfo_tzdir=/usr/share/zoneinfo --enable-compile-warnings=minimum
 #tip = gnu
 betik = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
