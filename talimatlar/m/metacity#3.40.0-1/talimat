@@ -1,0 +1,22 @@
+[paket]
+tanim  = Ekran görüntüsü almak için kullanılan yardımcı program
+url    = http://ftp.gnome.org
+paketci= Cihan_Alkan
+grup   = gnome
+
+[gerek]
+derleme =  
+calisma = 
+
+[kaynak]
+xz   = http://ftp.gnome.org/pub/gnome/sources/$isim/${surum%.*}
+
+
+[sha256]
+    #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+tip = meson
+
+[pakur]
+tip = meson
