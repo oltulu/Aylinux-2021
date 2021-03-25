@@ -19,7 +19,7 @@ dosya   = NetworkManager.conf
 dosya   = derle.sh
 
 [pakur]
-ekconf = -Dsuspend_resume=consolekit -Dsystemd_journal=false
+ekconf = -Dsuspend_resume=consolekit -Dsystemd_journal=false -Ddocs=false
 tip     = meson
 betik   = install -m 644 ${SRC}/NetworkManager.conf  $PKG/etc/NetworkManager/
 servis  = networkmanager
