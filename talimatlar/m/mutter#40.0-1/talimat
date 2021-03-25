@@ -20,7 +20,7 @@ xz      = https://download.gnome.org/sources/$isim/40
 [derle]
 #betik = patch -Np1 -i /sources/0001-fix-libglvnd-support.patch
 #betik = patch -Np1 -i /sources/drm.patch
-ekconf = -D egl_device=true -D installed_tests=false -D native_tests=false -Dnative_backend=false -Dxwayland_path=/usr/bin/Xwayland -Dwayland=false
+ekconf = -D egl_device=true -D installed_tests=false -D native_tests=false -Dnative_backend=false -Dxwayland_path=/usr/bin/Xwayland -Dwayland=false --Dtests=false
 tip = meson
 
     	      
