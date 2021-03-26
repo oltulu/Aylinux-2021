@@ -1,0 +1,27 @@
+[paket]
+tanim   = Hız, basitlik ve güvenlik için oluşturulmuş bir web tarayıcısı
+paketci = Cihan_Alkan
+grup 	= internet
+url        = https://www.chromium.org/Home
+
+[kaynak]
+xz   = https://commondatastorage.googleapis.com/chromium-browser-official
+2    = https://github.com/foutrelis/chromium-launcher/archive/v7/chromium-launcher-7.tar.gz
+3    = https://github.com/stha09/chromium-patches/releases/download/chromium-${surum%%.*}-patchset-7/chromium-${surum%%.*}-patchset-7.tar.xz
+4    = https://github.com/archlinux/svntogit-packages/raw/packages/chromium/trunk/add-dependency-on-opus-in-webcodecs.patch
+5    = https://github.com/archlinux/svntogit-packages/raw/packages/chromium/trunk/x11-ozone-fix-two-edge-cases.patch
+6    = https://github.com/archlinux/svntogit-packages/raw/packages/chromium/trunk/chromium-glibc-2.33.patch
+7    = https://github.com/archlinux/svntogit-packages/raw/packages/chromium/trunk/use-oauth2-client-switches-as-default.patch
+
+[gerek]
+derleme = python ninja clang gperf nodejs pipewire python2 python2-setuptools
+calisma =   libva
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+dosya = derle.sh
+
+[pakur]
+dosya = pakur.sh
