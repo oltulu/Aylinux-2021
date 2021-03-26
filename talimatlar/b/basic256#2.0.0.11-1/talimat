@@ -1,0 +1,28 @@
+[paket]
+tanim   = Eğitsel BASİC programlama ortamı
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = http://www.basic256.org/
+
+[gerek]
+derleme = bison flex
+calisma = qt5-multimedia qt5-webkit qt5-serialport sdl_mixer espeak
+
+[kaynak]
+1       = http://downloads.sourceforge.net/kidbasic/${isim}_${surum}.orig.tar.gz
+2  = https://aur.archlinux.org/cgit/aur.git/plain/basic256.desktop?h=basic256
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik   = qmake BASIC256.pro 
+betik   = make 
+
+[pakur]
+betik   = install -m 755 -D basic256 "${PKG}/usr/bin/basic256"
+betik   = install -m 755 -D Examples/basic256_icon.png "${PKG}/usr/share/icons/basic256.png"
+betik   = install -m 755 -D "/sources/basic256.desktop?h=basic256" "${PKG}/usr/share/applications/basic256.desktop"
+betik   = mkdir -p "${PKG}/usr/share/basic256/examples"
+betik   = cp -pr Examples/* "${PKG}/usr/share/basic256/examples"
+betik   = cp -pr Translations/* "${PKG}/usr/share/basic256/"
