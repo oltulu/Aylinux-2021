@@ -1,0 +1,22 @@
+[paket]
+tanim   = GNOME Terminal Emülatörü
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = http://www.gnome.org
+
+[gerek]
+derleme = meson ninja
+calisma =  
+
+[kaynak]
+xz     = https://download.gnome.org/sources/gnote/40/
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+#ekconf = -D nautilus_extension=false  -D search_provider=false -D docs=false 
+tip     = meson 
+    	      
+[pakur]
+tip     = meson
