@@ -5,8 +5,8 @@ grup    = geliştirme
 url     = https://kde.org/applications/multimedia/juk/
 
 [gerek]
-derleme = squeak shared-mime-info desktop-file-utils pango
-calisma = squeak
+derleme = cmake kdoctool
+calisma = 
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
