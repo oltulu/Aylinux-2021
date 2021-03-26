@@ -17,4 +17,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas/
 betik		= ar x /sources/xxx-1.2.0-amd64.deb
 betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
 
+#Arch paketlerini kur yapmak için
+betik = tar -I zstd -xvf /sources/chromium-$surum-1-x86_64.pkg.tar.zst
+betik = mv usr $PKG
 
