@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
 derleme = meson libmediaart grilo grilo-plugins
-calisma = tracker3-miners
+calisma = tracker3-miners libmediaart grilo grilo-plugins
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
