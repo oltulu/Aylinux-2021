@@ -5,15 +5,15 @@ grup    = kütüphane
 url     = https://github.com/google/re2
 
 [kaynak]
-1       = ${url}/archive/2020-01-01.tar.gz::$isim-$surum.tar.gz
+1       = ${url}/archive/2021-02-02.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
 1       = 7509a34636b7dd2966f7a34440cee1153983fd61a4bf8f759a4f7781b9ceebaf
 
 [derle]
-betik	= cd re2-2020-01-01
+betik	= cd re2-2021-02-02
 betik   = make
 
 [pakur]
-betik	= cd re2-2020-01-01
+betik	= cd re2-2021-02-02
 betik   = make prefix=/usr DESTDIR="$PKG" install
