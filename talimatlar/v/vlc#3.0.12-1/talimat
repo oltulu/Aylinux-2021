@@ -11,7 +11,7 @@ calisma = a52dec libdvbpsi libxpm libdca libcddb libidn lua libmatroska taglib l
 [kaynak]
 xz    = https://download.videolan.org/pub/videolan/vlc/${surum}
 dosya = vlc_qt_5_15.patch
-dosya = vlc-3.0.11.1-srt_1.4.2.patch
+dosya = vlc-3.0.12-srt_1.4.2.patch 
 dosya = vlc-lua53_compat.patch
 1 = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/vlc2.png
 
