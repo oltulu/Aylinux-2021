@@ -10,6 +10,11 @@ calisma =
 
 [kaynak]
 1   = https://github.com/Makeblock-official/mBlock/releases/download/V$surum-Linux/mBlock-$surum-linux-$surum.tar.gz
+2 = https://aur.archlinux.org/cgit/aur.git/plain/mblock.desktop?h=mblock
+3 = https://aur.archlinux.org/cgit/aur.git/plain/128x128.png?h=mblock
+4 = https://aur.archlinux.org/cgit/aur.git/plain/48x48.png?h=mblock
+5 = https://aur.archlinux.org/cgit/aur.git/plain/32x32.png?h=mblock
+
 
 [sha256]
 #1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
@@ -19,10 +24,12 @@ betik   = install -dm 755 $PKG/{opt,/usr/{share/{applications,icons/$isim},lib/s
 betik   = cp -r "${SRC}/mBlock" $PKG/opt/$isim
 betik   = chmod -R 755 $PKG/opt/$isim
 betik   = install -dm 777 $PKG/opt/$isim/mblock-setting
-betik   = install -Dm644 ${SRC}/sysusers.d "${PKG}/usr/lib/sysusers.d/$isim.conf"
-betik   = install -Dm644 ${SRC}/10-mblockhid.rules "${PKG}/etc/udev/rules.d/10-mblockhid.rules"
-betik   = install -Dm644 ${SRC}/$isim.desktop "${PKG}/usr/share/applications"
-betik   = install -Dm644 ${SRC}/{32x32,48x48,128x128}.png "${PKG}/usr/share/icons/$isim"
+#betik   = install -Dm644 ${SRC}/sysusers.d "${PKG}/usr/lib/sysusers.d/$isim.conf"
+#betik   = install -Dm644 ${SRC}/10-mblockhid.rules "${PKG}/etc/udev/rules.d/10-mblockhid.rules"
+betik   = install -Dm644 /sources/mblock.desktop?h=mblock "${PKG}/usr/share/applications/$isim.desktop"
+betik   = install -Dm644 /sources/128x128.png?h=mblock "${PKG}/usr/share/icons/$isim/128x128.png"
+betik   = install -Dm644 /sources/48x48.png?h=mblock  "${PKG}/usr/share/icons/$isim/48x48.png"
+betik   = install -Dm644 /sources/32x32.png?h=mblock  "${PKG}/usr/share/icons/$isim/32x32.png"
 
 
 [pakur]
