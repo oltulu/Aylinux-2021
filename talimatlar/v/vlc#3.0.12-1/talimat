@@ -1,6 +1,6 @@
 [paket]
 tanim   = Çoklu platform destekli ses ve video oynatıcı
-paketci = milisarge 
+paketci = Cihan_Alkan 
 grup    = medya
 url     = https://www.videolan.org/vlc
 
@@ -13,12 +13,11 @@ xz    = https://download.videolan.org/pub/videolan/vlc/${surum}
 dosya = vlc_qt_5_15.patch
 dosya = vlc-3.0.11.1-srt_1.4.2.patch
 dosya = vlc-lua53_compat.patch
+1 = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/vlc2.png
+
 
 [sha256]
-#1     = 189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8
-#2     = 4fc70eaec81a82bc29321ddb4fd303367b7b8cb58625de889644256daf38abed
-#3     = db3be0e5a79cddced198d53b0932be9ca397fe52369524ea37e4ef2872e28596
-#4     = d1cb88a1037120ea83ef75b2a13039a16825516b776d71597d0e2eae5df2d8fa
+#1     = 
 
 [derle]
 #betik = export CFLAGS="-march=native"
