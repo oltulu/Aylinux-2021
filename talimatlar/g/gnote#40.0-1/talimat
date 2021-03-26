@@ -15,8 +15,8 @@ xz     = https://download.gnome.org/sources/gnote/40/
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-#ekconf = -D nautilus_extension=false  -D search_provider=false -D docs=false 
-tip     = meson 
+#ekconf = 
+tip     = gnu 
     	      
 [pakur]
-tip     = meson
+tip     = gnu
