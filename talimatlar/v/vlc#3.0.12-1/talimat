@@ -20,8 +20,8 @@ dosya = vlc-lua53_compat.patch
 #1     = 
 
 [derle]
-betik = rm share/vlc512x512.png
-betik = cp /sources/vlc2.png share/vlc512x512.png
+betik = rm share/icons/128x128/vlc.png
+betik = cp /sources/vlc2.png share/icons/128x128/vlc.png
 #betik = export CFLAGS="-march=native"
 betik = patch -Np1 < $SRC/vlc-3.0.12-srt_1.4.2.patch 
 betik = patch -Np1 < $SRC/vlc_qt_5_15.patch
