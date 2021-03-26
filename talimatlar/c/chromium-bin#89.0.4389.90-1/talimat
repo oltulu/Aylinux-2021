@@ -23,6 +23,8 @@ betik = cd icu/source
 betik = ./configure
 betik = make
 betik = cd -
+betik = cd re2-2020-10-01
+betik = make
 betik = mv usr $PKG
 betik = cp libminizip.so.1.0.0 $PKG/usr/lib/chromium
 betik =ln -sv libminizip.so.1.0.0 $PKG/usr/lib/chromium/libminizip.so.1
@@ -32,9 +34,7 @@ betik = echo "/usr/lib/chromium" > $PKG/etc/ld.so.conf.d/$isim.conf
 
 [pakur]
 betik = cd icu/source
-betik = cp lib/libicui18n.so.67.1 $PKG/usr/lib/chromium/libicui18n.so.67.1
-betik = cp lib/libicuuc.so.67.1 $PKG/usr/lib/chromium/libicuuc.so.67.1
-betik = cp lib/libicudata.so.67.1 $PKG/usr/lib/chromium/libicudata.so.67.1
+betik = cp lib/* $PKG/usr/lib/chromium/
 betik = cd -
 betik = cd re2-2020-10-01
 betik = install obj/so/libre2.so $PKG/usr/lib/chromium/libre2.so.8
