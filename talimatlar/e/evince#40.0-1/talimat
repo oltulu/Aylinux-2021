@@ -9,7 +9,7 @@ derleme  = gspell djvulibre texlive-bin libgxps
 calisma  = gspell djvulibre libgxps libhandy  texlive-bin poppler-glib gnome-desktop libsecret gst-plugins-base
 
 [kaynak]
-xz = https://download.gnome.org/sources/$isim/${surum:0:4}
+xz = https://download.gnome.org/sources/$isim/40
 
 [sha256]
 #1   = 6e2667b83cb7c76a2315f7bacee2a7363a5758213d9016d360fdb3b671852efb
