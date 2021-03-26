@@ -20,4 +20,4 @@ betik		= ln -s /usr/local/makeblock/mLink/mlink $PKG/usr/bin/mblock-mlink
 betik		= ar x /sources/mLink-1.2.0-amd64.deb
 
 [pakur]
-betik 	=  cp -r usr "${PKG}"
+betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
