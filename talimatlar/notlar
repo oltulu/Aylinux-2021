@@ -13,4 +13,8 @@ betik     = ./configure --prefix=/usr  --enable-man=no
 #Glib şema hatası
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+#Deb paketlerini kur yapmak için
+betik		= ar x /sources/xxx-1.2.0-amd64.deb
+betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
+
 
