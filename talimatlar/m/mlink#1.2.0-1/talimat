@@ -1,0 +1,22 @@
+[paket]
+tanim   = MBlock web sürümünü cihazlara bağlayan bir araç
+paketci = Cihan_Alkan
+grup 	  = geliştirme
+url     = https://www.mblock.cc/en-us/download
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1      =https://dl.makeblock.com/mblock5/linux/mLink-1.2.0-amd64.deb
+
+[SKIP]
+#1 		= SKIP
+
+[derle]
+betik		= mkdir usr/bin
+betik		= ln -s /usr/local/makeblock/mLink/mlink usr/bin/mblock-mlink
+
+[pakur]
+betik 	=  cp -r usr "${PKG}"
