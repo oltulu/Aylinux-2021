@@ -21,4 +21,4 @@ tip     = meson
     	      
 [pakur]
 tip     = meson
-betik = sed -i 's/^Name\[tr\]=Uçbirim/Name\[tr\]=Komut Satırı/' $PKG/usr/share/applications/$isim.desktop
+betik = sed -i 's/^Name\[tr\]=Uçbirim/Name\[tr\]=Komut Satırı/' $PKG/usr/share/applications/org.gnome.Terminal.desktop
