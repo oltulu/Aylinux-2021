@@ -1,0 +1,31 @@
+[paket]
+tanim   = Tek bir kod satırı yazmadan Robotları / Arduino Programlayın
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = http://www.mblock.cc/
+
+[gerek]
+derleme = cmake kdoctools
+calisma = 
+
+[kaynak]
+1   = https://github.com/Makeblock-official/mBlock/releases/download/V$surum-Linux/mBlock-$surum-linux-$surum.tar.gz
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik   = install -dm 755 $PKG/{opt,/usr/{share/{applications,icons/$isim},lib/sysusers.d,bin},/etc/udev/rules.d}
+betik   = cp -r "${SRC}/mBlock" $PKG/opt/$isim
+betik   = chmod -R 755 $PKG/opt/$isim
+betik   = install -dm 777 $PKG/opt/$isim/mblock-setting
+betik   = install -Dm644 ${SRC}/sysusers.d "${PKG}/usr/lib/sysusers.d/$isim.conf"
+betik   = install -Dm644 ${SRC}/10-mblockhid.rules "${PKG}/etc/udev/rules.d/10-mblockhid.rules"
+betik   = install -Dm644 ${SRC}/$isim.desktop "${PKG}/usr/share/applications"
+betik   = install -Dm644 ${SRC}/{32x32,48x48,128x128}.png "${PKG}/usr/share/icons/$isim"
+
+
+[pakur]
+betik   =  echo "#!/bin/bash" > $SRC/$isim.sh
+betik   = echo "/opt/$isim/$isim" >> $SRC/$isim.sh
+betik   = install -Dm755 $SRC/$isim.sh $PKG/usr/bin/$isim
