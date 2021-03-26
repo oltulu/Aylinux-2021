@@ -1,0 +1,22 @@
+[paket]
+tanim   = Robotik programlama
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = https://www.arduino.cc/en/software
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1       = https://downloads.arduino.cc/arduino-1.8.13-linux64.tar.xz
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik   = mv $SRC/arduino-1.8.13 $PKG/opt
+
+
+[pakur]
+betik   = cd $PKG
