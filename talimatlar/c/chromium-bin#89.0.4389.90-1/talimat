@@ -18,6 +18,7 @@ calisma =   libva
             #1 		= SKIP
 
 [derle]
+betik = tar -I zstd -xvf /sources/chromium-$surum-1-x86_64.pkg.tar.zst
 betik = cd icu/source
 betik = ./configure
 betik = make
