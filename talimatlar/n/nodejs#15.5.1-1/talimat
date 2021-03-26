@@ -7,7 +7,7 @@ arsiv   = node-$surum
 
 [gerek]
 derleme = procps-ng python openssl zlib libuv c-ares icu libnghttp2
-calisma =
+calisma = libnghttp2
 
 [kaynak]
 github  = nodejs/node
