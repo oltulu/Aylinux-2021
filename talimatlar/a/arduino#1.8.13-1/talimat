@@ -15,7 +15,7 @@ calisma =
 #1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
 
 [derle]
-betik   = mv $SRC/arduino-1.8.13 $PKG/opt
+betik   = mv $SRC/arduino-1.8.13 $PKG/opt/arduino
 
 
 [pakur]
