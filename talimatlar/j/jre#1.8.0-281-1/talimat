@@ -10,7 +10,7 @@ calisma = alsa-lib ffmpeg
 
 [kaynak]
 1      = https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244058_89d678f2be164786b292527658ca1605::jre-8u281-linux-x64.tar.gz
-2 =   https://notabug.org/oltulu/Ceviri/raw/master/jre-splash.gif
+2 =   https://notabug.org/oltulu/Aylinux-Resimler/raw/master/java.gif
 [sha256]
 #1 		= 28a00b9400b6913563553e09e8024c286b506d8523334c93ddec6c9ec7e9d346
 
@@ -19,4 +19,4 @@ dosya 	= derle.sh
 	      
 [pakur]
 betik 	= rm $PKG/usr/lib/jre/lib/deploy/splash.gif
-betik 	= cp /sources/jre-splash.gif $PKG/usr/lib/jre/lib/deploy/splash.gif
+betik 	= cp /sources/java.gif $PKG/usr/lib/jre/lib/deploy/splash.gif
