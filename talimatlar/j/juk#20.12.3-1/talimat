@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://kde.org/applications/multimedia/juk/
 
 [gerek]
-derleme = cmake kdoctool
+derleme = cmake kdoctools
 calisma = 
 
 [kaynak]
