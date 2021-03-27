@@ -20,4 +20,8 @@ dosya  =  derle.sh
 
 [pakur]
 betik = cd ffmpeg-$surum
-betik  =  make DESTDIR="${PKG}" install install-man
+betik  =   make DESTDIR="${PKG}" install
+betik  =   rm -rf "${PKG}"/usr/share
+betik  =   find "${PKG}"/usr/bin -type f -exec mv {} {}2.8 \;
+betik  =   install -dm 755 "${PKG}"/etc/ld.so.conf.d
+betik  =   echo -e '/usr/lib/\n/usr/lib/ffmpeg2.8/' > "${PKG}"/etc/ld.so.conf.d/50-ffmpeg2.8.conf
