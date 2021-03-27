@@ -5,14 +5,14 @@ grup 	  = medya
 url     = https://wiki.gnome.org/Apps/EasyTAG
 
 [kaynak]
-1    = https://ftp.gnu.org/gnu/${isim}/${isim}-${surum}.tar.lz
+1    = https://sources.voidlinux.org/easytag-2.4.3/easytag-2.4.3.tar.xz
 
 [sha256]
 #1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
 
 [derle]
-betik   = mv -v "${isim}-${isim}-${surum}" "${isim}-${surum}"
-betik   = cd "${isim}-${surum}"
+#betik   = mv -v "${isim}-${isim}-${surum}" "${isim}-${surum}"
+#betik   = cd "${isim}-${surum}"
 betik   = ./autogen.sh
 ekconf   = --disable-ogg --disable-opus --disable-speex
 tip   = gnu
