@@ -6,13 +6,12 @@ url        = https://www.chromium.org/Home
 
 [kaynak]
 1   = https://github.com/unicode-org/icu/releases/download/release-67-1/icu4c-67_1-src.tgz
-2   = https://downloads.tuxfamily.org/nutyx/files/libminizip.so.1.0.0 
 3   = https://pkg.adfinis-sygroup.ch/archlinux/extra/os/x86_64/chromium-$surum-1-x86_64.pkg.tar.zst
 #4   = https://github.com/google/re2/archive/2020-10-01.tar.gz
 
 [gerek]
 derleme = python ninja clang gperf nodejs pipewire python2 python2-setuptools
-calisma =   libva re2 snappy
+calisma =   libva re2 snappy minizip
 
 [sha1]
             #1 		= SKIP
@@ -26,8 +25,6 @@ betik = cd -
 betik = mv usr $PKG
 #betik = cd re2-2020-10-01
 #betik = make
-betik = cp libminizip.so.1.0.0 $PKG/usr/lib/chromium
-betik =ln -sv libminizip.so.1.0.0 $PKG/usr/lib/chromium/libminizip.so.1
 betik = mkdir -p $PKG/etc/ld.so.conf.d
 betik = echo "/usr/lib/chromium" > $PKG/etc/ld.so.conf.d/$isim.conf
 
