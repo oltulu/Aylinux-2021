@@ -16,6 +16,7 @@ gz  	= $url/archive
 1       = 20caf7711ffba59173dab301b978c1e379a680b56d3bd0494dbdbd14f0e3324d
 
 [derle]
+betik = sed -i 's/import gi, os, subprocess, locale/a gi.require_version('Gtk', '3.0')/' mservice.py
 tip     = py3
 
 [pakur]
