@@ -5,8 +5,8 @@ grup 	= cinnamon
 url     = https://github.com/oltulu
 
 [gerek]
-derleme = cinnamon
-calisma = cinnamon nemo
+derleme = 
+calisma =  
 
 [kaynak]
 1      = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/cinnamonkur.tar.gz
