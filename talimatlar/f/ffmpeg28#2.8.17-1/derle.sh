@@ -1,8 +1,8 @@
 ./configure \
     --prefix='/usr' \
-    --incdir='/usr/include/ffmpeg2.8' \
-    --libdir='/usr/lib/ffmpeg2.8' \
-    --shlibdir='/usr/lib/ffmpeg2.8' \
+    --incdir='/usr/include/ffmpeg28' \
+    --libdir='/usr/lib/ffmpeg28' \
+    --shlibdir='/usr/lib/ffmpeg28' \
     --disable-debug \
     --disable-static \
     --disable-stripping \
