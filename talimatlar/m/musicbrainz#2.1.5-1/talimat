@@ -1,0 +1,20 @@
+[paket]
+tanim   = CD Endeksinin ikinci nesil enkarnasyonu
+paketci = Cihan_Alkan
+grup 	  = medya
+url     = http://www.musicbrainz.org/index.html
+
+[kaynak]
+1    = ftp://ftp.musicbrainz.org/pub/$isim/historical/libmusicbrainz-${surum}.tar.gz
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+#betik   = ./configure --prefix=/usr;make
+#betik   = sed -i '211,217 d; 219,229 d; 232 d' glob/glob.c
+betik   = cd "${SRC}/lib${isim}-${surum}"
+tip     = gnu
+	      
+[pakur]
+tip     = gnu
