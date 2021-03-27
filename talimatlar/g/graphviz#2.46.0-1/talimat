@@ -6,7 +6,7 @@ url     = http://www.graphviz.org
 
 [gerek]
 derleme = libgd librsvg libxaw pango
-calisma = libgd librsvg poppler-glib
+calisma = libgd librsvg poppler-glib gtk2 qt5-base 
 
 [kaynak]
 gz      = https://gitlab.com/graphviz/graphviz/-/archive/$surum
