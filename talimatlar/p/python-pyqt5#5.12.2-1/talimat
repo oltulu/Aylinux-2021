@@ -9,22 +9,20 @@ derleme = qt5-base python-sip
 calisma = qt5-base
 
 [kaynak]
-1       = https://www.riverbankcomputing.com/static/Downloads/PyQt5/$surum/PyQt5_gpl-$surum.tar.gz
+1       = https://pypi.python.org/packages/source/P/PyQt5/PyQt5-$surum.tar.gz
 
 [sha256]
 1 		= c565829e77dc9c281aa1a0cdf2eddaead4e0f844cbaf7a4408441967f03f5f0f
 
 [derle]
-betik 	= cd "$SRC"/PyQt5_gpl-$surum
-betik 	= python3 configure.py --confirm-license --no-sip-files --qsci-api
+betik 	= cd PyQt5-$surum
+betik 	= sip-build --confirm-license --no-make  --api-dir /usr/share/qt/qsci/api/python
+betik 	= cd build
 betik 	= make
-	      
+	 
 [pakur]
-betik 	= cd "$SRC"/PyQt5_gpl-$surum
-betik 	= install -Dm644 PyQt5.api "$PKG"/usr/share/qt/qsci/api/python/PyQt5.api
-betik 	= install -d "$PKG"/usr/share/sip/PyQt5
-betik 	= cp -a sip/* "$PKG"/usr/share/sip/PyQt5
-betik 	= make DESTDIR="$PKG" INSTALL_ROOT="$PKG" install -j1
+betik 	= cd PyQt5-$surum/build
+betik 	= make INSTALL_ROOT="$PKG" install -j1
 betik 	= rm -r "$PKG"/usr/lib/python*/site-packages/PyQt5/uic/port_v2
 betik 	= python3 -m compileall -d / "$PKG"/usr/lib
 betik 	= python3 -O -m compileall -d / "$PKG"/usr/lib
