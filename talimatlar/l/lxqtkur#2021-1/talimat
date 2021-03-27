@@ -9,8 +9,7 @@ derleme	= libqtxdg liblxqt libfm-qt pcmanfm-qt lxqt-qtplugin lximage-qt lxqt-arc
 calisma	= libqtxdg liblxqt libfm-qt pcmanfm-qt lxqt-qtplugin lximage-qt lxqt-archiver libsysstat lxqt-about lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-policykit lxqt-powermanagement lxqt-session lxqt-sudo lxqt-panel lxqt-runner lxqt-themes qtermwidget qterminal lxqt-openssh-askpass lxqt-admin pavucontrol-qt qps obconf-qt xscreensaver featherpad picom
 
 [kaynak]
-1= https://notabug.org/oltulu/Ceviri/raw/master/lxqt-kur.tar.gz
-#dosya	= index.theme
+1= https://notabug.org/oltulu/Aylinux-Resimler/raw/master/lxqtkur.tar.gz
 
 [sha256]
 #1	= 
@@ -19,7 +18,5 @@ calisma	= libqtxdg liblxqt libfm-qt pcmanfm-qt lxqt-qtplugin lximage-qt lxqt-arc
 betik	= mkdir $PKG/usr
 
 [pakur]
-betik	= cp -r lxqt-kur/* $PKG/
-#betik	= cp $SRC/index.theme $PKG/usr/share/icons/default/index.theme
-
+betik	= cp -r lxqtkur/* $PKG/
 
