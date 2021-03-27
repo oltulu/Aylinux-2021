@@ -14,7 +14,6 @@
     --enable-ladspa \
     --enable-libass \
     --enable-libbluray \
-    --enable-libdcadec \
     --enable-libfreetype \
     --enable-libfribidi \
     --enable-libgsm \
