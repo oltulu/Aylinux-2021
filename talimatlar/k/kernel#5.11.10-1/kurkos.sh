@@ -1,5 +1,5 @@
 #!/bin/bash
-surum=5.11.7
+surum=5.11.10
 sonek=aylinux
 depmod ${surum}-$sonek
 cd /boot
