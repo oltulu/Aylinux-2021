@@ -6,7 +6,7 @@ url     = https://www.arduino.cc/en/software
 
 [gerek]
 derleme =  
-calisma =  
+calisma = ffmpeg28
 
 [kaynak]
 1       = https://downloads.arduino.cc/arduino-1.8.13-linux64.tar.xz
