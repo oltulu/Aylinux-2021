@@ -15,7 +15,9 @@ xz  = ${url}/releases
 #1   = 023f10831a97ad93d798f53a3640e55cd564abfeba807ecbe8524dac4fedecd5
 
 [derle]
+betik = cd ffmpeg-$surum
 dosya  =  derle.sh
 
 [pakur]
+betik = cd ffmpeg-$surum
 betik  =  make DESTDIR="${PKG}" install install-man
