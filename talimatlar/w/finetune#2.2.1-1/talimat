@@ -1,0 +1,18 @@
+[paket]
+tanim   = Otomatik müzik etiketleyici
+paketci = Cihan_Alkan
+grup  	= medya
+url     = https://flavio.tordini.org/finetune
+
+[kaynak]
+1    = https://flavio.tordini.org/files/$isim/$isim.deb
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+betik		= ar x /sources/$isim.deb
+betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
+	      
+[pakur]
+betik 	=  rm -rf "$PKG/usr/share/menu"
