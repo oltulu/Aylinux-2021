@@ -16,6 +16,7 @@ xz      = ${GNOME_SITE}/$isim/${surum%.*}
 
 [derle]
 betik =NOCONFIGURE=1 ./autogen.sh
+ekconf = --enable-gtk-doc
 tip     = gnu
 
 [pakur]
