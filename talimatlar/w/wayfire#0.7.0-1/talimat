@@ -1,0 +1,23 @@
+[paket]
+tanim   = 3D wayland besteci
+paketci = Cihan_Alkan
+url     = https://wayfire.org
+
+[gerek]
+derleme    = qt5-base mpv
+calisma    =
+
+[kaynak]
+xz        = https://github.com/WayfireWM/${isim}/releases/download/v${surum}
+
+[sha256]
+# 1         = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+ekconf     = -Duse_system_wfconfig=enabled -Duse_system_wlroots=enabled
+tip     = meson
+
+
+[pakur]
+tip     = meson
+betik      = install -Dm644 wayfire.desktop "${PKG}/usr/share/wayland-sessions/wayfire.desktop"
