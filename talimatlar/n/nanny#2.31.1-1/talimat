@@ -1,0 +1,21 @@
+[paket]
+tanim   = Linux ebeveyn kontrol yazılımıdır.
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.gnome.org/GNOME/nanny
+
+[gerek]
+derleme = meson retro-gtk
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/2.31
+
+[sha1]
+1 		= 
+
+[derle]
+tip 	= meson
+	      
+[pakur]
+tip 	= meson
