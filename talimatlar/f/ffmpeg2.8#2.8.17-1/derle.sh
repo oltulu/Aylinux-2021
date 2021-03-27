@@ -3,7 +3,6 @@
 [ -e '/usr/lib/pkgconfig/libwebp.pc' ] && PKGMK_FFMPEG+=' --enable-libwebp'
 [ -e '/usr/lib/pkgconfig/vdpau.pc' ] && PKGMK_FFMPEG+=' --enable-vdpau'
 [ -e '/usr/lib/pkgconfig/freetype2.pc' ] && PKGMK_FFMPEG+=' --enable-libfreetype'
-[ -e '/usr/lib/pkgconfig/jack.pc' ] && PKGMK_FFMPEG+=' --enable-libjack'
 [ -e '/usr/lib/pkgconfig/x264.pc' ] && PKGMK_FFMPEG+=' --enable-libx264'
 [ -e '/usr/lib/pkgconfig/x265.pc' ] && PKGMK_FFMPEG+=' --enable-libx265'
 [ -e '/usr/lib/pkgconfig/libass.pc' ] && PKGMK_FFMPEG+=' --enable-libass'
