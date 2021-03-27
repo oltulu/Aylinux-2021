@@ -1,0 +1,22 @@
+[paket]
+tanim   = İnternet tarayıcısı
+paketci = Cihan_Alkan
+grup 	  = internet
+url     = https://www.microsoftedgeinsider.com/en-us/download
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1      = microsoft-edge-dev_91.0.831.1-1_amd64.deb
+
+[sha256]
+#1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik		= ar x /sources/microsoft-edge-dev_91.0.831.1-1_amd64.deb
+
+	      
+[pakur]
+betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
