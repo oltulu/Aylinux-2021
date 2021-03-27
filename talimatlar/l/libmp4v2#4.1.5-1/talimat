@@ -15,7 +15,7 @@ dosya  = libmp4v2-c++11.patch
 
 [derle]
 betik  = cd mp4v2-Release-ThirdParty-MP4v2-${surum}
-betik  = patch -p0 -i /sources//libmp4v2-c++11.patch
+betik  = patch -p0 -i $SRC/libmp4v2-c++11.patch
 betik  = CXXFLAGS="$CXXFLAGS -Wno-narrowing" ./configure --prefix=/usr
 betik  = make
 
