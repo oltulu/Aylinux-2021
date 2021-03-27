@@ -1,0 +1,22 @@
+[paket]
+tanim   = Ses meta veri etiketi okuyucu ve yazıcı (python kitaplığı)
+paketci = Cihan_Alkan
+grup 	  = medya
+url     = https://github.com/quodlibet/mutagen
+
+[gerek]
+derleme = python-setuptools
+calisma = 
+
+[kaynak]
+1    = https://github.com/quodlibet/mutagen/releases/download/release-$surum/mutagen-$surum.tar.gz
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+betik   = mv -v mutagen-$surum "${isim}-${surum}"
+tip   = py3
+	      
+[pakur]
+tip   = py3
