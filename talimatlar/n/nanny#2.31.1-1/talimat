@@ -15,6 +15,7 @@ gz      = https://download.gnome.org/sources/$isim/2.31
 1 		= 
 
 [derle]
+ekconf = --disable_documentation
 tip 	= gnu
 	      
 [pakur]
