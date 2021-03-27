@@ -1,0 +1,21 @@
+[paket]
+tanim   = ID3v1 ve ID3v2 etiketlerini okumak, yazmak ve değiştirmek için kütüphane
+paketci = Cihan_Alkan
+grup 	  = medya
+url     = http://id3lib.sourceforge.net/
+
+[gerek]
+derleme = python-setuptools
+calisma = 
+
+[kaynak]
+gz    = https://downloads.sourceforge.net/sourceforge/${isim}
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+tip   = gnu
+	      
+[pakur]
+tip   = gnu
