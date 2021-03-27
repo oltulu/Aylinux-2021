@@ -14,11 +14,11 @@ git          = https://github.com/trueos/lumina
 # 1         = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
 
 [derle]
-betik     = cd $isim
+betik     = cd lumina
 betik     = find "${SRC}/${isim}" -name *.desktop -exec sed -i 's/usr\/local/usr/' {} \;
 betik     = qmake QMAKE_CFLAGS_ISYSTEM= PREFIX="/usr" LIBPREFIX=/usr/lib QT5LIBDIR=/usr/lib/qt CONFIG+=WITH_I18N L_MANDIR=/usr/share/man L_ETCDIR="/etc"
 betik     = make
 
 [pakur]
-betik      = cd "${SRC}/${isim}"
+betik      = cd lumina
 betik      = make INSTALL_ROOT="${PKG}" install
