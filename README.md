@@ -3,7 +3,7 @@ Milis linux tabanlı olarak hazırlanan Aylinux 2021 isosunu hazırlamak için a
 
 (Milis Linux yada Aylinux 2021 üzerinde çalışır)
 ------------------------------------------------------------------------
-wget https://github.com/oltulu/mps/raw/main/bin/Aylinux-isoyap
+wget https://github.com/oltulu/mps/raw/main/bin/aylinux-isoyap
 
 chmod +x ./aylinux-isoyap
 
