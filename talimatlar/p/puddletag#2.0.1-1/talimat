@@ -6,7 +6,7 @@ url     = https://docs.puddletag.net/
 
 [gerek]
 derleme = 
-calisma =
+calisma = python-configobj python-mutagen
 
 [kaynak]
 1    = https://github.com/puddletag/puddletag/archive/${surum}.tar.gz
