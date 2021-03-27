@@ -15,8 +15,9 @@ calisma =
 #1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
 
 [derle]
-betik   = mv -v mutagen-$surum "${isim}-${surum}"
+betik   = cd mutagen-$surum
 tip   = py3
 	      
 [pakur]
+betik   = cd mutagen-$surum
 tip   = py3
