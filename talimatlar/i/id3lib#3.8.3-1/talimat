@@ -10,11 +10,41 @@ calisma =
 
 [kaynak]
 gz    = https://downloads.sourceforge.net/sourceforge/${isim}
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/00-add-libz-to-compilation.patch
+2 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/05-create-m4-directory.patch
+3 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/10-fix-compilation-with-cpp-headers.patch
+4 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/15-fix-headers-of-main-functions.patch
+5 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/20-create-manpages.patch
+6 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/30-fix-utf16.patch
+7 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/40-deal-with-mkstemp.patch
+8 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/60-add-c-wrapper-functions.patch
+9 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/60-id3lib-missing-nullpointer-check.patch
+10= https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/60-fix_make_check.patch
+11 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/60-spelling.patch
+12 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/61-fix_vbr_stack_smash.patch
+13 = https://github.com/archlinux/svntogit-packages/raw/packages/id3lib/trunk/50-remove-outdated-check.patch
 
 [sha256]
 #1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
 
 [derle]
+betik = patch -p1 -i /sources/00-add-libz-to-compilation.patch
+betik = patch -p1 -i /sources/05-create-m4-directory.patch
+betik = patch -p1 -i /sources/10-fix-compilation-with-cpp-headers.patch
+betik = patch -p1 -i /sources/15-fix-headers-of-main-functions.patch
+betik = patch -p1 -i /sources/20-create-manpages.patch
+betik = patch -p1 -i /sources/30-fix-utf16.patch
+betik = patch -p1 -i /sources/40-deal-with-mkstemp.patch
+betik = patch -p1 -i /sources/60-add-c-wrapper-functions.patch
+betik = patch -p1 -i /sources/60-fix_make_check.patch
+betik = patch -p1 -i /sources/60-id3lib-missing-nullpointer-check.patch
+betik = patch -p1 -i /sources/60-spelling.patch
+betik = patch -p1 -i /sources/61-fix_vbr_stack_smash.patch
+betik = patch -p1 -i /sources/50-remove-outdated-check.patch
+betik = libtoolize -fc
+betik = aclocal
+betik = autoconf
+betik = automake --add-missing --copy
 tip   = gnu
 	      
 [pakur]
