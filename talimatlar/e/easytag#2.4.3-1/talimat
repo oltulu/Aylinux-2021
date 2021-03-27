@@ -4,6 +4,10 @@ paketci = Cihan_Alkan
 grup 	  = medya
 url     = https://wiki.gnome.org/Apps/EasyTAG
 
+[gerek]
+derleme = 
+calisma =
+
 [kaynak]
 1    = https://sources.voidlinux.org/easytag-2.4.3/easytag-2.4.3.tar.xz
 
