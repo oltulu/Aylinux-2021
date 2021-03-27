@@ -1,0 +1,29 @@
+[paket]
+tanim   = Bir MP3, Ogg / Vorbis ve FLAC etiket editörü, KDE sürümü
+paketci = Cihan_Alkan
+grup 	  = medya
+url     = https://kid3.kde.org/
+
+[gerek]
+derleme = python-setuptools
+calisma = 
+
+[kaynak]
+xz    = https://download.kde.org/stable/$isim/$surum
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+betik   = cd "${SRC}"
+betik   = [[ ! -d build ]] && mkdir build
+betik   = cd "${SRC}"/build
+betik   = export CXXFLAGS+=' -DNDEBUG' # FS#69904
+betik   = cmake ../${isim}-${surum} -DCMAKE_INSTALL_PREFIX=/usr -DWITH_APPS="CLI;Qt;KDE" -DWITH_MP4V2=ON -DWITH_FFMPEG=ON -DWITH_GSTREAMER=ON
+betik   = make
+	      
+[pakur]
+betik   = cd "$SRC"/build
+betik   = make DESTDIR="${PKG}" install
+betik   = make -C src/app/qt DESTDIR="${PKG}" install
+betik   = make -C src/app DESTDIR="${PKG}" install
