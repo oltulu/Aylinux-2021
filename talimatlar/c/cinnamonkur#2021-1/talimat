@@ -5,11 +5,11 @@ grup 	= cinnamon
 url     = https://github.com/oltulu
 
 [gerek]
-derleme = 
-calisma = cinnamon
+derleme = cinnamon
+calisma = cinnamon nemo
 
 [kaynak]
-1      = https://notabug.org/oltulu/Ceviri/raw/master/cinnamon-kur.tar.gz
+1      = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/cinnamonkur.tar.gz
 
 
 
@@ -18,4 +18,4 @@ betik = mkdir $PKG/usr
 
     	      
 [pakur]
-betik = cp -r cinnamon-kur/* $PKG/
+betik = cp -r cinnamonkur/* $PKG/
