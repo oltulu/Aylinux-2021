@@ -1,4 +1,3 @@
-[ -e '/usr/lib/pkgconfig/ffnvcodec.pc' ] && PKGMK_FFMPEG+=' --enable-nvdec --enable-nvenc'
 [ -e '/usr/include/AMF/core/VulkanAMF.h' ] && PKGMK_FFMPEG+=' --enable-amf'
 [ -e '/usr/bin/clang' ] && [ -e '/usr/lib/pkgconfig/cuda.pc' ] && PKGMK_FFMPEG+=' --enable-cuda-llvm'
 [ -e '/usr/lib/pkgconfig/libwebp.pc' ] && PKGMK_FFMPEG+=' --enable-libwebp'
