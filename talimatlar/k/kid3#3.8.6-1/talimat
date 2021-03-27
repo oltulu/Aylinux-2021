@@ -5,7 +5,7 @@ grup 	  = medya
 url     = https://kid3.kde.org/
 
 [gerek]
-derleme = python-setuptools
+derleme = libid3tag
 calisma = 
 
 [kaynak]
