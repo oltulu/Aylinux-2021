@@ -22,4 +22,5 @@ tip      = meson
 
 [pakur]
 tip      = meson 
+betik = mkdir -p $PKG/etc/security/limits.d
 betik   = install -Dt -m644 $SRC/10-gcr.conf "$PKG/etc/security/limits.d" 
