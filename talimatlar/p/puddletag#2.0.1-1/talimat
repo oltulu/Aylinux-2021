@@ -1,0 +1,23 @@
+[paket]
+tanim   = GNU / Linux için bir ses etiketi düzenleyici
+paketci = Cihan_Alkan
+grup 	  = medya
+url     = https://docs.puddletag.net/
+
+[gerek]
+derleme = 
+calisma =
+
+[kaynak]
+1    = https://github.com/puddletag/puddletag/archive/${surum}.tar.gz
+
+[sha256]
+#1 		= d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+
+[derle]
+betik   = cd "$SRC/${isim}-${surum}/source"
+betik   = python setup.py config
+	      
+[pakur]
+betik   = cd "$SRC/${isim}-${surum}/source"
+betik   = python setup.py install --root="${PKG}" --optimize=1
