@@ -16,9 +16,11 @@ dosya  = libmp4v2-c++11.patch
 [derle]
 betik  = cd mp4v2-Release-ThirdParty-MP4v2-${surum}
 betik  = patch -p0 -i /sources//libmp4v2-c++11.patch
-tip    = gnu
+betik  = CXXFLAGS="$CXXFLAGS -Wno-narrowing" ./configure --prefix=/usr
+betik  = make
 
 [pakur]
 betik  = cd mp4v2-Release-ThirdParty-MP4v2-${surum}
-tip    = gnu
+betik  = make DESTDIR="$PKG" install
+betik  = make DESTDIR="$PKG" install-man
 
