@@ -5,7 +5,7 @@ grup 	= kütüphane
 url     = https://developer.gnome.org/notification-spec
 
 [gerek]
-derleme = meson gnupg gtk3 libgcrypt p11-kit gobject-introspection libxslt vala
+derleme = meson gtk3 libgcrypt p11-kit gobject-introspection libxslt vala
 calisma = libgcrypt gtk3 p11-kit
 
 [kaynak]
