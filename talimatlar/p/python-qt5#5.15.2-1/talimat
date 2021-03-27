@@ -11,12 +11,14 @@ calisma = qt5-declarative python-qt5-sip
 
 [kaynak]
 1 = https://pypi.python.org/packages/source/P/PyQt5/PyQt5-$surum.tar.gz
+2 = http://cruxbrianlfs.org/ports/pyqt5/qtwebkit.patch
 
 [sha256]
 #1       = d9a76b850246d08da9863189ecb98f6c2aa9b4d97a3e85e29330a264aed0f9a1
 
 [derle]
 betik   = cd PyQt5-$surum
+betik   = patch -p1 -i /sources/qtwebkit.patch
 betik   = sip-build --confirm-license --no-make --api-dir /usr/share/qt/qsci/api/python
 betik   = cd build
 betik   = make
