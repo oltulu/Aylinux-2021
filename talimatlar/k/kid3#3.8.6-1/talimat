@@ -5,7 +5,7 @@ grup 	  = medya
 url     = https://kid3.kde.org/
 
 [gerek]
-derleme = id3lib
+derleme = id3lib libmp4v2
 calisma = 
 
 [kaynak]
