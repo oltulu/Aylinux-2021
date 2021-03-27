@@ -6,7 +6,7 @@ url     = http://squeakvm.org
 
 [gerek]
 derleme = cmake pulseaudio libxrender libglvnd
-calisma =
+calisma = pulseaudio libglvnd
 
 [kaynak]
 1       = http://squeakvm.org/unix/release/Squeak-${surum}-src.tar.gz
