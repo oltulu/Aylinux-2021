@@ -1,0 +1,21 @@
+[paket]
+tanim   = Aylinux kurulum uygulaması
+paketci = Cihan_Alkan
+grup 	  = sistem
+url     = https://github.com/oltulu
+
+[gerek]
+derleme = 
+calisma = python
+
+[kaynak]
+1      = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/aylinux-kurucu.tar.gz
+
+
+
+[derle]
+betik = mkdir $PKG/usr
+
+    	      
+[pakur]
+betik = cp -r aylinux-kurucu/* $PKG/
