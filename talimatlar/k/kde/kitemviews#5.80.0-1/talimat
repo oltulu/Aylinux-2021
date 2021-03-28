@@ -1,0 +1,25 @@
+[paket]
+tanim   = QQt Modeli / Görünümü için pencere öğesi eklentileri
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://community.kde.org/Frameworks
+
+[gerek]
+derleme = extra-cmake-modules
+calisma =  
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake "$SRC/$isim-$surum" -DBUILD_TESTING=OFF -DBUILD_QCH=ON -DCMAKE_INSTALL_LIBDIR=lib
+betik 	= make
+        	      
+[pakur]
+betik 	= cd build
+tip = gnu

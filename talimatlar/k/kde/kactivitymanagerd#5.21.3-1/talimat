@@ -1,0 +1,25 @@
+[paket]
+tanim   = Kullanıcı etkinliklerini yönetmek ve kullanım modellerini izlemek için sistem hizmeti
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://download.kde.org/stable/plasma
+
+[gerek]
+derleme = extra-cmake-modules boost
+calisma =  
+
+[kaynak]
+xz      = https://download.kde.org/stable/plasma/$surum
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik = mkdir build
+betik 	= cd build
+betik 	= cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -KACTIVITIES_ENABLE_EXCEPTIONS=OFF -KACTIVITIES_LIBRARY_ONLY=OFF -Wno-dev ..
+betik 	= make
+            	      
+[pakur]
+betik 	= cd build
+betik = make DESTDIR=$PKG install

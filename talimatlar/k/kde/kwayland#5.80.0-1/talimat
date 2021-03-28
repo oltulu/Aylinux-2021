@@ -1,0 +1,24 @@
+[paket]
+tanim   = Wayland kitaplıkları için Qt tarzı İstemci ve Sunucu kitaplığı
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://www.kde.org/workspaces/plasmadesktop/
+
+[gerek]
+derleme = extra-cmake-modules plasma-wayland-protocols
+calisma = qt5-base
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+$1 		= 39ae3b71b452e555ef2715a0b1305d44e52b1913882981f8e2e036f481f3e580
+
+[derle]
+betik 	= cd ../
+betik 	= cmake -B build -S "$SRC/$isim-$surum" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_INSTALL_LIBEXECDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
+betik 	= cmake --build build
+	      
+[pakur]
+betik 	= cd ../
+betik = DESTDIR="$PKG" cmake --install build
