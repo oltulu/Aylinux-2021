@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://enlightenment.org
 
 [gerek]
-derleme    = meson ninja avahi bullet libpng libjpeg-turbo gst-plugins-base zlib luajit tiff openssl curl dbus fontconfig freetype fribidi pulseaudio libsndfile libx11 libxau libxcomposite libxdamage libxdmcp libxext libxfixes libxinerama libxrandr libxrender libxss libxtst libxcursor libxp libxi mesa libglvnd giflib util-linux poppler libraw libspectre librsvg libxkbfile ibus libwebp vlc
+derleme    = meson ninja avahi bullet libpng libjpeg-turbo gst-plugins-base zlib luajit tiff openssl curl dbus fontconfig freetype fribidi pulseaudio libsndfile libglvnd giflib util-linux poppler libraw libspectre librsvg libxkbfile ibus libwebp vlc
 calisma    =
 
 [kaynak]
