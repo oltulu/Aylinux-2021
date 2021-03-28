@@ -36,4 +36,4 @@ betik   = install -Dm644 /sources/32x32.png?h=mblock  "${PKG}/usr/share/icons/$i
 betik   =  echo "#!/bin/bash" > $SRC/$isim.sh
 betik   = echo "/opt/$isim/$isim" >> $SRC/$isim.sh
 betik   = install -Dm755 $SRC/$isim.sh $PKG/usr/bin/$isim
-betik   = echo "Categories=Development" » /usr/share/applications/mblock.desktop
+betik   = echo "Categories=Development" » $PKG//usr/share/applications/mblock.desktop
