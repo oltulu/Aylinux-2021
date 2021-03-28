@@ -6,7 +6,7 @@ url     = http://www.mblock.cc/
 
 [gerek]
 derleme = cmake kdoctools
-calisma = 
+calisma = gconf
 
 [kaynak]
 1   = https://github.com/Makeblock-official/mBlock/releases/download/V$surum-Linux/mBlock-$surum-linux-$surum.tar.gz
