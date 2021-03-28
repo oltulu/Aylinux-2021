@@ -5,8 +5,8 @@ grup    = medya
 url     = https://www.enlightenment.org
 
 [gerek]
-derleme = meson efl ninja
-calisma = v
+derleme = meson efl-bin ninja
+calisma = 
 
 [kaynak]
 xz      = https://download.enlightenment.org/rel/apps/${isim}
