@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = https://developer.gnome.org/ORBit2/
 
 [gerek]
-derleme = 
+derleme = libidl2
 calisma = 
 
 [kaynak]
