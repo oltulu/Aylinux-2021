@@ -5,7 +5,7 @@ grup    = grafik
 url     = https://www.enlightenment.org
 
 [gerek]
-derleme = meson efl-bin ninja
+derleme = meson efl-bin python-distutils-extra
 calisma = 
 
 [kaynak]
