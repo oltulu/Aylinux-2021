@@ -19,5 +19,5 @@ bz2    = http://www.apache.org/dist/$isim
 dosya  = derle.sh
 
 [pakur]
-tip    = gnu
+betik    = cd $SRC
 
