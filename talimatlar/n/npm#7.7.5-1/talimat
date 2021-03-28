@@ -28,8 +28,8 @@ betik    = cd cli-$surum
 betik    = node bin/npm-cli.js install -g -f --prefix="$PKG/usr" $(node bin/npm-cli.js pack | tail -1)
 betik    =  chmod -R u=rwX,go=rX "$PKG"
 betik    =  chown -R root:root "$PKG"
-betik    = rm -r $PKG"/usr/lib/node_modules/$isim/node_modules/{,.bin/}semver
-betik    = rm -r $PKG"/usr/lib/node_modules/$isim/node_modules/{,.bin/}node-gyp
-betik    = sed -i 's|../../node_modules/node-gyp/bin/node-gyp.js|../../../node-gyp/bin/node-gyp.js|' $PKG"/usr/lib/node_modules/$isim/bin/node-gyp-bin/node-gyp
+betik    = rm -r $PKG/usr/lib/node_modules/$isim/node_modules/{,.bin/}semver
+betik    = rm -r $PKG/usr/lib/node_modules/$isim/node_modules/{,.bin/}node-gyp
+betik    = sed -i 's|../../node_modules/node-gyp/bin/node-gyp.js|../../../node-gyp/bin/node-gyp.js|' $PKG/usr/lib/node_modules/$isim/bin/node-gyp-bin/node-gyp
 betik    = install -dm755 "$PKG"/usr/share/bash-completion/completions
 betik    = node "$SRC"/cli-$surum/bin/npm-cli.js completion > "$PKG"/usr/share/bash-completion/completions/npm
