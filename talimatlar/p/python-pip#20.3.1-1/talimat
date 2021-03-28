@@ -21,3 +21,5 @@ betik 	= python3 setup.py install --prefix=/usr --root=$PKG
 betik 	= mv $PKG/usr/bin/pip $PKG/usr/bin/pip3
 	      
 [pakur]
+
+betik 	= cd "$SRC/pip-$surum"
