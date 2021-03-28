@@ -15,7 +15,7 @@ bz2     = http://apache.uvigo.es/subversion
 1       = 6ba8e218f9f97a83a799e58a3c6da1221d034b18d9d8cbbcb6ec52ab11722102
 
 [derle]
-ekconf  = --with-apx --with-serf=/usr  --with-apache-libexecdir=/usr/lib/httpd/modules --with-sqlite=/usr --without-swig --without-apr --with-lz4=internal --with-utf8proc=internal
+ekconf  =  --with-serf=/usr  --with-apache-libexecdir=/usr/lib/httpd/modules --with-sqlite=/usr --without-swig --without-apr --with-lz4=internal --with-utf8proc=internal
 tip     = gnu
 
 [pakur]
