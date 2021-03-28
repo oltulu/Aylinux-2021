@@ -15,6 +15,7 @@ dosya  = ship_find_apr.m4.patch
 dosya  = fix-apr.pc.patch
 dosya  = omit_extra_libs.patch
 dosya  = dont_override_external_buildflags
+1= https://github.com/void-linux/void-packages/raw/master/srcpkgs/apr/patches/atomic64.patch
 
 [sha256]
 1  =  e2e148f0b2e99b8e5c6caa09f6d4fb4dd3e83f744aa72a952f94f5a14436f7ea
