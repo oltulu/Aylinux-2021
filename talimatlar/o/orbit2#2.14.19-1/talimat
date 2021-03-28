@@ -17,7 +17,7 @@ calisma =
 
 [derle]
 betik = cd ORBit2-2.14.19
-betik   = --disable-static --enable-gtk-doc
+betik   = --disable-static --disable-gtk-doc
 tip = gnu
 
 [pakur]
