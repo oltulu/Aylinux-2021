@@ -15,13 +15,12 @@ github  = HOST-Oman/libraqm
 #1 		= 21ed67b8d0d2217f3801878f2ceef9b2da24495eeff830552051cef21f95938e
 
 [derle]
-betik   = sed -i '/docs/ d' configure.ac
-betik   = autoreconf -fi
-betik   = sed -i '/GTK_DOC_CHECK/ d' configure
-ekconf  = --enable-static=no --enable-shared=yes --enable-fast-install=yes
-betik   = ./configure $confopt $extopt
-betik   = sed -i 's/SUBDIRS = src docs tests/SUBDIRS = src/g' Makefile
-betik   = make
+#betik   = sed -i '/docs/ d' configure.ac
+#betik   = autoreconf -fi
+#betik   = sed -i '/GTK_DOC_CHECK/ d' configure
+ekconf  = --enable-static=no --enable-shared=yes --enable-fast-install=yes --enable-gtk-doc=no --enable-gtk-doc-html=no --enable-gtk-doc-pdf=no
+tip   = gnu
+
 	      
 [pakur]
 tip     = gnu
