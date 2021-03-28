@@ -10,6 +10,8 @@ calisma    =
 
 [kaynak]
 1      = https://dl.genymotion.com/releases/genymotion-$surum/$isim-${surum}-linux_x64.bin
+2 = https://aur.archlinux.org/cgit/aur.git/plain/genymotion-player.desktop?h=genymotion
+3 = https://aur.archlinux.org/cgit/aur.git/plain/genymotion.desktop?h=genymotion
 
 [sha256]
 #1          = 5eb20ac0e2944f6cb9c2d51dd6c4518941c185347d4089ea89087ffdd6e2341f
@@ -26,6 +28,6 @@ betik      = ln -s /opt/genymotion/player $PKG/usr/bin/genymotion-player
 betik      = ln -s /opt/genymotion/gmtool $PKG/usr/bin/gmtool
 
 [pakur]
-betik      = install -Dm644 /sources/genymotion.desktop $PKG/usr/share/applications/genymotion.desktop
-betik      = install -Dm644 /sources/genymotion-player.desktop $PKG/usr/share/applications/genymotion-player.desktop
+betik      = install -Dm644 /sources/genymotion.desktop?h=genymotion $PKG/usr/share/applications/genymotion.desktop
+betik      = install -Dm644 /sources/genymotion-player.desktop?h=genymotion $PKG/usr/share/applications/genymotion-player.desktop
 betik      = chown -R root:root $PKG/opt/genymotion
