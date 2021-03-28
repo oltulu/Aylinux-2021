@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/michaelrsweet/mxml/releases/download/v${surum}/mxml-${surum}.tar.gz
 
 [sha256]
-1       = 1ac8d252f62f9dc2b2004518c70d2da313bdfcd92b8350e215f46064a34b52fc
+#1       = 1ac8d252f62f9dc2b2004518c70d2da313bdfcd92b8350e215f46064a34b52fc
 
 [derle]
 ekconf  = --enable-static --enable-shared
