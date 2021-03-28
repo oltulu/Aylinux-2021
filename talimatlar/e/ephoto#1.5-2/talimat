@@ -5,7 +5,7 @@ grup    = grafik
 url     = https://www.enlightenment.org
 
 [gerek]
-derleme = meson efl ninja
+derleme = meson efl-bin ninja
 calisma = 
 
 [kaynak]
