@@ -1,0 +1,22 @@
+[paket]
+tanim   = GStreamer Multimedya temel kütüphaneleri
+paketci = Cihan_Alkan 
+grup    = kütüphane
+url     = https://gstreamer.freedesktop.org/
+
+[gerek]
+derleme  = 
+calisma  = 
+
+[kaynak]
+xz       = https://gstreamer.freedesktop.org/src/$isim
+
+[sha256]
+#1        = b13e73e2fe74a4166552f9577c3dcb24bed077021b9c7fa600d910ec6987816a
+
+[derle]
+ekconf  =  -D doc=disabled -D package-name="GStreamer FFmpeg Plugin (Aylinux)" -D package-origin="https://www.aylinux.org/"
+tip      = meson
+
+[pakur]
+tip      = meson
