@@ -9,7 +9,7 @@ derleme    =
 calisma    =
 
 [kaynak]
-1         = https://archlinux.org/packages/community/x86_64/efl/download/ ::efl-1.25.1-4-x86_64.pkg.tar.zst
+1         = https://mirror.f4st.host/archlinux/community/os/x86_64/efl-1.25.1-4-x86_64.pkg.tar.zst
 
 [sha256]
 ;1          = 53cea69eaabe443a099fb204b7353e968e7bb62b41fbb0da24451403c7a56901
