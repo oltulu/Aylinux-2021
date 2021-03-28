@@ -6,7 +6,7 @@ url     = https://github.com/AOMediaCodec/libavif
 
 [gerek]
 derleme  = 
-calisma  = 
+calisma  = dav1d
 
 [kaynak]
 gz       = ${url}/archive/v${surum}
