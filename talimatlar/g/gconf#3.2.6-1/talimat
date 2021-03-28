@@ -17,6 +17,8 @@ git  = https://gitlab.gnome.org/Archive/gconf
 
 [derle]
 betik   = cd $isim
+betik   = sed -i '1s|#!/usr/bin/env python$|#!/usr/bin/python|' gsettings/gsettings-schema-convert
+betik   = NOCONFIGURE=1 ./autogen.sh
 tip = gnu
 
 [pakur]
