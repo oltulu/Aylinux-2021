@@ -6,7 +6,7 @@ url     = https://www.enlightenment.org
 
 [gerek]
 derleme = meson ninja
-calisma = efl
+calisma = efl-bin
 
 [kaynak]
 xz      = https://download.enlightenment.org/rel/apps/${isim}
