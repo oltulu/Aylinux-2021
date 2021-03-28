@@ -1,0 +1,31 @@
+[paket]
+tanim   = Android için sanal bir ortam sağlayan eksiksiz araçlar seti.
+paketci = Cihan_Alkan
+grup    = oyun
+url     = http://www.genymotion.com/
+
+[gerek]
+derleme    =  
+calisma    =
+
+[kaynak]
+1      = https://dl.genymotion.com/releases/genymotion-$surum/$isim-${surum}-linux_x64.bin
+
+[sha256]
+#1          = 5eb20ac0e2944f6cb9c2d51dd6c4518941c185347d4089ea89087ffdd6e2341f
+
+
+[derle]
+betik      = cd $SRC
+betik      = install -d $PKG/opt
+betik      = yes | bash ./$isim-${surum}-linux_x64.bin -d $PKG/opt
+betik      = install -d $PKG/usr/bin
+betik      = ln -s /opt/genymotion/genymotion $PKG/usr/bin/genymotion
+betik      = ln -s /opt/genymotion/genymotion-shell $PKG/usr/bin/genymotion-shell
+betik      = ln -s /opt/genymotion/player $PKG/usr/bin/genymotion-player
+betik      = ln -s /opt/genymotion/gmtool $PKG/usr/bin/gmtool
+
+[pakur]
+betik      = install -Dm644 /sources/genymotion.desktop $PKG/usr/share/applications/genymotion.desktop
+betik      = install -Dm644 /sources/genymotion-player.desktop $PKG/usr/share/applications/genymotion-player.desktop
+betik      = chown -R root:root $PKG/opt/genymotion
