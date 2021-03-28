@@ -17,7 +17,7 @@ git      = https://github.com/elementary/code
 
 
 [derle]
-betik      = cp -r calculator "${isim}-$surum"
+betik      = cp -r code "${isim}-$surum"
  sed "/subdir('outline')/d" -i ${isim}-$surum/plugins/meson.build
 tip      = meson
 
