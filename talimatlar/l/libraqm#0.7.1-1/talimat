@@ -9,7 +9,7 @@ derleme = freetype fribidi harfbuzz
 calisma =
 
 [kaynak]
-github  = HOST-Oman/libraqm
+gz  = https://github.com/HOST-Oman/libraqm/releases/download/v$surum
 
 [sha256]
 #1 		= 21ed67b8d0d2217f3801878f2ceef9b2da24495eeff830552051cef21f95938e
