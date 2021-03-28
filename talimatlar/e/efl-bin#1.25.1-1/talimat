@@ -6,7 +6,7 @@ url     = https://enlightenment.org
 
 [gerek]
 derleme    = 
-calisma    = libavif
+calisma    = libavif gstreamer ibus libspectre openjpeg2 poppler libraw luajit
 
 [kaynak]
 1         = https://mirror.f4st.host/archlinux/community/os/x86_64/efl-1.25.1-4-x86_64.pkg.tar.zst
