@@ -1,0 +1,25 @@
+[paket]
+tanim   = CMake için ek modüller ve komut dosyaları
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = https://projects.kde.org/projects/kdesupport/extra-cmake-modules
+
+[gerek]
+derleme = qt5-tools cmake
+calisma = cmake
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+dosya   = ECM-no-init.py.patch
+
+[sha256]
+#1       = 42f071f628b192122894026de20097cb0b3de411cb41c6935b48eb86ce992a65
+
+[derle]
+yama    = ECM-no-init.py.patch
+ekconf  = -DBUILD_HTML_DOCS=OFF -DBUILD_TESTING=OFF
+tip     = cmake
+
+[pakur]
+tip     = cmake
+
