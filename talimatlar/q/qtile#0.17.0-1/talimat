@@ -1,0 +1,23 @@
+[paket]
+tanim   = QR Kodu sembolündeki verileri kodlamak için C kitaplığı.
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://fukuchi.org/works/qrencode/
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+gz      = https://files.pythonhosted.org/packages/source/${isim::1}/${surum}
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+tip 	= py3
+        	      
+[pakur]
+tip 	= py3
+install -vDm 644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${pkgname}/"
+betik 	=install -vDm 644 "resources/${pkgname}.desktop" -t "${pkgdir}/usr/share/xsessions/"
