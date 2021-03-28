@@ -16,7 +16,7 @@ xz         = https://download.enlightenment.org/rel/libs/efl
 
 [derle]
 betik	     = export CFLAGS="$CFLAGS -fvisibility=hidden"
-ekconf     =  -Dsystemd=false -Dbuild-tests=false -Ddrm=false -Dnetwork-backend=none -Dopengl=full -Decore-imf-loaders-disabler=scim -Dglib=true -Devas-loaders-disabler=json -Dbuild-examples=false -Dfb=true -Ddrm=true -Dcrypto=openssl
+ekconf     =  -Dsystemd=false -Dbuild-tests=false -Dopengl=none -Dnetwork-backend=none -Dopengl=full -Decore-imf-loaders-disabler=scim -Dglib=true -Devas-loaders-disabler=json -Dbuild-examples=false -Dfb=true -Ddrm=true -Dcrypto=openssl
 tip        = meson
 
 [pakur]
