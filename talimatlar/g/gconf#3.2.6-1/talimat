@@ -1,0 +1,24 @@
+[paket]
+tanim   = Eski bir konfigürasyon veritabanı sistemi
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = ttps://projects-old.gnome.org/gconf/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+git  = https://gitlab.gnome.org/Archive/gconf
+
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik   = cd $isim
+tip = gnu
+
+[pakur]
+betik   = cd $isim
+tip = gnu
