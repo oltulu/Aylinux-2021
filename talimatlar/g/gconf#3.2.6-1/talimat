@@ -6,7 +6,7 @@ url     = ttps://projects-old.gnome.org/gconf/
 
 [gerek]
 derleme = orbit2
-calisma = 
+calisma = orbit2
 
 [kaynak]
 1  = https://download.gnome.org/sources/GConf/3.2/GConf-$surum.tar.xz
