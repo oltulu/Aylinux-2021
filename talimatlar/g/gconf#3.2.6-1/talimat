@@ -9,18 +9,16 @@ derleme = orbit2
 calisma = 
 
 [kaynak]
-git  = https://gitlab.gnome.org/Archive/gconf
+1  = https://download.gnome.org/sources/GConf/3.2/GConf-$surum.tar.xz
 
 
 [sha256]
 #1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
 
 [derle]
-betik   = cd $isim
-betik   = sed -i '1s|#!/usr/bin/env python$|#!/usr/bin/python|' gsettings/gsettings-schema-convert
-betik   = NOCONFIGURE=1 ./autogen.sh
+betik   = cd GConf-$surum
 tip = gnu
 
 [pakur]
-betik   = cd $isim
+betik   = cd GConf-$surum
 tip = gnu
