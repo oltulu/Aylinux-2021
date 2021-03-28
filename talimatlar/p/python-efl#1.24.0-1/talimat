@@ -5,8 +5,8 @@ grup    = kütüphane
 url     = http://enlightenment.org
 
 [gerek]
-derleme = python efl python-dbus
-calisma =
+derleme = python  python-dbus
+calisma = efl-bin
 
 [kaynak]
 xz      = http://download.enlightenment.org/rel/bindings/python
