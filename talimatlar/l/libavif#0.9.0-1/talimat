@@ -1,0 +1,22 @@
+[paket]
+tanim   = Avif dosyalarını kodlamak ve çözmek için kitaplık
+paketci = Cihan_Alkan 
+grup    = kütüphane
+url     = https://github.com/AOMediaCodec/libavif
+
+[gerek]
+derleme  = 
+calisma  = 
+
+[kaynak]
+gz       = ${url}/archive/v${surum}
+
+[sha256]
+#1        = b13e73e2fe74a4166552f9577c3dcb24bed077021b9c7fa600d910ec6987816a
+
+[derle]
+ekconf   =  -DAVIF_BUILD_APPS=ON -DAVIF_CODEC_AOM=ON -DAVIF_CODEC_DAV1D=ON -DAVIF_CODEC_RAV1E=ON -DAVIF_CODEC_SVT=ON -DAVIF_BUILD_GDK_PIXBUF=ON
+tip      = meson
+
+[pakur]
+tip      = meson
