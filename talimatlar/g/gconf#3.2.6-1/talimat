@@ -5,7 +5,7 @@ grup    = geliştirme
 url     = ttps://projects-old.gnome.org/gconf/
 
 [gerek]
-derleme = 
+derleme = orbit2
 calisma = 
 
 [kaynak]
