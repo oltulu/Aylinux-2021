@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://www.enlightenment.org
 
 [gerek]
-derleme = meson efl desktop-file-utils xdg-utils
+derleme = meson efl-bin desktop-file-utils xdg-utils
 calisma =
 
 [kaynak]
