@@ -1,0 +1,23 @@
+[paket]
+tanim   = Thin/fast CORBA ORB
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = https://developer.gnome.org/ORBit2/
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+gz  = https://download.gnome.org/sources/ORBit2/2.14
+
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik   = --disable-static --enable-gtk-doc
+tip = gnu
+
+[pakur]
+tip = gnu
