@@ -20,7 +20,7 @@ calisma    =
 [derle]
 betik      = cd $SRC
 betik      = install -d $PKG/opt
-betik      = yes | bash ./$isim-${surum}-linux_x64.bin -d $PKG/opt
+betik      = yes | bash /sources/$isim-${surum}-linux_x64.bin -d $PKG/opt
 betik      = install -d $PKG/usr/bin
 betik      = ln -s /opt/genymotion/genymotion $PKG/usr/bin/genymotion
 betik      = ln -s /opt/genymotion/genymotion-shell $PKG/usr/bin/genymotion-shell
