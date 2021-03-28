@@ -13,7 +13,7 @@ bz2    = http://www.apache.org/dist/$isim
 1 = http://www.apache.org/dist/$isim/$isim-util-1.6.1.tar.bz2
 
 [sha256]
-1  =  
+ 
 
 [derle]
 dosya  = derle.sh
