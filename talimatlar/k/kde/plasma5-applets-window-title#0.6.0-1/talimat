@@ -1,0 +1,23 @@
+[paket]
+tanim   = Etkin pencere için uygulama başlığını ve simgesini gösteren Plazma 5 uygulaması
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://github.com/psifidotos/applet-window-title
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1      = https://github.com/psifidotos/applet-window-title/archive/$surum.tar.gz
+
+[sha256]
+    #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= mkdir -p "$PKG/usr/share/plasma/plasmoids/org.kde.windowtitle" 
+betik 	= cp -r applet-window-title-$surum/* "$PKG/usr/share/plasma/plasmoids/org.kde.windowtitle"
+            	      
+[pakur]
+#betik 	= cd build
+betik 	= rm "$PKG/usr/share/plasma/plasmoids/org.kde.windowtitle/README.md"

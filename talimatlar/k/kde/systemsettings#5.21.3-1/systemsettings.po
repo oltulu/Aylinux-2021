@@ -1,0 +1,354 @@
+# translation of systemsettings.po to
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Serdar Soytetir <tulliana@gmail.com>, 2007, 2008, 2009.
+# Volkan Gezer <volkangezer@gmail.com>, 2013, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: systemsettings\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-11-20 08:29+0100\n"
+"PO-Revision-Date: 2017-10-23 11:19+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir, Cihan Alkan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tulliana@gmail.com, cihanalk@gmail.com"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GbViewStyle)
+#: app/configDialog.ui:17
+#, kde-format
+msgid "View Style"
+msgstr "Görünüm Biçemi"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ChTooltips)
+#: app/configDialog.ui:24
+#, kde-format
+msgid "Show detailed tooltips"
+msgstr "Ayrıntılı ipuçlarını göster"
+
+#: app/main.cpp:92 app/SettingsBase.cpp:68
+#, kde-format
+msgid "Info Center"
+msgstr "Bilgi Merkezi"
+
+#: app/main.cpp:92
+#, kde-format
+msgid "Centralized and convenient overview of system information."
+msgstr "Sistem bilgilerine merkezi ve kullanışlı genel bakış."
+
+#: app/main.cpp:92 app/main.cpp:98 icons/IconMode.cpp:62
+#, kde-format
+msgid "(c) 2009, Ben Cooksley"
+msgstr "(c) 2009, Ben Cooksley"
+
+#: app/main.cpp:98 app/SettingsBase.cpp:71
+#: sidebar/package/contents/ui/introPage.qml:75
+#, kde-format
+msgid "System Settings"
+msgstr "Sistem Ayarları"
+
+#: app/main.cpp:98
+#, kde-format
+msgid "Central configuration center by KDE."
+msgstr "KDE tarafından ana yapılandırma merkezi."
+
+#: app/main.cpp:109 icons/IconMode.cpp:63 sidebar/SidebarMode.cpp:278
+#, kde-format
+msgid "Ben Cooksley"
+msgstr "Ben Cooksley"
+
+#: app/main.cpp:109
+#, kde-format
+msgid "Maintainer"
+msgstr "Projeyi Yürüten"
+
+#: app/main.cpp:110 icons/IconMode.cpp:64 sidebar/SidebarMode.cpp:279
+#, kde-format
+msgid "Mathias Soeken"
+msgstr "Mathias Soeken"
+
+#: app/main.cpp:110 icons/IconMode.cpp:64 sidebar/SidebarMode.cpp:279
+#, kde-format
+msgid "Developer"
+msgstr "Geliştirici"
+
+#: app/main.cpp:111
+#, kde-format
+msgid "Will Stephenson"
+msgstr "Will Stephenson"
+
+#: app/main.cpp:111
+#, kde-format
+msgid "Internal module representation, internal module model"
+msgstr "İç modül temsili, iç modül modeli"
+
+#: app/main.cpp:119
+#, kde-format
+msgid "List all possible modules"
+msgstr "Olası tüm modülleri listeleyin"
+
+#: app/main.cpp:120 app/main.cpp:183
+#, kde-format
+msgid "Configuration module to open"
+msgstr "Açılacak yapılandırma modülü"
+
+#: app/main.cpp:121 app/main.cpp:184
+#, fuzzy, kde-format
+#| msgid "About Current Module"
+msgid "Arguments for the module"
+msgstr "Geçerli Modül Hakkında"
+
+#: app/main.cpp:129
+#, kde-format
+msgid "The following modules are available:"
+msgstr "Aşağıdaki modüller mevcuttur:"
+
+#: app/main.cpp:146
+#, kde-format
+msgid "No description available"
+msgstr "Açıklama yok"
+
+#: app/SettingsBase.cpp:62
+#, kde-format
+msgctxt "Search through a list of control modules"
+msgid "Search"
+msgstr "Ara"
+
+#: app/SettingsBase.cpp:161
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgid "Configure..."
+msgstr "Yapılandır"
+
+#: app/SettingsBase.cpp:192
+#, kde-format
+msgid "Help"
+msgstr "Yardım"
+
+#: app/SettingsBase.cpp:197 app/SettingsBase.cpp:441
+#, kde-format
+msgid "About Active Module"
+msgstr "Etkin Modül Hakkında"
+
+#: app/SettingsBase.cpp:211
+#, kde-format
+msgctxt "General config for System Settings"
+msgid "General"
+msgstr "Genel"
+
+#: app/SettingsBase.cpp:323
+#, kde-format
+msgid ""
+"System Settings was unable to find any views, and hence nothing is available "
+"to configure."
+msgstr ""
+"Sistem Ayarları hiçbir görünüm bulamadı, yapılandırmak için uygun bir şey "
+"yok."
+
+#: app/SettingsBase.cpp:323 app/SettingsBase.cpp:386
+#, kde-format
+msgid "No views found"
+msgstr "Görünüm bulunamadı"
+
+#: app/SettingsBase.cpp:386
+#, kde-format
+msgid ""
+"System Settings was unable to find any views, and hence has nothing to "
+"display."
+msgstr ""
+"Sistem Ayarları hiçbir görünüm bulamadı, yapılandırmak için uygun bir şey "
+"yok."
+
+#: app/SettingsBase.cpp:421
+#, kde-format
+msgid "About Active View"
+msgstr "Etkin Görünüm Hakkında"
+
+#: app/SettingsBase.cpp:491
+#, kde-format
+msgid "About %1"
+msgstr "%1 Hakkında"
+
+#. i18n: ectx: label, entry (ShowToolTips), group (Main)
+#: app/systemsettings.kcfg:9
+#, kde-format
+msgid "Determines whether detailed tooltips should be used"
+msgstr "Ayrıntılı ipuçlarının kullanılıp kullanılmayacağını belirler"
+
+#. i18n: ectx: label, entry (ActiveView), group (Main)
+#: app/systemsettings.kcfg:13
+#, kde-format
+msgid "Internal name for the view used"
+msgstr "Kullanılan görünümün iç adı"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: app/systemsettingsui.rc:16
+#, kde-format
+msgid "About System Settings"
+msgstr "Sistem Ayarları Hakkında"
+
+#: app/ToolTips/tooltipmanager.cpp:202
+#, kde-format
+msgid "Contains 1 item"
+msgid_plural "Contains %1 items"
+msgstr[0] "1 öge içerir"
+msgstr[1] "%1 öge içerir"
+
+#: core/ExternalAppModule.cpp:33
+#, kde-format
+msgid "%1 is an external application and has been automatically launched"
+msgstr "%1 bir dış uygulama ve otomatik olarak çalıştırıldı"
+
+#: core/ExternalAppModule.cpp:34
+#, kde-format
+msgid "Relaunch %1"
+msgstr "%1 uygulamasını yeniden çalıştır"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExternalModule)
+#: core/externalModule.ui:14
+#, kde-format
+msgid "Dialog"
+msgstr "Pencere"
+
+#: core/ModuleView.cpp:97
+#, kde-format
+msgid "Reset all current changes to previous values"
+msgstr "Yapılan tüm değişiklikleri önceki değerlere döndür"
+
+#: core/ModuleView.cpp:256
+#, kde-format
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Etkin modülde kaydedilmemiş değişiklikler var.\n"
+"Değişiklikleri kaydetmek mi yoksaymak mı istiyorsunuz?"
+
+#: core/ModuleView.cpp:258
+#, kde-format
+msgid "Apply Settings"
+msgstr "Ayarları Uygula"
+
+#: icons/IconMode.cpp:60
+#, kde-format
+msgid "Icon View"
+msgstr "Simge Görünümü"
+
+#: icons/IconMode.cpp:61
+#, kde-format
+msgid "Provides a categorized icons view of control modules."
+msgstr "Denetim modüllerine kategorilendirilmiş simge görünümü sağlar."
+
+#: icons/IconMode.cpp:63 sidebar/SidebarMode.cpp:277
+#: sidebar/SidebarMode.cpp:278
+#, kde-format
+msgid "Author"
+msgstr "Yazar"
+
+#: icons/IconMode.cpp:67
+#, kde-format
+msgid "All Settings"
+msgstr "Tüm Ayarlar"
+
+#: icons/IconMode.cpp:68
+#, kde-format
+msgid "Keyboard Shortcut: %1"
+msgstr "Klavye Kısayolu: %1"
+
+#: sidebar/package/contents/ui/CategoriesPage.qml:55
+#, kde-format
+msgid "Show menu"
+msgstr "Menüyü göster"
+
+#: sidebar/package/contents/ui/CategoriesPage.qml:81
+#, kde-format
+msgid "Show intro page"
+msgstr "Giriş sayfasını göster"
+
+#: sidebar/package/contents/ui/CategoriesPage.qml:102
+#, fuzzy, kde-format
+#| msgctxt "A search yelded no results"
+#| msgid "No items matching your search"
+msgctxt "A search yielded no results"
+msgid "No items matching your search"
+msgstr "Aramanızla eşleşen bir öge yok"
+
+#: sidebar/package/contents/ui/CategoriesPage.qml:211
+#: sidebar/package/contents/ui/SubCategoryPage.qml:196
+#, kde-format
+msgctxt "Action to show indicators for settings with custom data"
+msgid "Highlight Changed Settings"
+msgstr "Değiştirilen Ayarları Vurgula"
+
+#: sidebar/package/contents/ui/IntroIcon.qml:89
+#, kde-format
+msgid "Most used module number %1"
+msgstr "En çok kullanılan modül numarası %1"
+
+#: sidebar/package/contents/ui/introPage.qml:68
+#, kde-format
+msgid "Plasma"
+msgstr "Plazma"
+
+#: sidebar/package/contents/ui/introPage.qml:94
+#, fuzzy, kde-format
+#| msgid "Frequently used:"
+msgid "Frequently Used"
+msgstr "Sıklıkla kullanılan:"
+
+#: sidebar/package/contents/ui/SubCategoryPage.qml:55
+#, kde-format
+msgid "Back"
+msgstr "Geri"
+
+#: sidebar/SidebarMode.cpp:274
+#, kde-format
+msgid "Sidebar View"
+msgstr "Yan Çubuk Görünümü"
+
+#: sidebar/SidebarMode.cpp:275
+#, kde-format
+msgid "Provides a categorized sidebar for control modules."
+msgstr "Denetim modüllerine kategorilendirilmiş yan çubuk görünümü sağlar."
+
+#: sidebar/SidebarMode.cpp:276
+#, kde-format
+msgid "(c) 2017, Marco Martin"
+msgstr "(c) 2017, Marco Martin"
+
+#: sidebar/SidebarMode.cpp:277
+#, kde-format
+msgid "Marco Martin"
+msgstr "Marco Martin"
+
+#: sidebar/SidebarMode.cpp:717
+#, kde-format
+msgid "Sidebar"
+msgstr "Kenar Çubuğu"
+
+#: sidebar/SidebarMode.cpp:758
+#, kde-format
+msgid "Most Used"
+msgstr "En Çok Kullanılan"
+
+#: sidebar/ToolTips/tooltipmanager.cpp:218
+#, kde-format
+msgid "<i>Contains 1 item</i>"
+msgid_plural "<i>Contains %1 items</i>"
+msgstr[0] "<i>1 öge içerir</i>"
+msgstr[1] "<i>%1 öge içerir</i>"

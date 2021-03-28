@@ -1,0 +1,25 @@
+[paket]
+tanim   = Donanım entegrasyonu ve tespiti
+paketci = Cihan_Alkan
+grup 	= kde
+url     = https://community.kde.org/Frameworks
+
+[gerek]
+derleme = extra-cmake-modules qt5-tools qt5-declarative
+calisma = qt5-base upower udisks libimobiledevice qt5-declarative
+
+[kaynak]
+xz      = https://download.kde.org/stable/frameworks/${surum%.*}
+
+[sha256]
+#1 		= 1d5493661c34043f29a39a4a05d7e0509572ef5d0e894980b54eed6efcab1045
+
+[derle]
+betik 	= mkdir -p build
+betik 	= cd build
+betik 	= cmake "$SRC/$isim-$surum" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DBUILD_QCH=ON
+betik 	= make
+	      
+[pakur]
+betik 	= cd build
+tip = gnu
