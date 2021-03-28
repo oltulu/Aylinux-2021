@@ -10,7 +10,7 @@ calisma  =
 
 [kaynak]
 bz2    = http://www.apache.org/dist/$isim
-1 = http://www.apache.org/dist/$name/$name-util-1.6.1.tar.bz2
+1 = http://www.apache.org/dist/$isim/$isim-util-1.6.1.tar.bz2
 
 [sha256]
 1  =  
