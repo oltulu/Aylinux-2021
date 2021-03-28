@@ -5,8 +5,8 @@ grup    = masaüstü
 url     = https://enlightenment.org
 
 [gerek]
-derleme    = meson ninja efl-bin polkit openconnect bluez xcb-util-keysyms pixman mesa desktop-file-utils udisks dejavu-fonts-ttf pam xkeyboard-config pm-utils
-calisma    = efl-bin
+derleme    = meson ninja efl-bin polkit openconnect bluez  desktop-file-utils udisks dejavu-fonts-ttf pam xkeyboard-config pm-utils
+calisma    = efl-bin alsa-lib pulseaudio bluez
 
 [kaynak]
 xz         = https://download.enlightenment.org/rel/apps/$isim
