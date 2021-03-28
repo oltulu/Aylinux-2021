@@ -1,0 +1,22 @@
+[paket]
+tanim   = Enlightenment Vakfı Kütüphaneleri
+paketci = yasarciv67
+grup    = kütüphane
+url     = https://enlightenment.org
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1         = https://archlinux.org/packages/community/x86_64/efl/download/
+
+[sha256]
+;1          = 53cea69eaabe443a099fb204b7353e968e7bb62b41fbb0da24451403c7a56901
+
+[derle]
+betik = tar -I zstd -xvf /sources/efl-1.25.1-4-x86_64.pkg.tar.zst
+betik = mv usr $PKG
+
+[pakur]
+betik        = cd $SRC
