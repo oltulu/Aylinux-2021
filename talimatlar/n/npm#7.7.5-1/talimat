@@ -1,0 +1,35 @@
+[paket]
+tanim    = JavaScript için bir paket yöneticisi
+paketci  = Cihan_Alkan
+grup     = kütüphane 
+url      = https://www.npmjs.com/
+
+[gerek]
+derleme  =  
+calisma  =  
+
+[kaynak]
+1 = https://github.com/npm/cli/archive/v$surum.tar.gz
+
+[sha256]
+ 
+
+[derle]
+betik  = cd cli-$surum
+betik  = mkdir -p node_modules/.bin
+betik  = ln -sf /usr/bin/marked{,-man} node_modules/.bin/
+betik  = sed -i 's|node bin/npm-cli.js install marked|true |' Makefile
+betik  = sed -i 's/install: all/install:/' Makefile
+betik  = mkdir -p man/man1
+betik  = NODE_PATH=/usr/lib/node_modules make
+
+[pakur]
+betik    = cd cli-$surum
+betik    = node bin/npm-cli.js install -g -f --prefix="$PKG/usr" $(node bin/npm-cli.js pack | tail -1)
+betik    =  chmod -R u=rwX,go=rX "$PKG"
+betik    =  chown -R root:root "$PKG"
+betik    = rm -r $PKG"/usr/lib/node_modules/$pkgname/node_modules/{,.bin/}semver
+betik    = rm -r $PKG"/usr/lib/node_modules/$pkgname/node_modules/{,.bin/}node-gyp
+betik    = sed -i 's|../../node_modules/node-gyp/bin/node-gyp.js|../../../node-gyp/bin/node-gyp.js|' $PKG"/usr/lib/node_modules/$pkgname/bin/node-gyp-bin/node-gyp
+betik    = install -dm755 "$PKG"/usr/share/bash-completion/completions
+betik    = node "$SRC"/cli-$surum/bin/npm-cli.js completion > "$PKG"/usr/share/bash-completion/completions/npm
