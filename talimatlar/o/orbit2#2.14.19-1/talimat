@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-gz  = https://download.gnome.org/sources/ORBit2/2.14
+1  = https://download.gnome.org/sources/ORBit2/2.14/ORBit2-2.14.19.tar.gz
 
 
 [sha256]
