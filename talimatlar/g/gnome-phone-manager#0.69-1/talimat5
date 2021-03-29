@@ -1,0 +1,23 @@
+[paket]
+tanim   = Cep telefonunuzu GNOME masaüstünüzden kontrol edin
+paketci = Cihan_Alkan
+grup 	  = sistem
+url     = https://wiki.gnome.org/PhoneManager
+
+[gerek]
+derleme = 
+calisma = abi-dumper
+
+[kaynak]
+1       = https://download.gnome.org/sources/$isim/$surum
+
+[sha256]
+#1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
+
+[derle]
+betik   =  autoreconf -fi
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$isim --disable-schemas-compile --disable-bluetooth-plugin --enable-compile-warnings=minimum
+betik   = make
+
+[pakur]
+tip = gnu
