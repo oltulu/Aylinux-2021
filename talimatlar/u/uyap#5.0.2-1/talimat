@@ -17,14 +17,14 @@ dosya      = product_logo_32.xpm
 
 
 [derle]
-betik 	= cd uyap_pardus_5_0_2_amd64
-betik 	= ar x uyapeditor_5.0.2_amd64.deb
+betik 	= cd uyap_pardus_5_1_0_amd64
+betik 	= ar x uyapeditor_5.1.0_amd64.deb
 #betik 	= bsdtar -xf data.tar.xz -C "$PKG/"
 #betik 	= unzip /sources/uyapmac07-01-202114-50.zip
 #betik 	= innoextract $SRC/uyap/UKI_V4.2.0/UKI_V$surum.exe
 	      
 [pakur]
-betik = cd uyap_pardus_5_0_2_amd64
+betik = cd uyap_pardus_5_1_0_amd64
 betik = bsdtar -xf data.tar.xz -C "$PKG/"
 betik = rm $PKG/usr/share/applications/dokuman.desktop
 betik = rm $PKG/usr/share/applications/sablon.desktop
