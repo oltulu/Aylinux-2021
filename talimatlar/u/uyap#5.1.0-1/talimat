@@ -9,7 +9,8 @@ derleme =
 calisma = jre
 
 [kaynak]
-1      = https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-v$surum.zip
+1 = https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus19-03-202108-57.zip
+#1      = https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-v$surum.zip
 dosya      = product_logo_32.xpm
 #dosya      = uyap-editor.png
 
