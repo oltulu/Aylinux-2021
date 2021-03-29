@@ -5,8 +5,8 @@ grup 	  = sistem
 url     = https://wiki.gnome.org/PhoneManager
 
 [gerek]
-derleme = 
-calisma = abi-dumper
+derleme = gnooki
+calisma = 
 
 [kaynak]
 xz      = https://download.gnome.org/sources/$isim/$surum
