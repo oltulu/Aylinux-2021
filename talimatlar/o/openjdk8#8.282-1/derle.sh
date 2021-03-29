@@ -31,7 +31,7 @@ LC_ALL=C \
 /bin/bash configure $EXTRA_OPTIONS \
 	--prefix=$PKG/usr/lib \
 	--enable-unlimited-crypto \
-	--with-boot-jdk=$SRC/${isim}-boot \
+#	--with-boot-jdk=$SRC/${isim}-boot \
 	--with-cacerts-file=/etc/ssl/certs/java/cacerts \
 	--with-extra-cflags="$EXTRA_CFLAGS" \
 	--with-extra-cxxflags="$EXTRA_CFLAGS" \
