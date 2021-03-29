@@ -12,7 +12,7 @@ calisma = gegl babl libgexiv2 libmypaint openexr lcms2 libexif libgudev libmypai
 bz2     = https://download.gimp.org/pub/gimp/v${surum%.*}
 dosya   = gimp-0001-no-check-update.patch
 1 = https://gitlab.gnome.org/GNOME/gimp/-/commit/cebeb90a.patch
-2 = https://notabug.org/oltulu/Ceviri/raw/master/gimp.png
+2 = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/gimp-splash.png
 3 = https://github.com/archlinux/svntogit-packages/raw/packages/gimp/trunk/linux.gpl
 
 [sha256]
@@ -33,4 +33,4 @@ tip     = gnu
 betik   =install -D -m644 "/sources/linux.gpl" "${PKG}/usr/share/gimp/2.0/palettes/Linux.gpl"
 betik   = ln -s gimptool-2.0 "${PKG}/usr/bin/gimptool"
 betik   = rm $PKG/usr/share/gimp/2.0/images/gimp-splash.png
-betik   = cp  /sources/gimp.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
+betik   = cp /sources/gimp-splash.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
