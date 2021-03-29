@@ -16,12 +16,12 @@ calisma = jre
 
 
 [derle]
-betik  = cd XiaomiADBFastbootTools
+betik  = cd XiaomiADBFastbootTools-$surum
 betik  = gradle build
 
 	      
 [pakur]
-betik  = cd XiaomiADBFastbootTools
+betik  = cd XiaomiADBFastbootTools-$surum
 betik  = install -Dm755 xiaomi-adb-fastboot-tools "$PKG/usr/bin/xiaomi-adb-fastboot-tools"
 betik  = install -Dm755 xiaomi-adb-fastboot-tools.desktop "$PKG/usr/share/applications/xiaomi-adb-fastboot-tools.desktop.desktop"
 betik  = install -Dm644 "build/libs/XiaomiADBFastbootTools.jar" "$PKG/usr/share/java/xiaomi-adb-fastboot-tools/xiaomi-adb-fastboot-tools.jar"
