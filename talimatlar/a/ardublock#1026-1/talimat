@@ -1,0 +1,22 @@
+[paket]
+tanim   = Arduino ile fiziksel hesaplama sürükle ve bırak kadar kolay
+paketci = Cihan_Alkan
+grup 	  = programlama
+url     = https://github.com/Elecrow-keen/Ardublock
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+1     = https://github.com/Elecrow-keen/Ardublock/raw/8104ca2f7a0c585649d646bfa4d82773404bb184/target/ardublock-all.jar
+
+[sha256]
+#1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
+
+[derle]
+betik   =   mkdir -p "$PKG"/usr/share/arduino/tools/ArduBlockTool/tool
+
+
+[pakur]
+betik   = install -D -m644 /sources/ardublock-all.jar "$PKG"/usr/share/arduino/tools/ArduBlockTool/tool
