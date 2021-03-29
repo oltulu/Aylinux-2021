@@ -15,7 +15,11 @@ calisma    = lgi
 1          = 78264d6f012350b371e339127aca485260bc0aa935eff578ba75ce1a00e11753
 
 [derle]
-ekconf     = -DSYSCONFDIR=/etc -DLUA_LIBRARY=/usr/lib/liblua.so
+ekconf     = sed -i 's/COMMAND lua /COMMAND lua5.3 /' awesomeConfig.cmake
+ekconf     = sed -i 's| lua | lua5.3 |;s/lua)/lua5.3)/' tests/examples/CMakeLists.txt
+ekconf     = sed -i '1s|/usr/bin/env lua$|/usr/bin/env lua5.3|' build-utils/check_for_invalid_requires.lua
+ekconf     = sed -i 's/"lua"/"lua5.3"/' tests/test-spawn.lua
+ekconf     = -DSYSCONFDIR=/etc -DLUA_LIBRARY=/usr/lib/liblua5.3.so -DLUA_INCLUDE_DIR=/usr/include/lua5.3
 tip        = cmake
 
 [pakur]
