@@ -9,13 +9,14 @@ derleme =
 calisma = abi-dumper
 
 [kaynak]
-# 1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
+ 1       = $url/archive/${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
+#1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
 
 [derle]
 betik   = echo "derleme yok"
 	      
 [pakur]
+betik   = mkdir -p "${PKG}/usr"
 betik   = install -d "${PKG}/usr" && perl Makefile.pl -install --prefix=/usr --destdir="${PKG}"
