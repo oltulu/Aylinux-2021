@@ -9,8 +9,8 @@ derleme = gradle
 calisma = jre
 
 [kaynak]
-1     = https://notabug.org/oltulu/Aylinux-Resimler/src/master/XiaomiADBFastbootTools.tar.xz
-2= xiaomitools.tar.gz
+#1     = https://notabug.org/oltulu/Aylinux-Resimler/src/master/XiaomiADBFastbootTools.tar.xz
+2= https://notabug.org/oltulu/Aylinux-Resimler/src/master/xiaomitools.tar.gz
 
 [sha512]
 
