@@ -9,7 +9,7 @@ derleme =
 calisma = abi-dumper
 
 [kaynak]
- 1       = https://github.com/lvc/abi-compliance-checker/archive/refs/tags/2.3.tar.gz
+1       = https://github.com/lvc/abi-compliance-checker/archive/refs/tags/2.3.tar.gz
 
 [sha256]
 #1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
