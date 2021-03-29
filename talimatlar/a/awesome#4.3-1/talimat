@@ -23,5 +23,5 @@ ekconf     = -DSYSCONFDIR=/etc -DLUA_LIBRARY=/usr/lib/liblua5.3.so -DLUA_INCLUDE
 tip        = cmake
 
 [pakur]
-tip        = cmake
-betik      = install -Dm 644 ../awesome.desktop -t "${PKG}/usr/share/xsessions"
+betik      = make -C build DESTDIR="${PKG}" install
+betik      = install -Dm 644 awesome.desktop -t "${PKG}/usr/share/xsessions"
