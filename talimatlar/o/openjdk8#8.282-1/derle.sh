@@ -2,7 +2,7 @@
 
 _java_ver=8
 _jdk_update=282
-_jdk_build=05
+_jdk_build=08
 _repo_ver=jdk${_java_ver}u${_jdk_update}-b${_jdk_build}
 _jdkname=openjdk8
 _jvmdir=/usr/lib/jvm/java-8-openjdk
