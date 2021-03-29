@@ -10,7 +10,7 @@ calisma = jre
 
 [kaynak]
 #1     = https://notabug.org/oltulu/Aylinux-Resimler/src/master/XiaomiADBFastbootTools.tar.xz
-2= https://notabug.org/oltulu/Aylinux-Resimler/src/master/xiaomitools.tar.gz
+2= https://notabug.org/oltulu/Aylinux-Resimler/raw/master/xioamitools.tar.gz
 
 [sha512]
 
