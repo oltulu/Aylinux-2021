@@ -1,4 +1,4 @@
-/usr/milis/bin/update-ca-trust
+/usr/aylinux/bin/update-ca-trust
 
 _java_ver=8
 _jdk_update=282
