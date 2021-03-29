@@ -17,7 +17,7 @@ calisma  = p11-kit
 6     = http://hg.openjdk.java.net/jdk8u/jdk8u/jaxp/archive/jdk8u282-b08.tar.gz::jaxp-jdk8u282-b08.tar.gz
 7     = http://hg.openjdk.java.net/jdk8u/jdk8u/langtools/archive/jdk8u282-b08.tar.gz::langtools-jdk8u282-b08.tar.gz
 8     = http://hg.openjdk.java.net/jdk8u/jdk8u/nashorn/archive/jdk8u282-b08.tar.gz::nashorn-jdk8u282-b08.tar.gz
-9     = https://stygian.me/crux/distfiles/openjdk8-boot-20200504-bin.tar.xz
+#9     = https://stygian.me/crux/distfiles/openjdk8-boot-20200504-bin.tar.xz
 
 [sha256]
 
