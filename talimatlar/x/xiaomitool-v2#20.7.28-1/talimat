@@ -9,7 +9,7 @@ derleme = gradle
 calisma = jre
 
 [kaynak]
-1     = https://github.com/francescotescari/XMT/releases/download/v$pkgver/XMT2_Linux_$surum.run
+1     = https://github.com/francescotescari/XMT/releases/download/v$surum/XMT2_Linux_$surum.run
 2= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool?h=xiaomitool-v2
 3= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.appdata.xml?h=xiaomitool-v2
 4= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.desktop?h=xiaomitool-v2
