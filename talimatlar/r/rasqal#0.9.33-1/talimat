@@ -6,7 +6,7 @@ url     = http://librdf.org/rasqal
 
 [gerek]
 derleme    = raptor
-calisma    =
+calisma    = raptor
 
 [kaynak]
 1          = http://librdf.org/dist/source/rasqal-${surum}.tar.gz
