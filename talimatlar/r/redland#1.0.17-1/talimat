@@ -6,7 +6,7 @@ url     = http://librdf.org
 
 [gerek]
 derleme    = postgresql db rasqal mariadb  postgresql sqlite unixodbc
-calisma    = 
+calisma    = rasqal
 
 [kaynak]
 gz         = http://librdf.org/dist/source
