@@ -16,7 +16,7 @@ calisma =
 
 [derle]
 betik   =   mkdir -p "$PKG"/usr/share/arduino/tools/ArduBlockTool/tool
-
+betik   = install -D -m644 /sources/ardublock-all.jar "$PKG"/usr/share/arduino/tools/ArduBlockTool/tool
 
 [pakur]
-betik   = install -D -m644 /sources/ardublock-all.jar "$PKG"/usr/share/arduino/tools/ArduBlockTool/tool
+dosya = pakur.sh
