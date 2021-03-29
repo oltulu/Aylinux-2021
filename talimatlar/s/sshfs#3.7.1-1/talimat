@@ -12,7 +12,7 @@ calisma = openssh
 xz      = https://github.com/libfuse/sshfs/releases/download/$isim-$surum
 
 [sha256]
-1 		= 841be1594b6fb76b23e4b5700ce235e86a64324f2483d67130ce07c2330ff0b2
+#1 		= 841be1594b6fb76b23e4b5700ce235e86a64324f2483d67130ce07c2330ff0b2
 
 [derle]
 tip     = meson
