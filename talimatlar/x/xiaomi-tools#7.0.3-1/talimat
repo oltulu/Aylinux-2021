@@ -5,7 +5,7 @@ grup 	  = araçlar
 url     = https://szaki.github.io/XiaomiADBFastbootTools/
 
 [gerek]
-derleme = gradle gendesk
+derleme = gradle
 calisma = jre
 
 [kaynak]
