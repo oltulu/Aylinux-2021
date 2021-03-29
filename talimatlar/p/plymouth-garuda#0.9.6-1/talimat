@@ -10,6 +10,7 @@ calisma    =
 [kaynak]
 1          =https://gitlab.freedesktop.org/plymouth/plymouth/-/archive/master/plymouth-master.tar.gz
 git = https://gitlab.com/garuda-linux/themes-and-settings/plymouth-theme-garuda-purple
+2 = https://notabug.org/oltulu/Ceviri/raw/master/plymouth-logo.tar.xz
 dosya = aylinux-logo.png
 dosya = plymouth-start.path
 dosya = plymouth.encrypt_hook
@@ -44,4 +45,4 @@ betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/usr/share/plymouth/p
 betik      = install -Dm644 "$SRC/plymouthd.defaults" "$PKG/etc/plymouth/plymouthd.conf"
 betik      = cp -r $SRC/plymouth-theme-garuda-purple/usr/* $PKG/usr/
 betik      = rm $PKG/usr/share/plymouth/themes/garuda-purple/logo.png
-betik      = cp $SRC/logo.png $PKG/usr/share/plymouth/themes/garuda-purple/
+betik      = cp $SRC/logo/* $PKG/usr/share/plymouth/themes/garuda-purple/
