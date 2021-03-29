@@ -1,0 +1,33 @@
+[paket]
+tanim   = Cep telefonlarıyla kullanım için araçlar ve kullanıcı alanı sürücüsü
+paketci = Cihan_Alkan
+grup 	  = gnome
+url     = https://wiki.gnome.org/PhoneManager
+
+[gerek]
+derleme = 
+calisma = 
+
+[kaynak]
+bz2     = https://www.gnokii.org/download/$isim
+
+[sha256]
+#1 		= b1e32a484211ec05d7f265ab4d2c1c52dcdb610708cb3f74d8aaeb7fe9685d64
+
+[derle]
+betik   = ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin  --enable-security
+betik   = make
+betik   = pushd xgnokii
+betik   = make
+betik   = popd
+
+
+[pakur]
+betik   = make DESTDIR="$PKG" install
+betik   = pushd xgnokii
+betik   = make DESTDIR="$PKG" install
+betik   = popd
+betik   = install -Dm644 Docs/sample/gnokiirc "$PKG/etc/gnokiirc"
+betik   = chmod 755 "$PKG/usr/bin/sendsms"
+betik   = install -dm755 "$PKG"/usr/lib/tmpfiles.d
+betik   = echo 'd /run/lock/lockdev 0775 root lock -' > "$PKG/usr/lib/tmpfiles.d/$isim.conf"
