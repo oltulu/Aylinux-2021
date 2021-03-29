@@ -1,5 +1,5 @@
 NEWPATH=$PKG/usr/lib/jvm/java-8-openjdk
-mv $PKG/usr/lib/jvm/openjdk-1.8.0_222 ${NEWPATH}
+mv $PKG/usr/lib/jvm/openjdk-1.8.0_282 ${NEWPATH}
 
 rm -rf $PKG/usr/lib/bin
 
