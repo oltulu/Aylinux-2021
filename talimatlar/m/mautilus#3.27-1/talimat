@@ -1,0 +1,24 @@
+[paket]
+tanim   = GNOME için varsayılan dosya yöneticisi
+paketci = Cihan_Alkan
+grup 	= gnome
+url     = https://gitlab.com/sulincix/mautilus
+
+[gerek]
+derleme = libgexiv2 gnome-autoar
+calisma = tracker3 libgexiv2 gnome-autoar
+
+[kaynak]
+git   = https://gitlab.com/sulincix/mautilus
+
+[sha1]
+1 		= 
+
+[derle]
+betik = cd mautilus
+ekconf = -Dselinux=false -Dpackagekit=false -Dlibportal=false
+tip = meson
+    	      
+[pakur]
+betik = cd mautilus
+tip = meson
