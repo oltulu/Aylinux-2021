@@ -20,5 +20,4 @@ ekconf = -Dselinux=false -Dpackagekit=false -Dlibportal=false
 tip = meson
     	      
 [pakur]
-betik = cp -r mautilus mautilus-$surum
 tip = meson
