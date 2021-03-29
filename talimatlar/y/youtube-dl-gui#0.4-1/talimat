@@ -1,0 +1,23 @@
+[paket]
+tanim   = opüler youtube-dl'nin wxPython ile yazılmış çapraz platform ön uç GUI'si
+paketci = Cihan_Alkan
+url     = https://ytdl-org.github.io/youtube-dl/
+
+[gerek]
+derleme    = 
+calisma    =wxpython
+
+[kaynak]
+git       = https://github.com/MrS0m30n3/youtube-dl-gui
+1 = https://aur.archlinux.org/cgit/aur.git/plain/youtube-dl-gui.desktop?h=youtube-dl-gui-git
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+
+betik     =   install -Dm644 /sources/youtube-dl-gui.desktop?h=youtube-dl-gui-git "$PKG/usr/share/applications/youtube-dl-gui.desktop"
+
+[pakur]
+betik     = cd $isim
+betik     = python2 setup.py install --root="$PKG" --optimize=1
