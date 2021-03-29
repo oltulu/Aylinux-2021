@@ -1,0 +1,40 @@
+[paket]
+tanim   = Xiaomi cihazlarının modellenmesi herkes için kolaylaştı
+paketci = Cihan_Alkan
+grup 	  = araçlar
+url     = https://szaki.github.io/XiaomiADBFastbootTools/
+
+[gerek]
+derleme = gradle
+calisma = jre
+
+[kaynak]
+1     = https://github.com/francescotescari/XMT/releases/download/v$pkgver/XMT2_Linux_$surum.run
+2= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool?h=xiaomitool-v2
+3= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.appdata.xml?h=xiaomitool-v2
+4= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.desktop?h=xiaomitool-v2
+5= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.menu?h=xiaomitool-v2
+6= https://aur.archlinux.org/cgit/aur.git/plain/xiaomitool.xml?h=xiaomitool-v2
+
+[sha512]
+
+
+[derle]
+betik  = cd $SEC
+betik  = sh /sources/"XMT2_Linux_$surum.run" --noexec --keep
+betik  =  mkdir "$PKG/opt"
+betik  = mv XiaoMiTool-V2 "$PKG/opt"
+betik  = mkdir -p "$PKG/usr/bin"
+betik  = install -m755 xiaomitool "$PKG/usr/bin"
+betik  = mkdir -p "$PKG/usr/share/appdata"
+betik  = install -m644 xiaomitool.appdata.xml "$PKG/usr/share/appdata"
+
+	      
+[pakur]
+betik  = cd $SEC
+betik  = mkdir "$PKG/usr/share/applications"
+betik  = install -m644 xiaomitool.desktop "$PKG/usr/share/applications"
+betik  = mkdir -p "$PKG/usr/share/gnome-control-center/default-apps"
+betik  = install -m644 xiaomitool.xml "$PKG/usr/share/gnome-control-center/default-apps"
+betik  = mkdir -p "$PKG/usr/share/menu"
+betik  = install -m644 xiaomitool.menu "$PKG/usr/share/menu"
