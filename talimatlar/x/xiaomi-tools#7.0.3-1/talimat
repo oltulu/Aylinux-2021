@@ -24,5 +24,5 @@ betik  = gradle build
 betik  = cd XiaomiADBFastbootTools
 betik  = install -Dm755 xiaomi-adb-fastboot-tools "$PKG/usr/bin/xiaomi-adb-fastboot-tools"
 betik  = install -Dm755 xiaomi-adb-fastboot-tools.desktop "$PKG/usr/share/applications/xiaomi-adb-fastboot-tools.desktop.desktop"
-betik  = install -Dm644 "build/libs/XiaomiADBFastbootTools.jar" "$PKG/usr/share/java/$isim/xiaomi-adb-fastboot-tools.jar"
+betik  = install -Dm644 "build/libs/XiaomiADBFastbootTools.jar" "$PKG/usr/share/java/xiaomi-adb-fastboot-tools/xiaomi-adb-fastboot-tools.jar"
 betik  = install -Dm644 "build/resources/main/icon.png" "$PKG/usr/share/pixmaps/xiaomi-adb-fastboot-tools.png"
