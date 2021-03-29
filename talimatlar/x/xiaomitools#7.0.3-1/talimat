@@ -21,6 +21,6 @@ betik  = gradle build
 	      
 [pakur]
 betik  = install -Dm755 xiaomitools-tools.sh "$PKG/usr/bin/xiaomitools"
-betik  = install -Dm755 xiaomitools.desktop "$PKG/usr/share/applications/xiaomi-adb-fastboot-tools.desktop"
+betik  = install -Dm755 xiaomitools.desktop "$PKG/usr/share/applications/xiaomitools.desktop.desktop"
 betik  = install -Dm644 "build/libs/XiaomiADBFastbootTools.jar" "$PKG/usr/share/java/$isim/xiaomitools.jar"
 betik  = install -Dm644 "build/resources/main/icon.png" "$PKG/usr/share/pixmaps/xiaomitools.png"
