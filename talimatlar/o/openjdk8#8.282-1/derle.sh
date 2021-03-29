@@ -14,7 +14,7 @@ done
 cd jdk8u-jdk${_java_ver}u${_jdk_update}-b${_jdk_build}
 
 OLD_PATH=$PATH
-export JAVA_HOME=$SRC/${isim}-boot
+#export JAVA_HOME=$SRC/${isim}-boot
 export PATH=$JAVA_HOME/bin:$OLD_PATH
 
 WARN_CFLAGS="-Wno-error=return-type -Wno-error=stringop-overflow= -Wno-error=deprecated-declarations"
