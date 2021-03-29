@@ -19,7 +19,7 @@ ekconf     = sed -i 's/COMMAND lua /COMMAND lua5.3 /' awesomeConfig.cmake
 ekconf     = sed -i 's| lua | lua5.3 |;s/lua)/lua5.3)/' tests/examples/CMakeLists.txt
 ekconf     = sed -i '1s|/usr/bin/env lua$|/usr/bin/env lua5.3|' build-utils/check_for_invalid_requires.lua
 ekconf     = sed -i 's/"lua"/"lua5.3"/' tests/test-spawn.lua
-ekconf     = -DSYSCONFDIR=/etc -DLUA_LIBRARY=/usr/lib/liblua.so.5.3
+ekconf     = -DSYSCONFDIR=/etc
 tip        = cmake
 
 [pakur]
