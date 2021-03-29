@@ -1,0 +1,24 @@
+[paket]
+tanim   = opüler youtube-dl'nin wxPython ile yazılmış çapraz platform ön uç GUI'si
+paketci = Cihan_Alkan
+url     = https://ytdl-org.github.io/youtube-dl/
+
+[gerek]
+derleme    = 
+calisma    = 
+
+[kaynak]
+git       = https://github.com/rrooij/youtube-dl-qt
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+
+betik     =   cd "$SRC/$isim"
+betik     =   qmake -config release
+betik     =   make
+
+[pakur]
+betik     = cd $isim
+betik     = make INSTALL_ROOT="$PKG/" install
