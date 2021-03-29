@@ -15,10 +15,10 @@ git   = https://gitlab.com/sulincix/mautilus
 1 		= 
 
 [derle]
-betik = cd mautilus
+betik = cp -r mautilus mautilus-$surum
 ekconf = -Dselinux=false -Dpackagekit=false -Dlibportal=false
 tip = meson
     	      
 [pakur]
-betik = cd mautilus
+betik = cp -r mautilus mautilus-$surum
 tip = meson
