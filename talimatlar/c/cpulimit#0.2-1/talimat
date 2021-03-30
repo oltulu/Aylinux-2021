@@ -11,6 +11,7 @@ github  = opsengine/cpulimit
 1               = 64312f9ac569ddcadb615593cd002c94b76e93a0d4625d3ce1abb49e08e2c2da
 
 [derle]
+betik = sed -i 's/#ifdef __APPLE__ || __FREEBSD__/#if defined(__APPLE__) || defined(__FREEBSD__)/' src/cpulimit.c tests/process_iterator_test.c
 betik   = make
 
 [pakur]
