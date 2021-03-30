@@ -1,0 +1,21 @@
+[paket]
+tanim   = Optik diskleri okumak, yönetmek ve yazmak için kütüphane
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://dev.lovelyhq.com/libburnia
+
+[gerek]
+derleme =  libisofs
+calisma =  
+
+[kaynak]
+gz = http://files.libburnia-project.org/releases
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+tip = gnu
+
+[pakur]
+tip = gnu
