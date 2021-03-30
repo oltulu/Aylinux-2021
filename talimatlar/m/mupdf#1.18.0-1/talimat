@@ -6,7 +6,7 @@ url     = https://mupdf.com
 arsiv   = ${isim}-${surum}-source
 
 [gerek]
-derleme = freetype freeglut glu harfbuzz jbig2dec libjpeg-turbo openjpeg2 libxext
+derleme = freetype freeglut glu harfbuzz jbig2dec libjpeg-turbo openjpeg2 libxext gumbo-parser
 calisma =
 
 [kaynak]
