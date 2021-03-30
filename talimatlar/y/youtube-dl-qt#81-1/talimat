@@ -16,6 +16,13 @@ git       = https://github.com/rrooij/youtube-dl-qt
 [derle]
 
 betik     =   cd "$SRC/$isim"
+betik = sed -i 's/ytdl-qt/Youtube İndirici/' src/mainwindow.ui
+betik = sed -i 's/Video URL/Video Bağlantısı/' src/mainwindow.ui
+betik = sed -i 's/Retrieve URL/URL al/' src/mainwindow.ui
+betik = sed -i 's/Download specific format \(advanced users, experimental\)/Video Bağlantısı/' src/mainwindow.ui
+betik = sed -i 's/Fetch audio only \(only works in some cases\)/Yalnızca sesi getir \(yalnızca bazı durumlarda çalışır\)/' src/mainwindow.ui
+betik = sed -i 's/Options\</Ayarlar\</' src/mainwindow.ui
+betik = sed -i 's/Options\</Ayarlar\</' src/mainwindow.ui
 betik     =   qmake -config release
 betik     =   make
 
