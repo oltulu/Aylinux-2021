@@ -15,6 +15,7 @@ github  = zeromq/cppzmq
 1       = e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52
 
 [derle]
+ekconf = -DCPPZMQ_BUILD_TESTS=OFF
 tip     = cmake
 
 [pakur]
