@@ -21,7 +21,7 @@ betik       = cd wxPython-4.0.7.post2
 betik       = python build.py build --use_syswx --release
 betik       = PYTHONPATH=$PWD xvfb-run pytest --forked unittests || echo "==> Uyarı: testler genellikle başarısız olur"
 #betik      = cp makefile.linux_amd64_asm makefile.machine
-betik      = make all3 OPTFLAGS="$CFLAGS"
+betik      = make OPTFLAGS="$CFLAGS"
 
 [pakur]
 betik      = cd wxPython-4.0.7.post2
