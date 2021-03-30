@@ -1,0 +1,24 @@
+[paket]
+tanim   = Tek bir kod satırı yazmadan Robotları / Arduino Programlayın
+paketci = Cihan_Alkan
+grup    = geliştirme
+url     = http://www.mblock.cc/
+
+[gerek]
+derleme = cmake kdoctools
+calisma = gconf
+
+[kaynak]
+1   = http://mblockapp.oss-cn-hongkong.aliyuncs.com/mBlock4.0/mBlock_4.0.4_amd64.deb
+
+
+[sha256]
+#1       = b94d89278ecef2ba2d1147eec23936dd99697293ffa2c216c0a375ba98226a3e
+
+[derle]
+betik		= ar x /sources/mBlock_4.0.4_amd64.deb
+betik 	=  bsdtar -xf $SRC/data.tar.xz -C "$PKG/"
+
+
+[pakur]
+betik   = echo "Categories=Development" » $PKG//usr/share/applications/mblock.desktop
