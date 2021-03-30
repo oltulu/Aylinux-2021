@@ -17,13 +17,13 @@ calisma    =
 
 [derle]
 betik      = sed -i "s|WX_CONFIG = 'wx-config'|WX_CONFIG = 'wx-config-gtk3'|" wxPython-${surum%.*}.post${surum##*.}/build.py
-yama       = cd wxPython-$surum.post2
+yama       = cd wxPython-4.0.7.post2
 yama       = python build.py build --use_syswx --release
 yama       = PYTHONPATH=$PWD xvfb-run pytest --forked unittests || echo "==> Uyarı: testler genellikle başarısız olur"
 betik      = cp makefile.linux_amd64_asm makefile.machine
 betik      = make all3 OPTFLAGS="$CFLAGS"
 
 [pakur]
-betik      = cd cd wxPython-$surum.post2
+betik      = cd wxPython-4.0.7.post2
 betik      =  python build.py install --destdir="$PKG"
 betik      =  find "$PKG/usr/lib" -type f | xargs chmod 644
