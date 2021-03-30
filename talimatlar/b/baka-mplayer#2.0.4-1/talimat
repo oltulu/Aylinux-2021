@@ -16,7 +16,7 @@ calisma    =
 
 [derle]
 betik     = cd Baka-MPlayer-$surum
-betik =  patch -p1 -i 640cac8b.patch
+betik =  patch -p1 -i /sources/640cac8b.patch
 
 betik     = mkdir -p $SRC/build
 betik     = cd $SRC/build
