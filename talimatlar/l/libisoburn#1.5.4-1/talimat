@@ -1,0 +1,21 @@
+[paket]
+tanim   = kütüphaneler için ön uç libburn ve libisofs
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://dev.lovelyhq.com/libburnia
+
+[gerek]
+derleme =  disomaster
+calisma =  
+
+[kaynak]
+1  = http://files.libburnia-project.org/releases
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+tip = gnu
+
+[pakur]
+tip = gnu
