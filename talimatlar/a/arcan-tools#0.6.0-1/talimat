@@ -6,7 +6,7 @@ url     = https://github.com/letoram/arcan
 arsiv   = arcan-$surum
 
 [gerek]
-derleme = cmake arcan
+derleme = cmake 
 calisma =
 
 [kaynak]
