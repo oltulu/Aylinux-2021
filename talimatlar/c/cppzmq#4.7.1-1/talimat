@@ -1,6 +1,6 @@
 [paket]
 tanim   = ZMQ C++ bağlamları
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = ağ
 url     = http://www.zeromq.org
 
@@ -12,7 +12,7 @@ calisma =
 github  = zeromq/cppzmq
 
 [sha256]
-1       = e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52
+#1       = e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52
 
 [derle]
 ekconf = -DCPPZMQ_BUILD_TESTS=OFF
