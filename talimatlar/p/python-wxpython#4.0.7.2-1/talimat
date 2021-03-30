@@ -1,0 +1,29 @@
+[paket]
+tanim   = Platformlar arası GUI araç seti
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://p7zip.sourceforge.net/
+
+[gerek]
+derleme    = yasm
+calisma    =
+
+[kaynak]
+1      = https://files.pythonhosted.org/packages/source/w/wxPython/wxPython-${surum%.*}.post${surum##*.}.tar.gz
+
+
+[sha256]
+
+
+[derle]
+betik      = sed -i "s|WX_CONFIG = 'wx-config'|WX_CONFIG = 'wx-config-gtk3'|" wxPython-${surum%.*}.post${surum##*.}/build.py
+yama       = cd wxPython-${surum%.*}.post${surum##*.}
+yama       = python build.py build --use_syswx --release
+yama       = PYTHONPATH=$PWD xvfb-run pytest --forked unittests || echo "==> Uyarı: testler genellikle başarısız olur"
+betik      = cp makefile.linux_amd64_asm makefile.machine
+betik      = make all3 OPTFLAGS="$CFLAGS"
+
+[pakur]
+betik      = cd wxPython-${surum%.*}.post${surum##*.}
+betik      =  python build.py install --destdir="$PKG"
+betik      =  find "$PKG/usr/lib" -type f | xargs chmod 644
