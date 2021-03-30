@@ -16,7 +16,7 @@ xz      = https://download.kde.org/stable/plasma/$surum
 
 [derle]
 betik 	= cd ../
-betik 	= cmake -B build -S $isim-$surum-DCMAKE_INSTALL_LIBEXECDIR=lib -DBUILD_TESTING=OFF
+betik 	= cmake -B build -S $isim-$surum -DCMAKE_INSTALL_LIBEXECDIR=lib -DBUILD_TESTING=OFF
 betik 	= cmake --build build
     	      
 [pakur]
