@@ -1,0 +1,32 @@
+[paket]
+tanim   = Platformlar arası GUI araç seti
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://p7zip.sourceforge.net/
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1      = https://files.pythonhosted.org/packages/source/w/wxPython/wxPython-$surum.tar.gz
+
+
+[sha256]
+
+
+[derle]
+betik      = cd wxPython-$version
+betik       = python build.py build
+betik       = python build.py install --destdir="$PKG"
+betik       = mkdir -p $PKG/etc/ld.so.conf.d
+betik      = pythontag=$(python -c "import sys;print 'python%s.%s' % (sys.version_info.major, sys.version_info.minor)")
+betik       = echo "/usr/lib/$pythontag/site-packages/wx" > $PKG/etc/ld.so.conf.d/wxpython.conf
+
+[pakur]
+betik      = cd wxPython-$surum
+betik      =  python3 build.py build
+betik      =  python3 build.py install --destdir="$PKG"
+betik      =  mkdir -p $PKG/etc/ld.so.conf.d
+betik      =  python3tag=$(python3 -c "import sys;print('python%s.%s' % (sys.version_info.major, sys.version_info.minor))")
+betik      =  echo "/usr/lib/$python3tag/site-packages/wx" > $PKG/etc/ld.so.conf.d/wxpython.conf
