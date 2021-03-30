@@ -6,7 +6,7 @@ url     = https://github.com/linuxdeepin/dde-file-manager
 
 [gerek]
 derleme =  libisoburn
-calisma =  
+calisma =  libisoburn
 
 [kaynak]
 1  = https://github.com/linuxdeepin/disomaster/archive/$surum.tar.gz::$isim-$surum.tar.gz
