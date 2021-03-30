@@ -9,10 +9,10 @@ derleme = ncurses eudev
 calisma =
 
 [kaynak]
-bz2     = https://www.open-mpi.org/software/hwloc/v${surum%.*}/downloads
+bz2     = https://fossies.org/linux/misc/
 
 [sha256]
-1       = 653c05742dff16e5ee6ad3343fd40e93be8ba887eaffbd539832b68780d047a9
+#1       = 653c05742dff16e5ee6ad3343fd40e93be8ba887eaffbd539832b68780d047a9
 
 [derle]
 tip     = gnu
