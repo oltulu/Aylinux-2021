@@ -1,0 +1,23 @@
+[paket]
+tanim   = Saf C99'da HTML5 ayrıştırma kitaplığı
+paketci = Cihan_Alkan
+grup    = ağ
+url     = http://www.zeromq.org
+
+[gerek]
+derleme =  
+calisma =
+
+[kaynak]
+1  = https://github.com/google/gumbo-parser/archive/v0.10.1.tar.gz
+
+[sha256]
+#1       = e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52
+
+[derle]
+betik = ./autogen.sh
+betik = ./configure --prefix=/usr
+betik = make
+
+[pakur]
+tip     = gnu
