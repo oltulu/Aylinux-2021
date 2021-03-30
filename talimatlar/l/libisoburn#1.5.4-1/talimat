@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://dev.lovelyhq.com/libburnia
 
 [gerek]
-derleme =  libisofs
+derleme =  libisofs libburn
 calisma =  
 
 [kaynak]
