@@ -10,6 +10,7 @@ calisma    =
 [kaynak]
 1          = https://github.com/u8sand/Baka-MPlayer/archive/v$surum.tar.gz::$isim-$surum.tar.gz
 2 = https://github.com/u8sand/Baka-MPlayer/commit/640cac8b.patch
+3 = https://mls.akdeniz.edu.tr/git/milislinux/ceviriler/raw/branch/master/baka-mplayer/baka-mplayer_tr.ts
 
 [sha256]
 # 1         = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
@@ -26,3 +27,4 @@ betik     = make -j$(nproc)
 [pakur]
 betik      = cd build
 betik      = make INSTALL_ROOT="$PKG" install
+betik = lrelease /sources/baka-mplayer_tr.ts $PKG/usr/share/baka-mplayer/translations/baka-mplayer_tr.qm
