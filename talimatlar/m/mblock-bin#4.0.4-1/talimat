@@ -25,4 +25,8 @@ betik = mkdir -p $PKG/usr/share/applications
 betik = mkdir -p $PKG/etc/rc.d/init.d
 betik = cp $PKG/opt/makeblock/mblock.desktop $PKG/usr/share/applications/mblock.desktop
 betik   = echo "Categories=Development" » $PKG/usr/share/applications/mblock.desktop
-betik = cp $PKG//etc/init.d/ideserverplus $PKG/etc/rc.d/init.d/
+betik = mv $PKG//etc/init.d/ideserverplus $PKG/etc/rc.d/init.d/ideserverplus 
+betik = rmdir $PKG/etc/init.d
+betik = rm $PKG/etc/systemd/system/ideserverplus.service
+betik =rmdir $PKG/etc/systemd/system
+betik =rmdir $PKG/etc/systemd
