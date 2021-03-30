@@ -6,7 +6,7 @@ url     = https://chapel-lang.org
 arsiv   = chapel
 
 [gerek]
-derleme = python python2 openmpi
+derleme = python python2 
 calisma = 
 
 [kaynak]
