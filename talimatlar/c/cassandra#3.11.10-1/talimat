@@ -9,7 +9,8 @@ derleme    = apache-ant
 calisma    = openjdk8 python procps-ng
 
 [kaynak]
-1          = https://www.apache.org/dist/cassandra/3.11.5/apache-$isim-$surum-src.tar.gz
+1          = https://www.apache.org/dist/cassandra/$surum/apache-$isim-$surum-src.tar.gz
+#https://www.apache.org/dyn/closer.lua/cassandra/3.11.10/apache-cassandra-3.11.10-bin.tar.gz
 dosya      = $isim-profile.sh
 
 [sha256]
