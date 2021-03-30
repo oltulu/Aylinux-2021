@@ -9,10 +9,10 @@ derleme = cmake elfutils libffi
 calisma =
 
 [kaynak]
-1       = https://github.com/llvm/llvm-project/releases/download/llvmorg-9.0.1/openmp-9.0.1.src.tar.xz
+1       = https://github.com/llvm/llvm-project/releases/download/llvmorg-$surum/openmp-$surum.src.tar.xz
 
 [sha256]
-1       = 5c94060f846f965698574d9ce22975c0e9f04c9b14088c3af5f03870af75cace
+#1       = 5c94060f846f965698574d9ce22975c0e9f04c9b14088c3af5f03870af75cace
 
 [derle]
 betik   = cd $isim-$surum.src
