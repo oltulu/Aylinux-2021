@@ -1,0 +1,21 @@
+[paket]
+tanim   = Qt için bir libisoburn sarıcı sınıfı
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/linuxdeepin/dde-file-manager
+
+[gerek]
+derleme =  disomaster
+calisma =  
+
+[kaynak]
+1  = https://github.com/linuxdeepin/disomaster/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+tip = qmake
+
+[pakur]
+tip = qmake
