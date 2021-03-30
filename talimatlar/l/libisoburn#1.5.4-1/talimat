@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-1  = http://files.libburnia-project.org/releases
+gz = http://files.libburnia-project.org/releases
 
 [sha1]
             #1 		= SKIP
