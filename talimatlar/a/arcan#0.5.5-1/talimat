@@ -1,0 +1,14 @@
+[paket]
+tanim   = Game Engine, bir Görüntü Sunucusuyla bir Multimedya Çerçevesi ile buluşuyor
+paketci = Cihan_Alkan  
+grup    = kütüphane  
+url     = https://arcan-fe.com
+
+[kaynak]
+1    = https://github.com/letoram/arcan/archive/$surum.tar.gz
+
+[derle]
+tip  = cmake
+
+[pakur]
+tip  = cmake
