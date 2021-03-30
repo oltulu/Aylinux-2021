@@ -9,10 +9,10 @@ derleme = automake
 calisma =
 
 [kaynak]
-xz      = ${KERNEL_SITE}/utils/net/$isim
+xz = https://mirrors.edge.kernel.org/pub/linux/utils/net/${isim}
 
 [sha256]
-1       = cc67efb5d5fb8928a6569b3fade2b4042ec17da04678dab127d96b46489e26c8
+#1       = cc67efb5d5fb8928a6569b3fade2b4042ec17da04678dab127d96b46489e26c8
 
 [derle]
 betik   = aclocal ;autoconf
