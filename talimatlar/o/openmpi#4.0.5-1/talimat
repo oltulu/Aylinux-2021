@@ -5,7 +5,7 @@ grup    = sistem
 url     = https://www.open-mpi.org/
 
 [gerek]
-derleme = hwloc zlib libnl
+derleme = hwloc zlib libnl valgrind
 calisma =
 
 [kaynak]
