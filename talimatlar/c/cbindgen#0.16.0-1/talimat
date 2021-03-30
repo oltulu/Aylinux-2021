@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/eqrion/cbindgen/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1       = 8047238adf82fbd33d92c362585de24d80fe594cab0909c5bf91d046f1b598ff
+#1       = 8047238adf82fbd33d92c362585de24d80fe594cab0909c5bf91d046f1b598ff
 
 [derle]
 betik   = cargo fetch --locked
