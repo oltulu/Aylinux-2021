@@ -12,7 +12,7 @@ calisma =
 1       = ${url}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha512]
-1       = 4ad750ab8b968005d1510f1ab6125d8167c67e1d2374b0f7df4d3624139430fedfa45d88b0ded64577981e0ffd863554eb4ee2b736eb22354d5ace4b0da589a8
+#1       = 4ad750ab8b968005d1510f1ab6125d8167c67e1d2374b0f7df4d3624139430fedfa45d88b0ded64577981e0ffd863554eb4ee2b736eb22354d5ace4b0da589a8
 
 [derle]
 betik   = ./build.sh
