@@ -9,7 +9,7 @@ derleme    = yasm
 calisma    =
 
 [kaynak]
-1      = https://files.pythonhosted.org/packages/source/w/wxPython/wxPython-$surum.post2.tar.gz
+1      = https://files.pythonhosted.org/packages/source/w/wxPython/wxPython-4.0.7.post2.tar.gz
 
 
 [sha256]
