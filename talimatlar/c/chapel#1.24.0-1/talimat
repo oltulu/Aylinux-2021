@@ -10,7 +10,7 @@ derleme = python python2
 calisma = 
 
 [kaynak]
-git     = https://github.com/chapel-lang/chapel
+gz    = https://github.com/chapel-lang/chapel/releases/download/$surum
 
 [derle]
 tip     = gnu
