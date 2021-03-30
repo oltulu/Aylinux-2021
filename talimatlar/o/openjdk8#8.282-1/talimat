@@ -9,21 +9,19 @@ derleme  = libxrender libxtst libxt fontconfig cups alsa-lib zip unzip
 calisma  = p11-kit
 
 [kaynak]
-1     = http://hg.openjdk.java.net/jdk8u/jdk8u/archive/jdk8u282-b08.tar.gz::jdk8u-jdk8u282-b08.tar.gz
-2     = http://hg.openjdk.java.net/jdk8u/jdk8u/corba/archive/jdk8u282-b08.tar.gz::corba-jdk8u282-b08.tar.gz
-3     = http://hg.openjdk.java.net/jdk8u/jdk8u/hotspot/archive/jdk8u282-b08.tar.gz::hotspot-jdk8u282-b08.tar.gz
-4     = http://hg.openjdk.java.net/jdk8u/jdk8u/jdk/archive/jdk8u282-b08.tar.gz::jdk-jdk8u282-b08.tar.gz
-5     = http://hg.openjdk.java.net/jdk8u/jdk8u/jaxws/archive/jdk8u282-b08.tar.gz::jaxws-jdk8u282-b08.tar.gz
-6     = http://hg.openjdk.java.net/jdk8u/jdk8u/jaxp/archive/jdk8u282-b08.tar.gz::jaxp-jdk8u282-b08.tar.gz
-7     = http://hg.openjdk.java.net/jdk8u/jdk8u/langtools/archive/jdk8u282-b08.tar.gz::langtools-jdk8u282-b08.tar.gz
-8     = http://hg.openjdk.java.net/jdk8u/jdk8u/nashorn/archive/jdk8u282-b08.tar.gz::nashorn-jdk8u282-b08.tar.gz
-#9     = https://stygian.me/crux/distfiles/openjdk8-boot-20200504-bin.tar.xz
+1     = https://archlinux.org/packages/extra/x86_64/jdk8-openjdk/download/
+2     = https://archlinux.org/packages/extra/x86_64/jre8-openjdk/download/
+3     = https://archlinux.org/packages/extra/x86_64/jre8-openjdk-headless/download/
 
 [sha256]
 
 
 [derle]
-dosya  = derle.sh
+betik = tar -I zstd -xvf /sources/jdk8-openjdk-8.u282-1-x86_64.pkg.tar.zst
+betik = tar -I zstd -xvf /sources/jre8-openjdk-headless-8.u282-1-x86_64.pkg.tar.zst
+betik = tar -I zstd -xvf /sources/jre8-openjdk-8.u282-1-x86_64.pkg.tar.zst
+
 
 [pakur]
-dosya  = pakur.sh
+betik = mv usr $PKG
+betik = mv etc $PKG
