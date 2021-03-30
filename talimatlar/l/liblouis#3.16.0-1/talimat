@@ -12,7 +12,7 @@ calisma =
 github  = liblouis/liblouis
 
 [sha256]
-1       = f820dbb78d3e2ab97032827fdc19c202fd4ca8c0890dbd90e0a4e55e90fd517c
+#1       = f820dbb78d3e2ab97032827fdc19c202fd4ca8c0890dbd90e0a4e55e90fd517c
 
 [derle]
 betik   = ./autogen.sh
