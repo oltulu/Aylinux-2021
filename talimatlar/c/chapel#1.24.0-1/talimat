@@ -14,9 +14,8 @@ gz    = https://github.com/chapel-lang/chapel/releases/download/$surum
 
 [derle]
 betik = cd $isim-$surum
-tip     = gnu
-#betik   = ./configure --prefix=/usr 
-#betik   = sed -i 's/python/python2/g' util/build_configs/build_configs.py
+betik   = ./configure --prefix=/usr 
+betik   = make
 #betik   = util/build_configs/build_configs.py --target-compiler=gnu,mpi-gnu --cpu=native,none --tasks=qthreads,fifo --comm=none,gasnet --substrate=udp,mpi,smp
 	      
 [pakur]
