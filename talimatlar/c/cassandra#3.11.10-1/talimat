@@ -14,8 +14,8 @@ calisma    = openjdk8 python procps-ng
 dosya      = $isim-profile.sh
 
 [sha256]
-1          = d5363386b6ddbee59cf7dbbb2564a5f23ca236e728eebce12daf83b5ccdd50d8
-2          = c932b440260c5ef4c48ed91c752ca67d708b1333a834ea0006fc93504368886a
+#1          = d5363386b6ddbee59cf7dbbb2564a5f23ca236e728eebce12daf83b5ccdd50d8
+#2          = c932b440260c5ef4c48ed91c752ca67d708b1333a834ea0006fc93504368886a
 
 [derle]
 betik      = cd apache-$isim-$surum-src
