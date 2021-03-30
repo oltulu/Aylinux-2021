@@ -9,9 +9,9 @@ derleme  = libxrender libxtst libxt fontconfig cups alsa-lib zip unzip
 calisma  = p11-kit
 
 [kaynak]
-1     = https://archlinux.org/packages/extra/x86_64/jdk8-openjdk/download/
-2     = https://archlinux.org/packages/extra/x86_64/jre8-openjdk/download/
-3     = https://archlinux.org/packages/extra/x86_64/jre8-openjdk-headless/download/
+1     = https://mirror.kumi.systems/archlinux/extra/os/x86_64/jdk8-openjdk-8.u282-1-x86_64.pkg.tar.zst
+2     = https://mirror.kumi.systems/archlinux/extra/os/x86_64/jre8-openjdk-8.u282-1-x86_64.pkg.tar.zst
+3     = https://mirror.kumi.systems/archlinux/extra/os/x86_64/jre8-openjdk-headless-8.u282-1-x86_64.pkg.tar.zst
 
 [sha256]
 
