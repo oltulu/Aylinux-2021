@@ -9,6 +9,7 @@ calisma    =
 
 [kaynak]
 git       = https://github.com/rrooij/youtube-dl-qt
+1 = https://notabug.org/oltulu/Ceviri/raw/master/youtube-dl-qt-mainwindow.ui
 
 [sha256]
 #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
@@ -16,13 +17,8 @@ git       = https://github.com/rrooij/youtube-dl-qt
 [derle]
 
 betik     =   cd "$SRC/$isim"
-betik = sed -i 's/ytdl-qt/Youtube İndirici/' src/mainwindow.ui
-betik = sed -i 's/Video URL/Video Bağlantısı/' src/mainwindow.ui
-betik = sed -i 's/Retrieve URL/URL al/' src/mainwindow.ui
-betik = sed -i 's/Download specific format \(advanced users, experimental\)/Video Bağlantısı/' src/mainwindow.ui
-betik = sed -i 's/Fetch audio only \(only works in some cases\)/Yalnızca sesi getir \(yalnızca bazı durumlarda çalışır\)/' src/mainwindow.ui
-betik = sed -i 's/Options\</Ayarlar\</' src/mainwindow.ui
-betik = sed -i 's/Options\</Ayarlar\</' src/mainwindow.ui
+betik = rm src/mainwindow.ui
+betik = cp /sources/youtube-dl-qt-mainwindow.ui src/mainwindow.ui
 betik     =   qmake -config release
 betik     =   make
 
