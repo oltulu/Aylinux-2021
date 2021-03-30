@@ -1,0 +1,22 @@
+[paket]
+tanim   = Sabit disk dosyalarını ve dizinleri bir ISO 9660 disk görüntüsüne paketlemek için kitaplık
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://dev.lovelyhq.com/libburnia
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+gz = http://files.libburnia-project.org/releases
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+ekconf = --enable-libacl --enable-xattr --disable-static
+tip = gnu
+
+[pakur]
+tip = gnu
