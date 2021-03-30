@@ -8,6 +8,7 @@ url     = https://arcan-fe.com
 1    = https://github.com/letoram/arcan/archive/$surum.tar.gz
 
 [derle]
+betik = cd src
 tip  = cmake
 
 [pakur]
