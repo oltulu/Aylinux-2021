@@ -16,7 +16,7 @@ calisma    =
 
 
 [derle]
-betik      = sed -i "s|WX_CONFIG = 'wx-config'|WX_CONFIG = 'wx-config-gtk3'|" wxPython-${surum%.*}.post${surum##*.}/build.py
+betik      = sed -i "s|WX_CONFIG = 'wx-config'|WX_CONFIG = 'wx-config-gtk3'|" wxPython-4.0.7.post2/build.py
 betik       = cd wxPython-4.0.7.post2
 betik       = python build.py build --use_syswx --release
 betik       = PYTHONPATH=$PWD xvfb-run pytest --forked unittests || echo "==> Uyarı: testler genellikle başarısız olur"
