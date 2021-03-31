@@ -7,7 +7,7 @@ arsiv   = MediaInfoLib/Project/GNU/Library
 
 [gerek]
 derleme = curl glib libmms libzen
-calisma =
+calisma = libmms libzen
 
 [kaynak]
 1       = https://mediaarea.net/download/source/libmediainfo/${surum}/${isim}_${surum}.tar.xz
