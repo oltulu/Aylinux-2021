@@ -9,13 +9,13 @@ derleme = qt5-base
 calisma = qt5-base
 
 [kaynak]
-1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/imageformats-everywhere-src-$surum.tar.xz
+1       = https://download.qt.io/official_releases/qt/${surum%.*}/$surum/submodules/qtimageformats-everywhere-src-$surum.tar.xz
 
 [sha256]
 #1 		= 308160223c0bd7492d56fb5d7b7f705bfb130947ac065bf39280ec6d7cbe4f6a
 
 [derle]
-betik   = mkdir -p build;cd build;qmake ../imageformats-everywhere-src-$surum && make
+betik   = mkdir -p build;cd build;qmake ../qtimageformats-everywhere-src-$surum && make
 
 [pakur]
 betik   = cd build
