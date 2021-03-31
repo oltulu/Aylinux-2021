@@ -20,4 +20,4 @@ betik = cd ../
 
 [pakur]
 betik = mkdir -p "$PKG"/usr/share/gocode/src/gopkg.in/alecthomas
-betik = cp -a "$SRC"/kingpin "$PKG"/usr/share/gocode/src/gopkg.in/alecthomas/kingpin.v2
+betik = cp -a "$SRC"/kingpin "$PKG"/usr/share/gocode/src/gopkg.in/alecthomas/kingpin
