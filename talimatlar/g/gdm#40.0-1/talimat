@@ -19,12 +19,12 @@ dosya = data-meson.build
 #1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
 
 [derle]
-#betik = rm meson.build
-#betik = cp $SRC/meson.build ./
-#betik = rm data/meson.build
-#betik = cp $SRC/data-meson.build data/meson.build
-#betik = sed -i '/  libsystemd_dep,/d' common/meson.build
-#betik = sed -i '/  libsystemd_dep,/d' libgdm/meson.build
+betik = rm meson.build
+betik = cp $SRC/meson.build ./
+betik = rm data/meson.build
+betik = cp $SRC/data-meson.build data/meson.build
+betik = sed -i '/  libsystemd_dep,/d' common/meson.build
+betik = sed -i '/  libsystemd_dep,/d' libgdm/meson.build
 #betik = sed -i 's@systemd@elogind@' data/pam-lfs/gdm-launch-environment.pam
 #betik = sed -i 's@-session@session @' data/pam-lfs/gdm-launch-environment.pam
 betik = patch -Np1 -i /sources/take-out-the-trash.patch
