@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/dde-file-manager
 
 [gerek]
-derleme =  disomaster lucene udisks2-qt5 gio-qt dtkwidget deepin-qt-dbus-factory libmediainfo
+derleme =  disomaster lucene udisks2-qt5 gio-qt dtkwidget deepin-qt-dbus-factory libmediainfo htmlcxx
 calisma =  
 
 [kaynak]
