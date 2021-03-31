@@ -8,7 +8,7 @@ derleme    = go
 calisma    =
 
 [kaynak]
-gz        = https://github.com/linuxdeepin/dde-daemon/archive/$surum
+1   = https://github.com/linuxdeepin/dde-daemon/archive/refs/tags/$surum.tar.gz
 
 [sha256]
             #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
