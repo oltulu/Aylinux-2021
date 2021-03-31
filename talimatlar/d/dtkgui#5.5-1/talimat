@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/dtkgui
 
 [kaynak]
-1      = https://github.com/linuxdeepin/dtkgui/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+git    = https://github.com/linuxdeepin/dtkgui
 
 [gerek]
 derleme = qt5-tools
