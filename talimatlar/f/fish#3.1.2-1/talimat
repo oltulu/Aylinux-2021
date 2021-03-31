@@ -15,7 +15,7 @@ calisma =
 #1       = 14728ccc6b8e053d01526ebbd0822ca4eb0235e6487e832ec1d0d22f1395430e
 
 [derle]
-tip     = gnu
+tip     = cmake
 
 [pakur]
-tip     = gnu
+tip     = cmake
