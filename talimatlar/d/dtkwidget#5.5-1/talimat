@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/dtkwidget
 
 [kaynak]
-1      = https://github.com/linuxdeepin/dtkwidget/archive/$surum.tar.gz
+git   = https://github.com/linuxdeepin/dtkwidget
 
 [gerek]
 derleme = dtkcore dtkgui
@@ -15,8 +15,10 @@ calisma = dtkcore dtkgui
 #1 		= SKIP
 
 [derle]
+betik = cd $isim
 betik = qmake-qt5 PREFIX=/usr
 betik = make
 
 [pakur]
+betik = cd $isim
 betik = make INSTALL_ROOT="$PKG" install
