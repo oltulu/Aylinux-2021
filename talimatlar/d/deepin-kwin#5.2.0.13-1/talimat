@@ -1,0 +1,23 @@
+[paket]
+tanim   = KWin, DDE üzerinde yapılandırır
+paketci = Cihan_Alkan
+url     = https://github.com/linuxdeepin/dde-kwin
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+gz        = https://github.com/linuxdeepin/dde-kwin/archive/$surum
+
+[sha256]
+            #          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+betik = cd dde-kwin-$surum
+betik = cmake . -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DKWIN_VERSION=$(expac %v kwin | cut -d - -f 1)
+betik = ninja
+
+[pakur]
+betik = cd dde-kwin-$surum
+betik = DESTDIR="$PKG" ninja install
