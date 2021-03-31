@@ -5,7 +5,7 @@ grup 	= deepin
 url     = https://github.com/linuxdeepin/deepin-terminal
 
 [gerek]
-derleme = lxqt-build-tools
+derleme = lxqt-build-tools chrpath
 calisma =  
 
 [kaynak]
