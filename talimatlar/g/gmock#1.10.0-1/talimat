@@ -1,0 +1,33 @@
+[paket]
+tanim   = Google Mock - C ++ sahte sınıfları yazmak ve kullanmak için bir kitaplık
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://github.com/google/googletest
+
+[gerek]
+derleme  =   
+calisma  = 
+ 
+[kaynak]
+1          = https://github.com/google/googletest/archive/release-${surum}.tar.gz
+
+[sha256]
+#1          = 7792b9e52560fbd3e10d75bfb5d138a20913a87771d676d296547f1b4ac09618
+
+[derle]
+betik      = cmake -H${_srcname} -Bbuild -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib  -DBUILD_SHARED_LIBS=ON -Dgtest_build_tests=ON
+betik      = cmake --build build
+
+[pakur]
+betik = DESTDIR="${PKG}" cmake --build build --target install
+betik = find "${PKG}" -name '*.pump' -printf 'Removing %P\n' -delete
+betik = mkdir -p gmock/{include,lib/pkgconfig}
+betik = mv "${PKG}"/usr/include/gmock gmock/include/
+betik = mv "${PKG}"/usr/lib/libgmock* gmock/lib/
+betik = mv "${PKG}"/usr/lib/pkgconfig/gmock* gmock/lib/pkgconfig/
+betik = cd googletest-release-${surum}/googletest
+betik = install -Dm 755 scripts/gtest-config.in -t "${PKG}/usr/bin"
+betik = install -Dm 644 cmake/* -t "${PKG}/usr/src/googletest/cmake"
+betik = install -Dm 644 src/* -t "${PKG}/usr/src/googletest/src"
+betik = install -Dm 644 CMakeLists.txt -t "${PKG}/usr/src/googletest"g
+
