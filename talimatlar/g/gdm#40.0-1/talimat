@@ -5,8 +5,8 @@ paketci= Cihan_Alkan
 grup   = gnome
 
 [gerek]
-derleme = ninja meson
-calisma = libcanberra accountsservice
+derleme = ninja meson audit
+calisma = libcanberra accountsservice audit
 
 [kaynak]
 xz   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}
