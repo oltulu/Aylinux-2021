@@ -1,0 +1,20 @@
+[paket]
+tanim   = Öğrencilere 3 boyutlu bir ortamda bilgisayar programlamayı öğreten bir eğitim yazılımı
+paketci = milisarge 
+grup    = kütüphane 
+url     = http://www.alice.org
+
+[gerek]
+derleme  =  
+calisma  = 
+
+[kaynak]
+1     = https://github.com/scratux/scratux/releases/download/1.4.1/scratux-1.4.1.pacman::scratux-1.4.1.pkg.tar.xz
+
+[derle]
+betik = tar -I zstd -xvf /sources/scratux-1.4.1.pkg.tar.xz
+
+
+[pakur]
+betik = mv usr $PKG
+betik = mv opt $PKG
