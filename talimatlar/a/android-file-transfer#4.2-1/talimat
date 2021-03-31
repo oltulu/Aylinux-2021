@@ -1,0 +1,19 @@
+[paket]
+tanim   = Minimalist kullanıcı arayüzüne sahip Android MTP istemcisi
+paketci = Cihan_Alkan 
+grup    = kütüphane 
+url     = https://github.com/whoozle/android-file-transfer-linux
+
+[gerek]
+derleme  =  
+calisma  =  
+
+[kaynak]
+1    = https://github.com/whoozle/android-file-transfer-linux/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+
+[derle]
+betik  =  cmake -DCMAKE_INSTALL_PREFIX=/usr .
+betik  =  make
+
+[pakur]
+betik  =    make DESTDIR="$PKG/" install
