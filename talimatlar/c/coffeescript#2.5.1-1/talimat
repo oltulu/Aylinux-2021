@@ -1,0 +1,23 @@
+[paket]
+tanim   = CoffeeScript, JavaScript'te derlenen küçük bir dildir
+paketci = Cihan_Alkan
+grup  	= programlama
+url     = https://coffeescript.org
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+1     = https://registry.npmjs.org/$pkgname/-/$isim-$surum.tgz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = npm install -g --user root --prefix "$PKG"/usr /sources/$isim-$surum.tgz
+
+
+[pakur]
+betik = chmod -R u=rwX,go=rX "$PKG"
+betik = chown -R root:root "$PKG"
