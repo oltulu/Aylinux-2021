@@ -1,0 +1,29 @@
+[paket]
+tanim  = Urho3D, C ++ ile uygulanan ve MIT lisansı altında piyasaya sürülen ücretsiz, hafif, platformlar arası bir 2D ve 3D oyun motorudur.
+url    = http://urho3d.github.io
+paketci= Cihan_Alkan
+grup   = geliştirme
+
+[gerek]
+derleme = ninja meson audit
+calisma = libcanberra accountsservice audit
+
+[kaynak]
+1   = https://github.com/urho3d/Urho3D/archive/$surum.tar.gz
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik =   mkdir -p "$SRC/Urho3D-$surum/build"
+betik =   cd "$SRC/Urho3D-$surum/build"
+betik =   cmake "$SRC/Urho3D-$surum/" -DCMAKE_INSTALL_PREFIX="/usr" -DURHO3D_USE_LIB_DEB=1 -DURHO3D_SAMPLES=1
+betik =   make
+
+
+[pakur]
+betik =   cd "$SRC/Urho3D-$surum/build"
+betik =   make DESTDIR="$PKG/" install
+betik =   cd "$PKG/usr/bin"
+betik =   mv "./Editor.sh" "./urho3d-editor.sh"
+betik =   rm lua luac
