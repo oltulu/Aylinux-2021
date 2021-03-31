@@ -19,5 +19,5 @@ betik = cd ../
 
 
 [pakur]
-betik = mkdir -p "$PKG"/usr/share/gocode/src/github.com/units
+betik = mkdir -p "$PKG"/usr/share/gocode/src/github.com/alecthomas
 betik = cp -a "$SRC"/units "$PKG"/usr/share/gocode/src/github.com/alecthomas/units
