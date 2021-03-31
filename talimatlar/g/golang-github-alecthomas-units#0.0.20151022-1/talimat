@@ -1,0 +1,23 @@
+[paket]
+tanim   = Fork of Go'nun metni / şablonu yeni satır seçimleri ekliyor
+paketci = Cihan_Alkan
+grup 	= deepin
+url     = https://github.com/alecthomas/template
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+git     = https://github.com/alecthomas/units
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd ../
+
+
+[pakur]
+betik = mkdir -p "$PKG"/usr/share/gocode/src/github.com/units
+betik = cp -a "$SRC"/units "$PKG"/usr/share/gocode/src/github.com/alecthomas/units
