@@ -10,7 +10,6 @@ calisma =
 
 [kaynak]
 1 = http://hpc.ilri.cgiar.org/mirror/archlinux/extra/os/x86_64/gtk-doc-1.33.2-1-any.pkg.tar.zst
-#1 = http://tardis.tiny-vps.com/aarm/packages/g/gtk-doc/gtk-doc-1.33.1-1-any.pkg.tar.xz
 
 [sha1]
 #1 		= 
