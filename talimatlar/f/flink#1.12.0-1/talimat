@@ -9,13 +9,12 @@ derleme    = maven
 calisma    = openjdk8 python
 
 [kaynak]
-1          = http://ftp.itu.edu.tr/Mirror/Apache/$isim/$isim-$surum/$isim-$surum-src.tgz
-https://archive.apache.org/dist/flink/flink-1.12.0/flink-1.12.0-bin-scala_2.12.tgz
+1          = https://archive.apache.org/dist/flink/flink-1.12.0/flink-1.12.0-bin-scala_2.12.tgz
 dosya      = $isim-profile.sh
 
 [sha256]
-1          = ef44a612d537067849815b1c37bc55d570eb81adb22dc2b20f49bd494320a297
-2          = cfbc546c00bf6e230b325320edd8a4bb5e220d62101050568c19274c5036607f
+#1          = ef44a612d537067849815b1c37bc55d570eb81adb22dc2b20f49bd494320a297
+#2          = cfbc546c00bf6e230b325320edd8a4bb5e220d62101050568c19274c5036607f
 
 [derle]
 betik      = make-ca -g
