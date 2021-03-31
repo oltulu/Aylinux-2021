@@ -12,7 +12,7 @@ calisma =
 1       = https://flatassembler.net/fasm-${surum}.tgz
 
 [sha256]
-1       = d250e63cf8b7aa17f0b6c71ab74b673ed04d296b4bbad8ba32bc3b8b35d1f0dc
+#1       = d250e63cf8b7aa17f0b6c71ab74b673ed04d296b4bbad8ba32bc3b8b35d1f0dc
 
 [derle]
 betik   = cd fasm; ./fasm.x64 source/Linux/x64/fasm.asm fasm.out
