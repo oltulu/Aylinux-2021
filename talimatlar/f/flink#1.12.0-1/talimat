@@ -10,6 +10,7 @@ calisma    = openjdk8 python
 
 [kaynak]
 1          = http://ftp.itu.edu.tr/Mirror/Apache/$isim/$isim-$surum/$isim-$surum-src.tgz
+https://archive.apache.org/dist/flink/flink-1.12.0/flink-1.12.0-bin-scala_2.12.tgz
 dosya      = $isim-profile.sh
 
 [sha256]
