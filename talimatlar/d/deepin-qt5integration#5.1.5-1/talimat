@@ -1,0 +1,24 @@
+[paket]
+tanim   = DDE için Qt platformu tema entegrasyon eklentileri
+paketci = Cihan_Alkan
+grup  	= deepin
+url     = https://github.com/linuxdeepin/dde-file-manager
+
+[gerek]
+derleme =   
+calisma =  
+
+[kaynak]
+1  = https://github.com/linuxdeepin/qt5integration/archive/$surum.tar.gz::$isim-$surum.tar.gz
+
+[sha1]
+            #1 		= SKIP
+
+[derle]
+betik = cd qt5integration-$surum
+betik = qmake-qt5 PREFIX=/usr
+betik = make
+
+[pakur]
+betik = cd qt5integration-$surum
+betik =   make INSTALL_ROOT="$PKG" install
