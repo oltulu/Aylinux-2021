@@ -22,5 +22,5 @@ betik 	= cmake --build build
 [pakur]
 betik 	= cd ../
 betik = DESTDIR="$PKG" cmake --install build
-betik      = cp -r  $PKG/lib64/* $PKG/lib/
-betik = rm -rf $PKG/lib64
+betik = cp -r  $PKG/usr/lib64/* $PKG/usr/lib/
+betik = rm -rf $PKG/usr/lib64
