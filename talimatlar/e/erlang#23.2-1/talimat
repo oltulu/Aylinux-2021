@@ -12,7 +12,7 @@ calisma    =
 1          = https://github.com/erlang/otp/archive/OTP-${surum}.tar.gz
 
 [sha256]
-1          = 65ab58ce79181895afc66716cc735a0ada4a3b705a525407d7e1d4c5deb95e72
+#1          = 65ab58ce79181895afc66716cc735a0ada4a3b705a525407d7e1d4c5deb95e72
 
 [derle]
 betik      = cd otp-OTP-$surum
