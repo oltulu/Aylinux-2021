@@ -6,7 +6,7 @@ url     = https://github.com/linuxdeepin/deepin-draw
 
 [gerek]
 derleme = freeimage 
-calisma =  
+calisma =  qt5-imageformats
 
 [kaynak]
 1     = https://github.com/linuxdeepin/deepin-draw/archive/$surum.tar.gz::$isim-$surum.tar.gz
