@@ -17,10 +17,10 @@ betik  = chmod 755 /sources/alice-bin-3.6.0.1.sh
 betik  = /sources/alice-bin-3.6.0.1.sh -q -dir "$PKG/opt/alice"
 betik  = mv "$PKG/opt/alice/Alice 3.desktop" "${PKG}/usr/share/applications/alice3.desktop"
 betik  = rm "$PKG/opt/alice/uninstall"
-betik  = sed -i "s@${PKG}@@" "${PKG}/usr/share/applications/alice3.desktop"
-betik  = sed -i "6s@.*@Icon=alice3@" "${PKG}/usr/share/applications/alice3.desktop"
-betik  = sed -i "7s@.*@Categories=Application;Development;@" "${PKG}/usr/share/applications/alice3.desktop"
-betik  = sed -i "3 a Comment=An IDE for teaching kids programming" "${PKG}/usr/share/applications/alice3.desktop"
+#betik  = sed -i "s@${PKG}@@" "${PKG}/usr/share/applications/alice3.desktop"
+#betik  = sed -i "6s@.*@Icon=alice3@" "${PKG}/usr/share/applications/alice3.desktop"
+#betik  = sed -i "7s@.*@Categories=Application;Development;@" "${PKG}/usr/share/applications/alice3.desktop"
+#betik  = sed -i "3 a Comment=An IDE for teaching kids programming" "${PKG}/usr/share/applications/alice3.desktop"
 
 
 [pakur]
