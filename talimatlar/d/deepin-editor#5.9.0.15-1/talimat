@@ -6,7 +6,7 @@ url     = https://github.com/linuxdeepin/deepin-editor
 
 [gerek]
 derleme =  
-calisma =  
+calisma =  syntax-highlighting
 
 [kaynak]
 1      = https://github.com/linuxdeepin/deepin-editor/archive/$surum.tar.gz::$isim-$surum.tar.gz 
