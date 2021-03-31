@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-1     = https://registry.npmjs.org/$pkgname/-/$isim-$surum.tgz
+1     = https://registry.npmjs.org/$isim/-/$isim-$surum.tgz
 
 [sha1]
             #1 		= SKIP
