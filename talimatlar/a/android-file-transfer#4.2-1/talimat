@@ -12,8 +12,10 @@ calisma  =
 1    = https://github.com/whoozle/android-file-transfer-linux/archive/v$surum.tar.gz::$isim-$surum.tar.gz
 
 [derle]
+betik = cd android-file-transfer-linux-4.2
 betik  =  cmake -DCMAKE_INSTALL_PREFIX=/usr .
 betik  =  make
 
 [pakur]
+betik = cd android-file-transfer-linux-4.2
 betik  =    make DESTDIR="$PKG/" install
