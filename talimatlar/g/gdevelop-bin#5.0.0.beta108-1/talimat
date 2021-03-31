@@ -1,0 +1,27 @@
+
+[paket]
+tanim  = Herkes tarafından kullanılmak üzere tasarlanmış açık kaynaklı, çapraz platform oyun oluşturucu - programlama becerisi gerekmez.
+url    = https://gdevelop-app.com/
+paketci= Cihan_Alkan
+grup   = geliştirme
+
+[gerek]
+derleme = ninja meson audit
+calisma = libcanberra accountsservice audit
+
+[kaynak]
+1   = https://github.com/4ian/GDevelop/releases/download/v${surum//.b/-b}/GDevelop-${surum%%.*}-${surum//.b/-b}.AppImage
+2  = https://github.com/4ian/GDevelop/raw/master/Core/docs/images/glogo.png
+3  =https://aur.archlinux.org/cgit/aur.git/plain/gdevelop.desktop?h=gdevelop-bin
+
+[sha256]
+#1 		= a87f09648ff10d45c524b3bfe618f18622bdd8b205589d35fed2f12d9c79c47c
+
+[derle]
+betik =   install -dm 755 "$PKG"/usr/{bin,share/{applications,pixmaps}}
+betik =   install -m755 *.AppImage "$PKG/usr/bin/gdevelop"
+
+
+[pakur]
+betik =   install -D -m 644 "/sources/gdevelop.desktop?h=gdevelop-bin" "${PKG}/usr/share/applications/gdevelop.desktop"
+betik =   install -D -m 644 "/sources/glogo.png" "${PKG}/usr/share/pixmaps/gdevelop.png"
