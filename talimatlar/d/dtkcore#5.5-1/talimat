@@ -10,14 +10,16 @@ calisma = gsettings-qt
 
 
 [kaynak]
-1      = https://github.com/linuxdeepin/dtkcore/archive/$surum.tar.gz::$isim-$surum.tar.gz 
+git   = https://github.com/linuxdeepin/dtkcore
 
 [sha1]
 #1 		= SKIP
 
 [derle]
+betik = cd $surum
 betik = qmake-qt5 PREFIX=/usr DTK_VERSION=$surum LIB_INSTALL_DIR=/usr/lib
 betik = make
 
 [pakur]
+betik = cd $surum
 betik = make INSTALL_ROOT="$PKG" install
