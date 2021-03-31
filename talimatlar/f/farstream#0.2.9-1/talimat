@@ -17,6 +17,7 @@ gz         = ${FREEDESKTOP_SITE}/farstream/releases/$isim
 
 [derle]
 betik = patch -p1 -i /sources/farstream-make-4.3.patch
+betik = ./autogen.sh
 betik = ./configure --prefix=/usr  --disable-valgrind
 betik = make
 
