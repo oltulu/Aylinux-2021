@@ -1,0 +1,24 @@
+[paket]
+tanim   = C ++ için basit, doğrulanmayan bir CSS1 ve HTML ayrıştırıcısı.
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = http://gcc-libs.sourceforge.net/
+
+[gerek]
+derleme  =  meson python dbus-glib desktop-file-utils gdk-pixbuf glib gtk2 libcanberra libnotify libproxy openssl pango pciutils 
+calisma  = 
+ 
+[kaynak]
+gz        = https://sourceforge.net/projects/$isim/files/v$surum
+
+[sha256]
+#1          = 7792b9e52560fbd3e10d75bfb5d138a20913a87771d676d296547f1b4ac09618
+
+[derle]
+betik      = LDFLAGS="$LDFLAGS -Wl,--no-as-needed"
+betik      = ./configure --prefix=/usr
+betik      = make
+
+[pakur]
+betik      = make DESTDIR="$PKG" install
+
