@@ -22,3 +22,6 @@ betik     = make
 [pakur]
 betik      = cd build
 betik      = make DESTDIR=$PKG install
+betik      = cp -r  $PKG/lib64/* $PKG/lib/
+betik = rm -rf $PKG/lib64
+
