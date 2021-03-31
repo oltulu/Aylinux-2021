@@ -1,0 +1,31 @@
+[paket]
+tanim   = Öğrencilere 3 boyutlu bir ortamda bilgisayar programlamayı öğreten bir eğitim yazılımı
+paketci = milisarge 
+grup    = kütüphane 
+url     = http://www.alice.org
+
+[gerek]
+derleme  =  
+calisma  = 
+
+[kaynak]
+1     = http://www.alice.org/wp-content/uploads/2020/10/Alice3_unix_installer_3_6_0_1.sh::${isim}-${surum}.sh
+
+[derle]
+betik  = install -d "${PKG}/opt" "${PKG}/usr/share/applications"
+betik  = chmod 755 ${isim}-${surum}.sh
+betik  = ./${isim}-${surum}.sh -q -dir "$PKG/opt/alice"
+betik  = mv "$PKG/opt/alice/Alice 3.desktop" "${PKG}/usr/share/applications/alice3.desktop"
+betik  = rm "$PKG/opt/alice/uninstall"
+betik  = sed -i "s@${PKG}@@" "${PKG}/usr/share/applications/alice3.desktop"
+betik  = sed -i "6s@.*@Icon=alice3@" "${PKG}/usr/share/applications/alice3.desktop"
+betik  = sed -i "7s@.*@Categories=Application;Development;@" "${PKG}/usr/share/applications/alice3.desktop"
+betik  = sed -i "3 a Comment=An IDE for teaching kids programming" "${PKG}/usr/share/applications/alice3.desktop"
+
+
+[pakur]
+betik  = sed -i "s|$SRC||" "${PKG}/opt/alice/.install4j/installation.log"
+betik  = sed -i "s|$PKG||" "${PKG}/opt/alice/.install4j/response.varfile"
+betik  = sed -i "s|$PKG||" "${PKG}/opt/alice/.install4j/installation.log"
+betik  = sed -i "s|$PKG||" "${PKG}/opt/alice/.install4j/install.prop"
+betik  = install -Dm644 "${PKG}/opt/alice/.install4j/Alice 3.png" "${PKG}/usr/share/pixmaps/alice3.png"
