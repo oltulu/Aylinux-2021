@@ -15,8 +15,10 @@ calisma = dtkcore librsvg qt5-x11extras
 #1 		= SKIP
 
 [derle]
+betik = cd $isim
 betik = qmake-qt5 PREFIX=/usr DTK_VERSION=$surum LIB_INSTALL_DIR=/usr/lib
 betik = make
 
 [pakur]
+betik = cd $isim
 betik = make INSTALL_ROOT="$PKG" install
