@@ -26,3 +26,4 @@ betik = ninja
 betik = cd ../build
 betik = DESTDIR="$PKG" ninja install
 betik = rm -r "$PKG"/root
+betik = chrpath --delete "$PKG"/usr/bin/deepin-terminal
