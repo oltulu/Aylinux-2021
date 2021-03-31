@@ -19,8 +19,9 @@ git    = https://github.com/xylosper/${isim}
 
 [derle]
 betik = cd $isim
-betik = patch -p1 < /sources/qml_internal_types.patch
+betik = patch -p1 < /sources/qml_internal_types.patch?h=bomi
 betik = ./configure --prefix=/usr --disable-systemd
+betik = make
     	      
 [pakur]
 betik = cd $isim
