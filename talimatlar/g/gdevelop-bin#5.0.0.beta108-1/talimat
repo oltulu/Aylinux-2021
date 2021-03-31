@@ -19,7 +19,7 @@ calisma = libcanberra accountsservice audit
 
 [derle]
 betik =   install -dm 755 "$PKG"/usr/{bin,share/{applications,pixmaps}}
-betik =   install -m755 *.AppImage "$PKG/usr/bin/gdevelop"
+betik =   install -m755 /sources/*.AppImage "$PKG/usr/bin/gdevelop"
 
 
 [pakur]
