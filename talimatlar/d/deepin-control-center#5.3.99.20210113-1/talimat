@@ -9,11 +9,17 @@ calisma =
 
 [kaynak]
 git      = https://github.com/linuxdeepin/dde-control-center
+1 = https://github.com/archlinux/svntogit-community/raw/packages/deepin-control-center/trunk/deepin-control-center-systeminfo-deepin-icon.patch
+2 = https://github.com/archlinux/svntogit-community/raw/packages/deepin-control-center/trunk/deepin-control-center-no-user-experience.patch
 
 [sha1]
     #1 		= SKIP
 
 [derle]
+betik = rm dde-control-center/src/frame/window/icons/icons/dcc_nav_systeminfo_{42,84}px.svg
+betik = patch -d dde-control-center -Np1 < /sources/$isim-systeminfo-deepin-icon.patch
+betik = patch -d dde-control-center -Np1 < /sources/$isim-no-user-experience.patch
+betik = sed -i '/new UpdateModule/d' dde-control-center/src/frame/window/mainwindow.cpp
 betik = mkdir build
 betik = cd build
 betik =  cmake -GNinja -DDISABLE_SYS_UPDATE=YES -DDISABLE_ACTIVATOR=YES -DDISABLE_RECOVERY=YES -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib ../dde-control-center
