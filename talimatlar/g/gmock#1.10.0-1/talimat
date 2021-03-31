@@ -15,7 +15,7 @@ calisma  =
 #1          = 7792b9e52560fbd3e10d75bfb5d138a20913a87771d676d296547f1b4ac09618
 
 [derle]
-betik      = cmake -H${_srcname} -Bbuild -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib  -DBUILD_SHARED_LIBS=ON -Dgtest_build_tests=ON
+betik      = cmake -Hgoogletest-release-1.10.0 -Bbuild -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib  -DBUILD_SHARED_LIBS=ON -Dgtest_build_tests=ON
 betik      = cmake --build build
 
 [pakur]
