@@ -13,8 +13,8 @@ calisma  =
 
 [derle]
 betik  = install -d "${PKG}/opt" "${PKG}/usr/share/applications"
-betik  = chmod 755 ${isim}-${surum}.sh
-betik  = ./${isim}-${surum}.sh -q -dir "$PKG/opt/alice"
+betik  = chmod 755 /sources/Alice3_unix_installer_3_6_0_1.sh
+betik  = /sources/Alice3_unix_installer_3_6_0_1.sh -q -dir "$PKG/opt/alice"
 betik  = mv "$PKG/opt/alice/Alice 3.desktop" "${PKG}/usr/share/applications/alice3.desktop"
 betik  = rm "$PKG/opt/alice/uninstall"
 betik  = sed -i "s@${PKG}@@" "${PKG}/usr/share/applications/alice3.desktop"
