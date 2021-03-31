@@ -1,0 +1,21 @@
+[paket]
+tanim   = Yazılı bir bağlantılı liste C başlık dosyası yalnızca kitaplık
+paketci = Cihan_Alkan
+url     = https://codeberg.org/dnkl/tllist
+
+[gerek]
+derleme    = 
+calisma    =
+
+[kaynak]
+1         = $url/archive/$surum.tar.gz
+
+[sha256]
+#          = 1ccfee598aef723e8815c7a2b782624c0d5f6c4d15194dbeb74f5e45b8aff898
+
+[derle]
+#betik     = cp -r 
+tip     = meson
+
+[pakur]
+tip     = meson
