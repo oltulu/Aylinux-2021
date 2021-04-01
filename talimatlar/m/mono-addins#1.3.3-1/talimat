@@ -5,8 +5,8 @@ grup 	= programlama
 url     = https://www.mono-project.com/Mono.Addins
 
 [gerek]
-derleme = mono
-calisma = mono
+derleme = mono-bin
+calisma = mono-bin
 
 
 [kaynak]
