@@ -20,4 +20,4 @@ betik     = mkdir -p $PKG/usr/share/gnome-shell/extensions
     
 	      
 [pakur]
-betik     = cp -r $SRC/ $PKG/usr/share/gnome-shell/extensions/
+betik     = cp -r $SRC/* $PKG/usr/share/gnome-shell/extensions/
