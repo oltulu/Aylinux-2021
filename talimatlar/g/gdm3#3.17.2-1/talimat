@@ -6,7 +6,7 @@ grup   = gnome
 
 [gerek]
 derleme = 
-calisma = libcanberra accountsservice
+calisma = libcanberra accountsservice audit
 
 [kaynak]
 1   = http://ftp.gnome.org/pub/gnome/sources/gdm/${surum%.*}/gdm-$surum.tar.xz
