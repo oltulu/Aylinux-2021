@@ -9,10 +9,10 @@ derleme    = gtk2 openssl
 calisma    =
 
 [kaynak]
-bz2        = https://www.gftp.org
+xz      = https://github.com/masneyb/gftp/releases/download/$surum
 
 [sha256]
-1          = 5306a46be96d6f4d23906cb1836fb3d732039621a6c7fcfa921acc21ac110bfd
+#1          = 5306a46be96d6f4d23906cb1836fb3d732039621a6c7fcfa921acc21ac110bfd
 
 [derle]
 tip        = gnu
