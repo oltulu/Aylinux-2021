@@ -5,7 +5,7 @@ url     = https://pinta-project.com/
 
 [gerek]
 derleme    = intltool
-calisma    = 
+calisma    = mono-addins
 
 [kaynak]
 gz         = https://github.com/PintaProject/Pinta/releases/download/$surum
