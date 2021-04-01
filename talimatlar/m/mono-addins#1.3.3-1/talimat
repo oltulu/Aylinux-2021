@@ -5,8 +5,8 @@ grup 	= programlama
 url     = https://www.mono-project.com/Mono.Addins
 
 [gerek]
-derleme = gobject-introspection intltool zenity
-calisma = exempi gvfs libexif xorg-libsm mate-desktop libnotify
+derleme = mono
+calisma = mono
 
 
 [kaynak]
