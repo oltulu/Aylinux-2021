@@ -9,17 +9,15 @@ derleme =
 calisma = gnome-shell-extensions gnome-tweaks gnome-menus 
 
 [kaynak]
-git      = https://gitlab.com/arcmenu/ArcMenu
+git      = https://gitlab.com/arcmenu/ArcMenu/arcmenu@arcmenu.com.tar.gz
 
 [sha256]
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-betik     = cd ArcMenu
-#betik     = make VERSION="$surum" _build
+betik     = mkdir -p $PKG/usr/share/gnome-shell/extensions
 
     
 	      
 [pakur]
-betik     = cd ArcMenu
-betik     = make DESTDIR="$PKG" install
+betik     = cp -r $src/ $PKG/usr/share/gnome-shell/extensions/
