@@ -1,0 +1,26 @@
+[paket]
+tanim   = Extension.gnome.org ile entegrasyon için yerel tarayıcı konektörü
+paketci = Cihan_Alkan
+grup   	= gnome
+url     = https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome
+
+[gerek]
+derleme =  
+calisma = gnome-shell-extensions gnome-tweaks gnome-menus 
+
+[kaynak]
+git      = https://git.gnome.org/browse/chrome-gnome-shell
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+betik     = cd $isim
+betik     =  mkdir -p build
+betik     =  cd build
+betik     =  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_EXTENSION=OFF
+
+    
+	      
+[pakur]
+betik     = make -C $isim/build DESTDIR="$PKG" install
