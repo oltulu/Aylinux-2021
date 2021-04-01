@@ -1,0 +1,25 @@
+[paket]
+tanim   = Resim düzenleyici
+paketci = Cihan_Alkan
+grup  	= grafik
+url     = https://krita.org
+
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz     = https://download.kde.org/stable/krita/$surum
+
+[sha256]
+#1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
+
+[derle]
+ekconf     = -DBUILD_TESTING=OFF -DBUILD_KRITA_QT_DESIGNER_PLUGINS=ON
+tip     = cmake
+
+    
+	      
+[pakur]
+tip     = cmake
