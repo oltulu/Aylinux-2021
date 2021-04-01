@@ -12,7 +12,7 @@ calisma =
 bz2     = https://camaya.net/download
 
 [sha256]
-1       = 97cb6a0c07e320ffa4a7c66e8ab06b2361086271dc87ed2398befef4e8435f8a
+#1       = 97cb6a0c07e320ffa4a7c66e8ab06b2361086271dc87ed2398befef4e8435f8a
 
 [derle]
 tip     = gnu
