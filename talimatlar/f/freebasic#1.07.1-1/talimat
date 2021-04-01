@@ -15,7 +15,7 @@ calisma    =
 
 [derle]
 betik     = mkdir -p bootstrap
-betik     = cd "${SRC}/FreeBASIC-${surum}-linux-x86_64"
+betik     = cd "${SRC}/FreeBASIC-${surum}-source"
 betik     = ./install.sh -i "${SRC}/bootstrap"
 betik     = ln -s /usr/lib/libncursesw.so "${SRC}/bootstrap/lib/libtinfo.so.5"
 betik     = export PATH="${SRC}/bootstrap/bin:$PATH"
