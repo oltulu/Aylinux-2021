@@ -1,12 +1,12 @@
 [paket]
 tanim   = Gnome masaüstü için gerekli ayarları yapar
 paketci = Cihan_Alkan
-grup 	= cinnamon
+grup 	= gnome
 url     = https://github.com/oltulu
 
 [gerek]
 derleme = 
-calisma = cinnamon
+calisma = gnome-shell
 
 [kaynak]
 1      = https://notabug.org/oltulu/Ceviri/raw/master/gnome-kur.tar.gz
