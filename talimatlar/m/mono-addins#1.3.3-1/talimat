@@ -18,7 +18,7 @@ gz      = https://github.com/mono/mono-addins/archive
 [derle]
 betik     = local msbuild="${SRC}/msbuild/MSBuild.exe"
 betik     = cd ${isim}-${isim}-${surum}
-betik     = ./autogen.sh --prefix=/usr --enable-gui
+betik     = ./autogen.sh --prefix=/usr --disable-gui
 betik     = make
 betik     = mono "${msbuild}" Mono.Addins/Mono.Addins.csproj /p:WarningLevel=0;Configuration=Release
 betik     = mono "${msbuild}" Mono.Addins.CecilReflector/Mono.Addins.CecilReflector.csproj /p:WarningLevel=0;Configuration=Release
