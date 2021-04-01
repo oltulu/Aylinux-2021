@@ -1,0 +1,28 @@
+[paket]
+tanim   = C # için gtk2 bağlamaları
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://www.mono-project.com/docs/gui/gtksharp/
+
+[gerek]
+derleme = cmake python
+calisma = 
+
+[kaynak]
+1     =  https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-${surum}.tar.gz
+2 = https://github.com/archlinux/svntogit-packages/raw/packages/gtk-sharp-2/trunk/gtk-sharp2-2.12.12-gtkrange.patch
+
+[sha256]
+    #1 		= 4e20f5ea006142f3e5c8931e2b354e1838cb9291ba245825ea82fa6611def7c8
+
+[derle]
+betik =  cd gtk-sharp-${surum}
+betik =  patch -Np1 -i /sources/gtk-sharp2-2.12.12-gtkrange.patch
+betik =  ./configure --prefix=/usr --sysconfdir=/etc --disable-static
+betik =  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik =  make
+
+    	      
+[pakur]
+betik =  cd gtk-sharp-${surum}
+betik = make DESTDIR="${PKG}" install
