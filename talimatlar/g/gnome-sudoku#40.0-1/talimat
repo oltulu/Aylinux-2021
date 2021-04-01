@@ -5,8 +5,8 @@ grup    = oyun
 url     = https://wiki.gnome.org/Apps/contacts
 
 [gerek]
-derleme = meson  
-calisma =  
+derleme = meson  qqwing
+calisma =  qqwing
 
 [kaynak]
 xz      = ${GNOME_SITE}/$isim/${surum%.*}
