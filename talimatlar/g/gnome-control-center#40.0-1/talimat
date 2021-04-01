@@ -10,7 +10,7 @@ calisma =  gnome-bluetooth gnome-color-manager gnome-desktop gnome-online-accoun
 
 [kaynak]
 xz     = http://ftp.gnome.org/pub/gnome/sources/gnome-control-center/${surum%.*}
-#git = https://gitlab.gnome.org/GNOME/libgnome-volume-control
+1 = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/GnomeLogoVerticalMedium.svg
 
 
 [sha512]
