@@ -9,7 +9,7 @@ derleme = cmake python
 calisma = 
 
 [kaynak]
-1     =  https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-${surum}.tar.gz
+1     = https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-2.12.45.tar.gz
 2 = https://github.com/archlinux/svntogit-packages/raw/packages/gtk-sharp-2/trunk/gtk-sharp2-2.12.12-gtkrange.patch
 
 [sha256]
