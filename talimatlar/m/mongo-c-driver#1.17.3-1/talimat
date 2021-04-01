@@ -12,7 +12,7 @@ calisma =
 gz      = https://github.com/mongodb/mongo-c-driver/releases/download/${surum}
 
 [sha256]
-1       = bc53d5f72ab628a1ae549db6888325d6dc34db3ca31c5e16e550c1bb4266d864
+#1       = bc53d5f72ab628a1ae549db6888325d6dc34db3ca31c5e16e550c1bb4266d864
 
 [derle]
 ekconf  = -DENABLE_STATIC=OFF -DENABLE_TESTS=OFF
