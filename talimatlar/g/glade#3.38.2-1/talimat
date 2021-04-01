@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://glade.gnome.org
 
 [gerek]
-derleme = itstool gobject-introspection python-gobject webkit2gtk meson
+derleme = itstool gobject-introspection python-gobject webkitgtk meson
 calisma =
 
 [kaynak]
