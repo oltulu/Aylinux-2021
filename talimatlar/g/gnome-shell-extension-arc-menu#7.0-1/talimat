@@ -9,17 +9,17 @@ derleme =
 calisma = gnome-shell-extensions gnome-tweaks gnome-menus 
 
 [kaynak]
-1      = https://gitlab.com/arcmenu/ArcMenu/-/archive/v7/ArcMenu-v7.tar.gz
+git      = https://gitlab.com/arcmenu/ArcMenu
 
 [sha256]
 #1 		= 3b26efd276c68a579db443ea1f85a270cd33c59284667d5db8d5d355a3f46781
 
 [derle]
-betik     = cd ArcMenu-v7
+betik     = cd ArcMenu
 #betik     = make VERSION="$surum" _build
 
     
 	      
 [pakur]
-betik     = cd ArcMenu-v7
+betik     = cd ArcMenu
 betik     = make DESTDIR="$PKG" install
