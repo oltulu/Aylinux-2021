@@ -13,7 +13,7 @@ gz      = https://download.gluster.org/pub/gluster/glusterfs/${surum%%.*}/$surum
 dosya   = glusterd-init
 
 [sha256]
-1       = f905a1df27ab343f476e0c3875c51cf95c62253158a7fb5f6140843c5670f3c2
+#1       = f905a1df27ab343f476e0c3875c51cf95c62253158a7fb5f6140843c5670f3c2
 
 [derle]
 betik   = export LC_ALL=C
