@@ -22,4 +22,4 @@ betik	= mv ../$isim-$devir-tr.po $SRC/$isim-$surum/po/tr.po
 betik	= sed -i '/^Comment=File System Lint detector and cleaner/a Comment[tr]=Dosya Sistemi Fazlalık algılayıcı ve temizleyici' $isim.desktop
 
 [pakur]
-betik   = pakur.sh
+dosya   = pakur.sh
