@@ -9,7 +9,7 @@ derleme = libaio libtirpc liburcu libxml2 fuse2 rpcsvc-proto
 calisma = python
 
 [kaynak]
-gz      = https://download.gluster.org/pub/gluster/glusterfs/LATEST
+gz      = https://download.gluster.org/pub/gluster/glusterfs/${surum%%.*}/$surum
 dosya   = glusterd-init
 
 [sha256]
