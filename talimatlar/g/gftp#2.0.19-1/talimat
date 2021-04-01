@@ -9,7 +9,7 @@ derleme    = gtk2 openssl
 calisma    =
 
 [kaynak]
-bz2        = $url
+bz2        = https://www.gftp.org
 
 [sha256]
 1          = 5306a46be96d6f4d23906cb1836fb3d732039621a6c7fcfa921acc21ac110bfd
