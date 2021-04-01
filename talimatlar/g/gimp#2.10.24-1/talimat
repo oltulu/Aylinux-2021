@@ -33,7 +33,4 @@ betik   = make
 
 [pakur]
 tip     = gnu
-betik   =install -D -m644 "/sources/linux.gpl" "${PKG}/usr/share/gimp/2.0/palettes/Linux.gpl"
-betik   = ln -s gimptool-2.0 "${PKG}/usr/bin/gimptool"
-betik   = rm $PKG/usr/share/gimp/2.0/images/gimp-splash.png
-betik   = cp /sources/gimp-splash.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
+dosya   = pakur.sh
