@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/files
 
 [gerek]
-derleme    =  
+derleme    =  libcloudproviders
 calisma    =
 
 [kaynak]
