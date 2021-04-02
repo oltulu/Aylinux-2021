@@ -11,10 +11,20 @@ case $1 in
 start)
 	$SSD --start --background --make-pidfile --pidfile $PID --exec $PROG
 	;;
+baslat)
+	$SSD --start --background --make-pidfile --pidfile $PID --exec $PROG
+	;;
 stop)
 	$SSD --stop --signal TERM --pidfile $PID --exec $PROG
 	;;
+durdur)
+	$SSD --stop --signal TERM --pidfile $PID --exec $PROG
+	;;
 restart)
+	$0 stop
+	$0 start
+	;;
+ybaslat)
 	$0 stop
 	$0 start
 	;;
@@ -27,8 +37,18 @@ status)
 	4) echo "Unable to determine the program status" ;;
 	esac
 	;;
+durum)
+	$SSD --status --pidfile $PID
+	case $? in
+	0) echo "$PROG is running with pid $(cat $PID)" ;;
+	1) echo "$PROG is not running but the pid file $PID exists" ;;
+	3) echo "$PROG çalışmıyor" ;;
+	4) echo "Unable to determine the program status" ;;
+	esac
+	;;
 *)
 	echo "usage: $0 [start|stop|restart|status]"
+        echo "Kullanımı: $0 [baslat|durdur|ybaslat|durum]"
 	;;
 esac
 
