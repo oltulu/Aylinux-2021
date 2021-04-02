@@ -15,10 +15,9 @@ calisma  =
 #1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
 
 [derle]
-betik =   cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE='None' -DUSE_HTTP_PARSER=system -DTHREADSAFE=ON -Wno-dev -B build -S .
+ekconf =   -DUSE_HTTP_PARSER=system -DTHREADSAFE=ON
 betik =   make -C build VERBOSE=1
-#ekconf   = --enable-nasm --enable-shared
-#tip      = meson
+tip      = cmake
 
 [pakur]
 betik =  make -C build DESTDIR="$PKG" install
