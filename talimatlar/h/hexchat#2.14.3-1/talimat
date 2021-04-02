@@ -16,7 +16,7 @@ calisma  =
 
 [derle]
 betik      = update-mime-database /usr/share/mime
-ekconf     = -Dwith-perl=/usr/bin/perl -Dwith-python=python3 -Dwith-lua=lua5.3 -Dwith-text=true
+ekconf     = -Dwith-perl=/usr/bin/perl -Dwith-python=python3 -Dwith-text=true
 tip        = meson
 
 [pakur]
