@@ -10,6 +10,10 @@ calisma    =
 
 [kaynak]
 bz2      = https://downloads.sourceforge.net/sourceforge/gtkpod
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/libgpod/trunk/libgpod-0.8.2-pkgconfig_overlinking.patch
+2 = https://github.com/archlinux/svntogit-packages/raw/packages/libgpod/trunk/libgpod-fixswig.patch
+3 = https://github.com/archlinux/svntogit-packages/raw/packages/libgpod/trunk/0001-323-Segmentation-fault-when-opening-ipod.patch
+4 = https://github.com/archlinux/svntogit-packages/raw/packages/libgpod/trunk/libgpod-udev.patch
 
 
 [sha256]
@@ -17,6 +21,10 @@ bz2      = https://downloads.sourceforge.net/sourceforge/gtkpod
 
 
 [derle]
+betik      = patch -Np1 -i /sources/libgpod-0.8.2-pkgconfig_overlinking.patch
+betik      = patch -Np1 -i /sources/libgpod-fixswig.patch
+betik      = patch -Np1 -i /sources/0001-323-Segmentation-fault-when-opening-ipod.patch
+betik      = patch -Np0 -i /sources/libgpod-udev.patch
 betik      = sed -e 's|libplist >= 1.0|libplist-2.0 >= 2.2|' -i configure.ac # support libplist 2.2
 betik      =  autoreconf -vi
 betik      = MCS=/usr/bin/mcs ./configure --prefix=/usr --with-udev-dir=/usr/lib/udev --enable-udev --with-python=no
