@@ -9,7 +9,7 @@ derleme    =
 calisma    =
 
 [kaynak]
-git      = https://anongit.freedesktop.org/git/zeitgeist
+git      = https://anongit.freedesktop.org/git/zeitgeist/zeitgeist
 
 
 [sha256]
