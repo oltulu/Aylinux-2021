@@ -15,7 +15,7 @@ git       = https://gitlab.gnome.org/GNOME/libgit2-glib
 #1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
 
 [derle]
-betik = cp -r $isim #isim-$surum
+betik = cp -r $isim $isim-$surum
 #ekconf   = --enable-nasm --enable-shared
 tip      = meson
 
