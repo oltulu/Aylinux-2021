@@ -15,15 +15,15 @@ calisma =  gnome-desktop pipewire libcanberra pipewire
 1 		= 
 
 [derle]
-betik = cd $SRC
+betik = cd mutter-$surum
 betik = CFLAGS="${CFLAGS/-O2/-O3} -fno-semantic-interposition"
 betik = LDFLAGS+=" -Wl,-Bsymbolic-functions"
-betik = milis-meson mutter$surum build --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D profiler=false -D wayland_eglstream=true  -D xwayland_initfd=disabled
-betik = meson compile -C build
+ekconf =  --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D profiler=false -D wayland_eglstream=true  -D xwayland_initfd=disabled
+tip = meson
 
     	      
 [pakur]
-betik = cd $SRC
-betik = DESTDIR="${PKG}" meson$surum install -C build
+betik = cd mutter-$surum
+tip = meson
 betik = rm -rf "${PKG}"/usr/{bin,share}
 #betik = cp -r $PKG/usr/lib/mutter-6/* $PKG/usr/lib/
