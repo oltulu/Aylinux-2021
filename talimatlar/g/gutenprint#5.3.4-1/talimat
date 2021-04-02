@@ -12,7 +12,7 @@ calisma = ghostscript cups
 1       = ${SOURCEFORGE_SITE}/gimp-print/$isim-$surum.tar.xz
 
 [sha256]
-1       = 7279ecbc8e67d1858c53cb24e423ea1be98e214872006b79e6e03650dd54a072
+#1       = 7279ecbc8e67d1858c53cb24e423ea1be98e214872006b79e6e03650dd54a072
 
 [derle]
 betik   = sed -i "s:cups_sbindir=\"\${cups_exec_prefix}\/sbin\":cups_sbindir=\"\${cups_exec_prefix}\/bin\":" m4local/stp_cups.m4
