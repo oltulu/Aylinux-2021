@@ -15,6 +15,7 @@ calisma =
 #1       = 4fbe0d80f8ef8814f266705318885e15e316774e98fb26f40199e51ed2eea2ed
 
 [derle]
+betik = cp -r i3-${surum} $isim-${surum}
 tip   = meson
 	      
 [pakur]
