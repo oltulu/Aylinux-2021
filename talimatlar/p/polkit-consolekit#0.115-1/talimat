@@ -1,0 +1,27 @@
+[paket]
+tanim   = Sistem dışı sistemler için ConsoleKit destekli PolicyKit
+paketci = Cihan_Alkan
+grup    = sistem
+url     = http://www.freedesktop.org/wiki/Software/polkit
+arsiv   = $isim
+
+[gerek]
+derleme = 
+calisma =  
+
+[kaynak]
+1     = http://www.freedesktop.org/software/polkit/releases/polkit-$pkgver.tar.gz
+
+[sha256]
+#1       = be40357bb3b02caa374b805b06d2cdcad84cb2af8106f3ced6a483b23ee70571
+
+[derle]
+betik = cd "$SRC/polkit-$surum"
+betik = ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/polkit-1 --with-systemdsystemunitdir=/usr/lib/systemd/system --enable-libsystemd-login=no --enable-libelogind=no --disable-static --disable-gtk-doc
+
+[pakur]
+betik = cd "$SRC/polkit-$surum"
+betik = make DESTDIR="$PKG" install
+betik = chown 102 "$PKG/etc/polkit-1/rules.d"
+betik = chown 102 "$PKG/usr/share/polkit-1/rules.d"
+betik = install -m644 "$SRC/polkit.pam" "$PKG/etc/pam.d/polkit-1"
