@@ -5,7 +5,7 @@ grup     = kütüphane
 url      = http://lame.sourceforge.net/
 
 [gerek]
-derleme  = nasm ncurses 
+derleme  = meson libgit2
 calisma  =  
 
 [kaynak]
