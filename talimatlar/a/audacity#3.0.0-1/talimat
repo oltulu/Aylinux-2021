@@ -10,6 +10,7 @@ calisma =
 
 [kaynak]
 1       = https://github.com/${isim}/${isim}/archive/Audacity-${surum}.tar.gz
+2 = https://github.com/dvzrv/audacity/commit/d7e769040b508aaf15ce7b51cc1a565d41cdb079.patch
 
 [sha256]
 #1       = 404e6c49693dedc94212fc5525974058d848536025e19da31359ae02babe8bd7
