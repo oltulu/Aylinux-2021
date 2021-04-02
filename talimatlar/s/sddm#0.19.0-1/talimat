@@ -13,7 +13,7 @@ calisma = qt5-declarative qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
 git      = https://framagit.org/MarianArlt/sddm-sugar-candy
 dosya	= sddm.conf
 dosya = theme.conf
-2= https://notabug.org/oltulu/Ceviri/raw/master/arkaplan.png
+#2= https://notabug.org/oltulu/Ceviri/raw/master/arkaplan.png
 
 [sha256]
 #1       = e76da1f13d5ad5e0179e3fec57543126044339405ef19c397e105e0807bd4e41
@@ -36,5 +36,5 @@ betik		=  find ./Backgrounds -type f -exec install -Dm644 {} "$PKG/usr/share/sdd
 betik		=  find ./Components -type f -exec install -Dm644 {} "$PKG/usr/share/sddm/themes/sugar-candy/{}" \;
 betik = sed -i 's/maldives/sugar-candy/' $PKG/etc/$isim.conf
 betik = sed -i 's/breeze_cursors/Sweet-cursors/' $PKG/etc/$isim.conf
-betik = install -Dm644 /sources/arkaplan.png $PKG/usr/share/sddm/themes/sugar-candy/Backgrounds/arkaplan.png
+#betik = install -Dm644 /sources/arkaplan.png $PKG/usr/share/sddm/themes/sugar-candy/Backgrounds/arkaplan.png
 servis	= sddm
