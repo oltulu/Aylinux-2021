@@ -1,0 +1,25 @@
+[paket]
+tanim    = Libgit2 için GLib sarıcı
+paketci  = Cihan_Alkan 
+grup     = kütüphane
+url      = http://lame.sourceforge.net/
+
+[gerek]
+derleme  = nasm ncurses 
+calisma  =  
+
+[kaynak]
+git       = https://gitlab.gnome.org/GNOME/libgit2-glib
+
+[sha256]
+#1        = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+
+[derle]
+betik = cp -r $isim #isim-$surum
+#ekconf   = --enable-nasm --enable-shared
+tip      = meson
+
+[pakur]
+tip      = meson
+betik = python -m compileall -d "/usr/lib" "$PKG/usr/lib"
+betik = python -O -m compileall -d "/usr/lib" "$PKG/usr/lib"
