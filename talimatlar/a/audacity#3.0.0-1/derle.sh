@@ -1,4 +1,4 @@
-cd Audacity-${surum}
+cd $-isim-Audacity-${surum}
 autoreconf -vfi
 sed -i "s/which python/which/g" lib-src/lv2/build 
 sed -i "s/which python/which/g" lib-src/lv2/configure 
