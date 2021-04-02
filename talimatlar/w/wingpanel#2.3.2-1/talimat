@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/wingpanel
 
 [gerek]
-derleme    = mutter6
+derleme    = mutter6 gala
 calisma    =
 
 [kaynak]
