@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-1      = $url/releases/download/v$surum/forceblur-$surum.kwinscript
+1      = $url//archive/v$surum.tar.gz::kwin-forceblur-$surum.tar.gz
 
 [sha256]
     #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
@@ -18,6 +18,6 @@ calisma =
 betik 	= install -d "$PKG/usr/share/kwin/scripts/forceblur"
                 	      
 [pakur]
-
+betik 	= cd "kwin-forceblur-$surum"
 betik 	= cp -r bin/ contents/ LICENSE image.png metadata.desktop "$PKG/usr/share/kwin/scripts/forceblur/"
 betik 	= install -Dm644 metadata.desktop "$PKG/usr/share/kservices5/kwin-script-forceblur.desktop"
