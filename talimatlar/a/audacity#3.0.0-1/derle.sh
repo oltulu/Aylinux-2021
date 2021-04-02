@@ -2,7 +2,7 @@ cd $isim-Audacity-${surum}
 autoreconf -vfi
 sed -i "s/which python/which/g" lib-src/lv2/build 
 sed -i "s/which python/which/g" lib-src/lv2/configure 
-WX_CONFIG=wx-config ./configure --prefix="/usr" \
+WX_CONFIG=wx-config-gtk3./configure --prefix="/usr" \
 --with-libsndfile="system" \
 --with-ffmpeg="system" \
 --with-expat="system" \
