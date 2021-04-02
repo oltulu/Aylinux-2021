@@ -18,7 +18,7 @@ calisma =  gnome-desktop pipewire libcanberra pipewire
 betik = cp -r  mutter-$surum $isim-$surum
 betik = CFLAGS="${CFLAGS/-O2/-O3} -fno-semantic-interposition"
 betik = LDFLAGS+=" -Wl,-Bsymbolic-functions"
-ekconf =  --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D profiler=false -D wayland_eglstream=true  -D xwayland_initfd=disabled -D libelogind=disabled
+ekconf =  --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D native_tests=false -Dnative_backend=false -Dxwayland_path=/usr/bin/Xwayland -Dwayland=false -Dtests=false
 tip = meson
 
     	      
