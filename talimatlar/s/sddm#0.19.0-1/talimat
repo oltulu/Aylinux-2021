@@ -1,6 +1,6 @@
 [paket]
 tanim   = QML tabanlı X11 ekran yöneticisi
-paketci = yasarciv
+paketci = Cihan_Alkan
 grup    = sistem
 url     = http://github.com/sddm/sddm
 
