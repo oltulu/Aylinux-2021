@@ -9,7 +9,7 @@ derleme = gnome-settings-daemon gsettings-desktop-schemas graphene egl-wayland s
 calisma =  gnome-desktop pipewire libcanberra pipewire
 
 [kaynak]
-xz      = https://download.gnome.org/sources/mutter/3.36
+1     = https://download.gnome.org/sources/mutter/3.36/mutter-$surum.tar.xz
 
 [sha1]
 1 		= 
@@ -18,12 +18,12 @@ xz      = https://download.gnome.org/sources/mutter/3.36
 betik = cd $SRC
 betik = CFLAGS="${CFLAGS/-O2/-O3} -fno-semantic-interposition"
 betik = LDFLAGS+=" -Wl,-Bsymbolic-functions"
-betik = milis-meson mutter build --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D profiler=false -D wayland_eglstream=true  -D xwayland_initfd=disabled
+betik = milis-meson mutter$surum build --libexecdir /usr/lib/mutter-6 -D egl_device=true -D installed_tests=false -D profiler=false -D wayland_eglstream=true  -D xwayland_initfd=disabled
 betik = meson compile -C build
 
     	      
 [pakur]
 betik = cd $SRC
-betik = DESTDIR="${PKG}" meson install -C build
+betik = DESTDIR="${PKG}" meson$surum install -C build
 betik = rm -rf "${PKG}"/usr/{bin,share}
 #betik = cp -r $PKG/usr/lib/mutter-6/* $PKG/usr/lib/
