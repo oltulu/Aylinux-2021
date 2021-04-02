@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/applications-menu
 
 [gerek]
-derleme    =  zeitgeist xapian-core
+derleme    =  zeitgeist 
 calisma    =
 
 [kaynak]
