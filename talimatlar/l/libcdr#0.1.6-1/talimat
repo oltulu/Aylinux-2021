@@ -10,11 +10,13 @@ calisma    =
 
 [kaynak]
 bz2        = http://dev-www.libreoffice.org/src/$isim
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/libcdr/trunk/icu68.patch
 
 [sha256]
 #1          = 5382d25ece9047a9f0ee5f56dc5465b0afddbae5caba68ca7d98632e62b88735
 
 [derle]
+betik = patch -Np0 -i /sources/icu68.patch
 ekconf     = --disable-debug
 tip        = gnu
 
