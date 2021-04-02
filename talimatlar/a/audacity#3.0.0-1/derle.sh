@@ -1,3 +1,4 @@
+patch -Np1 -i "/sources/${isim}-2.4.1-resize_crash.patch"
 cd $isim-Audacity-${surum}
 autoreconf -vfi
 sed -i "s/which python/which/g" lib-src/lv2/build 
