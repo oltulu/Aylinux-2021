@@ -15,11 +15,7 @@ calisma =
 #1       = 4fbe0d80f8ef8814f266705318885e15e316774e98fb26f40199e51ed2eea2ed
 
 [derle]
-betik   = cd $SRC && mkdir build
-betik   = cd i3-$surum
-betik   = autoreconf -fvi
-betik   = cd ../build && ../i3-$surum/configure --prefix=/usr --sysconfdir=/etc && make
+tip   = meson
 	      
 [pakur]
-betik   = cd $SRC/build
-tip     = gnu
+tip   = meson
