@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/ice-wm/icewm/releases/download/$surum/$isim-$surum.tar.lz
 
 [sha256]
-1       = 4478172b936f7f7dcfc2120be8d8f153fd755933bf98b8e98e3eae50c414939c
+#1       = 4478172b936f7f7dcfc2120be8d8f153fd755933bf98b8e98e3eae50c414939c
 
 [derle]
 tip     = gnu
