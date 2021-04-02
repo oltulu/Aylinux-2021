@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/gala
 
 [gerek]
-derleme    = mutter6 plank
+derleme    = mutter6 plank granite
 calisma    =
 
 [kaynak]
