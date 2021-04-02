@@ -1,7 +1,7 @@
 install -m 644 -p $SRC/sddm.conf $PKG/etc/
 sed -i 's|exec $@|exec $STARTUP $@|g' \
 		$PKG/usr/share/sddm/scripts/Xsession
-sed -i -e "\$asetxkbmap tr,us,ru" $PKG/usr/share/sddm/scripts/Xsetup
+sed -i -e "\$asetxkbmap tr,us" $PKG/usr/share/sddm/scripts/Xsetup
 		
 cat > $PKG/etc/pam.d/sddm << "EOF"
 # Begin /etc/pam.d/sddm
