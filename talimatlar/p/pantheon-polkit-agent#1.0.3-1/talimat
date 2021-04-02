@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/pantheon-agent-polkit
 
 [gerek]
-derleme    =  libgpod
+derleme    =  
 calisma    =
 
 [kaynak]
