@@ -13,6 +13,8 @@ calisma =
 git		= $url
 
 [derle]
+betik  = find . -name '*.cpp' -exec sed -i -e '/sysctl.h/d' {} \;
+betik  = find . -type f -exec sed -i 's/toAscii/toLatin1/g' {} \;
 betik  = qmake PREFIX=$PKG/usr DEFINES=USEUDISKS2 $isim.pro && make
 
 [pakur]
