@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://github.com/elementary/applications-menu
 
 [gerek]
-derleme    =  libgit2-glib editorconfig-core-c gtkspell3
+derleme    =  zeitgeist-2.0
 calisma    =
 
 [kaynak]
