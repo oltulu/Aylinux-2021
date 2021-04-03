@@ -9,10 +9,10 @@ derleme = cmake zlib libaec
 calisma =
 
 [kaynak]
-bz2     = https://support.hdfgroup.org/ftp/HDF5/releases/$isim-1.10/$isim-$surum/src
+1     = https://support.hdfgroup.org/ftp/HDF5/releases/${isim}-${surum:0:4}/${isim}-${surum/_/-}/src/${isim}-${surum/_/-}.tar.bz2
 
 [sha256]
-1       = 09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd
+#1       = 09d6301901685201bb272a73e21c98f2bf7e044765107200b01089104a47c3bd
 
 [derle]
 dosya   = derle.sh
