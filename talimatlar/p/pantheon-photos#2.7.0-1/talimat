@@ -6,7 +6,7 @@ url     = https://github.com/elementary/photos
 
 [gerek]
 derleme    =  
-calisma    =
+calisma    = geocode-glib
 
 [kaynak]
 git      = https://github.com/elementary/photos
