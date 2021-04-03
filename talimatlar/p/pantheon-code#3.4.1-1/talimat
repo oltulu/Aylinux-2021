@@ -6,7 +6,7 @@ url     = https://github.com/elementary/code
 
 [gerek]
 derleme    = libgit2-glib editorconfig-core-c gtkspell3
-calisma    = libgit2-glib editorconfig-core-c gtkspell3 granite libpeas gtksourceview4
+calisma    = libgit2-glib editorconfig-core-c gtkspell3 granite libpeas gtksourceview4 libsoup libhandy
 
 [kaynak]
 git      = https://github.com/elementary/code
