@@ -6,7 +6,7 @@ url     = https://github.com/elementary/videos
 
 [gerek]
 derleme    = 
-calisma    =
+calisma    =  clutter clutter-gst clutter-gtk 
 
 [kaynak]
 git      = https://github.com/elementary/videos
