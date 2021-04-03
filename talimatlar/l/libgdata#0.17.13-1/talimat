@@ -6,7 +6,7 @@ url     = https://wiki.gnome.org/Projects/libgdata
 
 [gerek]
 derleme = uhttpmock meson ninja
-calisma =  
+calisma = gnome-online-accounts json-glib
 
 [kaynak]
 git     = https://gitlab.gnome.org/GNOME/libgdata
