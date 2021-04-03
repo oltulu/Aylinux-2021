@@ -14,14 +14,10 @@ calisma =
 
 
 [derle]
-betik = mkdir -p $SRC/$isim/build
-betik = cd $SRC/$isim
-#betik = export CFLAGS+=" -D"$(./config_scripts/battery_config.sh)
-betik = cd $SRC/$isim/build
-betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON ..
-betik = make
+betik = cp -r $isim $isim-$surum
+ekconf = -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON  
+tip = cmake
 
     	      
 [pakur]
-betik = cd $SRC/$isim/build
-betik = make DESTDIR="$PKG/" install
+tip = cmake
