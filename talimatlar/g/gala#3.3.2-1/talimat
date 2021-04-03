@@ -6,7 +6,7 @@ url     = https://github.com/elementary/gala
 
 [gerek]
 derleme    = mutter6 plank granite
-calisma    =
+calisma    = mutter6 gnome-desktop libgee plank
 
 [kaynak]
 git      = https://github.com/elementary/gala
