@@ -27,6 +27,6 @@
     -DSHADERC_SKIP_TESTS=on \
     -GNinja \
     -Dshaderc_SOURCE_DIR="$SRC"/shaderc \
-    -DPYTHON_EXE=/usr/bin/python2
+    -DPYTHON_EXE=/usr/bin/python2 -Wno-dev 
   ninja glslc
   
