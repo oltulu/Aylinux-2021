@@ -9,7 +9,7 @@ derleme = cmake
 calisma = 
 
 [kaynak]
-1      = https://github.com/sgse/paleofetch
+git     = https://github.com/sgse/paleofetch
 
 
 
