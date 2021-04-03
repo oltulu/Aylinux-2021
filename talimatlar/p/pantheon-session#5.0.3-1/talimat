@@ -27,7 +27,3 @@ betik      =   mkdir -p "${PKG}"/usr/share/pantheon
 
 [pakur]
 tip      = meson
-betik      =   cp -dr --no-preserve='ownership' applications "${PKG}"/usr/share/pantheon/
-betik      =   cp -dr --no-preserve='ownership' autostart "${PKG}"/etc/xdg/
-betik      =   cp -dr --no-preserve='ownership' gnome-session "${PKG}"/usr/share/gnome-session/sessions
-betik      =   cp -dr --no-preserve='ownership' xsessions "${PKG}"/usr/share/
