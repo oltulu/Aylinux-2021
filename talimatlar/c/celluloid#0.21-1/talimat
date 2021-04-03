@@ -1,0 +1,23 @@
+[paket]
+tanim   = Mpv için basit GTK + ön ucu
+paketci	= Cihan_Alkan
+grup  	= kütüphane
+url	    = https://celluloid-player.github.io/
+
+[gerek]
+derleme	= 
+calisma	= mpv
+
+[kaynak]
+xz	    = https://github.com/celluloid-player/$isim/releases/download/v$surum
+
+
+[sha256]
+#1	    = 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
+
+[derle]
+tip = meson
+
+
+[pakur]
+tip = meson
