@@ -6,7 +6,7 @@ url     = https://github.com/elementary/applications-menu
 
 [gerek]
 derleme    =  zeitgeist wingpanel
-calisma    = zeitgeist wingpanel switchboard
+calisma    = zeitgeist wingpanel switchboard json-glib
 
 [kaynak]
 git      = https://github.com/elementary/applications-menu
