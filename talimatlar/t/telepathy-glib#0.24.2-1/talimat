@@ -6,7 +6,7 @@ url     = https://telepathy.freedesktop.org
 
 [gerek]
 derleme    =   
-calisma    = libdbus-glib
+calisma    = dbus-glib
 
 [kaynak]
 gz      = https://telepathy.freedesktop.org/releases/$isim
