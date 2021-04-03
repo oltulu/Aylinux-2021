@@ -5,7 +5,7 @@ grup    = pantheon
 url     = https://github.com/elementary/session-settings
 
 [gerek]
-derleme    = onboard
+derleme    = onboard orca
 calisma    = gnome-session gnome-settings-daemon
 
 [kaynak]
