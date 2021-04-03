@@ -6,7 +6,7 @@ url      = http://lame.sourceforge.net/
 
 [gerek]
 derleme  = meson http-parser
-calisma  =  
+calisma  = http-parser
 
 [kaynak]
 1    = https://github.com/libgit2/libgit2/archive/v${surum}.tar.gz::$isim-${surum}.tar.gz
