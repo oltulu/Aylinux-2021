@@ -15,7 +15,7 @@ bz2 = https://archive.xfce.org/src/xfce/$isim/${surum%.*}
 #1   = 3400a2e64aa41ede25bedaca4909bde7ea4f8698d9598d1b80f02a40ac89fcde
 
 [derle]
-ekconf = --disable-debug
+ekconf = --disable-debug --disable-gtk-doc
 tip    = gnu
 
 [pakur]
