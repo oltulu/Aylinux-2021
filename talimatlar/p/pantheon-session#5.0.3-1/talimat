@@ -18,7 +18,9 @@ git      = https://github.com/elementary/session-settings
 
 [derle]
 betik      = cd  session-settings
-betik      =   mkdir -p "${PKG}"/{etc/xdg,usr/share/{gnome-session,pantheon}}
+betik      =   mkdir -p "${PKG}"/etc/xdg
+betik      =   mkdir -p "${PKG}"/usr/share/gnome-session
+betik      =   mkdir -p "${PKG}"/usr/share/pantheon
 betik      =   cp -dr --no-preserve='ownership' applications "${PKG}"/usr/share/pantheon/
 betik      =   cp -dr --no-preserve='ownership' autostart "${PKG}"/etc/xdg/
 betik      =   cp -dr --no-preserve='ownership' gnome-session "${PKG}"/usr/share/gnome-session/sessions
