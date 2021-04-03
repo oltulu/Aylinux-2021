@@ -6,7 +6,7 @@ url      = http://lame.sourceforge.net/
 
 [gerek]
 derleme  = meson libgit2
-calisma  =  
+calisma  =  libgit2
 
 [kaynak]
 git       = https://gitlab.gnome.org/GNOME/libgit2-glib
