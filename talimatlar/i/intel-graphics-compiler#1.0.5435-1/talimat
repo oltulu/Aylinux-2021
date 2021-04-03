@@ -5,7 +5,7 @@ grup 	= driver
 url     =  https://github.com/intel/intel-graphics-compiler
 
 [gerek]
-derleme = 
+derleme =  /intel-opencl-clang
 calisma =  
 
 [kaynak]
