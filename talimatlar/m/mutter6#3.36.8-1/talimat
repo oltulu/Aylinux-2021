@@ -25,5 +25,5 @@ tip = meson
 [pakur]
 #betik = 
 tip = meson
-betik = rm -rf "${PKG}"/usr/{bin,share}
+#betik = rm -rf "${PKG}"/usr/{bin,share}
 betik = cp -r $PKG/usr/lib/mutter-6/* $PKG/usr/lib/
