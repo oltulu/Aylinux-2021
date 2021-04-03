@@ -5,8 +5,8 @@ grup    = kütüphane
 url     = https://github.com/elementary/code
 
 [gerek]
-derleme    =  libgit2-glib editorconfig-core-c gtkspell3
-calisma    =
+derleme    = libgit2-glib editorconfig-core-c gtkspell3
+calisma    = libgit2-glib editorconfig-core-c gtkspell3 granite libpeas gtksourceview3
 
 [kaynak]
 git      = https://github.com/elementary/code
