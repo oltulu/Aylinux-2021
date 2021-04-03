@@ -17,7 +17,9 @@ git      = https://github.com/elementary/session-settings
 
 
 [derle]
-betik      = cd  session-settings
+
+betik      = cp -r session-settings $isim-$surum
+tip      = meson
 betik      =   mkdir -p "${PKG}"/etc/xdg
 betik      =   mkdir -p "${PKG}"/usr/share/gnome-session
 betik      =   mkdir -p "${PKG}"/usr/share/pantheon
@@ -27,4 +29,4 @@ betik      =   cp -dr --no-preserve='ownership' gnome-session "${PKG}"/usr/share
 betik      =   cp -dr --no-preserve='ownership' xsessions "${PKG}"/usr/share/
 
 [pakur]
-betik      = cd  session-settings
+betik      = cd  session-settingss
