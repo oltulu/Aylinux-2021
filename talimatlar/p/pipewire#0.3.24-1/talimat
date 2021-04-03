@@ -6,7 +6,7 @@ url     = https://github.com/PipeWire/pipewire
 
 [gerek]
 derleme = bluez meson ninja
-calisma =  bluez sbc libsndfile
+calisma =  bluez sbc libsndfile gstreamer
 
 [kaynak]
 git      = https://github.com/PipeWire/pipewire
