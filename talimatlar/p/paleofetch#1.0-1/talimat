@@ -14,10 +14,11 @@ git     = https://github.com/sgse/paleofetch
 
 
 [derle]
-betik = cp -r $isim $isim-$surum
+betik = cd $isim 
 ekconf = -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON  
 tip = cmake
 
     	      
 [pakur]
+betik = cd $isim 
 tip = cmake
