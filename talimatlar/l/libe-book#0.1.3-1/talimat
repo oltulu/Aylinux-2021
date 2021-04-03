@@ -10,11 +10,13 @@ calisma    =
 
 [kaynak]
 1          = ${SOURCEFORGE_SITE}/project/libebook/${isim}-${surum}/${isim}-${surum}.tar.xz
+2 = https://github.com/archlinux/svntogit-packages/raw/packages/libe-book/trunk/icu68.patch
 
 [sha256]
 1          = 7e8d8ff34f27831aca3bc6f9cc532c2f90d2057c778963b884ff3d1e34dfe1f9
 
 [derle]
+patch -Np0 -i /sources/icu68.patch
 betik      = autoreconf -fi
 ekconf     = --disable-werror
 tip        = gnu
