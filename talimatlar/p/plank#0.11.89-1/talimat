@@ -6,7 +6,7 @@ url     = https://launchpad.net/plank
 
 [gerek]
 derleme = vala gnome-menus bamf libgee 
-calisma = gnome-menus bamf libgee
+calisma = gnome-menus bamf libgee libdbusmenu-gtk3 libdbusmenu-glib
 
 [kaynak]
 xz     = https://launchpad.net/plank/1.0/$surum/+download
