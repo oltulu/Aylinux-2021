@@ -6,7 +6,7 @@ url     = http://gtkspell.sourceforge.net/
 
 [gerek]
 derleme = intltool enchant gtk3 gobject-introspection vala
-calisma =
+calisma = enchant
 
 [kaynak]
 xz      = https://downloads.sourceforge.net/gtkspell
