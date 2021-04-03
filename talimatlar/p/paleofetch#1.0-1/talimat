@@ -15,7 +15,7 @@ git     = https://github.com/sgse/paleofetch
 
 [derle]
 betik = cd $isim 
-betik = cmake -DCMAKE_INSTALL_PREFIX=/usr  -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON ..	
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr  -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON .
 betik = make
 
     	      
