@@ -6,7 +6,7 @@ url     = https://github.com/elementary/applications-menu
 
 [gerek]
 derleme    =  zeitgeist wingpanel
-calisma    =
+calisma    = zeitgeist wingpanel switchboard
 
 [kaynak]
 git      = https://github.com/elementary/applications-menu
