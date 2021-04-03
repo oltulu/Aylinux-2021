@@ -1,0 +1,27 @@
+[paket]
+tanim   = C ile yazılmış neofetch
+paketci = Cihan_Alkan
+grup 	= lxde
+url     = https://github.com/sgse/paleofetch
+
+[gerek]
+derleme = cmake
+calisma = 
+
+[kaynak]
+1      = https://github.com/sgse/paleofetch
+
+
+
+[derle]
+betik = mkdir -p "$SRC/$isim/build
+betik = cd "$SRC/$isim"
+betik = export CFLAGS+=" -D"$(./config_scripts/battery_config.sh)
+betik = cd "$SRC/$isim/build"
+betik = cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_UNITY_BUILD=ON -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON ..
+betik = make
+
+    	      
+[pakur]
+betik = cd "$SRC/$isim/build"
+betik = make DESTDIR="$PKG/" install
