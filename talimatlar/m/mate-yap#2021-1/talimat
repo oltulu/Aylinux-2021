@@ -6,10 +6,10 @@ url     = https://github.com/oltulu
 
 [gerek]
 derleme = 
-calisma = 
+calisma = caja marco
 
 [kaynak]
-1      = https://notabug.org/oltulu/Ceviri/raw/master/mate-kur.tar.gz
+1      = https://notabug.org/oltulu/Aylinux-Resimler/raw/master/mate-kur.tar.gz
 
 
 
