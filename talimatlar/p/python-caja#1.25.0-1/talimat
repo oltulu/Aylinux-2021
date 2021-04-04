@@ -1,0 +1,23 @@
+[paket]
+tanim   = Caja özellik sayfası ve menü öğesi uzantılarının Python'da yazılmasına izin vermek için Caja için Python bağlama
+paketci = Cihan_Alkan
+grup  	= mate
+url     = https://mate-desktop.org
+
+[gerek]
+derleme = intltool itstool gobject-introspection libpeas
+calisma = dbus-glib gobject-introspection exempi lcms2 libexif libjpeg-turbo mate-desktop libpeas
+
+[kaynak]
+xz      = http://pub.mate-desktop.org/releases/${surum%.*}
+
+[sha256]
+#1 		= 64d73069ba4db8515a6c2c90fadba87e1c5cac67dd1e102b271f62e537ee970e
+
+[derle]
+betik     = PYTHON=python3 ./configure --prefix=/usr
+betik     = sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+betik     = make
+	      
+[pakur]
+tip 	= gnu
