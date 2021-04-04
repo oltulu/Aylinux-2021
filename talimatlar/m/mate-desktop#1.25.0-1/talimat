@@ -20,3 +20,4 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
+betik = sed -i 's/^Name\[tr\]=MATE Renk Seçimi/Name\[tr\]=Renk Seçimi/' $PKG/usr/share/applications/mate-color-select.desktop
