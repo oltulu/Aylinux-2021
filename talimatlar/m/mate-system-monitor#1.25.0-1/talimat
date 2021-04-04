@@ -19,3 +19,4 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
+betik = sed -i 's/^Name\[tr\]=MATE Sistem Gözlemcisi/Name\[tr\]=Sistem Gözlemcisi/' $PKG/usr/share/applications/mate-system-monitor.desktop
