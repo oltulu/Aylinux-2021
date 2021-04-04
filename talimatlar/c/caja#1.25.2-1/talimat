@@ -22,3 +22,4 @@ betik     = make
 [pakur]
 betik     = make DESTDIR=$PKG install
 betik = sed -i 's/^Name=Caja/Name=Dosya Yöneticisi/' $PKG/usr/share/applications/caja.desktop
+betik = sed -i 's/\/usr/dbus-launch \/usr/' $PKG/usr/share/applications/caja.desktop
