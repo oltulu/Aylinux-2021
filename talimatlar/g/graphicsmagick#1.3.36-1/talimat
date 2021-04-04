@@ -28,5 +28,5 @@ betik   = sed -i -e "s:'LDDLFLAGS'  => \"\(.*\)\":'LDDLFLAGS'  => \"-L${PKG}/usr
 betik   = perl Makefile.PL INSTALLDIRS=vendor PREFIX=/usr DESTDIR="${PKG}"
 betik   = sed -i -e "s/LDLOADLIBS =/LDLOADLIBS = -lGraphicsMagick/" Makefile
 betik   = make && make install
-betik   = rm -r "${PKG}"/usr/lib/perl5/*/core_perl
-betik   = rm "${PKG}"/usr/lib/perl5/*/vendor_perl/auto/Graphics/Magick/.packlist
+#betik   = rm -r "${PKG}"/usr/lib/perl5/*/core_perl
+#betik   = rm "${PKG}"/usr/lib/perl5/*/vendor_perl/auto/Graphics/Magick/.packlist
