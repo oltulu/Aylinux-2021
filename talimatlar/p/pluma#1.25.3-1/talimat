@@ -24,3 +24,4 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
+betik = sed -i 's/^Name\[tr\]=Pluma/Name\[tr\]=Metin Düzenleyici/' $PKG/usr/share/applications/mate-color-select.desktop
