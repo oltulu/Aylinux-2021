@@ -21,4 +21,5 @@ betik = cd ubuntu-mate-settings-$surum
 [pakur]
 betik = cd ubuntu-mate-settings-$surum
 betik = python setup.py install --root="$PKG" --optimize=1
+betik = mkdir -p $PKG/usr/share
 betik =cp -r "$SRC"/ubuntu-mate-settings-$surum/usr/share/mate-panel "$PKG/usr/share"
