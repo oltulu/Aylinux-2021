@@ -21,3 +21,4 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
+betik = sed -i 's/^Name\[tr\]=MATE'nin Gözü Resim Görüntüleyicisi/Name\[tr\]=Resim Görüntüleyicisi/' $PKG/usr/share/applications/eom.desktop
