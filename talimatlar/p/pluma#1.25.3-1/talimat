@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = intltool itstool gobject-introspection python mate-common yelp-tools enchant gtksourceview libpeas
-calisma = iso-codes mate-desktop zenity gtksourceview libpeas python2 enchant
+calisma = iso-codes mate-desktop zenity gtksourceview libpeas python2 enchant gtksourceview4
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
