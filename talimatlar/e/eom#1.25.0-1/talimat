@@ -10,6 +10,7 @@ calisma = dbus-glib gobject-introspection exempi lcms2 libexif libjpeg-turbo mat
 
 [kaynak]
 xz      = http://pub.mate-desktop.org/releases/${surum%.*}
+dosya = eom.desktop
 
 [sha256]
 #1 		= 64d73069ba4db8515a6c2c90fadba87e1c5cac67dd1e102b271f62e537ee970e
@@ -21,5 +22,6 @@ betik     = make
 	      
 [pakur]
 tip 	= gnu
-betik = sed -i 's/^Name\[tr\]=MATE\'nin Gözü Resim Görüntüleyicisi/Name\[tr\]=Resim Görüntüleyicisi/' $PKG/usr/share/applications/eom.desktop
+betik = rm $PKG/usr/share/applications/eom.desktop
+betik = cp $SRC/eom.desktop $PKG/usr/share/applications/eom.desktop
 
