@@ -10,15 +10,16 @@ calisma =
 
 [kaynak]
 xz      = https://download.gnome.org/sources/$isim/${surum%.*}
+1 = https://github.com/archlinux/svntogit-packages/raw/packages/tracker/trunk/0001-libtracker-data-Workaround-SQLite-3.35.x-bug.patch
 
 [sha1]
 1 		= 
 
 [derle]
-betik = mkdir build
-betik = cd    build
-betik = meson --prefix=/usr --libexecdir=lib --sysconfdir=/etc ..
-betik = ninja
+betik = git apply -3 /sources/0001-libtracker-data-Workaround-SQLite-3.35.x-bug.patch
+betik = sed -i '/tracker-steroids/d' tests/meson.build
+betik = cd $SRC
+tip = meson 
 
 [pakur]
-betik = DESTDIR=$PKG ninja install
+tip = meson 
