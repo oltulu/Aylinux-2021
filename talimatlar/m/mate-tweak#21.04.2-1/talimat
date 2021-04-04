@@ -6,7 +6,7 @@ url     = https://mate-desktop.org
 
 [gerek]
 derleme = python 
-calisma =  
+calisma = python-distro  python-psutil python-setproctitle
 
 [kaynak]
 1  = http://ftp.br.debian.org/debian/pool/main/m/mate-tweak/mate-tweak_21.04.2-1_all.deb
