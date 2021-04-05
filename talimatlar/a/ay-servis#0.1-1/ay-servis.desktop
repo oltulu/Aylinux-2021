@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Servis Yöneticisi
+Comment=Servis Yöneticisi
+Exec=ay-qemu
+Icon=/usr/share/backgrounds/aylinux/lightdm-user.png
+Terminal=false
+Encoding=UTf-8
+Type=Application
+Categories=Settings;
