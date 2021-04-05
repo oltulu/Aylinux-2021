@@ -18,10 +18,12 @@ bz2        = https://wiki.qemu.org/download
 betik      = sed -i 's/__u64/unsigned long/' linux-user/host/aarch64/hostdep.h
 betik      = sed -e 's,-rpath /usr/local/lib,,g' -i configure
 betik      = export ARFLAGS=rv;export CFLAGS+=" -fPIC"
-ekconf     = --libexecdir=/usr/lib/qemu --smbd=/usr/bin/smbd --python=/usr/bin/python2 --enable-modules --enable-jemalloc --enable-kvm --audio-drv-list=alsa,pa,sdl --disable-xen --enable-tpm --enable-vhost-net --enable-vnc-png --enable-virtfs --enable-libusb --disable-glusterfs --enable-snappy --enable-usb-redir --enable-pie --localstatedir=/var --datadir=/usr/lib --disable-docs --enable-virglrenderer --enable-opengl --enable-spice --enable-sdl --enable-smartcard --enable-gtk --enable-bluez
-; --disable-static ayarını sil
-betik      = export confopt=`echo $confopt | sed 's/--disable-static//'`
-tip        = gnu 
+#ekconf     = --libexecdir=/usr/lib/qemu --smbd=/usr/bin/smbd --python=/usr/bin/python2 --enable-modules --enable-jemalloc --enable-kvm --audio-drv-list=alsa,pa,sdl --disable-xen --enable-tpm --enable-vhost-net --enable-vnc-png --enable-virtfs --enable-libusb --disable-glusterfs --enable-snappy --enable-usb-redir --enable-pie --localstatedir=/var --datadir=/usr/lib --disable-docs --enable-virglrenderer --enable-opengl --enable-spice --enable-sdl --enable-smartcard --enable-gtk --enable-bluez
+#; --disable-static ayarını sil
+#betik      = export confopt=`echo $confopt | sed 's/--disable-static//'`
+betik = ./configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --bindir=/usr/bin --sbindir=/usr/bin --sysconfdir=/etc --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --localstatedir=/var --libexecdir=/usr/lib/qemu --smbd=/usr/bin/smbd --python=/usr/bin/python2 --enable-modules --enable-jemalloc --enable-kvm --audio-drv-list=alsa,pa,sdl --disable-xen --enable-tpm --enable-vhost-net --enable-vnc-png --enable-virtfs --enable-libusb --disable-glusterfs --enable-snappy --enable-usb-redir --enable-pie --localstatedir=/var --datadir=/usr/lib --disable-docs --enable-virglrenderer --enable-opengl --enable-spice --enable-sdl --enable-smartcard --enable-gtk --enable-bluez
+
+#tip        = gnu 
 
 [pakur]
 strip      = yok
