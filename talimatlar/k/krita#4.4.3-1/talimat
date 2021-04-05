@@ -6,7 +6,7 @@ url     = https://krita.org
 
 
 [gerek]
-derleme =  
+derleme =  kitemmodels python-sip4
 calisma =  
 
 [kaynak]
