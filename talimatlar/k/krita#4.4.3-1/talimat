@@ -6,7 +6,7 @@ url     = https://krita.org
 
 
 [gerek]
-derleme =  kitemmodels python-qt5-sip eigen quazip
+derleme =  kitemmodels python-qt5-sip eigen quazip kimageformats
 calisma =  
 
 [kaynak]
