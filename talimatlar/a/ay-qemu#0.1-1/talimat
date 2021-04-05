@@ -17,7 +17,7 @@ dosya = $isim.desktop
 
 [derle]
 betik 	= cd Ay-Qemu
-betik 	= qmake-qt5 PREFIX=/usr
+betik 	=  qmake ay-qemu.pro
 betik 	= make
         	      
 [pakur]
