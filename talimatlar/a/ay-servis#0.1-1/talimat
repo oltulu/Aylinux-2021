@@ -1,0 +1,28 @@
+[paket]
+tanim   = Aylinux için servis yöneticisi
+paketci = Cihan_Alkan
+grup 	  = sistem
+url     = https://notabug.org/oltulu/ay-servis
+
+[gerek]
+derleme = qt5-tools
+calisma = 
+
+[kaynak]
+git      = https://notabug.org/oltulu/ay-servis
+dosya = $isim.desktop
+
+[sha512]
+    #1 		= 5b09b73cda93a67c26784b94bafab8e6083b26a3fd3cc2494e8e75090ae1d8a396c02a9d9e0f7f74864cd0b6172d70692f410b18bbc5110b462072ed3beb08e3
+
+[derle]
+betik 	= cd ay-servis
+betik 	=  qmake ay-servis.pro
+betik 	= make
+        	      
+[pakur]
+betik 	= cd ay-servis
+betik 	= mkdir -p $PKG/usr/share/applications
+betik 	= mkdir -p $PKG/usr/bin
+betik 	= cp ay-servis $PKG/usr/bin/ay-servis
+betik 	= cp $SRC/$isim.desktop $PKG/usr/share/applications/$isim.desktop
