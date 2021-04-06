@@ -9,7 +9,7 @@ derleme =
 calisma =  
 
 [kaynak]
-xz      = https://libvirt.org/sources/glib
+gz      = https://libvirt.org/sources/glib
 
 [sha1]
 
