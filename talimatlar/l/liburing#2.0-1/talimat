@@ -16,7 +16,8 @@ calisma =
 
 [derle]
 betik = cd $isim-$isim-$surum
-tip        = gnu
+betik = ./configure --prefix='/usr' --mandir='/usr/share/man'
+betik = make
 
 [pakur]
 betik = cd $isim-$isim-$surum
