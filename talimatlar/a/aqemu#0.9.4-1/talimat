@@ -1,0 +1,24 @@
+
+[paket]
+tanim   = Qt5'te yazılmış QEMU GUI
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://github.com/tobimensch/aqemu
+
+[gerek]
+derleme = automake libtool perl pkg-config readline libcap-ng libpcap libiscsi libpciaccess libnl attr gnutls python libtirpc curl lvm2 parted libgcrypt iptables jansson yajl cyrus-sasl dnsmasq bridge-utils numactl glib libxml2 libxslt python-docutils libx11
+calisma =
+
+[kaynak]
+1      = https://github.com/TBK/aqemu/archive/v${surum}.tar.gz
+
+[sha256]
+#1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
+
+[derle]
+betik   = sed -i 's|#include <vector>|#include <vector>\n#include <stdexcept>|' "$srcdir"/$pkgname-$pkgver/src/docopt/docopt_value.h
+betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr/ -DQT_QMAKE_EXECUTABLE=qmake
+betik   = make
+
+[pakur]
+betik   = make DESTDIR="$PKG" install
