@@ -9,7 +9,7 @@ derleme =  gtk-vnc libosinfo libvirt-glib spice-gtk
 calisma =  
 
 [kaynak]
-xz      = https://download.gnome.org/sources/$isim/40
+xz      = https://download.gnome.org/sources/$isim/3.38
 
 [sha1]
 1 		= 
