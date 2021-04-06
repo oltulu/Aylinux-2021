@@ -16,6 +16,7 @@ git     =https://gitlab.freedesktop.org/libfprint/libfprint
 
 [derle]
 betik 	= cp -r $isim $isim-$surum
+ekconf = -Ddoc=false
 tip 	= meson
 	      
 [pakur]
