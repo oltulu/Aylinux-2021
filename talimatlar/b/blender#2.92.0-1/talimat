@@ -18,7 +18,7 @@ xz		= http://download.blender.org/source
 dosya   = derle.sh
 
 [pakur]
-betik   = cd build
+betik   = cd ../build
 tip		= gnu
 betik   = install -Dm755 ../release/bin/blender-softwaregl "$PKG/usr/bin/blender-softwaregl"
 betik   = python -m compileall "$PKG/usr/share/blender"
