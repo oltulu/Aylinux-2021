@@ -1,0 +1,20 @@
+[paket]
+tanim   = Uzak veya sanal sistemlere erişmek için basit GNOME uygulaması
+paketci = Cihan_Alkan
+grup 	  = gnome
+url     = https://wiki.gnome.org/Apps/Boxes
+
+[gerek]
+derleme =  
+calisma =  
+
+[kaynak]
+xz      = https://libvirt.org/sources/glib
+[sha1]
+1 		= 
+
+[derle]
+tip 	= meson
+	      
+[pakur]
+tip 	= meson
