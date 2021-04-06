@@ -6,8 +6,8 @@ grup    = sistem
 url     = https://github.com/tobimensch/aqemu
 
 [gerek]
-derleme = automake libtool perl pkg-config readline libcap-ng libpcap libiscsi libpciaccess libnl attr gnutls python libtirpc curl lvm2 parted libgcrypt iptables jansson yajl cyrus-sasl dnsmasq bridge-utils numactl glib libxml2 libxslt python-docutils libx11
-calisma =
+derleme =  
+calisma =qemu qt5-base libvncserver
 
 [kaynak]
 1      = https://github.com/TBK/aqemu/archive/v${surum}.tar.gz
