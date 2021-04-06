@@ -23,3 +23,5 @@ betik = make INSTALL_ROOT="${PKG}" install
 betik = make INSTALL_ROOT="${PKG}" install-udev
 betik = make INSTALL_ROOT="${PKG}" install-dracut
 betik = make INSTALL_ROOT="${PKG}" install-polkit
+betik = mv $PKG/{/usr/lib}/brlapi-0.8.2 $PKG/usr/lib/brlapi-0.8.2
+betik = rmdir $PKG/{
