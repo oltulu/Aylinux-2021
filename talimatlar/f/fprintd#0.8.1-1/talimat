@@ -9,7 +9,7 @@ derleme = libfprint
 calisma =  
 
 [kaynak]
-1= https://gitlab.freedesktop.org/libfprint/$isim/-/archive/master/$isim-master.tar.bz2
+1= https://gitlab.freedesktop.org/libfprint/fprintd/-/archive/V_0_8_1/fprintd-V_0_8_1.tar.gz
 
 [sha256]
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
