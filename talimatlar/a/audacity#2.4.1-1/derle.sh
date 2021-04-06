@@ -1,4 +1,4 @@
-patch -Np1 -i "/sources/d7e769040b508aaf15ce7b51cc1a565d41cdb079.patch"
+#patch -Np1 -i "/sources/d7e769040b508aaf15ce7b51cc1a565d41cdb079.patch"
 cd $isim-Audacity-${surum}
 autoreconf -vfi
 sed -i "s/which python/which/g" lib-src/lv2/build 
