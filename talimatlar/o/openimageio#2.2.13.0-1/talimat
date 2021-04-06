@@ -12,7 +12,7 @@ calisma =
 1       = https://github.com/OpenImageIO/oiio/archive/refs/tags/v${surum}.tar.gz::$isim-$surum.tar.gz
 
 [sha256]
-1       = da27e191349ef473220c7a373921e6d4c69d9924acd87140af55ce9d00ad58f8
+#1       = da27e191349ef473220c7a373921e6d4c69d9924acd87140af55ce9d00ad58f8
 
 [derle]
 betik	= cd $SRC/oiio-*
