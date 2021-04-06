@@ -6,7 +6,7 @@ url     = https://notabug.org/oltulu/Ay-Qemu
 
 [gerek]
 derleme = qt5-tools
-calisma = qemu
+calisma = qemu lxqt-sudo
 
 [kaynak]
 git      = https://notabug.org/oltulu/Ay-Qemu
