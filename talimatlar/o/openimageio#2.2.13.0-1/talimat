@@ -5,7 +5,7 @@ grup    = kütüphane
 url     = https://sites.google.com/site/openimageio/home
 
 [gerek]
-derleme = cmake boost giflib libraw openjpeg libwebp libjpeg-turbo tiff libpng openexr freetype opencolorio ffmpeg
+derleme = cmake boost giflib libraw openjpeg libwebp libjpeg-turbo tiff libpng openexr freetype opencolorio ffmpeg tbb
 calisma =
 
 [kaynak]
