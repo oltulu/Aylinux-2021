@@ -1,15 +1,15 @@
 [paket]
-tanim   = Linux / Unix için Braille ekran sürücüsü
+tanim   = Genel amaçlı TCP-IP emülatörü
 paketci = Cihan_Alkan
 grup    = kütüphane
-url     = https://brltty.app
+url     = hhttps://gitlab.freedesktop.org/slirp/libslirp
 
 [gerek]
 derleme =  
 calisma = 
 
 [kaynak]
-1   = https://www.intra2net.com/en/developer/libftdi/download/${pkgname}1-$pkgver.tar.bz2{,.sig}
+1   = https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.4.0/libslirp-v4.4.0.tar
 2 = https://github.com/archlinux/svntogit-community/raw/packages/libftdi/trunk/fix_includes_path.patch
 
 [sha256]
