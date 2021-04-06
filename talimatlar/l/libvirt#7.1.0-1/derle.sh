@@ -15,7 +15,7 @@
     -Drunstatedir=/run \
     -Dqemu_group=kvm \
     -Dnetcf=disabled \
-    -Discsiadm=disabled \
+    -Dlibiscsi=disabled \
     -Dopenwsman=disabled \
     -Dapparmor=disabled \
     -Dselinux=disabled \
