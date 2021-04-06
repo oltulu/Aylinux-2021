@@ -16,9 +16,9 @@ xz      = $url/sources
 #1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
 
 [derle]
-betik   = ./configure --prefix=/usr --with-qemu  --with-qemu-user=root --with-qemu-group=libvirt --without-wireshark-dissector --without-test-suite --with-udev
-betik   = make
+ekconf   = --with-qemu  --with-qemu-user=root --with-qemu-group=libvirt --without-wireshark-dissector --without-test-suite --with-udev
+tip   = gnu
 	
 
 [pakur]
-betik   = make DESTDIR=$PKG install
+tip   = gnu
