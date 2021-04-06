@@ -1,0 +1,26 @@
+[paket]
+tanim   = Tasarım göz önünde bulundurularak oluşturulmuş ekran video kaydı ve ekran görüntüsü uygulaması
+paketci = Cihan_Alkan
+grup  	= medya
+url     = https://launchpad.net/kazam
+
+[gerek]
+derleme = extra-cmake-modules ktexteditor
+calisma =  hicolor-icon-theme kactivities knewstuff ktexteditor kuserfeedback plasma-framework
+
+[kaynak]
+gz      = https://launchpad.net/${pkgname}/stable/${pkgver}/+download
+1= https://aur.archlinux.org/cgit/aur.git/plain/configparser_api_changes.patch?h=kazamc
+2= https://aur.archlinux.org/cgit/aur.git/plain/fix-PyGIWarnings.patch?h=kazam
+3= https://aur.archlinux.org/cgit/aur.git/plain/setlocale.patch?h=kazam
+
+[sha256]
+#1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
+
+[derle]
+betik 	= patch -Np1 < /sources/configparser_api_changes.patch?h=kazamc
+betik 	= patch -Np1 < /sources/fix-PyGIWarnings.patch?h=kazam
+betik 	= patch -Np1 < /sources/setlocale.patch?h=kazam
+            	      
+[pakur]
+betik 	= python3 setup.py install --root ${PKG}
