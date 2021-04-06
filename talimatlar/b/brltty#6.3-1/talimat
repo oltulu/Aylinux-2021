@@ -1,0 +1,25 @@
+[paket]
+tanim   = Linux / Unix için Braille ekran sürücüsü
+paketci = Cihan_Alkan
+grup    = kütüphane
+url     = https://brltty.app
+
+[gerek]
+derleme = cmake
+calisma = 
+
+[kaynak]
+bz2    = https://brltty.app/archive
+
+[sha256]
+#1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
+
+[derle]
+betik =  ./configure --prefix=/usr --sysconfdir=/etc  --localstatedir=/var --mandir=/usr/share/man  --with-scripts-directory=/usr/lib/brltty  --with-tables-directory=/usr/share/brltty --with-writable-directory=/run/brltty --enable-gpm --disable-stripping
+betik =  make
+
+[pakur]
+betik = make INSTALL_ROOT="${PKG}" install
+betik = make INSTALL_ROOT="${PKG}" install-udev
+betik = make INSTALL_ROOT="${PKG}" install-dracut
+betik = make INSTALL_ROOT="${PKG}" install-polkit
