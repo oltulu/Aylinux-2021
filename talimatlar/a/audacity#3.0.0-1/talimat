@@ -5,7 +5,7 @@ grup    = medya
 url     = https://www.audacityteam.org
 
 [gerek]
-derleme = cmake python jack wxgtk3 gtk3 ffmpeg libmad soundtouch libsamplerate libsoxr desktop-file-utils libid3tag flac lame lilv lv2 python2
+derleme = cmake python jack wxgtk3 gtk3 ffmpeg libmad soundtouch libsamplerate libsoxr desktop-file-utils libid3tag flac lame lilv lv2 
 calisma =
 
 [kaynak]
