@@ -2,7 +2,7 @@
 [Desktop Entry]
 Name=Qemu Başlatıcı
 Comment=Qemu Başlatıcı
-Exec=ay-qemu
+Exec=lxsudo ay-qemu
 Icon=/usr/share/icons/hicolor/48x48/apps/qemu.png
 Terminal=false
 Encoding=UTf-8
