@@ -1,0 +1,24 @@
+
+[paket]
+tanim   = QEMU için ncurses arayüzü
+paketci = Cihan_Alkan
+grup    = sistem
+url     = https://github.com/nemuTUI/nemu
+
+[gerek]
+derleme = 
+calisma = qemu
+
+[kaynak]
+git     = https://github.com/nemuTUI/nemu
+
+[sha256]
+#1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
+
+[derle]
+betik = cd nemu
+tip   = cmake
+
+[pakur]
+betik = cd nemu
+tip   = cmake
