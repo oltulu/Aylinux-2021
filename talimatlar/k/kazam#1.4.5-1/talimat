@@ -5,11 +5,11 @@ grup  	= medya
 url     = https://launchpad.net/kazam
 
 [gerek]
-derleme = extra-cmake-modules ktexteditor
-calisma =  hicolor-icon-theme kactivities knewstuff ktexteditor kuserfeedback plasma-framework
+derleme = 
+calisma =   
 
 [kaynak]
-gz      = https://launchpad.net/${pkgname}/stable/${pkgver}/+download
+gz      = https://fossies.org/linux/privat 
 1= https://aur.archlinux.org/cgit/aur.git/plain/configparser_api_changes.patch?h=kazamc
 2= https://aur.archlinux.org/cgit/aur.git/plain/fix-PyGIWarnings.patch?h=kazam
 3= https://aur.archlinux.org/cgit/aur.git/plain/setlocale.patch?h=kazam
