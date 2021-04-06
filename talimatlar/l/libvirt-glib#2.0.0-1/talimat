@@ -10,13 +10,13 @@ calisma =
 
 [kaynak]
 xz      = https://libvirt.org/sources/glib
+
 [sha1]
-1 		= 
 
 [derle]
 betik = sed -i -e '/SUBDIRS/s|\bdocs\b||g' Makefile.in
 #ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled  -Dtests=disabled
-tip 	= meson
+tip 	= gnu
 	      
 [pakur]
-tip 	= meson
+tip 	= gnu
