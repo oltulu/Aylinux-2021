@@ -18,11 +18,8 @@ calisma =
 #betik = cd fprintd-1.90.1
 #betik 	= ./autogen.sh  --disable-gtk-doc
 #betik 	= ./configure  --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-static --disable-gtk-doc
-betik 	= milis-meson $isim build -D pam_modules_dir=/usr/lib/security -Dsystemd=false -Dman=false -Dsystemd_system_unit_dir=no
-betik 	= meson compile -C build
+ekconf 	=  -D pam_modules_dir=/usr/lib/security -Dsystemd=false -Dman=false -Dsystemd_system_unit_dir=no
+tip 	= meson 
             	      
 [pakur]
-#betik = cd fprintd-1.90.1
-betik 	= DESTDIR="$PKG" meson install -C build
-#betik 	= make DESTDIR=$PKG dbus_confdir=/usr/share/dbus-1/system.d install
-#betik 	= install -d -m 700 $PKG/var/lib/fprint
+tip 	= meson 
