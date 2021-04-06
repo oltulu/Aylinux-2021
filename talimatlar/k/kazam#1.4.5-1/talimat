@@ -18,9 +18,9 @@ gz      = https://fossies.org/linux/privat
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
 
 [derle]
-betik 	= patch -Np1 < /sources/configparser_api_changes.patch?h=kazamc
-betik 	= patch -Np1 < /sources/fix-PyGIWarnings.patch?h=kazam
-betik 	= patch -Np1 < /sources/setlocale.patch?h=kazam
+betik 	= patch -Np1 < /sources/configparser_api_changes.patch
+betik 	= patch -Np1 < /sources/fix-PyGIWarnings.patch
+betik 	= patch -Np1 < /sources/setlocale.patch
             	      
 [pakur]
 betik 	= python3 setup.py install --root ${PKG}
