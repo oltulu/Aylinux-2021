@@ -1,0 +1,24 @@
+[paket]
+tanim   = Linux Audio Developer's Simple Plugin API (LADSPA)
+paketci = milisarge  
+grup    = kütüphane  
+url     = https://brltty.app
+
+[kaynak]
+1     =  https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.4.0/libslirp-v4.4.0.tar.gz
+
+[sha512]
+#1  =  a521622e23d988284244003e4ccfc3b42f6ddc7944cb00e7949b87e09d7f39a0cbb64b6d8b5a5af0a5ccf7179f88815416a88f02d3912957167e54b74accfc65
+
+[derle]
+betik  = ./autogen
+betik  = ./configure --prefix=/usr --sysconfdir=/etc  --localstatedir=/var --mandir=/usr/share/man --with-scripts-directory=/usr/lib/brltty --with-tables-directory=/usr/share/brltty  --with-writable-directory=/run/brltty --enable-gpm  --disable-stripping
+betik  = make
+
+[pakur]
+betik  =  make INSTALL_ROOT="${PKG}" install
+betik  =  make INSTALL_ROOT="${PKG}" install-udev
+betik  =  make INSTALL_ROOT="${PKG}" install-dracut
+betik  =  make INSTALL_ROOT="${PKG}" install-polkit
+betik  =  install -vDm 644 "Documents/${isim}.conf" -t "${PKG}/etc/"
+betik  =  install -vdm 750 -o root -g 102 "$PKG/usr/share/polkit-1/rules.d"
