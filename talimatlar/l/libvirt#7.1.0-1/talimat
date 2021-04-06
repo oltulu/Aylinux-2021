@@ -18,5 +18,4 @@ xz      = $url/sources
 dosya   = derle.sh
 
 [pakur]
-betik   = cd build
-tip     = gnu
+dosya   = pakur.sh
