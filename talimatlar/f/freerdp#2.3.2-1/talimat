@@ -1,0 +1,22 @@
+[paket]
+tanim   = Uzak Masaüstü Protokolünün (RDP) ücretsiz uygulaması
+paketci = Cihan_Alkan
+grup 	  = gnome
+url     = https://wiki.gnome.org/Apps/Boxes
+
+[gerek]
+derleme =   
+calisma =  
+
+[kaynak]
+xz      = https://download.gnome.org/sources/$isim/3.38
+
+[sha1]
+1 		= 
+
+[derle]
+betik 	=  cmake -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='lib' -DCMAKE_BUILD_TYPE='None' -DPROXY_PLUGINDIR='/usr/lib/freerdp2/server/proxy/plugins' -DWITH_DSP_FFMPEG=ON -DWITH_FFMPEG=ON  -DWITH_PULSE=ON -DWITH_CUPS=ON -DWITH_PCSC=ON -DWITH_JPEG=ON -DWITH_SERVER=ON  -DWITH_SWSCALE=ON -DWITH_CHANNELS=ON -DWITH_CLIENT_CHANNELS=ON  -DWITH_SERVER_CHANNELS=ON -DCHANNEL_URBDRC_CLIENT=ON -Wno-dev -B build -S .
+betik 	=  make VERBOSE=1 -C build
+	      
+[pakur]
+betik 	=  make DESTDIR="${PKG}" install -C build
