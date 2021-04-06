@@ -16,9 +16,11 @@ calisma =
 1 		= 
 
 [derle]
+betik = cd FreeRDP-${surum}
 betik =  patch -Np1 -i "/sources/${isim}-2.0.0-manpage_formatting.patch"
 betik 	=  cmake -DCMAKE_INSTALL_PREFIX='/usr' -DCMAKE_INSTALL_LIBDIR='lib' -DCMAKE_BUILD_TYPE='None' -DPROXY_PLUGINDIR='/usr/lib/freerdp2/server/proxy/plugins' -DWITH_DSP_FFMPEG=ON -DWITH_FFMPEG=ON  -DWITH_PULSE=ON -DWITH_CUPS=ON -DWITH_PCSC=ON -DWITH_JPEG=ON -DWITH_SERVER=ON  -DWITH_SWSCALE=ON -DWITH_CHANNELS=ON -DWITH_CLIENT_CHANNELS=ON  -DWITH_SERVER_CHANNELS=ON -DCHANNEL_URBDRC_CLIENT=ON -Wno-dev -B build -S .
 betik 	=  make VERBOSE=1 -C build
 	      
 [pakur]
+betik = cd FreeRDP-${surum}
 betik 	=  make DESTDIR="${PKG}" install -C build
