@@ -6,7 +6,7 @@ url     = https://launchpad.net/kazam
 
 [gerek]
 derleme = 
-calisma =   
+calisma = python-distutils-extra  
 
 [kaynak]
 gz      = https://fossies.org/linux/privat 
