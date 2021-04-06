@@ -6,7 +6,7 @@ url     = https://github.com/lxqt/lxqt-sudo
 
 [gerek]
 derleme = cmake lxqt-build-tools liblxqt sudo qt5-tools qt5-svg
-calisma =
+calisma = liblxqt
 
 [kaynak]
 xz      = $url/releases/download/${surum}
