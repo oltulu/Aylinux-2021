@@ -5,7 +5,7 @@ grup 	  = gnome
 url     = https://wiki.gnome.org/Apps/Boxes
 
 [gerek]
-derleme =  meson ninja libvirt-glib
+derleme =  meson ninja libvirt
 calisma =  
 
 [kaynak]
