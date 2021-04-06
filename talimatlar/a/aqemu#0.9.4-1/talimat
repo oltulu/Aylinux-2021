@@ -16,8 +16,8 @@ calisma =
 #1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
 
 [derle]
-betik   = sed -i 's|#include <vector>|#include <vector>\n#include <stdexcept>|' "$srcdir"/$pkgname-$pkgver/src/docopt/docopt_value.h
-betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr/ -DQT_QMAKE_EXECUTABLE=qmake
+betik   = sed -i 's|#include <vector>|#include <vector>\n#include <stdexcept>|' "$SRC"/$isim-$surum/src/docopt/docopt_value.h
+betik   = cmake -DCMAKE_INSTALL_PREFIX=/usr/ -DQT_QMAKE_EXECUTABLE=qmake4
 betik   = make
 
 [pakur]
