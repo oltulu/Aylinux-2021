@@ -14,7 +14,7 @@ export LDFLAGS="$LDFLAGS -lX11"
 --without-netcf \
 --with-interface \
 --with-udev \
---with-apparmor \
+--without-apparmor \
 --with-qemu  \
 --disable-static \
 --without-wireshark-dissector
