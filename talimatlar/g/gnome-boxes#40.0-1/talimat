@@ -5,7 +5,7 @@ grup 	  = gnome
 url     = https://wiki.gnome.org/Apps/Boxes
 
 [gerek]
-derleme =  gtk-vnc libosinfo
+derleme =  gtk-vnc libosinfo libvirt-glib
 calisma =  
 
 [kaynak]
