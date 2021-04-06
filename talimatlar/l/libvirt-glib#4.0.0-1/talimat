@@ -15,8 +15,8 @@ gz      = https://libvirt.org/sources/glib
 
 [derle]
 betik = sed -i -e '/SUBDIRS/s|\bdocs\b||g' Makefile.in
-#ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled  -Dtests=disabled
-tip 	= gnu
+ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled  -Dtests=disabled
+tip 	= meson
 	      
 [pakur]
-tip 	= gnu
+tip 	= meson
