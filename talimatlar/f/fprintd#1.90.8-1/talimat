@@ -16,7 +16,7 @@ git      = https://gitlab.freedesktop.org/libfprint/fprintd
 
 [derle]
 #betik 	= git apply -3 ../dirmode.diff
-betik 	= milis-meson $isim build -D pam_modules_dir=/usr/lib/security -Dsystemd=disabled
+betik 	= milis-meson $isim build -D pam_modules_dir=/usr/lib/security -Dsystemd=false
 betik 	= meson compile -C build
             	      
 [pakur]
