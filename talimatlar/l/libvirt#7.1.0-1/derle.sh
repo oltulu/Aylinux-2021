@@ -11,7 +11,7 @@
 
   milis-meson build \
     --libexecdir=lib/libvirt \
-    --native-file "$srcdir"/find_programs.ini \
+    --native-file "$SRC"/find_programs.ini \
     -Drunstatedir=/run \
     -Dqemu_group=kvm \
     -Dnetcf=disabled \
