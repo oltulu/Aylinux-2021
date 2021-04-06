@@ -15,8 +15,9 @@ calisma =
 #1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
 
 [derle]
-betik = cp -r $isim-$isim-$surum $isim-$surum
+betik = cd $isim-$isim-$surum
 tip        = gnu
 
 [pakur]
+betik = cd $isim-$isim-$surum
 tip        = gnu
