@@ -19,7 +19,7 @@ dosya      = $isim-profile.sh
 [derle]
 betik      = make-ca -g
 betik      = source /etc/profile.d/openjdk.sh
-betik      = pathappend $JAVA_HOME/bin
+#betik      = pathappend $JAVA_HOME/bin
 betik      = export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
 betik      = mvn clean package -DskipTests -Pdist -Dmaven.repo.local=/opt/m2/repository
 
