@@ -10,7 +10,7 @@ calisma =
 
 [kaynak]
 1      = https://github.com/${isim}/${isim}/archive/${surum}.tar.gz::$isim-${surum}.tar.gz
-2 = "https://github.com/archlinux/svntogit-community/raw/packages/freerdp/trunk/freerdp-2.0.0-manpage_formatting.patch
+2 = https://github.com/archlinux/svntogit-community/raw/packages/freerdp/trunk/freerdp-2.0.0-manpage_formatting.patch
 
 [sha1]
 1 		= 
