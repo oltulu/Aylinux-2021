@@ -14,7 +14,7 @@ xz      = https://libvirt.org/sources/glib
 1 		= 
 
 [derle]
-ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled
+ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled  -Dtests=disabled
 tip 	= meson
 	      
 [pakur]
