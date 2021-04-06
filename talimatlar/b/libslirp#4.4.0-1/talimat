@@ -9,7 +9,7 @@ derleme =
 calisma = 
 
 [kaynak]
-1   = https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.4.0/libslirp-v4.4.0.tar
+1   = https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.4.0/libslirp-v4.4.0.tar.gz
 2 = https://github.com/archlinux/svntogit-community/raw/packages/libftdi/trunk/fix_includes_path.patch
 
 [sha256]
