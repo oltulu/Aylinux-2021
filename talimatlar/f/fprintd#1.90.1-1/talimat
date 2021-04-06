@@ -18,7 +18,7 @@ calisma =
 #betik = cd fprintd-1.90.1
 #betik 	= ./autogen.sh  --disable-gtk-doc
 #betik 	= ./configure  --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-static --disable-gtk-doc
-ekconf 	=  -D pam_modules_dir=/usr/lib/security -Dsystemd=false -Dman=false -Dsystemd_system_unit_dir=no
+ekconf 	=  -D pam_modules_dir=/usr/lib/security -Dlibsystemd=false -Dman=false -Dsystemd_system_unit_dir=no
 tip 	= meson 
             	      
 [pakur]
