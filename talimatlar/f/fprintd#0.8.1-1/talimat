@@ -16,7 +16,7 @@ calisma =
 
 [derle]
 betik = cd fprintd-V_0_8_1
-betik 	= ./autogen.sh
+betik 	= ./autogen.sh  --disable-gtk-doc
 betik 	= ./configure  --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --localstatedir=/var --disable-static --disable-gtk-doc
 #betik 	= milis-meson $isim build -D pam_modules_dir=/usr/lib/security -Dsystemd=false -Dman=false -Dsystemd_system_unit_dir=no
 #betik 	= meson compile -C build
