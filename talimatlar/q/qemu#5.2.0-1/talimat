@@ -6,7 +6,7 @@ url     = https://www.qemu.org
 
 [gerek]
 derleme    = python2 libpng libjpeg-turbo snappy jemalloc libx11 alsa-lib libaio gnutls glib xfsprogs libiscsi libcap-ng vde2 usbredir bluez libssh2 libusb pulseaudio libnfs sdl2 gtk3 vte3 spice virglrenderer libepoxy libdrm mesa libcacard numactl
-calisma    = numactl usbredir sdl2 gtk3 vte3 spice virglrenderer libcacard liburing ndctl libslirp brltty libftdi snappy
+calisma    = numactl usbredir sdl2 gtk3 vte3 spice virglrenderer libcacard liburing ndctl libslirp brltty libftdi snappy dtc vde2 jemalloc
 
 [kaynak]
 bz2        = https://wiki.qemu.org/download
