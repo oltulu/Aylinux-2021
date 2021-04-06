@@ -14,8 +14,8 @@ xz      = https://libvirt.org/sources/glib
 [sha1]
 
 [derle]
-#betik = sed -i -e '/SUBDIRS/s|\bdocs\b||g' Makefile.in
-ekconf = -Ddocs=disabled -Dintrospection=disabled -Dvapi=disabled  -Dtests=disabled
+#betik = sed -i -e '/SUBDIRS/s|\bdocs\b||g' Makefile.in   -Dintrospection=disabled -Dvapi=disabled
+ekconf = -Ddocs=disabled  -Dtests=disabled
 tip 	= meson
 	      
 [pakur]
