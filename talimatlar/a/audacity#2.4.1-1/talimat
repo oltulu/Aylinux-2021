@@ -6,7 +6,7 @@ url     = https://www.audacityteam.org
 
 [gerek]
 derleme = cmake python jack wxgtk3 gtk3 ffmpeg libmad soundtouch libsamplerate libsoxr desktop-file-utils libid3tag flac lame lilv lv2 
-calisma =
+calisma = soundtouch
 
 [kaynak]
 1       = https://github.com/${isim}/${isim}/archive/Audacity-${surum}.tar.gz
