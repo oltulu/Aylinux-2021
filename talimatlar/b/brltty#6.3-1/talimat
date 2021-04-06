@@ -5,26 +5,28 @@ grup    = kütüphane
 url     = https://brltty.app
 
 [gerek]
-derleme = cmake
+derleme =  
 calisma = 
 
 [kaynak]
-bz2    = https://brltty.app/archive
+1   = https://www.intra2net.com/en/developer/libftdi/download/${pkgname}1-$pkgver.tar.bz2{,.sig}
+2 = https://github.com/archlinux/svntogit-community/raw/packages/libftdi/trunk/fix_includes_path.patch
 
 [sha256]
 #1          = deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
 
 [derle]
-betik =  ./configure --prefix=/usr --sysconfdir=/etc  --localstatedir=/var --mandir=/usr/share/man  --with-scripts-directory=/usr/lib/brltty  --with-tables-directory=/usr/share/brltty --with-writable-directory=/run/brltty --enable-gpm --disable-stripping
-betik =  make
+betik = sed -i 's|LIB_SUFFIX 64|LIB_SUFFIX ""|' CMakeLists.txt
+betik = sed -i "s|MODE=\"0664\", GROUP=\"plugdev\"|TAG+=\"uaccess\"|g" packages/99-libftdi.rules
+betik = patch -p1 < /sources/fix_includes_path.patch
+betik =  mkdir -p build
+betik = cd build
+betik = cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_SKIP_BUILD_RPATH=ON -DCMAKE_BUILD_TYPE=Release -DEXAMPLES=OFF -DFTDI_EEPROM=ON -DFTDIPP=ON -DPYTHON_BINDINGS=ON -DLINK_PYTHON_LIBRARY=ON
+betik = make
 
 [pakur]
-betik = make INSTALL_ROOT="${PKG}" install
-betik = make INSTALL_ROOT="${PKG}" install-udev
-betik = make INSTALL_ROOT="${PKG}" install-dracut
-betik = make INSTALL_ROOT="${PKG}" install-polkit
-betik = mv $PKG/{/usr/lib}/brlapi-0.8.2 $PKG/usr/lib/brlapi-0.8.2
-betik = rmdir $PKG/{/usr/lib}
-betik = rmdir $PKG/{/usr
-betik = rmdir $PKG/{
-betik = mv $PKG/usr/lib/java $PKG/usr/lib/jre
+betik =  cd "${isim}1-$PKG/build"  
+betik =  make DESTDIR="$PKG" install
+betik = install -Dm644 "../packages/99-libftdi.rules" "$PKG/usr/lib/udev/rules.d/69-libftdi.rules"
+betik = install -d "$PKG/usr/share/libftdi/examples" 
+betik = cp -r ../examples/* "$PKG/usr/share/libftdi/examples"
