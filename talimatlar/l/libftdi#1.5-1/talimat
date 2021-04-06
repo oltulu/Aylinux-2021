@@ -8,6 +8,10 @@ url     = https://www.intra2net.com/en/developer/libftdi/download.php
 1 =  https://www.intra2net.com/en/developer/libftdi/download/${isim}1-$surum.tar.bz2
 2= https://github.com/archlinux/svntogit-community/raw/packages/libftdi/trunk/fix_includes_path.patch
 
+[gerek]
+derleme = swig confuse
+calisma = confuse
+
 [sha512]
 #1  =  a521622e23d9882842440
 
