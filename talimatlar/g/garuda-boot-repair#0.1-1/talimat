@@ -16,8 +16,8 @@ git   = https://gitlab.com/garuda-linux/applications/$isim
 
 [derle]
 betik = cd $isim
-betik = rm translations/garuda-boot-options_tr.ts
-betik = cp  $SRC/garuda-boot-repair_tr.ts translations/
+#betik = rm translations/garuda-boot-options_tr.ts
+#betik = cp  $SRC/garuda-boot-repair_tr.ts translations/
 betik = qmake-qt5 $isim.pro
 betik = make
 
@@ -26,4 +26,4 @@ betik = cd $isim
 betik = make INSTALL_ROOT=${PKG} install
 betik = mkdir $PKG/usr/share/garuda-boot-repair
 betik = mkdir $PKG/usr/share/garuda-boot-repair/locale
-betik = cp $SRC/translations/*.qm $PKG/usr/share/garuda-boot-repair/locale/
+#betik = cp $SRC/translations/*.qm $PKG/usr/share/garuda-boot-repair/locale/
