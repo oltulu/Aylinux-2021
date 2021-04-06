@@ -12,7 +12,7 @@ calisma =
 xz      = $url/sources
 
 [sha256]
-1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
+#1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
 
 [derle]
 dosya   = derle.sh
