@@ -5,8 +5,8 @@ grup 	 = medya
 url     = https://www.maartenbaert.be/simplescreenrecorder/
 
 [gerek]
-derleme = extra-cmake-modules ktexteditor
-calisma =  hicolor-icon-theme kactivities knewstuff ktexteditor kuserfeedback plasma-framework
+derleme =  
+calisma =   
 
 [kaynak]
 xz      = https://download.kde.org/stable/release-service/$surum/src
