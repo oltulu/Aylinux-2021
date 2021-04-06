@@ -10,9 +10,9 @@ calisma =
 
 [kaynak]
 gz      = https://fossies.org/linux/privat 
-1= https://aur.archlinux.org/cgit/aur.git/plain/configparser_api_changes.patch?h=kazamc
-2= https://aur.archlinux.org/cgit/aur.git/plain/fix-PyGIWarnings.patch?h=kazam
-3= https://aur.archlinux.org/cgit/aur.git/plain/setlocale.patch?h=kazam
+1= https://aur.archlinux.org/cgit/aur.git/plain/configparser_api_changes.patch 
+2= https://aur.archlinux.org/cgit/aur.git/plain/fix-PyGIWarnings.patch 
+3= https://aur.archlinux.org/cgit/aur.git/plain/setlocale.patch 
 
 [sha256]
 #1 		= f1eb9baa29b8b4ab65c5938126e2a9020159d4b535b8ba5700a3602e3005d2df
