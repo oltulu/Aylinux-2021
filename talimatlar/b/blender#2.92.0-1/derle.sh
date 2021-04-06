@@ -15,5 +15,3 @@ cmake -S "${isim}"-"${surum}" -B build -G Ninja     \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
         -D PYTHON_INCLUDE_DIRS=/usr/include/python3.9   \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
-
-
