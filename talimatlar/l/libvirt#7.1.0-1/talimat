@@ -1,6 +1,6 @@
 [paket]
 tanim   = Sanallaştırma motorlarını kontrol etmek için Sanallaştırma API'sı
-paketci = milisarge
+paketci = Cihan_Alkan
 grup    = kütüphane
 url     = https://libvirt.org
 
