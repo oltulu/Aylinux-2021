@@ -10,6 +10,7 @@ calisma =
 
 [kaynak]
 xz      = $url/sources
+1= https://github.com/archlinux/svntogit-community/raw/packages/libvirt/trunk/find_programs.ini
 
 [sha256]
 #1       = 167c185be45560e73dd3e14ed375778b555c01455192de2dafc4d0f74fabebc0
