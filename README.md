@@ -1,9 +1,11 @@
+# Bu sayfa https://notabug.org/aylinux  adresine taşınmıştır
+
 # Aylinux-2021
 Milis linux tabanlı olarak hazırlanan Aylinux 2021 isosunu hazırlamak için aşağıdaki komutları kullanabilirsiniz.
 
 (Milis Linux yada Aylinux 2021 üzerinde çalışır)
 ------------------------------------------------------------------------
-wget https://github.com/oltulu/mps/raw/main/bin/aylinux-isoyap
+wget https://notabug.org/aylinux/mps/raw/main/bin/aylinux-isoyap
 
 chmod +x ./aylinux-isoyap
 
